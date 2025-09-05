@@ -20,9 +20,10 @@ $M$ is the union of the open sets $`U_1 =\{(x,y)\in M:x\ne0\}`$ and $`U_2 =\{(x,
 
 Since $[0,1] \times \left(-\frac{1}{2}, \frac{1}{2}\right)$ is second-countable and the quotient map is open, it follows that $M$ is second-countable.
 </dd>
-<dt></dt>
+<dt>Hausdorff</dt>
 <dd>
 
+Let $[x],[y] \in \mathbb{RP}^2$ be two distinct points. Then $x \neq \pm y$. Without loss of generality, assume $x \neq 0$. We can find open neighborhoods $U$ of $x$ and $V$ of $y$ in $S^2$ such that $U \cap V = \emptyset$ and $U \cap -V = \emptyset$. The images of these neighborhoods under the quotient map $p$ are open neighborhoods of $[x]$ and $[y]$ in $\mathbb{RP}^2$, respectively, and they are disjoint.
 </dd>
 </dl>
 <li>
