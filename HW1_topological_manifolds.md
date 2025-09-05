@@ -15,7 +15,7 @@ Consider the map $f:S^2 \to D^2$ defined by
 
 $$f(x,y,z) = \begin{cases}(x,y)&z>0\cr (-x,-y)&z<0\end{cases}$$
 
-$$f({-x},{-y},{-z}) = (x,y)$$
+$$f(-x,-y,-z) = (x,y)$$
 
 Thus, $f$ induces a well-defined map $\tilde{f}: \mathbb{RP}^2 \to D^2/\sim$, where $(x,y) \sim (-x,-y)$.
 
