@@ -23,7 +23,10 @@ Since $[0,1] \times \left(-\frac{1}{2}, \frac{1}{2}\right)$ is second-countable 
 <dt>Hausdorff</dt>
 <dd>
 
-Let $[x],[y] \in \mathbb{RP}^2$ be two distinct points. Then $x \neq \pm y$. Without loss of generality, assume $x \neq 0$. We can find open neighborhoods $U$ of $x$ and $V$ of $y$ in $S^2$ such that $U \cap V = \emptyset$ and $U \cap -V = \emptyset$. The images of these neighborhoods under the quotient map $p$ are open neighborhoods of $[x]$ and $[y]$ in $\mathbb{RP}^2$, respectively, and they are disjoint.
+Let $[(x_1,y_1)],[(x_2,y_2)]$ be two distinct points in $M$.
+
+* If $y_1\ne y_2$ then $`\{(x,y)\in M:y<\frac{y_1+y_2}2\}`$ and $`\{(x,y)\in M:y>\frac{y_1+y_2}2\}`$ are two disjoint open neighborhoods of the two points.
+* If $y_1=y_2$ then
 </dd>
 </dl>
 <li>
