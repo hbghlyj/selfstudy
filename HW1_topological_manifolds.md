@@ -22,4 +22,7 @@ Thus, $f$ induces a well-defined map $\tilde{f}: \mathbb{RP}^2 \to D^2/\sim$, wh
 To show that $\tilde{f}$ is continuous, we note that $f$ is continuous and the identification is done in a way that respects the topology of $D^2$.
 
 To show that $\tilde{f}$ is a homeomorphism, we need to show that it is bijective and that its inverse is continuous. $\tilde{f}^{-1}$ can be constructed by lifting points from $D^2/\sim$ back to $\mathbb{RP}^2$
+
 $$\tilde{f}^{-1}([(x,y)]) = [(x,y,\sqrt{1-x^2-y^2})]$$
+
+This map is well-defined and continuous, as it respects the identification in $D^2/\sim$.
