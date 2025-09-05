@@ -8,7 +8,7 @@ is a topological manifold.
 
 Proof.
 * Compact: $S^2$ is compact, and the quotient map $p: S^2 \to \mathbb{RP}^2$ is continuous and surjective. From Continuous Image of Compact Space is Compact, $\mathbb{RP}^2$ is compact.
-* Second-countable: Let $\{U_n\}_{n \in \mathbb{N}}$ be a countable basis for $S^2$. Then the sets $p(U_n)$ form a countable basis for the topology on $\mathbb{RP}^2$, since the quotient map $p$ is open.
+* Second-countable: Let $`\{U_n\}_{n \in \mathbb{N}}'$ be a countable basis for $S^2$. Then the sets $p(U_n)$ form a countable basis for the topology on $\mathbb{RP}^2$, since the quotient map $p$ is open.
 * Hausdorff: Let $[x],[y] \in \mathbb{RP}^2$ be two distinct points. Then $x \neq \pm y$. Without loss of generality, assume $x \neq 0$. We can find open neighborhoods $U$ of $x$ and $V$ of $y$ in $S^2$ such that $U \cap V = \emptyset$ and $U \cap -V = \emptyset$. The images of these neighborhoods under the quotient map $p$ are open neighborhoods of $[x]$ and $[y]$ in $\mathbb{RP}^2$, respectively, and they are disjoint.
 
 3. Prove that $\mathbb{RP}^2$ is homeomorphic to the closed 2-disk with opposite boundary points identified:
