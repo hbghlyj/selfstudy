@@ -6,6 +6,9 @@ is a topological manifold.
 
 2. Prove that $\mathbb{RP}^2$ is Hausdorff, second-countable, and compact.
 
+Proof.
+Hausdorff: Let $[x],[y] \in \mathbb{RP}^2$ be two distinct points. Then $x \neq \pm y$. Without loss of generality, assume $x \neq 0$. We can find open neighborhoods $U$ of $x$ and $V$ of $y$ in $\mathbb{R}^3 \setminus \{0\}$ such that $U \cap V = \emptyset$. The images of these neighborhoods under the quotient map $\pi: \mathbb{R}^3 \setminus \{0\} \to \mathbb{RP}^2$ are open neighborhoods of $[x]$ and $[y]$ in $\mathbb{RP}^2$, respectively, and they are disjoint. Thus, $\mathbb{RP}^2$ is Hausdorff.
+
 3. Prove that $\mathbb{RP}^2$ is homeomorphic to the closed 2-disk with opposite boundary points identified:
 
 $$\mathbb{RP}^2 \cong \overline{\mathbb{D}}^2 /(\cos \theta, \sin \theta) \sim(\cos (\theta+\pi), \sin (\theta+\pi)) .$$
@@ -14,6 +17,8 @@ Proof.
 Consider the map $f:S^2 \to D^2$ defined by
 
 $$f(x,y,z) = \begin{cases}(x,y)&z>0\cr (-x,-y)&z<0\end{cases}$$
+
+We have
 
 $$f(-x,-y,-z) = (x,y)$$
 
