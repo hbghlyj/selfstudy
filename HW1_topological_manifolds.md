@@ -13,12 +13,16 @@ Locally homeomorphic to $\mathbb{R}^2$
 </dt>
 <dd>
 
-Consider the open sets $U = [0,1) \times \left(-\frac{1}{2}, \frac{1}{2}\right)$ and $V = (0,1) \times \left(-\frac{1}{2}, \frac{1}{2}\right)$. The restriction of the quotient map to these sets is a homeomorphism onto its image, which is an open subset of $\mathbb{R}^2$.
+$M$ is the union of the open sets $`U_1 =\{(x,y)\in M:x\ne0\}`$ and $`U_2 =\{(x,y)\in M:x\ne\frac12\}`$. The restriction of the quotient map to $U_i$ is a homeomorphism onto an open subset $V_i$ of $\mathbb{R}^2$.
 </dd>
 <dt>Second-countable</dt>
 <dd>
 
-Since $[0,1] \times \left(-\frac{1}{2}, \frac{1}{2}\right)$ is second-countable and the quotient map is open, it follows that the Möbius strip is second-countable.
+Since $[0,1] \times \left(-\frac{1}{2}, \frac{1}{2}\right)$ is second-countable and the quotient map is open, it follows that $M$ is second-countable.
+</dd>
+<dt></dt>
+<dd>
+
 </dd>
 </dl>
 <li>
@@ -50,6 +54,7 @@ $$\mathbb{RP}^2 \cong \overline{\mathbb{D}}^2 /(\cos \theta, \sin \theta) \sim(\
 
 Proof.
 Define a map $f:S^2 \to D^2$ by
+
 $`f(x,y,z) = \begin{cases}(x,y)&z>0\\(-x,-y)&z<0\end{cases}`$
 
 We have
