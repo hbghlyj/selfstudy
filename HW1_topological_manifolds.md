@@ -63,7 +63,7 @@ $`f([(x,y,z)]) = \begin{cases}{}[(x,y)]&z\ge 0\\{}[(-x,-y)]&z<0\end{cases}`$
 
 To show that $f$ is well-defined,
 
-$$f(-x,-y,-z) = f(x,y,z)$$
+$`f([(-x,-y,-z)]) = f([(x,y,z)])`$
 
 To show that $f$ is continuous, we note that $f$ is continuous and the identification is done in a way that respects the topology of $\overline{\mathbb{D}^2}$.
 
