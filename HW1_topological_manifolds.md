@@ -63,7 +63,7 @@ $`f(x,y,z) = \begin{cases}(x,y)&z>0\\(-x,-y)&z<0\end{cases}`$
 
 We have
 
-$$f(-x,-y,-z) = (x,y)$$
+$$f(-x,-y,-z) = f(x,y,z)$$
 
 Thus, $f$ induces a well-defined map $\tilde{f}: \mathbb{RP}^2 \to\overline{\mathbb{D}^2}/\sim$.
 
