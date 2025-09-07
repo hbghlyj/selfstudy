@@ -57,20 +57,18 @@ Prove that $\mathbb{RP}^2$ is homeomorphic to the closed 2-disk with opposite bo
 $$\mathbb{RP}^2 \cong \overline{\mathbb{D}^2} /(\cos \theta, \sin \theta) \sim(\cos (\theta+\pi), \sin (\theta+\pi)) .$$
 
 Proof.
-Define a map $f:\mathbb{S}^2 \to \overline{\mathbb{D}^2}$ by
+Define a map $f:\mathbb{RP}^2 \to \overline{\mathbb{D}^2}/\sim$ by
 
-$`f(x,y,z) = \begin{cases}(x,y)&z>0\\(-x,-y)&z<0\end{cases}`$
+$`f([(x,y,z)]) = \begin{cases}[(x,y)]&z\ge 0\\[(-x,-y)]&z<0\end{cases}`$
 
-We have
+To show that $f$ is well-defined,
 
 $$f(-x,-y,-z) = f(x,y,z)$$
 
-Thus, $f$ induces a well-defined map $\tilde{f}: \mathbb{RP}^2 \to\overline{\mathbb{D}^2}/\sim$.
+To show that $f$ is continuous, we note that $f$ is continuous and the identification is done in a way that respects the topology of $\overline{\mathbb{D}^2}$.
 
-To show that $\tilde{f}$ is continuous, we note that $f$ is continuous and the identification is done in a way that respects the topology of $\overline{\mathbb{D}^2}$.
+To show that $f$ is a homeomorphism, we need to show that it is bijective and that its inverse is continuous. $f^{-1}$ can be constructed by lifting points from $\overline{\mathbb{D}^2}/\sim$ back to $\mathbb{RP}^2$
 
-To show that $\tilde{f}$ is a homeomorphism, we need to show that it is bijective and that its inverse is continuous. $\tilde{f}^{-1}$ can be constructed by lifting points from $\overline{\mathbb{D}^2}/\sim$ back to $\mathbb{RP}^2$
-
-$$\tilde{f}^{-1}([(x,y)]) = [(x,y,\sqrt{1-x^2-y^2})]$$
+$$f^{-1}([(x,y)]) = [(x,y,\sqrt{1-x^2-y^2})]$$
 
 This map is well-defined and continuous, as it respects the identification in $\overline{\mathbb{D}^2}/\sim$.
