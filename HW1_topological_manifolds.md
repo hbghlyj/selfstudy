@@ -65,7 +65,7 @@ We have
 
 $$f(-x,-y,-z) = (x,y)$$
 
-Thus, $f$ induces a well-defined map $\tilde{f}: \mathbb{RP}^2 \to\overline{\mathbb{D}^2}/\sim$, where $(x,y) \sim (-x,-y)$.
+Thus, $f$ induces a well-defined map $\tilde{f}: \mathbb{RP}^2 \to\overline{\mathbb{D}^2}/\sim$.
 
 To show that $\tilde{f}$ is continuous, we note that $f$ is continuous and the identification is done in a way that respects the topology of $\overline{\mathbb{D}^2}$.
 
