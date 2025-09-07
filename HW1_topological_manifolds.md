@@ -59,7 +59,7 @@ $$\mathbb{RP}^2 \cong \overline{\mathbb{D}^2} /(\cos \theta, \sin \theta) \sim(\
 Proof.
 Define a map $f:\mathbb{RP}^2 \to \overline{\mathbb{D}^2}/\sim$ by
 
-$`f([(x,y,z)]) = \begin{cases}[(x,y)]&z\ge 0\\[(-x,-y)]&z<0\end{cases}`$
+$`f([(x,y,z)]) = \begin{cases}{}[(x,y)]&z\ge 0\\[(-x,-y)]&z<0\end{cases}`$
 
 To show that $f$ is well-defined,
 
