@@ -15,7 +15,7 @@ Locally homeomorphic to $\mathbb{R}^2$
 
 $M$ is the union of the open sets $`U_1 =\{(x,y)\in M:x\ne0\}`$ and $`U_2 =\{(x,y)\in M:x\ne\frac12\}`$.
 
-$V_1=(0,1)\times\left(-\frac{1}{2}, \frac{1}{2}\right)$ and $V_2=(0,1)\times\left(-\frac{1}{2}, \frac{1}{2}\right)$ are open subsets of $\mathbb{R}^2$.
+$V_1=(0,1)\times\left(-\frac{1}{2}, \frac{1}{2}\right)$ and $V_2=(0,1)\times\left(-\frac{1}{2}, \frac{1}{2}\right)$ are open set in $\mathbb{R}^2$.
 
 The maps $\phi_i:U_i\to V_i$ are homeomorphisms
 
