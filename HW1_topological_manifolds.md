@@ -19,9 +19,9 @@ $V_1=(0,1)\times\left(-\frac{1}{2}, \frac{1}{2}\right)$ and $V_2=(0,1)\times\lef
 
 The maps $\phi_i:U_i\to V_i$ are homeomorphisms
 
-$`\phi_1([(x,y)])=\begin{cases}(x,y)&y<1\\(x,-y)&y=1\end{cases}`$
+$`\phi_1([(x,y)])=\begin{cases}(x,y)&x<1\\(x,-y)&x=1\end{cases}`$
 
-$`\phi_2([(x,y)])=\begin{cases}(x+\frac12,y)&y<\frac12\\(x-\frac12,-y)&y>\frac12\end{cases}`$
+$`\phi_2([(x,y)])=\begin{cases}(x+\frac12,y)&x<\frac12\\(x-\frac12,-y)&x>\frac12\end{cases}`$
 </dd>
 <dt>Second-countable</dt>
 <dd>
