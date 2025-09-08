@@ -65,6 +65,8 @@ Prove that $\mathbb{RP}^2$ is homeomorphic to the closed 2-disk with opposite bo
 $$\mathbb{RP}^2 \cong \overline{\mathbb{D}^2} /(\cos \theta, \sin \theta) \sim(\cos (\theta+\pi), \sin (\theta+\pi)) .$$
 
 Proof.
+$$\mathbb{RP}^2$$ is defined as the quotient of $S^2$ under the equivalence relation $(x,y,z)\sim(-x,-y,-z)$.
+
 Define a map $f:\mathbb{RP}^2 \to \overline{\mathbb{D}^2}/\sim$ by
 
 $`f([(x,y,z)]) = \begin{cases}{}[(x,y)]&z\ge 0\\{}[(-x,-y)]&z<0\end{cases}`$
