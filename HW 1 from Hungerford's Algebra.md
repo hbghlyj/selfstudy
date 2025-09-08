@@ -50,7 +50,7 @@ Proof
 
 # Section I.6
 ## Exercise 3
-If $\sigma=(i_1 i_2 \cdots i_r) \Subset S_n$ and $\tau \Subset S_n$, then $\tau \sigma \tau^{-1}$ is the $r$-cycle $(\tau(i_1) \tau(i_2) \cdots \tau(i_r))$.
+If $\sigma=(i_1 i_2 \cdots i_r) \in S_n$ and $\tau \in S_n$, then $\tau \sigma \tau^{-1}$ is the $r$-cycle $(\tau(i_1) \tau(i_2) \cdots \tau(i_r))$.
 
 Proof
 
