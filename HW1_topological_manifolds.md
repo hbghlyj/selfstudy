@@ -26,7 +26,7 @@ $`\phi_2([(x,y)])=\begin{cases}(x+\frac12,y)&x<\frac12\\(x-\frac12,-y)&x>\frac12
 <dt>Second-countable</dt>
 <dd>
 
-Since $[0,1] \times \left(-\frac{1}{2}, \frac{1}{2}\right)$ is second-countable and by [Projection of glueing identification is open map](https://math.stackexchange.com/q/1099467), the image of a countable base is a countable base, so $M$ is second-countable.
+By [Compact metric spaces is second countable](https://math.stackexchange.com/questions/573787), $M$ is second countable.
 </dd>
 <dt>Hausdorff</dt>
 <dd>
