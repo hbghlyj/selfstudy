@@ -50,7 +50,7 @@ $\mathbb{S}^2$ is compact, and the quotient map $p: \mathbb{S}^2 \to \mathbb{RP}
 </dd>
 <dt>Second-countable</dt><dd>
 
-Let $`\{U_n\}_{n \in \mathbb{N}}`$ be a countable basis for $\mathbb{S}^2$. Then the sets $p(U_n)$ form a countable basis for the topology on $\mathbb{RP}^2$, since the quotient map $p$ is open.
+By [Compact metric spaces is second countable](https://math.stackexchange.com/questions/573787), $\mathbb{RP}^2$ is second countable.
 </dt>
 <dt>Hausdorff</dt><dd>
 
