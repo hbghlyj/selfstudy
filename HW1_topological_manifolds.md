@@ -23,6 +23,7 @@ $`\begin{array}{ll}\phi_1([(x,y)])=(x,y)&\phi_1^{-1}(x,y)=[(x,y)]\\\phi_2([(x,y)
 </dd>
 <dt>Second-countable</dt>
 <dd>
+
 $M$ has a finite atlas $\{(U_i,\phi_i):i=1,2\}$. Pull back a countable base from each chart $U_i$ and take the finite union—this gives a countable base for $M$.
 In general, [Manifold is 2nd countable iff it has a countable atlas](https://math.stackexchange.com/q/653183).
 </dd>
