@@ -52,7 +52,7 @@ Since $\mathbb{S}^2$ is second-countable and the quotient map $p: \mathbb{S}^2 \
 </dt>
 <dt>Hausdorff</dt><dd>
 
-Let $[x],[y] \in \mathbb{RP}^2$ be two distinct points. Then $x \neq \pm y$. We can find open neighborhoods $U$ of $x$ and $V$ of $y$ in $\mathbb{S}^2$ such that $U \cap V = \emptyset$ and $U \cap -V = \emptyset$. The images of these neighborhoods under the quotient map $p$ are open neighborhoods of $[x]$ and $[y]$ in $\mathbb{RP}^2$, respectively, and they are disjoint.
+Let $[x],[y] \in \mathbb{RP}^2$ be two distinct points. Then $x \neq \pm y$. We can find open neighborhoods $U$ of $x$ and $V$ of $y$ in $\mathbb{S}^2$ such that $U \cap(V\cup(-V)) = \emptyset$. The images of these neighborhoods under the quotient map $p$ are open neighborhoods of $[x]$ and $[y]$ in $\mathbb{RP}^2$, respectively, and they are disjoint.
 </dd>
 </dl>
 
