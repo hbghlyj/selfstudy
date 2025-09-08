@@ -39,7 +39,7 @@ If $N$ is a subgroup of index 2 in a group $G$, then $N$ is normal in $G$.
 Proof
 
 ## Exercise 6
-Let $H<G$; then the set $a H a^{-1}$ is a subgroup for each $a \varepsilon G$, and $H \cong a H a^{-1}$.
+Let $H<G$; then the set $a H a^{-1}$ is a subgroup for each $a \in G$, and $H \cong a H a^{-1}$.
 
 Proof
 
