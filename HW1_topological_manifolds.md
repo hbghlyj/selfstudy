@@ -13,9 +13,9 @@ Locally homeomorphic to $\mathbb{R}^2$
 </dt>
 <dd>
 
-$M$ is the union of the open sets $`U_1 =\{[(x,y)]\in M:x\ne0,1\}`$ and $`U_2 =\{[(x,y)]\in M:x\ne\frac12\}`$.
+$M$ is the union of the open sets $`U_1=M\setminus\{[(0,y)]\in M\}`$ and $`U_2 =M\setminus\{[(\frac12,y)]\in M\}`$.
 
-$V_1=(0,1)\times\left(-\frac{1}{2}, \frac{1}{2}\right)$ and $V_2=(0,1)\times\left(-\frac{1}{2}, \frac{1}{2}\right)$ are open set in $\mathbb{R}^2$.
+$V_1=V_2=(0,1)\times\left(-\frac{1}{2}, \frac{1}{2}\right)$ are open sets in $\mathbb{R}^2$.
 
 The maps $\phi_i:U_i\to V_i$ are homeomorphisms
 
@@ -30,10 +30,11 @@ In general, [Manifold is 2nd countable iff it has a countable atlas](https://mat
 <dt>Hausdorff</dt>
 <dd>
 
-Let $[(x_1,y_1)],[(x_2,y_2)]$ be two distinct points in $M$.
+Let $[(x_1,y_1)],[(x_2,y_2)]$ be two distinct points in $M$. Pick $x_3\in(0,1)$ different from $x_1,x_2$.
 
-* If $y_1\ne y_2$, then $`\{[(x,y)]\in M:y<\frac{y_1+y_2}2\}`$ and $`\{[(x,y)]\in M:y>\frac{y_1+y_2}2\}`$ are disjoint open neighborhoods of the two points.
-* If $y_1=y_2$, the two points lie on the circle $`\{[(x,y)]\in M:y=y_1\}`$. Since the circle is Hausdorff, there exist disjoint open neighborhoods $W_i$ of the two points in $`\{[(x,y)]\in M:y=y_1\}`$. Set $`U_i=\{[(x,y)]:x\in W_i\}`$. Then $U_i$ are disjoint open neighborhoods of the two points in $M$.
+Let $U=M\setminus\{[(x_3,y)]\in M\}$ and $\phi:U\to(0,1)\times\left(-\frac{1}{2}, \frac{1}{2}\right)$ be a homeomorphism. Then the chart $U$ contains both points.
+
+Let $U_i$ be disjoint Euclidean neighborhoods of $\phi([(x_i,y_i)])$, then $\phi^{-1}(U_1),\phi^{-1}(U_2)$ are disjoint open neighborhoods of $[(x_1,y_1)],[(x_2,y_2)]$.
 </dd>
 </dl>
 <li>
