@@ -34,7 +34,7 @@ Since $[0,1] \times \left(-\frac{1}{2}, \frac{1}{2}\right)$ is second-countable 
 Let $[(x_1,y_1)],[(x_2,y_2)]$ be two distinct points in $M$.
 
 * If $y_1\ne y_2$, then $`\{[(x,y)]\in M:y<\frac{y_1+y_2}2\}`$ and $`\{[(x,y)]\in M:y>\frac{y_1+y_2}2\}`$ are disjoint open neighborhoods of the two points.
-* If $y_1=y_2$, the two points lie on the circle $`\{[(x,y)]\in M:y=y_1\}`$. Since the circle is Hausdorff, there exist disjoint open neighborhoods $W_i$ of the two points in $`\{[(x,y)]\in M:y=y_1\}`$. Set $U_i=W_i\times\left(-\frac{1}{2}, \frac{1}{2}\right)$. Then $U_i$ are disjoint open neighborhoods of the two points in $M$.
+* If $y_1=y_2$, the two points lie on the circle $`\{[(x,y)]\in M:y=y_1\}`$. Since the circle is Hausdorff, there exist disjoint open neighborhoods $W_i$ of the two points in $`\{[(x,y)]\in M:y=y_1\}`$. Set $`U_i=\{[(x,y)]:x\in W_i\}`$. Then $U_i$ are disjoint open neighborhoods of the two points in $M$.
 </dd>
 </dl>
 <li>
