@@ -34,7 +34,7 @@ Let $[(x_1,y_1)],[(x_2,y_2)]$ be two distinct points in $M$. Pick $x_3\in(0,1)$ 
 
 Let $`U=M\setminus\{[(x_3,y)]\in M\}`$ and $\phi:U\to(0,1)\times\left(-\frac{1}{2}, \frac{1}{2}\right)$ be a homeomorphism. Then the chart $U$ contains both points.
 
-Let $U_i$ be disjoint Euclidean neighborhoods of $\phi([(x_i,y_i)])$, then $\phi^{-1}(U_1),\phi^{-1}(U_2)$ are disjoint open neighborhoods of $[(x_1,y_1)],[(x_2,y_2)]$.
+Let $U_i$ be disjoint Euclidean neighborhoods of $\phi([(x_i,y_i)])$, then $\phi^{-1}(U_1),\phi^{-1}(U_2)$ are disjoint open neighborhoods of $[(x_1,y_1)],[(x_2,y_2)]$ in $M$, respectively.
 </dd>
 </dl>
 <li>
