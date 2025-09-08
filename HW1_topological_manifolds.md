@@ -77,8 +77,12 @@ $`f([(-x,-y,-z)]) = f([(x,y,z)])`$
 
 To show that $f$ is continuous, note that the preimage of an open ball in $\overline{\mathbb{D}^2}/\sim$ is open in $\mathbb{RP}^2$.
 
-To show that $f$ is a homeomorphism, we need to show that it is bijective and that its inverse is continuous. $f^{-1}$ can be constructed by lifting points from $\overline{\mathbb{D}^2}/\sim$ back to $\mathbb{RP}^2$
+To show that $f$ is a homeomorphism, we need to show that its inverse is continuous.
 
-$$f^{-1}([(x,y)]) = [(x,y,\sqrt{1-x^2-y^2})]$$
+Define $g:\overline{\mathbb{D}^2}/\sim\to\mathbb{RP}^2$
 
-This map is well-defined and continuous, as it respects the identification in $\overline{\mathbb{D}^2}/\sim$.
+$$g([(x,y)]) = [(x,y,\sqrt{1-x^2-y^2})]$$
+
+where on the boundary $x^2+y^2=1$ we get $g([(x,y)])=f^{-1}([(-x,-y)])$, so $g$ is well-defined.
+
+We can verify that $fg=\text{id},gf=\text{id}$ and $g$ is continuous.
