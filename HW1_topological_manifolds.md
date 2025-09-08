@@ -73,7 +73,7 @@ To show that $f$ is well-defined,
 
 $`f([(-x,-y,-z)]) = f([(x,y,z)])`$
 
-To show that $f$ is continuous, we note that $f$ is continuous and the identification is done in a way that respects the topology of $\overline{\mathbb{D}^2}$.
+To show that $f$ is continuous, note that the identification is done in a way that respects the topology of $\overline{\mathbb{D}^2}$.
 
 To show that $f$ is a homeomorphism, we need to show that it is bijective and that its inverse is continuous. $f^{-1}$ can be constructed by lifting points from $\overline{\mathbb{D}^2}/\sim$ back to $\mathbb{RP}^2$
 
