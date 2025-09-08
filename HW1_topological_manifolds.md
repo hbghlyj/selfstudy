@@ -81,6 +81,6 @@ Define $g:\overline{\mathbb{D}^2}/\sim\to\mathbb{RP}^2$
 
 $$g([(x,y)]) = [(x,y,\sqrt{1-x^2-y^2})]$$
 
-where on the boundary $x^2+y^2=1$ we get $g([(x,y)])=f^{-1}([(-x,-y)])$, so $g$ is well-defined.
+where on the boundary $x^2+y^2=1$ we get $g([(x,y)])=g([(-x,-y)])$, so $g$ is well-defined.
 
 We can verify that $fg=\text{id},gf=\text{id}$ and $g$ is continuous.
