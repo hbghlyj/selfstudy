@@ -50,7 +50,7 @@ $\mathbb{S}^2$ is compact, and the quotient map $p: \mathbb{S}^2 \to \mathbb{RP}
 </dd>
 <dt>Second-countable</dt><dd>
 
-By [Compact metric spaces is second countable](https://math.stackexchange.com/questions/573787), $\mathbb{RP}^2$ is second countable.
+Since $\mathbb{S}^2$ is second-countable and the quotient map $p: \mathbb{S}^2 \to \mathbb{RP}^2$ is local homeomorphism, the image of a countable basis in $\mathbb{S}^2$ under $p$ is a countable basis in $\mathbb{RP}^2$, so $\mathbb{RP}^2$ is second-countable.
 </dt>
 <dt>Hausdorff</dt><dd>
 
