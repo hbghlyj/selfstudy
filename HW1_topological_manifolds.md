@@ -19,7 +19,7 @@ $V_1=(0,1)\times\left(-\frac{1}{2}, \frac{1}{2}\right)$ and $V_2=(0,1)\times\lef
 
 The maps $\phi_i:U_i\to V_i$ are homeomorphisms
 
-$`\begin{aligned}\phi_1([(x,y)])&=(x,y)&\phi_1^{-1}(x,y)&=[(x,y)]\\\phi_2([(x,y)])&=\begin{cases}(x,y)&x<\frac12\\(x,-y)&x>\frac12\end{cases}&\phi_2^{-1}(x,y)&=\begin{cases}{}[(x,y)]&x<\frac12\\{}[(x,-y)]&x>\frac12\end{cases}\end{aligned}`$
+$`\begin{aligned}\phi_1([(x,y)])=(x,y)&\phi_1^{-1}(x,y)=[(x,y)]\\\phi_2([(x,y)])=\begin{cases}(x,y)&x<\frac12\\(x,-y)&x>\frac12\end{cases}&\phi_2^{-1}(x,y)=\begin{cases}{}[(x,y)]&x<\frac12\\{}[(x,-y)]&x>\frac12\end{cases}\end{aligned}`$
 </dd>
 <dt>Second-countable</dt>
 <dd>
