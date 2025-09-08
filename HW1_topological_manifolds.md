@@ -23,8 +23,7 @@ $`\begin{array}{ll}\phi_1([(x,y)])=(x,y)&\phi_1^{-1}(x,y)=[(x,y)]\\\phi_2([(x,y)
 </dd>
 <dt>Second-countable</dt>
 <dd>
-
-By [Compact metric spaces is second countable](https://math.stackexchange.com/questions/573787), $M$ is second countable.
+We have a finite atlas $\{(U_i,\phi_i):i=1,2\}$. Pull back a countable base from each chart $U_i$ and take the finite union—this gives a countable base for $M$.
 </dd>
 <dt>Hausdorff</dt>
 <dd>
@@ -48,7 +47,7 @@ $\mathbb{S}^2$ is compact, and the quotient map $p: \mathbb{S}^2 \to \mathbb{RP}
 </dd>
 <dt>Second-countable</dt><dd>
 
-Since $\mathbb{S}^2$ is second-countable and the quotient map $p: \mathbb{S}^2 \to \mathbb{RP}^2$ is local homeomorphism (in particular, $p$ is open), the image of a countable basis in $\mathbb{S}^2$ under $p$ is a countable basis in $\mathbb{RP}^2$, so $\mathbb{RP}^2$ is second-countable.
+Since $\mathbb{S}^2$ is second-countable and the quotient map $p: \mathbb{S}^2 \to \mathbb{RP}^2$ is local homeomorphism (in particular, $p$ is open), the image of a countable basis in $\mathbb{S}^2$ under $p$ is a countable basis in $\mathbb{RP}^2$, so $\mathbb{RP}^2$ is second-countable. Alternatively, use [Compact metric spaces is second countable](https://math.stackexchange.com/questions/573787).
 </dt>
 <dt>Hausdorff</dt><dd>
 
