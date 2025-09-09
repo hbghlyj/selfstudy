@@ -54,6 +54,10 @@ Let $H<G$; then the set $a H a^{-1}$ is a subgroup for each $a \in G$, and $H \c
 
 Proof
 
+For any $a \in G$, $a H a^{-1}$ is nonempty since it contains the identity element $a e a^{-1} = e$. If $x, y \in a H a^{-1}$, then $x = a h_1 a^{-1}$ and $y = a h_2 a^{-1}$ for some $h_1, h_2 \in H$. Then $x y^{-1} = a h_1 a^{-1} (a h_2 a^{-1})^{-1} = a h_1 h_2^{-1} a^{-1} \in a H a^{-1}$ since $h_1 h_2^{-1} \in H$. Thus $a H a^{-1}$ is a subgroup of $G$.
+
+Define a map $\phi: H \to a H a^{-1}$ by $\phi(h) = a h a^{-1}$. This map is a homomorphism since $\phi(h_1 h_2) = a (h_1 h_2) a^{-1} = a h_1 a^{-1} a h_2 a^{-1} = \phi(h_1) \phi(h_2)$. It is bijective since its inverse is given by $\phi^{-1}(x) = a^{-1} x a$. Therefore, $H \cong a H a^{-1}$.
+
 ## Exercise 7
 Let $G$ be a finite group and $H$ a subgroup of $G$ of order $n$. If $H$ is the only subgroup of $G$ of order $n$, then $H$ is normal in $G$.
 
