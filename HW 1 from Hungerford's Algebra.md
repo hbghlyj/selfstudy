@@ -46,6 +46,9 @@ If $N$ is a subgroup of index 2 in a group $G$, then $N$ is normal in $G$.
 
 Proof
 
+Let $g \in G \setminus N$; then $G=N \cup g N$. For any $n \in N$, $g n \in g N$, so $g n \notin N$. Thus $g N \cap N = \emptyset$. Similarly, $N g \cap N = \emptyset$. Since both $g N$ and $N g$ have the same number of elements as $N$, we must have $g N = N g$. Since this holds for any $g \in G$, $N$ is normal in $G$.
+
+
 ## Exercise 6
 Let $H<G$; then the set $a H a^{-1}$ is a subgroup for each $a \in G$, and $H \cong a H a^{-1}$.
 
