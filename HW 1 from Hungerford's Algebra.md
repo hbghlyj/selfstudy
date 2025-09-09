@@ -17,7 +17,10 @@ Hint: Observe that $B A=A^3 B$, whence every element of $Q_8$ is of the form $A^
 
 Proof
 
-$`A^2=\begin{psmallmatrix}-1 & 0 \\ 0 & -1\end{psmallmatrix}`$, $`A^3=\begin{psmallmatrix}0 & -1 \\ 1 & 0\end{psmallmatrix}`$, $A^4=I$, $`B^2=\begin{psmallmatrix}-1 & 0 \\ 0 & -1\end{psmallmatrix}`$, $`B^3=\begin{psmallmatrix}0 & -i \\ -i & 0\end{psmallmatrix}`$, $B^4=I$, and $B A=A^3 B$. Thus no power of $A$ is equal to a power of $B$ except $\pm I$, and every element of $Q_8$ can be written as $A^i B^j$ for some integers $`i, j\in\{0,\dots,4\}`$. If $A^i B^j = A^m B^n$, then $A^{i-m} = B^{n-j}$, so $A^{i-m} =B^{n-j}=\pm I$. Thus there are 2×4=8 distinct elements: $I, A, A^2, A^3, B, A B, A^2 B, A^3 B$.
+$`A^2=\begin{psmallmatrix}-1 & 0 \\ 0 & -1\end{psmallmatrix}`$, $`A^3=\begin{psmallmatrix}0 & -1 \\ 1 & 0\end{psmallmatrix}`$, $A^4=I$, $`B^2=\begin{psmallmatrix}-1 & 0 \\ 0 & -1\end{psmallmatrix}`$, $`B^3=\begin{psmallmatrix}0 & -i \\ -i & 0\end{psmallmatrix}`$, $B^4=I$, so $\langle A\rangle\cap\langle B\rangle=\{\pm I\}$, so $|\langle A\rangle\langle B\rangle|=\frac{|\langle A\rangle||\langle B\rangle|}{|\langle A\rangle\cap\langle B\rangle|}=\frac{4\times4}2=8$.
+
+Since $B A=A^3 B$, every element of $Q_8$ can be written as $A^i B^j$, so $Q_8=\langle A\rangle\langle B\rangle$, so $|Q_8|=8$.
+
 The group is nonabelian since $`A B = \begin{psmallmatrix}i & 0 \\ 0 & -i\end{psmallmatrix}`$ and $`B A = \begin{psmallmatrix}-i & 0 \\ 0 & i\end{psmallmatrix}`$ are not equal.
 
 # Section I.4
