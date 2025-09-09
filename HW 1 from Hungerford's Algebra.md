@@ -17,8 +17,8 @@ Hint: Observe that $B A=A^3 B$, whence every element of $Q_8$ is of the form $A^
 
 Proof
 
-$A^2=\begin{psmallmatrix}-1 & 0 \\ 0 & -1\end{psmallmatrix}$, $A^3=\begin{psmallmatrix}0 & -1 \\ 1 & 0\end{psmallmatrix}$, $A^4=I$, $B^2=\begin{psmallmatrix}-1 & 0 \\ 0 & -1\end{psmallmatrix}$, $B^3=\begin{psmallmatrix}0 & -i \\ -i & 0\end{psmallmatrix}$, $B^4=I$, and $B A=A^3 B$. Thus no power of $A$ is equal to a power of $B$ except the identity, and every element of $Q_8$ can be written as $A^i B^j$ for some integers $i, j$. If $A^i B^j = A^m B^n$, then $A^{i-m} = B^{n-j}$, so $A^{i-m} = I$ and $B^{n-j} = I$, so $i \equiv m \mod 4$ and $j \equiv n \mod 4$. Thus there are $2×4=8$ distinct elements: $I, A, A^2, A^3, B, A B, A^2 B, A^3 B$.
-The group is nonabelian since $A B = \begin{psmallmatrix}i & 0 \\ 0 & -i\end{psmallmatrix}$ and $B A = \begin{psmallmatrix}-i & 0 \\ 0 & i\end{psmallmatrix}$ are not equal.
+$`A^2=\begin{psmallmatrix}-1 & 0 \\ 0 & -1\end{psmallmatrix}`$, $`A^3=\begin{psmallmatrix}0 & -1 \\ 1 & 0\end{psmallmatrix}`$, $A^4=I$, $`B^2=\begin{psmallmatrix}-1 & 0 \\ 0 & -1\end{psmallmatrix}`$, $`B^3=\begin{psmallmatrix}0 & -i \\ -i & 0\end{psmallmatrix}`$, $B^4=I$, and $B A=A^3 B$. Thus no power of $A$ is equal to a power of $B$ except the identity, and every element of $Q_8$ can be written as $A^i B^j$ for some integers $i, j$. If $A^i B^j = A^m B^n$, then $A^{i-m} = B^{n-j}$, so $A^{i-m} = I$ and $B^{n-j} = I$, so $i \equiv m \mod 4$ and $j \equiv n \mod 4$. Thus there are $2×4=8$ distinct elements: $I, A, A^2, A^3, B, A B, A^2 B, A^3 B$.
+The group is nonabelian since $`A B = \begin{psmallmatrix}i & 0 \\ 0 & -i\end{psmallmatrix}`$ and $`B A = \begin{psmallmatrix}-i & 0 \\ 0 & i\end{psmallmatrix}`$ are not equal.
 
 # Section I.4
 ## Exercise 8
