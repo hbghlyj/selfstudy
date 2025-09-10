@@ -29,7 +29,7 @@ If $H$ and $K$ are subgroups of finite index of a group $G$ such that $[G: H]$ a
 
 Proof
 
-Let $[G: H]=m$ and $[G: K]=n$ with $\gcd(m, n)=1$. Then $[G: H K] \leq [G: H]=m$ and $[G: H K] \leq [G: K]=n$, so $[G: H K]$ divides both $m$ and $n$. Since $m$ and $n$ are relatively prime, $[G: H K]=1$, so $G=H K$.
+Consider the map $f:K/H\cap K\to G/H$ defined by $f(k H\cap K)=k H$. This map is injective since if $f(k_1 H\cap K)=f(k_2 H\cap K)$, then $k_1 H=k_2 H$, so $k_2^{-1} k_1 \in H$, and since $k_2^{-1} k_1 \in K$, $k_2^{-1} k_1 \in H\cap K$, so $k_1 H\cap K=k_2 H\cap K$. Thus $[K:H\cap K] \leq [G:H]$. Since $[G:H][H:H\cap K]=[G:H\cap K]=[G:K][K:H\cap K]$ and $[G:H]$ divides $[K:H\cap K]$ and $[K:H\cap K] \leq [G:H]$, we have $[K:H\cap K] = [G:H]$. Therefore, $[G:H][H:H\cap K]=[G:H\cap K]=[G:K][K:H\cap K]=[G:K][G:H]$, so $[H:H\cap K]=[G:K]$. Thus the number of left cosets of $H$ in $H K$ is equal to the number of left cosets of $K$ in $G$, so $H K=G$.
 
 ## Exercise 12
 If $H$ and $K$ are subgroups of a group $G$, then $[H \vee K: H] \geq[K: H \cap K]$.
