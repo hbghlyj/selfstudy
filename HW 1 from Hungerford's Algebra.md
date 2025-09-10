@@ -35,7 +35,7 @@ From
 
 $[G:H][H:H\cap K]=[G:H\cap K]=[G:K][K:H\cap K]$
 
-we have $[G:H]\mid[G:K][K:H\cap K]$, but $[G:H]$ and $[G:K]$ are relatively prime, then $[G:H]\mid[K:H\cap K]$, but we proved $[K:H\cap K] \leq [G:H]$, we must have $[K:H\cap K] = [G:H]$. Therefore, $f$ is surjective, so for any $g \in G$, there exists $k \in K$ such that $g H = k H$, so $k^{-1} g \in H$, and thus $g = k (k^{-1} g) \in H K$. Therefore, $G = H K$.
+we have $[G:H]\mid[G:K][K:H\cap K]$, but $[G:H]$ and $[G:K]$ are relatively prime, then $[G:H]\mid[K:H\cap K]$, but we proved $[K:H\cap K] \leq [G:H]$, we must have $[K:H\cap K] = [G:H]$. Therefore, $f$ is surjective, so for any $g \in G$, there exists $k \in K$ such that $g H = k H$, so $k^{-1} g \in H$, and thus $g = k (k^{-1} g) \in KH$. Therefore, $G = KH$. By taking inverse, we get $G=HK$.
 
 ## Exercise 12
 If $H$ and $K$ are subgroups of a group $G$, then $[H \vee K: H] \geq[K: H \cap K]$.
