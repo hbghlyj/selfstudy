@@ -66,6 +66,8 @@ Let $G$ be a finite group and $H$ a subgroup of $G$ of order $n$. If $H$ is the 
 
 Proof
 
+For any $g \in G$, by Exercise 6 $g H g^{-1}$ is a subgroup with the same order as $H$, which is $n$. Since $H$ is the only subgroup of $G$ of order $n$, we must have $g H g^{-1} = H$. Therefore, $H$ is normal in $G$.
+
 # Section I.6
 ## Exercise 3
 If $\sigma=(i_1 i_2 \cdots i_r) \in S_n$ and $\tau \in S_n$, then $\tau \sigma \tau^{-1}$ is the $r$-cycle $(\tau(i_1) \tau(i_2) \cdots \tau(i_r))$.
