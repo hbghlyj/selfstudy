@@ -17,7 +17,11 @@ Hint: Observe that $B A=A^3 B$, whence every element of $Q_8$ is of the form $A^
 
 Proof
 
-$A^2=-I$, $`A^3=\begin{psmallmatrix}0 & -1 \\ 1 & 0\end{psmallmatrix}`$, $A^4=I$, $B^2=-I$, $`B^3=\begin{psmallmatrix}0 & -i \\ -i & 0\end{psmallmatrix}`$, $B^4=I$, so $`\langle A\rangle\cap\langle B\rangle=\{\pm I\}`$, so $|\langle A\rangle\langle B\rangle|=\frac{|\langle A\rangle||\langle B\rangle|}{|\langle A\rangle\cap\langle B\rangle|}=\frac{4\times4}2=8$.
+$A^2=-I$, $`A^3=\begin{psmallmatrix}0 & -1 \\ 1 & 0\end{psmallmatrix}`$, $A^4=I$
+
+$B^2=-I$, $`B^3=\begin{psmallmatrix}0 & -i \\ -i & 0\end{psmallmatrix}`$, $B^4=I$
+
+so $`\langle A\rangle\cap\langle B\rangle=\{\pm I\}`$, so $|\langle A\rangle\langle B\rangle|=\frac{|\langle A\rangle||\langle B\rangle|}{|\langle A\rangle\cap\langle B\rangle|}=\frac{4\times4}2=8$.
 
 Since $B A=A^3 B$, every element of $Q_8$ can be written as $A^i B^j$, so $Q_8=\langle A\rangle\langle B\rangle$, so $|Q_8|=8$.
 
