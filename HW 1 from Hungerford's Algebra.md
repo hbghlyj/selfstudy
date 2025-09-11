@@ -77,7 +77,7 @@ If $N$ is a subgroup of index 2 in a group $G$, then $N$ is normal in $G$.
 
 Proof
 
-Let $g \in G \setminus N$; then $G=N \sqcup g N$. Thus $g N = G \setminus N$. Similarly, $N g = G \setminus N$. Thus $g N = N g$ for any $g \in G \setminus N$, and $g N = N g$ for any $g \in N$. Therefore $g N = N g$ for any $g \in G$, so $N$ is normal in $G$.
+Let $g \in G \setminus N$, then $N\ne gN$, so $G=N \sqcup g N$. Thus $g N = G \setminus N$. Similarly, $N g = G \setminus N$. Thus $g N = N g$ for any $g \in G \setminus N$, and $g N = N g$ for any $g \in N$. Therefore $g N = N g$ for any $g \in G$, so $N$ is normal in $G$.
 
 
 ## Exercise 6
