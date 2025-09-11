@@ -69,7 +69,7 @@ By Exercise 12, $[H \vee K : H] \geq [K : H \cap K] = [K : \langle e \rangle] = 
 
 Proof 2
 
-By Sylow's theorems, the number of Sylow $p$-subgroups, denoted $n_p$, satisfies $n_p \equiv 1 \mod p$ and $n_p \mid q$. Since $q < p$, the only divisor of $q$ that is congruent to $1 \mod p$ is $1$. Therefore, there is exactly one Sylow $p$-subgroup in $G$, which must be normal. Hence, there is at most one subgroup of order $p$ in a group of order $p q$.
+By Sylow's theorems, the number of Sylow $p$-subgroups, denoted $n_p$, satisfies $n_p \equiv 1 \mod p$ and $n_p \mid q$. Since $q < p$, the only divisor of $q$ that is congruent to $1 \mod p$ is $1$. Therefore, $n_p=1$.
 
 # Section I.5
 ## Exercise 1
