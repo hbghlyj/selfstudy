@@ -19,7 +19,9 @@ Let $H=\langle A\rangle,K=\langle B\rangle$.
 
 We compute $`H=\{I,A,-I,-A\},K=\{I,B,-I,-B\}`$, so $`H\cap K=\{\pm I\}`$, so $|HK|=\frac{|H||K|}{|H\cap K|}=\frac{4\times4}2=8$.
 
-Since $BAB^{-1}=A^3$, $\langle A\rangle A$ , by the theorem <q>subgroup product $HK=\langle H,K\rangle$ if $H$ is normal</q> we have $Q_8=\langle A\rangle\langle B\rangle$, so $|Q_8|=8$.
+Since $BAB^{-1}=A^3$, $H \lhd Q_8$.
+
+By the theorem <q>subgroup product $HK=\langle H,K\rangle$ if $H$ is normal</q> we have $Q_8=HK$, so $|Q_8|=8$.
 
 The group is nonabelian since $`A B = \begin{psmallmatrix}i & 0 \\ 0 & -i\end{psmallmatrix}`$ and $`B A = \begin{psmallmatrix}-i & 0 \\ 0 & i\end{psmallmatrix}`$ are not equal.
 
