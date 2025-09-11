@@ -39,7 +39,9 @@ Since $[K:L]$ is finite we can write
 
 $[G:H][H:L]=[G:L]=[G:K][K:L]$
 
-then $[G:H]\mid[G:K][K:L]$, but $[G:H]$ and $[G:K]$ are relatively prime, then $[G:H]\mid[K:L]$, in particular $[G:H] \le [K:L]$. Therefore, $f$ is surjective. For any $g \in G$, there exists $k \in K$ such that $Hg = Hk$, so $gk^{-1} \in H$, and thus $g = (gk^{-1})k \in HK$. Therefore, $G = HK$.
+then $[G:H]\mid[G:K][K:L]$, but $[G:H]$ and $[G:K]$ are relatively prime, then $[G:H]\mid[K:L]$, in particular $[G:H] \le [K:L]$.
+
+Since an injective map between finite sets with ∣domain∣≥∣codomain∣ is surjective, $f$ is surjective. For any $g \in G$, there exists $k \in K$ such that $Hg = Hk$, so $gk^{-1} \in H$, and thus $g = (gk^{-1})k \in HK$. Therefore, $G = HK$.
 
 ## Exercise 12
 If $H$ and $K$ are subgroups of a group $G$, then $[H \vee K: H] \geq[K: H \cap K]$.
