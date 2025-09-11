@@ -17,7 +17,7 @@ Proof
 
 Let $H=\langle A\rangle,K=\langle B\rangle$.
 
-We compute $H=\{I,A,-I,-A\},K=\{I,B,-I,-B\}$, so $`\langle A\rangle\cap\langle B\rangle=\{\pm I\}`$, so $|\langle A\rangle\langle B\rangle|=\frac{|\langle A\rangle||\langle B\rangle|}{|\langle A\rangle\cap\langle B\rangle|}=\frac{4\times4}2=8$.
+We compute $`H=\{I,A,-I,-A\},K=\{I,B,-I,-B\}`$, so $`H\cap K=\{\pm I\}`$, so $|HK|=\frac{|H||K|}{|H\cap K|}=\frac{4\times4}2=8$.
 
 Since $BAB^{-1}=A^3$, $\langle A\rangle A$ , by the theorem <q>subgroup product $HK=\langle H,K\rangle$ if $H$ is normal</q> we have $Q_8=\langle A\rangle\langle B\rangle$, so $|Q_8|=8$.
 
