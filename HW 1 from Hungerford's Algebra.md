@@ -46,6 +46,12 @@ If $H$ and $K$ are subgroups of a group $G$, then $[H \vee K: H] \geq[K: H \cap 
 
 Proof
 
+Consider the map $f: K/(H \cap K) \to (H \vee K)/H,(H \cap K) k\mapsto H k$ for $k \in K$.
+
+$f$ is well-defined: if $(H \cap K) k_1 = (H \cap K) k_2$, then $k_2 k_1^{-1} \in H \cap K \subseteq H$, so $H k_1 = H k_2$.
+
+$f$ is injective: if $f((H \cap K) k_1) = f((H \cap K) k_2)$, then $H k_1 = H k_2$, so $k_2 k_1^{-1} \in H$. Since $k_1, k_2 \in K$, we have $k_2 k_1^{-1} \in H \cap K$, thus $(H \cap K) k_1 = (H \cap K) k_2$.
+
 ## Exercise 13
 If $p>q$ are primes, a group of order $p q$ has at most one subgroup of order $p$.
 
