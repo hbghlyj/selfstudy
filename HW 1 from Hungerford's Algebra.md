@@ -19,7 +19,7 @@ Let $H=\langle A\rangle,K=\langle B\rangle$.
 
 We compute $`H=\{I,A,-I,-A\},K=\{I,B,-I,-B\}`$, so $`H\cap K=\{\pm I\}`$.
 
-Since $BAB^{-1}=A^3$, $H \lhd Q_8$.
+We compute $BAB^{-1}=A^3$, so $H \lhd Q_8$.
 
 By the theorem <q>subgroup product $HK=\langle H,K\rangle$ if $H$ is normal</q> we have $Q_8=HK$, so $|Q_8|=\frac{|H||K|}{|H\cap K|}=\frac{4\times4}2=8$.
 
