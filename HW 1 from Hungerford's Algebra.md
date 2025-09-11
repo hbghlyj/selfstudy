@@ -83,6 +83,7 @@ For any $g \in G$, by Exercise 6, $g H g^{-1}$ is a subgroup with the same order
 If $\sigma=(i_1 i_2 \cdots i_r) \in S_n$ and $\tau \in S_n$, then $\tau \sigma \tau^{-1}$ is the $r$-cycle $(\tau(i_1) \tau(i_2) \cdots \tau(i_r))$.
 
 Proof
+
 For any $`j \in \{1, 2, \ldots, n\}`$, we have
 
 $\tau \sigma \tau^{-1}(j) = \tau(\sigma(\tau^{-1}(j)))$
