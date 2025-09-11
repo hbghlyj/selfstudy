@@ -15,7 +15,7 @@ Define $F_t(x)=(1-t)x+ty$.
 
 This map is continuous because every coordinate component is continuous.
 
-The map is the identity on the boundary of the square.
+If $x$ is on the boundary of the square, then $y=x$, so $F_t(x)=x$.
 
 # Exercise 2
 
