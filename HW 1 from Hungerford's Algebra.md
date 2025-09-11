@@ -33,6 +33,8 @@ Proof
 
 Let $L=H\cap K$. Consider the map $f:K/L\to G/H,Lk\mapsto Hk$.
 
+$f$ is well-defined: if $Lk_1=Lk_2$, then $k_2k_1^{-1}\in L\subseteq H$, so $Hk_1=Hk_2$.
+
 $f$ is injective: if $f(Lk_1)=f(Lk_2)$, then $Hk_1=Hk_2$, so $k_2k_1^{-1}\in H$, and since $k_1,k_2\in K$, $k_2^{-1} k_1 \in L$, so $Lk_1=Lk_2$.
 
 Since $[K:L]$ is finite we can write
@@ -53,6 +55,8 @@ Consider the map $f: K/(H \cap K) \to (H \vee K)/H,(H \cap K) k\mapsto H k$ for 
 $f$ is well-defined: if $(H \cap K) k_1 = (H \cap K) k_2$, then $k_2 k_1^{-1} \in H \cap K \subseteq H$, so $H k_1 = H k_2$.
 
 $f$ is injective: if $f((H \cap K) k_1) = f((H \cap K) k_2)$, then $H k_1 = H k_2$, so $k_2 k_1^{-1} \in H$. Since $k_1, k_2 \in K$, we have $k_2 k_1^{-1} \in H \cap K$, thus $(H \cap K) k_1 = (H \cap K) k_2$.
+
+Hence there is an injection of coset sets, so the index inequality follows.
 
 ## Exercise 13
 If $p>q$ are primes, a group of order $p q$ has at most one subgroup of order $p$.
