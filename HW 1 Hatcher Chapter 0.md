@@ -49,16 +49,19 @@ A deformation retraction in the weak sense of a space $X$ to a subspace $A$ is a
 Show that a retract of a contractible space is contractible.
 
 # Exercise 10
-
-# Exercise 11
 Show that a space $X$ is contractible iff every map $f: X \to Y$, for arbitrary $Y$, is nullhomotopic. Similarly, show $X$ is contractible iff every map $f: Y \to X$ is nullhomotopic.
 
 Solution
 
 i. Suppose $X$ is contractible, then there is a point $x_0$, and maps $`h: X \to\left\{x_0\right\}, g:\left\{x_0\right\} \to X`$ s.t. $`\left.g \circ h \simeq \mathrm{id}\right|_X`$ and $`\left.h \circ g \simeq \mathrm{id}\right|_{\left\{x_0\right\}}`$. We denote the homotopy as $F: X \times I \to X$ where $`\left.F\right|_{X \times\{0\}}=\mathrm{id}`$ and $`\left.F\right|_{X \times\{1\}}=g \circ h`$. For any $f: X \to Y$ where $Y$ is an arbitrary space, let $`y_0=f\left(g\left(x_0\right)\right)`$, and let $G:=f \circ F$. Thus $G: X \times I \to Y$ is continuous since it is the composition of two continuous maps. $`\left.G\right|_{X \times\{0\}}=f \circ \mathrm{id}=f`$ and $\left.G\right|_{X \times\{1\}}=f \circ g \circ h$. But $f \circ g \circ h(X)=y_0$. Therefore $f: X \to Y$ is nullhomotopic.
 
-Conversely, put $Y=X$, then we know that id : $X \to X$ is nullhomotopic. That is, we have a constant map $g: X \to X$ and a homotopy $F: X \times I \to X$ s.t. $\left.F\right|_{X \times\{0\}}=$ id and $\left.F\right|_{X \times\{1\}}=g . g$ being a constant map means $g(X)=\left\{x_0\right\}$ for some $x_0 \in X$, so we say $g$ is a map $X \to\left\{x_0\right\}$ and define $f:\left\{x_0\right\} \to X, x_0 \mapsto x_0$. Thus $g \circ f=\operatorname{id}_{\left\{x_0\right\}}$ and $f \circ g=g$. The existence of $F$ implies $f \circ g \simeq \mathrm{id}$.
+Conversely, put $Y=X$, then we know that id : $X \to X$ is nullhomotopic. That is, we have a constant map $g: X \to X$ and a homotopy $F: X \times I \to X$ s.t. $\left.F\right|_{X \times\{0\}}=$ id and $\left.F\right|_{X \times\{1\}}=g . g$ being a constant map means $g(X)=\{x_0\}$ for some $x_0 \in X$, so we say $g$ is a map $X \to\left\{x_0\right\}$ and define $f:\left\{x_0\right\} \to X, x_0 \mapsto x_0$. Thus $g \circ f=\operatorname{id}_{\left\{x_0\right\}}$ and $f \circ g=g$. The existence of $F$ implies $f \circ g \simeq \mathrm{id}$.
 
-ii. Suppose $X$ is contractible, then there is a point $x_0$, and maps $h: X \to\left\{x_0\right\}, g:\left\{x_0\right\} \to X$ s.t. $\left.g \circ h \simeq \mathrm{id}\right|_X$ and $\left.h \circ g \simeq \mathrm{id}\right|_{\left\{x_0\right\}}$. We denote the homotopy as $F: X \times I \to X$ where $\left.F\right|_{X \times\{0\}}=\mathrm{id}$ and $\left.F\right|_{X \times\{1\}}=g \circ h$. Define $G: Y \times I \to X,(y, t) \mapsto F(f(y), t)$. Hence $`\left.G\right|_{Y \times\{0\}}=F(f(y), 0)=f(y)`$ and $\left.G\right|_{X \times\{1\}}=F(f(y), 1)=h(g(f(y)))=h\left(x_0\right)$. Thus, $f: X \to Y$ is nullhomotopic.
+ii. Suppose $X$ is contractible, then there is a point $x_0$, and maps $h: X \to\left\{x_0\right\}, g:\left\{x_0\right\} \to X$ s.t. $\left.g \circ h \simeq \mathrm{id}\right|_X$ and $`\left.h \circ g \simeq \mathrm{id}\right|_{\left\{x_0\right\}}`$. We denote the homotopy as $F: X \times I \to X$ where $\left.F\right|_{X \times\{0\}}=\mathrm{id}$ and $`\left.F\right|_{X \times\{1\}}=g \circ h`$. Define $G: Y \times I \to X,(y, t) \mapsto F(f(y), t)$. Hence $`\left.G\right|_{Y \times\{0\}}=F(f(y), 0)=f(y)`$ and $`\left.G\right|_{X \times\{1\}}=F(f(y), 1)=h(g(f(y)))=h(x_0)`$. Thus, $f: X \to Y$ is nullhomotopic.
 
 Conversely, put $Y=X$, then we know that id : $X \to X$ is nullhomotopic. That is, we have a constant map $g: X \to X$ and a homotopy $F: X \times I \to X$ s.t. $`\left.F\right|_{X \times\{0\}}=\text{id}`$ and $`\left.F\right|_{X \times\{1\}}=g`$. $g$ being a constant map means $g(X)=\{x_0\}$ for some $x_0 \in X$, so we say $g$ is a map $X \to\left\{x_0\right\}$ and define $f:\{x_0\} \to X, x_0 \mapsto x_0$. Thus $g \circ f=\operatorname{id}_{\left\{x_0\right\}}$ and $f \circ g=g$. The existence of $F$ implies $f \circ g \simeq \mathrm{id}$.
+
+# Exercise 11
+Show that $f: X \to Y$ is a homotopy equivalence if there exist maps $g, h: Y \rightarrow X$ such that $f g \simeq \mathbb{1}$ and $h f \simeq \mathbb{1}$. More generally, show that $f$ is a homotopy equivalence if $f g$ and $h f$ are homotopy equivalences.
+
+Solution
