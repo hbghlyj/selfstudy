@@ -29,6 +29,7 @@ $`\begin{aligned}
 F_t: \mathbb{R}^n-\{0\} & \to S^{n-1} \\
 \left(x_1, \cdots, x_n\right) & \mapsto (1-t)\left(x_1, \cdots, x_n\right)+\frac{t}{\sqrt{x_1^2+\cdots+x_n^2}}\left(x_1, \cdots, x_n\right)
 \end{aligned}`$
+
 It is continuous because every coordinate component is continuous.
 *	$F_0(x) = x$ for all $`x ∈ \mathbb{R}^n-\{0\}`$
 *	$F_1(x) ∈ S^{n-1}$ for all $`x ∈ \mathbb{R}^n-\{0\}`$
