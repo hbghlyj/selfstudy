@@ -33,7 +33,7 @@ Proof
 
 Let $L=H\cap K$. Consider the map $f:K/L\to G/H,Lk\mapsto Hk$.
 
-$f$ is injective: if $f(Lk_1)=f(Lk_2)$, then $Hk_1=Hk_2$, so $k_2k_1^{-1}\in H$, and since $k_2^{-1} k_1 \in K$, $k_2^{-1} k_1 \in L$, so $k_1 L=k_2 L$.
+$f$ is injective: if $f(Lk_1)=f(Lk_2)$, then $Hk_1=Hk_2$, so $k_2k_1^{-1}\in H$, and since $k_1,k_2\in K$, $k_2^{-1} k_1 \in L$, so $Lk_1=Lk_2$.
 
 Since $[K:L]$ is finite we can write
 
