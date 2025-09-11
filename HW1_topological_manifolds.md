@@ -62,12 +62,12 @@ Let $[x],[y] \in \mathbb{RP}^2$ be two distinct points. Then $x \neq \pm y$. By 
 
 Prove that $\mathbb{RP}^2$ is homeomorphic to the closed 2-disk with opposite boundary points identified:
 
-$$\mathbb{RP}^2 \cong \overline{\mathbb{D}^2} /(\cos \theta, \sin \theta) \sim(\cos (\theta+\pi), \sin (\theta+\pi)) .$$
+$$\mathbb{RP}^2 \cong \overline{\mathbb{D}}^2 /(\cos \theta, \sin \theta) \sim(\cos (\theta+\pi), \sin (\theta+\pi)) .$$
 
 Proof.
 $$\mathbb{RP}^2$$ is defined as the quotient of $S^2$ under the equivalence relation $(x,y,z)\sim(-x,-y,-z)$.
 
-Define a map $f:\mathbb{RP}^2 \to \overline{\mathbb{D}^2}/\sim$ by
+Define a map $f:\mathbb{RP}^2 \to \overline{\mathbb{D}}^2/\sim$ by
 
 $`f([(x,y,z)]) = \begin{cases}{}[(x,y)]&z\ge 0\\{}[(-x,-y)]&z<0\end{cases}`$
 
@@ -75,11 +75,11 @@ To show that $f$ is well-defined,
 
 $`f([(-x,-y,-z)]) = f([(x,y,z)])`$
 
-To show that $f$ is continuous, note that the preimage of an open ball in $\overline{\mathbb{D}^2}/\sim$ is open in $\mathbb{RP}^2$.
+To show that $f$ is continuous, note that the preimage of an open ball in $\overline{\mathbb{D}}^2/\sim$ is open in $\mathbb{RP}^2$.
 
 To show that $f$ is a homeomorphism, we need to show that its inverse is continuous.
 
-Define $g:\overline{\mathbb{D}^2}/\sim\to\mathbb{RP}^2$
+Define $g:\overline{\mathbb{D}}^2/\sim\to\mathbb{RP}^2$
 
 $$g([(x,y)]) = [(x,y,\sqrt{1-x^2-y^2})]$$
 
