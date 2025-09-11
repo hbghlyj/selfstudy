@@ -35,7 +35,7 @@ Let $L=H\cap K$. Consider the map $f:K/L\to G/H,Lk\mapsto Hk$ for $k \in K$.
 
 $f$ is well-defined: if $Lk_1=Lk_2$, then $k_2k_1^{-1}\in L\subseteq H$, so $Hk_1=Hk_2$.
 
-$f$ is injective: if $f(Lk_1)=f(Lk_2)$, then $Hk_1=Hk_2$, so $k_2k_1^{-1}\in H$, and since $k_1,k_2\in K$, $k_2^{-1} k_1 \in L$, so $Lk_1=Lk_2$.
+$f$ is injective: if $f(Lk_1)=f(Lk_2)$, then $Hk_1=Hk_2$, so $k_2k_1^{-1}\in H$. From $k_2k_1^{-1}\in H$ and $k_1,k_2\in K$, it follows that $k_2k_1^{-1} \in H \cap K = L$. This then implies $Lk_1=Lk_2$.
 
 Since $[K:L]$ is finite we can write
 
