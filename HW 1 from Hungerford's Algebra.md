@@ -124,7 +124,7 @@ Assume $H < A_4$ with $|H| = 6$.
 
 Since $[A_4 : H] = 2$, by Exercise 5.1, $H \lhd A_4$.
 
-Since $|H|$ is even, by Exercise 1.14, $H$ contains an element of order 2, but elements of $A_4$ of order 2 are the double transpositions, so $H$ contains a double transposition e.g., (12)(34), but then $(123) (12)(34) (123)^{-1} = (13)(24)$, by normality, $(13)(24) \in H$, similarly $(23)(14) \in H$, but then $V_4 \subseteq H$, so $4 \mid 6$, a contradiction.
+Since $|H|$ is even, by Exercise 1.14, $H$ contains an element of order 2, but elements of $A_4$ of order 2 are the double transpositions, so $H$ contains a double transposition e.g., (12)(34), but then $(132) (12)(34) (132)^{-1} = (13)(24)$, by normality, $(13)(24) \in H$, similarly $(23)(14) \in H$, but then $V_4 \subseteq H$, so $4 \mid 6$, a contradiction.
 
 ## Exercise 12
 The center of the group $D_n$ is $\langle e\rangle$ if $n$ is odd and isomorphic to $Z_2$ if $n$ is even.
