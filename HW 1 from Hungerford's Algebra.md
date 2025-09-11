@@ -96,6 +96,6 @@ Proof
 
 $D_n= \langle r, s \mid r^n = s^2 = e, s r s = r^{-1}\rangle$, where $r$ is a rotation and $s$ is a reflection. The center of $D_n$ consists of elements that commute with both $r$ and $s$. Elements of $D_n$ are of the form $r^k$ or $s r^k$ for $0 \leq k < n$.
 
-A reflection cannot be in the center because $r (s r^k) = s r^{k+1}$ while $(s r^k) r = s r^{k-1}$, which are not equal. Thus, only rotations can be in the center.
+A reflection cannot be in the center because $r (s r^k) = s r^{k-1}$ while $(s r^k) r = s r^{k+1}$, which are not equal. Thus, only rotations can be in the center.
 
 All rotations commute with each other, so any $r^k$ commutes with $r$. However, to commute with $s$, we need $r^k s = s r^k$, which implies $s r^k s = r^{-k} = r^k$. This holds if and only if $r^{2k} = e$, meaning $2k \equiv 0 \mod n$. Thus, if $n$ is odd, the center is $`\{e\}`$, and if $n$ is even, the center is $`\{e, r^{n/2}\} \cong Z_2`$.
