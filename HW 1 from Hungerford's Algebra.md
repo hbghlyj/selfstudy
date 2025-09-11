@@ -31,7 +31,7 @@ If $H$ and $K$ are subgroups of finite index of a group $G$ such that $[G: H]$ a
 
 Proof
 
-Let $L=H\cap K$. Consider the map $f:K/L\to G/H,Lk\mapsto Hk$.
+Let $L=H\cap K$. Consider the map $f:K/L\to G/H,Lk\mapsto Hk$ for $k \in K$.
 
 $f$ is well-defined: if $Lk_1=Lk_2$, then $k_2k_1^{-1}\in L\subseteq H$, so $Hk_1=Hk_2$.
 
