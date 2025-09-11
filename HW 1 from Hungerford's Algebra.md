@@ -61,11 +61,15 @@ Hence there is an injection of coset sets, so the index inequality follows.
 ## Exercise 13
 If $p>q$ are primes, a group of order $p q$ has at most one subgroup of order $p$.
 
-Proof
+Proof 1
 
 Suppose $H, K$ are distinct subgroups of order $p$. Since $p$ is prime, $H \cap K$ is either $\langle e \rangle$ or $H$ (or $K$). Since $H$ and $K$ are distinct, we must have $H \cap K = \langle e \rangle$.
 
 By Exercise 12, $[H \vee K : H] \geq [K : H \cap K] = [K : \langle e \rangle] = |K| = p$. Thus, $|H \vee K| = [H \vee K : H] |H| \geq p \cdot p = p^2 > p q$, which is a contradiction since $H \vee K$ is a subgroup of $G$. Therefore, there can be at most one subgroup of order $p$ in a group of order $p q$.
+
+Proof 2
+
+By Sylow's theorems, the number of Sylow $p$-subgroups, denoted $n_p$, satisfies $n_p \equiv 1 \mod p$ and $n_p \mid q$. Since $q < p$, the only divisor of $q$ that is congruent to $1 \mod p$ is $1$. Therefore, there is exactly one Sylow $p$-subgroup in $G$, which must be normal. Hence, there is at most one subgroup of order $p$ in a group of order $p q$.
 
 # Section I.5
 ## Exercise 1
