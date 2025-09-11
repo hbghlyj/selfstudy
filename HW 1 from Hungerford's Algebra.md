@@ -122,7 +122,7 @@ Assume $H < A_4$ with $|H| = 6$. Since $|H|$ is even, by Exercise 5.11, $H$ cont
 
 The group $A_4$ has 3 elements of order 2, which are the double transpositions. By Lagrange's theorem, $V_4$ cannot be a subgroup of $H$, so $H$ cannot contain all 3 double transpositions, so $H$ is not normal in $A_4$.
 
-Since $[A_4 : H] = 2$, by Exercise 1 $H \lhd A_4$, a contradiction.
+Since $[A_4 : H] = 2$, by Exercise 1, $H \lhd A_4$, contradiction.
 
 ## Exercise 12
 The center of the group $D_n$ is $\langle e\rangle$ if $n$ is odd and isomorphic to $Z_2$ if $n$ is even.
