@@ -119,6 +119,7 @@ Therefore, $\tau \sigma \tau^{-1}$ permutes the elements $\tau(i_1), \tau(i_2), 
 The group $A_4$ has no subgroup of order 6.
 
 Proof
+
 Assume $H < A_4$ with $|H| = 6$.
 
 Since $[A_4 : H] = 2$, by Exercise 1, $H \lhd A_4$.
