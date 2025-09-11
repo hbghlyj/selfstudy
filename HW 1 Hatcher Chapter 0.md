@@ -38,9 +38,9 @@ It is continuous because every coordinate component is continuous.
 therefore the map is a deformation retraction.
 
 # Exercise 3
-a. Show that the composition of homotopy equivalences $X \to Y$ and $Y \to Z$ is a homotopy equivalence $X \to Z$. Deduce that homotopy equivalence is an equivalence relation.
-b. Show that the relation of homotopy among maps $X \to Y$ is an equivalence relation.
-c. Show that a map homotopic to a homotopy equivalence is a homotopy equivalence.
+1. Show that the composition of homotopy equivalences $X \to Y$ and $Y \to Z$ is a homotopy equivalence $X \to Z$. Deduce that homotopy equivalence is an equivalence relation.
+2. Show that the relation of homotopy among maps $X \to Y$ is an equivalence relation.
+3. Show that a map homotopic to a homotopy equivalence is a homotopy equivalence.
 
 # Exercise 4
 A deformation retraction in the weak sense of a space $X$ to a subspace $A$ is a homotopy $f_t: X \to X$ such that $f_0=\mathbb{1}, f_1(X) \subset A$, and $f_t(A) \subset A$ for all $t$. Show that if $X$ deformation retracts to $A$ in this weak sense, then the inclusion $A \hookrightarrow X$ is a homotopy equivalence.
