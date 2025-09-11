@@ -50,7 +50,9 @@ If $H$ and $K$ are subgroups of a group $G$, then $[H \vee K: H] \geq[K: H \cap 
 
 Proof
 
-Consider the map $f: K/(H \cap K) \to (H \vee K)/H,(H \cap K) k\mapsto H k$ for $k \in K$.
+Since $H\vee K\supseteq HK$, it suffices to show that $[HK: H] \geq[K: H \cap K]$.
+
+Consider the map $f: K/(H \cap K) \to HK/H,(H \cap K) k\mapsto H k$ for $k \in K$.
 
 $f$ is well-defined: if $(H \cap K) k_1 = (H \cap K) k_2$, then $k_2 k_1^{-1} \in H \cap K \subseteq H$, so $H k_1 = H k_2$.
 
@@ -117,12 +119,11 @@ Therefore, $\tau \sigma \tau^{-1}$ permutes the elements $\tau(i_1), \tau(i_2), 
 The group $A_4$ has no subgroup of order 6.
 
 Proof
+Assume $H < A_4$ with $|H| = 6$.
 
-Assume $H < A_4$ with $|H| = 6$. Since $|H|$ is even, by Exercise 1.14, $H$ contains an element of order 2.
+Since $[A_4 : H] = 2$, by Exercise 1, $H \lhd A_4$.
 
-The group $A_4$ has 3 elements of order 2, which are the double transpositions. By Lagrange's theorem, $V_4$ cannot be a subgroup of $H$, so $H$ cannot contain all 3 double transpositions, so $H$ is not normal in $A_4$.
-
-Since $[A_4 : H] = 2$, by Exercise 1, $H \lhd A_4$, contradiction.
+Since $|H|$ is even, by Exercise 1.14, $H$ contains an element of order 2, but elements of $A_4$ of order 2 are the double transpositions, so $H$ contains a double transposition, so $|H\cap V_4|=2$.
 
 ## Exercise 12
 The center of the group $D_n$ is $\langle e\rangle$ if $n$ is odd and isomorphic to $Z_2$ if $n$ is even.
