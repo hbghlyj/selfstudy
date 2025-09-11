@@ -31,13 +31,15 @@ If $H$ and $K$ are subgroups of finite index of a group $G$ such that $[G: H]$ a
 
 Proof
 
-Consider the map $f:K/H\cap K\to G/H$ defined by $f(k H\cap K)=k H$. This map is injective since if $f(k_1 H\cap K)=f(k_2 H\cap K)$, then $k_1 H=k_2 H$, so $k_2^{-1} k_1 \in H$, and since $k_2^{-1} k_1 \in K$, $k_2^{-1} k_1 \in H\cap K$, so $k_1 H\cap K=k_2 H\cap K$. Thus $[K:H\cap K] \leq [G:H]$.
+Let $L=H\cap K$. Consider the map $f:K/L\to G/H,Lk\mapsto Hk$.
 
-Since $[K:H\cap K]$ is finite we can write
+$f$ is injective: if $f(Lk_1)=f(Lk_2)$, then $Hk_1=Hk_2$, so $k_2k_1^{-1}\in H$, and since $k_2^{-1} k_1 \in K$, $k_2^{-1} k_1 \in L$, so $k_1 L=k_2 L$.
 
-$[G:H][H:H\cap K]=[G:H\cap K]=[G:K][K:H\cap K]$
+Since $[K:L]$ is finite we can write
 
-then $[G:H]\mid[G:K][K:H\cap K]$, but $[G:H]$ and $[G:K]$ are relatively prime, then $[G:H]\mid[K:H\cap K]$, but we proved $[K:H\cap K] \leq [G:H]$, we must have $[K:H\cap K] = [G:H]$. Therefore, $f$ is surjective, so for any $g \in G$, there exists $k \in K$ such that $g H = k H$, so $k^{-1} g \in H$, and thus $g = k (k^{-1} g) \in KH$. Therefore, $G = KH$. By taking inverse, we get $G=HK$.
+$[G:H][H:L]=[G:L]=[G:K][K:L]$
+
+then $[G:H]\mid[G:K][K:L]$, but $[G:H]$ and $[G:K]$ are relatively prime, then $[G:H]\mid[K:L]$, in particular $[G:H] \le [K:L]$. Therefore, $f$ is surjective. For any $g \in G$, there exists $k \in K$ such that $Hg = Hk$, so $gk^{-1} \in H$, and thus $g = (gk^{-1})k \in HK$. Therefore, $G = HK$.
 
 ## Exercise 12
 If $H$ and $K$ are subgroups of a group $G$, then $[H \vee K: H] \geq[K: H \cap K]$.
