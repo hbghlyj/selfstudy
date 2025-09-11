@@ -118,7 +118,7 @@ The group $A_4$ has no subgroup of order 6.
 
 Proof
 
-Assume $H < A_4$ with $|H| = 6$. Since $|H|$ is even, by Exercise 5.11, $H$ contains an element of order 2.
+Assume $H < A_4$ with $|H| = 6$. Since $|H|$ is even, by Exercise 1.14, $H$ contains an element of order 2.
 
 The group $A_4$ has 3 elements of order 2, which are the double transpositions. By Lagrange's theorem, $V_4$ cannot be a subgroup of $H$, so $H$ cannot contain all 3 double transpositions, so $H$ is not normal in $A_4$.
 
