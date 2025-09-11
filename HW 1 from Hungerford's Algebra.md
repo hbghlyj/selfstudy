@@ -89,7 +89,7 @@ For any $`j \in \{1, 2, \ldots, n\}`$
 * If $j$ is not in the image of $\tau$ applied to the elements of the cycle, then $\tau^{-1}(j)$ is not in $`\{i_1, i_2, \ldots, i_r\}`$, and $\sigma$ fixes it.
 * If $j = \tau(i_k)$ for some $k$, then $\tau^{-1}(j) = i_k$, and $\sigma(i_k) = i_{k+1}$ (with $i_{r+1} = i_1$). Thus,
 
-$\tau \sigma \tau^{-1}(j) = \tau(i_{k+1})$
+  $\tau \sigma \tau^{-1}(j) = \tau(i_{k+1})$
 
 Thus,
 
