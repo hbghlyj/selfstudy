@@ -76,7 +76,7 @@ Let $G$ be a finite group and $H$ a subgroup of $G$ of order $n$. If $H$ is the 
 
 Proof
 
-For any $g \in G$, by Exercise 6 $g H g^{-1}$ is a subgroup with the same order as $H$, which is $n$. Since $H$ is the only subgroup of $G$ of order $n$, we must have $g H g^{-1} = H$. Therefore, $H$ is normal in $G$.
+For any $g \in G$, by Exercise 6, $g H g^{-1}$ is a subgroup with the same order as $H$, which is $n$. Since $H$ is the only subgroup of $G$ of order $n$, we must have $g H g^{-1} = H$. Therefore, $H$ is normal in $G$.
 
 # Section I.6
 ## Exercise 3
@@ -88,6 +88,12 @@ Proof
 The group $A_4$ has no subgroup of order 6.
 
 Proof
+
+Assume $H < A_4$ with $|H| = 6$. Since $|H|$ is even, by Exercise 5.11, $H$ contains an element of order 2.
+
+The group $A_4$ has 3 elements of order 2, which are the double transpositions. By Lagrange's theorem, $V_4$ cannot be a subgroup of $H$, so $H$ cannot contain all 3 double transpositions, so $H$ is not normal in $A_4$.
+
+Since $[A_4 : H] = 2$, by Exercise 1 $H \lhd A_4$, a contradiction.
 
 ## Exercise 12
 The center of the group $D_n$ is $\langle e\rangle$ if $n$ is odd and isomorphic to $Z_2$ if $n$ is even.
