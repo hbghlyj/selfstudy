@@ -19,7 +19,7 @@ The first part, $f \circ \phi^{-1}$, is smooth by our initial assumption.
 
 The second part, $\phi \circ (\phi')^{-1}$, is a transition map between two charts from the smooth atlas of $M$. By the definition of a smooth atlas, all such transition maps are smooth.
 
-Since the composition of two smooth maps between Euclidean spaces is itself a smooth map, it follows that $f \circ (\phi')^{-1}$ is smooth.
+Since the composition of two smooth maps between Euclidean spaces is a smooth map, it follows that $f \circ (\phi')^{-1}$ is smooth.
 
 Therefore, if a function is smooth with respect to one smooth chart, it is smooth with respect to any other smooth chart.
 
