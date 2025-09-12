@@ -7,15 +7,16 @@ Solution
 
 ![](https://i.upmath.me/svgb/rdLBbsIwDADQO1_hy6RWKlU6rbtM5bS_oBxM6kFESCrHrLAo_z5lG0NcOPVm2ZGfbaU_BRJz-LJmy8iXOJD2jGK8C_UR-WDcLqRFv6WdcTE_HI2WE1NaC6MLH56PoNF9Yuhi0Gipe0mbRT8wTuvRB0Gde3XXvlTdgC5egSoHHQqMPphcAlW3LUxG9hB7ZPZTXK1SSmkDhapUCcslFE2lyrc5qNd7yaLQ-Q9rblgzD_Zgr2Zm6sFe_0dUP9gTvDNOIHuCgSwJDTB64-R3CihU3VaqbkvQhrWlnFDPbZ6S3HD3Lb4B)
 
-Define a map $F_t$ from the torus with one point deleted to the boundary of the square (two circles intersecting at a point) as follows:
+Define a map $F_t$ from the torus with one point deleted to the boundary of the square ($S^1\vee S%1$) as follows:
 
 Draw a ray from the deleted point to each point $x$, intersecting the boundary of the square at $y$.
 
 Define $F_t(x)=(1-t)x+ty$.
 
 This map is continuous because every coordinate component is continuous.
-
-If $x$ is on the boundary of the square, then $y=x$, so $F_t(x)=x$.
+* $F_0(x)=x$
+* $F_1(x)=y∈S^1\vee S^1$
+* If $x∈S^1\vee S^1$, then $y=x$, so $F_t(x)=x$
 
 # Exercise 2
 
