@@ -27,7 +27,7 @@ Solution
 Define a map
 
 $`\begin{aligned}
-F_t: \mathbb{R}^n-\{0\} & \to S^{n-1} \\
+F_t: \mathbb{R}^n-\{0\} & \to \mathbb{R}^n-\{0\} \\
 \left(x_1, \cdots, x_n\right) & \mapsto (1-t)\left(x_1, \cdots, x_n\right)+\frac{t}{\sqrt{x_1^2+\cdots+x_n^2}}\left(x_1, \cdots, x_n\right)
 \end{aligned}`$
 
