@@ -8,6 +8,20 @@ Check that the definition of a smooth function makes sense on a smooth manifold.
 
 Proof
 
+Assume $f$ is smooth according to the definition, meaning there exists a smooth chart $(U, \phi)$ around $p$ such that $f \circ \phi^{-1}: \phi(U \cap V) \to \mathbb{R}$ is smooth as a map between open subsets of Euclidean space.
+
+Now, consider any other smooth chart $(U', \phi')$ also containing $p$, belonging to the smooth structure of $M$. Our goal is to demonstrate that $f \circ (\phi')^{-1}: \phi'(U' \cap V) \to \mathbb{R}$ is also smooth.
+
+On the overlap region $\phi'(U \cap U' \cap V)$, we can express the composition $f \circ (\phi')^{-1}$ using the original chart $(U, \phi)$ and the transition map between $(U, \phi)$ and $(U', \phi')$. Specifically, we can write: $f \circ (\phi')^{-1} = (f \circ \phi^{-1}) \circ (\phi \circ (\phi')^{-1})$.
+
+The first part, $f \circ \phi^{-1}$, is smooth by our initial assumption.
+
+The second part, $\phi \circ (\phi')^{-1}$, is a transition map between two charts from the smooth atlas of $M$. By the very definition of a smooth atlas, all such transition maps are diffeomorphisms, and thus, they are smooth.
+
+Since the composition of two smooth maps between Euclidean spaces is itself a smooth map, it follows that $f \circ (\phi')^{-1}$ is smooth.
+
+Therefore, if a function is smooth with respect to one smooth chart, it is smooth with respect to any other smooth chart.
+
 # Exercise 3
 Write down (with proof) a smooth structure on the Möbius strip.
 
