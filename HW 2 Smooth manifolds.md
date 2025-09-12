@@ -10,8 +10,7 @@ Proof
 
 Assume $f$ is smooth according to the definition, meaning there exists a smooth chart $(U, \phi)$ around $p$ such that $f \circ \phi^{-1}: \phi(U \cap V) \to \mathbb{R}$ is smooth as a map between open subsets of Euclidean space.
 
-Now, consider any other smooth chart $(U', \phi')$ also containing $p$, belonging to the smooth structure of $M$. Our goal is to demonstrate that $f \circ (\phi')^{-1}: \phi'(U' \cap V) \to \mathbb{R}$ is also smooth.
-
+Now, consider any other smooth chart $(U', \phi')$ also containing $p$, belonging to the smooth structure of $M$.
 On the overlap region $\phi'(U \cap U' \cap V)$, we can express the composition $f \circ (\phi')^{-1}$ using the original chart $(U, \phi)$ and the transition map between $(U, \phi)$ and $(U', \phi')$. Specifically, we can write: $f \circ (\phi')^{-1} = (f \circ \phi^{-1}) \circ (\phi \circ (\phi')^{-1})$.
 
 The first part, $f \circ \phi^{-1}$, is smooth by our initial assumption.
