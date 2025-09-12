@@ -3,6 +3,8 @@ Show that a topological manifold is the same thing as a $C^0$ manifold.
 
 Proof
 
+A map between open subsets of Euclidean space is said to be of class $C^0$ if it is continuous.
+
 If $M$ is a topological manifold, it possesses an atlas in which each chart map $\phi_\alpha$ is a homeomorphism. Consequently, for any two overlapping charts, the transition map $\phi_\beta \circ \phi_\alpha^{-1}$ is a composition of homeomorphisms, making it a homeomorphism itself. Thus, every transition map is continuous, satisfying the condition for a $C^0$-atlas. This topological atlas can therefore be considered a $C^0$-atlas.
 
 # Exercise 2
