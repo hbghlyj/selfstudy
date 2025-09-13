@@ -49,7 +49,7 @@ $x \mapsto y=\frac{x}{|x|^2}$
 
 Proof
 
-$\frac{x}{|x|^2}=\frac{\frac{1}{1-X^{n+1}}\left(X^1, \ldots, X^n\right)}{\left|\frac{1}{1-X^{n+1}}\left(X^1, \ldots, X^n\right)\right|^2}=$
+$\frac{x}{|x|^2}=\frac{\frac{1}{1-X^{n+1}}\left(X^1, \ldots, X^n\right)}{(\frac{1}{1-X^{n+1}})^2}=(1-X^{n+1})\left(X^1, \ldots, X^n\right)=\frac{1}{1+X^{n+1}}\left(X^1, \ldots, X^n\right)=y$
 
 # Exercise 5
 Check that the smooth structure on $S^n$ induced by the stereographic charts is equivalent to the smooth structure induced by the hemisphere charts.
