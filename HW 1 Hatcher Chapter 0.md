@@ -48,7 +48,7 @@ Proof
     *	$(g f) h = g (f f') g' \simeq g \mathbb{1}_Y g' = g g' \simeq \mathbb{1}_Z$
     *	$h (g f) = f' (g' g) f \simeq f' \mathbb{1}_Y f = f' f \simeq \mathbb{1}_X$
 
-    Thus, $g f$ is a homotopy equivalence with homotopy inverse $h$. Since the composition of homotopy equivalences is a homotopy equivalence, and the identity map is a homotopy equivalence, it follows that homotopy equivalence is an equivalence relation.
+    Thus, $g f$ is a homotopy equivalence with homotopy inverse $h$. This proves transitivity. Homotopy equivalence is an equivalence relation because it is also reflexive ($H(x,t)=f(x)$ shows $f\simeq f$) and symmetric (if $f$ is a homotopy equivalence with inverse $g$, then $g$ is a homotopy equivalence with inverse $f$).
 2. Let $f, g, h\colon X \to Y$ be continuous maps. We need to show that homotopy is reflexive, symmetric, and transitive.
     * Reflexive: The identity homotopy $F(x, t) = f(x)$ shows that $f \simeq f$.
     * Symmetric: If $f \simeq g$ via a homotopy $F(x, t)$, then the homotopy $G(x, t) = F(x, 1 - t)$ shows that $g \simeq f$.
