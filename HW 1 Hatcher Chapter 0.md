@@ -63,7 +63,7 @@ Suppose $X$ is contractible, then there is a point $x_0$, and maps $`h: X \to\{x
 
 2. For any $f: Y \to X$ where $Y$ is an arbitrary space, define $G: Y \times I \to X,(y, t) \mapsto F(f(y), t)$. Hence $`G|_{Y \times\{0\}}=f`$ and $`G|_{Y \times\{1\}}=ghf`$. But $`ghf(Y)=\{g(x_0)\}`$. Thus, $f: Y \to X$ is nullhomotopic.
 
-3. Conversely, put $Y=X$, then we know that $\mathbb{1}:X \to X$ is nullhomotopic. That is, we have a constant map $`g: X \to X,g(X)=\{x_0\}`$ and a homotopy $F: X \times I \to X$ s.t. $`F|_{X \times\{0\}}=\mathbb{1}_X`$ and $`F|_{X \times\{1\}}=g`$, define $`f:\{x_0\} \to X, x_0 \mapsto x_0`$. Thus $`g f=\mathbb{1}_{\{x_0\}}`$ and $f g \overset{F}\simeq \mathbb{1}_X$.
+3. Conversely, if every map $f: Y \to X$ is nullhomotopic (for any $Y$), we can choose $Y=X$ and $f=\mathbb{1}_X: X \to X$. Then $\mathbb{1}_X$ is nullhomotopic, which by definition means $X$ is contractible. Similarly, if every map $f: X \to Y$ is nullhomotopic, we can choose $Y=X$ and $f=\mathbb{1}_X$, which again implies $X$ is contractible.
 
 # Exercise 11
 Show that $f: X \to Y$ is a homotopy equivalence if there exist maps $g, h: Y \to X$ such that $f g \simeq \mathbb{1}$ and $h f \simeq \mathbb{1}$. More generally, show that $f$ is a homotopy equivalence if $f g$ and $h f$ are homotopy equivalences.
