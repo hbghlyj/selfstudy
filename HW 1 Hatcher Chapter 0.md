@@ -55,7 +55,7 @@ Show that a space $X$ is contractible iff every map $f: X \to Y$, for arbitrary 
 Solution
 
 Suppose $X$ is contractible, then there is a point $x_0$, and maps $`h: X \to\{x_0\}, g:\{x_0\} \to X`$ s.t. $`g \circ h \simeq \mathrm{id}_X`$ and $`h \circ g \simeq \mathrm{id}_{\{x_0\}}`$. Denote the homotopy as $F: X \times I \to X$ where $`F|_{X \times\{0\}}=\mathrm{id}`$ and $`F|_{X \times\{1\}}=g \circ h`$.
-1. For any $f: X \to Y$ where $Y$ is an arbitrary space, let $`y_0=f(g(x_0))`$, and let $G:=f \circ F$. Thus $G: X \times I \to Y$ is continuous since it is the composition of two continuous maps. $`G|_{X \times\{0\}}=f \circ \mathrm{id}=f`$ and $`G|_{X \times\{1\}}=f \circ g \circ h`$. But $f \circ g \circ h(X)=y_0$. Therefore $f: X \to Y$ is nullhomotopic.
+1. For any $f: X \to Y$ where $Y$ is an arbitrary space, let $`y_0=f(g(x_0))`$, and let $G:=f \circ F$. Thus $G: X \times I \to Y$ is continuous since it is the composition of two continuous maps $`G|_{X \times\{0\}}=f \circ \mathrm{id}=f`$ and $`G|_{X \times\{1\}}=f \circ g \circ h`$. But $f \circ g \circ h(X)=y_0$. Therefore $f: X \to Y$ is nullhomotopic.
 
     Conversely, put $Y=X$, then we know that $\text{id}:X \to X$ is nullhomotopic. That is, we have a constant map $g: X \to X$ and a homotopy $F: X \times I \to X$ s.t. $`F|_{X \times\{0\}}=\text{id}`$ and $`F|_{X \times\{1\}}=g`$. $g$ being a constant map means $`g(X)=\{x_0\}`$ for some $x_0 \in X$, so we say $g$ is a map $`X \to\{x_0\}`$ and define $`f:\{x_0\} \to X, x_0 \mapsto x_0`$. Thus $`g \circ f=\text{id}_{\{x_0\}}`$ and $f \circ g=g$. The existence of $F$ implies $f \circ g \simeq \mathrm{id}$.
 
