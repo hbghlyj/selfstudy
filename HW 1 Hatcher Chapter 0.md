@@ -28,12 +28,12 @@ Define a map
 
 $`\begin{aligned}
 F_t: \mathbb{R}^n-\{0\} & \to \mathbb{R}^n-\{0\} \\
-\left(x_1, \cdots, x_n\right) & \mapsto (1-t)\left(x_1, \cdots, x_n\right)+\frac{t}{\sqrt{x_1^2+\cdots+x_n^2}}\left(x_1, \cdots, x_n\right)
+\left(x_1, \dots, x_n\right) & \mapsto (1-t)\left(x_1, \dots, x_n\right)+\frac{t}{\sqrt{x_1^2+\dots+x_n^2}}\left(x_1, \dots, x_n\right)
 \end{aligned}`$
 
 It is continuous because every coordinate component is continuous.
 *	$F_0(x) = x$ for all $`x ∈ \mathbb{R}^n-\{0\}`$
-*	$F_1(x) ∈ S^{n-1}$ for all $`x ∈ \mathbb{R}^n-\{0\}`$
+*	$F_1(x) = \frac{1}{\sqrt{x_1^2+\dots+x_n^2}}(x_1, \dots, x_n) ∈ S^{n-1}$ for all $`x ∈ \mathbb{R}^n-\{0\}`$
 *	$F_t(a) = a$ for all $a ∈ S^{n-1}$ and $t ∈ [0, 1]$
 
 therefore the map is a deformation retraction.
@@ -45,7 +45,11 @@ therefore the map is a deformation retraction.
 
 # Exercise 4
 A deformation retraction in the weak sense of a space $X$ to a subspace $A$ is a homotopy $f_t: X \to X$ such that $f_0=\mathbb{1}, f_1(X) \subset A$, and $f_t(A) \subset A$ for all $t$. Show that if $X$ deformation retracts to $A$ in this weak sense, then the inclusion $A \hookrightarrow X$ is a homotopy equivalence.
- 
+
+Proof
+
+Let $f_t: X \to X$ be the homotopy given by the deformation retraction. Then $f_0 = \mathbb{1}_X$ and $f_1(X) \subset A$. For any $a \in A$, we have $f_t(a) \in A$ for all $t$, so the inclusion $A \hookrightarrow X$ is a homotopy equivalence.
+
 # Exercise 9
 Show that a retract of a contractible space is contractible.
 
