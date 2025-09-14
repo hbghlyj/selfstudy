@@ -48,17 +48,18 @@ Proof
 *	$(g f) h = g (f f') g' \simeq g \mathbb{1}_Y g' = g g' \simeq \mathbb{1}_Z$
 *	$h (g f) = f' (g' g) f \simeq f' \mathbb{1}_Y f = f' f \simeq \mathbb{1}_X$
 
-Thus, $g f$ is a homotopy equivalence with homotopy inverse $h$. Since the composition of homotopy equivalences is a homotopy equivalence, and the identity map is a homotopy equivalence, it follows that homotopy equivalence is an equivalence relation.
+    Thus, $g f$ is a homotopy equivalence with homotopy inverse $h$. Since the composition of homotopy equivalences is a homotopy equivalence, and the identity map is a homotopy equivalence, it follows that homotopy equivalence is an equivalence relation.
 2. Let $f, g, h\colon X \to Y$ be continuous maps. We need to show that homotopy is reflexive, symmetric, and transitive.
 * Reflexive: The identity homotopy $F(x, t) = f(x)$ shows that $f \simeq f$.
 * Symmetric: If $f \simeq g$ via a homotopy $F(x, t)$, then the homotopy $G(x, t) = F(x, 1 - t)$ shows that $g \simeq f$.
 * Transitive: If $f \simeq g$ via a homotopy $F(x, t)$ and $g \simeq h$ via a homotopy $G(x, t)$, the homotopy $H(x, t) = \begin{cases} F(x, 2t) & \text{if } 0 \leq t \leq 0.5 \\ G(x, 2t - 1) & \text{if } 0.5 < t \leq 1 \end{cases}$ shows that $f \simeq h$.
-Thus, homotopy is an equivalence relation.
+
+    Thus, homotopy is an equivalence relation.
 3. Let $f\colon X \to Y$ be a homotopy equivalence with homotopy inverse $g\colon Y \to X$, and let $h\colon X \to Y$ be a map homotopic to $f$ via a homotopy $F(x, t)$. We need to show that $h$ is a homotopy equivalence. Define the map $k = g\colon Y \to X$.
 *    $h k = h g \simeq f g \simeq \mathbb{1}_Y$
 *    $k h = g h \simeq g f \simeq \mathbb{1}_X$
 
-Thus, $h$ is a homotopy equivalence with homotopy inverse $k$.
+    Thus, $h$ is a homotopy equivalence with homotopy inverse $k$.
 
 # Exercise 4
 A deformation retraction in the weak sense of a space $X$ to a subspace $A$ is a homotopy $f_t\colon X \to X$ such that $f_0=\mathbb{1}, f_1(X) \subset A$, and $f_t(A) \subset A$ for all $t$. Show that if $X$ deformation retracts to $A$ in this weak sense, then the inclusion $A \hookrightarrow X$ is a homotopy equivalence.
