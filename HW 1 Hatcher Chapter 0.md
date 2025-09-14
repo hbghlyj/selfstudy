@@ -28,12 +28,12 @@ Define a map
 
 $`\begin{aligned}
 F_t: \mathbb{R}^n-\{0\} & \to \mathbb{R}^n-\{0\} \\
-\left(x_1, \cdots, x_n\right) & \mapsto (1-t)\left(x_1, \cdots, x_n\right)+\frac{t}{\sqrt{x_1^2+\cdots+x_n^2}}\left(x_1, \cdots, x_n\right)
+\left(x_1, \dots, x_n\right) & \mapsto (1-t)\left(x_1, \dots, x_n\right)+\frac{t}{\sqrt{x_1^2+\dots+x_n^2}}\left(x_1, \dots, x_n\right)
 \end{aligned}`$
 
 It is continuous because every coordinate component is continuous.
 *	$F_0(x) = x$ for all $`x ∈ \mathbb{R}^n-\{0\}`$
-*	$F_1(x) ∈ S^{n-1}$ for all $`x ∈ \mathbb{R}^n-\{0\}`$
+*	$F_1(x) = \frac{1}{\sqrt{x_1^2+\dots+x_n^2}}(x_1, \dots, x_n) ∈ S^{n-1}$ for all $`x ∈ \mathbb{R}^n-\{0\}`$
 *	$F_t(a) = a$ for all $a ∈ S^{n-1}$ and $t ∈ [0, 1]$
 
 therefore the map is a deformation retraction.
@@ -45,13 +45,25 @@ therefore the map is a deformation retraction.
 
 # Exercise 4
 A deformation retraction in the weak sense of a space $X$ to a subspace $A$ is a homotopy $f_t: X \to X$ such that $f_0=\mathbb{1}, f_1(X) \subset A$, and $f_t(A) \subset A$ for all $t$. Show that if $X$ deformation retracts to $A$ in this weak sense, then the inclusion $A \hookrightarrow X$ is a homotopy equivalence.
- 
+
+Proof
+
+To show the inclusion $i: A \hookrightarrow X$ is a homotopy equivalence, we need to find a map $g: X \to A$ such that $g \circ i \simeq \mathbb{1}_A$ and $i \circ g \simeq \mathbb{1}_X$.
+
+Let $f_t: X \to X$ be the weak deformation retraction. We define $g: X \to A$ by $g(x) = f_1(x)$. This map is well-defined since $f_1(X) \subset A$.
+
+1.  Consider the composition $i \circ g: X \to X$. We have $(i \circ g)(x) = i(f_1(x)) = f_1(x)$. So, $i \circ g = f_1$. The map $f_t$ is a homotopy from $f_0 = \mathbb{1}_X$ to $f_1$. Thus, $i \circ g \simeq \mathbb{1}_X$.
+
+2.  Consider the composition $g \circ i: A \to A$. We have $(g \circ i)(a) = g(i(a)) = g(a) = f_1(a)$. So $g \circ i$ is the restriction of $f_1$ to $A$. Let's denote this by $f_1|_A$. The condition $f_t(A) \subset A$ for all $t$ means that the restriction of the homotopy $f_t$ to $A$, let's call it $h_t = f_t|_A: A \to A$, is a homotopy within $A$. This homotopy $h_t$ goes from $h_0 = f_0|_A = \mathbb{1}_A$ to $h_1 = f_1|_A = g \circ i$. Thus, $g \circ i \simeq \mathbb{1}_A$.
+
+Since we have found a homotopy inverse $g$ for the inclusion map $i$, $i$ is a homotopy equivalence.
+
 # Exercise 9
 Show that a retract of a contractible space is contractible.
 
 Proof
 
-Let $X$ be a contractible space, so its identity map $\mathbb{1}_X$ is homotopic to a constant map $c_{x_0}$ via a homotopy $F: X \times I \to X$. Let $A$ be a retract of $X$ with retraction $r: X \to A$. We can define a homotopy on $A$ by $F_A(a, t) = r(F(a, t))$. This map is continuous and provides a homotopy from $F_A(a, 0) = r(F(a, 0)) = r(a) = \mathbb{1}_A(a)$ to the constant map $F_A(a, 1) = r(F(a, 1)) = r(x_0)$. Thus, $A$ is contractible.
+Let $X$ be a contractible space, so its identity map $`\mathbb{1}_X`$ is homotopic to a constant map $c_{x_0}$ via a homotopy $F: X \times I \to X$. Let $A$ be a retract of $X$ with retraction $r: X \to A$. We can define a homotopy on $A$ by $F_A(a, t) = r(F(a, t))$. This map is continuous and provides a homotopy from $F_A(a, 0) = r(F(a, 0)) = r(a) = \mathbb{1}_A(a)$ to the constant map $F_A(a, 1) = r(F(a, 1)) = r(x_0)$. Thus, $A$ is contractible.
 
 # Exercise 10
 Show that a space $X$ is contractible iff every map $f: X \to Y$, for arbitrary $Y$, is nullhomotopic. Similarly, show $X$ is contractible iff every map $f: Y \to X$ is nullhomotopic.
