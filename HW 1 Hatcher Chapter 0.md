@@ -49,22 +49,26 @@ A deformation retraction in the weak sense of a space $X$ to a subspace $A$ is a
 # Exercise 9
 Show that a retract of a contractible space is contractible.
 
+Proof
+
+Let $X$ be a contractible space, then there exists a point $x_0 \in X$ and maps $`f: X \to\{x_0\}, g:\{x_0\} \to X`$ such that $g f \simeq \mathbb{1}_X$ and $`f g \simeq \mathbb{1}_{\{x_0\}}`$. Let $A$ be a retract of $X$, then there exists a retraction map $r: X \to A$ such that $r|_A=\mathbb{1}_A$. Define maps $`f': A \to\{x_0\}, f'(a)=x_0`$ and $`g':\{x_0\} \to A, g'(x_0)=r(g(x_0))`$. Thus we have $g' f'(a)=r(g(x_0))$ for all $a \in A$, and $f' g'(x_0)=x_0$. Then $g' f' \simeq \mathbb{1}_A$ since $F': A \times I \to A, (a, t) \mapsto r(F(a, t))$ is a homotopy. Also, $`f' g'=\mathbb{1}_{\{x_0\}}`$. Therefore $A$ is contractible.
+
 # Exercise 10
 Show that a space $X$ is contractible iff every map $f: X \to Y$, for arbitrary $Y$, is nullhomotopic. Similarly, show $X$ is contractible iff every map $f: Y \to X$ is nullhomotopic.
 
-Solution
+Proof
 
-Suppose $X$ is contractible, then there is a point $x_0$, and maps $`h: X \to\{x_0\}, g:\{x_0\} \to X`$ s.t. $`g \circ h \simeq \mathrm{id}_X`$ and $`h \circ g \simeq \mathrm{id}_{\{x_0\}}`$. Denote the homotopy as $F: X \times I \to X$ where $`F|_{X \times\{0\}}=\mathrm{id}_X`$ and $`F|_{X \times\{1\}}=g \circ h`$.
-1. For any $f: X \to Y$ where $Y$ is an arbitrary space, let $`y_0=f(g(x_0))`$, and let $G:=f \circ F$. Thus $G: X \times I \to Y$ is continuous since it is the composition of two continuous maps $`G|_{X \times\{0\}}=f \circ \mathrm{id}=f`$ and $`G|_{X \times\{1\}}=f \circ g \circ h`$. But $`f \circ g \circ h(X)=\{y_0\}`$. Therefore $f: X \to Y$ is nullhomotopic.
+Suppose $X$ is contractible, then there is a point $x_0$, and maps $`h: X \to\{x_0\}, g:\{x_0\} \to X`$ s.t. $`g h \simeq \mathbb{1}_X`$ and $`h g \simeq \mathbb{1}_{\{x_0\}}`$. Denote the homotopy as $F: X \times I \to X$ where $`F|_{X \times\{0\}}=\mathbb{1}_X`$ and $`F|_{X \times\{1\}}=g h`$.
+1. For any $f: X \to Y$ where $Y$ is an arbitrary space, let $`y_0=f(g(x_0))`$, and let $G:=f F$. Thus $G: X \times I \to Y$ is continuous since it is the composition of two continuous maps $`G|_{X \times\{0\}}=f \mathbb{1}=f`$ and $`G|_{X \times\{1\}}=f g h`$. But $`f g h(X)=\{y_0\}`$. Therefore $f: X \to Y$ is nullhomotopic.
 
-2. For any $f: Y \to X$ where $Y$ is an arbitrary space, define $G: Y \times I \to X,(y, t) \mapsto F(f(y), t)$. Hence $`G|_{Y \times\{0\}}=f`$ and $`G|_{Y \times\{1\}}=g\circ h\circ f`$. But $`g\circ h\circ f(Y)=\{g(x_0)\}`$. Thus, $f: Y \to X$ is nullhomotopic.
+2. For any $f: Y \to X$ where $Y$ is an arbitrary space, define $G: Y \times I \to X,(y, t) \mapsto F(f(y), t)$. Hence $`G|_{Y \times\{0\}}=f`$ and $`G|_{Y \times\{1\}}=ghf`$. But $`ghf(Y)=\{g(x_0)\}`$. Thus, $f: Y \to X$ is nullhomotopic.
 
-3. Conversely, put $Y=X$, then we know that $\text{id}:X \to X$ is nullhomotopic. That is, we have a constant map $`g: X \to X,g(X)=\{x_0\}`$ and a homotopy $F: X \times I \to X$ s.t. $`F|_{X \times\{0\}}=\text{id}_X`$ and $`F|_{X \times\{1\}}=g`$, define $`f:\{x_0\} \to X, x_0 \mapsto x_0`$. Thus $`g \circ f=\text{id}_{\{x_0\}}`$ and $f \circ g \overset{F}\simeq \mathrm{id}_X$.
+3. Conversely, put $Y=X$, then we know that $\mathb{1}:X \to X$ is nullhomotopic. That is, we have a constant map $`g: X \to X,g(X)=\{x_0\}`$ and a homotopy $F: X \times I \to X$ s.t. $`F|_{X \times\{0\}}=\mathb{1}_X`$ and $`F|_{X \times\{1\}}=g`$, define $`f:\{x_0\} \to X, x_0 \mapsto x_0`$. Thus $`g f=\mathb{1}_{\{x_0\}}`$ and $f g \overset{F}\simeq \mathbb{1}_X$.
 
 # Exercise 11
 Show that $f: X \to Y$ is a homotopy equivalence if there exist maps $g, h: Y \to X$ such that $f g \simeq \mathbb{1}$ and $h f \simeq \mathbb{1}$. More generally, show that $f$ is a homotopy equivalence if $f g$ and $h f$ are homotopy equivalences.
 
-Solution
+Proof
 
 1. To show that $g \simeq h$, we have $g = \mathbb{1}_X g \simeq (hf)g = h(fg) \simeq h\mathbb{1}_Y = h$. Thus $g \simeq h$. This implies $gf \simeq hf$. Since $hf \simeq \mathbb{1}_X$, we have $gf \simeq \mathbb{1}_X$. With the given $fg \simeq \mathbb{1}_Y$, this shows $f$ is a homotopy equivalence.
 
