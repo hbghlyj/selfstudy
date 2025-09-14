@@ -54,7 +54,7 @@ Let $f_t\colon X \to X$ be the weak deformation retraction. We define $g\colon X
 
 1.  Consider the composition $i g\colon X \to X$. We have $(i g)(x) = i(f_1(x)) = f_1(x)$. So, $i g = f_1$. The map $f_t$ is a homotopy from $f_0 = \mathbb{1}_X$ to $f_1$. Thus, $i g \simeq \mathbb{1}_X$.
 
-2.  Consider the composition $g i\colon A \to A$. We have $(g i)(a) = g(i(a)) = g(a) = f_1(a)$. So $g i$ is the restriction of $f_1$ to $A$. Let's denote this by $f_1|_A$. The condition $f_t(A) \subset A$ for all $t$ means that the restriction of the homotopy $f_t$ to $A$, let's call it $h_t = f_t|_A\colon A \to A$, is a homotopy within $A$. This homotopy $h_t$ goes from $h_0 = f_0|_A = \mathbb{1}_A$ to $h_1 = f_1|_A = g i$. Thus, $g i \simeq \mathbb{1}_A$.
+2.  Consider the composition $g i\colon A \to A$. We have $(g i)(a) = g(i(a)) = g(a) = f_1(a)$. So $g i$ is the restriction of $f_1$ to $A$. Denote this by $f_1|_A$. The condition $f_t(A) \subset A$ for all $t$ means that the restriction of the homotopy $f_t$ to $A$, call it $h_t = f_t|_A\colon A \to A$, is a homotopy within $A$. This homotopy $h_t$ goes from $h_0 = f_0|_A = \mathbb{1}_A$ to $h_1 = f_1|_A = g i$. Thus, $g i \simeq \mathbb{1}_A$.
 
 Since we have found a homotopy inverse $g$ for the inclusion map $i$, $i$ is a homotopy equivalence.
 
