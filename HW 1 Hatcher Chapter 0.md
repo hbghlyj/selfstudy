@@ -51,7 +51,7 @@ Show that a retract of a contractible space is contractible.
 
 Proof
 
-Let $X$ be a contractible space, so its identity map $\mathbb{1}_X$ is homotopic to a constant map $c_{x_0}$ via a homotopy $F: X \times I \to X$. Let $A$ be a retract of $X$ with retraction $r: X \to A$. We can define a homotopy on $A$ by $F_A(a, t) = r(F(a, t))$. This map is continuous and provides a homotopy from $F_A(a, 0) = r(F(a, 0)) = r(a) = \mathbb{1}_A(a)$ to the constant map $F_A(a, 1) = r(F(a, 1)) = r(x_0)$. Thus, $A$ is contractible.
+Let $X$ be a contractible space, so its identity map $`\mathbb{1}_X`$ is homotopic to a constant map $c_{x_0}$ via a homotopy $F: X \times I \to X$. Let $A$ be a retract of $X$ with retraction $r: X \to A$. We can define a homotopy on $A$ by $F_A(a, t) = r(F(a, t))$. This map is continuous and provides a homotopy from $F_A(a, 0) = r(F(a, 0)) = r(a) = \mathbb{1}_A(a)$ to the constant map $F_A(a, 1) = r(F(a, 1)) = r(x_0)$. Thus, $A$ is contractible.
 
 # Exercise 10
 Show that a space $X$ is contractible iff every map $f: X \to Y$, for arbitrary $Y$, is nullhomotopic. Similarly, show $X$ is contractible iff every map $f: Y \to X$ is nullhomotopic.
