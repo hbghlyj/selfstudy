@@ -47,6 +47,7 @@ Proof
 1. Let $f\colon X \to Y$ and $g\colon Y \to Z$ be homotopy equivalences. Then there exist maps $f'\colon Y \to X$ and $g'\colon Z \to Y$ such that $f f' \simeq \mathbb{1}_Y$, $f' f \simeq \mathbb{1}_X$, $g g' \simeq \mathbb{1}_Z$, and $g' g \simeq \mathbb{1}_Y$. We need to show that the composition $g f\colon X \to Z$ is a homotopy equivalence. Define the map $h = f' g'\colon Z \to X$.
 *	$(g f) h = g (f f') g' \simeq g \mathbb{1}_Y g' = g g' \simeq \mathbb{1}_Z$
 *	$h (g f) = f' (g' g) f \simeq f' \mathbb{1}_Y f = f' f \simeq \mathbb{1}_X$
+
 Thus, $g f$ is a homotopy equivalence with homotopy inverse $h$. Since the composition of homotopy equivalences is a homotopy equivalence, and the identity map is a homotopy equivalence, it follows that homotopy equivalence is an equivalence relation.
 2. Let $f, g, h\colon X \to Y$ be continuous maps. We need to show that homotopy is reflexive, symmetric, and transitive.
 * Reflexive: The identity homotopy $F(x, t) = f(x)$ shows that $f \simeq f$.
@@ -56,6 +57,7 @@ Thus, homotopy is an equivalence relation.
 3. Let $f\colon X \to Y$ be a homotopy equivalence with homotopy inverse $g\colon Y \to X$, and let $h\colon X \to Y$ be a map homotopic to $f$ via a homotopy $F(x, t)$. We need to show that $h$ is a homotopy equivalence. Define the map $k = g\colon Y \to X$.
 *    $h k = h g \simeq f g \simeq \mathbb{1}_Y$
 *    $k h = g h \simeq g f \simeq \mathbb{1}_X$
+
 Thus, $h$ is a homotopy equivalence with homotopy inverse $k$.
 
 # Exercise 4
