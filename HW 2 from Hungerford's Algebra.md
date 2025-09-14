@@ -30,7 +30,7 @@ If $f: A \to B$ is an equivalence in a category $\mathcal{C}$ and $g: B \to A$ i
 Proof
 
 ## Exercise 3
-Let $G$ be an (additive) abelian group with subgroups $H$ and $K$. Show that $G \cong H \oplus K$ if and only if there are homomorphisms $H \stackrel{\pi_1}{\underset{\iota_1}{\leftrightarrows}} G \underset{\iota_2}{\stackrel{\pi_2}{\rightleftarrows}} K$ such that $\pi_1 \iota_1=1_H, \pi_2 \iota_2=1_K, \pi_1 \iota_2=0$ and $\pi_2 \iota_1=0$, where 0 is the map sending every element onto the zero (identity) element, and $\iota_1 \pi_1(x)+\iota_2 \pi_2(x)=x$ for all $x \in G$.
+Let $G$ be an (additive) abelian group with subgroups $H$ and $K$. Show that $G \cong H \oplus K$ if and only if there are homomorphisms $H \overunderset{\pi_1}{\iota_1}{\leftrightarrows} G \overunderset{\pi_2}{\iota_2}{\rightleftarrows} K$ such that $\pi_1 \iota_1=1_H, \pi_2 \iota_2=1_K, \pi_1 \iota_2=0$ and $\pi_2 \iota_1=0$, where 0 is the map sending every element onto the zero (identity) element, and $\iota_1 \pi_1(x)+\iota_2 \pi_2(x)=x$ for all $x \in G$.
 
 Proof
 
