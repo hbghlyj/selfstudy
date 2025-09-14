@@ -65,3 +65,7 @@ Suppose $X$ is contractible, then there is a point $x_0$, and maps $`h: X \to\{x
 Show that $f: X \to Y$ is a homotopy equivalence if there exist maps $g, h: Y \to X$ such that $f g \simeq \mathbb{1}$ and $h f \simeq \mathbb{1}$. More generally, show that $f$ is a homotopy equivalence if $f g$ and $h f$ are homotopy equivalences.
 
 Solution
+
+1. To show that $g≃h$, we have $g≃g \mathbb{1}_Y ≃ g (f h) = (g f) h ≃ \mathbb{1}_X h = h$. Thus $gf≃hf≃\mathbb{1}_X$. Therefore, $f$ is a homotopy equivalence.
+
+2. More generally, if $fg$ and $hf$ are homotopy equivalences, then there exist maps $`p: X \to Y, q: X \to Y`$ such that $`p(fg) \simeq \mathbb{1}_Y, (fg)p \simeq \mathbb{1}_X`$ and $`q(hf) \simeq \mathbb{1}_X, (hf)q \simeq \mathbb{1}_Y`$. Apply part 1 to $f(gp)$ and $(qh)f$, we know that $f$ is a homotopy equivalence.
