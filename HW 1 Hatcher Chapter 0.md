@@ -49,22 +49,26 @@ A deformation retraction in the weak sense of a space $X$ to a subspace $A$ is a
 # Exercise 9
 Show that a retract of a contractible space is contractible.
 
+Proof
+
+Let $X$ be a contractible space, so its identity map $\mathbb{1}_X$ is homotopic to a constant map $c_{x_0}$ via a homotopy $F: X \times I \to X$. Let $A$ be a retract of $X$ with retraction $r: X \to A$. We can define a homotopy on $A$ by $F_A(a, t) = r(F(a, t))$. This map is continuous and provides a homotopy from $F_A(a, 0) = r(F(a, 0)) = r(a) = \mathbb{1}_A(a)$ to the constant map $F_A(a, 1) = r(F(a, 1)) = r(x_0)$. Thus, $A$ is contractible.
+
 # Exercise 10
 Show that a space $X$ is contractible iff every map $f: X \to Y$, for arbitrary $Y$, is nullhomotopic. Similarly, show $X$ is contractible iff every map $f: Y \to X$ is nullhomotopic.
 
-Solution
+Proof
 
-Suppose $X$ is contractible, then there is a point $x_0$, and maps $`h: X \to\{x_0\}, g:\{x_0\} \to X`$ s.t. $`g \circ h \simeq \mathrm{id}_X`$ and $`h \circ g \simeq \mathrm{id}_{\{x_0\}}`$. Denote the homotopy as $F: X \times I \to X$ where $`F|_{X \times\{0\}}=\mathrm{id}_X`$ and $`F|_{X \times\{1\}}=g \circ h`$.
-1. For any $f: X \to Y$ where $Y$ is an arbitrary space, let $`y_0=f(g(x_0))`$, and let $G:=f \circ F$. Thus $G: X \times I \to Y$ is continuous since it is the composition of two continuous maps $`G|_{X \times\{0\}}=f \circ \mathrm{id}=f`$ and $`G|_{X \times\{1\}}=f \circ g \circ h`$. But $`f \circ g \circ h(X)=\{y_0\}`$. Therefore $f: X \to Y$ is nullhomotopic.
+Suppose $X$ is contractible, then there is a point $x_0$, and maps $`h: X \to\{x_0\}, g:\{x_0\} \to X`$ s.t. $`g h \simeq \mathbb{1}_X`$ and $`h g \simeq \mathbb{1}_{\{x_0\}}`$. Denote the homotopy as $F: X \times I \to X$ where $`F|_{X \times\{0\}}=\mathbb{1}_X`$ and $`F|_{X \times\{1\}}=g h`$.
+1. For any $f: X \to Y$ where $Y$ is an arbitrary space, let $`y_0=f(g(x_0))`$, and let $G:=f F$. Thus $G: X \times I \to Y$ is continuous since it is the composition of two continuous maps $`G|_{X \times\{0\}}=f \mathbb{1}=f`$ and $`G|_{X \times\{1\}}=f g h`$. But $`f g h(X)=\{y_0\}`$. Therefore $f: X \to Y$ is nullhomotopic.
 
-2. For any $f: Y \to X$ where $Y$ is an arbitrary space, define $G: Y \times I \to X,(y, t) \mapsto F(f(y), t)$. Hence $`G|_{Y \times\{0\}}=f`$ and $`G|_{Y \times\{1\}}=g\circ h\circ f`$. But $`g\circ h\circ f(Y)=\{g(x_0)\}`$. Thus, $f: Y \to X$ is nullhomotopic.
+2. For any $f: Y \to X$ where $Y$ is an arbitrary space, define $G: Y \times I \to X,(y, t) \mapsto F(f(y), t)$. Hence $`G|_{Y \times\{0\}}=f`$ and $`G|_{Y \times\{1\}}=ghf`$. But $`ghf(Y)=\{g(x_0)\}`$. Thus, $f: Y \to X$ is nullhomotopic.
 
-3. Conversely, put $Y=X$, then we know that $\text{id}:X \to X$ is nullhomotopic. That is, we have a constant map $`g: X \to X,g(X)=\{x_0\}`$ and a homotopy $F: X \times I \to X$ s.t. $`F|_{X \times\{0\}}=\text{id}_X`$ and $`F|_{X \times\{1\}}=g`$, define $`f:\{x_0\} \to X, x_0 \mapsto x_0`$. Thus $`g \circ f=\text{id}_{\{x_0\}}`$ and $f \circ g \overset{F}\simeq \mathrm{id}_X$.
+3. Conversely, if every map $f: Y \to X$ is nullhomotopic (for any $Y$), we can choose $Y=X$ and $f=\mathbb{1}_X: X \to X$. Then $\mathbb{1}_X$ is nullhomotopic, which by definition means $X$ is contractible. Similarly, if every map $f: X \to Y$ is nullhomotopic, we can choose $Y=X$ and $f=\mathbb{1}_X$, which again implies $X$ is contractible.
 
 # Exercise 11
 Show that $f: X \to Y$ is a homotopy equivalence if there exist maps $g, h: Y \to X$ such that $f g \simeq \mathbb{1}$ and $h f \simeq \mathbb{1}$. More generally, show that $f$ is a homotopy equivalence if $f g$ and $h f$ are homotopy equivalences.
 
-Solution
+Proof
 
 1. To show that $g \simeq h$, we have $g = \mathbb{1}_X g \simeq (hf)g = h(fg) \simeq h\mathbb{1}_Y = h$. Thus $g \simeq h$. This implies $gf \simeq hf$. Since $hf \simeq \mathbb{1}_X$, we have $gf \simeq \mathbb{1}_X$. With the given $fg \simeq \mathbb{1}_Y$, this shows $f$ is a homotopy equivalence.
 
