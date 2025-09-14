@@ -68,4 +68,4 @@ Solution
 
 1. To show that $g \simeq h$, we have $g = \mathbb{1}_X g \simeq (hf)g = h(fg) \simeq h\mathbb{1}_Y = h$. Thus $g \simeq h$. This implies $gf \simeq hf$. Since $hf \simeq \mathbb{1}_X$, we have $gf \simeq \mathbb{1}_X$. With the given $fg \simeq \mathbb{1}_Y$, this shows $f$ is a homotopy equivalence.
 
-2. More generally, if $fg$ and $hf$ are homotopy equivalences, then there exist maps $`p: X \to Y, q: X \to Y`$ such that $`p(fg) \simeq \mathbb{1}_Y, (fg)p \simeq \mathbb{1}_X`$ and $`q(hf) \simeq \mathbb{1}_X, (hf)q \simeq \mathbb{1}_Y`$. Apply part 1 to $f(gp)$ and $(qh)f$, we know that $f$ is a homotopy equivalence.
+2. More generally, if $fg$ and $hf$ are homotopy equivalences, let $k: Y \to Y$ be a homotopy inverse for $fg$ and $l: X \to X$ be a homotopy inverse for $hf$. Define new maps $g' = gk: Y \to X$ and $h' = lh: Y \to X$. Then we have $fg' = f(gk) = (fg)k \simeq \mathbb{1}_Y$ and $h'f = (lh)f = l(hf) \simeq \mathbb{1}_X$. By part 1, using $g'$ and $h'$, it follows that $f$ is a homotopy equivalence.
