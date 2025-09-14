@@ -52,7 +52,7 @@ Proof
 2. Let $f, g, h\colon X \to Y$ be continuous maps. We need to show that homotopy is reflexive, symmetric, and transitive.
     * Reflexive: The identity homotopy $F(x, t) = f(x)$ shows that $f \simeq f$.
     * Symmetric: If $f \simeq g$ via a homotopy $F(x, t)$, then the homotopy $G(x, t) = F(x, 1 - t)$ shows that $g \simeq f$.
-    * Transitive: If $f \simeq g$ via a homotopy $F(x, t)$ and $g \simeq h$ via a homotopy $G(x, t)$, the homotopy $H(x, t) = \begin{cases} F(x, 2t) & \text{if } 0 \leq t \leq 0.5 \\ G(x, 2t - 1) & \text{if } 0.5 < t \leq 1 \end{cases}$ shows that $f \simeq h$.
+    * Transitive: If $f \simeq g$ via a homotopy $F(x, t)$ and $g \simeq h$ via a homotopy $G(x, t)$, the homotopy $`H(x, t) = \begin{cases} F(x, 2t) & \text{if } 0 \leq t \leq 0.5 \\ G(x, 2t - 1) & \text{if } 0.5 < t \leq 1 \end{cases}`$ shows that $f \simeq h$.
 
     Thus, homotopy is an equivalence relation.
 3. Let $f\colon X \to Y$ be a homotopy equivalence with homotopy inverse $g\colon Y \to X$, and let $h\colon X \to Y$ be a map homotopic to $f$ via a homotopy $F(x, t)$. We need to show that $h$ is a homotopy equivalence. Define the map $k = g\colon Y \to X$.
