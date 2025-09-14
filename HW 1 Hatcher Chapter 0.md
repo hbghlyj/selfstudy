@@ -48,13 +48,13 @@ A deformation retraction in the weak sense of a space $X$ to a subspace $A$ is a
 
 Proof
 
-To show the inclusion $i: A \hookrightarrow X$ is a homotopy equivalence, we need to find a map $g: X \to A$ such that $g \circ i \simeq \mathbb{1}_A$ and $i \circ g \simeq \mathbb{1}_X$.
+To show the inclusion $i: A \hookrightarrow X$ is a homotopy equivalence, we need to find a map $g: X \to A$ such that $g i \simeq \mathbb{1}_A$ and $i g \simeq \mathbb{1}_X$.
 
 Let $f_t: X \to X$ be the weak deformation retraction. We define $g: X \to A$ by $g(x) = f_1(x)$. This map is well-defined since $f_1(X) \subset A$.
 
-1.  Consider the composition $i \circ g: X \to X$. We have $(i \circ g)(x) = i(f_1(x)) = f_1(x)$. So, $i \circ g = f_1$. The map $f_t$ is a homotopy from $f_0 = \mathbb{1}_X$ to $f_1$. Thus, $i \circ g \simeq \mathbb{1}_X$.
+1.  Consider the composition $i g: X \to X$. We have $(i g)(x) = i(f_1(x)) = f_1(x)$. So, $i g = f_1$. The map $f_t$ is a homotopy from $f_0 = \mathbb{1}_X$ to $f_1$. Thus, $i g \simeq \mathbb{1}_X$.
 
-2.  Consider the composition $g \circ i: A \to A$. We have $(g \circ i)(a) = g(i(a)) = g(a) = f_1(a)$. So $g \circ i$ is the restriction of $f_1$ to $A$. Let's denote this by $f_1|_A$. The condition $f_t(A) \subset A$ for all $t$ means that the restriction of the homotopy $f_t$ to $A$, let's call it $h_t = f_t|_A: A \to A$, is a homotopy within $A$. This homotopy $h_t$ goes from $h_0 = f_0|_A = \mathbb{1}_A$ to $h_1 = f_1|_A = g \circ i$. Thus, $g \circ i \simeq \mathbb{1}_A$.
+2.  Consider the composition $g i: A \to A$. We have $(g i)(a) = g(i(a)) = g(a) = f_1(a)$. So $g i$ is the restriction of $f_1$ to $A$. Let's denote this by $f_1|_A$. The condition $f_t(A) \subset A$ for all $t$ means that the restriction of the homotopy $f_t$ to $A$, let's call it $h_t = f_t|_A: A \to A$, is a homotopy within $A$. This homotopy $h_t$ goes from $h_0 = f_0|_A = \mathbb{1}_A$ to $h_1 = f_1|_A = g i$. Thus, $g i \simeq \mathbb{1}_A$.
 
 Since we have found a homotopy inverse $g$ for the inclusion map $i$, $i$ is a homotopy equivalence.
 
