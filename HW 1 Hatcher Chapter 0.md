@@ -59,7 +59,7 @@ Proof
 *    $h k = h g \simeq f g \simeq \mathbb{1}_Y$
 *    $k h = g h \simeq g f \simeq \mathbb{1}_X$
 
-    Thus, $h$ is a homotopy equivalence with homotopy inverse $k$.
+Thus, $h$ is a homotopy equivalence with homotopy inverse $k$.
 
 # Exercise 4
 A deformation retraction in the weak sense of a space $X$ to a subspace $A$ is a homotopy $f_t\colon X \to X$ such that $f_0=\mathbb{1}, f_1(X) \subset A$, and $f_t(A) \subset A$ for all $t$. Show that if $X$ deformation retracts to $A$ in this weak sense, then the inclusion $A \hookrightarrow X$ is a homotopy equivalence.
