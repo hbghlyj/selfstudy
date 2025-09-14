@@ -18,17 +18,39 @@ So $\ker\phi=N_1\times N_2$.
 
 # Section I.6
 ## Exercise 11
+Find all normal subgroups of $D_n$.
+
+Solution
+
 
 # Section I.8
 ## Exercise 2
+If $f: A \to B$ is an equivalence in a category $\mathcal{C}$ and $g: B \to A$ is the morphism such that $g \circ f=1_A, f \circ g=1_B$, show that $g$ is unique.
+
+Proof
 
 ## Exercise 3
+Let $G$ be an (additive) abelian group with subgroups $H$ and $K$. Show that $G \cong H \oplus K$ if and only if there are homomorphisms $H \stackrel{\pi_1}{\underset{\iota_1}{\leftrightarrows}} G \underset{\iota_2}{\stackrel{\pi_2}{\rightleftarrows}} K$ such that $\pi_1 \iota_1=1_H, \pi_2 \iota_2=1_K, \pi_1 \iota_2=0$ and $\pi_2 \iota_1=0$, where 0 is the map sending every element onto the zero (identity) element, and $\iota_1 \pi_1(x)+\iota_2 \pi_2(x)=x$ for all $x \in G$.
+
+Proof
 
 ## Exercise 5
+Let $G, H$ be finite cyclic groups. Then $G \times H$ is cyclic if and only if $(|G|,|H|)=1$.
+
+Proof
 
 ## Exercise 9
+If a group $G$ is the (internal) direct product of its subgroups $H, K$, then $H \cong G / K$ and $G / H \cong K$.
+
+Proof
 
 # Section I.9
 ## Exercise 1
+Every nonidentity element in a free group $F$ has infinite order.
+
+Proof
 
 ## Exercise 4
+Let $F$ be the free group on the set $X$, and let $Y \subset X$. If $H$ is the smallest normal subgroup of $F$ containing $Y$, then $F / H$ is a free group.
+
+Proof
