@@ -56,13 +56,49 @@ Check that the smooth structure on $S^n$ induced by the stereographic charts is 
 
 Proof
 
-We need to find a diffeomorphism between the two smooth structures. Let $U_1^+=\{X \in S^n: X^{n+1}>0\}$ and $U_1^-=\{X \in S^n: X^{n+1}<0\}$ be the upper and lower hemisphere charts respectively. The chart maps are given by
-$\phi_1^+: U_1^+ \to \mathbb{R}^n, \quad X \mapsto (X^1, \ldots, X^n)$
-$\phi_1^-: U_1^- \to \mathbb{R}^n, \quad X \mapsto (X^1, \ldots, X^n)$
-The stereographic charts are given by $U_2^+=S^n \backslash\{(0, \ldots, 0,1)\}$ and $U_2^-=S^n \backslash\{(0, \ldots, 0,-1)\}$ with chart maps
-$\phi_2^+: U_2^+ \to \mathbb{R}^n, \quad X \mapsto \frac{1}{1-X^{n+1}}\left(X^1, \ldots, X^n\right)$
-$\phi_2^-: U_2^- \to \mathbb{R}^n, \quad X \mapsto \frac{1}{1+X^{n+1}}\left(X^1, \ldots, X^n\right)$
+Let $\mathcal{A}_H$ be the atlas of hemisphere charts and $\mathcal{A}_S$ be the atlas of stereographic charts. To show they induce equivalent smooth structures, we must show that the identity map is a diffeomorphism.
 
+The hemisphere charts are given by projections. For $i=1, \ldots, n+1$, let
+$U_i^+ = \{X \in S^n \mid X^i > 0\}$ and $U_i^- = \{X \in S^n \mid X^i < 0\}$.
+The chart maps $\phi_i^\pm: U_i^\pm \to B^n(0,1)$ are defined by dropping the $i$-th coordinate:
+$\phi_i^\pm(X^1, \ldots, X^{n+1}) = (X^1, \ldots, X^{i-1}, X^{i+1}, \ldots, X^{n+1})$.
+The inverse maps are:
+$(\phi_i^\pm)^{-1}(x_1, \ldots, x_n) = (x_1, \ldots, x_{i-1}, \pm\sqrt{1-|x|^2}, x_i, \ldots, x_n)$, where the $\pm$ sign corresponds to the superscript on $\phi_i^\pm$.
+
+The stereographic charts from the north pole $N=(0,\dots,0,1)$ and south pole $S=(0,\dots,0,-1)$ are $\psi_N: S^n \setminus \{N\} \to \mathbb{R}^n$ and $\psi_S: S^n \setminus \{S\} \to \mathbb{R}^n$, given by:
+$\psi_N(X) = \frac{1}{1-X^{n+1}}(X^1, \ldots, X^n)$
+$\psi_S(X) = \frac{1}{1+X^{n+1}}(X^1, \ldots, X^n)$
+
+We need to check the smoothness of the compositions $\psi_N \circ (\phi_i^\pm)^{-1}$ and $\psi_S \circ (\phi_i^\pm)^{-1}$.
+
+Case 1: Transition between $\psi_N$ and $\phi_i^\pm$ for $i \in \{1, \ldots, n\}$.
+Let $x \in B^n(0,1)$. The map $(\phi_i^\pm)^{-1}$ sends $x$ to $X = (x_1, \ldots, x_{i-1}, \pm\sqrt{1-|x|^2}, x_i, \ldots, x_n)$.
+The $(n+1)$-th component of $X$ is $X^{n+1} = x_n$.
+The first $n$ components of $X$ are $(x_1, \ldots, x_{i-1}, \pm\sqrt{1-|x|^2}, x_i, \ldots, x_{n-1})$.
+Applying $\psi_N$, we get:
+$(\psi_N \circ (\phi_i^\pm)^{-1})(x) = \frac{1}{1-x_n}(x_1, \ldots, x_{i-1}, \pm\sqrt{1-|x|^2}, x_i, \ldots, x_{n-1})$.
+This map is smooth wherever it is defined. The domain is $\phi_i^\pm(U_i^\pm \cap (S^n \setminus \{N\}))$. The condition $X \neq N$ means $X^{n+1} \neq 1$, which translates to $x_n \neq 1$. Since $x \in B^n(0,1)$, we have $|x|^2 < 1$, which implies $x_n < 1$. The term $\sqrt{1-|x|^2}$ is smooth for $|x|<1$. Thus, the transition map is smooth.
+
+Case 2: Transition between $\psi_S$ and $\phi_i^\pm$ for $i \in \{1, \ldots, n\}$.
+Similarly, $X^{n+1} = x_n$. Applying $\psi_S$:
+$(\psi_S \circ (\phi_i^\pm)^{-1})(x) = \frac{1}{1+x_n}(x_1, \ldots, x_{i-1}, \pm\sqrt{1-|x|^2}, x_i, \ldots, x_{n-1})$.
+This is smooth on $B^n(0,1)$ because $x_n > -1$.
+
+Case 3: Transition between $\psi_N$ and $\phi_{n+1}^\pm$.
+Let $x \in B^n(0,1)$. The map $(\phi_{n+1}^\pm)^{-1}$ sends $x$ to $X = (x_1, \ldots, x_n, \pm\sqrt{1-|x|^2})$.
+So $X^{n+1} = \pm\sqrt{1-|x|^2}$. The first $n$ components are $(x_1, \ldots, x_n)$.
+Applying $\psi_N$:
+$(\psi_N \circ (\phi_{n+1}^\pm)^{-1})(x) = \frac{1}{1 \mp \sqrt{1-|x|^2}}(x_1, \ldots, x_n)$.
+For $\phi_{n+1}^+$, the map is $\frac{x}{1-\sqrt{1-|x|^2}}$. This is smooth on $B^n(0,1) \setminus \{0\}$. The point $x=0$ corresponds to the south pole $S$, which is not in $U_{n+1}^+$.
+For $\phi_{n+1}^-$, the map is $\frac{x}{1+\sqrt{1-|x|^2}}$. This is smooth on all of $B^n(0,1)$.
+
+Case 4: Transition between $\psi_S$ and $\phi_{n+1}^\pm$.
+Similarly, $X^{n+1} = \pm\sqrt{1-|x|^2}$. Applying $\psi_S$:
+$(\psi_S \circ (\phi_{n+1}^\pm)^{-1})(x) = \frac{1}{1 \pm \sqrt{1-|x|^2}}(x_1, \ldots, x_n)$.
+For $\phi_{n+1}^+$, the map is $\frac{x}{1+\sqrt{1-|x|^2}}$, which is smooth on $B^n(0,1)$.
+For $\phi_{n+1}^-$, the map is $\frac{x}{1-\sqrt{1-|x|^2}}$, which is smooth on $B^n(0,1) \setminus \{0\}$. The point $x=0$ corresponds to the north pole $N$, which is not in $U_{n+1}^-$.
+
+In all cases, the transition maps between charts from $\mathcal{A}_H$ and $\mathcal{A}_S$ are smooth on their domains of definition. Therefore, the atlas $\mathcal{A}_H \cup \mathcal{A}_S$ is a smooth atlas, which implies that the smooth structures induced by $\mathcal{A}_H$ and $\mathcal{A}_S$ are equivalent.
 
 
 # Exercise 6
