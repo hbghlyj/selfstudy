@@ -56,7 +56,17 @@ Check that the smooth structure on $S^n$ induced by the stereographic charts is 
 
 Proof
 
+We need to find a diffeomorphism between the two smooth structures. Let $U_1^+=\{X \in S^n: X^{n+1}>0\}$ and $U_1^-=\{X \in S^n: X^{n+1}<0\}$ be the upper and lower hemisphere charts respectively. The chart maps are given by
+$\phi_1^+: U_1^+ \to \mathbb{R}^n, \quad X \mapsto (X^1, \ldots, X^n)$
+$\phi_1^-: U_1^- \to \mathbb{R}^n, \quad X \mapsto (X^1, \ldots, X^n)$
+The stereographic charts are given by $U_2^+=S^n \backslash\{(0, \ldots, 0,1)\}$ and $U_2^-=S^n \backslash\{(0, \ldots, 0,-1)\}$ with chart maps
+$\phi_2^+: U_2^+ \to \mathbb{R}^n, \quad X \mapsto \frac{1}{1-X^{n+1}}\left(X^1, \ldots, X^n\right)$
+$\phi_2^-: U_2^- \to \mathbb{R}^n, \quad X \mapsto \frac{1}{1+X^{n+1}}\left(X^1, \ldots, X^n\right)$
+
+
+
 # Exercise 6
 Show that $\mathbb{CP}^n$ is a compact smooth manifold. (Part of this is in [Waldron's notes](https://people.math.wisc.edu/~awaldron3/Notes/761%20notes%20final.pdf).)
 
 Proof
+
