@@ -88,11 +88,15 @@ Show that a space $X$ is contractible iff every map $f\colon X \to Y$, for arbit
 
 Proof
 
-Suppose $X$ is contractible, then there is a point $x_0$, and maps $`h\colon X \to\{x_0\}, g\colon\{x_0\} \to X`$ s.t. $`g h \simeq \mathbb{1}_X`$ and $`h g \simeq \mathbb{1}_{\{x_0\}}`$. Denote the homotopy as $F\colon X \times I \to X$ where $`F|_{X \times\{0\}}=\mathbb{1}_X`$ and $`F|_{X \times\{1\}}=g h`$.
-1. For any $f\colon X \to Y$ where $Y$ is an arbitrary space, let $`y_0=f(g(x_0))`$, and let $G≔f F$. Thus $G\colon X \times I \to Y$ is continuous since it is the composition of two continuous maps $`G|_{X \times\{0\}}=f \mathbb{1}=f`$ and $`G|_{X \times\{1\}}=f g h`$. But $`f g h(X)=\{y_0\}`$. Therefore $f\colon X \to Y$ is nullhomotopic.
-
-2. For any $f\colon Y \to X$ where $Y$ is an arbitrary space, define $G\colon Y \times I \to X,(y, t) \mapsto F(f(y), t)$. Hence $`G|_{Y \times\{0\}}=f`$ and $`G|_{Y \times\{1\}}=ghf`$. But $`ghf(Y)=\{g(x_0)\}`$. Thus, $f\colon Y \to X$ is nullhomotopic.
-
+Let $X$ be a contractible space, so its identity map $`\mathbb{1}_X`$ is homotopic to a constant map $c_{x_0}$ via a homotopy $F\colon X \times I \to X$.
+1. For any map $f\colon X \to Y$, we can construct a homotopy $H\colon X \times I \to Y$ defined by $H(x, t) = f(F(x, t))$. This homotopy satisfies:
+    * $H(x, 0) = f(F(x, 0)) = f(\mathbb{1}_X(x)) = f(x)$
+    * $H(x, 1) = f(F(x, 1)) = f(x_0)$, which is a constant map.
+    Thus, $f$ is nullhomotopic.
+2. For any map $f\colon Y \to X$, we can construct a homotopy $G\colon Y \times I \to X$ defined by $G(y, t) = F(f(y), t)$. This homotopy satisfies:
+    * $G(y, 0) = F(f(y), 0) = \mathbb{1}_X(f(y)) = f(y)$
+    * $G(y, 1) = F(f(y), 1) = x_0$, which is a constant map.
+    Thus, $f$ is nullhomotopic.
 3. Conversely, if every map $f\colon Y \to X$ is nullhomotopic (for any $Y$), we can choose $Y=X$ and $f=\mathbb{1}_X\colon X \to X$. Then $\mathbb{1}_X$ is nullhomotopic, which by definition means $X$ is contractible. Similarly, if every map $f\colon X \to Y$ is nullhomotopic, we can choose $Y=X$ and $f=\mathbb{1}_X$, which again implies $X$ is contractible.
 
 # Exercise 11
