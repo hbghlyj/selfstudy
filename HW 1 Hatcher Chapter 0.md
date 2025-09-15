@@ -88,14 +88,14 @@ Show that a space $X$ is contractible iff every map $f\colon X \to Y$, for arbit
 
 Proof
 
-Let $X$ be a contractible space, so its identity map $`\mathbb{1}_X`$ is homotopic to a constant map $c_{x_0}$ via a homotopy $F\colon X \times I \to X$.
+Let $X$ be a contractible space. By definition, there is a homotopy $F\colon X \times I \to X$ and a point $x_0 \in X$ such that $F(x, 0) = x$ and $F(x, 1) = x_0$ for all $x \in X$.
 1. For any map $f\colon X \to Y$, we can construct a homotopy $H\colon X \times I \to Y$ defined by $H(x, t) = f(F(x, t))$. This homotopy satisfies:
-    * $H(x, 0) = f(F(x, 0)) = f(\mathbb{1}_X(x)) = f(x)$
-    * $H(x, 1) = f(F(x, 1)) = f(x_0)$, which is a constant map.
+    * $H(x, 0) = f(F(x, 0)) = f(x)$
+    * $H(x, 1) = f(F(x, 1)) = f(x_0)$, so $H(\cdot, 1)$ is a constant map.
     Thus, $f$ is nullhomotopic.
 2. For any map $f\colon Y \to X$, we can construct a homotopy $G\colon Y \times I \to X$ defined by $G(y, t) = F(f(y), t)$. This homotopy satisfies:
-    * $G(y, 0) = F(f(y), 0) = \mathbb{1}_X(f(y)) = f(y)$
-    * $G(y, 1) = F(f(y), 1) = x_0$, which is a constant map.
+    * $G(y, 0) = F(f(y), 0) = f(y)$
+    * $G(y, 1) = F(f(y), 1) = x_0$, so $G(\cdot, 1)$ is a constant map.
     Thus, $f$ is nullhomotopic.
 3. Conversely, if every map $f\colon Y \to X$ is nullhomotopic (for any $Y$), we can choose $Y=X$ and $f=\mathbb{1}_X\colon X \to X$. Then $\mathbb{1}_X$ is nullhomotopic, which by definition means $X$ is contractible. Similarly, if every map $f\colon X \to Y$ is nullhomotopic, we can choose $Y=X$ and $f=\mathbb{1}_X$, which again implies $X$ is contractible.
 
