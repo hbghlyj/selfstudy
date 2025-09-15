@@ -90,8 +90,7 @@ Applying $\psi_N$, we get:
 
 $(\psi_N \circ (\phi_i^\pm)^{-1})(x) = \frac{1}{1-x_n}(x_1, \ldots, x_{i-1}, \pm\sqrt{1-|x|^2}, x_i, \ldots, x_{n-1})$.
 
-This map is smooth wherever it is defined. The domain is $\phi_i^\pm(U_i^\pm \cap (S^n \setminus \{N\}))$. The condition $X \neq N$ means $X^{n+1} \neq 1$, which translates to $x_n \neq 1$. Since $x \in B^n(0,1)$, we have $|x|^2 < 1$, 
-which implies $x_n < 1$. The term $\sqrt{1-|x|^2}$ is smooth for $|x|<1$. Thus, the transition map is smooth.
+The domain is $\phi_i^\pm(U_i^\pm \cap (S^n \setminus \{N\}))$. This map is smooth.
 
 Case 2: Transition between $\psi_S$ and $\phi_i^\pm$ for $`i \in \{1, \ldots, n\}`$.
 
