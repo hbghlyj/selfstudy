@@ -11,7 +11,7 @@ View the torus with one point deleted as the quotient of the square with one poi
 
 Draw a ray from the deleted point to each point $x$, intersecting the boundary of the square at $y$.
 
-Define a map $F_t(x)=(1-t)x+ty$ from the torus with one point deleted to the boundary of the square.
+Define a homotopy on the torus with one point deleted by $F_t(x)=(1-t)x+ty$.
 
 This map is continuous because it respects the edge identifications.
 * $F_0(x)=x$
