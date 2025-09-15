@@ -32,6 +32,22 @@ Write down (with proof) a smooth structure on the Möbius strip.
 
 Proof
 
+The Möbius strip is the quotient space of the rectangle $[0,1] \times [-1,1]$ by the equivalence relation that identifies the points $(0,y)$ and $(1,-y)$ for all $y \in [-1,1]$.
+
+To define a smooth structure on the Möbius strip, we can use the following charts:
+
+1. **Chart 1**: Define $U_1 = (0,1) \times (-1,1)$ and the chart map $\phi_1: U_1 \to \mathbb{R}^2$ by $\phi_1(x,y) = (x,y)$. This chart covers the interior of the rectangle and is clearly a homeomorphism onto its image.
+2. **Chart 2**: Define $U_2 = \{(x,y) \in [0,1] \times [-1,1] \mid x < 0.5\} \cup \{(x,y) \in [0,1] \times [-1,1] \mid x > 0.5\}$ and the chart map $\phi_2: U_2 \to \mathbb{R}^2$ by
+   - For $(x,y)$ with $x < 0.5$, let $\phi_2(x,y) = (x,y)$.
+   - For $(x,y)$ with $x > 0.5$, let $\phi_2(x,y) = (x-1,-y)$.
+    This chart covers the regions near the edges of the rectangle and respects the identification of the edges.
+
+The transition map between the two charts on the overlap $U_1 \cap U_2$ is given by:
+- For $(x,y)$ with $x < 0.5$, $\phi_2 \circ \phi_1^{-1}(x,y) = (x,y)$, which is smooth.
+- For $(x,y)$ with $x > 0.5$, $\phi_2 \circ \phi_1^{-1}(x,y) = (x-1,-y)$, which is also smooth.
+
+Since both charts are homeomorphisms onto their images and the transition maps are smooth, the collection of these charts forms a smooth atlas on the Möbius strip. Thus, the Möbius strip is a smooth manifold.
+
 # Exercise 4
 The stereographic projection maps on $S^n$ are given by
 
