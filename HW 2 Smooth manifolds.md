@@ -96,7 +96,7 @@ Case 4: Transition between $\psi_S$ and $\phi_{n+1}^\pm$.
 Similarly, $X^{n+1} = \pm\sqrt{1-|x|^2}$. Applying $\psi_S$:
 $(\psi_S \circ (\phi_{n+1}^\pm)^{-1})(x) = \frac{1}{1 \pm \sqrt{1-|x|^2}}(x_1, \ldots, x_n)$.
 For $\phi_{n+1}^+$, the map is $\frac{x}{1+\sqrt{1-|x|^2}}$, which is smooth on $B^n(0,1)$.
-For $\phi_{n+1}^-$, the map is $\frac{x}{1-\sqrt{1-|x|^2}}$, which is smooth on $`B^n(0,1) \setminus \{0\}`$. The point $x=0$ corresponds to the north pole $N$, which is not in $U_{n+1}^-$.
+For $\phi_{n+1}^-$, the map is $\frac{x}{1-\sqrt{1-|x|^2}}$, which is smooth on $`B^n(0,1) \setminus \{0\}`$. The point $x=0$ corresponds to the south pole $S$, which is not in the domain of $\psi_S$.
 
 In all cases, the transition maps between charts from $\mathcal{A}_H$ and $\mathcal{A}_S$ are smooth on their domains of definition. Therefore, the atlas $\mathcal{A}_H \cup \mathcal{A}_S$ is a smooth atlas, which implies that the smooth structures induced by $\mathcal{A}_H$ and $\mathcal{A}_S$ are equivalent.
 
