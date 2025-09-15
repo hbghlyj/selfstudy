@@ -40,6 +40,7 @@ To define a smooth structure on the Möbius strip, we can use the following char
 2. **Chart 2**: Define $U_2 = \{(x,y) \in [0,1] \times [-1,1] \mid x < 0.5\} \cup \{(x,y) \in [0,1] \times [-1,1] \mid x > 0.5\}$ and the chart map $\phi_2: U_2 \to \mathbb{R}^2$ by
    - For $(x,y)$ with $x < 0.5$, let $\phi_2(x,y) = (x,y)$.
    - For $(x,y)$ with $x > 0.5$, let $\phi_2(x,y) = (x-1,-y)$.
+   
     This chart covers the regions near the edges of the rectangle and respects the identification of the edges.
 
 The transition map between the two charts on the overlap $U_1 \cap U_2$ is given by:
