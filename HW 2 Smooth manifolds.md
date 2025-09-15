@@ -89,7 +89,7 @@ Let $x \in B^n(0,1)$. The map $(\phi_{n+1}^\pm)^{-1}$ sends $x$ to $X = (x_1, \l
 So $X^{n+1} = \pm\sqrt{1-|x|^2}$. The first $n$ components are $(x_1, \ldots, x_n)$.
 Applying $\psi_N$:
 $(\psi_N \circ (\phi_{n+1}^\pm)^{-1})(x) = \frac{1}{1 \mp \sqrt{1-|x|^2}}(x_1, \ldots, x_n)$.
-For $\phi_{n+1}^+$, the map is $\frac{x}{1-\sqrt{1-|x|^2}}$. This is smooth on $`B^n(0,1) \setminus \{0\}`$. The point $x=0$ corresponds to the south pole $S$, which is not in $U_{n+1}^+$.
+For $\phi_{n+1}^+$, the map is $\frac{x}{1-\sqrt{1-|x|^2}}$. This is smooth on $`B^n(0,1) \setminus \{0\}`$. The point $x=0$ corresponds to the north pole $N$, which is not in the domain of $\psi_N$.
 For $\phi_{n+1}^-$, the map is $\frac{x}{1+\sqrt{1-|x|^2}}$. This is smooth on all of $B^n(0,1)$.
 
 Case 4: Transition between $\psi_S$ and $\phi_{n+1}^\pm$.
