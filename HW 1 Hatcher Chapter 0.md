@@ -74,8 +74,6 @@ Let $f_t\colon X \to X$ be the weak deformation retraction. We define $g\colon X
 
 2.  Consider the composition $g i\colon A \to A$. We have $(g i)(a) = g(i(a)) = g(a) = f_1(a)$. So $g i$ is the restriction of $f_1$ to $A$. Denote this by $f_1|_A$. The condition $f_t(A) \subset A$ for all $t$ means that the restriction of the homotopy $f_t$ to $A$, call it $h_t = f_t|_A\colon A \to A$, is a homotopy within $A$. This homotopy $h_t$ goes from $h_0 = f_0|_A = \mathbb{1}_A$ to $h_1 = f_1|_A = g i$. Thus, $g i \simeq \mathbb{1}_A$.
 
-Since we have found a homotopy inverse $g$ for the inclusion map $i$, $i$ is a homotopy equivalence.
-
 # Exercise 9
 Show that a retract of a contractible space is contractible.
 
@@ -92,10 +90,12 @@ Let $X$ be a contractible space. By definition, there is a homotopy $F\colon X \
 1. For any map $f\colon X \to Y$, we can construct a homotopy $H\colon X \times I \to Y$ defined by $H(x, t) = f(F(x, t))$. This homotopy satisfies:
     * $H(x, 0) = f(F(x, 0)) = f(x)$
     * $H(x, 1) = f(F(x, 1)) = f(x_0)$, so $H(\cdot, 1)$ is a constant map.
+    
     Thus, $f$ is nullhomotopic.
 2. For any map $f\colon Y \to X$, we can construct a homotopy $G\colon Y \times I \to X$ defined by $G(y, t) = F(f(y), t)$. This homotopy satisfies:
     * $G(y, 0) = F(f(y), 0) = f(y)$
     * $G(y, 1) = F(f(y), 1) = x_0$, so $G(\cdot, 1)$ is a constant map.
+    
     Thus, $f$ is nullhomotopic.
 3. Conversely, if every map $f\colon Y \to X$ is nullhomotopic (for any $Y$), we can choose $Y=X$ and $f=\mathbb{1}_X\colon X \to X$. Then $\mathbb{1}_X$ is nullhomotopic, which by definition means $X$ is contractible. Similarly, if every map $f\colon X \to Y$ is nullhomotopic, we can choose $Y=X$ and $f=\mathbb{1}_X$, which again implies $X$ is contractible.
 
