@@ -59,7 +59,7 @@ Proof
 Let $\mathcal{A}_H$ be the atlas of hemisphere charts and $\mathcal{A}_S$ be the atlas of stereographic charts. To show they induce equivalent smooth structures, we must show that the identity map is a diffeomorphism.
 
 The hemisphere charts are given by projections. For $i=1, \ldots, n+1$, let
-$`U_i^+ = \{X \in S^n \mid X^i > 0\}$ and $U_i^- = \{X \in S^n \mid X^i < 0\}`$.
+$`U_i^+ = \{X \in S^n \mid X^i > 0\}`$ and $`U_i^- = \{X \in S^n \mid X^i < 0\}`$.
 The chart maps $\phi_i^\pm: U_i^\pm \to B^n(0,1)$ are defined by dropping the $i$-th coordinate:
 $\phi_i^\pm(X^1, \ldots, X^{n+1}) = (X^1, \ldots, X^{i-1}, X^{i+1}, \ldots, X^{n+1})$.
 The inverse maps are:
@@ -89,14 +89,14 @@ Let $x \in B^n(0,1)$. The map $(\phi_{n+1}^\pm)^{-1}$ sends $x$ to $X = (x_1, \l
 So $X^{n+1} = \pm\sqrt{1-|x|^2}$. The first $n$ components are $(x_1, \ldots, x_n)$.
 Applying $\psi_N$:
 $(\psi_N \circ (\phi_{n+1}^\pm)^{-1})(x) = \frac{1}{1 \mp \sqrt{1-|x|^2}}(x_1, \ldots, x_n)$.
-For $\phi_{n+1}^+$, the map is $\frac{x}{1-\sqrt{1-|x|^2}}$. This is smooth on $B^n(0,1) \setminus \{0\}$. The point $x=0$ corresponds to the south pole $S$, which is not in $U_{n+1}^+$.
+For $\phi_{n+1}^+$, the map is $\frac{x}{1-\sqrt{1-|x|^2}}$. This is smooth on $`B^n(0,1) \setminus \{0\}`$. The point $x=0$ corresponds to the south pole $S$, which is not in $U_{n+1}^+$.
 For $\phi_{n+1}^-$, the map is $\frac{x}{1+\sqrt{1-|x|^2}}$. This is smooth on all of $B^n(0,1)$.
 
 Case 4: Transition between $\psi_S$ and $\phi_{n+1}^\pm$.
 Similarly, $X^{n+1} = \pm\sqrt{1-|x|^2}$. Applying $\psi_S$:
 $(\psi_S \circ (\phi_{n+1}^\pm)^{-1})(x) = \frac{1}{1 \pm \sqrt{1-|x|^2}}(x_1, \ldots, x_n)$.
 For $\phi_{n+1}^+$, the map is $\frac{x}{1+\sqrt{1-|x|^2}}$, which is smooth on $B^n(0,1)$.
-For $\phi_{n+1}^-$, the map is $\frac{x}{1-\sqrt{1-|x|^2}}$, which is smooth on $B^n(0,1) \setminus \{0\}$. The point $x=0$ corresponds to the north pole $N$, which is not in $U_{n+1}^-$.
+For $\phi_{n+1}^-$, the map is $\frac{x}{1-\sqrt{1-|x|^2}}$, which is smooth on $`B^n(0,1) \setminus \{0\}`$. The point $x=0$ corresponds to the north pole $N$, which is not in $U_{n+1}^-$.
 
 In all cases, the transition maps between charts from $\mathcal{A}_H$ and $\mathcal{A}_S$ are smooth on their domains of definition. Therefore, the atlas $\mathcal{A}_H \cup \mathcal{A}_S$ is a smooth atlas, which implies that the smooth structures induced by $\mathcal{A}_H$ and $\mathcal{A}_S$ are equivalent.
 
