@@ -59,19 +59,19 @@ Proof
 Let $\mathcal{A}_H$ be the atlas of hemisphere charts and $\mathcal{A}_S$ be the atlas of stereographic charts. To show they induce equivalent smooth structures, we must show that the identity map is a diffeomorphism.
 
 The hemisphere charts are given by projections. For $i=1, \ldots, n+1$, let
-$U_i^+ = \{X \in S^n \mid X^i > 0\}$ and $U_i^- = \{X \in S^n \mid X^i < 0\}$.
+$`U_i^+ = \{X \in S^n \mid X^i > 0\}$ and $U_i^- = \{X \in S^n \mid X^i < 0\}`$.
 The chart maps $\phi_i^\pm: U_i^\pm \to B^n(0,1)$ are defined by dropping the $i$-th coordinate:
 $\phi_i^\pm(X^1, \ldots, X^{n+1}) = (X^1, \ldots, X^{i-1}, X^{i+1}, \ldots, X^{n+1})$.
 The inverse maps are:
 $(\phi_i^\pm)^{-1}(x_1, \ldots, x_n) = (x_1, \ldots, x_{i-1}, \pm\sqrt{1-|x|^2}, x_i, \ldots, x_n)$, where the $\pm$ sign corresponds to the superscript on $\phi_i^\pm$.
 
-The stereographic charts from the north pole $N=(0,\dots,0,1)$ and south pole $S=(0,\dots,0,-1)$ are $\psi_N: S^n \setminus \{N\} \to \mathbb{R}^n$ and $\psi_S: S^n \setminus \{S\} \to \mathbb{R}^n$, given by:
+The stereographic charts from the north pole $N=(0,\dots,0,1)$ and south pole $S=(0,\dots,0,-1)$ are $`\psi_N: S^n \setminus \{N\} \to \mathbb{R}^n`$ and $`\psi_S: S^n \setminus \{S\} \to \mathbb{R}^n`$, given by:
 $\psi_N(X) = \frac{1}{1-X^{n+1}}(X^1, \ldots, X^n)$
 $\psi_S(X) = \frac{1}{1+X^{n+1}}(X^1, \ldots, X^n)$
 
 We need to check the smoothness of the compositions $\psi_N \circ (\phi_i^\pm)^{-1}$ and $\psi_S \circ (\phi_i^\pm)^{-1}$.
 
-Case 1: Transition between $\psi_N$ and $\phi_i^\pm$ for $i \in \{1, \ldots, n\}$.
+Case 1: Transition between $\psi_N$ and $\phi_i^\pm$ for $`i \in \{1, \ldots, n\}`$.
 Let $x \in B^n(0,1)$. The map $(\phi_i^\pm)^{-1}$ sends $x$ to $X = (x_1, \ldots, x_{i-1}, \pm\sqrt{1-|x|^2}, x_i, \ldots, x_n)$.
 The $(n+1)$-th component of $X$ is $X^{n+1} = x_n$.
 The first $n$ components of $X$ are $(x_1, \ldots, x_{i-1}, \pm\sqrt{1-|x|^2}, x_i, \ldots, x_{n-1})$.
@@ -79,7 +79,7 @@ Applying $\psi_N$, we get:
 $(\psi_N \circ (\phi_i^\pm)^{-1})(x) = \frac{1}{1-x_n}(x_1, \ldots, x_{i-1}, \pm\sqrt{1-|x|^2}, x_i, \ldots, x_{n-1})$.
 This map is smooth wherever it is defined. The domain is $\phi_i^\pm(U_i^\pm \cap (S^n \setminus \{N\}))$. The condition $X \neq N$ means $X^{n+1} \neq 1$, which translates to $x_n \neq 1$. Since $x \in B^n(0,1)$, we have $|x|^2 < 1$, which implies $x_n < 1$. The term $\sqrt{1-|x|^2}$ is smooth for $|x|<1$. Thus, the transition map is smooth.
 
-Case 2: Transition between $\psi_S$ and $\phi_i^\pm$ for $i \in \{1, \ldots, n\}$.
+Case 2: Transition between $\psi_S$ and $\phi_i^\pm$ for $`i \in \{1, \ldots, n\}`$.
 Similarly, $X^{n+1} = x_n$. Applying $\psi_S$:
 $(\psi_S \circ (\phi_i^\pm)^{-1})(x) = \frac{1}{1+x_n}(x_1, \ldots, x_{i-1}, \pm\sqrt{1-|x|^2}, x_i, \ldots, x_{n-1})$.
 This is smooth on $B^n(0,1)$ because $x_n > -1$.
