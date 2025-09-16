@@ -36,8 +36,8 @@ The Möbius strip is the quotient space of the rectangle $[0,1] \times (-1,1)$ b
 
 To define a smooth structure on the Möbius strip, we can use the following charts:
 
-1. Define $`U_1 =\{[(x,y)]\mid x\in(0,1)\}`$ and the chart map $\phi_1: U_1 \to \mathbb{R}^2$ by $\phi_1([(x,y)]) = (x,y)$. The image is the open set $(0,1) \times (-1,1)$.
-2. Define $`U_2 = \{[(x,y)]\mid x\ne\frac12\}`$ and the chart map $\phi_2: U_2 \to \mathbb{R}^2$ by
+1. Define $`U_1 =\{[(x,y)]\mid x\in(0,1),y\in(-1,1)\}`$ and the chart map $\phi_1: U_1 \to \mathbb{R}^2$ by $\phi_1([(x,y)]) = (x,y)$. The image is the open rectangle $(0,1) \times (-1,1)$.
+2. Define $`U_2 = \{[(x,y)]\mid x\ne\frac12,y\in(-1,1)\}`$ and the chart map $\phi_2: U_2 \to \mathbb{R}^2$ by
    - For $(x,y)$ with $x < 0.5$, let $\phi_2([(x,y)]) = (x,y)$.
    - For $(x,y)$ with $x > 0.5$, let $\phi_2([(x,y)]) = (x-1,-y)$.
   
@@ -47,9 +47,9 @@ To define a smooth structure on the Möbius strip, we can use the following char
    
    Since both representatives yield the same image, the map $\phi_2$ is well-defined.
    
-   This chart covers the regions near the edges of the rectangle and respects the identification of the edges. Its image is the open set $(-0.5,0.5) \times (-1,1)$.
+   This chart covers the regions near the edges of the rectangle and respects the identification of the edges. Its image is the open rectangle $(-0.5,0.5) \times (-1,1)$.
 
-The transition map between the two charts on the overlap $`U_1 \cap U_2=\{[(x,y)]\mid x\in(0,0.5)\cup(0.5,1)\}`$ is given by:
+The transition map between the two charts on $`\phi_1(U_1 \cap U_2)=\{(x,y)\mid x\in(0,0.5)\cup(0.5,1),y\in(-1,1)\}`$ is given by:
 - For $(x,y)$ with $x < 0.5$, $\phi_2 \circ \phi_1^{-1}(x,y) = (x,y)$, which is smooth.
 - For $(x,y)$ with $x > 0.5$, $\phi_2 \circ \phi_1^{-1}(x,y) = (x-1,-y)$, which is also smooth.
 
