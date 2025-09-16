@@ -161,12 +161,12 @@ Each $\iota_k:U_k\to\mathbb C^n$ is a homeomorphism with inverse
 
 $\iota_k^{-1}(w_0,\ldots,w_{n-1})=[w_0:\cdots:w_{k-1}:1:w_k:\cdots:w_{n-1}],$
 
-On overlaps $U_j\cap U_k$ the transition maps are holomorphic (hence smooth). Writing $w=(w_0,\ldots,w_{n-1})=\iota_k([z])$:
-- If $j<k$, then $z_j=w_j$ and
-$(\iota_j\circ\iota_k^{-1})(w)=\Big(\tfrac{w_0}{w_j},\ldots,\tfrac{w_{j-1}}{w_j},\tfrac{1}{w_j},\tfrac{w_{j+1}}{w_j},\ldots,\tfrac{w_{k-1}}{w_j},\tfrac{w_k}{w_j},\ldots,\tfrac{w_{n-1}}{w_j}\Big).$
-- If $j>k$, then $z_j=w_{j-1}$ and
-$(\iota_j\circ\iota_k^{-1})(w)=\Big(\tfrac{w_0}{w_{j-1}},\ldots,\tfrac{w_{k-1}}{w_{j-1}},\tfrac{1}{w_{j-1}},\tfrac{w_k}{w_{j-1}},\ldots,\tfrac{w_{j-2}}{w_{j-1}},\tfrac{w_j}{w_{j-1}},\ldots,\tfrac{w_{n-1}}{w_{j-1}}\Big)$.
+On overlaps $U_j\cap U_k$ writing $w=(w_0,\ldots,w_{n-1})$, the map $\iota_j$ divides by $w_j$ and removes the $j$-th component.
+- If $j<k$, then
+   $(\iota_j\circ\iota_k^{-1})(w)=\frac1{w_j}\Big(w_0,\ldots,w_{j-1},w_{j+1},\ldots,w_{k-1},1,w_k,\ldots,w_{n-1}\Big).$
+- If $j>k$, then
+   $(\iota_j\circ\iota_k^{-1})(w)=\frac1{w_j}\Big(w_0,\ldots,w_{k-1},1,w_{k+1},\ldots,w_{j-1},w_{j+1},\ldots,w_{n-1}\Big).$
 
-In each case the denominator is nonzero on $U_j\cap U_k$, so these maps are smooth making $\mathbb{CP}^n$ a $2n$-dimensional smooth manifold.
+In each case the denominator is nonzero on $U_j\cap U_k$, so the transition maps are smooth making $\mathbb{CP}^n$ a $2n$-dimensional smooth manifold.
 
 Compactness: the map $\pi:S^{2n+1}\to\mathbb{CP}^n$, $\pi(z)=[z]$ is continuous and surjective, and $S^{2n+1}$ is compact. Hence $\mathbb{CP}^n\cong S^{2n+1}/S^1$ is compact.
