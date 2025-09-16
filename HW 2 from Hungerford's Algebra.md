@@ -60,6 +60,12 @@ Let $G, H$ be finite cyclic groups. Then $G \times H$ is cyclic if and only if $
 
 Proof
 
+Suppose $G=\langle g \rangle$ and $H=\langle h \rangle$.
+
+If $(|G|,|H|)=1$, then the order of $(g,h)$ is $\mathrm{lcm}(|G|,|H|)=|G||H|$, so $(g,h)$ generates $G \times H$.
+
+Conversely, if $G \times H$ is cyclic, then there exists an element $(g^a,h^b)$ that generates $G \times H$. The order of $(g^a,h^b)$ is $\mathrm{lcm}(|G|/\gcd(a,|G|),|H|/\gcd(b,|H|))$. For this to be equal to $|G||H|$, it must be that $\gcd(a,|G|)=1$ and $\gcd(b,|H|)=1$, which implies that $(|G|,|H|)=1$.
+
 ## Exercise 9
 If a group $G$ is the (internal) direct product of its subgroups $H, K$, then $H \cong G / K$ and $G / H \cong K$.
 
