@@ -32,6 +32,29 @@ Write down (with proof) a smooth structure on the Möbius strip.
 
 Proof
 
+The Möbius strip is the quotient space of the rectangle $[0,1] \times (-1,1)$ by the equivalence relation that identifies the points $(0,y)$ and $(1,-y)$ for all $y \in (-1,1)$.
+
+To define a smooth structure on the Möbius strip, we can use the following charts:
+
+1. Define $`U_1 =\{[(x,y)]\mid x\in(0,1)\}`$ and the chart map $\phi_1: U_1 \to \mathbb{R}^2$ by $\phi_1([(x,y)]) = (x,y)$. The image is the open set $(0,1) \times (-1,1)$.
+2. Define $`U_2 = \{[(x,y)]\mid x\ne\frac12\}`$ and the chart map $\phi_2: U_2 \to \mathbb{R}^2$ by
+   - For $(x,y)$ with $x < 0.5$, let $\phi_2([(x,y)]) = (x,y)$.
+   - For $(x,y)$ with $x > 0.5$, let $\phi_2([(x,y)]) = (x-1,-y)$.
+  
+   For points $[(0,y)] = [(1,-y)]$ on the seam,
+   - Using the representative $(0,y)$, we have $x=0 < 0.5$, so $\phi_2(p) = (0,y)$.
+   - Using the representative $(1,-y)$, we have $x=1 > 0.5$, so $\phi_2(p) = (1-1, -(-y)) = (0,y)$.
+   
+   Since both representatives yield the same image, the map $\phi_2$ is well-defined.
+   
+   This chart covers the regions near the edges of the rectangle and respects the identification of the edges. Its image is the open set $(-1/2, 1/2) \times (-1,1).
+
+The transition map between the two charts on the overlap $U_1 \cap U_2$ is given by:
+- For $(x,y)$ with $x < 0.5$, $\phi_2 \circ \phi_1^{-1}(x,y) = (x,y)$, which is smooth.
+- For $(x,y)$ with $x > 0.5$, $\phi_2 \circ \phi_1^{-1}(x,y) = (x-1,-y)$, which is also smooth.
+
+Since both charts are homeomorphisms onto their images and the transition maps are smooth, the collection of these charts forms a smooth atlas on the Möbius strip. Thus, the Möbius strip is a smooth manifold.
+
 # Exercise 4
 The stereographic projection maps on $S^n$ are given by
 
@@ -130,3 +153,26 @@ In all cases, the transition maps between charts from $\mathcal{A}_H$ and $\math
 Show that $\mathbb{CP}^n$ is a compact smooth manifold. (Part of this is in [Waldron's notes](https://people.math.wisc.edu/~awaldron3/Notes/761%20notes%20final.pdf).)
 
 Proof
+
+Define $\mathbb{CP}^n$ as the set of complex lines in $\mathbb{C}^{n+1}$ with homogeneous coordinates $[z_0:\cdots:z_n]$, not all zero, modulo scalar multiplication by $\lambda\in\mathbb{C}^\times$.
+
+For $k=0,\dots,n$ set
+$`U_k=\{[z]\in\mathbb{CP}^n:\ z_k\neq 0\},`$
+
+$\iota_k:U_k\to\mathbb{C}^n,$
+
+$\iota_k([z])=(z_0/z_k,\ldots,z_{k-1}/z_k,z_{k+1}/z_k,\ldots,z_n/z_k).$
+
+Each $\iota_k:U_k\to\mathbb C^n$ is a homeomorphism with inverse
+
+$\iota_k^{-1}(w_0,\ldots,w_{n-1})=[w_0:\cdots:w_{k-1}:1:w_k:\cdots:w_{n-1}],$
+
+On overlaps $U_j\cap U_k$ writing $w=(w_0,\ldots,w_{n-1})$, we compute $\iota_j \circ \iota_k^{-1}(w)$. Let $z = \iota_k^{-1}(w)$.
+- If $j<k$, then $z_j=w_j$ and
+   $(\iota_j\circ\iota_k^{-1})(w)=\frac1{w_j}\Big(w_0,\ldots,w_{j-1},w_{j+1},\ldots,w_{k-1},1,w_k,\ldots,w_{n-1}\Big)$
+- If $j>k$, then $z_j=w_{j-1}$ and
+   $(\iota_j\circ\iota_k^{-1})(w)=\frac1{w_{j-1}}\Big(w_0,\ldots,w_{k-1},1,w_k,\ldots,w_{j-2},w_j,\ldots,w_{n-1}\Big)$
+
+In each case the denominator is nonzero on $U_j\cap U_k$, so the transition maps are smooth making $\mathbb{CP}^n$ a $2n$-dimensional smooth manifold.
+
+Compactness: the map $\pi:S^{2n+1}\to\mathbb{CP}^n$, $\pi(z)=[z]$ is continuous and surjective, and $S^{2n+1}$ is compact. Hence $\mathbb{CP}^n$ is compact.
