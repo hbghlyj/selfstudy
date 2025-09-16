@@ -169,4 +169,4 @@ On overlaps $U_j\cap U_k$ writing $w=(w_0,\ldots,w_{n-1})$, we compute $\iota_j 
 
 In each case the denominator is nonzero on $U_j\cap U_k$, so the transition maps are smooth making $\mathbb{CP}^n$ a $2n$-dimensional smooth manifold.
 
-Compactness: the map $\pi:S^{2n+1}\to\mathbb{CP}^n$, $\pi(z)=[z]$ is continuous and surjective, and $S^{2n+1}$ is compact. Hence $\mathbb{CP}^n\cong S^{2n+1}/S^1$ is compact.
+Compactness: the map $\pi:S^{2n+1}\to\mathbb{CP}^n$, $\pi(z)=[z]$ is continuous and surjective, and $S^{2n+1}$ is compact. Hence $\mathbb{CP}^n$ is compact.
