@@ -83,3 +83,5 @@ Let $w$ be the shortest nonidentity word in $F$ with finite order, and let $n>1$
 Let $F$ be the free group on the set $X$, and let $Y \subset X$. If $H$ is the smallest normal subgroup of $F$ containing $Y$, then $F / H$ is a free group.
 
 Proof
+
+Let $Z=X \setminus Y$. Then $F$ is the (internal) free product of the free groups $F(Y)$ and $F(Z)$. Since $H$ is the smallest normal subgroup of $F$ containing $Y$, we have $H \cap F(Z)=\{1\}$, so by the First Isomorphism Theorem, $F / H \cong F(Z)$, which is a free group.
