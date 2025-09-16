@@ -147,3 +147,30 @@ In all cases, the transition maps between charts from $\mathcal{A}_H$ and $\math
 Show that $\mathbb{CP}^n$ is a compact smooth manifold. (Part of this is in [Waldron's notes](https://people.math.wisc.edu/~awaldron3/Notes/761%20notes%20final.pdf).)
 
 Proof
+
+Define $\mathbb{CP}^n$ as the set of complex lines in $\mathbb{C}^{n+1}$ with homogeneous coordinates $[z_0:\cdots:z_n]$, not all zero, modulo scalar multiplication by $\lambda\in\mathbb{C}^\times$.
+
+For $k=0,\dots,n$ set
+$`U_k=\{[z]\in\mathbb{CP}^n:\ z_k\neq 0\},`$
+
+$\iota_k:U_k\to\mathbb{C}^n,$
+
+$\iota_k([z])=(z_0/z_k,\ldots,z_{k-1}/z_k,z_{k+1}/z_k,\ldots,z_n/z_k).$
+
+Each $\iota_k$ is a homeomorphism with inverse
+
+$\iota_k^{-1}(w_0,\ldots,w_{n-1})=[w_0:\cdots:w_{k-1}:1:w_k:\cdots:w_{n-1}],$
+
+so $\{(U_k,\iota_k)\}_{k=0}^n$ is an atlas with model space $\mathbb{C}^n\cong\mathbb{R}^{2n}$.
+
+On overlaps $U_j\cap U_k$ the transition maps are holomorphic (hence smooth). Writing $w=(w_0,\ldots,w_{n-1})=\iota_k([z])$:
+- If $j<k$, then $z_j=w_j$ and
+$(\iota_j\circ\iota_k^{-1})(w)=\Big(\tfrac{w_0}{w_j},\ldots,\tfrac{w_{j-1}}{w_j},\tfrac{1}{w_j},\tfrac{w_{j+1}}{w_j},\ldots,\tfrac{w_{k-1}}{w_j},\tfrac{w_k}{w_j},\ldots,\tfrac{w_{n-1}}{w_j}\Big).$
+- If $j>k$, then $z_j=w_{j-1}$ and
+$(\iota_j\circ\iota_k^{-1})(w)=\Big(\tfrac{w_0}{w_{j-1}},\ldots,\tfrac{w_{k-1}}{w_{j-1}},\tfrac{1}{w_{j-1}},\tfrac{w_k}{w_{j-1}},\ldots,\tfrac{w_{j-2}}{w_{j-1}},\tfrac{w_j}{w_{j-1}},\ldots,\tfrac{w_{n-1}}{w_{j-1}}\Big)$.
+
+In each case the denominator is nonzero on $U_j\cap U_k$, so these maps are rational holomorphic functions.
+
+Thus $`\{\iota_k\}`$ defines the default smooth (indeed complex) structure on $\mathbb{CP}^n$, making it a $2n$-dimensional smooth manifold.
+
+Compactness: consider the Hopf fibration $\pi:S^{2n+1}\subset\mathbb{C}^{n+1}\to\mathbb{CP}^n$, $\pi(z)=[z]$. The fiber is $S^1$, the map is continuous and surjective, and $S^{2n+1}$ is compact. Hence $\mathbb{CP}^n\cong S^{2n+1}/S^1$ is compact (and Hausdorff). Therefore $\mathbb{CP}^n$ is a compact smooth manifold.
