@@ -107,3 +107,21 @@ Proof
 1. To show that $g \simeq h$, we have $g = \mathbb{1}_X g \simeq (hf)g = h(fg) \simeq h\mathbb{1}_Y = h$. Thus $g \simeq h$. This implies $gf \simeq hf$. Since $hf \simeq \mathbb{1}_X$, we have $gf \simeq \mathbb{1}_X$. With the given $fg \simeq \mathbb{1}_Y$, this shows $f$ is a homotopy equivalence.
 
 2. More generally, if $fg$ and $hf$ are homotopy equivalences, let $k\colon Y \to Y$ be a homotopy inverse for $fg$ and $l\colon X \to X$ be a homotopy inverse for $hf$. Define new maps $g' = gk\colon Y \to X$ and $h' = lh\colon Y \to X$. Then we have $fg' = f(gk) = (fg)k \simeq \mathbb{1}_Y$ and $h'f = (lh)f = l(hf) \simeq \mathbb{1}_X$. By part 1, using $g'$ and $h'$, it follows that $f$ is a homotopy equivalence.
+
+# Exercise 20
+
+Show that the subspace $X \subset \mathbb{R}^3$ formed by a Klein bottle intersecting itself in a circle, as shown in the figure, is homotopy equivalent to $S^1 \vee S^1 \vee S^2$.
+
+Proof
+
+# Exercise 23
+
+Show that a CW complex is contractible if it is the union of two contractible subcomplexes whose intersection is also contractible.
+
+Proof
+
+# Exercise 28
+
+Show that if $(X_1, A)$ satisfies the homotopy extension property, then so does every pair $(X_0 \sqcup_f X_1, X_0)$ obtained by attaching $X_1$ to a space $X_0$ via a map $f: A \to X_0$.
+
+Proof
