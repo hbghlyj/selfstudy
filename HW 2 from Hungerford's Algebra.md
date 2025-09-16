@@ -33,15 +33,10 @@ The conjugacy classes of $D_n$ are:
 Any normal subgroup must be a union of conjugacy classes.
 
 The normal subgroups of $D_n$ are:
-- For each divisor $d$ of $n$, the subgroup $\langle r^d \rangle\cong C_{n/d}$, is normal in $D_n$.
-  
-  These include the trivial group.
-- For each divisor $d$ of $n$, the subgroup $\langle r^d,s\rangle\cong D_{n/d}$, is normal in $D_n$.
-  
-  These include the whole group.
 
-  ToDo
-  What about  $\langle r^d,rs\rangle$
+1.  Subgroups of $\langle r \rangle$: $\langle r^d \rangle$ for any divisor $d$ of $n$.
+2.  If $n$ is even, the subgroups $\langle r^2, s \rangle$ and $\langle r^2, rs \rangle$ are also normal.
+
 
 # Section I.8
 ## Exercise 2
