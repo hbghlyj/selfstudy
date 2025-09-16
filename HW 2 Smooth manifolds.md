@@ -41,7 +41,7 @@ To define a smooth structure on the Möbius strip, we can use the following char
    - For $(x,y)$ with $x < 0.5$, let $\phi_2([(x,y)]) = (x,y)$.
    - For $(x,y)$ with $x > 0.5$, let $\phi_2([(x,y)]) = (x-1,-y)$.
   
-   For points $[(0,y)] = [(1,-y)]$ on the seam,
+   For points on the seam, $p=[(0,y)] = [(1,-y)]$,
    - Using the representative $(0,y)$, we have $x=0 < 0.5$, so $\phi_2(p) = (0,y)$.
    - Using the representative $(1,-y)$, we have $x=1 > 0.5$, so $\phi_2(p) = (1-1, -(-y)) = (0,y)$.
    
