@@ -167,8 +167,6 @@ $(\iota_j\circ\iota_k^{-1})(w)=\Big(\tfrac{w_0}{w_j},\ldots,\tfrac{w_{j-1}}{w_j}
 - If $j>k$, then $z_j=w_{j-1}$ and
 $(\iota_j\circ\iota_k^{-1})(w)=\Big(\tfrac{w_0}{w_{j-1}},\ldots,\tfrac{w_{k-1}}{w_{j-1}},\tfrac{1}{w_{j-1}},\tfrac{w_k}{w_{j-1}},\ldots,\tfrac{w_{j-2}}{w_{j-1}},\tfrac{w_j}{w_{j-1}},\ldots,\tfrac{w_{n-1}}{w_{j-1}}\Big)$.
 
-In each case the denominator is nonzero on $U_j\cap U_k$, so these maps are rational holomorphic functions.
-
-Thus $`\{\iota_k\}`$ defines the default smooth (indeed complex) structure on $\mathbb{CP}^n$, making it a $2n$-dimensional smooth manifold.
+In each case the denominator is nonzero on $U_j\cap U_k$, so these maps are smooth making $\mathbb{CP}^n$ a $2n$-dimensional smooth manifold.
 
 Compactness: consider the Hopf fibration $\pi:S^{2n+1}\subset\mathbb{C}^{n+1}\to\mathbb{CP}^n$, $\pi(z)=[z]$. The fiber is $S^1$, the map is continuous and surjective, and $S^{2n+1}$ is compact. Hence $\mathbb{CP}^n\cong S^{2n+1}/S^1$ is compact (and Hausdorff). Therefore $\mathbb{CP}^n$ is a compact smooth manifold.
