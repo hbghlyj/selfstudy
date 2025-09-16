@@ -32,16 +32,16 @@ Write down (with proof) a smooth structure on the Möbius strip.
 
 Proof
 
-The Möbius strip is the quotient space of the rectangle $[0,1] \times [-1,1]$ by the equivalence relation that identifies the points $(0,y)$ and $(1,-y)$ for all $y \in [-1,1]$.
+The Möbius strip is the quotient space of the rectangle $[0,1] \times (-1,1)$ by the equivalence relation that identifies the points $(0,y)$ and $(1,-y)$ for all $y \in (-1,1)$.
 
 To define a smooth structure on the Möbius strip, we can use the following charts:
 
-1. Define $`U_1 =\{[(x,y)]\mid x\in(0,1)\}`$ and the chart map $\phi_1: U_1 \to \mathbb{R}^2$ by $\phi_1([(x,y)]) = (x,y)$. This chart covers the interior of the rectangle and is clearly a homeomorphism onto its image.
-2. Define $`U_2 = \{[(x,y)]\mid x\ne\frac12\}`$ and the chart map $\phi_2: U_2 \to \mathbb{R}^2$ by
+1. Define $`U_1 =\{[(x,y)]\mid x\in(0,1)\}``$ and the chart map $\phi_1: U_1 \to \mathbb{R}^2$ by $\phi_1([(x,y)]) = (x,y)$. The image is the open set $(0,1) \times (-1,1)$.
+2. Define $`U_2 = \{[(x,y)]\mid x\ne\frac12\}``$ and the chart map $\phi_2: U_2 \to \mathbb{R}^2$ by
    - For $(x,y)$ with $x < 0.5$, let $\phi_2([(x,y)]) = (x,y)$.
    - For $(x,y)$ with $x > 0.5$, let $\phi_2([(x,y)]) = (x-1,-y)$.
    
-    This chart covers the regions near the edges of the rectangle and respects the identification of the edges.
+   This chart covers the regions near the edges of the rectangle and respects the identification of the edges. Its image is the open set $(-1/2, 1/2) \times (-1,1).
 
 The transition map between the two charts on the overlap $U_1 \cap U_2$ is given by:
 - For $(x,y)$ with $x < 0.5$, $\phi_2 \circ \phi_1^{-1}(x,y) = (x,y)$, which is smooth.
