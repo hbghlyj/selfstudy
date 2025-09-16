@@ -121,6 +121,7 @@ Show that a CW complex is contractible if it is the union of two contractible su
 Proof
 
 # Exercise 28
+
 Show that if $(X_1, A)$ satisfies the homotopy extension property, then so does every pair $(X_0 \sqcup_f X_1, X_0)$ obtained by attaching $X_1$ to a space $X_0$ via a map $f: A \to X_0$.
 
 Proof
