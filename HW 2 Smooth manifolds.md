@@ -40,6 +40,12 @@ To define a smooth structure on the Möbius strip, we can use the following char
 2. Define $`U_2 = \{[(x,y)]\mid x\ne\frac12\}`$ and the chart map $\phi_2: U_2 \to \mathbb{R}^2$ by
    - For $(x,y)$ with $x < 0.5$, let $\phi_2([(x,y)]) = (x,y)$.
    - For $(x,y)$ with $x > 0.5$, let $\phi_2([(x,y)]) = (x-1,-y)$.
+  
+   For points $[(0,y)] = [(1,-y)]$ on the seam,
+   - Using the representative $(0,y)$, we have $x=0 < 0.5$, so $\phi_2(p) = (0,y)$.
+   - Using the representative $(1,-y)$, we have $x=1 > 0.5$, so $\phi_2(p) = (1-1, -(-y)) = (0,y)$.
+   
+   Since both representatives yield the same image, the map $\phi_2$ is well-defined.
    
    This chart covers the regions near the edges of the rectangle and respects the identification of the edges. Its image is the open set $(-1/2, 1/2) \times (-1,1).
 
