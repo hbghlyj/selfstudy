@@ -36,8 +36,8 @@ The Möbius strip is the quotient space of the rectangle $[0,1] \times (-1,1)$ b
 
 To define a smooth structure on the Möbius strip, we can use the following charts:
 
-1. Define $`U_1 =\{[(x,y)]\mid x\in(0,1)\}``$ and the chart map $\phi_1: U_1 \to \mathbb{R}^2$ by $\phi_1([(x,y)]) = (x,y)$. The image is the open set $(0,1) \times (-1,1)$.
-2. Define $`U_2 = \{[(x,y)]\mid x\ne\frac12\}``$ and the chart map $\phi_2: U_2 \to \mathbb{R}^2$ by
+1. Define $`U_1 =\{[(x,y)]\mid x\in(0,1)\}`$ and the chart map $\phi_1: U_1 \to \mathbb{R}^2$ by $\phi_1([(x,y)]) = (x,y)$. The image is the open set $(0,1) \times (-1,1)$.
+2. Define $`U_2 = \{[(x,y)]\mid x\ne\frac12\}`$ and the chart map $\phi_2: U_2 \to \mathbb{R}^2$ by
    - For $(x,y)$ with $x < 0.5$, let $\phi_2([(x,y)]) = (x,y)$.
    - For $(x,y)$ with $x > 0.5$, let $\phi_2([(x,y)]) = (x-1,-y)$.
    
