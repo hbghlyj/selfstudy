@@ -84,4 +84,4 @@ Let $F$ be the free group on the set $X$, and let $Y \subset X$. If $H$ is the s
 
 Proof
 
-Let $Z=X \setminus Y$. Then $F$ is the (internal) free product of the free groups $F(Y)$ and $F(Z)$. Since $H$ is the smallest normal subgroup of $F$ containing $Y$, we have $H \cap F(Z)=\{1\}$, so by the First Isomorphism Theorem, $F / H \cong F(Z)$, which is a free group.
+Let $Z=X \setminus Y$. Define a map $\phi: X \to F(Z)$ by $\phi(x)=x$ if $x \in Z$ and $\phi(x)=1$ if $x \in Y$. By the Universal Mapping Property of free groups, $\phi$ extends to a homomorphism $\tilde{\phi}: F(X) \to F(Z)$. Since $\tilde{\phi}(y)=1$ for all $y \in Y$, we have $H \subseteq \ker(\tilde{\phi})$. Thus, $\tilde{\phi}$ induces a homomorphism $\bar{\phi}: F(X)/H \to F(Z)$.
