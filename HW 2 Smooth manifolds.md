@@ -157,11 +157,9 @@ $\iota_k:U_k\to\mathbb{C}^n,$
 
 $\iota_k([z])=(z_0/z_k,\ldots,z_{k-1}/z_k,z_{k+1}/z_k,\ldots,z_n/z_k).$
 
-Each $\iota_k$ is a homeomorphism with inverse
+Each $\iota_k:U_k\to\mathbb C^n$ is a homeomorphism with inverse
 
 $\iota_k^{-1}(w_0,\ldots,w_{n-1})=[w_0:\cdots:w_{k-1}:1:w_k:\cdots:w_{n-1}],$
-
-so $\{(U_k,\iota_k)\}_{k=0}^n$ is an atlas with model space $\mathbb{C}^n\cong\mathbb{R}^{2n}$.
 
 On overlaps $U_j\cap U_k$ the transition maps are holomorphic (hence smooth). Writing $w=(w_0,\ldots,w_{n-1})=\iota_k([z])$:
 - If $j<k$, then $z_j=w_j$ and
