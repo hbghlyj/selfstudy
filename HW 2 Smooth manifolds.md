@@ -161,11 +161,11 @@ Each $\iota_k:U_k\to\mathbb C^n$ is a homeomorphism with inverse
 
 $\iota_k^{-1}(w_0,\ldots,w_{n-1})=[w_0:\cdots:w_{k-1}:1:w_k:\cdots:w_{n-1}],$
 
-On overlaps $U_j\cap U_k$ writing $w=(w_0,\ldots,w_{n-1})$, the map $\iota_j$ divides by $w_j$ and removes the $j$-th component.
-- If $j<k$, then
+On overlaps $U_j\cap U_k$ writing $w=(w_0,\ldots,w_{n-1})$, we compute $\iota_j \circ \iota_k^{-1}(w)$. Let $z = \iota_k^{-1}(w)$.
+- If $j<k$, then $z_j=w_j$ and
    $(\iota_j\circ\iota_k^{-1})(w)=\frac1{w_j}\Big(w_0,\ldots,w_{j-1},w_{j+1},\ldots,w_{k-1},1,w_k,\ldots,w_{n-1}\Big).$
-- If $j>k$, then
-   $(\iota_j\circ\iota_k^{-1})(w)=\frac1{w_j}\Big(w_0,\ldots,w_{k-1},1,w_{k+1},\ldots,w_{j-1},w_{j+1},\ldots,w_{n-1}\Big).$
+- If $j>k$, then $z_j=w_{j-1}$ and
+   $(\iota_j\circ\iota_k^{-1})(w)=\frac1{w_{j-1}}\Big(w_0,\ldots,w_{k-1},1,w_k,\ldots,w_{j-2},w_j,\ldots,w_{n-1}\Big).
 
 In each case the denominator is nonzero on $U_j\cap U_k$, so the transition maps are smooth making $\mathbb{CP}^n$ a $2n$-dimensional smooth manifold.
 
