@@ -46,6 +46,12 @@ If $f: A \to B$ is an equivalence in a category $\mathcal{C}$ and $g: B \to A$ i
 
 Proof
 
+Suppose there is another morphism $g': B \to A$ such that $g' \circ f=1_A$ and $f \circ g'=1_B$. Then we have:
+
+$g' = g' \circ 1_B = g' \circ (f \circ g) = (g' \circ f) \circ g = 1_A \circ g = g$
+
+Thus, $g$ is unique.
+
 ## Exercise 3
 Let $G$ be an (additive) abelian group with subgroups $H$ and $K$. Show that $G \cong H \oplus K$ if and only if there are homomorphisms $H \overunderset{\pi_1}{\iota_1}{\leftrightarrows} G \overunderset{\pi_2}{\iota_2}{\rightleftarrows} K$ such that $\pi_1 \iota_1=1_H, \pi_2 \iota_2=1_K, \pi_1 \iota_2=0$ and $\pi_2 \iota_1=0$, where 0 is the map sending every element onto the zero (identity) element, and $\iota_1 \pi_1(x)+\iota_2 \pi_2(x)=x$ for all $x \in G$.
 
