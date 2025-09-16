@@ -55,6 +55,10 @@ Let $G$ be an (additive) abelian group with subgroups $H$ and $K$. Show that $G 
 
 Proof
 
+Define the homomorphism $\phi: G \to G/K$ by $\phi(g) = gK$. The kernel of $\phi$ is $K$, and by the First Isomorphism Theorem, we have $G/K \cong H$.
+
+Similarly, define the homomorphism $\psi: G \to G/H$ by $\psi(g) = gH$. The kernel of $\psi$ is $H$, and by the First Isomorphism Theorem, we have $G/H \cong K$.
+
 ## Exercise 5
 Let $G, H$ be finite cyclic groups. Then $G \times H$ is cyclic if and only if $(|G|,|H|)=1$.
 
