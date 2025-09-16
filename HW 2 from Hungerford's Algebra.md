@@ -34,8 +34,8 @@ Any normal subgroup must be a union of conjugacy classes.
 
 The normal subgroups of $D_n$ are:
 
-1.  Subgroups of $\langle r \rangle$: $\langle r^d \rangle$ for any divisor $d$ of $n$.
-2.  If $n$ is even, the subgroups $\langle r^2, s \rangle$ and $\langle r^2, rs \rangle$ are also normal.
+1.  The group $D_n$ and all subgroups of $\langle r \rangle$ (of the form $\langle r^d \rangle$ for any divisor $d$ of $n$).
+2.  If $n$ is even, the subgroups $\langle r^2, s \rangle$ and $\langle r^2, rs \rangle$.
 
 
 # Section I.8
