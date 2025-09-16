@@ -47,7 +47,7 @@ To define a smooth structure on the Möbius strip, we can use the following char
    
    Since both representatives yield the same image, the map $\phi_2$ is well-defined.
    
-   This chart covers the regions near the edges of the rectangle and respects the identification of the edges. Its image is the open set $(0,1) \times (-1,1)$.
+   This chart covers the regions near the edges of the rectangle and respects the identification of the edges. Its image is the open set $(-0.5,0.5) \times (-1,1)$.
 
 The transition map between the two charts on the overlap $U_1 \cap U_2$ is given by:
 - For $(x,y)$ with $x < 0.5$, $\phi_2 \circ \phi_1^{-1}(x,y) = (x,y)$, which is smooth.
