@@ -12,10 +12,10 @@ Check that the definition of a smooth function makes sense on a smooth manifold.
 
 Proof
 
-Assume $f$ is smooth according to the definition, meaning there exists a smooth chart $(U, \phi)$ around $p$ such that $f \circ \phi^{-1}: \phi(U \cap V) \to \mathbb{R}$ is smooth as a map between open subsets of Euclidean space.
+Assume $f$ is smooth according to the definition, meaning there exists a smooth chart $(U, \phi)$ around $p$ such that $f \circ \phi^{-1}: \phi(U) \to \mathbb{R}$ is smooth as a map between open subsets of Euclidean space.
 
 Now, consider any other smooth chart $(U', \phi')$ also containing $p$, belonging to the smooth structure of $M$.
-On the overlap region $\phi'(U \cap U' \cap V)$, we can write:
+On the overlap region $\phi'(U \cap U')$, we can write:
 
 $f \circ (\phi')^{-1} = (f \circ \phi^{-1}) \circ (\phi \circ (\phi')^{-1})$.
 
