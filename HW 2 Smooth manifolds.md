@@ -169,4 +169,4 @@ $(\iota_j\circ\iota_k^{-1})(w)=\Big(\tfrac{w_0}{w_{j-1}},\ldots,\tfrac{w_{k-1}}{
 
 In each case the denominator is nonzero on $U_j\cap U_k$, so these maps are smooth making $\mathbb{CP}^n$ a $2n$-dimensional smooth manifold.
 
-Compactness: consider the Hopf fibration $\pi:S^{2n+1}\subset\mathbb{C}^{n+1}\to\mathbb{CP}^n$, $\pi(z)=[z]$. The fiber is $S^1$, the map is continuous and surjective, and $S^{2n+1}$ is compact. Hence $\mathbb{CP}^n\cong S^{2n+1}/S^1$ is compact (and Hausdorff). Therefore $\mathbb{CP}^n$ is a compact smooth manifold.
+Compactness: the map $\pi:S^{2n+1}\to\mathbb{CP}^n$, $\pi(z)=[z]$ is continuous and surjective, and $S^{2n+1}$ is compact. Hence $\mathbb{CP}^n\cong S^{2n+1}/S^1$ is compact.
