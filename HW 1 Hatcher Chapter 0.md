@@ -122,17 +122,15 @@ Proof
 
 Let $X = A \cup B$ be a CW complex where $A$, $B$, and $A \cap B$ are all contractible. We want to find a homotopy $F\colon X \times I \to X$ such that $F(x, 0) = x$ for all $x \in X$ and $F(x, 1) = x_0$ for some fixed point $x_0 \in X$.
 
-Let $q\colon X \to X / (A \cap B)=A\vee B$ be the quotient map that collapses $A \cap B$ to a point $x_0$.
+Let $q\colon X \to X / (A \cap B)=qA\vee qB$ be the quotient map that collapses $A \cap B$ to a point $x_0$.
 
-By assumption $A \cap B$ is contractible, by Proposition 0.17, the quotient map $q$ is a homotopy equivalence. Let $g\colon A\vee B \to X$ be a homotopy inverse for $q$. Then we have $q g \simeq \mathbb{1}_{A\vee B}$ and $g q \simeq \mathbb{1}_X$.
+By assumption $A \cap B$ is contractible, by Proposition 0.17, the quotient map $q$ is a homotopy equivalence. It suffices to show that $qA \vee qB$ is contractible.
 
-Since $A$ and $B$ are contractible, there exist homotopies $F_A\colon A \times I \to A$ and $F_B\colon B \times I \to B$ such that $F_A(a, 0) = a$, $F_A(a, 1) = x_0$ for all $a \in A$, and $F_B(b, 0) = b$, $F_B(b, 1) = x_0$ for all $b \in B$.
-
-Define a homotopy $H\colon (A \vee B) \times I \to A \vee B$ by
-
-$`H(y, t) = \begin{cases} q(F_A(g(y), t)) & \text{if } y \in A \\ q(F_B(g(y), t)) & \text{if } y \in B \end{cases}`$
-
-This map is well-defined because $g(y) \in A \cap B$ when $y$ is the wedge point, and both $qF_A$ and $qF_B$ send points in $A \cap B$ to $x_0$. The map $H$ is continuous because it is defined piecewise on the closed subspaces $A$ and $B$.
+Since $A$ and $B$ are contractible, $qA$ and $qB$ are contractible. Let $F_A\colon qA \times I \to qA$ be a homotopy from the identity map on $qA$ to the constant map at $x_0$, and let $F_B\colon qB \times I \to qB$ be a homotopy from the identity map on $qB$ to the constant map at $x_0$. Glue these homotopies together to form a homotopy $F\colon (qA \vee qB) \times I \to qA \vee qB$ defined by
+$`F(x, t) = \begin{cases} F_A(x, t) & \text{if } x \in qA \\ F_B(x, t) & \text{if } x \in qB \end{cases}`$
+This map is continuous because it agrees on the intersection point $x_0$. It satisfies:
+* $F(x, 0) = x$ for all $x \in qA \vee qB$
+* $F(x, 1) = x_0$ for all $x \in qA \vee qB$
 
 # Exercise 28
 
