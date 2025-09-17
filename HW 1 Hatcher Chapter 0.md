@@ -127,7 +127,9 @@ Let $q\colon X \to X / (A \cap B)=qA\vee qB$ be the quotient map that collapses 
 By assumption $A \cap B$ is contractible, by Proposition 0.17, the quotient map $q$ is a homotopy equivalence. It suffices to show that $qA \vee qB$ is contractible.
 
 Since $A$ and $B$ are contractible, $qA$ and $qB$ are contractible. Let $F_A\colon qA \times I \to qA$ be a homotopy from the identity map on $qA$ to the constant map at $x_0$, and let $F_B\colon qB \times I \to qB$ be a homotopy from the identity map on $qB$ to the constant map at $x_0$. Glue these homotopies together to form a homotopy $F\colon (qA \vee qB) \times I \to qA \vee qB$ defined by
+
 $`F(x, t) = \begin{cases} F_A(x, t) & \text{if } x \in qA \\ F_B(x, t) & \text{if } x \in qB \end{cases}`$
+
 This map is well-defined because it agrees on the intersection point $x_0$. It satisfies:
 * $F(x, 0) = x$ for all $x \in qA \vee qB$
 * $F(x, 1) = x_0$ for all $x \in qA \vee qB$
