@@ -120,6 +120,12 @@ Show that a CW complex is contractible if it is the union of two contractible su
 
 Proof
 
+Let $X = A \cup B$ be a CW complex where $A$, $B$, and $A \cap B$ are all contractible. We want to show that $X$ is contractible.
+
+Since $A ∩ B$ is contractible, $A/(A ∩ B)$ is homotopy equivalent to $A$ by Proposition 0.17. Similarly, $B/(A ∩ B)$ is homotopy equivalent to $B$. Since both $A$ and $B$ are contractible, their quotients $A/(A ∩ B)$ and $B/(A ∩ B)$ are also contractible. Let the homotopy equivalences be $H_1:A/(A ∩ B) × I \to A$ and $H_2:B/(A ∩ B) × I \to B$. Glue these homotopies together to form a homotopy $H:X × I \to X$ defined by
+
+$H(x, t) = \begin{cases} H_1(x, t) & \text{if } x \in A \\ H_2(x, t) & \text{if } x \in B \end{cases}$
+
 # Exercise 28
 
 Show that if $(X_1, A)$ satisfies the homotopy extension property, then so does every pair $(X_0 \sqcup_f X_1, X_0)$ obtained by attaching $X_1$ to a space $X_0$ via a map $f: A \to X_0$.
