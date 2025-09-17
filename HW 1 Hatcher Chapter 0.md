@@ -128,7 +128,7 @@ By assumption $A \cap B$ is contractible, by Proposition 0.17, the quotient map 
 
 Since $A$ and $B$ are contractible, $qA$ and $qB$ are contractible. Let $F_A\colon qA \times I \to qA$ be a homotopy from the identity map on $qA$ to the constant map at $x_0$, and let $F_B\colon qB \times I \to qB$ be a homotopy from the identity map on $qB$ to the constant map at $x_0$. Glue these homotopies together to form a homotopy $F\colon (qA \vee qB) \times I \to qA \vee qB$ defined by
 $`F(x, t) = \begin{cases} F_A(x, t) & \text{if } x \in qA \\ F_B(x, t) & \text{if } x \in qB \end{cases}`$
-This map is continuous because it agrees on the intersection point $x_0$. It satisfies:
+This map is well-defined because it agrees on the intersection point $x_0$. It satisfies:
 * $F(x, 0) = x$ for all $x \in qA \vee qB$
 * $F(x, 1) = x_0$ for all $x \in qA \vee qB$
 
@@ -142,4 +142,4 @@ If $(X_1, A)$ satisfies the homotopy extension property, there is a retraction $
 
 $`r'(x, t) = \begin{cases} (x, t) & \text{if } x \in X_0 \\ r(x, t) & \text{if } x \in X_1 \end{cases}`$
 
-This map is continuous because it agrees on the intersection $A$. Thus, $(X_0 \sqcup_f X_1, X_0)$ satisfies the homotopy extension property.
+This map is well-defined because it agrees on the intersection $A\times I$. Thus, $(X_0 \sqcup_f X_1, X_0)$ satisfies the homotopy extension property.
