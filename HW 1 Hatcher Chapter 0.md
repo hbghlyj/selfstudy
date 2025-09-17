@@ -120,11 +120,19 @@ Show that a CW complex is contractible if it is the union of two contractible su
 
 Proof
 
-Let $X = A \cup B$ be a CW complex where $A$, $B$, and $A \cap B$ are all contractible. We want to show that $X$ is contractible.
+Let $X = A \cup B$ be a CW complex where $A$, $B$, and $A \cap B$ are all contractible. We want to find a homotopy $F\colon X \times I \to X$ such that $F(x, 0) = x$ for all $x \in X$ and $F(x, 1) = x_0$ for some fixed point $x_0 \in X$.
 
-Since $A ∩ B$ is contractible, by Proposition 0.17 there exist homotopy equivalences $r_A: A \to A/(A ∩ B)$ and $r_B: B \to B/(A ∩ B)$ that collapse $A ∩ B$ to a point. $A/(A ∩ B)$ is homotopy equivalent to $A$. Similarly, $B/(A ∩ B)$ is homotopy equivalent to $B$. Since both $A$ and $B$ are contractible, their quotients $A/(A ∩ B)$ and $B/(A ∩ B)$ are also contractible. Let the homotopy equivalences be $H_1:A/(A ∩ B) × I \to A$ and $H_2:B/(A ∩ B) × I \to B$. Glue these homotopies together to form a homotopy $H:X × I \to X$ defined by
+Let $q\colon X \to X / (A \cap B)=A\vee B$ be the quotient map that collapses $A \cap B$ to a point $x_0$.
 
-$`H(x, t) = \begin{cases} H_1(r_A(x), t) & \text{if } x \in A \\ H_2(r_B(x), t) & \text{if } x \in B \end{cases}`$
+By assumption $A \cap B$ is contractible, by Proposition 0.17, the quotient map $q$ is a homotopy equivalence. Let $g\colon A\vee B \to X$ be a homotopy inverse for $q$. Then we have $q g \simeq \mathbb{1}_{A\vee B}$ and $g q \simeq \mathbb{1}_X$.
+
+Since $A$ and $B$ are contractible, there exist homotopies $F_A\colon A \times I \to A$ and $F_B\colon B \times I \to B$ such that $F_A(a, 0) = a$, $F_A(a, 1) = x_0$ for all $a \in A$, and $F_B(b, 0) = b$, $F_B(b, 1) = x_0$ for all $b \in B$.
+
+Define a homotopy $H\colon (A \vee B) \times I \to A \vee B$ by
+
+$`H(y, t) = \begin{cases} q(F_A(g(y), t)) & \text{if } y \in A \\ q(F_B(g(y), t)) & \text{if } y \in B \end{cases}`$
+
+This map is well-defined because $g(y) \in A \cap B$ when $y$ is the wedge point, and both $qF_A$ and $qF_B$ send points in $A \cap B$ to $x_0$. The map $H$ is continuous because it is defined piecewise on the closed subspaces $A$ and $B$.
 
 # Exercise 28
 
