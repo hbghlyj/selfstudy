@@ -122,9 +122,9 @@ Proof
 
 Let $X = A \cup B$ be a CW complex where $A$, $B$, and $A \cap B$ are all contractible. We want to show that $X$ is contractible.
 
-Since $A ∩ B$ is contractible, $A/(A ∩ B)$ is homotopy equivalent to $A$ by Proposition 0.17. Similarly, $B/(A ∩ B)$ is homotopy equivalent to $B$. Since both $A$ and $B$ are contractible, their quotients $A/(A ∩ B)$ and $B/(A ∩ B)$ are also contractible. Let the homotopy equivalences be $H_1:A/(A ∩ B) × I \to A$ and $H_2:B/(A ∩ B) × I \to B$. Glue these homotopies together to form a homotopy $H:X × I \to X$ defined by
+Since $A ∩ B$ is contractible, by Proposition 0.17 there exist homotopy equivalences $r_A: A \to A/(A ∩ B)$ and $r_B: B \to B/(A ∩ B)$ that collapse $A ∩ B$ to a point. $A/(A ∩ B)$ is homotopy equivalent to $A$. Similarly, $B/(A ∩ B)$ is homotopy equivalent to $B$. Since both $A$ and $B$ are contractible, their quotients $A/(A ∩ B)$ and $B/(A ∩ B)$ are also contractible. Let the homotopy equivalences be $H_1:A/(A ∩ B) × I \to A$ and $H_2:B/(A ∩ B) × I \to B$. Glue these homotopies together to form a homotopy $H:X × I \to X$ defined by
 
-$H(x, t) = \begin{cases} H_1(x, t) & \text{if } x \in A \\ H_2(x, t) & \text{if } x \in B \end{cases}$
+$`H(x, t) = \begin{cases} H_1(r_A(x), t) & \text{if } x \in A \\ H_2(r_B(x), t) & \text{if } x \in B \end{cases}`$
 
 # Exercise 28
 
