@@ -137,3 +137,9 @@ This map is continuous because it agrees on the intersection point $x_0$. It sat
 Show that if $(X_1, A)$ satisfies the homotopy extension property, then so does every pair $(X_0 \sqcup_f X_1, X_0)$ obtained by attaching $X_1$ to a space $X_0$ via a map $f: A \to X_0$.
 
 Proof
+
+If $(X_1, A)$ satisfies the homotopy extension property, there is a retraction $`r\colon X_1 \times I \to X_1 \times \{0\} \cup A \times I`$. We can define a retraction $`r'\colon (X_0 \sqcup_f X_1) \times I \to (X_0 \sqcup_f X_1) \times \{0\} \cup X_0 \times I`$ by
+
+$`r'(x, t) = \begin{cases} (x, t) & \text{if } x \in X_0 \\ (r(x, t)) & \text{if } x \in X_1 \end{cases}`$
+
+This map is continuous because it agrees on the intersection $A$. Thus, $(X_0 \sqcup_f X_1, X_0)$ satisfies the homotopy extension property.
