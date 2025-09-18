@@ -114,6 +114,14 @@ Show that the subspace $X \subset \mathbb{R}^3$ formed by a Klein bottle interse
 
 Proof
 
+Recall Example 0.8 and Example 0.11 showed that $S^2$ with two points identified (a pinched torus) is homotopy equivalent to $S^1\vee S^2$. Likewise $S^2$ with three points identified is homotopy equivalent to $S^1\vee S^1\vee S^2$.
+
+A Klein bottle is represented by a square with the left side and right side identified in the opposite direction, the top side and the bottom side identified in the same direction.
+
+In the figure, the circle is homotopic to a point, but the circle is glued to the left side of the square and the right side of the square, so the left side of the square and the right side of the square both become a point, resulting in $S^2$ with three points identified (the circle, the left side and the right side of the square), and thus is homotopy equivalent to $S^1\vee S^1\vee S^2$.
+
+![](https://i.upmath.me/svgb/1ZMxT8MwFIR3_4q3IDVSGqUtCUOVhQ2JCbElGdz4kT6a2tGzowBR_jsKIW1B0I1KjCedfd-d7Kyx6Gj3VtGGJb92CgvD0pHRNthL3pEubS-yDZaku8FYU-Eaxj6tSCMUsk7YNFr5H_LZkB51LsQV3BrnzB4sKYSW3BZca2C41YpMsWxTAVAb62QxBCZTOPa-ADiSJJ0AAJhw_INKpBvO02CCMLi-GVMyyWzarpIOX_pf3dHyB7cA6EUOs9APPZjPYRb7obceujxQuXWnVbaM-IdlovAMXnzEi0e8R1P_z53jb0Xu8el0Zku6rMadLz_zgS6cXsGd1shQEBfVhQAXy-gM4cpfeZ84KUtFjU0WQZSvRYZaffmv7w)
+
 # Exercise 23
 
 Show that a CW complex is contractible if it is the union of two contractible subcomplexes whose intersection is also contractible.
