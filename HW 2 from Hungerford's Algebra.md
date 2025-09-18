@@ -55,6 +55,12 @@ Let $G$ be an (additive) abelian group with subgroups $H$ and $K$. Show that $G 
 
 Proof
 
+($\Rightarrow$) Suppose $G \cong H \oplus K$. Then every element $g \in G$ can be uniquely expressed as $g = h + k$ for some $h \in H$ and $k \in K$. Define the homomorphisms $\iota_1: H \to G$ by $\iota_1(h) = h$, $\iota_2: K \to G$ by $\iota_2(k) = k$, $\pi_1: G \to H$ by $\pi_1(h + k) = h$, and $\pi_2: G \to K$ by $\pi_2(h + k) = k$. It is straightforward to verify that these maps satisfy the required properties.
+
+($\Leftarrow$) Conversely, suppose we have homomorphisms $\iota_1, \iota_2, \pi_1, \pi_2$ satisfying the given conditions. Define a map $\phi: H \oplus K \to G$ by $\phi(h, k) = \iota_1(h) + \iota_2(k)$. This map is a homomorphism: $\phi(h_1, k_1) + \phi(h_2, k_2) = \iota_1(h_1) + \iota_2(k_1) + \iota_1(h_2) + \iota_2(k_2) = \iota_1(h_1 + h_2) + \iota_2(k_1 + k_2) = \phi(h_1 + h_2, k_1 + k_2)$.
+
+Define $\psi: G \to H \oplus K$ by $\psi(g) = (\pi_1(g), \pi_2(g))$. Then $\psi(\phi(h, k)) = \psi(\iota_1(h) + \iota_2(k)) = (\pi_1(\iota_1(h) + \iota_2(k)), \pi_2(\iota_1(h) + \iota_2(k))) = (h, k)$, and $\phi(\psi(g)) = \phi(\pi_1(g), \pi_2(g)) = \iota_1(\pi_1(g)) + \iota_2(\pi_2(g)) = g$. Thus, $\phi$ is an isomorphism, and $G \cong H \oplus K$.
+
 ## Exercise 5
 Let $G, H$ be finite cyclic groups. Then $G \times H$ is cyclic if and only if $(|G|,|H|)=1$.
 
