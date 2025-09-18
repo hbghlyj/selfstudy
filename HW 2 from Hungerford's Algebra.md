@@ -71,9 +71,9 @@ If a group $G$ is the (internal) direct product of its subgroups $H, K$, then $H
 
 Proof
 
-Define the homomorphism $\phi: G \to G/K$ by $\phi(g) = gK$. The kernel of $\phi$ is $K$, and by the First Isomorphism Theorem, we have $G/K \cong H$.
+Define a map $\pi_H: G \to H$ for $g=hk$ (with unique $h \in H, k \in K$) by $\pi_H(g) = h$. This is a surjective homomorphism with kernel $K$. By the First Isomorphism Theorem, $G/K \cong H$.
 
-Similarly, define the homomorphism $\psi: G \to G/H$ by $\psi(g) = gH$. The kernel of $\psi$ is $H$, and by the First Isomorphism Theorem, we have $G/H \cong K$.
+Similarly, the projection $\pi_K: G \to K$ given by $\pi_K(hk)=k$ is a surjective homomorphism with kernel $H$, so $G/H \cong K.
 
 # Section I.9
 ## Exercise 1
