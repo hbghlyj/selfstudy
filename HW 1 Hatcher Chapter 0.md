@@ -120,7 +120,7 @@ A Klein bottle is represented by a square with the left side and right side iden
 
 In the figure, the circle is homotopic to a point, but the circle is glued to the left side of the square and the right side of the square, so the left side of the square and the right side of the square both become a point, resulting in $S^2$ with three points identified (the circle, the left side and the right side of the square), and thus is homotopy equivalent to $S^1\vee S^1\vee S^2$.
 
-![](https://i.upmath.me/svgb/1ZNBS8NAEIXv-yvmUmghLUk0eCi5eBM8ibemh-lmmgxNdsPs1qgh_11CTVtFe7PgceDNvu89ZrO9I8-794o3gvLW5aStoGdr3KJG2bEpXK-yDRVsukHYsPZ7oX7lBY3bWqlBo3lBl3ZOY0XpTb9WE7i33tsaHOcELfsSfGtheNCpLBdsVwqgsc6jHrzS0Zf6QAGcINJOAQCMJMFxStEP-zyIIFzc3h1cMhSxbVehp9f-V3US_6BWAL1awzQMwhnM5zCNg3C2VGoCT1yU_jxKKUR_GCZJLuDFJ7z4gPdsm__Zc_wtyCNtz2t2bIrq0PP1az7SheMVPBhDAppFV1cCjOJLhFEQzT5xVoI57126SNZLlZHJv_zUDw)
+![](https://i.upmath.me/svgb/1ZNPa4NAEMXv-ynmEohgxFhyCl56K_RUetMcJuvEDNFdmV1rW_G7F7H509Lm1kCPA2_2_d5jNm8deT68V7wVlLe-IG0FPVvjohrlwKZ0g8q3VLLpR2HD2rdCQ-YFjdtZqUGjeUGX9k5jRendsFEzuLfe2xocFwQd-z34zsL4oFN5IdhlCqCxzqMevdKjLw2hAjhDpL0CADiShKcpRT_u8yiCOFpNJjmK2K6v0NPr8Lv4J7UCGNQG5nEYB7BYwDwJ42Ct1AyeuNz7yyR7IfrLLNfwkjNeMuE92-Zf1px8y_FIu8uWHZuymmq-fcsnuvh4BA_GkIBm0dWNAJfJNcJluAw-cTLBgluXRqvNWuVkii__9AM)
 
 # Exercise 23
 
