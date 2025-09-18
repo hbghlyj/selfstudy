@@ -81,7 +81,7 @@ Every nonidentity element in a free group $F$ has infinite order.
 
 Proof
 
-Let $w$ be the shortest nonidentity word in $F$ with finite order, and let $n>1$ be such that $w^n=1$. Then $w$ is reduced (otherwise we get a shorter nonidentity word with finite order by removing them). In the equation $ww^{n-2}=w^{-1}$, since $w,w^{-1}$ are both reduced, the first letter of $w$ is the first letter of $w^{-1}$, so we can write $w=a u a^{-1}$ for some letter $a$ and some word $u$. Then $w^n=a u^n a^{-1}$, so $u^n=1$. Since $u$ is shorter than $w$, we must have $u=1$, and hence $w=1$, a contradiction.
+Let $w$ be a reduced nonidentity word in $F$ of minimal length with finite order, and let $n>1$ be such that $w^n=1$. In the product $w^n = w \cdots w$, since $w$ is reduced, any cancellation must occur between adjacent copies of $w$. This means the last letter of $w$ must be the inverse of the first letter of $w$. So we can write $w=a u a^{-1}$ for some letter $a$ and some word $u$. Then $w^n=(a u a^{-1})^n = a u^n a^{-1}$, so $u^n=1$. Since $u$ is shorter than $w$, by minimality we must have $u=1$. This implies $w=aa^{-1}=1$, which contradicts $w$ being a nonidentity element.
 
 ## Exercise 4
 Let $F$ be the free group on the set $X$, and let $Y \subset X$. If $H$ is the smallest normal subgroup of $F$ containing $Y$, then $F / H$ is a free group.
