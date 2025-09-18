@@ -118,7 +118,9 @@ Recall Example 0.8 and Example 0.11 showed that $S^2$ with two points identified
 
 A Klein bottle is represented by a square with the left side and right side identified in the opposite direction, the top side and the bottom side identified in the same direction.
 
-In the figure, the circle is homotopic to a point, but the circle is glued to the left side of the square and the right side of the square, so the left side of the square and the right side of the square both become a point, resulting in $S^2$ with three points identified (the circle, the left side and the right side of the square), and thus is homotopy equivalent to $S^1\vee S^1\vee S^2$.
+A Klein bottle with self-intersection is represented by gluing a null-homotopic circle inside the square to the left and right sides of this square.
+
+Since the circle is homotopic to a point, the left and right sides of this square are homotopic to a point within this space. Now the three points (the circle, the left side and the right side of the square) are identified, resulting in $S^2$ with three points identified, and thus is homotopy equivalent to $S^1\vee S^1\vee S^2$.
 
 ![](https://i.upmath.me/svgb/1ZNPa4NAEMXv-ynmEohgxFhyCl56K_RUetMcJuvEDNFdmV1rW_G7F7H509Lm1kCPA2_2_d5jNm8deT68V7wVlLe-IG0FPVvjohrlwKZ0g8q3VLLpR2HD2rdCQ-YFjdtZqUGjeUGX9k5jRendsFEzuLfe2xocFwQd-z34zsL4oFN5IdhlCqCxzqMevdKjLw2hAjhDpL0CADiShKcpRT_u8yiCOFpNJjmK2K6v0NPr8Lv4J7UCGNQG5nEYB7BYwDwJ42Ct1AyeuNz7yyR7IfrLLNfwkjNeMuE92-Zf1px8y_FIu8uWHZuymmq-fcsnuvh4BA_GkIBm0dWNAJfJNcJluAw-cTLBgluXRqvNWuVkii__9AM)
 
