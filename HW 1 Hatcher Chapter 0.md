@@ -154,4 +154,10 @@ If $(X_1, A)$ satisfies the homotopy extension property, there is a retraction $
 
 $`r'(x, t) = \begin{cases} (x, t) & \text{if } x \in X_0 \\ r(x, t) & \text{if } x \in X_1 \end{cases}`$
 
-This map is well-defined because it agrees on the intersection $A\times I$. Thus, $(X_0 \sqcup_f X_1, X_0)$ satisfies the homotopy extension property.
+For $(a, t)$ with $a \in A$:
+- As an element of $X_1 \times I$, $r'(a, t) = r(a, t) = (a, t)$ since $r$ is a retraction and $(a,t)$ is in the subspace $A \times I$.
+- The point $(a, t)$ is identified with $(f(a), t) \in X_0 \times I$. As an element of $X_0 \times I$, $r'(f(a), t) = (f(a), t)$.
+
+Since $(a, t)$ is identified with $(f(a), t)$ in the domain, and their images under $r'$ are also identified, the map is well-defined.
+
+Thus, $(X_0 \sqcup_f X_1, X_0)$ satisfies the homotopy extension property.
