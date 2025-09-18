@@ -79,7 +79,7 @@ Proof
 
 Define a map $\pi_H: G \to H$ for $g=hk$ (with unique $h \in H, k \in K$) by $\pi_H(g) = h$. This is a surjective homomorphism with kernel $K$. By the First Isomorphism Theorem, $G/K \cong H$.
 
-Similarly, the projection $\pi_K: G \to K$ given by $\pi_K(hk)=k$ is a surjective homomorphism with kernel $H$, so $G/H \cong K.
+Similarly, the projection $\pi_K: G \to K$ given by $\pi_K(hk)=k$ is a surjective homomorphism with kernel $H$, so $G/H \cong K$.
 
 # Section I.9
 ## Exercise 1
