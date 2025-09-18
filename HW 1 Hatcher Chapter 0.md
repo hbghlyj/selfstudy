@@ -130,9 +130,9 @@ Proof
 
 Let $X = A \cup B$ be a CW complex where $A$, $B$, and $A \cap B$ are all contractible. We want to find a homotopy $F\colon X \times I \to X$ such that $F(x, 0) = x$ for all $x \in X$ and $F(x, 1) = x_0$ for some fixed point $x_0 \in X$.
 
-Let $q\colon X \to X / (A \cap B)=qA\vee qB$ be the quotient map that collapses $A \cap B$ to a point $x_0$.
+Let $q\colon X \to X / (A \cap B)$ be the quotient map that collapses $A \cap B$ to a point $x_0$.
 
-By assumption $A \cap B$ is contractible, by Proposition 0.17, the quotient map $q$ is a homotopy equivalence. It suffices to show that $qA \vee qB$ is contractible.
+By assumption $A \cap B$ is contractible, by Proposition 0.17, the quotient map $q$ is a homotopy equivalence. It suffices to show that $qX=qA \vee qB$ is contractible.
 
 Since $A$ and $B$ are contractible, $qA$ and $qB$ are contractible. Let $F_A\colon qA \times I \to qA$ be a homotopy from the identity map on $qA$ to the constant map at $x_0$, and let $F_B\colon qB \times I \to qB$ be a homotopy from the identity map on $qB$ to the constant map at $x_0$. Glue these homotopies together to form a homotopy $F\colon (qA \vee qB) \times I \to qA \vee qB$ defined by
 
