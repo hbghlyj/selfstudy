@@ -81,7 +81,7 @@ Every nonidentity element in a free group $F$ has infinite order.
 
 Proof
 
-Let $w$ be the shortest nonidentity word in $F$ with finite order, and let $n>1$ be such that $w^n=1$. Then the first letter of $w$ is the inverse of the last letter of $w$, so we can write $w=a u a^{-1}$ for some letter $a$ and some word $u$. Then $w^n=a u^n a^{-1}$, so $u^n=1$. Since $u$ is shorter than $w$, we must have $u=1$, and hence $w=1$, a contradiction.
+Let $w$ be the shortest nonidentity word in $F$ with finite order, and let $n>1$ be such that $w^n=1$. Then $w$ is reduced (otherwise we get a shorter nonidentity word with finite order by removing them). In the equation $ww^{n-2}=w^{-1}$, since $w,W^{-1}$ are both reduced, the first letter of $w$ is the first letter of $w^{-1}$, so we can write $w=a u a^{-1}$ for some letter $a$ and some word $u$. Then $w^n=a u^n a^{-1}$, so $u^n=1$. Since $u$ is shorter than $w$, we must have $u=1$, and hence $w=1$, a contradiction.
 
 ## Exercise 4
 Let $F$ be the free group on the set $X$, and let $Y \subset X$. If $H$ is the smallest normal subgroup of $F$ containing $Y$, then $F / H$ is a free group.
