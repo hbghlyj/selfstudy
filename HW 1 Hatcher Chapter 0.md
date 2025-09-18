@@ -114,14 +114,50 @@ Show that the subspace $X \subset \mathbb{R}^3$ formed by a Klein bottle interse
 
 Proof
 
+Recall Example 0.8 and Example 0.11 showed that $S^2$ with two points identified (a pinched torus) is homotopy equivalent to $S^1\vee S^2$. Likewise $S^2$ with three points identified is homotopy equivalent to $S^1\vee S^1\vee S^2$.
+
+A Klein bottle is represented by a square with the left side and right side identified in the opposite direction, the top side and the bottom side identified in the same direction.
+
+A Klein bottle with self-intersection is represented by gluing a null-homotopic circle inside the square to the left and right sides of this square.
+
+Since the circle is homotopic to a point, the left and right sides of this square are homotopic to a point within this space. Now the three points (the circle, the left side and the right side of the square) are identified, resulting in $S^2$ with three points identified, and thus is homotopy equivalent to $S^1\vee S^1\vee S^2$.
+
+![](https://i.upmath.me/svgb/1ZNPa4NAEMXv-ynmEohgxFhyCl56K_RUetMcJuvEDNFdmV1rW_G7F7H509Lm1kCPA2_2_d5jNm8deT68V7wVlLe-IG0FPVvjohrlwKZ0g8q3VLLpR2HD2rdCQ-YFjdtZqUGjeUGX9k5jRendsFEzuLfe2xocFwQd-z34zsL4oFN5IdhlCqCxzqMevdKjLw2hAjhDpL0CADiShKcpRT_u8yiCOFpNJjmK2K6v0NPr8Lv4J7UCGNQG5nEYB7BYwDwJ42Ct1AyeuNz7yyR7IfrLLNfwkjNeMuE92-Zf1px8y_FIu8uWHZuymmq-fcsnuvh4BA_GkIBm0dWNAJfJNcJluAw-cTLBgluXRqvNWuVkii__9AM)
+
 # Exercise 23
 
 Show that a CW complex is contractible if it is the union of two contractible subcomplexes whose intersection is also contractible.
 
 Proof
 
+Let $X = A \cup B$ be a CW complex where $A$, $B$, and $A \cap B$ are all contractible. We want to find a homotopy $F\colon X \times I \to X$ such that $F(x, 0) = x$ for all $x \in X$ and $F(x, 1) = x_0$ for some fixed point $x_0 \in X$.
+
+Let $q\colon X \to X / (A \cap B)$ be the quotient map that collapses $A \cap B$ to a point $x_0$.
+
+By assumption $A \cap B$ is contractible, by Proposition 0.17, the quotient map $q$ is a homotopy equivalence. It suffices to show that $qX=qA \vee qB$ is contractible.
+
+Since $A$ and $B$ are contractible, $qA$ and $qB$ are contractible. Let $F_A\colon qA \times I \to qA$ be a homotopy from the identity map on $qA$ to the constant map at $x_0$, and let $F_B\colon qB \times I \to qB$ be a homotopy from the identity map on $qB$ to the constant map at $x_0$. Glue these homotopies together to form a homotopy $F\colon (qA \vee qB) \times I \to qA \vee qB$ defined by
+
+$`F(x, t) = \begin{cases} F_A(x, t) & \text{if } x \in qA \\ F_B(x, t) & \text{if } x \in qB \end{cases}`$
+
+This map is well-defined because it agrees on the intersection point $x_0$. It satisfies:
+* $F(x, 0) = x$ for all $x \in qA \vee qB$
+* $F(x, 1) = x_0$ for all $x \in qA \vee qB$
+
 # Exercise 28
 
 Show that if $(X_1, A)$ satisfies the homotopy extension property, then so does every pair $(X_0 \sqcup_f X_1, X_0)$ obtained by attaching $X_1$ to a space $X_0$ via a map $f: A \to X_0$.
 
 Proof
+
+If $(X_1, A)$ satisfies the homotopy extension property, there is a retraction $`r\colon X_1 \times I \to X_1 \times \{0\} \cup A \times I`$. We can define a retraction $`r'\colon (X_0 \sqcup_f X_1) \times I \to (X_0 \sqcup_f X_1) \times \{0\} \cup X_0 \times I`$ by
+
+$`r'(x, t) = \begin{cases} (x, t) & \text{if } x \in X_0 \\ r(x, t) & \text{if } x \in X_1 \end{cases}`$
+
+For $(a, t)$ with $a \in A$:
+- As an element of $X_1 \times I$, $r'(a, t) = r(a, t) = (a, t)$ since $r$ is a retraction and $(a,t)$ is in the subspace $A \times I$.
+- The point $(a, t)$ is identified with $(f(a), t) \in X_0 \times I$. As an element of $X_0 \times I$, $r'(f(a), t) = (f(a), t)$.
+
+Since $(a, t)$ is identified with $(f(a), t)$ in the domain, and their images under $r'$ are also identified, the map is well-defined.
+
+Thus, $(X_0 \sqcup_f X_1, X_0)$ satisfies the homotopy extension property.
