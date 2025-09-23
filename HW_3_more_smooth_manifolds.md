@@ -22,7 +22,7 @@
 
    For each nonnegative integer $k$, define $`f_k:M\to \mathbb{R},x\mapsto \psi(x)\phi(x)^{2k}`$.
 
-   Then each $f_k$ is smooth and the set $`\{f_k|k=0,1,2,\ldots\}`$ is linearly independent: suppose $`a_0f_0+a_1f_1+\cdots +a_mf_m\equiv0`$ for some $m\geq 0$ and $a_i\in \mathbb{R}$.
+   Then each $f_k$ is smooth and the set $`\{f_k\mid k=0,1,2,\ldots\}`$ is linearly independent: suppose $`a_0f_0+a_1f_1+\cdots +a_mf_m\equiv0`$ for some $m\geq 0$ and $a_i\in \mathbb{R}$.
 
    Then for any $x\in \phi^{-1}(B)$, we have $`a_0+a_1\phi(x)^2+\cdots +a_m\phi(x)^{2m}=0`$.
 
