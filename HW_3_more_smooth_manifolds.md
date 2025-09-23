@@ -45,7 +45,9 @@
 
    Define $f(x) = g_A(x) / (g_A(x) + g_B(x))$. This function is well-defined (denominator is never zero since $A$ and $B$ are disjoint) and smooth.
 
-   It can then be shown that $f^{-1}(0) = A$ and $f^{-1}(1) = B$.
+   $x\in f^{-1}(0)\iff g_A(x)=0\iff x\in A$
+
+   $x\in f^{-1}(1)\iff g_B(x)=0\iff x\in B$
 
 7. Construct a diffeomorphism between $`\mathrm{Gr}_k(\mathbb{R}^n)`$ and $`\mathrm{Gr}_{n-k}(\mathbb{R}^n)`$. (Hint: use an inner product on $\mathbb{R}^n$.)
    
