@@ -4,9 +4,9 @@ The cyclic group of order 6 is the group defined by generators $a, b$ and relati
 
 Proof
 
-Let $C_6=\langle x|x^6=e\rangle$ be the cyclic group of order 6. Define a map $`f:C_6\to G`$ by $f(x)=ab$ and extend it to a homomorphism. Since $(ab)^6=a^2=b^3=e$, $f$ is well-defined.
+Let $C_6=\langle x|x^6=e\rangle$ be the cyclic group of order 6. Define a map $f\colon C_6\to G$ by $f(x)=ab$ and extend it to a homomorphism. Since $(ab)^6=a^2=b^3=e$, $f$ is well-defined.
 
-Define a map $`g:G\to C_6`$ by $g(a)=x^3,g(b)=x^2$ and extend it to a homomorphism. Since $g(a)^2=g(b)^3=g(a)^{-1}g(b)^{-1}g(a)g(b)=e$, $g$ is well-defined.
+Define a map $g\colon G\to C_6$ by $g(a)=x^3,g(b)=x^2$ and extend it to a homomorphism. Since $g(a)^2=g(b)^3=g(a)^{-1}g(b)^{-1}g(a)g(b)=e$, $g$ is well-defined.
 
 To see that $f,g$ are inverses of each other, it suffices to check on generators:
 - $g(f(x))=g(ab)=g(a)g(b)=x^3x^2=x$
@@ -19,9 +19,9 @@ The operation of free product is commutative and associative: for any groups $A,
 
 Proof
 
-1. By the universal mapping property for free products, the inclusion maps $`i_A:A\to B*A,i_B:B\to B*A`$ induce a unique map $f:A * B\to B * A$ such that $f \upharpoonright A=i_A,f \upharpoonright B=i_B$.
+1. By the universal mapping property for free products, the inclusion maps $i_A\colon A\to B * A,i_B\colon B\to B * A$ induce a unique map $f\colon A * B\to B * A$ such that $f \upharpoonright A=i_A,f \upharpoonright B=i_B$.
 
-   Similarly, the inclusion maps $`j_A:A\to A*B,j_B:B\to A*B`$ induce a unique map $g:B * A\to A * B$ such that $g \upharpoonright B=j_B$ and $g \upharpoonright A=j_A$.
+   Similarly, the inclusion maps $j_A\colon A\to A * B,j_B\colon B\to A * B$ induce a unique map $g\colon B * A\to A * B$ such that $g \upharpoonright B=j_B$ and $g \upharpoonright A=j_A$.
     
    To see that $f,g$ are inverses of each other, it suffices to check on generators:
     - $ g(f(a)) = g(i_A(a)) = j_A(a) = a $ for all $ a \in A $
@@ -29,15 +29,15 @@ Proof
     - $ f(g(b)) = f(j_B(b)) = i_B(b) = b $ for all $ b \in B $
     - $ f(g(a)) = f(j_A(a)) = i_A(a) = a $ for all $ a \in A $
 
-2. To prove $A * (B * C) \cong (A * B) * C$, let $\phi_A: A \to (A * B) * C$, $\phi_B: B \to (A * B) * C$, and $\phi_C: C \to (A * B) * C$ be the canonical inclusion maps.
+2. To prove $A * (B * C) \cong (A * B) * C$, let $\phi_A\colon A \to (A * B) * C$, $\phi_B\colon B \to (A * B) * C$, and $\phi_C\colon C \to (A * B) * C$ be the canonical inclusion maps.
 
-   By the universal property of $B * C$, the maps $`\phi_B`$ and $`\phi_C`$ induce a unique homomorphism $\psi: B * C \to (A * B) * C$.
+   By the universal property of $B * C$, the maps $\phi_B$ and $\phi_C$ induce a unique homomorphism $\psi\colon B * C \to (A * B) * C$.
 
-   Now, by the universal property of $A * (B * C)$, the maps $`\phi_A: A \to (A*B)*C`$ and $`\psi: B*C \to (A*B)*C`$ induce a unique homomorphism $f: A * (B * C) \to (A * B) * C$.
+   Now, by the universal property of $A * (B * C)$, the maps $\phi_A\colon A \to (A * B) * C$ and $\psi\colon B * C \to (A * B) * C$ induce a unique homomorphism $f\colon A * (B * C) \to (A * B) * C$.
 
    This homomorphism $f$ sends any element from $A, B,$ or $C$ to itself in $(A * B) * C$.
 
-   Symmetrically, one can construct a homomorphism $g: (A * B) * C \to A * (B * C)$ which also acts as the identity on elements from $A, B, C$.
+   Symmetrically, one can construct a homomorphism $g\colon(A * B) * C \to A * (B * C)$ which also acts as the identity on elements from $A, B, C$.
 
    The compositions $g \circ f$ and $f \circ g$ are the identity on the generators, and are therefore the identity homomorphisms. Thus, $f$ is an isomorphism.
 
