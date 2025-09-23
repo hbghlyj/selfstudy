@@ -39,9 +39,15 @@
    
    Proof
    
-   Take a smooth partition of unity $`\{\psi,\phi\}`$ subordinate to the open cover $`\{M\setminus A,M\setminus B\}`$ of $M$. Define $`f:M\to [0,1],x\mapsto1-\mathbb{1}_A(x)\phi(x)`$. Then $f$ is smooth, $0\leq f(x)\leq \phi(x)\leq 1$ for all $x\in M$. Moreover, $`f^{-1}(0)=\{x\in M:\phi(x)=1\}\cup A=M\setminus \text{supp}(\phi)\cup A=A`$, and $`f^{-1}(1)=\{x\in M:\phi(x)=1\}=M\setminus \text{supp}(\psi)=B`$.
+   By Theorem 2.29 (Level Sets of Smooth Functions) for any closed set $C$ in a smooth manifold $M$, there exists a non-negative smooth function $g: M\to R$ such that $g^{-1}(0) = C$.
 
-6. Construct a diffeomorphism between $`\mathrm{Gr}_k(\mathbb{R}^n)`$ and $`\mathrm{Gr}_{n-k}(\mathbb{R}^n)`$. (Hint: use an inner product on $\mathbb{R}^n$.)
+   Using this, let $g_A$ and $g_B$ be such smooth functions for the closed sets $A$ and $B$.
+
+   Define $f(x) = g_A(x) / (g_A(x) + g_B(x))$. This function is well-defined (denominator is never zero since $A$ and $B$ are disjoint) and smooth.
+
+   It can then be shown that $f^{-1}(0) = A$ and $f^{-1}(1) = B$.
+
+7. Construct a diffeomorphism between $`\mathrm{Gr}_k(\mathbb{R}^n)`$ and $`\mathrm{Gr}_{n-k}(\mathbb{R}^n)`$. (Hint: use an inner product on $\mathbb{R}^n$.)
    
    Proof
       
