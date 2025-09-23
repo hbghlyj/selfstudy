@@ -27,7 +27,7 @@
    
    Proof
    
-   Take a smooth partition of unity $`\{\psi,\phi\}`$ subordinate to the open cover $`\{M\setminus A,M\setminus B\}`$ of $M$. Define $`f:M\to [0,1],x\mapsto \mathbb{1}_A(x)\phi(x)`$. Then $f$ is smooth, $0\leq f(x)\leq \phi(x)\leq 1$ for all $x\in M$. Moreover, $f^{-1}(0)=\{x\in M:\phi(x)=0\}\cup A=M\setminus \text{supp}(\phi)\cup A=A$, and $f^{-1}(1)=\{x\in M:\phi(x)=1\}=M\setminus \text{supp}(\psi)=B$.
+   Take a smooth partition of unity $`\{\psi,\phi\}`$ subordinate to the open cover $`\{M\setminus A,M\setminus B\}`$ of $M$. Define $`f:M\to [0,1],x\mapsto \mathbb{1}_A(x)\phi(x)`$. Then $f$ is smooth, $0\leq f(x)\leq \phi(x)\leq 1$ for all $x\in M$. Moreover, $`f^{-1}(0)=\{x\in M:\phi(x)=0\}\cup A=M\setminus \text{supp}(\phi)\cup A=A`$, and $`f^{-1}(1)=\{x\in M:\phi(x)=1\}=M\setminus \text{supp}(\psi)=B`$.
 
 6. Construct a diffeomorphism between $`\mathrm{Gr}_k(\mathbb{R}^n)`$ and $`\mathrm{Gr}_{n-k}(\mathbb{R}^n)`$. (Hint: use an inner product on $\mathbb{R}^n$.)
    
