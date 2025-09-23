@@ -24,10 +24,10 @@ Proof
    Similarly, the inclusion maps $j_A:A\to A*B,j_B:B\to A*B$ induce a unique map $g:B*A\to A*B$ such that $g \upharpoonright B=j_B$ and $g \upharpoonright A=j_A$.
     
    To see that $f,g$ are inverses of each other, it suffices to check on generators:
-    - $g(f(a))=g(i_A(a))=j_A(a)=a$ for all $a\in A$
-    - $g(f(b))=g(i_B(b))=j_B(b)=b$ for all $b\in B$
-    - $f(g(b))=f(j_B(b))=i_B(b)=b$ for all $b\in B$
-    - $f(g(a))=f(j_A(a))=i_A(a)=a$ for all $a\in A$
+    - $ g(f(a)) = g(i_A(a)) = j_A(a) = a $ for all $ a \in A $
+    - $ g(f(b)) = g(i_B(b)) = j_B(b) = b $ for all $ b \in B $
+    - $ f(g(b)) = f(j_B(b)) = i_B(b) = b $ for all $ b \in B $
+    - $ f(g(a)) = f(j_A(a)) = i_A(a) = a $ for all $ a \in A $
 
 2. Each generator of the free group (and thus any word) is represented by a function on the set of all reduced words to itself.
 
