@@ -19,9 +19,7 @@ The operation of free product is commutative and associative: for any groups $A,
 
 Proof
 
-1. By the universal mapping property for free products, the inclusion maps $i_A\colon A\to B * A,i_B\colon B\to B * A$ induce a unique map $f\colon A * B\to B * A$ such that $f \upharpoonright A=i_A,f \upharpoonright B=i_B$.
-
-   To see that $f$ is an isomorphism, we construct its inverse $g: B * A \to A * B$. By the universal property, the inclusion maps $j_A: A \to A * B$ and $j_B: B \to A * B$ induce a unique homomorphism $g: B * A \to A * B$.
+1. By the universal mapping property for free products, the inclusion maps $i_A\colon A\to B * A,i_B\colon B\to B * A$ induce a unique map $f\colon A * B\to B * A$. To see that $f$ is an isomorphism, we construct its inverse $g: B * A \to A * B$. By the universal property, the inclusion maps $j_A: A \to A * B$ and $j_B: B \to A * B$ induce a unique homomorphism $g: B * A \to A * B$.
    For any $a \in A$, $(g \circ f)(a) = g(f(a)) = g(a) = a$. For any $b \in B$, $(g \circ f)(b) = g(f(b)) = g(b) = b$. Since $g \circ f$ is the identity on the generators of $A * B$, it is the identity homomorphism. Similarly, $f \circ g$ is the identity on $B * A$. Thus, $f$ is an isomorphism.
 
 2. To prove $A * (B * C) \cong (A * B) * C$, let $\phi_A\colon A \to (A * B) * C$, $\phi_B\colon B \to (A * B) * C$, and $\phi_C\colon C \to (A * B) * C$ be the canonical inclusion maps.
