@@ -19,7 +19,7 @@ The operation of free product is commutative and associative: for any groups $A,
 
 Proof
 
-Let $`i_A:A\to A*B,i_B:B\to A*B`$ be the inclusion maps. By the universal mapping property for free products, $`i_B:B\to B*A,i_A:A\to B*A`$ induce a unique map $`f:A*B\to B*A`$ such that $f \upharpoonright A=i_B,f \upharpoonright B=i_A$.
+By the universal mapping property for free products, the inclusion maps $`i_B:B\to B*A,i_A:A\to B*A`$ induce a unique map $`f:A*B\to B*A`$ such that $f \upharpoonright A=i_B,f \upharpoonright B=i_A$.
 
 Similarly, $`i_{A'}:A\to A*(B*C),i_{B*C}:B*C\to A*(B*C)`$ and $`i_{A*B}:A*B\to (A*B)*C,i_C:C\to (A*B)*C`$ induce a unique map $`g:A*(B*C)\to (A*B)*C`$ such that $`g \upharpoonright A=i_{A*B}\circ i_A,g \upharpoonright B=i_{A*B}\circ i_B,g \upharpoonright C=i_C`$.
 
