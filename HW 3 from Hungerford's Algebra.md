@@ -21,13 +21,8 @@ Proof
 
 1. By the universal mapping property for free products, the inclusion maps $i_A\colon A\to B * A,i_B\colon B\to B * A$ induce a unique map $f\colon A * B\to B * A$ such that $f \upharpoonright A=i_A,f \upharpoonright B=i_B$.
 
-   Similarly, the inclusion maps $j_A\colon A\to A * B,j_B\colon B\to A * B$ induce a unique map $g\colon B * A\to A * B$ such that $g \upharpoonright B=j_B$ and $g \upharpoonright A=j_A$.
-    
-   To see that $f,g$ are inverses of each other, it suffices to check on generators:
-    - $ g(f(a)) = g(i_A(a)) = j_A(a) = a $ for all $ a \in A $
-    - $ g(f(b)) = g(i_B(b)) = j_B(b) = b $ for all $ b \in B $
-    - $ f(g(b)) = f(j_B(b)) = i_B(b) = b $ for all $ b \in B $
-    - $ f(g(a)) = f(j_A(a)) = i_A(a) = a $ for all $ a \in A $
+   To see that $f$ is an isomorphism, we construct its inverse $g: B * A \to A * B$. By the universal property, the inclusion maps $j_A: A \to A * B$ and $j_B: B \to A * B$ induce a unique homomorphism $g: B * A \to A * B$.
+   For any $a \in A$, $(g \circ f)(a) = g(f(a)) = g(a) = a$. For any $b \in B$, $(g \circ f)(b) = g(f(b)) = g(b) = b$. Since $g \circ f$ is the identity on the generators of $A * B$, it is the identity homomorphism. Similarly, $f \circ g$ is the identity on $B * A$. Thus, $f$ is an isomorphism.
 
 2. To prove $A * (B * C) \cong (A * B) * C$, let $\phi_A\colon A \to (A * B) * C$, $\phi_B\colon B \to (A * B) * C$, and $\phi_C\colon C \to (A * B) * C$ be the canonical inclusion maps.
 
