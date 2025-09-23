@@ -44,5 +44,39 @@
 6. Construct a diffeomorphism between $`\mathrm{Gr}_k(\mathbb{R}^n)`$ and $`\mathrm{Gr}_{n-k}(\mathbb{R}^n)`$. (Hint: use an inner product on $\mathbb{R}^n$.)
    
    Proof
+      
+   Define $`F:\mathrm{Gr}_k(\mathbb{R}^n)\to \mathrm{Gr}_{n-k}(\mathbb{R}^n)`$ by $F(V)=V^\perp$ (orthogonal complement w.r.t. the Euclidean inner product). Then $F$ is a bijection with inverse $F^{-1}(W)=W^\perp$. It remains to prove $F$ and $F^{-1}$ are smooth.
+
+   Fix a decomposition $\mathbb{R}^n=E\oplus F$ with $\dim E=k$, $\dim F=n-k$, and $E\perp F$. Let
    
-   Define the map $`f:\mathrm{Gr}_k(\mathbb{R}^n)\to \mathrm{Gr}_{n-k}(\mathbb{R}^n),V\mapsto V^{\perp}`$, where $V^{\perp}$ is the orthogonal complement of $V$ with respect to the standard inner product on $\mathbb{R}^n$. Since $V$ is a $k$-dimensional subspace of $\mathbb{R}^n$, its orthogonal complement $V^{\perp}$ is an $(n-k)$-dimensional subspace of $\mathbb{R}^n$. The inverse map of $f$ is given by $`f^{-1}:\mathrm{Gr}_{n-k}(\mathbb{R}^n)\to \mathrm{Gr}_k(\mathbb{R}^n),W\mapsto W^{\perp}`$. Thus $f$ is a bijection.
+   $`\mathcal{U}_{E,F}=\{W\in \mathrm{Gr}_k(\mathbb{R}^n)\mid W \text{ is transverse to } F\}.`$
+   
+   Each $W\in \mathcal{U}_{E,F}$ can be written uniquely as a graph $`W = \{ x + A x : x\in E\}`$ for a linear map $A:E\to F$.
+
+   Define the chart
+
+   $\chi_{E,F}:\mathcal{U}_{E,F}\to \operatorname{Hom}(E,F),\quad W\mapsto A.$
+
+   These charts form a smooth atlas of $\mathrm{Gr}_k(\mathbb{R}^n)$.
+
+   Similarly, for $\mathrm{Gr}_{n-k}(\mathbb{R}^n)$ use the (swapped) orthogonal decomposition $\mathbb{R}^n=F\oplus E$ to get charts
+   
+   $`\chi'_{F,E}:\mathcal{U}'_{F,E}\to \operatorname{Hom}(F,E)`$
+   
+   where a subspace $Z$ transverse to $E$ is written as $`\{ y + B y : y\in F\}`$ with $B:F\to E$.
+
+   Take the chart $\chi_{E,F}$ around $E$ (so $E$ corresponds to $A=0$). Let $W=\operatorname{graph}(A)$ with $A:E\to F$. Its orthogonal complement is
+
+   $W^\perp = \{ -A^T y + y : y\in F\}$
+   
+   (where $A^T:F\to E$ is the transpose w.r.t. the inner product).
+
+   $\langle x+Ax,-A^Ty+y\rangle=-\langle x,A^Ty\rangle+\langle x,y\rangle-\langle Ax,A^Ty\rangle+\langle Ax,y\rangle=0$
+
+   since $-\langle x,A^Ty\rangle+\langle Ax,y\rangle=0$ by definition of adjoint, and $\langle x,y\rangle=\langle Ax,A^Ty\rangle=0$ since they live in orthogonal subspaces.
+   
+   Regard $W^\perp$ inside the decomposition $F\oplus E$; thus in the chart $\chi'_{F,E}$ it is the graph of $-A^T$. Therefore on these overlapping charts the coordinate representation of $F$ is
+   
+   $\operatorname{Hom}(E,F)\to \operatorname{Hom}(F,E),\quad A\mapsto -A^T,$
+
+   a linear (hence smooth) map with linear (hence smooth) inverse $B\mapsto -B^T$.
