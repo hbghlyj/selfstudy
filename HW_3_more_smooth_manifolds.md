@@ -55,17 +55,17 @@
 
    Define the chart
 
-   $\chi_{E,F}:\mathcal{U}_{E,F}\to \operatorname{Hom}(E,F),\quad W\mapsto A.$
+   $\chi_{E,F}:\mathcal{U}_{E,F}\to \mathrm{Hom}(E,F),\quad W\mapsto A.$
 
    These charts form a smooth atlas of $\mathrm{Gr}_k(\mathbb{R}^n)$.
 
    Similarly, for $\mathrm{Gr}_{n-k}(\mathbb{R}^n)$ use the (swapped) orthogonal decomposition $\mathbb{R}^n=F\oplus E$ to get charts
    
-   $`\chi'_{F,E}:\mathcal{U}'_{F,E}\to \operatorname{Hom}(F,E)`$
+   $`\chi'_{F,E}:\mathcal{U}'_{F,E}\to \mathrm{Hom}(F,E)`$
    
    where a subspace $Z$ transverse to $E$ is written as $`\{ y + B y : y\in F\}`$ with $B:F\to E$.
 
-   Take the chart $\chi_{E,F}$ around $E$ (so $E$ corresponds to $A=0$). Let $W=\operatorname{graph}(A)$ with $A:E\to F$. Its orthogonal complement is
+   Take the chart $\chi_{E,F}$ around $E$ (so $E$ corresponds to $A=0$). Let $W=\mathrm{graph}(A)$ with $A:E\to F$. Its orthogonal complement is
 
    $W^\perp = \{ -A^T y + y : y\in F\}$
    
