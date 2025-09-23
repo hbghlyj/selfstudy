@@ -16,7 +16,17 @@
 
    Proof
 
-   Take a chart $(U,\phi)$ of $M$, $U$ is nonempty, $\phi(U)$ contains a nonempty ball $B$. Let the cutoff function $`\psi:M\to \mathbb{R}`$ be such that $\psi=1$ on $\phi^{-1}(B)$ and $\psi=0$ outside $\phi^{-1}(B)$. For each nonnegative integer $k$, define $`f_k:M\to \mathbb{R},x\mapsto \psi(x)\phi(x)^{2k}`$. Then each $f_k$ is smooth and the set $`\{f_k|k=0,1,2,\ldots\}`$ is linearly independent: suppose $`a_0f_0+a_1f_1+\cdots +a_mf_m\equiv0`$ for some $m\geq 0$ and $a_i\in \mathbb{R}$. Then for any $x\in \phi^{-1}(B)$, we have $`a_0+a_1\phi(x)^2+\cdots +a_m\phi(x)^{2m}=0`$. Thus the polynomial $`a_0+a_1x^2+\cdots +a_mx^{2m}`$ has infinitely many roots in $B$, which implies that $`a_0=a_1=\cdots =a_m=0`$. Therefore, $C^{\infty}(M)$ is infinite-dimensional.
+   Take a chart $(U,\phi)$ of $M$, $U$ is nonempty, $\phi(U)$ contains a nonempty ball $B$.
+
+   Let the cutoff function $`\psi:M\to \mathbb{R}`$ be such that $\psi=1$ on $\phi^{-1}(B)$ and $\psi=0$ outside $\phi^{-1}(B)$.
+
+   For each nonnegative integer $k$, define $`f_k:M\to \mathbb{R},x\mapsto \psi(x)\phi(x)^{2k}`$.
+
+   Then each $f_k$ is smooth and the set $`\{f_k|k=0,1,2,\ldots\}`$ is linearly independent: suppose $`a_0f_0+a_1f_1+\cdots +a_mf_m\equiv0`$ for some $m\geq 0$ and $a_i\in \mathbb{R}$.
+
+   Then for any $x\in \phi^{-1}(B)$, we have $`a_0+a_1\phi(x)^2+\cdots +a_m\phi(x)^{2m}=0`$.
+
+   Thus the polynomial $`a_0+a_1x^2+\cdots +a_mx^{2m}`$ has infinitely many roots in $B$, which implies that $`a_0=a_1=\cdots =a_m=0`$. Therefore, $C^{\infty}(M)$ is infinite-dimensional.
 
 5. (Lee 2.9) Let $p(z)$ be a degree $d$ polynomial in one complex variable. Show that the map $p: \mathbb{C} \rightarrow \mathbb{C}$ extends to a smooth map from $\mathbb{C P}^1 \rightarrow \mathbb{C P}^1$, where we take $\mathbb{C} \subset \mathbb{CP}^1$ to be a standard coordinate chart.
 
