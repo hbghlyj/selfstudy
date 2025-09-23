@@ -22,7 +22,7 @@
 
 6. (Lee 2.10) Let $M$ and $N$ be smooth manifolds. Given a continuous map $F: M \to N$, consider the map
 
-    $`\begin{aligned}F^* : C^0(N) &\to C^0(M) \\f & \mapsto f \circ F\end{aligned}`$
+    $`\begin{aligned}F^*\colon C^0(N) &\to C^0(M) \\f & \mapsto f \circ F\end{aligned}`$
 
   <ol type="a">
   <li>
