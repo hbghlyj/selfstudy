@@ -15,7 +15,7 @@ To see that $f,g$ are inverses of each other, it suffices to check on generators
 Thus $G\cong C_6$.
 
 ## Problem 10
-The operation of free product is commutative and associative: for any groups $A, B, C, A * B \cong B * A$ and $A *(B * C) \cong(A * B) * C$.
+The operation of free product is commutative and associative: for any groups $A, B, C$, $A * B \cong B * A$ and $A *(B * C) \cong(A * B) * C$.
 
 Proof
 
