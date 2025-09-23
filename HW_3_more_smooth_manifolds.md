@@ -1,6 +1,6 @@
 1. Let $M=\mathbb{RP}^1$. Define $f: \mathbb{RP}^1 \to \mathbb{RP}^1$ by
 
-   $`f([X,Y])=[X^{1/3}, Y^{1/3}]`$
+   $$f([X,Y])=[X^{1/3}, Y^{1/3}]$$
 
    Show that $f: M \to M$ is a homeomorphism but not a diffeomorphism.
 
