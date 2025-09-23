@@ -21,7 +21,7 @@ Proof
 
 1. By the universal mapping property for free products, the inclusion maps $`i_A:A\to B*A,i_B:B\to B*A`$ induce a unique map $`f:A*B\to B*A`$ such that $f \upharpoonright A=i_A,f \upharpoonright B=i_B$.
 
-   Similarly, the inclusion maps $`j_A:A\to A*B,j_B:B\to A*B`$ induce a unique map $`g:B*A\to A*B`$ such that $g \upharpoonright B=j_B,g \upharpoonright A=j_A$.
+   Similarly, the inclusion maps $j_A:A\to A*B,j_B:B\to A*B$ induce a unique map $g:B*A\to A*B$ such that $g \upharpoonright B=j_B$ and $g \upharpoonright A=j_A$.
     
    To see that $f,g$ are inverses of each other, it suffices to check on generators:
     - $g(f(a))=g(i_A(a))=j_A(a)=a$ for all $a\in A$
