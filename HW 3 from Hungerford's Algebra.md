@@ -29,9 +29,7 @@ Proof
     - $ f(g(b)) = f(j_B(b)) = i_B(b) = b $ for all $ b \in B $
     - $ f(g(a)) = f(j_A(a)) = i_A(a) = a $ for all $ a \in A $
 
-2. To prove associativity, we show $A*(B*C) \cong (A*B)*C$.
-
-   Let $`\phi_A: A \to (A*B)*C`$, $`\phi_B: B \to (A*B)*C`$, and $`\phi_C: C \to (A*B)*C`$ be the canonical inclusion maps.
+2. To prove $`A*(B*C) \cong (A*B)*C`$, let $`\phi_A: A \to (A*B)*C`$, $`\phi_B: B \to (A*B)*C`$, and $`\phi_C: C \to (A*B)*C`$ be the canonical inclusion maps.
 
    By the universal property of $B*C$, the maps $`\phi_B`$ and $`\phi_C`$ induce a unique homomorphism $\psi: B*C \to (A*B)*C$.
 
