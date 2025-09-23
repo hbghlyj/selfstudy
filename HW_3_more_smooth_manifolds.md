@@ -77,6 +77,6 @@
    
    Regard $W^\perp$ inside the decomposition $F\oplus E$; thus in the chart $\chi'_{F,E}$ it is the graph of $-A^T$. Therefore on these overlapping charts the coordinate representation of $F$ is
    
-   $\operatorname{Hom}(E,F)\to \operatorname{Hom}(F,E),\quad A\mapsto -A^T,$
+   $\mathrm{Hom}(E,F)\to \mathrm{Hom}(F,E),\quad A\mapsto -A^T,$
 
    a linear (hence smooth) map with linear (hence smooth) inverse $B\mapsto -B^T$.
