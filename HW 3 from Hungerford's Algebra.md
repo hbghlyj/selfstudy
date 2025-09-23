@@ -21,8 +21,13 @@ Proof
 
 1. By the universal mapping property for free products, the inclusion maps $`i_A:A\to B*A,i_B:B\to B*A`$ induce a unique map $`f:A*B\to B*A`$ such that $f \upharpoonright A=i_A,f \upharpoonright B=i_B$.
 
-   To see that $f$ is an isomorphism, it suffices to check that they are bijective on generators:
-  $f(f^{-1}(i_A(a)))=f(i_B(a))=i_A(a)$, $f^{-1}(f(i_A(a)))=f^{-1}(i_B(a))=i_A(a)$, similarly for $b\in B$.
+   Similarly, the inclusion maps $`j_A:A\to A*B,j_B:B\to A*B`$ induce a unique map $`g:B*A\to A*B`$ such that $g \upharpoonright B=j_B,g \upharpoonright A=j_A$.
+    
+   To see that $f,g$ are inverses of each other, it suffices to check on generators:
+    - $g(f(a))=g(i_A(a))=j_A(a)=a$ for all $a\in A$
+    - $g(f(b))=g(i_B(b))=j_B(b)=b$ for all $b\in B$
+    - $f(g(b))=f(j_B(b))=i_B(b)=b$ for all $b\in B$
+    - $f(g(a))=f(j_A(a))=i_A(a)=a$ for all $a\in A$
 
 2. Each generator of the free group (and thus any word) is represented by a function on the set of all reduced words to itself.
 
