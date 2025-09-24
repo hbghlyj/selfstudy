@@ -27,7 +27,7 @@
 
    where $i_1, \ldots, i_k$ are distinct. Take $x\in B(\frac{r}{i_1})\setminus\overline{B(\frac{r}{i+1})}$,
 
-   $`r_1 f_{i_1}(x)=0$
+   $`r_1 f_{i_1}(x)=0`$
 
    so $r_i=0$ since $f_{i_1}(x) \neq 0$.
 
