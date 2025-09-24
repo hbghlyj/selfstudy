@@ -6,17 +6,38 @@
 
    Proof
    
-   $M$ has an atlas consisting of two charts $(U_1,\phi_1),(U_2,\phi_2)$, where $`U_1=\{[X,Y]\in \mathbb{RP}^1|X\neq 0\},\phi_1([X,Y])=Y/X`$ and $`U_2=\{[X,Y]\in \mathbb{RP}^1|Y\neq 0\},\phi_2([X,Y])=X/Y`$. The transition map is given by $`\phi_2\circ \phi_1^{-1}(x)=1/x`$ for $x\in \mathbb{R}\setminus \{0\}$.
+   $M$ has an atlas consisting of two charts $(U_1,\phi_1),(U_2,\phi_2)$, where $`U_1=\{[X,Y]\in \mathbb{RP}^1|X\neq 0\},\phi_1([X,Y])=Y/X`$ and $`U_2=\{[X,Y]\in \mathbb{RP}^1|Y\neq 0\},\phi_2([X,Y])=X/Y`$. The transition map is given by $`\phi_2\circ \phi_1^{-1}(x)=1/x`$ for $`x\in \mathbb{R}\setminus \{0\}`$.
    
    $\phi_1\circ f \circ \phi_1^{-1}(x)=x^{1/3}$ for $x\in \mathbb{R}$, which is continuous and bijective with continuous inverse $`x\mapsto x^3`$. Similarly, $\phi_2 \circ f \circ \phi_2^{-1}(x)=x^{1/3}$ for $x\in \mathbb{R}$. Thus $f$ is a homeomorphism.
+   
    However, $`(\phi_1\circ f \circ \phi_1^{-1})'(x)=\frac{1}{3}x^{-2/3}`$, which is not continuous at $0$. Thus $f$ is not a diffeomorphism.
 
-2. (Lee 2.7) Let $M$ be a nonempty smooth $n$-manifold with $n \geq 1$. Show that the vector space $C^{\infty}(M)$ is infinite-dimensional.
+3. (Lee 2.7) Let $M$ be a nonempty smooth $n$-manifold with $n \geq 1$. Show that the vector space $C^{\infty}(M)$ is infinite-dimensional.
 
-3. (Lee 2.9) Let $p(z)$ be a degree $d$ polynomial in one complex variable. Show that the map $p: \mathbb{C} \rightarrow \mathbb{C}$ extends to a smooth map from $\mathbb{C P}^1 \rightarrow \mathbb{C P}^1$, where we take $\mathbb{C} \subset \mathbb{C P}^1$ to be a standard coordinate chart.
+   Proof
 
-4. (Lee 2.10) Let $M$ and $N$ be smooth manifolds. Given a continuous map $F: M \to N$, consider the map
-    $`\begin{aligned}F^* & : C^0(N) \to C^0(M) \\f & \mapsto f \circ F\end{aligned}`$
+   Take a chart $(U,\phi)$ of $M$, $U$ is nonempty, $\phi(U)$ contains a nonempty ball $B(r)$.
+
+   Let $`f_i:M\to \mathbb{R}`$  be a smooth bump function such that $\mathrm{supp}f_i$ is contained in $B(\frac{r}{i})\setminus\overline{B(\frac{r}{i+1})}$.
+
+   Then $\{f_i\}$ from $C^{\infty}(M)$ have nonempty disjoint supports.
+   To show $\{f_i\}$ is linearly independent, suppose there exist nonzero $\lambda_1, \dots, \lambda_k \in \mathbb{R}$ such that
+
+   $`\lambda_1 f_{i_1}+\dots+\lambda_k f_{i_k}=0`$
+
+   where $i_1, \ldots, i_k$ are distinct. Take $x\in B(\frac{r}{i_1})\setminus\overline{B(\frac{r}{i+1})}$,
+
+   $`r_1 f_{i_1}(x)=0`$
+
+   so $r_i=0$ since $f_{i_1}(x) \neq 0$.
+
+   Therefore, $C^{\infty}(M)$ is an infinite-dimensional $\mathbb{R}$-vector space.
+
+5. (Lee 2.9) Let $p(z)$ be a degree $d$ polynomial in one complex variable. Show that the map $p: \mathbb{C} \rightarrow \mathbb{C}$ extends to a smooth map from $\mathbb{C P}^1 \rightarrow \mathbb{C P}^1$, where we take $\mathbb{C} \subset \mathbb{CP}^1$ to be a standard coordinate chart.
+
+6. (Lee 2.10) Let $M$ and $N$ be smooth manifolds. Given a continuous map $F: M \to N$, consider the map
+
+    $`\begin{aligned}F^*\colon C^0(N) &\to C^0(M) \\f & \mapsto f \circ F\end{aligned}`$
 
   <ol type="a">
   <li>
@@ -34,10 +55,52 @@
    
    Proof
    
-   Take a smooth partition of unity $`\{\psi,\phi\}`$ subordinate to the open cover $`\{M\setminus A,M\setminus B\}`$ of $M$. Define $`f:M\to [0,1],x\mapsto1-\mathbb{1}_A(x)\phi(x)`$. Then $f$ is smooth, $0\leq f(x)\leq \phi(x)\leq 1$ for all $x\in M$. Moreover, $`f^{-1}(0)=\{x\in M:\phi(x)=1\}\cup A=M\setminus \text{supp}(\phi)\cup A=A`$, and $`f^{-1}(1)=\{x\in M:\phi(x)=1\}=M\setminus \text{supp}(\psi)=B`$.
+   By Theorem 2.29 (Level Sets of Smooth Functions) for any closed set $C$ in a smooth manifold $M$, there exists a non-negative smooth function $g: M\to R$ such that $g^{-1}(0) = C$.
 
-6. Construct a diffeomorphism between $`\mathrm{Gr}_k(\mathbb{R}^n)`$ and $`\mathrm{Gr}_{n-k}(\mathbb{R}^n)`$. (Hint: use an inner product on $\mathbb{R}^n$.)
+   Using this, let $g_A$ and $g_B$ be such smooth functions for the closed sets $A$ and $B$.
+
+   Define $f(x) = g_A(x) / (g_A(x) + g_B(x))$. This function is well-defined (denominator is never zero since $A$ and $B$ are disjoint) and smooth.
+
+   $x\in f^{-1}(0)\iff g_A(x)=0\iff x\in A$
+
+   $x\in f^{-1}(1)\iff g_B(x)=0\iff x\in B$
+
+7. Construct a diffeomorphism between $`\mathrm{Gr}_k(\mathbb{R}^n)`$ and $`\mathrm{Gr}_{n-k}(\mathbb{R}^n)`$. (Hint: use an inner product on $\mathbb{R}^n$.)
    
    Proof
+      
+   Define $`F:\mathrm{Gr}_k(\mathbb{R}^n)\to \mathrm{Gr}_{n-k}(\mathbb{R}^n)`$ by $F(V)=V^\perp$ (orthogonal complement w.r.t. the Euclidean inner product). Then $F$ is a bijection with inverse $F^{-1}(W)=W^\perp$. It remains to prove $F$ and $F^{-1}$ are smooth.
+
+   Fix a decomposition $\mathbb{R}^n=E\oplus F$ with $\dim E=k$, $\dim F=n-k$, and $E\perp F$. Let
    
-   Define the map $`f:\mathrm{Gr}_k(\mathbb{R}^n)\to \mathrm{Gr}_{n-k}(\mathbb{R}^n),V\mapsto V^{\perp}`$, where $V^{\perp}$ is the orthogonal complement of $V$ with respect to the standard inner product on $\mathbb{R}^n$. Since $V$ is a $k$-dimensional subspace of $\mathbb{R}^n$, its orthogonal complement $V^{\perp}$ is an $(n-k)$-dimensional subspace of $\mathbb{R}^n$. The inverse map of $f$ is given by $`f^{-1}:\mathrm{Gr}_{n-k}(\mathbb{R}^n)\to \mathrm{Gr}_k(\mathbb{R}^n),W\mapsto W^{\perp}`$. Thus $f$ is a bijection.
+   $`\mathcal{U}_{E,F}=\{W\in \mathrm{Gr}_k(\mathbb{R}^n)\mid W \text{ is transverse to } F\}.`$
+   
+   Each $W\in \mathcal{U}_{E,F}$ can be written uniquely as a graph $`W = \{ x + A x : x\in E\}`$ for a linear map $A:E\to F$.
+
+   Define the chart
+
+   $\chi_{E,F}:\mathcal{U}_{E,F}\to \mathrm{Hom}(E,F),\quad W\mapsto A.$
+
+   These charts form a smooth atlas of $\mathrm{Gr}_k(\mathbb{R}^n)$.
+
+   Similarly, for $\mathrm{Gr}_{n-k}(\mathbb{R}^n)$ use the (swapped) orthogonal decomposition $\mathbb{R}^n=F\oplus E$ to get charts
+   
+   $`\chi'_{F,E}:\mathcal{U}'_{F,E}\to \mathrm{Hom}(F,E)`$
+   
+   where a subspace $Z$ transverse to $E$ is written as $`\{ y + B y : y\in F\}`$ with $B:F\to E$.
+
+   Take the chart $\chi_{E,F}$ around $E$ (so $E$ corresponds to $A=0$). Let $W=\mathrm{graph}(A)$ with $A:E\to F$. Its orthogonal complement is
+
+   $W^\perp = \{ -A^T y + y : y\in F\}$
+   
+   (where $A^T:F\to E$ is the transpose w.r.t. the inner product).
+
+   $\langle x+Ax,-A^Ty+y\rangle=-\langle x,A^Ty\rangle+\langle x,y\rangle-\langle Ax,A^Ty\rangle+\langle Ax,y\rangle=0$
+
+   since $-\langle x,A^Ty\rangle+\langle Ax,y\rangle=0$ by definition of adjoint, and $\langle x,y\rangle=\langle Ax,A^Ty\rangle=0$ since they live in orthogonal subspaces.
+   
+   Regard $W^\perp$ inside the decomposition $F\oplus E$; thus in the chart $\chi'_{F,E}$ it is the graph of $-A^T$. Therefore on these overlapping charts the coordinate representation of $F$ is
+   
+   $\mathrm{Hom}(E,F)\to \mathrm{Hom}(F,E),\quad A\mapsto -A^T,$
+
+   a linear (hence smooth) map with linear (hence smooth) inverse $B\mapsto -B^T$.
