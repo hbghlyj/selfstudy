@@ -10,28 +10,27 @@
    
    $\phi_1\circ f \circ \phi_1^{-1}(x)=x^{1/3}$ for $x\in \mathbb{R}$, which is continuous and bijective with continuous inverse $`x\mapsto x^3`$. Similarly, $\phi_2 \circ f \circ \phi_2^{-1}(x)=x^{1/3}$ for $x\in \mathbb{R}$. Thus $f$ is a homeomorphism.
    
-   However, $`(\phi_1\circ f \circ \phi_1^{-1})'(x)=\frac{1}{3}x^{-2/3}`$, which is not continuous at $0$. Thus $f$ is not a diffeomorphism.
+   However, $`\phi_1\circ f \circ \phi_1^{-1}(x)=x^{1/3}`$ is not differentiable at $0$. Thus $f$ is not differentiable at $[0,1]$. Thus $f$ is not a diffeomorphism.
 
 3. (Lee 2.7) Let $M$ be a nonempty smooth $n$-manifold with $n \geq 1$. Show that the vector space $C^{\infty}(M)$ is infinite-dimensional.
 
    Proof
 
-   Take a chart $(U,\phi)$ of $M$, $U$ is nonempty, $\phi(U)$ contains a nonempty ball $B(r)$.
+   Take a chart $(U,\phi)$ of $M$, $U$ is nonempty, $\phi(U)$ contains a nonempty ball $B$. Let $\psi$ be a smooth bump function for $B$ supported in $\phi(U)$.
 
-   Let $`f_i:M\to \mathbb{R}`$  be a smooth bump function such that $\mathrm{supp}f_i$ is contained in $B(\frac{r}{i})\setminus\overline{B(\frac{r}{i+1})}$.
+   Let $f_k:M\to \mathbb{R},x\mapsto\phi(x)^k\psi(\phi(x))$.
 
-   Then $\{f_i\}$ from $C^{\infty}(M)$ have nonempty disjoint supports.
-   To show $\{f_i\}$ is linearly independent, suppose there exist nonzero $\lambda_1, \dots, \lambda_k \in \mathbb{R}$ such that
+   To show $`\{f_k\mid k=0,1,\dots\}`$ are linearly independent, suppose there exist nonzero $\lambda_1, \dots, \lambda_k \in \mathbb{R}$ such that
 
    $`\lambda_1 f_{i_1}+\dots+\lambda_k f_{i_k}=0`$
 
-   where $i_1, \ldots, i_k$ are distinct. Take $x\in B(\frac{r}{i_1})\setminus\overline{B(\frac{r}{i+1})}$,
+   where $i_1, \ldots, i_k$ are distinct. Since $\psi|_B=1$,
 
-   $`r_1 f_{i_1}(x)=0`$
+   $`(\lambda_1 x^{i_1}+\dots+\lambda_k x^{i_k})|_B=0`$
 
-   so $r_i=0$ since $f_{i_1}(x) \neq 0$.
+   But a nonzero polynomial can have only finitely many zeros. So $\lambda_1=\dots=\lambda_k=0$.
 
-   Therefore, $C^{\infty}(M)$ is an infinite-dimensional $\mathbb{R}$-vector space.
+   Therefore, $`\{f_k\mid k=0,1,\dots\}`$ are linearly independent, $C^{\infty}(M)$ is an infinite-dimensional $\mathbb{R}$-vector space.
 
 5. (Lee 2.9) Let $p(z)$ be a degree $d$ polynomial in one complex variable. Show that the map $p: \mathbb{C} \rightarrow \mathbb{C}$ extends to a smooth map from $\mathbb{C P}^1 \rightarrow \mathbb{C P}^1$, where we take $\mathbb{C} \subset \mathbb{CP}^1$ to be a standard coordinate chart.
 
