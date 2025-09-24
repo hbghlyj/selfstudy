@@ -54,7 +54,7 @@ Since $\mathbb{S}^2$ is second-countable and the quotient map $p: \mathbb{S}^2 \
 </dt>
 <dt>Hausdorff</dt><dd>
 
-Let $[x],[y] \in \mathbb{RP}^2$ be two distinct points. Then $x \neq \pm y$. By Hausdorffness of $\mathbb{S}^2$ we can find disjoint open neighborhoods $U$ of $x$ and $V$ of $`\{y,-y\}`$ in $\mathbb{S}^2$. Then $p(U),p(V)$ are disjoint open neighborhoods of $[x]$ and $[y]$ in $\mathbb{RP}^2$, respectively.
+Let $[x],[y] \in \mathbb{RP}^2$ be two distinct points. Then $x \neq \pm y$. By Hausdorffness of $\mathbb{S}^2$ we can find disjoint open neighborhoods $U$ of $\{x,-x\}$ and $V$ of $`\{y,-y\}`$ in $\mathbb{S}^2$. Then $p(U),p(V)$ are disjoint open neighborhoods of $[x]$ and $[y]$ in $\mathbb{RP}^2$, respectively.
 </dd>
 </dl>
 
