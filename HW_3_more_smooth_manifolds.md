@@ -18,7 +18,7 @@
 
    Take a chart $(U,\phi)$ of $M$, $U$ is nonempty, $\phi(U)$ contains a nonempty ball $B(r)$.
 
-   Let $`f_i:M\to \mathbb{R}`$  be a smooth bump function such that $\supp f_i$ is contained in $B(\frac{r}{i})\setminus\overline{B(\frac{r}{i+1})}$.
+   Let $`f_i:M\to \mathbb{R}`$  be a smooth bump function such that $\mathrm{supp}f_i$ is contained in $B(\frac{r}{i})\setminus\overline{B(\frac{r}{i+1})}$.
 
    Then $\{f_i\}$ from $C^{\infty}(M)$ have nonempty disjoint supports.
    To show $\{f_i\}$ is linearly independent, suppose there exist nonzero $\lambda_1, \dots, \lambda_k \in \mathbb{R}$ such that
