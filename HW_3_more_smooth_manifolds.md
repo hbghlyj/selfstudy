@@ -16,17 +16,22 @@
 
    Proof
 
-   Take a chart $(U,\phi)$ of $M$, $U$ is nonempty, $\phi(U)$ contains a nonempty ball $B$.
+   Take a chart $(U,\phi)$ of $M$, $U$ is nonempty, $\phi(U)$ contains a nonempty ball $B(r)$.
 
-   Let the cutoff function $`\psi:M\to \mathbb{R}`$ be such that $\psi=1$ on $\phi^{-1}(B)$ and $\psi=0$ outside $\phi^{-1}(B)$.
+   Let $`f_i:M\to \mathbb{R}`$  be a smooth bump function such that $\supp f_i$ is contained in $B(\frac{r}{i})\setminus\overline{B(\frac{r}{i+1})}$.
 
-   For each nonnegative integer $k$, define $`f_k:M\to \mathbb{R},x\mapsto \psi(x)\phi(x)^{2k}`$.
+   Then $\{f_i\}$ from $C^{\infty}(M)$ have nonempty disjoint supports.
+   To show $\{f_i\}$ is linearly independent, suppose there exist nonzero $\lambda_1, \dots, \lambda_k \in \mathbb{R}$ such that
 
-   Then each $f_k$ is smooth and the set $`\{f_k\mid k=0,1,2,\ldots\}`$ is linearly independent: suppose $`a_0f_0+a_1f_1+\cdots +a_mf_m\equiv0`$ for some $m\geq 0$ and $a_i\in \mathbb{R}$.
+   $`\lambda_1 f_{i_1}+\dots+\lambda_k f_{i_k}=0`$
 
-   Then for any $x\in \phi^{-1}(B)$, we have $`a_0+a_1\phi(x)^2+\cdots +a_m\phi(x)^{2m}=0`$.
+   where $i_1, \ldots, i_k$ are distinct. Take $x\in B(\frac{r}{i_1})\setminus\overline{B(\frac{r}{i+1})}$,
 
-   Thus the polynomial $`a_0+a_1x^2+\cdots +a_mx^{2m}`$ has infinitely many roots in $B$, which implies that $`a_0=a_1=\cdots =a_m=0`$. Therefore, $C^{\infty}(M)$ is infinite-dimensional.
+   $`r_1 f_{i_1}(x)=0$
+
+   so $r_i=0$ since $f_{i_1}(x) \neq 0$.
+
+   Therefore, $C^{\infty}(M)$ is an infinite-dimensional $\mathbb{R}$-vector space.
 
 5. (Lee 2.9) Let $p(z)$ be a degree $d$ polynomial in one complex variable. Show that the map $p: \mathbb{C} \rightarrow \mathbb{C}$ extends to a smooth map from $\mathbb{C P}^1 \rightarrow \mathbb{C P}^1$, where we take $\mathbb{C} \subset \mathbb{CP}^1$ to be a standard coordinate chart.
 
