@@ -52,24 +52,39 @@
    
    $\phi_1 \circ \tilde{p} \circ \phi_1^{-1}(z)=\phi_1(\tilde{p}([z:1]))=\phi_1([p(z):1])=p(z)$, which is smooth.
    
-   $\phi_2 \circ \tilde{p} \circ \phi_2^{-1}(w)=\phi_2(\tilde{p}([1:w]))=\phi_2([q(w):w^d])=w^d/q(w)$, which is smooth since $\deg q(w)\leq d$. Thus $\tilde{p}$ is a smooth extension of $p$ to $\mathbb{CP}^1$.
+   $\phi_2 \circ \tilde{p} \circ \phi_2^{-1}(w)=\phi_2(\tilde{p}([1:w]))=\phi_2([q(w):w^d])=w^d/q(w)$, which is smooth since $\deg q(w)\leq d$.
+
+   Thus $\tilde{p}$ is a smooth extension of $p$ to $\mathbb{CP}^1$.
 
 7. (Lee 2.10) Let $M$ and $N$ be smooth manifolds. Given a continuous map $F: M \to N$, consider the map
 
     $`\begin{aligned}F^*\colon C^0(N) &\to C^0(M) \\f & \mapsto f \circ F\end{aligned}`$
-
-  <ol type="a">
-  <li>
-    Show that $F^*$ is a linear map
-  </li>
-  <li>
-    Show that $F$ is smooth if and only if $F^*(C^\infty(N)) \subset C^\infty(M)$.
-  </li>
-  <li>
-    Suppose that $F$ is a homeomorphism. Prove that $F$ is a diffeomorphism if and only if $F^*$ induces an isomorphism from $C^{\infty}(N)$ to $C^{\infty}(M)$.
-  </li>
-  </ol>
-
+      
+      <ol type="a">
+      <li>
+      Show that $F^*$ is a linear map
+      </li>
+      <li>
+      Show that $F$ is smooth if and only if $F^*(C^\infty(N)) \subset C^\infty(M)$.
+      </li>
+      <li>
+      Suppose that $F$ is a homeomorphism. Prove that $F$ is a diffeomorphism if and only if $F^*$ induces an isomorphism from $C^{\infty}(N)$ to $C^{\infty}(M)$.
+      </li>
+      </ol>
+      
+      Proof
+      
+      <ol type="a">
+      <li>
+      Show that $F^*$ is a linear map
+      </li>
+      <li>
+      Show that $F$ is smooth if and only if $F^*(C^\infty(N)) \subset C^\infty(M)$.
+      </li>
+      <li>
+      Suppose that $F$ is a homeomorphism. Prove that $F$ is a diffeomorphism if and only if $F^*$ induces an isomorphism from $C^{\infty}(N)$ to $C^{\infty}(M)$.
+      </li>
+      </ol>
 5. (Lee 2-14) Suppose that $A$ and $B$ are disjoint closed subsets of a smooth manifold $M$. Show that there exists $f \in C^{\infty}(M)$ such that $0 \leq f(x) \leq 1$ for all $x \in M$, $f^{-1}(0)=A$, and $f^{-1}(1)=B$.
    
    Proof
