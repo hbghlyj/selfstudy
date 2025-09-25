@@ -17,8 +17,8 @@
    Proof
 
    Take a chart $(U,\phi)$ of $M$, $U$ is nonempty, $\phi(U)$ contains a nonempty ball $B$. Let $\psi$ be a smooth bump function for $B$ supported in $\phi(U)$.
-
-   Let $f_k:M\to \mathbb{R},x\mapsto\phi(x)^k\psi(\phi(x))$.
+   
+   Let $f_k:M\to \mathbb{R},x\mapsto\phi_1(x)^k\psi(\phi(x))$ where $\phi_1$ is the first coordinate of $\phi$.
 
    To show $`\{f_k\mid k=0,1,\dots\}`$ are linearly independent, suppose there exist nonzero $\lambda_1, \dots, \lambda_k \in \mathbb{R}$ such that
 
