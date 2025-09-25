@@ -60,31 +60,17 @@
 
     $`\begin{aligned}F^*\colon C^0(N) &\to C^0(M) \\f & \mapsto f \circ F\end{aligned}`$
       
-      <ol type="a">
-      <li>
+    1.
       Show that $F^*$ is a linear map
-      </li>
-      <li>
+    2.
       Show that $F$ is smooth if and only if $F^*(C^\infty(N)) \subset C^\infty(M)$.
-      </li>
-      <li>
+    3.
       Suppose that $F$ is a homeomorphism. Prove that $F$ is a diffeomorphism if and only if $F^*$ induces an isomorphism from $C^{\infty}(N)$ to $C^{\infty}(M)$.
-      </li>
-      </ol>
       
       Proof
       
-      <ol type="a">
-      <li>
-      Show that $F^*$ is a linear map
-      </li>
-      <li>
-      Show that $F$ is smooth if and only if $F^*(C^\infty(N)) \subset C^\infty(M)$.
-      </li>
-      <li>
-      Suppose that $F$ is a homeomorphism. Prove that $F$ is a diffeomorphism if and only if $F^*$ induces an isomorphism from $C^{\infty}(N)$ to $C^{\infty}(M)$.
-      </li>
-      </ol>
+   1. $F^*(c_1 f_1+c_2 f_2)=c_1 f_1\circ F+c_2 f_2\circ F=c_1 F^*(f_1)+c_2 F^*(f_2)$ for all $c_1,c_2\in\mathbb{R},f_1,f_2\in C^\infty(N)$.
+
 5. (Lee 2-14) Suppose that $A$ and $B$ are disjoint closed subsets of a smooth manifold $M$. Show that there exists $f \in C^{\infty}(M)$ such that $0 \leq f(x) \leq 1$ for all $x \in M$, $f^{-1}(0)=A$, and $f^{-1}(1)=B$.
    
    Proof
@@ -125,7 +111,7 @@
 
    Take the chart $\chi_{E,F}$ around $E$ (so $E$ corresponds to $A=0$). Let $W=\mathrm{graph}(A)$ with $A:E\to F$. Its orthogonal complement is
 
-   $W^\perp = \{ -A^T y + y : y\in F\}$
+   $`W^\perp = \{ -A^T y + y : y\in F\}`$
    
    (where $A^T:F\to E$ is the transpose w.r.t. the inner product).
 
