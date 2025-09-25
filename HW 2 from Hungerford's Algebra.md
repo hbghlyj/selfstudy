@@ -45,7 +45,7 @@ Write $H_d=\langle r^{d}, s\rangle$. Conjugation by $r$ sends
 
 $r s r^{-1}=r^{2}s$
 
-so $r H_d r^{-1}=\langle r^{d}, r^{2}s\rangle$. Thus $H_d\lhd D_{2n}$ iff $r^{2}s\in H_d$, i.e. iff $r^{2}s=r^{kd}s$ for some $k$, which is equivalent to
+so $r H_d r^{-1}=\langle r^{d}, r^{2}s\rangle$. Thus $H_d\lhd D_{n}$ iff $r^{2}s\in H_d$, i.e. iff $r^{2}s=r^{kd}s$ for some $k$, which is equivalent to
 
 $2\equiv kd\pmod n \quad\Longleftrightarrow\quad d\mid 2.$
 
