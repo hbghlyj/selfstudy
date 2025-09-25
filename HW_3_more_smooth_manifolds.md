@@ -84,7 +84,7 @@
   
       $(F^{-1})^*\colon C^0(M)\to C^0(N)$
       
-      $(F^{-1})^* \circ F^* =(F^{-1}\circ F)^* =\text{id}_ {C^0(N)}$, $F^* \circ (F^{-1})^* =(F\circ F^{-1})^* =\text{id}_ {C^0(M)}$, so $(F^{-1})^* $ is an inverse to $F^* $.
+      $(F^{-1})^* \circ F^* =(F\circ F^{-1})^* =\text{id}_ {C^0(N)}$, $F^* \circ (F^{-1})^* =(F^{-1}\circ F)^* =\text{id}_ {C^0(M)}$, so $(F^{-1})^* $ is an inverse to $F^* $.
 
       If $F$ is a diffeomorphism, then $F$ and $F^{-1}$ are smoooth. By part 2, the inverse of the linear map $F^* |_ {C^\infty(N)}\colon C^\infty(N)\to C^\infty(M)$ is the linear map $(F^{-1})^* |_ {C^\infty(N)}\colon C^\infty(N) \to C^\infty(M)$, so $F^* |_ {C^\infty(N)}$ is an isomorphism.
 
