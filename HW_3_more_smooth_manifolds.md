@@ -60,12 +60,9 @@
 
     $`\begin{aligned}F^*\colon C^0(N) &\to C^0(M) \\f & \mapsto f \circ F\end{aligned}`$
       
-    1.
-      Show that $F^*$ is a linear map
-    2.
-      Show that $F$ is smooth if and only if $F^*(C^\infty(N)) \subset C^\infty(M)$.
-    3.
-      Suppose that $F$ is a homeomorphism. Prove that $F$ is a diffeomorphism if and only if $F^*$ induces an isomorphism from $C^{\infty}(N)$ to $C^{\infty}(M)$.
+    1. Show that $F^*$ is a linear map
+    2. Show that $F$ is smooth if and only if $F^*(C^\infty(N)) \subset C^\infty(M)$.
+    3. Suppose that $F$ is a homeomorphism. Prove that $F$ is a diffeomorphism if and only if $F^*$ induces an isomorphism from $C^{\infty}(N)$ to $C^{\infty}(M)$.
       
       Proof
       
