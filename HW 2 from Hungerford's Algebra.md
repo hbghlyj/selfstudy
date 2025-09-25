@@ -45,9 +45,11 @@ Write $H_d=\langle r^{d}, s\rangle$. Conjugation by $r$ sends
 
 $r s r^{-1}=r^{2}s$
 
-so $r H_d r^{-1}=\langle r^{d}, r^{2}s\rangle$. Thus $H_d\lhd D_{n}$ iff $r^{2}s\in H_d$, i.e. iff $r^{2}s=r^{kd}s$ for some $k$, which is equivalent to
+so $r H_d r^{-1}=\langle r^{d}, r^{2}s\rangle$. Thus $H_d\lhd D_{n}$ iff $r^{2}s\in H_d$, i.e. iff $r^{2}s=r^{kd}s$ for some $k$.
 
-$2\equiv kd\pmod n \quad\Longleftrightarrow\quad d\mid 2.$
+The linear congruence $ax \equiv b \pmod n$ has a solution for $x$ if and only if $\gcd(a, n) \mid b$. Applying this here, $kd \equiv 2 \pmod n$ has a solution for $k$ iff $\gcd(d, n) \mid 2$. Since $d$ is a divisor of $n$, $\gcd(d, n) = d$, which gives the condition $d \mid 2$.
+
+$\exists k:2\equiv kd\pmod n \iff d\mid 2.$
 
 Hence the only possibilities are $d=1$ or $d=2$ (with $2\mid n$ for the latter). The same calculation applies to $\langle r^{d}, rs\rangle$.
 
