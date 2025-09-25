@@ -36,23 +36,21 @@ Give an example of groups $H_i, K_j$ such that $H_1 \times H_2 \cong K_1 \times 
 
 Proof
 
-Let $H_1 = \mathbb{Z}_2 \times \mathbb{Z}_3$, $`H_2 = \{e\}`$, $K_1 = \mathbb{Z}_2$, and $K_2 = \mathbb{Z}_3$.
+Let $H_1 = \mathbb{Z}_2 \times \mathbb{Z}_2$, $`H_2 = \{e\}`$, $K_1 = \mathbb{Z}_2$, and $K_2 = \mathbb{Z}_2$.
 
 First, we show $H_1 \times H_2 \cong K_1 \times K_2$:
 
-$`H_1 \times H_2 = (\mathbb{Z}_2 \times \mathbb{Z}_3) \times \{e\} \cong \mathbb{Z}_2 \times \mathbb{Z}_3`$.
+$`H_1 \times H_2 = (\mathbb{Z}_2 \times \mathbb{Z}_2) \times \{e\} \cong \mathbb{Z}_2 \times \mathbb{Z}_2`$.
 
-Since $K_1 \times K_2 = \mathbb{Z}_2 \times \mathbb{Z}_3$, the products are isomorphic.
-
-By the Chinese Remainder Theorem, both products are isomorphic to $\mathbb{Z}_6$.
+Since $K_1 \times K_2 = \mathbb{Z}_2 \times \mathbb{Z}_2$, the products are isomorphic.
 
 Next, we show no $H_i$ is isomorphic to any $K_j$. We can do this by comparing their orders:
-- $|H_1| = |\mathbb{Z}_2 \times \mathbb{Z}_3| = 6$
+- $|H_1| = |\mathbb{Z}_2 \times \mathbb{Z}_2| = 4$
 - $`|H_2| = |\{e\}| = 1`$
 - $|K_1| = |\mathbb{Z}_2| = 2$
-- $|K_2| = |\mathbb{Z}_3| = 3$
+- $|K_2| = |\mathbb{Z}_2| = 2$
 
-Since all four groups have different orders, no two of them can be isomorphic. Therefore, no $H_i$ is isomorphic to any $K_j$.
+Therefore, no $H_i$ is isomorphic to any $K_j$.
 
 ## Exercise 3
 Let $G$ be an (additive) abelian group with subgroups $H$ and $K$. Show that $G \cong H \oplus K$ if and only if there are homomorphisms $H \overunderset{\pi_1}{\iota_1}{\leftrightarrows} G \overunderset{\pi_2}{\iota_2}{\rightleftarrows} K$ such that $\pi_1 \iota_1=1_H, \pi_2 \iota_2=1_K, \pi_1 \iota_2=0$ and $\pi_2 \iota_1=0$, where 0 is the map sending every element onto the zero (identity) element, and $\iota_1 \pi_1(x)+\iota_2 \pi_2(x)=x$ for all $x \in G$.
