@@ -67,6 +67,20 @@
       Proof
       
    1. $F^* (c_1 f_1+c_2 f_2)=c_1 f_1\circ F+c_2 f_2\circ F=c_1 F^* (f_1)+c_2 F^* (f_2)$ for all $c_1,c_2\in\mathbb{R},f_1,f_2\in C^\infty(N)$.
+   2. If $F$ is smooth and $f \in C^{\infty}(N)$ then $F^*(f)=f \circ F \in C^{\infty}(M)$ by Proposition 2.10(d).
+      
+      Conversely, suppose that $F^*\left(C^{\infty}(N)\right) \subseteq C^{\infty}(M)$.
+
+      Let $x \in M$ and let $n$ be the dimension of $N$.
+
+      Choose smooth charts $(U, \varphi)$ containing $x$ and $(V, \psi)$ containing $F(x)$ such that $F(U) \subseteq V$.
+
+      For each $i=1, \ldots, n$ the map $\pi_i \circ \psi \circ F=F^*\left(\pi_i \circ \psi\right)$ is smooth, where $\pi_i: \mathbb{R}^n \rightarrow \mathbb{R}$ is the projection onto the $i$ th coordinate.
+
+      By Exercise 2.3, $\pi_i \circ \psi \circ F \circ \varphi^{-1}$ is smooth for $i=1, \ldots, n$, so $\psi \circ F \circ \varphi^{-1}$ must be smooth.
+
+      This shows that $F$ is smooth.
+   3. If $F$ is a diffeomorphism then $\left(F^{-1}\right)^*: C^{\infty}(M) \rightarrow C^{\infty}(N)$ is clearly an inverse to $F^*$, and conversely if $\left.F^*\right|_{C^{\infty}(N)}$ is an isomorphism then $F$ and $F^{-1}$ are both smooth.
 
 5. (Lee 2-14) Suppose that $A$ and $B$ are disjoint closed subsets of a smooth manifold $M$. Show that there exists $f \in C^{\infty}(M)$ such that $0 \leq f(x) \leq 1$ for all $x \in M$, $f^{-1}(0)=A$, and $f^{-1}(1)=B$.
    
