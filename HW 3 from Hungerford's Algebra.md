@@ -4,13 +4,14 @@ The cyclic group of order 6 is the group defined by generators $a, b$ and relati
 
 Proof
 
-Let $C_6=\langle x|x^6=e\rangle$ be the cyclic group of order 6. Define a map $f\colon C_6\to G$ by $f(x)=ab$ and extend it to a homomorphism. Since $(ab)^6=a^2=b^3=e$, $f$ is well-defined.
+Let $C_6=\langle x|x^6=e\rangle$ be the cyclic group of order 6. Define a map $f\colon C_6\to G$ by $f(x)=ab^{-1}$ and extend it to a homomorphism. Since $ab=ba$ (from the given relations), we have $(ab^{-1})^6=a^6(b^{-1})^6=(a^2)^3(b^3)^{-2}=e$, so $f$ is well-defined.
 
 Define a map $g\colon G\to C_6$ by $g(a)=x^3,g(b)=x^2$ and extend it to a homomorphism. Since $g(a)^2=g(b)^3=g(a)^{-1}g(b)^{-1}g(a)g(b)=e$, $g$ is well-defined.
 
 To see that $f,g$ are inverses of each other, it suffices to check on generators:
-- $g(f(x))=g(ab)=g(a)g(b)=x^3x^2=x$
-- $f(g(a))=f(x^3)=(ab)^3=a$, $f(g(b))=f(x^2)=(ab)^2=b$
+- $g(f(x))=g(ab^{-1})=g(a)g(b)^{-1}=x^3x^{-2}=x$
+- $f(g(a))=f(x^3)=(ab^{-1})^3=a^3(b^{-1})^3=(a^2)a(b^3)^{-1}=a$
+- $f(g(b))=f(x^2)=(ab^{-1})^2=a^2(b^{-1})^2=(b^{-1})^2=(b^2)^2=b^4=b$
 
 Thus $G\cong C_6$.
 
