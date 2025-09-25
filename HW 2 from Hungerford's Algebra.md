@@ -39,8 +39,11 @@ Proof
 Let $H_1 = \mathbb{Z}_2 \times \mathbb{Z}_3$, $`H_2 = \{e\}`$, $K_1 = \mathbb{Z}_2$, and $K_2 = \mathbb{Z}_3$.
 
 First, we show $H_1 \times H_2 \cong K_1 \times K_2$:
-$H_1 \times H_2 = (\mathbb{Z}_2 \times \mathbb{Z}_3) \times \{e\} \cong \mathbb{Z}_2 \times \mathbb{Z}_3$.
+
+$`H_1 \times H_2 = (\mathbb{Z}_2 \times \mathbb{Z}_3) \times \{e\} \cong \mathbb{Z}_2 \times \mathbb{Z}_3`$.
+
 Since $K_1 \times K_2 = \mathbb{Z}_2 \times \mathbb{Z}_3$, the products are isomorphic.
+
 By the Chinese Remainder Theorem, both products are isomorphic to $\mathbb{Z}_6$.
 
 Next, we show no $H_i$ is isomorphic to any $K_j$. We can do this by comparing their orders:
