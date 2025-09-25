@@ -80,7 +80,13 @@ Let $D_k$ be the dihedral group of order $2 k$, where $k \geq 3$.
 
 Proof
 
-1. We have $D_k = \langle r, s \mid r^k = s^2 = 1, s r s = r^{-1} \rangle$. Any automorphism $\varphi$ of $D_k$ is determined by $\varphi(r)$ and $\varphi(s)$. Since $r$ has order $k$, $\varphi(r)$ must also have order $k$. The elements of order $k$ in $D_k$ are precisely the $r^m$ where $m$ is coprime to $k$. There are $\phi(k)$ such elements. Since $s$ has order $2$, $\varphi(s)$ must also have order $2$. The elements of order $2$ in $D_k$ are precisely $r^m s$ where $m=0, 1, \ldots, k-1$. There are $k$ such elements. Thus, the number of choices for $\varphi(r)$ is $\phi(k)$ and the number of choices for $\varphi(s)$ is $k$. Therefore, the total number of automorphisms is $k \cdot \phi(k)$.
+1. An automorphism $\varphi$ of $D_k$ is determined by the images of its generators, $\varphi(r)$ and $\varphi(s)$, which must preserve the group relations. Since $\varphi$ preserves orders, $\varphi(r)$ must have order $k$ and $\varphi(s)$ must have order 2.
+   - The elements of order $k$ in $D_k$ are $r^m$ with $\gcd(m, k) = 1$. There are $\phi(k)$ such choices for $\varphi(r)$.
+   - The elements of order 2 are the $k$ reflections $r^n s$ ($n=0, \dots, k-1$) and, if $k$ is even, the rotation $r^{k/2}$.
+   - We must check which choices for $\varphi(s)$ preserve the relation $\varphi(s)\varphi(r)\varphi(s) = \varphi(r)^{-1}$, given $\varphi(r) = r^m$.
+     - If $\varphi(s) = r^n s$: The relation holds, as $(r^n s)r^m(r^n s) = r^{n-m}(sr^ns) = r^{n-m}r^{-n} = r^{-m} = \varphi(r)^{-1}$.
+     - If $k$ is even and $\varphi(s) = r^{k/2}$: The relation becomes $r^m = r^{-m}$, which implies $k|2m$. For $k \ge 3$ and $\gcd(m,k)=1$, this is impossible.
+   - Thus, there are $\phi(k)$ choices for $\varphi(r)$ and $k$ choices for $\varphi(s)$. Each of these $k \cdot \phi(k)$ pairs defines a distinct automorphism.
 
 2. To determine the structure of $\mathrm{Aut}(D_k)$, we note that each automorphism is determined by the images of $r$ and $s$. We can represent an automorphism $\varphi$ by a pair $(m, n)$ where $\varphi(r) = r^m$ with $\gcd(m, k) = 1$ and $\varphi(s) = r^n s$ for some $n \in \{0, 1, \ldots, k-1\}$. The composition of two automorphisms $(m_1, n_1)$ and $(m_2, n_2)$ is given by:
 
