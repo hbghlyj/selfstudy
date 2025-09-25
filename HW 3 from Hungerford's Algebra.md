@@ -96,7 +96,7 @@ Proof
 
    Thus, the group operation in $\mathrm{Aut}(D_k)$ can be described as:
    
-   $(m_1, n_1) * (m_2, n_2) = (m_1 m_2 \mod k, n_1 + m_1 n_2 \mod k)
+   $(m_1, n_1) * (m_2, n_2) = (m_1 m_2 \mod k, n_1 + m_1 n_2 \mod k)$
 
 # Algebra Qual, Aug 2018
 For a finite group $G$, denote by $s(G)$ the number of its subgroups.
