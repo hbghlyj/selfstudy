@@ -52,7 +52,7 @@
    
    $\phi_1 \circ \tilde{p} \circ \phi_1^{-1}(z)=\phi_1(\tilde{p}([z:1]))=\phi_1([p(z):1])=p(z)$, which is smooth.
    
-   $\phi_2 \circ \tilde{p} \circ \phi_2^{-1}(w)=\phi_2(\tilde{p}([1:w]))=\phi_2([q(w):w^d])=w^d/q(w)$, which is smooth since $\deg q(w)\leq d$.
+   $\phi_2 \circ \tilde{p} \circ \phi_2^{-1}(w)=\phi_2(\tilde{p}([1:w]))=\phi_2([1:q(w)])=q(w)$, which is smooth.
 
    Thus $\tilde{p}$ is a smooth extension of $p$ to $\mathbb{CP}^1$.
 
