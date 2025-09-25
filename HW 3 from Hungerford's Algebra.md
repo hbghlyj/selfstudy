@@ -4,7 +4,7 @@ The cyclic group of order 6 is the group defined by generators  and relations $a
 
 Proof
 
-Let    be the cyclic group of order 6. Define a map   by   and extend it to a homomorphism. Since $(ab)^6=a^2=b^3=ef$ is well-defined.
+Let $C_6=\langle x|x^6=e\rangle$ be the cyclic group of order 6. Define a map $f\colon C_6\to G$ by $f(x)=ab$ and extend it to a homomorphism. Since $(ab)^6=a^2=b^3=e$, $f$ is well-defined.
 
 Define a map   by $g(a)=x^3,g(b)=x^2g(a)^2=g(b)^3=g(a)^{-1}g(b)^{-1}g(a)g(b)=eg$ is well-defined.
 
