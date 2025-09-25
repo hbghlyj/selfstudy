@@ -74,13 +74,9 @@
       Let $x \in M$ and let $n$ be the dimension of $N$.
 
       Choose smooth charts $(U, \varphi)$ containing $x$ and $(V, \psi)$ containing $F(x)$ such that $F(U) \subseteq V$.
-
-      For each $i=1, \ldots, n$ the map $\pi_i \circ \psi \circ F=F^*(\pi_i \circ \psi)$ is smooth, where $\pi_i: \mathbb{R}^n \to \mathbb{R}$ is the projection onto the $i$ th coordinate.
-
-      $\pi_i \circ \psi \circ F \circ \varphi^{-1}$ is smooth for $i=1, \ldots, n$, by Proposition 2.12.(smoothness of maps into product manifolds), $\psi \circ F \circ \varphi^{-1}$ must be smooth.
-
-      This shows that $F$ is smooth.
-   3. $F^{-1}$ is continuous since $F$ is a homeomorphism.
+  
+      For any point $p ∈ V$, find a smooth function $g ∈ C^∞(N)$ that agrees with $π_i ∘ ψ$ on a smaller neighborhood of $p$ and is zero outside $V$. By hypothesis, $g ∘ F$ is smooth. It shows that for any smooth function $h$ on $ℝ^n$, $h ∘ (ψ ∘ F ∘ φ^{-1})$ is smooth, which implies $ψ ∘ F ∘ φ^{-1}$ is smooth.
+   4. $F^{-1}$ is continuous since $F$ is a homeomorphism.
   
       $(F^{-1})^*\colon C^0(M)\to C^0(N)$
       
