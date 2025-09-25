@@ -35,7 +35,7 @@ For all divisors $d$ of $n$:
 
 ### 1) Rotation subgroups $\langle r^{d}\rangle$
 
-These are **always normal** in $D_{2n}$ for every divisor $d\mid n$.
+These are **always normal** in $D_n$ for every divisor $d\mid n.
 
 Reason: $\langle r\rangle$ is index-2 and hence normal, and $\langle r^{d}\rangle$ is characteristic in $\langle r\rangle$ (it’s the unique subgroup of $\langle r\rangle$ of order $n/d$), so it’s normal in the whole group.
 
