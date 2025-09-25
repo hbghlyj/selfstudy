@@ -90,11 +90,15 @@ Proof
 
 2. To determine the structure of $\mathrm{Aut}(D_k)$, we note that each automorphism is determined by the images of $r$ and $s$. We can represent an automorphism $\varphi$ by a pair $(m, n)$ where $\varphi(r) = r^m$ with $\gcd(m, k) = 1$ and $\varphi(s) = r^n s$ for some $`n \in \{0, 1, \ldots, k-1\}`$. The composition of two automorphisms $(m_1, n_1)$ and $(m_2, n_2)$ is given by:
 
-   $(m_1, n_1) \circ (m_2, n_2) = (m_1 m_2 \mod k, n_1 + m_1 n_2 \mod k).$
+   $r \mapsto r^{m_1} \mapsto (r^{m_2})^{m_1} = r^{m_1 m_2}$
    
-   This shows that $\mathrm{Aut}(D_k)$ is isomorphic to the semidirect product $\mathbb{Z}_k \rtimes \mathbb{Z}_k^* $, where $\mathbb{Z}_k$ corresponds to the choices of $n$ and $\mathbb{Z}_k^* $ corresponds to the choices of $m$. The action of $\mathbb{Z}_k^*$ on $\mathbb{Z}_k$ is given by multiplication modulo $k$. Thus, we have:
+   $s \mapsto r^{n_1} s \mapsto (r^{m_2})^{n_1} (r^{n_2} s) = r^{m_2 n_1 + n_2} s$
 
-   $\mathrm{Aut}(D_k) \cong \mathbb{Z}_k \rtimes \mathbb{Z}_k^*.$
+   Thus, the group operation in $\mathrm{Aut}(D_k)$ can be described as:
+
+   $(m_1, n_1) * (m_2, n_2) = (m_1 m_2 \mod k, m_2 n_1 + n_2 \mod k)$
+
+   This shows that $\mathrm{Aut}(D_k)$ is isomorphic to the semidirect product of the multiplicative group of units modulo $k$, $U(k)$, acting on the additive group $\mathbf{Z}/k\mathbf{Z}$.
 
 # Algebra Qual, Aug 2018
 For a finite group $G$, denote by $s(G)$ the number of its subgroups.
