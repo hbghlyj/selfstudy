@@ -36,7 +36,7 @@ Give an example of groups $H_i, K_j$ such that $H_1 \times H_2 \cong K_1 \times 
 
 Proof
 
-Let $H_1 = \mathbb{Z}_2 \times \mathbb{Z}_3$, $H_2 = \{e\}$, $K_1 = \mathbb{Z}_2$, and $K_2 = \mathbb{Z}_3$.
+Let $H_1 = \mathbb{Z}_2 \times \mathbb{Z}_3$, $`H_2 = \{e\}`$, $K_1 = \mathbb{Z}_2$, and $K_2 = \mathbb{Z}_3$.
 
 First, we show $H_1 \times H_2 \cong K_1 \times K_2$:
 $H_1 \times H_2 = (\mathbb{Z}_2 \times \mathbb{Z}_3) \times \{e\} \cong \mathbb{Z}_2 \times \mathbb{Z}_3$.
@@ -45,7 +45,7 @@ By the Chinese Remainder Theorem, both products are isomorphic to $\mathbb{Z}_6$
 
 Next, we show no $H_i$ is isomorphic to any $K_j$. We can do this by comparing their orders:
 - $|H_1| = |\mathbb{Z}_2 \times \mathbb{Z}_3| = 6$
-- $|H_2| = |\{e\}| = 1$
+- $`|H_2| = |\{e\}| = 1`$
 - $|K_1| = |\mathbb{Z}_2| = 2$
 - $|K_2| = |\mathbb{Z}_3| = 3$
 
