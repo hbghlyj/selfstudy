@@ -23,7 +23,7 @@ Proof
 
    For any $a \in A$, $(g \circ f)(a) = g(f(a)) = g(a) = a$. For any $b \in B$, $(g \circ f)(b) = g(f(b)) = g(b) = b$. Since $g \circ f$ is the identity on the generators of $A * B$, it is the identity homomorphism. Similarly, $f \circ g$ is the identity on $B * A$. Thus, $f$ is an isomorphism.
 
-3. To prove $A * (B * C) \cong (A * B) * C$, let $\phi_A\colon A \to (A * B) * C$, $\phi_B\colon B \to (A * B) * C$, and $\phi_C\colon C \to (A * B) * C$ be the canonical inclusion maps.
+2. To prove $A * (B * C) \cong (A * B) * C$, let $\phi_A\colon A \to (A * B) * C$, $\phi_B\colon B \to (A * B) * C$, and $\phi_C\colon C \to (A * B) * C$ be the canonical inclusion maps.
 
    By the universal property of $B * C$, the maps $\phi_B$ and $\phi_C$ induce a unique homomorphism $\psi\colon B * C \to (A * B) * C$.
 
