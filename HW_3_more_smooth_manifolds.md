@@ -88,7 +88,9 @@
 
       If $F$ is a diffeomorphism, then $F$ and $F^{-1}$ are smoooth. By part 2, the inverse of the linear map $F^* |_ {C^\infty(N)}\colon C^\infty(N)\to C^\infty(M)$ is the linear map $(F^{-1})^* |_ {C^\infty(N)}\colon C^\infty(N) \to C^\infty(M)$, so $F^* |_ {C^\infty(N)}$ is an isomorphism.
 
-      Conversely if $F^* |_ {C^{\infty}(N)}$ is an isomorphism then $(F^{-1})^* |_ {C^\infty(M)}F^* |_ {C^\infty(N)}\colon C^\infty(N)\to C^\infty(M)$ 
+      Conversely if $F^* |_ {C^{\infty}(N)}$ is an isomorphism, by part 2, $F$ is smooth.
+
+      $(F^{-1})^* (C^\infty(M))=((F^{-1})^* \circ F^*)(C^\infty(N))=\text{id}_ {C^\infty(N)}(C^\infty(N))=C^\infty(N)$, by part 2, $F^{-1}$ is smooth, so $F$ is a diffeomorphism.
 
 5. (Lee 2-14) Suppose that $A$ and $B$ are disjoint closed subsets of a smooth manifold $M$. Show that there exists $f \in C^{\infty}(M)$ such that $0 \leq f(x) \leq 1$ for all $x \in M$, $f^{-1}(0)=A$, and $f^{-1}(1)=B$.
    
