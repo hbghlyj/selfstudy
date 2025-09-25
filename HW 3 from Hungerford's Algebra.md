@@ -88,7 +88,7 @@ Proof
      - If $k$ is even and $\varphi(s) = r^{k/2}$: The relation becomes $r^m = r^{-m}$, which implies $k|2m$. For $k \ge 3$ and $\gcd(m,k)=1$, this is impossible.
    - Thus, there are $\phi(k)$ choices for $\varphi(r)$ and $k$ choices for $\varphi(s)$. Each of these $k \cdot \phi(k)$ pairs defines a distinct automorphism.
 
-2. To determine the structure of $\mathrm{Aut}(D_k)$, we note that each automorphism is determined by the images of $r$ and $s$. We can represent an automorphism $\varphi$ by a pair $(m, n)$ where $\varphi(r) = r^m$ with $\gcd(m, k) = 1$ and $\varphi(s) = r^n s$ for some $n \in \{0, 1, \ldots, k-1\}$. The composition of two automorphisms $(m_1, n_1)$ and $(m_2, n_2)$ is given by:
+2. To determine the structure of $\mathrm{Aut}(D_k)$, we note that each automorphism is determined by the images of $r$ and $s$. We can represent an automorphism $\varphi$ by a pair $(m, n)$ where $\varphi(r) = r^m$ with $\gcd(m, k) = 1$ and $\varphi(s) = r^n s$ for some $`n \in \{0, 1, \ldots, k-1\}`$. The composition of two automorphisms $(m_1, n_1)$ and $(m_2, n_2)$ is given by:
 
    $(m_1, n_1) \circ (m_2, n_2) = (m_1 m_2 \mod k, n_1 + m_1 n_2 \mod k).$
    
