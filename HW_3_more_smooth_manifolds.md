@@ -80,7 +80,7 @@
       By Exercise 2.3, $\pi_i \circ \psi \circ F \circ \varphi^{-1}$ is smooth for $i=1, \ldots, n$, so $\psi \circ F \circ \varphi^{-1}$ must be smooth.
 
       This shows that $F$ is smooth.
-   3. If $F$ is a diffeomorphism then $\left(F^{-1}\right)^*: C^{\infty}(M) \rightarrow C^{\infty}(N)$ is clearly an inverse to $F^*$, and conversely if $F^*|_{C^{\infty}(N)}$ is an isomorphism then $F$ and $F^{-1}$ are both smooth.
+   3. If $F$ is a diffeomorphism then $(F^{-1})^* \circ F^* =\text{id}_ {C^{\infty}(N)}$, $F^* \circ (F^{-1})^* =\text{id}_{C^{\infty}(M)}$ is an inverse to $F^*$, and conversely if $F^*|_{C^{\infty}(N)}$ is an isomorphism then $F$ and $F^{-1}$ are both smooth.
 
 5. (Lee 2-14) Suppose that $A$ and $B$ are disjoint closed subsets of a smooth manifold $M$. Show that there exists $f \in C^{\infty}(M)$ such that $0 \leq f(x) \leq 1$ for all $x \in M$, $f^{-1}(0)=A$, and $f^{-1}(1)=B$.
    
