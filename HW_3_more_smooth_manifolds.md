@@ -66,7 +66,7 @@
       
       Proof
       
-   1. $F^*(c_1 f_1+c_2 f_2)=c_1 f_1\circ F+c_2 f_2\circ F=c_1 F^*(f_1)+c_2 F^*(f_2)$ for all $c_1,c_2\in\mathbb{R},f_1,f_2\in C^\infty(N)$.
+   1. $F^* (c_1 f_1+c_2 f_2)=c_1 f_1\circ F+c_2 f_2\circ F=c_1 F^* (f_1)+c_2 F^* (f_2)$ for all $c_1,c_2\in\mathbb{R},f_1,f_2\in C^\infty(N)$.
 
 5. (Lee 2-14) Suppose that $A$ and $B$ are disjoint closed subsets of a smooth manifold $M$. Show that there exists $f \in C^{\infty}(M)$ such that $0 \leq f(x) \leq 1$ for all $x \in M$, $f^{-1}(0)=A$, and $f^{-1}(1)=B$.
    
