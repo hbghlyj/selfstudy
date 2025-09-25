@@ -51,7 +51,7 @@ $2\equiv kd\pmod n \quad\Longleftrightarrow\quad d\mid 2.$
 
 Hence the only possibilities are $d=1$ or $d=2$ (with $2\mid n$ for the latter). The same calculation applies to $\langle r^{d}, rs\rangle$.
 
-* If $d=1$: $\langle r,s\rangle=D_{2n}$, trivially normal.
+* If $d=1$: $\langle r,s\rangle=D_{n}$, trivially normal.
 * If $n$ is even and $d=2$: $\langle r^{2}, s\rangle$ and $\langle r^{2}, rs\rangle$ are index-2 subgroups (order $n$), hence **normal**.
 * For all other $d$ (including all $d>1$ when $n$ is odd), these dihedral subgroups are **not normal**.
 
