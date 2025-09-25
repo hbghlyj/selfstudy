@@ -77,7 +77,7 @@
 
       For each $i=1, \ldots, n$ the map $\pi_i \circ \psi \circ F=F^*\left(\pi_i \circ \psi\right)$ is smooth, where $\pi_i: \mathbb{R}^n \to \mathbb{R}$ is the projection onto the $i$ th coordinate.
 
-      By Exercise 2.3, $\pi_i \circ \psi \circ F \circ \varphi^{-1}$ is smooth for $i=1, \ldots, n$, so $\psi \circ F \circ \varphi^{-1}$ must be smooth.
+      By Proposition 2.12.(smoothness of maps into product manifolds), $\pi_i \circ \psi \circ F \circ \varphi^{-1}$ is smooth for $i=1, \ldots, n$, so $\psi \circ F \circ \varphi^{-1}$ must be smooth.
 
       This shows that $F$ is smooth.
    3. $F^{-1}$ exists since $F$ is a homeomorphism.
