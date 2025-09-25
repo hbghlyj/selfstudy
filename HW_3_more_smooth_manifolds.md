@@ -76,17 +76,11 @@
       Choose smooth charts $(U, \varphi)$ containing $x$ and $(V, \psi)$ containing $F(x)$ such that $F(U) \subseteq V$.
   
       For any point $p ∈ V$, find a smooth function $g ∈ C^∞(N)$ that agrees with $π_i ∘ ψ$ on a smaller neighborhood of $p$ and is zero outside $V$. By hypothesis, $g ∘ F$ is smooth. It shows that for any smooth function $h$ on $ℝ^n$, $h ∘ (ψ ∘ F ∘ φ^{-1})$ is smooth, which implies $ψ ∘ F ∘ φ^{-1}$ is smooth.
-   4. $F^{-1}$ is continuous since $F$ is a homeomorphism.
+   3. $F^{-1}$ is continuous since $F$ is a homeomorphism.
   
-      $(F^{-1})^*\colon C^0(M)\to C^0(N)$
-      
-      $(F^{-1})^* \circ F^* =(F\circ F^{-1})^* =\text{id}_ {C^0(N)}$, $F^* \circ (F^{-1})^* =(F^{-1}\circ F)^* =\text{id}_ {C^0(M)}$, so $(F^{-1})^* $ is an inverse to $F^* $.
+      If $F$ is a diffeomorphism, then $F$ and $F^{-1}$ are smooth. By part 2, $F^*$ maps $C^\infty(N)$ to $C^\infty(M)$ and $(F^{-1})^*$ maps $C^\infty(M)$ to $C^\infty(N)$. These maps are linear and are inverses of each other (since $(F^{-1})^* \circ F^* = (F \circ F^{-1})^* = \mathrm{id}^* = \mathrm{id}$), so $F^*|_{C^\infty(N)}$ is an isomorphism.
 
-      If $F$ is a diffeomorphism, then $F$ and $F^{-1}$ are smooth. By part 2, the inverse of the linear map $F^* |_ {C^\infty(N)}\colon C^\infty(N)\to C^\infty(M)$ is the linear map $(F^{-1})^* |_ {C^\infty(M)}\colon C^\infty(M) \to C^\infty(N)$, so $F^* |_ {C^\infty(N)}$ is an isomorphism.
-
-      Conversely if $F^* |_ {C^{\infty}(N)}$ is an isomorphism, by part 2, $F$ is smooth.
-
-      $(F^{-1})^* (C^\infty(M))=((F^{-1})^* \circ F^*)(C^\infty(N))=\text{id}_ {C^\infty(N)}(C^\infty(N))=C^\infty(N)$, by part 2, $F^{-1}$ is smooth, so $F$ is a diffeomorphism.
+      Conversely, suppose $F^*|_{C^\infty(N)}: C^\infty(N) \to C^\infty(M)$ is an isomorphism. The condition $F^*(C^\infty(N)) \subseteq C^\infty(M)$ (which is part of the isomorphism hypothesis) implies that $F$ is smooth by part 2. Since $F^*|_{C^\infty(N)}$ is an isomorphism, its inverse $(F^*|_{C^\infty(N)})^{-1}$ maps $C^\infty(M)$ to $C^\infty(N)$. This inverse is $(F^{-1})^*|_{C^\infty(M)}$. So, $(F^{-1})^*(C^\infty(M)) \subseteq C^\infty(N)$, which by part 2 implies that $F^{-1}$ is smooth. Therefore, $F$ is a diffeomorphism.
 
 5. (Lee 2-14) Suppose that $A$ and $B$ are disjoint closed subsets of a smooth manifold $M$. Show that there exists $f \in C^{\infty}(M)$ such that $0 \leq f(x) \leq 1$ for all $x \in M$, $f^{-1}(0)=A$, and $f^{-1}(1)=B$.
    
