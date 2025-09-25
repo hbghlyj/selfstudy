@@ -80,7 +80,7 @@
       $\pi_i \circ \psi \circ F \circ \varphi^{-1}$ is smooth for $i=1, \ldots, n$, by Proposition 2.12.(smoothness of maps into product manifolds), $\psi \circ F \circ \varphi^{-1}$ must be smooth.
 
       This shows that $F$ is smooth.
-   3. $F^{-1}$ exists since $F$ is a homeomorphism.
+   3. $F^{-1}$ is continuous since $F$ is a homeomorphism.
   
       $(F^{-1})^*\colon C^0(M)\to C^0(N)$
       
