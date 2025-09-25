@@ -36,7 +36,7 @@
 
    Proof
    
-   $\mathbb{CP}^1$ has a smooth atlas $`\{(U_1,\phi_1),(U_2,\phi_2)\}'$ where $U_1=\{[z:1]:z \in \mathbb{C}\}$, $U_2=\{[1:w]:w \in \mathbb{C}\}$, $\phi_1([z:1])=z$ and $\phi_2([1:w])=w$.
+   $\mathbb{CP}^1$ has a smooth atlas $`\{(U_1,\phi_1),(U_2,\phi_2)\}`$ where $U_1=\{[z:1]:z \in \mathbb{C}\}$, $U_2=\{[1:w]:w \in \mathbb{C}\}$, $\phi_1([z:1])=z$ and $\phi_2([1:w])=w$.
 
    Let $q(z)=z^d p(1/z)$. Then $q(z)$ is a polynomial of degree at most $d$. Define $\tilde{p}:\mathbb{CP}^1 \to \mathbb{CP}^1$ by
    
