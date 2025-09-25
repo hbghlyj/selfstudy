@@ -10,46 +10,77 @@
    
    $\phi_1\circ f \circ \phi_1^{-1}(x)=x^{1/3}$ for $x\in \mathbb{R}$, which is continuous and bijective with continuous inverse $`x\mapsto x^3`$. Similarly, $\phi_2 \circ f \circ \phi_2^{-1}(x)=x^{1/3}$ for $x\in \mathbb{R}$. Thus $f$ is a homeomorphism.
    
-   However, $`(\phi_1\circ f \circ \phi_1^{-1})'(x)=\frac{1}{3}x^{-2/3}`$, which is not continuous at $0$. Thus $f$ is not a diffeomorphism.
+   However, $`\phi_1\circ f \circ \phi_1^{-1}(x)=x^{1/3}`$ is not differentiable at $0$. Thus $f$ is not differentiable at $[0,1]$. Thus $f$ is not a diffeomorphism.
 
 3. (Lee 2.7) Let $M$ be a nonempty smooth $n$-manifold with $n \geq 1$. Show that the vector space $C^{\infty}(M)$ is infinite-dimensional.
 
    Proof
 
-   Take a chart $(U,\phi)$ of $M$, $U$ is nonempty, $\phi(U)$ contains a nonempty ball $B(r)$.
+   Take a chart $(U,\phi)$ of $M$, $U$ is nonempty, $\phi(U)$ contains a nonempty ball $B$. Let $\psi$ be a smooth bump function for $B$ supported in $\phi(U)$.
+   
+   Let $f_k:M\to \mathbb{R},x\mapsto\phi_1(x)^k\psi(\phi(x))$ where $\phi_1$ is the first coordinate of $\phi$.
 
-   Let $`f_i:M\to \mathbb{R}`$  be a smooth bump function such that $\mathrm{supp}f_i$ is contained in $B(\frac{r}{i})\setminus\overline{B(\frac{r}{i+1})}$.
-
-   Then $\{f_i\}$ from $C^{\infty}(M)$ have nonempty disjoint supports.
-   To show $\{f_i\}$ is linearly independent, suppose there exist nonzero $\lambda_1, \dots, \lambda_k \in \mathbb{R}$ such that
+   To show $`\{f_k\mid k=0,1,\dots\}`$ are linearly independent, suppose there exist nonzero $\lambda_1, \dots, \lambda_k \in \mathbb{R}$ such that
 
    $`\lambda_1 f_{i_1}+\dots+\lambda_k f_{i_k}=0`$
 
-   where $i_1, \ldots, i_k$ are distinct. Take $x\in B(\frac{r}{i_1})\setminus\overline{B(\frac{r}{i+1})}$,
+   where $i_1, \ldots, i_k$ are distinct. Since $\psi|_B=1$,
 
-   $`r_1 f_{i_1}(x)=0`$
+   $`(\lambda_1 x^{i_1}+\dots+\lambda_k x^{i_k})|_B=0`$
 
-   so $r_i=0$ since $f_{i_1}(x) \neq 0$.
+   But a nonzero polynomial can have only finitely many zeros. So $\lambda_1=\dots=\lambda_k=0$.
 
-   Therefore, $C^{\infty}(M)$ is an infinite-dimensional $\mathbb{R}$-vector space.
+   Therefore, $`\{f_k\mid k=0,1,\dots\}`$ are linearly independent, $C^{\infty}(M)$ is an infinite-dimensional $\mathbb{R}$-vector space.
 
-5. (Lee 2.9) Let $p(z)$ be a degree $d$ polynomial in one complex variable. Show that the map $p: \mathbb{C} \rightarrow \mathbb{C}$ extends to a smooth map from $\mathbb{C P}^1 \rightarrow \mathbb{C P}^1$, where we take $\mathbb{C} \subset \mathbb{CP}^1$ to be a standard coordinate chart.
+5. (Lee 2.9) Let $p(z)$ be a degree $d$ polynomial in one complex variable. Show that the map $p\colon\mathbb{C} \to \mathbb{C}$ extends to a smooth map from $\mathbb{CP}^1 \to \mathbb{CP}^1$, where we take $\mathbb{C} \subset \mathbb{CP}^1$ to be a standard coordinate chart.
 
-6. (Lee 2.10) Let $M$ and $N$ be smooth manifolds. Given a continuous map $F: M \to N$, consider the map
+   Proof
+   
+   $\mathbb{CP}^1$ has a smooth atlas $`\{(U_1,\phi_1),(U_2,\phi_2)\}`$ where $`U_1=\{[z:1]:z \in \mathbb{C}\}`$, $`U_2=\{[1:w]:w \in \mathbb{C}\}`$, $\phi_1([z:1])=z$ and $\phi_2([1:w])=w$.
+
+   Let $`q(z)=\begin{cases}1/p(1/z)&z\ne0\\0&z=0\end{cases}`$. Then $q(z)$ is a smooth function. Define $\tilde{p}\colon\mathbb{CP}^1 \to \mathbb{CP}^1$ by
+   
+   $\tilde{p}([z:1])=[p(z):1]$ on $U_1$ and $\tilde{p}([1:w])=[1:q(w)]$ on $U_2$.
+
+   We need to show the two definitions agree on the overlap $`U_1 \cap U_2=\{[z:1]:z \neq 0\}=\{[1:w]:w \neq 0\}`$. If $[z:1]=[1:w]$, then $w=1/z$. Thus
+   
+   $[1:q(w)]=[1:1/p(z)]=[p(z):1]$
+   
+   So $\tilde{p}$ is well-defined.
+   
+   To show $\tilde{p}$ is smooth, we need to show that the coordinate representations $\phi_1 \circ \tilde{p} \circ \phi_1^{-1}$, $\phi_2 \circ \tilde{p} \circ \phi_2^{-1}$ are smooth.
+   
+   $\phi_1 \circ \tilde{p} \circ \phi_1^{-1}(z)=\phi_1(\tilde{p}([z:1]))=\phi_1([p(z):1])=p(z)$, which is smooth.
+   
+   $\phi_2 \circ \tilde{p} \circ \phi_2^{-1}(w)=\phi_2(\tilde{p}([1:w]))=\phi_2([1:q(w)])=q(w)$, which is smooth.
+
+   Thus $\tilde{p}$ is a smooth extension of $p$ to $\mathbb{CP}^1$.
+
+7. (Lee 2.10) Let $M$ and $N$ be smooth manifolds. Given a continuous map $F: M \to N$, consider the map
 
     $`\begin{aligned}F^*\colon C^0(N) &\to C^0(M) \\f & \mapsto f \circ F\end{aligned}`$
+      
+    1. Show that $F^*$ is a linear map
+    2. Show that $F$ is smooth if and only if $F^*(C^\infty(N)) \subset C^\infty(M)$.
+    3. Suppose that $F$ is a homeomorphism. Prove that $F$ is a diffeomorphism if and only if $F^*$ induces an isomorphism from $C^{\infty}(N)$ to $C^{\infty}(M)$.
+      
+      Proof
+      
+   1. $F^* (c_1 f_1+c_2 f_2)=c_1 f_1\circ F+c_2 f_2\circ F=c_1 F^* (f_1)+c_2 F^* (f_2)$ for all $c_1,c_2\in\mathbb{R},f_1,f_2\in C^\infty(N)$.
+   2. If $F$ is smooth and $f \in C^{\infty}(N)$ then $F^*(f)=f \circ F \in C^{\infty}(M)$ by Proposition 2.10(d).
+      
+      Conversely, suppose that $F^*(C^\infty(N)) \subseteq C^\infty(M)$.
 
-  <ol type="a">
-  <li>
-    Show that $F^*$ is a linear map
-  </li>
-  <li>
-    Show that $F$ is smooth if and only if $F^*(C^\infty(N)) \subset C^\infty(M)$.
-  </li>
-  <li>
-    Suppose that $F$ is a homeomorphism. Prove that $F$ is a diffeomorphism if and only if $F^*$ induces an isomorphism from $C^{\infty}(N)$ to $C^{\infty}(M)$.
-  </li>
-  </ol>
+      Let $x \in M$ and let $n$ be the dimension of $N$.
+
+      Choose smooth charts $(U, \varphi)$ containing $x$ and $(V, \psi)$ containing $F(x)$ such that $F(U) \subseteq V$.
+  
+      For any point $p ∈ V$, find a smooth function $g ∈ C^∞(N)$ that agrees with $π_i ∘ ψ$ on a smaller neighborhood of $p$ and is zero outside $V$. By hypothesis, $g ∘ F$ is smooth. It shows that for any smooth function $h$ on $ℝ^n$, $h ∘ (ψ ∘ F ∘ φ^{-1})$ is smooth, which implies $ψ ∘ F ∘ φ^{-1}$ is smooth.
+   3. $F^{-1}$ is continuous since $F$ is a homeomorphism.
+  
+      If $F$ is a diffeomorphism, then $F$ and $F^{-1}$ are smooth. By part 2, $`F^*`$ maps $C^\infty(N)$ to $C^\infty(M)$ and $`(F^{-1})^*`$ maps $C^\infty(M)$ to $C^\infty(N)$. These maps are linear and are inverses of each other (since $`(F^{-1})^* \circ F^* = (F \circ F^{-1})^* = \mathrm{id}^* = \mathrm{id}`$), so $`F^*|_{C^\infty(N)}`$ is an isomorphism.
+
+      Conversely, suppose $`F^*|_{C^\infty(N)}: C^\infty(N) \to C^\infty(M)`$ is an isomorphism. The condition $`F^*(C^\infty(N)) \subseteq C^\infty(M)`$ (which is part of the isomorphism hypothesis) implies that $F$ is smooth by part 2. Since $`F^*|_{C^\infty(N)}`$ is an isomorphism, its inverse $`(F^*|_{C^\infty(N)})^{-1}`$ maps $C^\infty(M)$ to $C^\infty(N)$. This inverse is $`(F^{-1})^*|_{C^\infty(M)}`$. So, $`(F^{-1})^*(C^\infty(M)) \subseteq C^\infty(N)`$, which by part 2 implies that $F^{-1}$ is smooth. Therefore, $F$ is a diffeomorphism.
 
 5. (Lee 2-14) Suppose that $A$ and $B$ are disjoint closed subsets of a smooth manifold $M$. Show that there exists $f \in C^{\infty}(M)$ such that $0 \leq f(x) \leq 1$ for all $x \in M$, $f^{-1}(0)=A$, and $f^{-1}(1)=B$.
    
@@ -91,7 +122,7 @@
 
    Take the chart $\chi_{E,F}$ around $E$ (so $E$ corresponds to $A=0$). Let $W=\mathrm{graph}(A)$ with $A:E\to F$. Its orthogonal complement is
 
-   $W^\perp = \{ -A^T y + y : y\in F\}$
+   $`W^\perp = \{ -A^T y + y : y\in F\}`$
    
    (where $A^T:F\to E$ is the transpose w.r.t. the inner product).
 
