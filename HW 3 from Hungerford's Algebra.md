@@ -81,3 +81,10 @@ For a finite group $G$, denote by $s(G)$ the number of its subgroups.
 2. Show that if $H$ is a nontrivial normal subgroup of $G$, then $s(G / H)<s(G)$.
 3. Show that $s(G)=2$ if and only if $G$ is cyclic of prime order.
 4. Show that $s(G)=3$ if and only if $G$ is a cyclic group whose order is a square of a prime.
+
+Proof
+
+1. Since $G$ is finite, it has finitely many subsets. Each subgroup of $G$ is a subset of $G$, so $G$ has finitely many subgroups.
+2. Let $\pi: G \to G/H$ be the canonical projection. For any subgroup $K$ of $G/H$, $\pi^{-1}(K)$ is a subgroup of $G$. The map $K \mapsto \pi^{-1}(K)$ is an injection from the set of subgroups of $G/H$ to the set of subgroups of $G$. Since $H$ is a nontrivial normal subgroup of $G$, $`\pi^{-1}(\{e\}) = H`$ is a subgroup of $G$ that is not in the image of this injection. Thus, $s(G/H) < s(G)$.
+3. If $G$ is cyclic of prime order $p$, then its only subgroups are $`\{e\}`$ and $G$ itself, so $s(G) = 2$. Conversely, if $s(G) = 2$, then $G$ has no nontrivial subgroups, which implies that $G$ is cyclic of prime order.
+4. If $G$ is cyclic of order $p^2$ for some prime $p$, then its subgroups are $`\{e\}`$, the unique subgroup of order $p$, and $G$ itself, so $s(G) = 3$. Conversely, if $s(G) = 3$, then $G$ has exactly one nontrivial proper subgroup. Let this subgroup be $H$. By part 2, $H$ must be a maximal normal subgroup of $G$, and the quotient group $G/H$ must be cyclic of prime order. Thus, $G$ is cyclic of order $p^2$ for some prime $p$.
