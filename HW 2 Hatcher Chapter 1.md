@@ -34,3 +34,9 @@ If $X_0$ is the path-component of a space $X$ containing the basepoint $x_0$, sh
 
 ## Exercise 15
 Given a map $f: X \to Y$ and a path $h: I \to X$ from $x_0$ to $x_1$, show that $f_* \beta_h=\beta_{f h} f_*$ in the diagram at the right.
+
+$`\begin{CD}
+\pi_{1}(X,x_{1})    @>\beta_{h}>>    \pi_{1}(X,x_{0})   \\
+@V f_* VV                        @V f_* VV            \\
+\pi_{1}\bigl(Y,f(x_{1})\bigr)  @>\beta_{fh}>> \pi_{1}\bigl(Y,f(x_{0})\bigr)
+\end{CD}`$
