@@ -43,7 +43,7 @@ $`S^1 \times I \to S^1 \times I / S^1 \times\{1\} \to X`$
 
 where the first map is the quotient map.
 
-The pair $`(S^1 \times I / S^1 \times\{1\}, S^1 \times\{0\})`$ is homeomorphic to $(D^2, S^1)$. The homeomorphism is induced by the map $\Phi\colon S^1 \times I \to D^2$ defined by $\Phi(a, x)=a \cdot(1-x)$, where we look at $a$ and $x$ as complex numbers. So the second map above gives a map $D^2 \to X$ such that the restriction to $S^1$ is equal to $f$.
+The pair $(S^1 \times I / S^1 \times\{1\}, S^1 \times\{0\})$ is homeomorphic to $(D^2, S^1)$. The homeomorphism is induced by the map $\Phi\colon S^1 \times I \to D^2$ defined by $\Phi(a, x)=a \cdot(1-x)$, where we look at $a$ and $x$ as complex numbers. So the second map above gives a map $D^2 \to X$ such that the restriction to $S^1$ is equal to $f$.
 </dd>
   <dt>    
     (b) &rArr; (c)
