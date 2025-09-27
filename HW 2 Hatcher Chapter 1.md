@@ -82,7 +82,7 @@ Note that $I/(0 \sim 1) \cong S^1$ is a homeomorphism. If you have a continuous 
 
 Conversely, given a based map $f\colon(S^1, s_0) \to (X,x_0)$, you can obtain a loop $f'\colon I \to X$ with $f'(0)=f'(1)=x_0$ by pre-composing $f$ with the canonical quotient map $I \to I/(0 \sim 1) \cong S^1$.
 
-If $X$ is path-connected, for any map $g\colon S^1 \to X$, we can choose a point $s_0 \in S^1$ and let $x_0 = g(s_0)$. Since $X$ is path-connected, there exists a path $\gamma\colon I \to X$ such that $\gamma(0) = x_0$ and $\gamma(1) = g(s_0)$. We can then define a new map $f\colon S^1 \to X$ by setting $f(s) = \beta_\gamma(s)$, where $\beta_\gamma$ is a loop based at $x_0$ that traverses the path $\gamma$ and then follows the image of $g$ then returns along $\gamma^{-1}$. This shows that every homotopy class in $[S^1, X]$ has a representative in $\pi_1(X, x_0)$, hence $\Phi$ is onto.
+To show $\Phi$ is surjective, consider a map $g\colon S^1 \to X$. Pick a basepoint $s_0 \in S^1$ and let $x_1 = g(s_0)$. Since $X$ is path-connected, there is a path $\gamma$ from $x_0$ to $x_1$. The loop $g$ (viewed as a loop $g'$ on $I$ based at $x_1$) is conjugate to the loop $f' = \gamma \cdot g' \cdot \bar{\gamma}$, which is based at $x_0$. Since conjugate loops are freely homotopic, the class $[f'] \in \pi_1(X, x_0)$ maps to the homotopy class of $g$ under $\Phi$. Thus $\Phi$ is surjective.
 
 Suppose $\Phi([f]) = \Phi([g])$. This means that the maps $f$ and $g$ are homotopic as maps from $S^1$ to $X$. Let $H\colon S^1 \times I \to X$ be a free homotopy between $f$ and $g$. The path that induces the conjugacy is precisely the path traced by the basepoint during the homotopy, $γ(t) = H(s_0, t)$.
 
