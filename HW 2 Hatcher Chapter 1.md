@@ -31,15 +31,26 @@ Deduce that a space $X$ is simply-connected iff all maps $S^1 \to X$ are homotop
 
 Proof
 
-(a) $\Rightarrow$ (b): Suppose $f: S^1 \to X$. By hypothesis, there's a homotopy $h: S^1 \times I \to X$ from $f$ to a constant map. That is, $h_0=f$ and there is a point $x \in X$ such that, for all $s \in S^1, h(s, 1)=x$. Because of the latter condition, $h$ factors through the quotient $`S^1 \times I / S^1 \times\{1\}`$. That is, $h$ is equal to a composition
+<dl>
+  <dt>
+    (a) &rArr; (b)
+  </dt>
+  <dd>
+
+Suppose $f: S^1 \to X$. By hypothesis, there's a homotopy $h: S^1 \times I \to X$ from $f$ to a constant map. That is, $h_0=f$ and there is a point $x \in X$ such that, for all $s \in S^1, h(s, 1)=x$. Because of the latter condition, $h$ factors through the quotient $`S^1 \times I / S^1 \times\{1\}`$. That is, $h$ is equal to a composition
 
 $`S^1 \times I \to S^1 \times I / S^1 \times\{1\} \to X`$
 
 where the first map is the quotient map.
 
 The pair $`(S^1 \times I / S^1 \times\{1\}, S^1 \times\{0\})`$ is homeomorphic to $(D^2, S^1)$. The homeomorphism is induced by the map $\Phi: S^1 \times I \to D^2$ defined by $\Phi(a, x)=a \cdot(1-x)$, where we look at $a$ and $x$ as complex numbers. So the second map above gives a map $D^2 \to X$ such that the restriction to $S^1$ is equal to $f$.
+</dd>
+  <dt>    
+    (b) &rArr; (c)
+  </dt>
+  <dd>
 
-(b) $\Rightarrow$ (c): As in the next problem, we can regard $\pi_1(X, x_0)$ as the set of basepoint-preserving homotopy classes of maps $(S^1, s_0) \to(X, x_0)$. Suppose $f\colon(S^1, s_0) \to(X, x_0)$ is such a map. By hypothesis, it extends to a map $h\colon(D^2, s_0) \to(X, x_0)$. Let $\phi$ be a deformation-retraction of $D^2$ onto $s_0$. Then
+As in the next problem, we can regard $\pi_1(X, x_0)$ as the set of basepoint-preserving homotopy classes of maps $(S^1, s_0) \to(X, x_0)$. Suppose $f\colon(S^1, s_0) \to(X, x_0)$ is such a map. By hypothesis, it extends to a map $h\colon(D^2, s_0) \to(X, x_0)$. Let $\phi$ be a deformation-retraction of $D^2$ onto $s_0$. Then
 
 $`\begin{aligned}
 S^1 \times I & \to X \\
@@ -56,9 +67,15 @@ D^2 \times I & \to D^2 \\
 \end{aligned}`$
 
 is the desired deformation-retraction.)
+</dd>
+  <dt>
+    (c) &rArr; (a)
+  </dt>
+  <dd>
 
-(c) $\Rightarrow$ (a): Let $f: S^1 \to X$ be a map. Choose a basepoint $s_0 \in S^1$ and let $x_0 = f(s_0)$. Then $f$ can be viewed as a map of pairs $f: (S^1, s_0) \to (X, x_0)$. The hypothesis that $\pi_1(X, x_0)=0$ means that $f$ is nullhomotopic via a basepoint-preserving homotopy. This in particular implies that $f$ is homotopic to a constant map (without regard to basepoints), which is (a).
-
+Let $f: S^1 \to X$ be a map. Choose a basepoint $s_0 \in S^1$ and let $x_0 = f(s_0)$. Then $f$ can be viewed as a map of pairs $f: (S^1, s_0) \to (X, x_0)$. The hypothesis that $\pi_1(X, x_0)=0$ means that $f$ is nullhomotopic via a basepoint-preserving homotopy. This in particular implies that $f$ is homotopic to a constant map (without regard to basepoints), which is (a).
+</dd>
+</dl>
 Finally, if $X$ is simply-connected, then it is path-connected and (c) holds. Thus (a) holds, and every map $f\colon S^1 \to X$ is homotopic to a constant map. And since $X$ is path-connected, all constant maps to $X$ are homotopic.
 
 Conversely, if all maps $S^1 \to X$ are homotopic, then in particular the constant maps are homotopic, so $X$ is path-connected. And since (a) holds, (c) holds as well. Thus $X$ is simply-connected.
