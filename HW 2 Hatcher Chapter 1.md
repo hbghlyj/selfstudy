@@ -57,7 +57,7 @@ D^2 \times I & \to D^2 \\
 
 is the desired deformation-retraction.)
 
-(c) $\Rightarrow$ (a): Again, regard $\pi_1(X, x_0)$ as the set of basepoint-preserving homotopy classes of maps $(S^1, s_0) \to(X, x_0)$. The hypothesis that $\pi_1(X, x_0)=0$ for all choices of $x_0$ means that every map $S^1 \to X$ is nullhomotopic through a homotopy that preserves the basepoint of $S^1$. In particular, this entails (a).
+(c) $\Rightarrow$ (a): Let $f: S^1 \to X$ be a map. Choose a basepoint $s_0 \in S^1$ and let $x_0 = f(s_0)$. Then $f$ can be viewed as a map of pairs $f: (S^1, s_0) \to (X, x_0)$. The hypothesis that $\pi_1(X, x_0)=0$ means that $f$ is nullhomotopic via a basepoint-preserving homotopy. This in particular implies that $f$ is homotopic to a constant map (without regard to basepoints), which is (a).
 
 Finally, if $X$ is simply-connected, then it is path-connected and (c) holds. Thus (a) holds, and every map $f\colon S^1 \to X$ is homotopic to a constant map. And since $X$ is path-connected, all constant maps to $X$ are homotopic.
 
