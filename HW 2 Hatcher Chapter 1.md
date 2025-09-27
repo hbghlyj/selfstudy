@@ -32,6 +32,10 @@ We can regard $\pi_1(X, x_0)$ as the set of basepoint-preserving homotopy classe
 ## Exercise 11
 If $X_0$ is the path-component of a space $X$ containing the basepoint $x_0$, show that the inclusion $X_0 \hookrightarrow X$ induces an isomorphism $\pi_1(X_0, x_0) \to \pi_1(X, x_0)$.
 
+Proof
+
+We know that $`\iota_*: \pi_1(X_0, x_0) \to \pi_1(X, x_0)`$ is a group homomorphism and moreover that $`\iota_*`$ must be injective since any loop based at $x_0$ and in $X_0$ must be a loop in $X$ as well. Hence we only need to show that $`\iota_*`$ is surjective. Suppose $`[x] \in \pi_1(X, x_0)`$. Since $x: I \to X$ is a loop, it is in particular a path from $x_0$ to $x_0$. This means that $x$ needs to be a continuous map. Hence any loop based at $x_0$ must be contained within $X_0$ since the map would not be continuous if $\operatorname{Im}(x) \subset X$ intersects a different component. Thus there must be some class of loops $[x'] \in \pi_1(X_0, x_0)$ such that $\iota_*([x'])=[x]$.
+
 ## Exercise 15
 Given a map $f: X \to Y$ and a path $h: I \to X$ from $x_0$ to $x_1$, show that $f_* \beta_h=\beta_{f h} f_*$ in the diagram at the right.
 
