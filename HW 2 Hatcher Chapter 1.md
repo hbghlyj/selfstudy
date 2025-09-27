@@ -82,9 +82,17 @@ Note that $I/(0 \sim 1) \cong S^1$ is a homeomorphism. If you have a continuous 
 
 Conversely, given a based map $f\colon(S^1, s_0) \to (X,x_0)$, you can obtain a loop $f'\colon I \to X$ with $f'(0)=f'(1)=x_0$ by pre-composing $f$ with the canonical quotient map $I \to I/(0 \sim 1) \cong S^1$.
 
-To show $\Phi$ is surjective, consider a map $g\colon S^1 \to X$. Pick a basepoint $s_0 \in S^1$ and let $x_1 = g(s_0)$. Since $X$ is path-connected, there is a path $\gamma$ from $x_0$ to $x_1$. Let $g'$ be the loop in $X$ based at $x_1$ corresponding to $g$. The loop $f' = \gamma \cdot g' \cdot \bar{\gamma}$ is based at $x_0$. Since $f'$ is freely homotopic to $g'$, the class $[f'] \in \pi_1(X, x_0)$ maps to the free homotopy class of $g$ under $\Phi$. Thus $\Phi$ is surjective.
+- To show $\Phi$ is surjective, consider a map $g\colon S^1 \to X$. Pick a basepoint $s_0 \in S^1$ and let $x_1 = g(s_0)$. Since $X$ is path-connected, there is a path $h$ from $x_0$ to $x_1$. Let $g'$ be the loop in $X$ based at $x_1$ corresponding to $g$.
+  
+  Let $h_t$ be the restriction of $h$ to the interval $[0, t]$, with a reparametrization so that the domain of $h_t$ is still $[0,1]$. Explicitly, we can take $h_t(s)=h(t s)$.
+  
+  The loop $f' =h \cdot g' \cdot \bar{h}$ is based at $x_0$.
+  
+  The product $h_t \cdot g'\cdot \bar{h}_t$ gives a free homotopy from $f'$ to $g'$.
+  
+  Since $f'$ is freely homotopic to $g'$, the class $[f'] \in \pi_1(X, x_0)$ maps to the free homotopy class of $g$ under $\Phi$. Thus $\Phi$ is surjective.
 
-Suppose $\Phi([f]) = \Phi([g])$. This means that the maps $f$ and $g$ are freely homotopic as maps from $S^1$ to $X$. Let $H\colon S^1 \times I \to X$ be a free homotopy between $f$ and $g$. The path traced by the basepoint during the homotopy, $γ(t) = H(s_0, t)$, is a loop at $x_0$. The existence of this free homotopy implies that $[f]$ and $[g]$ are conjugate in $\pi_1(X, x_0)$.
+- Suppose $\Phi([f]) = \Phi([g])$. This means that the maps $f$ and $g$ are freely homotopic as maps from $S^1$ to $X$. Let $H\colon S^1 \times I \to X$ be a free homotopy between $f$ and $g$. The path traced by the basepoint during the homotopy, $γ(t) = H(s_0, t)$, is a loop at $x_0$. The existence of this free homotopy implies that $[f]$ and $[g]$ are conjugate in $\pi_1(X, x_0)$.
 
 ## Exercise 11
 If $X_0$ is the path-component of a space $X$ containing the basepoint $x_0$, show that the inclusion $X_0 \hookrightarrow X$ induces an isomorphism $\pi_1(X_0, x_0) \to \pi_1(X, x_0)$.
