@@ -94,7 +94,7 @@ Conversely, given a based map $f\colon(S^1, s_0) \to (X,x_0)$, you can obtain a 
   
   Since $f'$ is freely homotopic to $g'$, the class $[f'] \in \pi_1(X, x_0)$ maps to the free homotopy class of $g$ under $\Phi$. Thus $\Phi$ is surjective.
 
-- Suppose $\Phi([f]) = \Phi([g])$. This means that the maps $f$ and $g$ are freely homotopic as maps from $S^1$ to $X$. Let $H\colon S^1 \times I \to X$ be a free homotopy between $f$ and $g$. The path traced by the basepoint during the homotopy, $γ(t) = H(s_0, t)$, is a loop at $x_0$. The existence of this free homotopy implies that $[f]$ and $[g]$ are conjugate in $\pi_1(X, x_0)$.
+- Suppose $\Phi([f]) = \Phi([g])$. This means that the maps $f$ and $g$ are freely homotopic as maps from $S^1$ to $X$. Let $H\colon S^1 \times I \to X$ be a free homotopy between $f$ and $g$. The path traced by the basepoint during the homotopy, $γ(t) = H(s_0, t)$, is a loop at $x_0$. ???The existence of this free homotopy implies that $[f]$ and $[g]$ are conjugate in $\pi_1(X, x_0)$???
 
 ## Exercise 11
 If $X_0$ is the path-component of a space $X$ containing the basepoint $x_0$, show that the inclusion $X_0 \hookrightarrow X$ induces an isomorphism $\pi_1(X_0, x_0) \to \pi_1(X, x_0)$.
