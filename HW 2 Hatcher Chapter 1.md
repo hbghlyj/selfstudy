@@ -94,9 +94,7 @@ Conversely, given a based map $f\colon(S^1, s_0) \to (X,x_0)$, you can obtain a 
   
   Since $f'$ is freely homotopic to $g'$, the class $[f'] \in \pi_1(X, x_0)$ maps to the free homotopy class of $g$ under $\Phi$. Thus $\Phi$ is surjective.
 
-- Suppose $\Phi([f]) = \Phi([g])$. This means that the maps $f$ and $g$ are freely homotopic as maps from $S^1$ to $X$. Let $H\colon S^1 \times I \to X$ be a free homotopy between $f$ and $g$. The path traced by the basepoint during the homotopy, $γ(t) = H(s_0, t)$, is a loop at $x_0$. 
-Let $H:S^1\times I\to X$ be a free homotopy from $f$ to $g$, with $H(s,0)=f(s)$ and $H(s,1)=g(s)$, and assume $f(0)=g(0)=x_0$.
-Set $\alpha(t)\coloneqq H(0,t)$, a path from $x_0$ to $x_0$.
+- Suppose $\Phi([f]) = \Phi([g])$. This means $f$ and $g$ are freely homotopic. Let $H: S^1 \times I \to X$ be a free homotopy from $f$ to $g$. \nIdentifying the basepoint with $0$, the path $\alpha(t) \coloneqq H(0, t)$ is a loop at $x_0$ since $\alpha(0) = f(0) = x_0$ and $\alpha(1) = g(0) = x_0$.
 For each $t\in I$, define $\alpha_t(u)\coloneqq H(0,tu)$ (a path from $x_0$ to $H(0,t)$), and a loop
 \[
 L_t \coloneqq \alpha_t \star \big(s\mapsto H(s,t)\big) \star \alpha_t^{-1}\,.
