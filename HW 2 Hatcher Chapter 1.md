@@ -85,7 +85,7 @@ We can regard $\pi_1(X, x_0)$ as the set of basepoint-preserving homotopy classe
 
 Proof
 
-$\pi_1(X,x_0)$ is the set of end point preserving homotopy classes of loops in X based at $x_0$ and a loop is just a path $f\colon I \to X$ with $f(0)=f(1)$. The question says we can regard $\pi_1(X, x_0)$ as the set of basepoint preserving homotopy classes of maps $(S^1, s_0) \to (X, x_0)$. 
+$\pi_1(X,x_0)$ is the set of endpoint-preserving homotopy classes of loops in $X$ based at $x_0$. A loop is a path $f\colon I \to X$ with $f(0)=f(1)$. The question states we can regard $\pi_1(X, x_0)$ as the set of basepoint-preserving homotopy classes of maps $(S^1, s_0) \to (X, x_0).
 
 ## Exercise 11
 If $X_0$ is the path-component of a space $X$ containing the basepoint $x_0$, show that the inclusion $X_0 \hookrightarrow X$ induces an isomorphism $\pi_1(X_0, x_0) \to \pi_1(X, x_0)$.
