@@ -40,3 +40,13 @@ $`\begin{CD}
 @V f_* VV                        @V f_* VV            \\
 \pi_{1}\bigl(Y,f(x_{1})\bigr)  @>\beta_{fh}>> \pi_{1}\bigl(Y,f(x_{0})\bigr)
 \end{CD}`$
+
+Proof
+
+Suppose $[\omega]$ is an element in $\pi_1(X, x_1)$, then
+
+$`
+\beta_{f h} \circ f_*([\omega])=\beta_{f h}([f \circ \omega])=[(f h) \circ f \circ \omega \circ f \bar{h}]=f_*[h \circ \omega \circ \bar{h}]=f_* \beta_h([\omega]) .
+`$
+
+Hence the diagram commutes.
