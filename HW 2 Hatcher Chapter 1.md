@@ -98,13 +98,13 @@ Conversely, given a based map $f\colon(S^1, s_0) \to (X,x_0)$, you can obtain a 
 
   For each $t\in I$, define $\alpha_t(u)\coloneqq H(0,tu)$ (a path from $x_0$ to $H(0,t)$), and a loop
   
-  $L_t \coloneqq \alpha_t \star \big(s\mapsto H(s,t)\big) \star \alpha_t^{-1}$
+  $L_t \coloneqq \alpha_t \cdot \big(s\mapsto H(s,t)\big) \cdot \alpha_t^{-1}$
   
   Then $L_t$ is a based loop at $x_0$ depending continuously on $t$, with
   
-  $L_0=f$ (since $\alpha_0$ is constant at $x_0$) and $L_1=\alpha\star g\star \alpha^{-1}$.
+  $L_0=f$ (since $\alpha_0$ is constant at $x_0$) and $L_1=\alpha\cdot g\cdot \alpha^{-1}$.
   
-  Thus $f\simeq \alpha\star g\star \alpha^{-1}$ rel endpoints, so in $\pi_1(X,x_0)$
+  Thus $f\simeq \alpha\cdot g\cdot \alpha^{-1}$ rel endpoints, so in $\pi_1(X,x_0)$
   
   $[f]=[\alpha]\,[g]\,[\alpha]^{-1}\quad\text{equivalently}\quad [g]=[\alpha]^{-1}[f][\alpha]$
   
