@@ -6,6 +6,13 @@ Proof
 
 The change-of-basepoint homomorphism is defined as $\beta_h\colon\pi_1(X, x_1) \to \pi_1(X,x_0)$ sending $[f] \mapsto [h \cdot f \cdot \overline{h}]$, where $\overline{h}$ is the inverse path of $h$.
 
+To show that $\beta_h$ depends only on the homotopy class of $h$, let $g$ be another path from $x_0$ to $x_1$ such that $h \simeq g$. We must show that $\beta_h = \beta_g$, which means $\beta_h([f]) = \beta_g([f])$ for any $[f] \in \pi_1(X, x_1)$. This is equivalent to showing $[h \cdot f \cdot \overline{h}] = [g \cdot f \cdot \overline{g}]$.
+
+Since path homotopy is a congruence relation with respect to path concatenation and inversion, $h \simeq g$ implies $\overline{h} \simeq \overline{g}$. We can then construct a chain of homotopies:
+$$ h \cdot f \cdot \overline{h} \simeq g \cdot f \cdot \overline{h} \quad (\text{since } h \simeq g) $$
+$$ g \cdot f \cdot \overline{h} \simeq g \cdot f \cdot \overline{g} \quad (\text{since } \overline{h} \simeq \overline{g}) $$
+By transitivity, $h \cdot f \cdot \overline{h} \simeq g \cdot f \cdot \overline{g}$. Therefore, $[h \cdot f \cdot \overline{h}] = [g \cdot f \cdot \overline{g}]$, which proves that $\beta_h = \beta_g$.
+
 ## Exercise 5
 Show that for a space $X$, the following three conditions are equivalent:
 <ol type="a">
