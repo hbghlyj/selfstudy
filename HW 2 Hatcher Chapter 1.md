@@ -58,15 +58,6 @@ S^1 \times I & \to X \\
 \end{aligned}`$
 
 is a basepoint-preserving homotopy of $f$ to the constant map with value $x_0$. So all loops in $X$ are nullhomotopic, and so $\pi_1(X, x_0)$ is trivial.
-
-(Here is an easy way to get a deformation-retraction of $D^2$ onto a point $s_0$ in its boundary: Identify $D^2$ with the disk of unit radius in the plane with center at $(1,0)$, so the origin is a boundary point. Let $s_0 = (0,0)$. Then
-
-$`\begin{aligned}
-D^2 \times I & \to D^2 \\
-\quad(\vec{d}, t) & \mapsto(1-t) \vec{d}
-\end{aligned}`$
-
-is the desired deformation-retraction.)
 </dd>
   <dt>
     (c) &rArr; (a)
@@ -85,7 +76,41 @@ We can regard $\pi_1(X, x_0)$ as the set of basepoint-preserving homotopy classe
 
 Proof
 
-$\pi_1(X,x_0)$ is the set of endpoint-preserving homotopy classes of loops in $X$ based at $x_0$. A loop is a path $f\colon I \to X$ with $f(0)=f(1)$. The question states we can regard $\pi_1(X, x_0)$ as the set of basepoint-preserving homotopy classes of maps $(S^1, s_0) \to (X, x_0).
+$\pi_1(X,x_0)$ is the set of endpoint-preserving homotopy classes of loops in $X$ based at $x_0$. A loop is a path $f\colon I \to X$ with $f(0)=f(1)$. The question states we can regard $\pi_1(X, x_0)$ as the set of basepoint-preserving homotopy classes of maps $(S^1, s_0) \to (X, x_0)$.
+
+Note that $I/(0 \sim 1) \cong S^1$ is a homeomorphism. If you have a continuous map $f\colon I \to X$ such that $f(0)=f(1)=x_0$, this factors through the above quotient map, giving a map $f'\colon I/(0 \sim 1) \to X$, with $f'([0]) = x_0$.
+
+Conversely, given a based map $f\colon(S^1, s_0) \to (X,x_0)$, you can obtain a loop $f'\colon I \to X$ with $f'(0)=f'(1)=x_0$ by pre-composing $f$ with the canonical quotient map $I \to I/(0 \sim 1) \cong S^1$.
+
+- To show $\Phi$ is surjective, consider a map $g\colon S^1 \to X$. Pick a basepoint $s_0 \in S^1$ and let $x_1 = g(s_0)$. Let $g'\colon I\to X$ be the loop in $X$ based at $x_1$ corresponding to $g$.
+
+  Since $X$ is path-connected, there is a path $h$ from $x_1$ to $x_0$.
+  
+  Let $h_t$ be the restriction of $h$ to the interval $[0, t]$, with a reparametrization so that the domain of $h_t$ is still $[0,1]$. Explicitly, we can take $h_t(s)=h(t s)$.
+  
+  The loop $f' =h \cdot g' \cdot \bar{h}$ is based at $x_0$.
+  
+  The product $h_t \cdot g'\cdot \bar{h}_t$ gives a free homotopy from $g'$ to $f'$.
+  
+  Since $f'$ is freely homotopic to $g'$, the class $[f'] \in \pi_1(X, x_0)$ maps to the free homotopy class of $g$ under $\Phi$. Thus $\Phi$ is surjective.
+
+- Suppose $\Phi([f]) = \Phi([g])$. This means $f$ and $g$ are freely homotopic. Let $H: S^1 \times I \to X$ be a free homotopy from $f$ to $g$.
+
+  The path $\alpha(t) \coloneqq H(x_0, t)$ is a loop at $x_0$ since $\alpha(0) = f(0) = x_0$ and $\alpha(1) = g(0) = x_0$.
+
+  For each $t\in I$, define $\alpha_t(u)\coloneqq H(0,tu)$ (a path from $x_0$ to $H(0,t)$), and a loop
+  
+  $L_t \coloneqq \alpha_t \cdot \big(s\mapsto H(s,t)\big) \cdot \alpha_t^{-1}$
+  
+  Then $L_t$ is a based loop at $x_0$ depending continuously on $t$, with
+  
+  $L_0=f$ (since $\alpha_0$ is constant at $x_0$) and $L_1=\alpha\cdot g\cdot \alpha^{-1}$.
+  
+  Thus $f\simeq \alpha\cdot g\cdot \alpha^{-1}$ rel endpoints, so in $\pi_1(X,x_0)$
+  
+  $[f]=[\alpha]\,[g]\,[\alpha]^{-1}\quad\text{equivalently}\quad [g]=[\alpha]^{-1}[f][\alpha]$
+  
+  Hence $[f]$ and $[g]$ are conjugate.
 
 ## Exercise 11
 If $X_0$ is the path-component of a space $X$ containing the basepoint $x_0$, show that the inclusion $X_0 \hookrightarrow X$ induces an isomorphism $\pi_1(X_0, x_0) \to \pi_1(X, x_0)$.
