@@ -34,7 +34,7 @@ If $X_0$ is the path-component of a space $X$ containing the basepoint $x_0$, sh
 
 Proof
 
-We know that $`\iota_*: \pi_1(X_0, x_0) \to \pi_1(X, x_0)`$ is a group homomorphism and moreover that $`\iota_*`$ must be injective since any loop based at $x_0$ and in $X_0$ must be a loop in $X$ as well. Hence we only need to show that $`\iota_*`$ is surjective. Suppose $`[x] \in \pi_1(X, x_0)`$. Since $x: I \to X$ is a loop, it is in particular a path from $x_0$ to $x_0$. This means that $x$ needs to be a continuous map. Hence any loop based at $x_0$ must be contained within $X_0$ since the map would not be continuous if $\operatorname{Im}(x) \subset X$ intersects a different component. Thus there must be some class of loops $[x'] \in \pi_1(X_0, x_0)$ such that $\iota_*([x'])=[x]$.
+We know that $\iota_*: \pi_1(X_0, x_0) \to \pi_1(X, x_0)$ is a group homomorphism. To show it is surjective, consider a loop $f: I \to X$ based at $x_0$. Since $I$ is path-connected, its image $f(I)$ is path-connected. As $x_0 \in f(I)$, the image must be contained in the path-component $X_0$. Thus, $f$ is a loop in $X_0$, and its class in $\pi_1(X_0, x_0)$ maps to $[f]$ under $\iota_*$. To show it is injective, suppose a loop $f$ in $X_0$ is homotopic in $X$ to the constant loop. The homotopy $H: I \times I \to X$ has a path-connected image that contains $x_0$, so its image lies in $X_0$. Thus, $f$ is null-homotopic in $X_0$. Therefore, $\iota_*$ is an isomorphism.
 
 ## Exercise 15
 Given a map $f: X \to Y$ and a path $h: I \to X$ from $x_0$ to $x_1$, show that $f_* \beta_h=\beta_{f h} f_*$ in the diagram at the right.
