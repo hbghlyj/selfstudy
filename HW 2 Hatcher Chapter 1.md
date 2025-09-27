@@ -58,15 +58,6 @@ S^1 \times I & \to X \\
 \end{aligned}`$
 
 is a basepoint-preserving homotopy of $f$ to the constant map with value $x_0$. So all loops in $X$ are nullhomotopic, and so $\pi_1(X, x_0)$ is trivial.
-
-(Here is an easy way to get a deformation-retraction of $D^2$ onto a point $s_0$ in its boundary: Identify $D^2$ with the disk of unit radius in the plane with center at $(1,0)$, so the origin is a boundary point. Let $s_0 = (0,0)$. Then
-
-$`\begin{aligned}
-D^2 \times I & \to D^2 \\
-\quad(\vec{d}, t) & \mapsto(1-t) \vec{d}
-\end{aligned}`$
-
-is the desired deformation-retraction.)
 </dd>
   <dt>
     (c) &rArr; (a)
@@ -86,6 +77,10 @@ We can regard $\pi_1(X, x_0)$ as the set of basepoint-preserving homotopy classe
 Proof
 
 $\pi_1(X,x_0)$ is the set of endpoint-preserving homotopy classes of loops in $X$ based at $x_0$. A loop is a path $f\colon I \to X$ with $f(0)=f(1)$. The question states we can regard $\pi_1(X, x_0)$ as the set of basepoint-preserving homotopy classes of maps $(S^1, s_0) \to (X, x_0).
+
+Note that $I/(0 \sim 1) \cong S^1$ as a topological space. By the definition of a quotient map, if you have a continuous map $f: I \to X$ such that $f(0)=f(1)=x_0$, this factors through the above quotient map, giving a map $f': I/(0 \sim 1) \to X$, with $f'([0]) = x_0$.
+
+Conversely, given a based map $f: (S^1, s_0) \to (X,x_0)$ you can obtain a map $f': I \to X$, with $f'(0)=f'(1)=x_0$,
 
 If $X$ is path-connected, for any map $g\colon S^1 \to X$, we can choose a point $s_0 \in S^1$ and let $x_0 = g(s_0)$. Since $X$ is path-connected, there exists a path $\gamma\colon I \to X$ such that $\gamma(0) = x_0$ and $\gamma(1) = g(s_0)$. We can then define a new map $f\colon S^1 \to X$ by setting $f(s) = \beta_\gamma(s)$, where $\beta_\gamma$ is a loop based at $x_0$ that traverses the path $\gamma$ and then follows the image of $g$ then returns along $\gamma^{-1}$. This shows that every homotopy class in $[S^1, X]$ has a representative in $\pi_1(X, x_0)$, hence $\Phi$ is onto.
 
