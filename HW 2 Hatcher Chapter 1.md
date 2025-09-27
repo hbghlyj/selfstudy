@@ -80,7 +80,7 @@ $\pi_1(X,x_0)$ is the set of endpoint-preserving homotopy classes of loops in $X
 
 Note that $I/(0 \sim 1) \cong S^1$ as a topological space. By the definition of a quotient map, if you have a continuous map $f: I \to X$ such that $f(0)=f(1)=x_0$, this factors through the above quotient map, giving a map $f': I/(0 \sim 1) \to X$, with $f'([0]) = x_0$.
 
-Conversely, given a based map $f: (S^1, s_0) \to (X,x_0)$ you can obtain a map $f': I \to X$, with $f'(0)=f'(1)=x_0$,
+Conversely, given a based map $f: (S^1, s_0) \to (X,x_0)$, you can obtain a loop $f': I \to X$ with $f'(0)=f'(1)=x_0$ by pre-composing $f$ with the canonical quotient map $I \to I/(0 \sim 1) \cong S^1$.
 
 If $X$ is path-connected, for any map $g\colon S^1 \to X$, we can choose a point $s_0 \in S^1$ and let $x_0 = g(s_0)$. Since $X$ is path-connected, there exists a path $\gamma\colon I \to X$ such that $\gamma(0) = x_0$ and $\gamma(1) = g(s_0)$. We can then define a new map $f\colon S^1 \to X$ by setting $f(s) = \beta_\gamma(s)$, where $\beta_\gamma$ is a loop based at $x_0$ that traverses the path $\gamma$ and then follows the image of $g$ then returns along $\gamma^{-1}$. This shows that every homotopy class in $[S^1, X]$ has a representative in $\pi_1(X, x_0)$, hence $\Phi$ is onto.
 
