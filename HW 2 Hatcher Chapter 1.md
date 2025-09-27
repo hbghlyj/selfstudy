@@ -13,7 +13,7 @@ Show that for a space $X$, the following three conditions are equivalent:
 Every map $S^1 \to X$ is homotopic to a constant map, with image a point.
 </li>
 <li>
-Every map $S^1 \to X$ extends to a map $D^2 \rightarrow X$.
+Every map $S^1 \to X$ extends to a map $D^2 \to X$.
 </li>
 <li>
 $\pi_1(X, x_0)=0$ for all $x_0 \in X$.
