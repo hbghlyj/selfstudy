@@ -95,17 +95,20 @@ Conversely, given a based map $f\colon(S^1, s_0) \to (X,x_0)$, you can obtain a 
   Since $f'$ is freely homotopic to $g'$, the class $[f'] \in \pi_1(X, x_0)$ maps to the free homotopy class of $g$ under $\Phi$. Thus $\Phi$ is surjective.
 
 - Suppose $\Phi([f]) = \Phi([g])$. This means $f$ and $g$ are freely homotopic. Let $H: S^1 \times I \to X$ be a free homotopy from $f$ to $g$. \nIdentifying the basepoint with $0$, the path $\alpha(t) \coloneqq H(0, t)$ is a loop at $x_0$ since $\alpha(0) = f(0) = x_0$ and $\alpha(1) = g(0) = x_0$.
-For each $t\in I$, define $\alpha_t(u)\coloneqq H(0,tu)$ (a path from $x_0$ to $H(0,t)$), and a loop
-\[
-L_t \coloneqq \alpha_t \star \big(s\mapsto H(s,t)\big) \star \alpha_t^{-1}\,.
-\]
-Then $L_t$ is a based loop at $x_0$ depending continuously on $t$, with
-$L_0=f$ (since $\alpha_0$ is constant at $x_0$) and $L_1=\alpha\star g\star \alpha^{-1}$.
-Thus $f\simeq \alpha\star g\star \alpha^{-1}$ rel endpoints, so in $\pi_1(X,x_0)$
-\[
-[f]=[\alpha]\,[g]\,[\alpha]^{-1}\quad\text{equivalently}\quad [g]=[\alpha]^{-1}[f][\alpha].
-\]
-Hence $[f]$ and $[g]$ are conjugate.
+
+  For each $t\in I$, define $\alpha_t(u)\coloneqq H(0,tu)$ (a path from $x_0$ to $H(0,t)$), and a loop
+  
+  $L_t \coloneqq \alpha_t \star \big(s\mapsto H(s,t)\big) \star \alpha_t^{-1}$
+  
+  Then $L_t$ is a based loop at $x_0$ depending continuously on $t$, with
+  
+  $L_0=f$ (since $\alpha_0$ is constant at $x_0$) and $L_1=\alpha\star g\star \alpha^{-1}$.
+  
+  Thus $f\simeq \alpha\star g\star \alpha^{-1}$ rel endpoints, so in $\pi_1(X,x_0)$
+  
+  $[f]=[\alpha]\,[g]\,[\alpha]^{-1}\quad\text{equivalently}\quad [g]=[\alpha]^{-1}[f][\alpha]$
+  
+  Hence $[f]$ and $[g]$ are conjugate.
 
 ## Exercise 11
 If $X_0$ is the path-component of a space $X$ containing the basepoint $x_0$, show that the inclusion $X_0 \hookrightarrow X$ induces an isomorphism $\pi_1(X_0, x_0) \to \pi_1(X, x_0)$.
