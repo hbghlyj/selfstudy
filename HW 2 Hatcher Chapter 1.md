@@ -48,7 +48,7 @@ S^1 \times I & \to X \\
 
 is a basepoint-preserving homotopy of $f$ to the constant map with value $x_0$. So all loops in $X$ are nullhomotopic, and so $\pi_1(X, x_0)$ is trivial.
 
-(Here is an easy way to get a deformation-retraction of $D^2$ onto a point $s_0$ in its boundary: Identify $D^2$ with the disk of unit radius in the plane with center at $(1,0)$. Then
+(Here is an easy way to get a deformation-retraction of $D^2$ onto a point $s_0$ in its boundary: Identify $D^2$ with the disk of unit radius in the plane with center at $(1,0)$, so the origin is a boundary point. Let $s_0 = (0,0)$. Then
 
 $`\begin{aligned}
 D^2 \times I & \to D^2 \\
