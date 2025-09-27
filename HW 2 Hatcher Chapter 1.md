@@ -46,7 +46,7 @@ Proof
 Suppose $[\omega]$ is an element in $\pi_1(X, x_1)$, then
 
 $`
-\beta_{f h} \circ f_*([\omega])=\beta_{f h}([f \circ \omega])=[(f h) \circ f \circ \omega \circ f \bar{h}]=f_*[h \circ \omega \circ \bar{h}]=f_* \beta_h([\omega]) .
+\beta_{f \circ h} (f_*([\omega])) = \beta_{f \circ h}([f \circ \omega]) = [(f \circ h) \cdot (f \circ \omega) \cdot \overline{f \circ h}] = [f \circ (h \cdot \omega \cdot \overline{h})] = f_*([h \cdot \omega \cdot \overline{h}]) = f_*(\beta_h([\omega])).
 `$
 
 Hence the diagram commutes.
