@@ -41,19 +41,19 @@ The pair $`(S^1 \times I / S^1 \times\{1\}, S^1 \times\{0\})`$ is homeomorphic t
 
 (b) $\Rightarrow$ (c): As in the next problem, we can regard $\pi_1(X, x_0)$ as the set of basepoint-preserving homotopy classes of maps $(S^1, s_0) \to(X, x_0)$. Suppose $f\colon(S^1, s_0) \to(X, x_0)$ is such a map. By hypothesis, it extends to a map $h\colon(D^2, s_0) \to(X, x_0)$. Let $\phi$ be a deformation-retraction of $D^2$ onto $s_0$. Then
 
-$\begin{aligned}
+$`\begin{aligned}
 S^1 \times I & \to X \\
 (s, t) & \mapsto f(\phi_t(s))
-\end{aligned}$
+\end{aligned}`$
 
 is a basepoint-preserving homotopy of $f$ to the constant map with value $x_0$. So all loops in $X$ are nullhomotopic, and so $\pi_1(X, x_0)$ is trivial.
 
 (Here is an easy way to get a deformation-retraction of $D^2$ onto a point $s_0$ in its boundary: Identify $D^2$ with the disk of unit radius in the plane with center at $(1,0)$. Then
 
-$\begin{aligned}
+$`\begin{aligned}
 D^2 \times I & \to D^2 \\
 \quad(\vec{d}, t) & \mapsto(1-t) \vec{d}
-\end{aligned}$
+\end{aligned}`$
 
 is the desired deformation-retraction.)
 
