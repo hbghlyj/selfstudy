@@ -33,7 +33,7 @@ Proof
 
 <dl>
   <dt>
-    (a) &Rarr; (b)
+    (a) &rArr; (b)
   </dt>
   <dd>
     Suppose $f: S^1 \to X$. By hypothesis, there's a homotopy $h: S^1 \times I \to X$ from $f$ to a constant map. That is, $h_0=f$ and there is a point $x \in X$ such that, for all $s \in S^1, h(s, 1)=x$. Because of the latter condition, $h$ factors through the quotient $`S^1 \times I / S^1 \times\{1\}`$. That is, $h$ is equal to a composition
@@ -45,9 +45,10 @@ where the first map is the quotient map.
 The pair $`(S^1 \times I / S^1 \times\{1\}, S^1 \times\{0\})`$ is homeomorphic to $(D^2, S^1)$. The homeomorphism is induced by the map $\Phi: S^1 \times I \to D^2$ defined by $\Phi(a, x)=a \cdot(1-x)$, where we look at $a$ and $x$ as complex numbers. So the second map above gives a map $D^2 \to X$ such that the restriction to $S^1$ is equal to $f$.
 </dd>
   <dt>    
-    (b) &Rarr; (c)
+    (b) &rArr; (c)
   </dt>
   <dd>
+
     As in the next problem, we can regard $\pi_1(X, x_0)$ as the set of basepoint-preserving homotopy classes of maps $(S^1, s_0) \to(X, x_0)$. Suppose $f\colon(S^1, s_0) \to(X, x_0)$ is such a map. By hypothesis, it extends to a map $h\colon(D^2, s_0) \to(X, x_0)$. Let $\phi$ be a deformation-retraction of $D^2$ onto $s_0$. Then
 
 $`\begin{aligned}
@@ -67,7 +68,7 @@ D^2 \times I & \to D^2 \\
 is the desired deformation-retraction.)
 </dd>
   <dt>
-    (c) &Rarr; (a)
+    (c) &rArr; (a)
   </dt>
   <dd>
 
