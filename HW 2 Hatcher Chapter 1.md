@@ -43,7 +43,7 @@ We know that $`\iota_*\colon\pi_1(X_0, x_0) \to \pi_1(X, x_0)`$ is a group homom
 Therefore, $\iota_*$ is an isomorphism.
 
 ## Exercise 15
-Given a map $f: X \to Y$ and a path $h: I \to X$ from $x_0$ to $x_1$, show that $f_* \beta_h=\beta_{f h} f_*$ in the diagram at the right.
+Given a map $f\colon X \to Y$ and a path $h\colon I \to X$ from $x_0$ to $x_1$, show that $f_* \beta_h=\beta_{f h} f_*$ in the diagram at the right.
 
 $`\begin{CD}
 \pi_{1}(X,x_{1})    @>\beta_{h}>>    \pi_{1}(X,x_{0})   \\
