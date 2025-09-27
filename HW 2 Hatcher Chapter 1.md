@@ -96,7 +96,7 @@ Conversely, given a based map $f\colon(S^1, s_0) \to (X,x_0)$, you can obtain a 
 
 - Suppose $\Phi([f]) = \Phi([g])$. This means $f$ and $g$ are freely homotopic. Let $H: S^1 \times I \to X$ be a free homotopy from $f$ to $g$.
 
-  The path $\alpha(t) \coloneqq H(x_0, t)$ is a loop at $x_0$ since $\alpha(0) = f(0) = x_0$ and $\alpha(1) = g(0) = x_0$.
+  The path $\alpha(t) \coloneqq H(s_0, t)$ is a loop at $x_0$ since $\alpha(0) = f(0) = x_0$ and $\alpha(1) = g(0) = x_0$.
 
   For each $t\in I$, define $\alpha_t(u)\coloneqq H(0,tu)$ (a path from $x_0$ to $H(0,t)$), and a loop
   
