@@ -4,7 +4,7 @@ Show that the change-of-basepoint homomorphism $\beta_h$ depends only on the hom
 
 Proof
 
-The change-of-basepoint homomorphism is defined as $\beta_h:\pi_1(X, x_1) \to \pi_1(X,x_0)$ sending $[f] \mapsto [h \cdot f \cdot \overline{h}]$, where $\overline{h}$ is the inverse path of $h$.
+The change-of-basepoint homomorphism is defined as $\beta_h\colon\pi_1(X, x_1) \to \pi_1(X,x_0)$ sending $[f] \mapsto [h \cdot f \cdot \overline{h}]$, where $\overline{h}$ is the inverse path of $h$.
 
 ## Exercise 5
 Show that for a space $X$, the following three conditions are equivalent:
