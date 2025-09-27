@@ -82,13 +82,15 @@ Note that $I/(0 \sim 1) \cong S^1$ is a homeomorphism. If you have a continuous 
 
 Conversely, given a based map $f\colon(S^1, s_0) \to (X,x_0)$, you can obtain a loop $f'\colon I \to X$ with $f'(0)=f'(1)=x_0$ by pre-composing $f$ with the canonical quotient map $I \to I/(0 \sim 1) \cong S^1$.
 
-- To show $\Phi$ is surjective, consider a map $g\colon S^1 \to X$. Pick a basepoint $s_0 \in S^1$ and let $x_1 = g(s_0)$. Since $X$ is path-connected, there is a path $h$ from $x_0$ to $x_1$. Let $g'\colon I\to X$ be the loop in $X$ based at $x_1$ corresponding to $g$.
+- To show $\Phi$ is surjective, consider a map $g\colon S^1 \to X$. Pick a basepoint $s_0 \in S^1$ and let $x_1 = g(s_0)$. Let $g'\colon I\to X$ be the loop in $X$ based at $x_1$ corresponding to $g$.
+
+  Since $X$ is path-connected, there is a path $h$ from $x_1$ to $x_0$.
   
   Let $h_t$ be the restriction of $h$ to the interval $[0, t]$, with a reparametrization so that the domain of $h_t$ is still $[0,1]$. Explicitly, we can take $h_t(s)=h(t s)$.
   
   The loop $f' =h \cdot g' \cdot \bar{h}$ is based at $x_0$.
   
-  The product $h_t \cdot g'\cdot \bar{h}_t$ gives a free homotopy from $f'$ to $g'$.
+  The product $h_t \cdot g'\cdot \bar{h}_t$ gives a free homotopy from $g'$ to $f'$.
   
   Since $f'$ is freely homotopic to $g'$, the class $[f'] \in \pi_1(X, x_0)$ maps to the free homotopy class of $g$ under $\Phi$. Thus $\Phi$ is surjective.
 
