@@ -110,7 +110,7 @@ Conversely, given a based map $f\colon(S^1, s_0) \to (X,x_0)$, you can obtain a 
   
   Thus $f\simeq \alpha\cdot g\cdot \alpha^{-1}$ rel endpoints, so in $\pi_1(X,x_0)$
   
-  $[f]=[\alpha]\,[g]\,[\alpha]^{-1}\quad\text{equivalently}\quad [g]=[\alpha]^{-1}[f][\alpha]$
+  $[f]=[\alpha][g][\alpha]^{-1}\quad\text{equivalently}\quad [g]=[\alpha]^{-1}[f][\alpha]$
   
   Hence $[f]$ and $[g]$ are conjugate.
 
