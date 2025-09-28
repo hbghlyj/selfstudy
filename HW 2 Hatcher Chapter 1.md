@@ -89,12 +89,14 @@ Conversely, given a based map $f\colon(S^1, s_0) \to (X,x_0)$, you can obtain a 
   Let $h_t$ be the restriction of $h$ to the interval $[0, t]$, with a reparametrization so that the domain of $h_t$ is still $[0,1]$. Explicitly, we can take $h_t(s)=h(t s)$.
   
   The loop $f' =h \cdot g' \cdot \bar{h}$ is based at $x_0$.
-  
-  The product $h_t \cdot g'\cdot \bar{h}_t$ gives a free homotopy from $g'$ to $f'$.
+
+  The loop $\bar{h}_t\cdot g'\cdot h_t$ is based at $h(t)$.
+
+  The product $\bar{h}_t\cdot g'\cdot h_t$ gives a free homotopy from $g'$ to $f'$.
   
   Since $f'$ is freely homotopic to $g'$, the class $[f'] \in \pi_1(X, x_0)$ maps to the free homotopy class of $g$ under $\Phi$. Thus $\Phi$ is surjective.
 
-- Suppose $\Phi([f]) = \Phi([g])$. This means $f$ and $g$ are freely homotopic. Let $H: S^1 \times I \to X$ be a free homotopy from $f$ to $g$.
+- Suppose $\Phi([f]) = \Phi([g])$. This means $f$ and $g$ are freely homotopic. Let $H\colon S^1 \times I \to X$ be a free homotopy from $f$ to $g$.
 
   The path $\alpha(t) \coloneqq H(s_0, t)$ is a loop at $x_0$ since $\alpha(0) = f(0) = x_0$ and $\alpha(1) = g(0) = x_0$.
 
