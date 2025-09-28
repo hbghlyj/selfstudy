@@ -100,7 +100,7 @@ Conversely, given a based map $f\colon(S^1, s_0) \to (X,x_0)$, you can obtain a 
 
   The path $\alpha(t) \coloneqq H(s_0, t)$ is a loop at $x_0$ since $\alpha(0) = f(0) = x_0$ and $\alpha(1) = g(0) = x_0$.
 
-  For each $t\in I$, define $\alpha_t(u)\coloneqq H(0,tu)$ (a path from $x_0$ to $H(0,t)$), and a loop
+  For each $t\in I$, define $\alpha_t(u)\coloneqq H(s_0,tu)$ (a path from $x_0$ to $H(s_0,t)$), and a loop
   
   $L_t \coloneqq \alpha_t \cdot \big(s\mapsto H(s,t)\big) \cdot \alpha_t^{-1}$
   
