@@ -88,7 +88,7 @@ Conversely, given a based map $f\colon(S^1, s_0) \to (X,x_0)$, you can obtain a 
   
   Let $h_t$ be the restriction of $h$ to the interval $[0, t]$, with a reparametrization so that the domain of $h_t$ is still $[0,1]$. Explicitly, we can take $h_t(s)=h(t s)$.
   
-  The loop $f' =h \cdot g' \cdot \bar{h}$ is based at $x_0$.
+  The loop $f'=\bar h\cdot g' \cdot h$ is based at $x_0$.
 
   The loop $\bar{h}_t\cdot g'\cdot h_t$ is based at $h(t)$.
 
