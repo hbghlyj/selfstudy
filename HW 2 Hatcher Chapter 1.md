@@ -54,7 +54,7 @@ As in the next problem, we can regard $\pi_1(X, x_0)$ as the set of basepoint-pr
 
 $`\begin{aligned}
 S^1 \times I & \to X \\
-(s, t) & \mapsto f(\phi_t(s))
+(s, t) & \mapsto h(\phi_t(s))
 \end{aligned}`$
 
 is a basepoint-preserving homotopy of $f$ to the constant map with value $x_0$. So all loops in $X$ are nullhomotopic, and so $\pi_1(X, x_0)$ is trivial.
