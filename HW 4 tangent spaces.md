@@ -34,7 +34,7 @@ $`\phi(a v_1 + b v_2)(f) = df_p(a v_1 + b v_2) = a \, df_p(v_1) + b \, df_p(v_2)
 
 Since this holds for all $f$, $\phi(a v_1 + b v_2) = a \phi(v_1) + b \phi(v_2)$, and $\phi$ is linear.
 
-To show that $\phi$ is injective, suppose $\phi(v) = 0$. This means that for all smooth functions $f: V \to \mathbb{R}$, we have $`\left.\frac{d}{d t}\right|_{t=0} f(p + t v) = 0`$. In particular, if we take $f$ to be the linear functional defined by $`f(w) = \langle w, w_0 \rangle`$ for some fixed $w_0 \in V$, then we have $`\left.\frac{d}{d t}\right|_{t=0} \langle p + t v, w_0 \rangle = \langle v, w_0 \rangle = 0`$ for all $w_0$. This implies that $v = 0$. Thus, $\phi$ is injective.
+To show that $\phi$ is injective, suppose $\phi(v) = 0$. This means $`\phi(v)(f) = 0`$ for all smooth $f$. In particular, for any linear functional $\lambda \in V^*$, which is smooth, we have $`0 = \phi(v)(\lambda) = \left.\frac{d}{d t}\right|_{t=0} \lambda(p + t v) = \lambda(v)`$. Since $\lambda(v)=0$ for all $\lambda \in V^*$, we must have $v=0$. Thus $\phi$ is injective. Since $\dim(V) = \dim(T_p V)$, an injective linear map between same-dimension vector spaces is an isomorphism.
 
 # 5
 Let $(x, y)$ denote the standard coordinates on $\mathbb{R}^2$. Verify that $(\tilde{x}, \tilde{y})$ are global smooth coordinates on $\mathbb{R}^2$, where
