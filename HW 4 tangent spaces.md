@@ -10,7 +10,7 @@ Prove Proposition 3.6 from Lee (Properties of Differentials). Let $M, N$, and $P
   $d(G \circ F)_p=d G_{F(p)} \circ d F_p: T_p M \to T_{G(F(p))} P$.
 </li>
 <li>
-  $d\left(\operatorname{Id}_M\right)_p=\operatorname{Id}_{T_p M}: T_p M \to T_p M$.
+  $d\left(\text{Id}_M\right)_p=\text{Id}_{T_p M}: T_p M \to T_p M$.
 </li>
 <li>
   If $F$ is a diffeomorphism, then $d F_p: T_p M \to T_{F(p)} N$ is an isomorphism, and
