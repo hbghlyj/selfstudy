@@ -11,7 +11,7 @@ Define a map $g\colon G\to C_6$ by $g(a)=x^3,g(b)=x^2$ and extend it to a homomo
 To see that $f,g$ are inverses of each other, it suffices to check on generators:
 - $g(f(x))=g(ab^{-1})=g(a)g(b)^{-1}=x^3x^{-2}=x$
 - $f(g(a))=f(x^3)=(ab^{-1})^3=a^3(b^{-1})^3=(a^2)a(b^3)^{-1}=a$
-- f(g(b))=f(x^2)=(ab^{-1})^2=a^2(b^{-1})^2=(b^{-1})^2=b^{-2}=b
+- $f(g(b))=f(x^2)=(ab^{-1})^2=a^2(b^{-1})^2=(b^{-1})^2=b^{-2}=b$
 
 Thus $G\cong C_6$.
 
