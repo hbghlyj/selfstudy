@@ -26,7 +26,7 @@ Show that for a vector space $V$ (with its canonical smooth structure) and any p
 
 Proof
 
-Let $v \in V$. Define a curve $\gamma: \mathbb{R} \to V$ by $\gamma(t)=p+t v$. Then $\gamma(0)=p$ and $\gamma'(0)=v$. Define a map $\phi: V \to T_p V$ by $\phi(v)=\left.\frac{d}{d t}\right|_{t=0} \gamma(t)$. We will show that $\phi$ is a linear isomorphism.
+Let $v \in V$. Define a map $\phi: V \to T_p V$ by its action on an arbitrary smooth function $f: V \to \mathbb{R}$ as $`\phi(v)(f) = \left.\frac{d}{d t}\right|_{t=0} f(p+t v)`$. We will show that this map is a linear isomorphism.
 
 To show that $\phi$ is linear, let $v_1, v_2 \in V$ and $a, b \in \mathbb{R}$. Then 
 
