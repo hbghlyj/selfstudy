@@ -152,7 +152,7 @@ Let $X \subset \mathbb{R}^3$ be the union of $n$ lines through the origin. Compu
 
 Proof
 
-Consider the standard sphere $S^2 \subseteq \mathbb{R}^3$, then there is a radial deformation retraction $\mathbb{R}^3-X \simeq S^2 \cap \left(\mathbb{R}^3-X\right)$. Hence $\pi_1\left(\mathbb{R}^3-X\right)=\pi_1\left(S^2 \cap\left(\mathbb{R}^3-X\right)\right)$ where $S^2 \cap\left(\mathbb{R}^3-X\right)$ is the space punctured sphere with $n$ holes. The punctured sphere with 1 hole is homeomorphic to $\operatorname{Int} D^2$, hence $S^2 \cap\left(\mathbb{R}^3-X\right)$ is homeomorphic to punctured disk with $2 n-1$ holes. Thus
+Consider the standard sphere $S^2 \subseteq \mathbb{R}^3$, then there is a radial deformation retraction $\mathbb{R}^3-X \simeq S^2 \cap (\mathbb{R}^3-X)$. Hence $\pi_1(\mathbb{R}^3-X)=\pi_1(S^2 \cap(\mathbb{R}^3-X))$ where $S^2 \cap(\mathbb{R}^3-X)$ is the space punctured sphere with $n$ holes. The punctured sphere with 1 hole is homeomorphic to $\mathrm{Int} D^2$, hence $S^2 \cap(\mathbb{R}^3-X)$ is homeomorphic to punctured disk with $2 n-1$ holes. Thus
 
 $\pi_1\left(S^2 \cap\left(\mathbb{R}^3-X\right)\right) \cong \mathbb{F}_{n-1}$
 
