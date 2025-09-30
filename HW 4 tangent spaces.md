@@ -20,9 +20,22 @@ Prove Proposition 3.6 from Lee (Properties of Differentials). Let $M, N$, and $P
 </ol>
 
 # 3
-Note that if $M$ is a smooth manifold and $U$ is an open subset then $U$ is also a smooth manifold with smooth structure from $M$ (i.e. charts on U are given by intersecting $U$ with charts on $M$ ). We say $U$ is an open submanifold of $M$. Show that for $p \in U$ there is an isomorphism $T_p M$ to $T_p U$.
+Note that if $M$ is a smooth manifold and $U$ is an open subset then $U$ is also a smooth manifold with smooth structure from $M$ (i.e. charts on U are given by intersecting $U$ with charts on $M$). We say $U$ is an open submanifold of $M$. Show that for $p \in U$ there is an isomorphism $T_p M$ to $T_p U$.
 # 4
 Show that for a vector space $V$ (with its canonical smooth structure) and any point $p \in V$, the tangent space $T_p V$ is canonically isomorphic to $V$.
+
+Proof
+
+Let $v \in V$. Define a curve $\gamma: \mathbb{R} \to V$ by $\gamma(t)=p+t v$. Then $\gamma(0)=p$ and $\gamma'(0)=v$. Define a map $\phi: V \to T_p V$ by $\phi(v)=\left.\frac{d}{d t}\right|_{t=0} \gamma(t)$. We will show that $\phi$ is a linear isomorphism.
+
+To show that $\phi$ is linear, let $v_1, v_2 \in V$ and $a, b \in \mathbb{R}$. Then 
+
+$`\phi(a v_1 + b v_2) = \left.\frac{d}{d t}\right|_{t=0} (p + t(a v_1 + b v_2)) = a \left.\frac{d}{d t}\right|_{t=0} (p + t v_1) + b \left.\frac{d}{d t}\right|_{t=0} (p + t v_2) = a \phi(v_1) + b \phi(v_2).`$
+
+Thus, $\phi$ is linear.
+
+To show that $\phi$ is injective, suppose $\phi(v) = 0$. This means that for all smooth functions $f: V \to \mathbb{R}$, we have $`\left.\frac{d}{d t}\right|_{t=0} f(p + t v) = 0`$. In particular, if we take $f$ to be the linear functional defined by $`f(w) = \langle w, w_0 \rangle`$ for some fixed $w_0 \in V$, then we have $`\left.\frac{d}{d t}\right|_{t=0} \langle p + t v, w_0 \rangle = \langle v, w_0 \rangle = 0`$ for all $w_0$. This implies that $v = 0$. Thus, $\phi$ is injective.
+
 # 5
 Let $(x, y)$ denote the standard coordinates on $\mathbb{R}^2$. Verify that $(\tilde{x}, \tilde{y})$ are global smooth coordinates on $\mathbb{R}^2$, where
 
