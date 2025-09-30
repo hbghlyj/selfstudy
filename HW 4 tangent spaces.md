@@ -28,11 +28,11 @@ Proof
 
 Let $v \in V$. Define a map $\phi: V \to T_p V$ by its action on an arbitrary smooth function $f: V \to \mathbb{R}$ as $`\phi(v)(f) = \left.\frac{d}{d t}\right|_{t=0} f(p+t v)`$. We will show that this map is a linear isomorphism.
 
-To show that $\phi$ is linear, let $v_1, v_2 \in V$ and $a, b \in \mathbb{R}$. Then 
+To show that $\phi$ is linear, let $v_1, v_2 \in V$ and $a, b \in \mathbb{R}$. For any smooth function $f: V \to \mathbb{R}$, we use the linearity of the differential $df_p$:
 
-$`\phi(a v_1 + b v_2) = \left.\frac{d}{d t}\right|_{t=0} (p + t(a v_1 + b v_2)) = a \left.\frac{d}{d t}\right|_{t=0} (p + t v_1) + b \left.\frac{d}{d t}\right|_{t=0} (p + t v_2) = a \phi(v_1) + b \phi(v_2).`$
+$`\phi(a v_1 + b v_2)(f) = df_p(a v_1 + b v_2) = a \, df_p(v_1) + b \, df_p(v_2) = a \, \phi(v_1)(f) + b \, \phi(v_2)(f).`$
 
-Thus, $\phi$ is linear.
+Since this holds for all $f$, $\phi(a v_1 + b v_2) = a \phi(v_1) + b \phi(v_2)$, and $\phi$ is linear.
 
 To show that $\phi$ is injective, suppose $\phi(v) = 0$. This means that for all smooth functions $f: V \to \mathbb{R}$, we have $`\left.\frac{d}{d t}\right|_{t=0} f(p + t v) = 0`$. In particular, if we take $f$ to be the linear functional defined by $`f(w) = \langle w, w_0 \rangle`$ for some fixed $w_0 \in V$, then we have $`\left.\frac{d}{d t}\right|_{t=0} \langle p + t v, w_0 \rangle = \langle v, w_0 \rangle = 0`$ for all $w_0$. This implies that $v = 0$. Thus, $\phi$ is injective.
 
