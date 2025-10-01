@@ -98,6 +98,6 @@ Now, we can see that:
 $$\left.\frac{\partial}{\partial x}\right|_p f = \left.\frac{\partial f}{\partial x}\right|_{(1, 0)}$$
 $$\left.\frac{\partial}{\partial \tilde{x}}\right|_p f = \left.\frac{\partial f}{\partial x}\right|_{(1, 0)} - 3 \left.\frac{\partial f}{\partial y}\right|_{(1, 0)}
 $$
-Since these two expressions are not equal in general, we conclude that
+For the operators to be equal, their actions on any smooth function $f$ must be identical. However, we can see the expressions differ if $\left.\frac{\partial f}{\partial y}\right|_{(1, 0)} \neq 0$. For a concrete example, let $f(x,y)=y$. Then $\left.\frac{\partial}{\partial x}\right|_p f = 0$, while $\left.\frac{\partial}{\partial \tilde{x}}\right|_p f = -3$. Since the results differ, we conclude that
 $$\left.\frac{\partial}{\partial x}\right|_p \neq \left.\frac{\partial}{\partial \tilde{x}}\right|_p
 $$
