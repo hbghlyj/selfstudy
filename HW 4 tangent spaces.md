@@ -7,7 +7,7 @@ Let $w \in T_p \mathbb{R}^n$ be an arbitrary derivation at the point $p$. We wan
 
 To find such a vector $\vec{v}$, we can apply the derivation $w$ to the coordinate functions $x^i: \mathbb{R}^n \to \mathbb{R}$, where $x^i(p) = p^i$. By the definition of a derivation, we have:
 
-$`w(x^i) = D_{\vec{v}}|_p(x^i) = \frac{\partial}{\partial t}\bigg|_{t=0} x^i(p + t\vec{v}) = \frac{\partial}{\partial t}\bigg|_{t=0} (p^i + t v^i) = v^i.`$
+$`w(x^i) = D_{\vec{v}}|_p(x^i) = \frac{\partial}{\partial t}\bigr|_{t=0} x^i(p + t\vec{v}) = \frac{\partial}{\partial t}\bigr|_{t=0} (p^i + t v^i) = v^i.`$
 
 Thus, we can define the vector $\vec{v} = (w(x^1), w(x^2), \ldots, w(x^n)) \in \mathbb{R}^n$. We claim that $`w = D_{\vec{v}}|_p`$.
 
