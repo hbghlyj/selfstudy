@@ -17,13 +17,13 @@ $`w(f) = D_{\vec{v}}|_p(f).`$
 
 By definition, the directional derivative is $`D_{\vec{v}}|_p(f) = \left.\frac{d}{dt}\right|_{t=0} f(p+t\vec{v})`$. Applying the chain rule, this becomes:
 
-$`D_{\vec{v}}|_p(f) = \sum_{i=1}^n \frac{\partial f}{\partial x^i}(p) \frac{d(p^i+tv^i)}{dt}\bigg|_{t=0} = \sum_{i=1}^n v^i \frac{\partial f}{\partial x^i}(p).`$
+$`D_{\vec{v}}|_p(f) = \sum_{i=1}^n \frac{\partial f}{\partial x^i}(p) \frac{d(p^i+tv^i)}{dt}\bigr|_{t=0} = \sum_{i=1}^n v^i \frac{\partial f}{\partial x^i}(p).`$
 
 On the other hand, since $w$ is a derivation, we have:
 
 $`w(f) = \sum_{i=1}^n w(x^i) \frac{\partial f}{\partial x^i}(p) = \sum_{i=1}^n v^i \frac{\partial f}{\partial x^i}(p) = D_{\vec{v}}|_p(f).`$
 
-This shows that $`w = D_{\vec{v}}|_p`$, and thus the map $`\left.\vec{v} \mapsto D_{\vec{v}}\right|_p`$ is surjective.
+This shows that $`w = D_{\vec{v}}|_p`$, and thus the map $`\vec{v} \mapsto D_{\vec{v}}\bigr|_p`$ is surjective.
 
 # 2
 Prove Proposition 3.6 from Lee (Properties of Differentials). Let $M, N$, and $P$ be smooth manifolds, let $F: M \to N$ and $G: N \to P$ be smooth maps, and let $p \in M$.
