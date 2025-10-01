@@ -71,7 +71,7 @@ Since this holds for all smooth functions $f$, we conclude that $d F_p$ is linea
 </li>
 <li>
 
-To prove that $d(G \circ F)_p = d G_{F(p)} \circ d F_p$, we need to show that for any $v \in T_p M$, the following holds:
+To prove that $`d(G \circ F)_p = d G_{F(p)} \circ d F_p`$, we need to show that for any $v \in T_p M$, the following holds:
 
 $`d(G \circ F)_p(v) = d G_{F(p)}(d F_p(v)).`$
 
