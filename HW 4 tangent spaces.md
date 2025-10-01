@@ -106,8 +106,6 @@ To show that $d F_p$ is an isomorphism, we need to verify that it is both inject
 Injectivity: Suppose $d F_p(v) = 0$ for some $v \in T_p M$. This means that for any smooth function $f: N \to \mathbb{R}$, we have:
 Since $F$ is a diffeomorphism, for any smooth function $g: M \to \mathbb{R}$, we can define a smooth function $f = g \circ F^{-1}: N \to \mathbb{R}$. With this choice, $f \circ F = g$. This means that as $f$ ranges over all smooth functions on $N$, the composition $f \circ F$ ranges over all smooth functions on $M$. The condition $v(f \circ F) = 0$ for all smooth $f$ on $N$ is therefore equivalent to $v(g) = 0$ for all smooth $g$ on $M$. This implies that $v$ is the zero derivation, so $v = 0$. Thus, $d F_p$ is injective.
 
-Since $F$ is a diffeomorphism, $f \circ F$ can represent any smooth function on $M$. Therefore, $v$ must be the zero derivation, which implies that $v = 0$. Thus, $d F_p$ is injective.
-
 Surjectivity: Let $w \in T_{F(p)} N$ be an arbitrary derivation at the point $F(p)$. We need to show that there exists a vector $v \in T_p M$ such that $d F_p(v) = w$. Since $F$ is a diffeomorphism, we can define $v$ by:
 
 for any smooth function $f: M \to \mathbb{R}$. It can be verified that $v$ is indeed a derivation at $p$. Then, for any smooth function $g: N \to \mathbb{R}$, we have:
