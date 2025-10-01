@@ -15,13 +15,9 @@ To verify this, we need to show that for any smooth function $f: \mathbb{R}^n \t
 
 $`w(f) = D_{\vec{v}}|_p(f).`$
 
-By Taylor's theorem, we can write:
+By definition, the directional derivative is $D_{\vec{v}}|_p(f) = \left.\frac{d}{dt}\right|_{t=0} f(p+t\vec{v})$. Applying the multivariate chain rule, this becomes:
 
-$`f(p + t\vec{v}) = f(p) + t D_{\vec{v}}|_p(f) + o(t),`$
-
-where $o(t)$ denotes terms that go to zero faster than $t$ as $t \to 0$. Taking the derivative with respect to $t$ and evaluating at $t=0$, we find:
-
-$`D_{\vec{v}}|_p(f) = \sum_{i=1}^n v^i \frac{\partial f}{\partial x^i}(p).`$
+$`D_{\vec{v}}|_p(f) = \sum_{i=1}^n \frac{\partial f}{\partial x^i}(p) \frac{d(p^i+tv^i)}{dt}\bigg|_{t=0} = \sum_{i=1}^n v^i \frac{\partial f}{\partial x^i}(p).`$
 
 On the other hand, since $w$ is a derivation, we have:
 
