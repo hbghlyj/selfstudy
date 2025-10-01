@@ -95,7 +95,7 @@ By the definition of the differential, we have:
 
 $`d(\text{Id}_M)_p(v)(f) = v(f \circ \text{Id}_M) = v(f)`$
 
-for any smooth function $f: M \to \mathbb{R}$. Since this holds for all smooth functions $f$, we conclude that $d(\text{Id}_M)_p = \text{Id}_{T_p M}$.
+for any smooth function $f: M \to \mathbb{R}$. Since this holds for all smooth functions $f$, we conclude that $`d(\text{Id}_M)_p = \text{Id}_{T_p M}`$.
 </li>
 <li>
 
