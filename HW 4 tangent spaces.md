@@ -83,7 +83,7 @@ for any smooth function $h: P \to \mathbb{R}$. On the other hand, we have:
 
 $`d G_{F(p)}(d F_p(v))(h) = d F_p(v)(h \circ G) = v((h \circ G) \circ F) = v(h \circ (G \circ F)).`$
 
-Since both sides are equal for all smooth functions $h$, we conclude that $d(G \circ F)_p = d G_{F(p)} \circ d F_p$.
+Since both sides are equal for all smooth functions $h$, we conclude that $`d(G \circ F)_p = d G_{F(p)} \circ d F_p`$.
 </li>
 <li>
 
