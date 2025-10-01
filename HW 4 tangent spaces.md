@@ -1,5 +1,34 @@
 # 1
 Show that the map $`\mathbb{R}_p^n \to T_p \mathbb{R}^n`$ given by $\left.\vec{v} \mapsto D_{\vec{v}}\right|_p$ is surjective. i.e that every derivation comes from a directional derivative. (Hint: To find $\vec{v}$ apply $w \in T_p \mathbb{R}^n$ to the coordinate functions. Then for any smooth function $f$ use Taylor's theorem on $f$ and the Leibniz property.)
+
+Proof
+
+Let $w \in T_p \mathbb{R}^n$ be an arbitrary derivation at the point $p$. We want to show that there exists a vector $\vec{v} \in \mathbb{R}^n$ such that $w = D_{\vec{v}}|_p$, where $D_{\vec{v}}|_p$ is the directional derivative at $p$ in the direction of $\vec{v}$.
+
+To find such a vector $\vec{v}$, we can apply the derivation $w$ to the coordinate functions $x^i: \mathbb{R}^n \to \mathbb{R}$, where $x^i(p) = p^i$. By the definition of a derivation, we have:
+
+$`w(x^i) = D_{\vec{v}}|_p(x^i) = \frac{\partial}{\partial t}\bigg|_{t=0} x^i(p + t\vec{v}) = \frac{\partial}{\partial t}\bigg|_{t=0} (p^i + t v^i) = v^i.`$
+
+Thus, we can define the vector $\vec{v} = (w(x^1), w(x^2), \ldots, w(x^n)) \in \mathbb{R}^n$. We claim that $w = D_{\vec{v}}|_p$.
+
+To verify this, we need to show that for any smooth function $f: \mathbb{R}^n \to \mathbb{R}$, we have:
+
+$`w(f) = D_{\vec{v}}|_p(f).`$
+
+By Taylor's theorem, we can write:
+
+$`f(p + t\vec{v}) = f(p) + t D_{\vec{v}}|_p(f) + o(t),`$
+
+where $o(t)$ denotes terms that go to zero faster than $t$ as $t \to 0$. Taking the derivative with respect to $t$ and evaluating at $t=0$, we find:
+
+$`D_{\vec{v}}|_p(f) = \sum_{i=1}^n v^i \frac{\partial f}{\partial x^i}(p).`$
+
+On the other hand, since $w$ is a derivation, we have:
+
+$`w(f) = \sum_{i=1}^n w(x^i) \frac{\partial f}{\partial x^i}(p) = \sum_{i=1}^n v^i \frac{\partial f}{\partial x^i}(p) = D_{\vec{v}}|_p(f).`$
+
+This shows that $`w = D_{\vec{v}}|_p`$, and thus the map $`\left.\vec{v} \mapsto D_{\vec{v}}\right|_p`$ is surjective.
+
 # 2
 Prove Proposition 3.6 from Lee (Properties of Differentials). Let $M, N$, and $P$ be smooth manifolds, let $F: M \to N$ and $G: N \to P$ be smooth maps, and let $p \in M$.
 <ol type="a">
