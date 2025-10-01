@@ -23,7 +23,7 @@ On the other hand, by Taylor's theorem, we can write:
 
 $`f(p + t\vec{v}) = f(p) + t \sum_{i=1}^n v^i \frac{\partial f}{\partial x^i}(p) + O(t^2).`$
 
-where $o(t)$ denotes terms that go to zero faster than $t$ as $t \to 0$. Since $w$ is a derivation, we have:
+Since $w$ is a derivation, we have:
 
 $`w(f) = \sum_{i=1}^n w(x^i) \frac{\partial f}{\partial x^i}(p) = \sum_{i=1}^n v^i \frac{\partial f}{\partial x^i}(p) = D_{\vec{v}}|_p(f).`$
 
