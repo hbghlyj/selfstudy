@@ -23,7 +23,7 @@ On the other hand, since $w$ is a derivation, we have:
 
 $`w(f) = \sum_{i=1}^n w(x^i) \frac{\partial f}{\partial x^i}(p) = \sum_{i=1}^n v^i \frac{\partial f}{\partial x^i}(p) = D_{\vec{v}}|_p(f).`$
 
-This shows that $`w = D_{\vec{v}}|_p`$, and thus the map $`\vec{v} \mapsto D_{\vec{v}}\bigr|_p`$ is surjective.
+This shows that $`w = D_{\vec{v}}|_p`$, and thus the map $`\vec{v} \mapsto D_{\vec{v}}|_p`$ is surjective.
 
 # 2
 Prove Proposition 3.6 from Lee (Properties of Differentials). Let $M, N$, and $P$ be smooth manifolds, let $F: M \to N$ and $G: N \to P$ be smooth maps, and let $p \in M$.
