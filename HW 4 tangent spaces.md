@@ -19,6 +19,14 @@ By definition, the directional derivative is $`D_{\vec{v}}|_p(f) = \left.\frac{d
 
 $`D_{\vec{v}}|_p(f) = \sum_{i=1}^n \frac{\partial f}{\partial x^i}(p) \frac{d(p^i+tv^i)}{dt}\bigr|_{t=0} = \sum_{i=1}^n v^i \frac{\partial f}{\partial x^i}(p).`$
 
+By Taylor's theorem, we can write:
+
+$`f(p + t\vec{v}) = f(p) + t D_{\vec{v}}|_p(f) + o(t),`$
+
+where $o(t)$ denotes terms that go to zero faster than $t$ as $t \to 0$. Taking the derivative with respect to $t$ and evaluating at $t=0$, we find:
+
+$`D_{\vec{v}}|_p(f) = \sum_{i=1}^n v^i \frac{\partial f}{\partial x^i}(p).`$
+
 On the other hand, since $w$ is a derivation, we have:
 
 $`w(f) = \sum_{i=1}^n w(x^i) \frac{\partial f}{\partial x^i}(p) = \sum_{i=1}^n v^i \frac{\partial f}{\partial x^i}(p) = D_{\vec{v}}|_p(f).`$
