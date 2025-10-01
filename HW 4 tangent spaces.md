@@ -110,11 +110,11 @@ $`d F_p(v)(f) = v(f \circ F) = 0.`$
 Since $F$ is a diffeomorphism, $f \circ F$ can represent any smooth function on $M$. Therefore, $v$ must be the zero derivation, which implies that $v = 0$. Thus, $d F_p$ is injective.
 
 Surjectivity: Let $w \in T_{F(p)} N$ be an arbitrary derivation at the point $F(p)$. We need to show that there exists a vector $v \in T_p M$ such that $d F_p(v) = w$. Since $F$ is a diffeomorphism, we can define $v$ by:
+for any smooth function $f: M \to \mathbb{R}$. It can be verified that $v$ is indeed a derivation at $p$. Then, for any smooth function $g: N \to \mathbb{R}$, we have:
 
-$`v(f) = w(f \circ F^{-1})`$
+$`d F_p(v)(g) = v(g \circ F) = w((g \circ F) \circ F^{-1}) = w(g).`$
 
-for any smooth function $f: M \to \mathbb{R}$. It can be verified that $v$ is indeed a derivation at $p$. Then, we have:
-
+Thus, $d F_p(v) = w$, and $d F_p$ is surjective.
 $`d F_p(v)(f) = v(f \circ F) = w((f \circ F) \circ F^{-1}) = w(f).`$
 
 Thus, $d F_p(v) = w$, and $d F_p$ is surjective.
