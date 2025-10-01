@@ -182,7 +182,7 @@ To see $M_g$ retracts on to $C'$, we use the planar presentation of $M_g$, gener
 into a point gives the retract to the circle represented by $a$, and the composition is the desired retraction. $\square$
 
 ## Exercise 11
-The mapping torus $T_f$ of a map $f: X \to X$ is the quotient of $X \times I$ obtained by identifying each point ( $x, 0$ ) with ( $f(x), 1$ ). In the case $X=S^1 \vee S^1$ with $f$ basepoint-preserving, compute a presentation for $\pi_1(T_f)$ in terms of the induced map $f_*: \pi_1(X) \to \pi_1(X)$. Do the same when $X=S^1 \times S^1$. [One way to do this is to regard $T_f$ as built from $X \vee S^1$ by attaching cells.]
+The mapping torus $T_f$ of a map $f: X \to X$ is the quotient of $X \times I$ obtained by identifying each point $(x, 0)$ with $(f(x), 1)$. In the case $X=S^1 \vee S^1$ with $f$ basepoint-preserving, compute a presentation for $\pi_1(T_f)$ in terms of the induced map $f_*: \pi_1(X) \to \pi_1(X)$. Do the same when $X=S^1 \times S^1$. [One way to do this is to regard $T_f$ as built from $X \vee S^1$ by attaching cells.]
 
 Proof
 
