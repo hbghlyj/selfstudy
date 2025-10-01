@@ -109,7 +109,7 @@ Consider the identity $F^{-1} \circ F = \text{Id}_M$. Applying the differential 
 
 $`d(F^{-1} \circ F)_p = d(\text{Id}_M)_p`$
 
-Using the chain rule on the left side and the result from part (c) on the right side, we get:
+Use (c) on the right side, we get:
 
 $`d(F^{-1})_{F(p)} \circ d F_p = \text{Id}_{T_p M}`$
 
