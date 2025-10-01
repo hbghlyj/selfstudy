@@ -25,9 +25,9 @@ $`f(x) = f(p) + \sum_{i=1}^n \frac{\partial f}{\partial x^i}(p) (x^i-p^i) + O(\|
 
 Putting the last term into each factor,
 
-$`f(x) = f(p) + \sum_{i=1}^n \frac{\partial f}{\partial x^i}(p) ((v^i-x^i) + O(v^i-x^i)^2).`$
+$`f(x) = f(p) + \sum_{i=1}^n \frac{\partial f}{\partial x^i}(p) ((x^i-p^i) + O((x^i-p^i)^2)).`$
 
-Since $w$ is a derivation, we have:
+Since $w$ is a derivation, we have $w(f(p))=0,w(x^i-p^i)=w(x^i)$, by the Leibniz property $w(O(x^i-p^i)^2)=2w(O(x^i-p^i))O(x^i-p^i)|_{x=p}=0$, so:
 
 $`w(f) = \sum_{i=1}^n w(x^i) \frac{\partial f}{\partial x^i}(p) = \sum_{i=1}^n v^i \frac{\partial f}{\partial x^i}(p) = D_{\vec{v}}|_p(f).`$
 
