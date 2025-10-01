@@ -15,7 +15,7 @@ To verify this, we need to show that for any smooth function $f: \mathbb{R}^n \t
 
 $`w(f) = D_{\vec{v}}|_p(f).`$
 
-By definition, the directional derivative is $D_{\vec{v}}|_p(f) = \left.\frac{d}{dt}\right|_{t=0} f(p+t\vec{v})$. Applying the multivariate chain rule, this becomes:
+By definition, the directional derivative is $`D_{\vec{v}}|_p(f) = \left.\frac{d}{dt}\right|_{t=0} f(p+t\vec{v})`$. Applying the chain rule, this becomes:
 
 $`D_{\vec{v}}|_p(f) = \sum_{i=1}^n \frac{\partial f}{\partial x^i}(p) \frac{d(p^i+tv^i)}{dt}\bigg|_{t=0} = \sum_{i=1}^n v^i \frac{\partial f}{\partial x^i}(p).`$
 
