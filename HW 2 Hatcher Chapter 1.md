@@ -174,7 +174,7 @@ In the surface $M_g$ of genus $g$, let $C$ be a circle that separates $M_g$ into
 
 Proof
 
-1. First we prove that $M_h'$ does not retract onto its boundary circle $C$. By the argument in Chapter 0, the CW complex of $M_h$ consists of one 0-cell, $2h$ 1-cells and a 2-cell. $M_h'$ is homeomorphic to cutting a hole inside the 2-cell, making it homotopy equivalent to a wedge of $2h$ circles. Thus, its fundamental group is $\pi_1(M_h') \cong \langle a_1, \dots, a_{2h} \rangle$.
+1. First we prove that $M_h'$ does not retract onto its boundary circle $C$. By the argument in Chapter 0, the CW complex of $M_h$ consists of one 0-cell, $2h$ 1-cells and a 2-cell. $M_h'$ is homeomorphic to cutting a hole inside the 2-cell, making it homotopy equivalent to a wedge of $2h$ circles. Thus, its fundamental group is free on $a_1, \dots, a_{2h}$.
 
     Then we suppose we have a retraction $r: M_h' \to C$, which would induce an injective homomorphism $`i_*: \pi_1(C) \to \pi_1(M_h')`$. This in turn induces an injective homomorphism on the abelianizations, $`(i_*)': H_1(C) \to H_1(M_h')`$. We know $H_1(C) \cong \mathbb{Z}$. The generator of $\pi_1(C)$ is the loop $C$ itself, which is homotopic in $M_h'$ to a product of commutators. The image of this element in the abelianization $H_1(M_h') \cong \mathbb{Z}^{2h}$ is 0. Thus, $(i_*)'$ is the zero map, which is not injective. This is a contradiction.
 
