@@ -23,6 +23,10 @@ On the other hand, by Taylor's theorem, we can write:
 
 $`f(p + t\vec{v}) = f(p) + t \sum_{i=1}^n v^i \frac{\partial f}{\partial x^i}(p) + O(t^2).`$
 
+Putting the last term into each factor,
+
+$`f(p + t\vec{v}) = f(p) + t \sum_{i=1}^n v^i \left(\frac{\partial f}{\partial x^i}(p) + O(t)\right).`$
+
 Since $w$ is a derivation, we have:
 
 $`w(f) = \sum_{i=1}^n w(x^i) \frac{\partial f}{\partial x^i}(p) = \sum_{i=1}^n v^i \frac{\partial f}{\partial x^i}(p) = D_{\vec{v}}|_p(f).`$
