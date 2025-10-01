@@ -99,26 +99,7 @@ for any smooth function $f: M \to \mathbb{R}$. Since this holds for all smooth f
 </li>
 <li>
 
-If $F$ is a diffeomorphism, then it has a smooth inverse $F^{-1}: N \to M$. We need to show that $d F_p: T_p M \to T_{F(p)} N$ is an isomorphism and that $`(d F_p)^{-1} = d(F^{-1})_{F(p)}`$.
-
-To show that $d F_p$ is an isomorphism, we need to verify that it is both injective and surjective.
-
-Injectivity: Suppose $d F_p(v) = 0$ for some $v \in T_p M$. This means that for any smooth function $f: N \to \mathbb{R}$, we have:
-Since $F$ is a diffeomorphism, for any smooth function $g: M \to \mathbb{R}$, we can define a smooth function $f = g \circ F^{-1}: N \to \mathbb{R}$. With this choice, $f \circ F = g$. This means that as $f$ ranges over all smooth functions on $N$, the composition $f \circ F$ ranges over all smooth functions on $M$. The condition $v(f \circ F) = 0$ for all smooth $f$ on $N$ is therefore equivalent to $v(g) = 0$ for all smooth $g$ on $M$. This implies that $v$ is the zero derivation, so $v = 0$. Thus, $d F_p$ is injective.
-
-Surjectivity: Let $w \in T_{F(p)} N$ be an arbitrary derivation at the point $F(p)$. We need to show that there exists a vector $v \in T_p M$ such that $d F_p(v) = w$. Since $F$ is a diffeomorphism, we can define $v$ by:
-
-$`v(f) = w(f \circ F^{-1})`$
-
-for any smooth function $f: M \to \mathbb{R}$. It can be verified that $v$ is indeed a derivation at $p$. Then, for any smooth function $g: N \to \mathbb{R}$, we have:
-
-$`d F_p(v)(g) = v(g \circ F) = w((g \circ F) \circ F^{-1}) = w(g).`$
-
-Thus, $d F_p(v) = w$, and $d F_p$ is surjective.
-
-$`d F_p(v)(f) = v(f \circ F) = w((f \circ F) \circ F^{-1}) = w(f).`$
-
-Thus, $d F_p(v) = w$, and $d F_p$ is surjective.
+If $F$ is a diffeomorphism, then it has a smooth inverse $F^{-1}: N \to M$. We need to show that $d F_p: T_p M \to T_{F(p)} N$ is an isomorphism, it suffices to show that $`(d F_p)^{-1} = d(F^{-1})_{F(p)}`$.
 
 To show that $(d F_p)^{-1} = d(F^{-1})_{F(p)}$, we can apply the chain rule from part (b).
 
