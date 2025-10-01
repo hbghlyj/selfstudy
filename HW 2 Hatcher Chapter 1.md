@@ -4,7 +4,14 @@ Show that the change-of-basepoint homomorphism $\beta_h$ depends only on the hom
 
 Proof
 
-The change-of-basepoint homomorphism is defined as $\beta_h:\pi_1(X, x_1) \to \pi_1(X,x_0)$ sending $[f] \mapsto [h \cdot f \cdot \overline{h}]$, where $\overline{h}$ is the inverse path of $h$.
+The change-of-basepoint homomorphism is defined as $\beta_h\colon\pi_1(X, x_1) \to \pi_1(X,x_0)$ sending $[f] \mapsto [h \cdot f \cdot \overline{h}]$, where $\overline{h}$ is the inverse path of $h$.
+
+To show that $\beta_h$ depends only on the homotopy class of $h$, let $g$ be another path from $x_0$ to $x_1$ such that $h \simeq g$. We must show that $\beta_h = \beta_g$, which means $\beta_h([f]) = \beta_g([f])$ for any $[f] \in \pi_1(X, x_1)$. This is equivalent to showing $[h \cdot f \cdot \overline{h}] = [g \cdot f \cdot \overline{g}]$.
+
+Since path homotopy is a congruence relation with respect to path concatenation and inversion, $h \simeq g$ implies $\overline{h} \simeq \overline{g}$. We can then construct a chain of homotopies:
+$$ h \cdot f \cdot \overline{h} \simeq g \cdot f \cdot \overline{h} \quad (\text{since } h \simeq g) $$
+$$ g \cdot f \cdot \overline{h} \simeq g \cdot f \cdot \overline{g} \quad (\text{since } \overline{h} \simeq \overline{g}) $$
+By transitivity, $h \cdot f \cdot \overline{h} \simeq g \cdot f \cdot \overline{g}$. Therefore, $[h \cdot f \cdot \overline{h}] = [g \cdot f \cdot \overline{g}]$, which proves that $\beta_h = \beta_g$.
 
 ## Exercise 5
 Show that for a space $X$, the following three conditions are equivalent:
@@ -24,16 +31,104 @@ Deduce that a space $X$ is simply-connected iff all maps $S^1 \to X$ are homotop
 
 Proof
 
+<dl>
+  <dt>
+    (a) &rArr; (b)
+  </dt>
+  <dd>
 
+Suppose $f\colon S^1 \to X$. By hypothesis, there's a homotopy $h\colon S^1 \times I \to X$ from $f$ to a constant map. That is, $h_0=f$ and there is a point $x \in X$ such that, for all $s \in S^1, h(s, 1)=x$. Because of the latter condition, $h$ factors through the quotient $`S^1 \times I / S^1 \times\{1\}`$. That is, $h$ is equal to a composition
+
+$`S^1 \times I \to S^1 \times I / S^1 \times\{1\} \to X`$
+
+where the first map is the quotient map.
+
+The pair $`(S^1 \times I / S^1 \times\{1\}, S^1 \times\{0\})`$ is homeomorphic to $(D^2, S^1)$. The homeomorphism is induced by the map $\Phi\colon S^1 \times I \to D^2$ defined by $\Phi(a, x)=a \cdot(1-x)$, where we look at $a$ and $x$ as complex numbers. So the second map above gives a map $D^2 \to X$ such that the restriction to $S^1$ is equal to $f$.
+</dd>
+  <dt>    
+    (b) &rArr; (c)
+  </dt>
+  <dd>
+
+As in the next problem, we can regard $\pi_1(X, x_0)$ as the set of basepoint-preserving homotopy classes of maps $(S^1, s_0) \to(X, x_0)$. Suppose $f\colon(S^1, s_0) \to(X, x_0)$ is such a map. By hypothesis, it extends to a map $h\colon(D^2, s_0) \to(X, x_0)$. Let $\phi$ be a deformation-retraction of $D^2$ onto $s_0$. Then
+
+$`\begin{aligned}
+S^1 \times I & \to X \\
+(s, t) & \mapsto h(\phi_t(s))
+\end{aligned}`$
+
+is a basepoint-preserving homotopy of $f$ to the constant map with value $x_0$. So all loops in $X$ are nullhomotopic, and so $\pi_1(X, x_0)$ is trivial.
+</dd>
+  <dt>
+    (c) &rArr; (a)
+  </dt>
+  <dd>
+
+Let $f\colon S^1 \to X$ be a map. Choose a basepoint $s_0 \in S^1$ and let $x_0 = f(s_0)$. Then $f$ can be viewed as a map of pairs $f\colon(S^1, s_0) \to (X, x_0)$. The hypothesis that $\pi_1(X, x_0)=0$ means that $f$ is nullhomotopic via a basepoint-preserving homotopy. This in particular implies that $f$ is homotopic to a constant map (without regard to basepoints), which is (a).
+</dd>
+</dl>
+Finally, if $X$ is simply-connected, then it is path-connected and (c) holds. Thus (a) holds, and every map $f\colon S^1 \to X$ is homotopic to a constant map. And since $X$ is path-connected, all constant maps to $X$ are homotopic.
+
+Conversely, if all maps $S^1 \to X$ are homotopic, then in particular the constant maps are homotopic, so $X$ is path-connected. And since (a) holds, (c) holds as well. Thus $X$ is simply-connected.
 
 ## Exercise 6
 We can regard $\pi_1(X, x_0)$ as the set of basepoint-preserving homotopy classes of maps $(S^1, s_0) \to(X, x_0)$. Let $[S^1, X]$ be the set of homotopy classes of maps $S^1 \to X$, with no conditions on basepoints. Thus there is a natural map $\Phi\colon\pi_1(X, x_0) \to[S^1, X]$ obtained by ignoring basepoints. Show that $\Phi$ is onto if $X$ is path-connected, and that $\Phi([f])=\Phi([g])$ iff $[f]$ and $[g]$ are conjugate in $\pi_1(X, x_0)$. Hence $\Phi$ induces a one-to-one correspondence between $[S^1, X]$ and the set of conjugacy classes in $\pi_1(X)$, when $X$ is path-connected.
 
+Proof
+
+$\pi_1(X,x_0)$ is the set of endpoint-preserving homotopy classes of loops in $X$ based at $x_0$. A loop is a path $f\colon I \to X$ with $f(0)=f(1)$. The question states we can regard $\pi_1(X, x_0)$ as the set of basepoint-preserving homotopy classes of maps $(S^1, s_0) \to (X, x_0)$.
+
+Note that $I/(0 \sim 1) \cong S^1$ is a homeomorphism. If you have a continuous map $f\colon I \to X$ such that $f(0)=f(1)=x_0$, this factors through the above quotient map, giving a map $f'\colon I/(0 \sim 1) \to X$, with $f'([0]) = x_0$.
+
+Conversely, given a based map $f\colon(S^1, s_0) \to (X,x_0)$, you can obtain a loop $f'\colon I \to X$ with $f'(0)=f'(1)=x_0$ by pre-composing $f$ with the canonical quotient map $I \to I/(0 \sim 1) \cong S^1$.
+
+- To show $\Phi$ is surjective, consider a map $g\colon S^1 \to X$. Pick a basepoint $s_0 \in S^1$ and let $x_1 = g(s_0)$. Let $g'\colon I\to X$ be the loop in $X$ based at $x_1$ corresponding to $g$.
+
+  Since $X$ is path-connected, there is a path $h$ from $x_1$ to $x_0$.
+  
+  Let $h_t$ be the restriction of $h$ to the interval $[0, t]$, with a reparametrization so that the domain of $h_t$ is still $[0,1]$. Explicitly, we can take $h_t(s)=h(t s)$.
+  
+  The loop $f'=\bar h\cdot g' \cdot h$ is based at $x_0$.
+
+  The loop $\bar{h}_t\cdot g'\cdot h_t$ is based at $h(t)$.
+
+  The product $\bar{h}_t\cdot g'\cdot h_t$ gives a free homotopy from $g'$ to $f'$.
+  
+  Since $f'$ is freely homotopic to $g'$, the class $[f'] \in \pi_1(X, x_0)$ maps to the free homotopy class of $g$ under $\Phi$. Thus $\Phi$ is surjective.
+
+- Suppose $\Phi([f]) = \Phi([g])$. This means $f$ and $g$ are freely homotopic. Let $H\colon S^1 \times I \to X$ be a free homotopy from $f$ to $g$.
+
+  The path $\alpha(t) \coloneqq H(s_0, t)$ is a loop at $x_0$ since $\alpha(0) = f(0) = x_0$ and $\alpha(1) = g(0) = x_0$.
+
+  For each $t\in I$, define $\alpha_t(u)\coloneqq H(s_0,tu)$ (a path from $x_0$ to $H(s_0,t)$), and a loop
+  
+  $L_t \coloneqq \alpha_t \cdot \big(s\mapsto H(s,t)\big) \cdot \overline{\alpha_t}$
+  
+  Then $L_t$ is a based loop at $x_0$ depending continuously on $t$, with
+  
+  $L_0=f$ (since $\alpha_0$ is constant at $x_0$) and $L_1=\alpha\cdot g\cdot \alpha^{-1}$.
+  
+  Thus $f\simeq \alpha\cdot g\cdot \alpha^{-1}$ rel endpoints, so in $\pi_1(X,x_0)$
+  
+  $[f]=[\alpha][g][\alpha]^{-1}\quad\text{equivalently}\quad [g]=[\alpha]^{-1}[f][\alpha]$
+  
+  Hence $[f]$ and $[g]$ are conjugate.
+
 ## Exercise 11
 If $X_0$ is the path-component of a space $X$ containing the basepoint $x_0$, show that the inclusion $X_0 \hookrightarrow X$ induces an isomorphism $\pi_1(X_0, x_0) \to \pi_1(X, x_0)$.
 
+Proof
+
+We know that $`\iota_*\colon\pi_1(X_0, x_0) \to \pi_1(X, x_0)`$ is a group homomorphism.
+
+- To show it is surjective, consider a loop $f\colon I \to X$ based at $x_0$. Since $I$ is path-connected, its image $f(I)$ is path-connected. As $x_0 \in f(I)$, the image must be contained in the path-component $X_0$. Thus, $f$ is a loop in $X_0$, and its class in $\pi_1(X_0, x_0)$ maps to $[f]$ under $`\iota_*`$.
+
+- To show it is injective, suppose a loop $f$ in $X_0$ is homotopic in $X$ to the constant loop. The homotopy $H\colon I \times I \to X$ has a path-connected image that contains $x_0$, so its image lies in $X_0$. Thus, $f$ is null-homotopic in $X_0$.
+
+Therefore, $\iota_*$ is an isomorphism.
+
 ## Exercise 15
-Given a map $f: X \to Y$ and a path $h: I \to X$ from $x_0$ to $x_1$, show that $f_* \beta_h=\beta_{f h} f_*$ in the diagram at the right.
+Given a map $f\colon X \to Y$ and a path $h\colon I \to X$ from $x_0$ to $x_1$, show that $f_* \beta_h=\beta_{f h} f_*$ in the diagram at the right.
 
 $`\begin{CD}
 \pi_{1}(X,x_{1})    @>\beta_{h}>>    \pi_{1}(X,x_{0})   \\
@@ -50,3 +145,59 @@ $`
 `$
 
 Hence the diagram commutes.
+
+# Chapter 1.2
+## Exercise 4
+Let $X \subset \mathbb{R}^3$ be the union of $n$ lines through the origin. Compute $\pi_1(\mathbb{R}^3-X)$.
+
+Proof
+
+Consider the standard sphere $S^2 \subseteq \mathbb{R}^3$, then there is a radial deformation retraction $\mathbb{R}^3-X \simeq S^2 \cap \left(\mathbb{R}^3-X\right)$. Hence $\pi_1\left(\mathbb{R}^3-X\right)=\pi_1\left(S^2 \cap\left(\mathbb{R}^3-X\right)\right)$ where $S^2 \cap\left(\mathbb{R}^3-X\right)$ is the sphere punctured at $2n$ points. This space is homotopy equivalent to a wedge of $2n-1$ circles. Thus
+
+$\pi_1\left(S^2 \cap\left(\mathbb{R}^3-X\right)\right) \cong \mathbb{F}_{2n-1}$
+
+the free group generated by $2n-1$ elements.
+
+## Exercise 7
+Let $X$ be the quotient space of $S^2$ obtained by identifying the north and south poles to a single point. Put a cell complex structure on $X$ and use this to compute $\pi_1(X)$.
+
+Proof
+
+The space $X$ is obtained from $S^2$ by identifying two points, which is homotopy equivalent to attaching a 1-cell between these two points. The resulting space deformation retracts to $S^2 \vee S^1$. Hence
+
+$\pi_1(X) \cong \pi_1(S^1 \vee S^2) = \mathbb{Z}$
+
+by the Seifert-van Kampen theorem.
+
+## Exercise 9
+In the surface $M_g$ of genus $g$, let $C$ be a circle that separates $M_g$ into two compact subsurfaces $M_h'$ and $M_k'$ obtained from the closed surfaces $M_h$ and $M_k$ by deleting an open disk from each. Show that $M_h'$ does not retract onto its boundary circle $C$, and hence $M_g$ does not retract onto $C$. [Hint: abelianize $\pi_1$.] But show that $M_g$ does retract onto the nonseparating circle $C'$ in the figure.
+
+Proof
+
+1. First we prove that $M_h'$ does not retract onto its boundary circle $C$. By the argument in Chapter 0, the CW complex of $M_h$ consists of one 0-cell, $2h$ 1-cells and a 2-cell. $M_h'$ is homeomorphic to cutting a hole inside the 2-cell, making it homotopy equivalent to a wedge of $2h$ circles. Thus, its fundamental group is free on $a_1, \dots, a_{2h}$.
+
+    Then we suppose we have a retraction $r: M_h' \to C$, which would induce an injective homomorphism $`i_*: \pi_1(C) \to \pi_1(M_h')`$. This in turn induces an injective homomorphism on the abelianizations, $`(i_*)': H_1(C) \to H_1(M_h')`$. We know $H_1(C) \cong \mathbb{Z}$. The generator of $\pi_1(C)$ is the loop $C$ itself, which is homotopic in $M_h'$ to a product of commutators. The image of this element in the abelianization $H_1(M_h') \cong \mathbb{Z}^{2h}$ is 0. Thus, $(i_*)'$ is the zero map, which is not injective. This is a contradiction.
+
+2. To see that $M_g$ retracts onto $C'$, we can construct the retraction explicitly. First, map $M_g \to M_1$ (a torus) by sending the 1-cells corresponding to the generators $a_i, b_i$ for $i \ge 2$ to the basepoint. This effectively collapses the genus $g-1$ part of the surface. On the resulting torus $M_1$ (with generators $a_1, b_1$), we can then retract to the circle $a_1$ (which represents $C'$) by collapsing the $b_1$ circle to the basepoint. The composition of these two maps gives the desired retraction from $M_g$ to $C'$.
+
+## Exercise 11
+The mapping torus $T_f$ of a map $f: X \to X$ is the quotient of $X \times I$ obtained by identifying each point $(x, 0)$ with $(f(x), 1)$. In the case $X=S^1 \vee S^1$ with $f$ basepoint-preserving, compute a presentation for $\pi_1(T_f)$ in terms of the induced map $f_*: \pi_1(X) \to \pi_1(X)$. Do the same when $X=S^1 \times S^1$. [One way to do this is to regard $T_f$ as built from $X \vee S^1$ by attaching cells.]
+
+Proof
+
+First, consider $X=S^1 \vee S^1$. Denote the two circles by $a$ and $b$. Note that $T_f$ has a CW structure with one 0-cell $x_0$, three 1-cells $a, b, c$ attached to $x_0$ ($a,b$ are the two $S^1$ in $X$ and $c$ is the quotient $`\{x_0\}\times[0,1]/0\sim1`$), and two 2-cells (the images of the cylinders $a \times I$ and $b \times I$). The boundaries of these 2-cells are attached along the loops $`a c f_*(a)^{-1} c^{-1}`$ and $`b c f_*(b)^{-1} c^{-1}`$ respectively. Thus, we have the following presentation for $\pi_1(T_f)$:
+
+$`\pi_1\left(T_f\right)=\left\langle a, b, c \mid a c f_*(a)^{-1} c^{-1}, b c f_*(b)^{-1} c^{-1}\right\rangle`$
+
+For $X=S^1 \times S^1$, again let $a$ and $b$ denote the circles in the 1-skeleton of $X$. $T_f$ now has the CW structure with the 2-skeleton as above, plus one more 2-cell corresponding to the torus (thus is attached along $a b a^{-1} b^{-1}$), and one more 3-cell. Since attaching a 3-cell doesn't change $\pi_1$ by Proposition 1.26, we only care about the 2-skeleton of $T_f$ in computing $\pi_1$. Similar to above, we obtain the following presentation of $\pi_1(T_f)$:
+
+$`\pi_1\left(T_f\right)=\left\langle a, b, c \mid a c f_*(a)^{-1} c^{-1}, b c f_*(b)^{-1} c^{-1},[a, b]\right\rangle`$
+
+## Exercise 16
+Show that the fundamental group of the surface of infinite genus shown below is free on an infinite number of generators.
+
+Proof
+
+Let $Y$ be a torus with two disjoint open disks removed (on the left side and on the right side). The surface of infinite genus is obtained by concatenating $`\{Y_i\}_{i\in\mathbb{Z}}`$, identifying the boundary of right open disk of $Y_i$ with the boundary of left open disk of $Y_{i+1}$.
+
+The fundamental group of a surface of genus $g$ with $b$ boundary components is a free group on $2g+b-1$ generators. For $Y$, we have $g=1$ and $b=2$, so its fundamental group is the free group on $2(1)+2-1=3$ generators, i.e., $\pi_1(Y) \cong F_3$. For such a surface, one can choose generators for $F_3$ such that one of the boundary loops is a generator. By the Seifert-van Kampen theorem, when gluing two spaces $Y_1, Y_2$ along a boundary circle, the fundamental group is the amalgamated free product $F_3 *_{\mathbb{Z}} F_3$. Since the gluing can be done along a loop that corresponds to a generator, this product is isomorphic to $F_5$. Keep doing the gluing, we know the fundamental group is free on an infinite number of generators.
