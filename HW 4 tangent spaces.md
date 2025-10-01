@@ -21,11 +21,11 @@ $`D_{\vec{v}}|_p(f) = \sum_{i=1}^n \frac{\partial f}{\partial x^i}(p) \frac{d(p^
 
 On the other hand, by Taylor's theorem, we can write:
 
-$`f(p + t\vec{v}) = f(p) + t \sum_{i=1}^n v^i \frac{\partial f}{\partial x^i}(p) + O(t^2).`$
+$`f(x) = f(p) + \sum_{i=1}^n \frac{\partial f}{\partial x^i}(p) (x^i-p^i) + O(\|x-p\|^2).`$
 
 Putting the last term into each factor,
 
-$`f(p + t\vec{v}) = f(p) + t \sum_{i=1}^n v^i \left(\frac{\partial f}{\partial x^i}(p) + O(t)\right).`$
+$`f(x) = f(p) + \sum_{i=1}^n \frac{\partial f}{\partial x^i}(p) ((v^i-x^i) + O(v^i-x^i)^2).`$
 
 Since $w$ is a derivation, we have:
 
