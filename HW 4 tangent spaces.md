@@ -84,9 +84,11 @@ To compute $\left.\frac{\partial}{\partial \tilde{x}}\right|_p f$, we use the ch
 $$
 \left.\frac{\partial}{\partial \tilde{x}}\right|_p f = \left.\frac{\partial f}{\partial x}\right|_{(1, 0)} \cdot \left.\frac{\partial x}{\partial \tilde{x}}\right|_p + \left.\frac{\partial f}{\partial y}\right|_{(1, 0)} \cdot \left.\frac{\partial y}{\partial \tilde{x}}\right|_p
 $$
-From the coordinate transformation, we have:
-$$\tilde{x} = x \implies \frac{\partial x}{\partial \tilde{x}} = 1$$
-$$\tilde{y} = y + x^3 \implies \frac{\partial y}{\partial \tilde{x}} = -3x^2$$
+To find the partial derivatives of the original coordinates with respect to the new ones, we use the inverse map $\Phi^{-1}(\tilde{x}, \tilde{y}) = (x, y) = (\tilde{x}, \tilde{y} - \tilde{x}^3)$.
+$$ 
+\frac{\partial x}{\partial \tilde{x}} = 1, \quad \frac{\partial y}{\partial \tilde{x}} = -3\tilde{x}^2
+$$ 
+Since $x=\tilde{x}$, we have $\frac{\partial y}{\partial \tilde{x}} = -3x^2$.
 At the point $p = (1, 0)$, we have $\frac{\partial y}{\partial \tilde{x}} = -3(1)^2 = -3$.
 Thus,
 $$
