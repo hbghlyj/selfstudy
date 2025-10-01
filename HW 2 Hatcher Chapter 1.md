@@ -190,7 +190,7 @@ First, consider $X=S^1 \vee S^1$. Denote the two circles by $a$ and $b$. Note th
 
 $`\pi_1\left(T_f\right)=\left\langle a, b, c \mid a c f_*(a)^{-1} c^{-1}, b c f_*(b)^{-1} c^{-1}\right\rangle`$
 
-For $X=S^1 \times S^1$, again let $a$ and $b$ denote the circles in the 1-skeleton of $X$. $T_f$ now has the CW structure with the 2 -skeleton as above, plus one more 2 -cell corresponding to the torus (thus is attached along $a b a^{-1} b^{-1}$), and one more 3-cell. Since attaching a 3-cell doesn't change $\pi_1$ by Proposition 1.26, we only care about the 2 -skeleton of $T_f$ in computing $\pi_1$. Similar to above, we obtain the following presentation of $\pi_1(T_f)$:
+For $X=S^1 \times S^1$, again let $a$ and $b$ denote the circles in the 1-skeleton of $X$. $T_f$ now has the CW structure with the 2-skeleton as above, plus one more 2-cell corresponding to the torus (thus is attached along $a b a^{-1} b^{-1}$), and one more 3-cell. Since attaching a 3-cell doesn't change $\pi_1$ by Proposition 1.26, we only care about the 2-skeleton of $T_f$ in computing $\pi_1$. Similar to above, we obtain the following presentation of $\pi_1(T_f)$:
 
 $`\pi_1\left(T_f\right)=\left\langle a, b, c \mid a c f_*(a)^{-1} c^{-1}, b c f_*(b)^{-1} c^{-1},[a, b]\right\rangle`$
 
