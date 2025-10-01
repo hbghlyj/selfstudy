@@ -108,6 +108,8 @@ Since $F$ is a diffeomorphism, for any smooth function $g: M \to \mathbb{R}$, we
 
 Surjectivity: Let $w \in T_{F(p)} N$ be an arbitrary derivation at the point $F(p)$. We need to show that there exists a vector $v \in T_p M$ such that $d F_p(v) = w$. Since $F$ is a diffeomorphism, we can define $v$ by:
 
+$`v(f) = w(f \circ F^{-1})`$
+
 for any smooth function $f: M \to \mathbb{R}$. It can be verified that $v$ is indeed a derivation at $p$. Then, for any smooth function $g: N \to \mathbb{R}$, we have:
 
 $`d F_p(v)(g) = v(g \circ F) = w((g \circ F) \circ F^{-1}) = w(g).`$
@@ -129,6 +131,7 @@ Using the chain rule on the left side and the result from part (c) on the right 
 $`d(F^{-1})_{F(p)} \circ d F_p = \text{Id}_{T_p M}`$
 
 This equation shows that the linear map $`d(F^{-1})_{F(p)}`$ is a left inverse to the linear map $`d F_p`$. Since $`d F_p`$ is an isomorphism between finite-dimensional vector spaces (as shown earlier), it is an invertible linear map. For an invertible linear map, its left inverse is unique and is equal to its inverse. Therefore, we conclude that $`(d F_p)^{-1} = d(F^{-1})_{F(p)}`$.
+
 $`(d F_p)^{-1}(w)(f) = v(f) = w(f \circ F^{-1}).`$
 
 Since both sides are equal for all smooth functions $f$, we conclude that $(d F_p)^{-1} = d(F^{-1})_{F(p)}$.
