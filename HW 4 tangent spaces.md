@@ -60,22 +60,22 @@ $\tilde{x}=x, \quad \tilde{y}=y+x^3$
 
 Let $p$ be the point $(1,0) \in \mathbb{R}^2$ (in standard coordinates), and show that
 
-$\left.\frac{\partial}{\partial x}\right|_p \neq\left.\frac{\partial}{\partial \tilde{x}}\right|_p$
+$`\left.\frac{\partial}{\partial x}\right|_p \neq\left.\frac{\partial}{\partial \tilde{x}}\right|_p`$
 
 Proof
 
 To verify that $(\tilde{x}, \tilde{y})$ are global smooth coordinates on $\mathbb{R}^2$, we need to show that the map $\Phi: \mathbb{R}^2 \to \mathbb{R}^2$ defined by $\Phi(x, y) = (\tilde{x}, \tilde{y}) = (x, y + x^3)$ is a diffeomorphism.
 
 First, we compute the Jacobian matrix of $\Phi$:
-$$
-J_\Phi = \begin{pmatrix}
+
+$`J_\Phi = \begin{pmatrix}
 \frac{\partial \tilde{x}}{\partial x} & \frac{\partial \tilde{x}}{\partial y} \\
 \frac{\partial \tilde{y}}{\partial x} & \frac{\partial \tilde{y}}{\partial y}
 \end{pmatrix} = \begin{pmatrix}
 1 & 0 \\
 3x^2 & 1
-\end{pmatrix}
-$$
+\end{pmatrix}`$
+
 The determinant of this Jacobian is $1 \cdot 1 - 0 \cdot 3x^2 = 1$, which is non-zero for all $(x, y) \in \mathbb{R}^2$. Therefore, by the Inverse Function Theorem, $\Phi$ is a local diffeomorphism everywhere. Since $\Phi$ is also bijective (its inverse is given by $\Phi^{-1}(\tilde{x}, \tilde{y}) = (\tilde{x}, \tilde{y} - \tilde{x}^3)$), it follows that $\Phi$ is a global diffeomorphism. Thus, $(\tilde{x}, \tilde{y})$ are indeed global smooth coordinates on $\mathbb{R}^2$.
 
 Next, we need to show that $\left.\frac{\partial}{\partial x}\right|_p \neq \left.\frac{\partial}{\partial \tilde{x}}\right|_p$ at the point $p = (1, 0)$.
