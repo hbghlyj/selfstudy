@@ -21,6 +21,19 @@ Prove Proposition 3.6 from Lee (Properties of Differentials). Let $M, N$, and $P
 
 # 3
 Note that if $M$ is a smooth manifold and $U$ is an open subset then $U$ is also a smooth manifold with smooth structure from $M$ (i.e. charts on U are given by intersecting $U$ with charts on $M$). We say $U$ is an open submanifold of $M$. Show that for $p \in U$ there is an isomorphism $T_p M$ to $T_p U$.
+
+Proof
+
+Let $i: U \to M$ be the inclusion map. Since $i$ is a smooth embedding, the differential $di_p: T_p U \to T_p M$ is injective. To show that $di_p$ is also surjective, let $v \in T_p M$. We need to show that there exists a vector $u \in T_p U$ such that $di_p(u) = v$.
+
+Since $U$ is an open subset of $M$, there exists a chart $(V, \phi)$ of $M$ such that $p \in V$ and $V \cap U$ is non-empty. The restriction of $\phi$ to $V \cap U$ gives a chart $(V \cap U, \phi|_{V \cap U})$ for $U$.
+
+Now, consider the vector $v \in T_p M$. By the definition of the tangent space, there exists a curve $\gamma: (-\epsilon, \epsilon) \to M$ such that $\gamma(0) = p$ and $\gamma'(0) = v$. Since $U$ is open in $M$, we can choose $\epsilon$ small enough so that $\gamma(t) \in U$ for all $t$ in some interval around 0. Thus, we can define a curve $\tilde{\gamma}: (-\epsilon, \epsilon) \to U$ by restricting $\gamma$ to this interval.
+
+The tangent vector $u = \tilde{\gamma}'(0)$ is then an element of $T_p U$. By construction, we have $di_p(u) = v$. Therefore, $di_p$ is surjective.
+
+Since $di_p$ is both injective and surjective, it is an isomorphism. Hence, we have shown that $T_p M$ is isomorphic to $T_p U$.
+
 # 4
 Show that for a vector space $V$ (with its canonical smooth structure) and any point $p \in V$, the tangent space $T_p V$ is canonically isomorphic to $V$.
 
