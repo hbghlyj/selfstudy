@@ -118,19 +118,15 @@ Thus, $d F_p(v) = w$, and $d F_p$ is surjective.
 $`d F_p(v)(f) = v(f \circ F) = w((f \circ F) \circ F^{-1}) = w(f).`$
 
 Thus, $d F_p(v) = w$, and $d F_p$ is surjective.
+To show that $(d F_p)^{-1} = d(F^{-1})_{F(p)}$, we can apply the chain rule from part (b).
 
-Since $d F_p$ is both injective and surjective, it is an isomorphism.
+Consider the identity $F^{-1} \circ F = \text{Id}_M$. Applying the differential at point $p$ to both sides gives:
+$`d(F^{-1} \circ F)_p = d(\text{Id}_M)_p`$
 
-To show that $(d F_p)^{-1} = d(F^{-1})_{F(p)}$, we need to verify that for any $w \in T_{F(p)} N$, we have:
+Using the chain rule on the left side and the result from part (c) on the right side, we get:
+$`d(F^{-1})_{F(p)} \circ d F_p = \text{Id}_{T_p M}`$
 
-$`(d F_p)^{-1}(w) = d(F^{-1})_{F(p)}(w).`$
-
-By the definition of the differential, we have:
-
-$`d(F^{-1})_{F(p)}(w)(f) = w(f \circ F^{-1})`$
-
-for any smooth function $f: M \to \mathbb{R}$. On the other hand, we have:
-
+This equation shows that the linear map $d(F^{-1})_{F(p)}$ is a left inverse to the linear map $d F_p$. Since $d F_p$ is an isomorphism between finite-dimensional vector spaces (as shown earlier), it is an invertible linear map. For an invertible linear map, its left inverse is unique and is equal to its inverse. Therefore, we conclude that $(d F_p)^{-1} = d(F^{-1})_{F(p)}.
 $`(d F_p)^{-1}(w)(f) = v(f) = w(f \circ F^{-1}).`$
 
 Since both sides are equal for all smooth functions $f$, we conclude that $(d F_p)^{-1} = d(F^{-1})_{F(p)}$.
