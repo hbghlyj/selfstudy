@@ -163,11 +163,11 @@ Let $X$ be the quotient space of $S^2$ obtained by identifying the north and sou
 
 Proof
 
-It is easy to see $X$ is homotopic to the space $Y$ consisting of a sphere and a diameter connecting the north pole and the south pole, since we have a deformation retract on the diameter into a point. $Y$ is homotopic to $S^1 \vee S^2$ by Example 1.23 in Hatcher. Hence
+The space $X$ is obtained from $S^2$ by identifying two points, which is homotopy equivalent to attaching a 1-cell between these two points. The resulting space deformation retracts to $S^2 \vee S^1$. Hence
 
-$\pi_1(X) \cong \pi_1(Y) \cong \pi_1\left(S^1 \vee S^2\right)=\mathbb{Z}$
+$\pi_1(X) \cong \pi_1(S^1 \vee S^2) = \mathbb{Z}$
 
-by van Kampen's theroem.
+by the Seifert-van Kampen theorem.
 
 ## Exercise 9
 In the surface $M_g$ of genus $g$, let $C$ be a circle that separates $M_g$ into two compact subsurfaces $M_h'$ and $M_k'$ obtained from the closed surfaces $M_h$ and $M_k$ by deleting an open disk from each. Show that $M_h'$ does not retract onto its boundary circle $C$, and hence $M_g$ does not retract onto $C$. [Hint: abelianize $\pi_1$.] But show that $M_g$ does retract onto the nonseparating circle $C'$ in the figure.
