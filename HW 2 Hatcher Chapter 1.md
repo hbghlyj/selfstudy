@@ -174,7 +174,7 @@ In the surface $M_g$ of genus $g$, let $C$ be a circle that separates $M_g$ into
 
 Proof
 
-1. First we prove that $M_h'$ does not retract onto its boundary circle $C$. By the argument in Chapter 0 , the CW complex of $M_h$ consists of 11-cells, $2 g$ 1-cells and a 2-cell. $M_h'$ is homeomorphic to cutting a hole inside the 2 -cell. Hence $M_h'$ is homotopic to $S^1 \vee \cdots \vee S^1$ of $2 g$ copies. Thus $M_h'=\left\langle a_1\right\rangle * \cdots *\left\langle a_{2 g}\right\rangle$.
+1. First we prove that $M_h'$ does not retract onto its boundary circle $C$. By the argument in Chapter 0, the CW complex of $M_h$ consists of one 0-cell, $2h$ 1-cells and a 2-cell. $M_h'$ is homeomorphic to cutting a hole inside the 2-cell, making it homotopy equivalent to a wedge of $2h$ circles. Thus, its fundamental group is $\pi_1(M_h') \cong \langle a_1, \dots, a_{2h} \rangle$.
 
     Then we suppose we have an retraction $r: M_h' \to C$, then $r$ induces an injection $`i_*: \pi_1(C) \to \pi_1(M_h')`$, where $i$ is the inclusion $C \hookrightarrow M_h'$. Thus we have an injection of abelianization $`(i_*)': \pi_1(C) / \pi_1(C)' \to \pi_1\left(M_h'\right) / \pi_1(M_h')'`$. But $\pi_1(C)=\mathbb{Z}$ hence its abelianization is itself. But the loop $C$ maps to $a_1 a_2 a_1^{-1} a_2^{-1} \cdots a_{2 g-1} a_{2 g} a_{2 g-1}^{-1} a_{2 g}^{-1}$, whose image in $\pi_1(M_h')$ happens to be a commutator. Hence $(i_*)'$ cannot be an injection, a contradiction.
 
