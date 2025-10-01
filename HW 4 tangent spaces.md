@@ -25,7 +25,7 @@ $`f(x) = f(p) + \sum_{i=1}^n \frac{\partial f}{\partial x^i}(p) (x^i-p^i) + R(x)
 
 The function $R(x)$ can be written as a sum of products of functions that vanish at $p$. When the derivation $w$ is applied at $p$, the Leibniz property causes these terms to evaluate to zero. For example, for a term $g(x)h(x)$ where $g(p)=h(p)=0$, we have $w(gh)|_p = w(g)|_p h(p) + g(p) w(h)|_p = 0$.
 
-Since $w$ is a derivation, we have $w(f(p))=0,w(\frac{\partial f}{\partial x^i}(p)(x^i-p^i))=\frac{\partial f}{\partial x^i}(p)w(x^i),w(R(x))=0$, so:
+Since $w$ is a derivation, $w(f(p))=0$ and, as argued above, $w(R(x))=0$. Applying $w$ to the linear term gives $w(\frac{\partial f}{\partial x^i}(p)(x^i-p^i))=\frac{\partial f}{\partial x^i}(p)w(x^i)$. So:
 
 $`w(f) = \sum_{i=1}^n w(x^i) \frac{\partial f}{\partial x^i}(p) = \sum_{i=1}^n v^i \frac{\partial f}{\partial x^i}(p) = D_{\vec{v}}|_p(f).`$
 
