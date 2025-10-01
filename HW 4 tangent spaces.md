@@ -41,7 +41,13 @@ Proof
 
 Let $v \in V$. Define a map $\phi: V \to T_p V$ by its action on an arbitrary smooth function $f: V \to \mathbb{R}$ as $`\phi(v)(f) = \left.\frac{d}{d t}\right|_{t=0} f(p+t v)`$. We will show that this map is a linear isomorphism.
 
-To show that $\phi$ is linear, let $v_1, v_2 \in V$ and $a, b \in \mathbb{R}$. For any smooth function $f: V \to \mathbb{R}$, we show linearity using the chain rule. Let $g(t) = f(p + t(av_1+bv_2))$. Then $\phi(av_1+bv_2)(f) = g'(0)$. By the chain rule, $g'(t) = df_{p+t(av_1+bv_2)}(av_1+bv_2)$. Evaluating at $t=0$ gives $df_p(av_1+bv_2)$. Since $df_p$ is linear, this is $a \, df_p(v_1) + b \, df_p(v_2)$. By definition, $df_p(v) = \phi(v)(f)$, so we get $a \, \phi(v_1)(f) + b \, \phi(v_2)(f)$.
+To show that $\phi$ is linear, let $v_1, v_2 \in V$ and $a, b \in \mathbb{R}$. For any smooth function $f: V \to \mathbb{R}$, we show linearity by applying the chain rule to the definition of $\phi$:
+
+$`\phi(a v_1 + b v_2)(f) = \left.\frac{d}{d t}\right|_{t=0} f(p+t(a v_1 + b v_2)) = df_p(a v_1 + b v_2).`$
+
+Then, by the linearity of the differential $df_p$:
+
+$`df_p(a v_1 + b v_2) = a \, df_p(v_1) + b \, df_p(v_2) = a \, \phi(v_1)(f) + b \, \phi(v_2)(f).`$
 
 Since this holds for all $f$, $\phi(a v_1 + b v_2) = a \phi(v_1) + b \phi(v_2)$, and $\phi$ is linear.
 
