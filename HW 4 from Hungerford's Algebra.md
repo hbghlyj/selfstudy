@@ -1,6 +1,6 @@
 # Section II.2
 ## Problem 1
-## Problem 7($G(p)$ is defined in Lemma II.2.5)
+## Problem 7 ($G(p)$ is defined in Lemma II.2.5)
 ## Problem 9
 
 # Section II.4
