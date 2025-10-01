@@ -1,5 +1,5 @@
 # 1
-Show that the map $`\mathbb{R}_p^n \to T_p \mathbb{R}^n`$ given by $\left.\vec{v} \mapsto D_{\vec{v}}\right|_p$ is surjective. i.e that every derivation comes from a directional derivative. (Hint: To find $\vec{v}$ apply $w \in T_p \mathbb{R}^n$ to the coordinate functions. Then for any smooth function $f$ use Taylor's theorem on $f$ and the Leibniz property.)
+Show that the map $`\mathbb{R}_p^n \to T_p \mathbb{R}^n`$ given by $\vec{v} \mapsto D_{\vec{v}}\bigr|_p$ is surjective. i.e that every derivation comes from a directional derivative. (Hint: To find $\vec{v}$ apply $w \in T_p \mathbb{R}^n$ to the coordinate functions. Then for any smooth function $f$ use Taylor's theorem on $f$ and the Leibniz property.)
 
 Proof
 
