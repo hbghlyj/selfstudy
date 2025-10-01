@@ -104,7 +104,7 @@ If $F$ is a diffeomorphism, then it has a smooth inverse $F^{-1}: N \to M$. We n
 To show that $d F_p$ is an isomorphism, we need to verify that it is both injective and surjective.
 
 Injectivity: Suppose $d F_p(v) = 0$ for some $v \in T_p M$. This means that for any smooth function $f: N \to \mathbb{R}$, we have:
-
+Since $F$ is a diffeomorphism, for any smooth function $g: M \to \mathbb{R}$, we can define a smooth function $f = g \circ F^{-1}: N \to \mathbb{R}$. With this choice, $f \circ F = g$. This means that as $f$ ranges over all smooth functions on $N$, the composition $f \circ F$ ranges over all smooth functions on $M$. The condition $v(f \circ F) = 0$ for all smooth $f$ on $N$ is therefore equivalent to $v(g) = 0$ for all smooth $g$ on $M$. This implies that $v$ is the zero derivation, so $v = 0$. Thus, $d F_p$ is injective.
 $`d F_p(v)(f) = v(f \circ F) = 0.`$
 
 Since $F$ is a diffeomorphism, $f \circ F$ can represent any smooth function on $M$. Therefore, $v$ must be the zero derivation, which implies that $v = 0$. Thus, $d F_p$ is injective.
