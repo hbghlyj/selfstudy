@@ -126,11 +126,17 @@ Let $i: U \to M$ be the inclusion map. Since $i$ is a smooth embedding, the diff
 
 Since $U$ is an open subset of $M$, there exists a chart $(V, \phi)$ of $M$ such that $p \in V$ and $V \cap U$ is non-empty. The restriction of $\phi$ to $V \cap U$ gives a chart $(V \cap U, \phi|_{V \cap U})$ for $U$.
 
-Now, consider the vector $v \in T_p M$. By the definition of the tangent space, there exists a curve $\gamma: (-\epsilon, \epsilon) \to M$ such that $\gamma(0) = p$ and $\gamma'(0) = v$. Since $U$ is open in $M$, we can choose $\epsilon$ small enough so that $\gamma(t) \in U$ for all $t$ in some interval around 0. Thus, we can define a curve $\tilde{\gamma}: (-\epsilon, \epsilon) \to U$ by restricting $\gamma$ to this interval.
+Now, let $f: M \to \mathbb{R}$ be a smooth function. The restriction of $f$ to $U$, denoted by $f|_U: U \to \mathbb{R}$, is also a smooth function. We can define a derivation $u: C^\infty(U) \to \mathbb{R}$ by setting:
 
-The tangent vector $u = \tilde{\gamma}'(0)$ is then an element of $T_p U$. By construction, we have $di_p(u) = v$. Therefore, $di_p$ is surjective.
+$`u(g) = v(g \circ i)`$
 
-Since $di_p$ is both injective and surjective, it is an isomorphism. Hence, we have shown that $T_p M$ is isomorphic to $T_p U$.
+for any smooth function $g: U \to \mathbb{R}$. It can be verified that $u$ is indeed a derivation at $p$. Then, we have:
+
+$`di_p(u)(f) = u(f|_U) = v((f|_U) \circ i) = v(f).`$
+
+Thus, $di_p(u) = v$, and $di_p$ is surjective.
+
+Since $di_p$ is both injective and surjective, it is an isomorphism. Therefore, we have established an isomorphism between $T_p M$ and $T_p U$.
 
 # 4
 Show that for a vector space $V$ (with its canonical smooth structure) and any point $p \in V$, the tangent space $T_p V$ is canonically isomorphic to $V$.
