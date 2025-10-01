@@ -21,13 +21,11 @@ $`D_{\vec{v}}|_p(f) = \sum_{i=1}^n \frac{\partial f}{\partial x^i}(p) \frac{d(p^
 
 On the other hand, by Taylor's theorem, we can write:
 
-$`f(x) = f(p) + \sum_{i=1}^n \frac{\partial f}{\partial x^i}(p) (x^i-p^i) + O(\|x-p\|^2).`$
+$`f(x) = f(p) + \sum_{i=1}^n \frac{\partial f}{\partial x^i}(p) (x^i-p^i) + R(x).`$
 
-Putting the last term into each factor,
+The function $R(x)$ can be written as a sum of products of functions that vanish at $p$. When the derivation $w$ is applied at $p$, the Leibniz property causes these terms to evaluate to zero. For example, for a term $g(x)h(x)$ where $g(p)=h(p)=0$, we have $w(gh)|_p = w(g)|_p h(p) + g(p) w(h)|_p = 0$.
 
-$`f(x) = f(p) + \sum_{i=1}^n \frac{\partial f}{\partial x^i}(p) ((x^i-p^i) + O((x^i-p^i)^2)).`$
-
-Since $w$ is a derivation, we have $w(f(p))=0,w(x^i-p^i)=w(x^i)$, by the Leibniz property $w(O(x^i-p^i)^2)=2w(O(x^i-p^i))O(x^i-p^i)|_{x=p}=0$, so:
+Since $w$ is a derivation, we have $w(f(p))=0,w(\frac{\partial f}{\partial x^i}(p)(x^i-p^i))=\frac{\partial f}{\partial x^i}(p)w(x^i),w(R(x))=0$, so:
 
 $`w(f) = \sum_{i=1}^n w(x^i) \frac{\partial f}{\partial x^i}(p) = \sum_{i=1}^n v^i \frac{\partial f}{\partial x^i}(p) = D_{\vec{v}}|_p(f).`$
 
