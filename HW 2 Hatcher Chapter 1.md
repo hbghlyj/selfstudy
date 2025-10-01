@@ -185,7 +185,7 @@ The mapping torus $T_f$ of a map $f: X \to X$ is the quotient of $X \times I$ ob
 
 Proof
 
-First, consider $X=S^1 \vee S^1$. Denote the two circles by $a$ and $b$. Note that $T_f$ has a CW structure with one 0-cell $x_0$, three 1-cells $a, b, c$ attached to $x_0$ ($a,b$ are the two $S^1$ in $X$ and $c$ is the image of the cylinder $`\{x_0\}\times I`$), and two 2-cells (the images of the cylinders $a \times I$ and $b \times I$). The boundaries of these 2-cells are attached along the loops $`a c f_*(a)^{-1} c^{-1}`$ and $`b c f_*(b)^{-1} c^{-1}`$ respectively. Thus, we have the following presentation for $\pi_1(T_f)$:
+First, consider $X=S^1 \vee S^1$. Denote the two circles by $a$ and $b$. Note that $T_f$ has a CW structure with one 0-cell $x_0$, three 1-cells $a, b, c$ attached to $x_0$ ($a,b$ are the two $S^1$ in $X$ and $c$ is the image of the path $`{x_0}\times I`$), and two 2-cells (the images of the cylinders $a \times I$ and $b \times I$). The boundaries of these 2-cells are attached along the loops $`a c f_*(a)^{-1} c^{-1}`$ and $`b c f_*(b)^{-1} c^{-1}`$ respectively. Thus, we have the following presentation for $\pi_1(T_f)$:
 
 $`\pi_1\left(T_f\right)=\left\langle a, b, c \mid a c f_*(a)^{-1} c^{-1}, b c f_*(b)^{-1} c^{-1}\right\rangle`$
 
