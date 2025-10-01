@@ -19,7 +19,15 @@ By definition, the directional derivative is $`D_{\vec{v}}|_p(f) = \left.\frac{d
 
 $`D_{\vec{v}}|_p(f) = \sum_{i=1}^n \frac{\partial f}{\partial x^i}(p) \frac{d(p^i+tv^i)}{dt}\bigr|_{t=0} = \sum_{i=1}^n v^i \frac{\partial f}{\partial x^i}(p).`$
 
-On the other hand, since $w$ is a derivation, we have:
+On the other hand, by Taylor's theorem, we can write:
+
+$`f(x) = f(p) + \sum_{i=1}^n \frac{\partial f}{\partial x^i}(p) (x^i-p^i) + O(\|x-p\|^2).`$
+
+Putting the last term into each factor,
+
+$`f(x) = f(p) + \sum_{i=1}^n \frac{\partial f}{\partial x^i}(p) ((x^i-p^i) + O((x^i-p^i)^2)).`$
+
+Since $w$ is a derivation, we have $w(f(p))=0,w(x^i-p^i)=w(x^i)$, by the Leibniz property $w(O(x^i-p^i)^2)=2w(O(x^i-p^i))O(x^i-p^i)|_{x=p}=0$, so:
 
 $`w(f) = \sum_{i=1}^n w(x^i) \frac{\partial f}{\partial x^i}(p) = \sum_{i=1}^n v^i \frac{\partial f}{\partial x^i}(p) = D_{\vec{v}}|_p(f).`$
 
