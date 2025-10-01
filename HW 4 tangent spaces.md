@@ -110,23 +110,28 @@ $`d F_p(v)(f) = v(f \circ F) = 0.`$
 Since $F$ is a diffeomorphism, $f \circ F$ can represent any smooth function on $M$. Therefore, $v$ must be the zero derivation, which implies that $v = 0$. Thus, $d F_p$ is injective.
 
 Surjectivity: Let $w \in T_{F(p)} N$ be an arbitrary derivation at the point $F(p)$. We need to show that there exists a vector $v \in T_p M$ such that $d F_p(v) = w$. Since $F$ is a diffeomorphism, we can define $v$ by:
+
 for any smooth function $f: M \to \mathbb{R}$. It can be verified that $v$ is indeed a derivation at $p$. Then, for any smooth function $g: N \to \mathbb{R}$, we have:
 
 $`d F_p(v)(g) = v(g \circ F) = w((g \circ F) \circ F^{-1}) = w(g).`$
 
 Thus, $d F_p(v) = w$, and $d F_p$ is surjective.
+
 $`d F_p(v)(f) = v(f \circ F) = w((f \circ F) \circ F^{-1}) = w(f).`$
 
 Thus, $d F_p(v) = w$, and $d F_p$ is surjective.
+
 To show that $(d F_p)^{-1} = d(F^{-1})_{F(p)}$, we can apply the chain rule from part (b).
 
 Consider the identity $F^{-1} \circ F = \text{Id}_M$. Applying the differential at point $p$ to both sides gives:
+
 $`d(F^{-1} \circ F)_p = d(\text{Id}_M)_p`$
 
 Using the chain rule on the left side and the result from part (c) on the right side, we get:
+
 $`d(F^{-1})_{F(p)} \circ d F_p = \text{Id}_{T_p M}`$
 
-This equation shows that the linear map $d(F^{-1})_{F(p)}$ is a left inverse to the linear map $d F_p$. Since $d F_p$ is an isomorphism between finite-dimensional vector spaces (as shown earlier), it is an invertible linear map. For an invertible linear map, its left inverse is unique and is equal to its inverse. Therefore, we conclude that $(d F_p)^{-1} = d(F^{-1})_{F(p)}.
+This equation shows that the linear map $`d(F^{-1})_{F(p)}`$ is a left inverse to the linear map $`d F_p`$. Since $`d F_p`$ is an isomorphism between finite-dimensional vector spaces (as shown earlier), it is an invertible linear map. For an invertible linear map, its left inverse is unique and is equal to its inverse. Therefore, we conclude that $`(d F_p)^{-1} = d(F^{-1})_{F(p)}`$.
 $`(d F_p)^{-1}(w)(f) = v(f) = w(f \circ F^{-1}).`$
 
 Since both sides are equal for all smooth functions $f$, we conclude that $(d F_p)^{-1} = d(F^{-1})_{F(p)}$.
