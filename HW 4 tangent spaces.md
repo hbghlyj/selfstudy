@@ -46,7 +46,7 @@ Prove Proposition 3.6 from Lee (Properties of Differentials). Let $M, N$, and $P
 <li>
   If $F$ is a diffeomorphism, then $d F_p: T_p M \to T_{F(p)} N$ is an isomorphism, and
   
-  $(d F_p)^{-1}=d(F^{-1})_{F(p)}$
+  $`(d F_p)^{-1}=d(F^{-1})_{F(p)}`$
 </li>
 </ol>
 
@@ -54,6 +54,7 @@ Proof
 
 <ol type="a">
 <li>
+
 To show that $d F_p: T_p M \to T_{F(p)} N$ is linear, we need to verify that for any $v_1, v_2 \in T_p M$ and any scalars $a, b \in \mathbb{R}$, the following holds:
 
 $`d F_p(a v_1 + b v_2) = a d F_p(v_1) + b d F_p(v_2).`$
@@ -85,7 +86,8 @@ $`d G_{F(p)}(d F_p(v))(h) = d F_p(v)(h \circ G) = v((h \circ G) \circ F) = v(h \
 Since both sides are equal for all smooth functions $h$, we conclude that $d(G \circ F)_p = d G_{F(p)} \circ d F_p$.
 </li>
 <li>
-To show that $d(\text{Id}_M)_p = \text{Id}_{T_p M}$, we need to verify that for any $v \in T_p M$, the following holds:
+
+To show that $`d(\text{Id}_M)_p = \text{Id}_{T_p M}`$, we need to verify that for any $v \in T_p M$, the following holds:
 
 $`d(\text{Id}_M)_p(v) = v.`$
 
@@ -96,6 +98,7 @@ $`d(\text{Id}_M)_p(v)(f) = v(f \circ \text{Id}_M) = v(f)`$
 for any smooth function $f: M \to \mathbb{R}$. Since this holds for all smooth functions $f$, we conclude that $d(\text{Id}_M)_p = \text{Id}_{T_p M}$.
 </li>
 <li>
+
 If $F$ is a diffeomorphism, then it has a smooth inverse $F^{-1}: N \to M$. We need to show that $d F_p: T_p M \to T_{F(p)} N$ is an isomorphism and that $`(d F_p)^{-1} = d(F^{-1})_{F(p)}`$.
 
 To show that $d F_p$ is an isomorphism, we need to verify that it is both injective and surjective.
