@@ -99,7 +99,9 @@ for any smooth function $f: M \to \mathbb{R}$. Since this holds for all smooth f
 </li>
 <li>
 
-If $F$ is a diffeomorphism, then it has a smooth inverse $F^{-1}: N \to M$. We need to show that $d F_p: T_p M \to T_{F(p)} N$ is an isomorphism, it suffices to show that $`(d F_p)^{-1} = d(F^{-1})_{F(p)}`$.
+If $F$ is a diffeomorphism, then it has a smooth inverse $F^{-1}: N \to M$.
+
+To show that $d F_p: T_p M \to T_{F(p)} N$ is an isomorphism, it suffices to show that $`(d F_p)^{-1} = d(F^{-1})_{F(p)}`$.
 
 To show that $(d F_p)^{-1} = d(F^{-1})_{F(p)}$, we can apply the chain rule from part (b).
 
