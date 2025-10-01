@@ -182,7 +182,17 @@ To see $M_g$ retracts on to $C'$, we use the planar presentation of $M_g$, gener
 into a point gives the retract to the circle represented by $a$, and the composition is the desired retraction. $\square$
 
 ## Exercise 11
-The mapping torus $T_f$ of a map $f: X \to X$ is the quotient of $X \times I$ obtained by identifying each point ( $x, 0$ ) with ( $f(x), 1$ ). In the case $X=S^1 \vee S^1$ with $f$ basepoint-preserving, compute a presentation for $\pi_1(T_f)$ in terms of the induced map $f_*: \pi_1(X) \to \pi_1(X)$. Do the same when $X=S^1 \times S^1$. [One way to do this is to regard $T_f$ as built from $X \vee S^1$ by attaching cells.]
+The mapping torus $T_f$ of a map $f: X \to X$ is the quotient of $X \times I$ obtained by identifying each point $(x, 0)$ with $(f(x), 1)$. In the case $X=S^1 \vee S^1$ with $f$ basepoint-preserving, compute a presentation for $\pi_1(T_f)$ in terms of the induced map $f_*: \pi_1(X) \to \pi_1(X)$. Do the same when $X=S^1 \times S^1$. [One way to do this is to regard $T_f$ as built from $X \vee S^1$ by attaching cells.]
+
+Proof
+
+First, consider $X=S^1 \vee S^1$. Denote the two circles by $a$ and $b$. Note that $T_f$ has a CW structure with one 0-cell $x_0$, three 1-cells $a, b, c$ attached to $x_0$, and two 2-cells. The boundaries of these 2-cells are attached along the loops $`a c f_*(a)^{-1} c^{-1}`$ and $`b c f_*(b)^{-1} c^{-1}`$ respectively. Thus, we have the following presentation for $\pi_1(T_f)$:
+
+$`\pi_1\left(T_f\right)=\left\langle a, b, c \mid a c f_*(a)^{-1} c^{-1}, b c f_*(b)^{-1} c^{-1}\right\rangle`$
+
+For $X=S^1 \times S^1$, again let $a$ and $b$ denote the circles in the 1-skeleton of $X$. $T_f$ now has the CW structure with the 2 -skeleton as above, plus one more 2 -cell corresponding to the torus (thus is attached along $a b a^{-1} b^{-1}$), and one more 3-cell. Since attaching a 3-cell doesn't change $\pi_1$ by Proposition 1.26, we only care about the 2 -skeleton of $T_f$ in computing $\pi_1$. Similar to above, we obtain the following presentation of $\pi_1(T_f)$:
+
+$`\pi_1\left(T_f\right)=\left\langle a, b, c \mid a c f_*(a)^{-1} c^{-1}, b c f_*(b)^{-1} c^{-1},[a, b]\right\rangle`$
 
 ## Exercise 16
 Show that the fundamental group of the surface of infinite genus shown below is free on an infinite number of generators.
