@@ -113,11 +113,7 @@ Using the chain rule on the left side and the result from part (c) on the right 
 
 $`d(F^{-1})_{F(p)} \circ d F_p = \text{Id}_{T_p M}`$
 
-This equation shows that the linear map $`d(F^{-1})_{F(p)}`$ is a left inverse to the linear map $`d F_p`$. Since $`d F_p`$ is an isomorphism between finite-dimensional vector spaces (as shown earlier), it is an invertible linear map. For an invertible linear map, its left inverse is unique and is equal to its inverse. Therefore, we conclude that $`(d F_p)^{-1} = d(F^{-1})_{F(p)}`$.
-
-$`(d F_p)^{-1}(w)(f) = v(f) = w(f \circ F^{-1}).`$
-
-Since both sides are equal for all smooth functions $f$, we conclude that $(d F_p)^{-1} = d(F^{-1})_{F(p)}$.
+Similarly $`d F_p\circ d(F^{-1})_{F(p)}= \text{Id}_{T_{F(p)} N}`$, we conclude that $(d F_p)^{-1} = d(F^{-1})_{F(p)}$.
 </li>
 </ol>
 
