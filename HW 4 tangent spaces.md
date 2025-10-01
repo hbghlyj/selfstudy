@@ -81,27 +81,31 @@ The determinant of this Jacobian is $1 \cdot 1 - 0 \cdot 3x^2 = 1$, which is non
 Next, we need to show that $\left.\frac{\partial}{\partial x}\right|_p \neq \left.\frac{\partial}{\partial \tilde{x}}\right|_p$ at the point $p = (1, 0)$.
 To do this, we will compute the action of both vector fields on a smooth function $f: \mathbb{R}^2 \to \mathbb{R}$.
 Let $f(x, y)$ be a smooth function. Then,
-$$
-\left.\frac{\partial}{\partial x}\right|_p f = \left.\frac{\partial f}{\partial x}\right|_{(1, 0)}
-$$
+
+$`\left.\frac{\partial}{\partial x}\right|_p f = \left.\frac{\partial f}{\partial x}\right|_{(1, 0)}`$
+
 To compute $\left.\frac{\partial}{\partial \tilde{x}}\right|_p f$, we use the chain rule:
-$$
-\left.\frac{\partial}{\partial \tilde{x}}\right|_p f = \left.\frac{\partial f}{\partial x}\right|_{(1, 0)} \cdot \left.\frac{\partial x}{\partial \tilde{x}}\right|_p + \left.\frac{\partial f}{\partial y}\right|_{(1, 0)} \cdot \left.\frac{\partial y}{\partial \tilde{x}}\right|_p
-$$
+
+$`\left.\frac{\partial}{\partial \tilde{x}}\right|_p f = \left.\frac{\partial f}{\partial x}\right|_{(1, 0)} \cdot \left.\frac{\partial x}{\partial \tilde{x}}\right|_p + \left.\frac{\partial f}{\partial y}\right|_{(1, 0)} \cdot \left.\frac{\partial y}{\partial \tilde{x}}\right|_p`$
+
 To find the partial derivatives of the original coordinates with respect to the new ones, we use the inverse map $\Phi^{-1}(\tilde{x}, \tilde{y}) = (x, y) = (\tilde{x}, \tilde{y} - \tilde{x}^3)$.
-$$ 
-\frac{\partial x}{\partial \tilde{x}} = 1, \quad \frac{\partial y}{\partial \tilde{x}} = -3\tilde{x}^2
-$$ 
+
+$`\frac{\partial x}{\partial \tilde{x}} = 1, \quad \frac{\partial y}{\partial \tilde{x}} = -3\tilde{x}^2`$ 
+
 Since $x=\tilde{x}$, we have $\frac{\partial y}{\partial \tilde{x}} = -3x^2$.
+
 At the point $p = (1, 0)$, we have $\frac{\partial y}{\partial \tilde{x}} = -3(1)^2 = -3$.
+
 Thus,
-$$
-\left.\frac{\partial}{\partial \tilde{x}}\right|_p f = \left.\frac{\partial f}{\partial x}\right|_{(1, 0)} \cdot 1 + \left.\frac{\partial f}{\partial y}\right|_{(1, 0)} \cdot (-3) = \left.\frac{\partial f}{\partial x}\right|_{(1, 0)} - 3 \left.\frac{\partial f}{\partial y}\right|_{(1, 0)}
-$$
+
+$`\left.\frac{\partial}{\partial \tilde{x}}\right|_p f = \left.\frac{\partial f}{\partial x}\right|_{(1, 0)} \cdot 1 + \left.\frac{\partial f}{\partial y}\right|_{(1, 0)} \cdot (-3) = \left.\frac{\partial f}{\partial x}\right|_{(1, 0)} - 3 \left.\frac{\partial f}{\partial y}\right|_{(1, 0)}`$
+
 Now, we can see that:
-$$\left.\frac{\partial}{\partial x}\right|_p f = \left.\frac{\partial f}{\partial x}\right|_{(1, 0)}$$
-$$\left.\frac{\partial}{\partial \tilde{x}}\right|_p f = \left.\frac{\partial f}{\partial x}\right|_{(1, 0)} - 3 \left.\frac{\partial f}{\partial y}\right|_{(1, 0)}
-$$
+
+$`\left.\frac{\partial}{\partial x}\right|_p f = \left.\frac{\partial f}{\partial x}\right|_{(1, 0)}`$
+
+$`\left.\frac{\partial}{\partial \tilde{x}}\right|_p f = \left.\frac{\partial f}{\partial x}\right|_{(1, 0)} - 3 \left.\frac{\partial f}{\partial y}\right|_{(1, 0)}`$
+
 For the operators to be equal, their actions on any smooth function $f$ must be identical. However, we can see the expressions differ if $\left.\frac{\partial f}{\partial y}\right|_{(1, 0)} \neq 0$. For a concrete example, let $f(x,y)=y$. Then $\left.\frac{\partial}{\partial x}\right|_p f = 0$, while $\left.\frac{\partial}{\partial \tilde{x}}\right|_p f = -3$. Since the results differ, we conclude that
-$$\left.\frac{\partial}{\partial x}\right|_p \neq \left.\frac{\partial}{\partial \tilde{x}}\right|_p
-$$
+
+$`\left.\frac{\partial}{\partial x}\right|_p \neq \left.\frac{\partial}{\partial \tilde{x}}\right|_p`$
