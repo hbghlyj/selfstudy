@@ -50,6 +50,90 @@ Prove Proposition 3.6 from Lee (Properties of Differentials). Let $M, N$, and $P
 </li>
 </ol>
 
+Proof
+
+<ol type="a">
+<li>
+To show that $d F_p: T_p M \to T_{F(p)} N$ is linear, we need to verify that for any $v_1, v_2 \in T_p M$ and any scalars $a, b \in \mathbb{R}$, the following holds:
+
+$`d F_p(a v_1 + b v_2) = a d F_p(v_1) + b d F_p(v_2).`$
+
+By the definition of the differential, we have:
+
+$`d F_p(v)(f) = v(f \circ F)`$
+
+for any smooth function $f: N \to \mathbb{R}$. Therefore,
+
+$`d F_p(a v_1 + b v_2)(f) = (a v_1 + b v_2)(f \circ F) = a v_1(f \circ F) + b v_2(f \circ F) = a d F_p(v_1)(f) + b d F_p(v_2)(f).`$
+
+Since this holds for all smooth functions $f$, we conclude that $d F_p$ is linear.
+</li>
+<li>
+
+To prove that $d(G \circ F)_p = d G_{F(p)} \circ d F_p$, we need to show that for any $v \in T_p M$, the following holds:
+
+$`d(G \circ F)_p(v) = d G_{F(p)}(d F_p(v)).`$
+
+By the definition of the differential, we have:
+
+$`d(G \circ F)_p(v)(h) = v(h \circ (G \circ F))`$
+
+for any smooth function $h: P \to \mathbb{R}$. On the other hand, we have:
+
+$`d G_{F(p)}(d F_p(v))(h) = d F_p(v)(h \circ G) = v((h \circ G) \circ F) = v(h \circ (G \circ F)).`$
+
+Since both sides are equal for all smooth functions $h$, we conclude that $d(G \circ F)_p = d G_{F(p)} \circ d F_p$.
+</li>
+<li>
+To show that $d(\text{Id}_M)_p = \text{Id}_{T_p M}$, we need to verify that for any $v \in T_p M$, the following holds:
+
+$`d(\text{Id}_M)_p(v) = v.`$
+
+By the definition of the differential, we have:
+
+$`d(\text{Id}_M)_p(v)(f) = v(f \circ \text{Id}_M) = v(f)`$
+
+for any smooth function $f: M \to \mathbb{R}$. Since this holds for all smooth functions $f$, we conclude that $d(\text{Id}_M)_p = \text{Id}_{T_p M}$.
+</li>
+<li>
+If $F$ is a diffeomorphism, then it has a smooth inverse $F^{-1}: N \to M$. We need to show that $d F_p: T_p M \to T_{F(p)} N$ is an isomorphism and that $(d F_p)^{-1} = d(F^{-1})_{F(p)}$.
+
+To show that $d F_p$ is an isomorphism, we need to verify that it is both injective and surjective.
+
+Injectivity: Suppose $d F_p(v) = 0$ for some $v \in T_p M$. This means that for any smooth function $f: N \to \mathbb{R}$, we have:
+
+$`d F_p(v)(f) = v(f \circ F) = 0.`$
+
+Since $F$ is a diffeomorphism, $f \circ F$ can represent any smooth function on $M$. Therefore, $v$ must be the zero derivation, which implies that $v = 0$. Thus, $d F_p$ is injective.
+
+Surjectivity: Let $w \in T_{F(p)} N$ be an arbitrary derivation at the point $F(p)$. We need to show that there exists a vector $v \in T_p M$ such that $d F_p(v) = w$. Since $F$ is a diffeomorphism, we can define $v$ by:
+
+$`v(f) = w(f \circ F^{-1})`$
+
+for any smooth function $f: M \to \mathbb{R}$. It can be verified that $v$ is indeed a derivation at $p$. Then, we have:
+
+$`d F_p(v)(f) = v(f \circ F) = w((f \circ F) \circ F^{-1}) = w(f).`$
+
+Thus, $d F_p(v) = w$, and $d F_p$ is surjective.
+
+Since $d F_p$ is both injective and surjective, it is an isomorphism.
+
+To show that $(d F_p)^{-1} = d(F^{-1})_{F(p)}$, we need to verify that for any $w \in T_{F(p)} N$, we have:
+
+$`(d F_p)^{-1}(w) = d(F^{-1})_{F(p)}(w).`$
+
+By the definition of the differential, we have:
+
+$`d(F^{-1})_{F(p)}(w)(f) = w(f \circ F^{-1})`$
+
+for any smooth function $f: M \to \mathbb{R}$. On the other hand, we have:
+
+$`(d F_p)^{-1}(w)(f) = v(f) = w(f \circ F^{-1}).`$
+
+Since both sides are equal for all smooth functions $f$, we conclude that $(d F_p)^{-1} = d(F^{-1})_{F(p)}$.
+</li>
+</ol>
+
 # 3
 Note that if $M$ is a smooth manifold and $U$ is an open subset then $U$ is also a smooth manifold with smooth structure from $M$ (i.e. charts on U are given by intersecting $U$ with charts on $M$). We say $U$ is an open submanifold of $M$. Show that for $p \in U$ there is an isomorphism $T_p M$ to $T_p U$.
 
