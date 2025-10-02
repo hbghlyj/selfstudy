@@ -1,13 +1,44 @@
 # Section II.2
 ## Problem 1
+Show that a finite abelian group that is not cyclic contains a subgroup which is isomorphic to $\mathbb{Z}_p \oplus\mathbb{Z}_p$ for some prime $p$.
+
+
 ## Problem 7 ($G(p)$ is defined in Lemma II.2.5)
+A (sub)group in which every element has order a power of a fixed prime $p$ is called a $p$-(sub)group (note: $|0|=1=p^0$). Let $G$ be an abelian torsion group.
+<ol>
+<li>
+
+$G(p)$ is the unique maximum $p$-subgroup of $G$ (that is, every $p$-subgroup of $G$ is contained in $G(p)$).
+</li>
+<li>
+
+$G=\sum G(p)$, where the sum is over all primes $p$ such that $G(p) \neq 0$.
+  
+Hint: If $|u|=p_1^{n_1} \cdots p_t^{n_t}$, let $m_i=|u| / p_i^{n_i}$. There exist $c_i \varepsilon$ Z such that $c_1 m_1+\cdots +c_t m_t=1$, whence $u=c_1 m_1 u+\cdots+c_t m_t u$; but $c_i m_i u \varepsilon G(p_i)$.
+</li>
+<li>
+
+If $H$ is another abelian torsion group, then $G \cong H$ if and only if $G(p) \cong H(p)$ for all primes $p$.
+</li>
+</ol>
+
+
+
 ## Problem 9
+How many subgroups of order $p^2$ does the abelian group $`\mathbb{Z}_{p^3} \oplus \mathbb{Z}_{p^2}`$ have?
 
 # Section II.4
 ## Problem 1
+Let $G$ be a group and $A$ a normal abelian subgroup. Show that $G / A$ operates $A$ by conjugation and obtain a homomorphism $G / A \to \mathrm{Aut} A$.
+
 ## Problem 5
+If $H$ is a subgroup of $G$, the factor group $N_G(H) / C_G(H)$ (see Exercise 4) is isomorphic to a subgroup of Aut $H$.
+
 ## Problem 7
+Let $G$ be a group and let In $G$ be the set of all inner automorphisms of $G$. Show that $\mathrm{In} G$ is a normal subgroup of Aut $G$.
+
 ## Problem 9
+If $G / C(G)$ is cyclic, then $G$ is abelian.
 
 ---
 
