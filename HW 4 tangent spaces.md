@@ -126,17 +126,27 @@ Let $i: U \to M$ be the inclusion map. Since $i$ is a smooth embedding, the diff
 
 Since $U$ is an open subset of $M$, there exists a chart $(V, \phi)$ of $M$ such that $p \in V$ and $V \cap U$ is non-empty. The restriction of $\phi$ to $V \cap U$ gives a chart $(V \cap U, \phi|_{V \cap U})$ for $U$.
 
-Now, let $f: M \to \mathbb{R}$ be a smooth function. The restriction of $f$ to $U$, denoted by $f|_U: U \to \mathbb{R}$, is also a smooth function. We can define a derivation $u: C^\infty(U) \to \mathbb{R}$ by setting:
+To show that $di_p$ is surjective, let $v \in T_p M$ be an arbitrary derivation. We must construct a derivation $u \in T_p U$ such that $di_p(u) = v$.
 
-$`u(g) = v(g \circ i)`$
+Let's define a map $u: C^\infty(U) \to \mathbb{R}$. For any smooth function $g \in C^\infty(U)$, by the Extension Lemma for Smooth Functions, there exists a smooth function $\tilde{g} \in C^\infty(M)$ that extends $g$ (i.e., $\tilde{g}|_U = g$). We define:
 
-for any smooth function $g: U \to \mathbb{R}$. It can be verified that $u$ is indeed a derivation at $p$. Then, we have:
+$u(g) := v(\tilde{g})$
 
-$`di_p(u)(f) = u(f|_U) = v((f|_U) \circ i) = v(f).`$
+This definition is well-defined. If $\tilde{g}_1$ and $\tilde{g}_2$ are two different extensions of $g$, their difference $\tilde{g}_1 - \tilde{g}_2$ is zero on the open neighborhood $U$ of $p$. Since derivations are local operators (their value on a function depends only on the germ of the function at the point), this implies $v(\tilde{g}_1 - \tilde{g}_2) = 0$, so $v(\tilde{g}_1) = v(\tilde{g}_2)$.
 
-Thus, $di_p(u) = v$, and $di_p$ is surjective.
+The map $u$ is a derivation at $p$ on $U$ because it inherits linearity and the Leibniz property from $v$. Thus, $u \in T_p U$.
 
-Since $di_p$ is both injective and surjective, it is an isomorphism. Therefore, we have established an isomorphism between $T_p M$ and $T_p U$.
+Finally, we check if $di_p(u) = v$. For any $f \in C^\infty(M)$:
+
+$`di_p(u)(f) = u(f|_U)`$
+
+By our definition of $u$, this is equal to $v(\widetilde{f|_U})$, where $\widetilde{f|_U}$ is any smooth extension of $f|_U$. We can choose $f$ itself as the extension. Therefore:
+
+$`di_p(u)(f) = v(f)`$
+
+Since this holds for all $f \in C^\infty(M)$, we have $di_p(u) = v$. Thus, $di_p$ is surjective.
+
+Since $di_p$ is both injective and surjective, it is an isomorphism. To show that this isomorphism is canonical, we note that it does not depend on the choice of chart or extension, as the construction is based solely on the properties of derivations and the inclusion map.
 
 # 4
 Show that for a vector space $V$ (with its canonical smooth structure) and any point $p \in V$, the tangent space $T_p V$ is canonically isomorphic to $V$.
