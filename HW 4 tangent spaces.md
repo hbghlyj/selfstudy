@@ -128,9 +128,9 @@ Let $i: U \to M$ be the inclusion map.
 
 To show that the differential $di_p: T_p U \to T_p M$ is injective, we note that if $u \in T_p U$ and $di_p(u) = 0$, then for any smooth function $f \in C^\infty(U)$, take a smooth extension $\tilde{f} \in C^\infty(M)$. We have:
 
-$di_p(u)(\tilde{f}) = u(\tilde{f}\circ i) = u(f) = 0$
+$u(f) = u(\tilde{f} \circ i) = (di_p(u))(\tilde{f})$. Since $di_p(u)=0$, it follows that $u(f)=0.
 
-Thus $u=0$ proving injectivity.
+Thus, as this holds for any $f \in C^\infty(U)$, $u=0$, proving injectivity.
 
 To show that $di_p$ is surjective, let $v \in T_p M$ be an arbitrary derivation. We must construct a derivation $u \in T_p U$ such that $di_p(u) = v$.
 
