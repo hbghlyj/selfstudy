@@ -122,7 +122,7 @@ Note that if $M$ is a smooth manifold and $U$ is an open subset then $U$ is also
 
 Proof
 
-Let $i: U \to M$ be the inclusion map. Since $i$ is a smooth embedding, the differential $di_p: T_p U \to T_p M$ is injective. To show that $di_p$ is also surjective, let $v \in T_p M$. We need to show that there exists a vector $u \in T_p U$ such that $di_p(u) = v$.
+Let $i: U \to M$ be the inclusion map. Since $i$ is a smooth embedding, the differential $di_p: T_p U \to T_p M$ is injective. To show that $di_p$ is also surjective, let $v \in T_p M$. We need to show that there exists $u \in T_p U$ such that $di_p(u) = v$.
 
 Since $U$ is an open subset of $M$, there exists a chart $(V, \phi)$ of $M$ such that $p \in V$ and $V \cap U$ is non-empty. The restriction of $\phi$ to $V \cap U$ gives a chart $(V \cap U, \phi|_{V \cap U})$ for $U$.
 
