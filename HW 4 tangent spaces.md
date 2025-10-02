@@ -139,7 +139,7 @@ Let $i: U \to M$ be the inclusion map.
 
   This definition is well-defined. If $\tilde{g}_1$ and $\tilde{g}_2$ are two different extensions of $g$, their difference $\tilde{g}_1 - \tilde{g}_2$ is zero on the open neighborhood $U$ of $p$. Since derivations are local operators (their value on a function depends only on the germ of the function at the point), this implies $v(\tilde{g}_1 - \tilde{g}_2) = 0$, so $v(\tilde{g}_1) = v(\tilde{g}_2)$.
 
-  The map $u$ is a derivation at $p$ on $U$ because it inherits linearity and the Leibniz property from $v$. Thus, $u \in T_p U$.
+  The map $u$ is a derivation at $p$ on $U$. It inherits linearity from $v$ because for any extensions $\tilde{g_1}, \tilde{g_2}$, $a\tilde{g_1}+b\tilde{g_2}$ is an extension of $ag_1+bg_2$. It also inherits the Leibniz property because $\tilde{g_1}\tilde{g_2}$ is an extension of $g_1g_2$. Thus, $u \in T_p U.
 
   Finally, we check if $di_p(u) = v$. For any $f \in C^\infty(M)$:
 
