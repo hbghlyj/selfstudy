@@ -34,8 +34,18 @@ Let $G$ be a group and $A$ a normal abelian subgroup. Show that $G / A$ operates
 ## Problem 5
 If $H$ is a subgroup of $G$, the factor group $N_G(H) / C_G(H)$ (see Exercise 4) is isomorphic to a subgroup of $\mathrm{Aut} H$.
 
+Proof
+
+Let $\varphi: N_G(H) \to \mathrm{Aut} H$ be defined by $\varphi(g)(h) = ghg^{-1}$ for all $g \in N_G(H)$ and $h \in H$. Since $g \in N_G(H)$, we have $ghg^{-1} \in H$, so $\varphi(g)$ is indeed an automorphism of $H$.
+
+The map $\varphi$ is a homomorphism since $\varphi(g_1g_2) =g_1g_2hg_2^{-1}g_1^{-1}= \varphi(g_1)\varphi(g_2)$. The kernel of $\varphi$ is $`\{g \in N_G(H) | ghg^{-1} = h for all h \in H\} = N_G(H) \cap C_G(H) = C_G(H)`$, since $C_G(H) \subseteq N_G(H)$. By the First Isomorphism Theorem, we have
+
+$N_G(H) / C_G(H) \cong \mathrm{Im}(\varphi),$
+
+where $\mathrm{Im}(\varphi)$ is a subgroup of $\mathrm{Aut} H$. Thus, $N_G(H) / C_G(H)$ is isomorphic to a subgroup of $\mathrm{Aut} H$.
+
 ## Problem 7
-Let $G$ be a group and let In $G$ be the set of all inner automorphisms of $G$. Show that $\mathrm{In} G$ is a normal subgroup of $\mathrm{Aut} G$.
+Let $G$ be a group and let $\mathrm{In} G$ be the set of all inner automorphisms of $G$. Show that $\mathrm{In} G$ is a normal subgroup of $\mathrm{Aut} G$.
 
 ## Problem 9
 If $G / C(G)$ is cyclic, then $G$ is abelian.
