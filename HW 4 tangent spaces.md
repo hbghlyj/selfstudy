@@ -126,17 +126,15 @@ Let $i: U \to M$ be the inclusion map. Since $i$ is a smooth embedding, the diff
 
 Since $U$ is an open subset of $M$, there exists a chart $(V, \phi)$ of $M$ such that $p \in V$ and $V \cap U$ is non-empty. The restriction of $\phi$ to $V \cap U$ gives a chart $(V \cap U, \phi|_{V \cap U})$ for $U$.
 
-Now, let $f: M \to \mathbb{R}$ be a smooth function. The restriction of $f$ to $U$, denoted by $f|_U: U \to \mathbb{R}$, is also a smooth function. We can define a derivation $u: C^\infty(U) \to \mathbb{R}$ by setting:
+For a derivation $u: C^\infty(U) \to \mathbb{R}$ we need to define a corresponding derivation $v: C^\infty(M) \to \mathbb{R}$. We can do this by extending functions from $U$ to $M$ by Lemma 2.26 (Extension Lemma for Smooth Functions). Specifically, for any $f \in C^\infty(U)$, we can find an extension $\tilde{f} \in C^\infty(M)$ such that $\tilde{f}|_U = f$. We then define:
 
-$`u(g) = v(g \circ i)`$
+$`v(f) = u(\tilde{f}).`$
 
-for any smooth function $g: U \to \mathbb{R}$. It can be verified that $u$ is indeed a derivation at $p$. Then, we have:
+This definition is well-defined because if $\tilde{f}_1$ and $\tilde{f}_2$ are two different extensions of $f$, then $\tilde{f}_1 - \tilde{f}_2$ vanishes on $U$, and hence $u(\tilde{f}_1 - \tilde{f}_2) = 0$.
 
-$`di_p(u)(f) = u(f|_U) = v((f|_U) \circ i) = v(f).`$
+This shows that $v$ is a derivation at $p$ in $M$. Thus, for every $v \in T_p M$, we can find a corresponding $u \in T_p U$ such that $di_p(u) = v$. Therefore, $di_p: T_p U \to T_p M$ is surjective.
 
-Thus, $di_p(u) = v$, and $di_p$ is surjective.
-
-Since $di_p$ is both injective and surjective, it is an isomorphism. Therefore, we have established an isomorphism between $T_p M$ and $T_p U$.
+Since $di_p$ is both injective and surjective, it is an isomorphism. To show that this isomorphism is canonical, we note that it does not depend on the choice of chart or extension, as the construction is based solely on the properties of derivations and the inclusion map.
 
 # 4
 Show that for a vector space $V$ (with its canonical smooth structure) and any point $p \in V$, the tangent space $T_p V$ is canonically isomorphic to $V$.
