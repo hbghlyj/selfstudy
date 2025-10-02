@@ -14,7 +14,7 @@ $G(p)$ is the unique maximum $p$-subgroup of $G$ (that is, every $p$-subgroup of
 
 $G=\sum G(p)$, where the sum is over all primes $p$ such that $G(p) \neq 0$.
   
-Hint: If $|u|=p_1^{n_1} \cdots p_t^{n_t}$, let $m_i=|u| / p_i^{n_i}$. There exist $c_i \in \mathbb{Z}$ such that $c_1 m_1+\cdots +c_t m_t=1$, whence $u=c_1 m_1 u+\cdots+c_t m_t u$; but $c_i m_i u \in G(p_i).
+Hint: If $|u|=p_1^{n_1} \cdots p_t^{n_t}$, let $m_i=|u| / p_i^{n_i}$. There exist $c_i \in \mathbb{Z}$ such that $c_1 m_1+\cdots +c_t m_t=1$, whence $u=c_1 m_1 u+\cdots+c_t m_t u$; but $c_i m_i u \in G(p_i)$.
 </li>
 <li>
 
