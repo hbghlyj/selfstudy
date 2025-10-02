@@ -126,7 +126,7 @@ Since $U$ is an open subset of $M$, there exists a chart $(V, \phi)$ of $M$ such
 
 Let $i: U \to M$ be the inclusion map.
 
-- To show that the differential $di_p: T_p U \to T_p M$ is injective, we note that if $u \in T_p U$ and $di_p(u) = 0$, then for any smooth function $f \in C^\infty(U)$, take a smooth extension $\tilde{f} \in C^\infty(M)$. We have:
+- To show that the differential $di_p: T_p U \to T_p M$ is injective, we note that if $u \in T_p U$ and $di_p(u) = 0$, then for any smooth function $f \in C^\infty(U)$, take a smooth extension $\tilde{f} \in C^\infty(M)$ (which exists by the Extension Lemma for Smooth Functions). We have:
 
   $u(f) = u(\tilde{f} \circ i) = (di_p(u))(\tilde{f})$. Since $di_p(u)=0$, it follows that $u(f)=0$.
 
