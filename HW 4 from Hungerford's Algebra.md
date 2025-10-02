@@ -32,7 +32,7 @@ How many subgroups of order $p^2$ does the abelian group $`\mathbb{Z}_{p^3} \opl
 Let $G$ be a group and $A$ a normal abelian subgroup. Show that $G / A$ operates on $A$ by conjugation and obtain a homomorphism $G / A \to \mathrm{Aut} A$.
 
 ## Problem 5
-If $H$ is a subgroup of $G$, the factor group $N_G(H) / C_G(H)$ (see Exercise 4) is isomorphic to a subgroup of Aut $H$.
+If $H$ is a subgroup of $G$, the factor group $N_G(H) / C_G(H)$ (see Exercise 4) is isomorphic to a subgroup of $\mathrm{Aut} H$.
 
 ## Problem 7
 Let $G$ be a group and let In $G$ be the set of all inner automorphisms of $G$. Show that $\mathrm{In} G$ is a normal subgroup of $\mathrm{Aut} G$.
