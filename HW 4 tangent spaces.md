@@ -122,29 +122,34 @@ Note that if $M$ is a smooth manifold and $U$ is an open subset then $U$ is also
 
 Proof
 
-Let $i: U \to M$ be the inclusion map. Since $i$ is a smooth embedding, the differential $di_p: T_p U \to T_p M$ is injective. To show that $di_p$ is also surjective, let $v \in T_p M$. We need to show that there exists $u \in T_p U$ such that $di_p(u) = v$.
-
 Since $U$ is an open subset of $M$, there exists a chart $(V, \phi)$ of $M$ such that $p \in V$ and $V \cap U$ is non-empty. The restriction of $\phi$ to $V \cap U$ gives a chart $(V \cap U, \phi|_{V \cap U})$ for $U$.
 
-To show that $di_p$ is surjective, let $v \in T_p M$ be an arbitrary derivation. We must construct a derivation $u \in T_p U$ such that $di_p(u) = v$.
+Let $i: U \to M$ be the inclusion map.
 
-Let's define a map $u: C^\infty(U) \to \mathbb{R}$. For any smooth function $g \in C^\infty(U)$, by the Extension Lemma for Smooth Functions, there exists a smooth function $\tilde{g} \in C^\infty(M)$ that extends $g$ (i.e., $\tilde{g}|_U = g$). We define:
+- To show that the differential $di_p: T_p U \to T_p M$ is injective, we note that if $u \in T_p U$ and $di_p(u) = 0$, then for any smooth function $f \in C^\infty(U)$, take a smooth extension $\tilde{f} \in C^\infty(M)$ (which exists by the Extension Lemma for Smooth Functions). We have:
 
-$u(g) := v(\tilde{g})$
+  $u(f) = u(\tilde{f} \circ i) = (di_p(u))(\tilde{f})$. Since $di_p(u)=0$, it follows that $u(f)=0$.
 
-This definition is well-defined. If $\tilde{g}_1$ and $\tilde{g}_2$ are two different extensions of $g$, their difference $\tilde{g}_1 - \tilde{g}_2$ is zero on the open neighborhood $U$ of $p$. Since derivations are local operators (their value on a function depends only on the germ of the function at the point), this implies $v(\tilde{g}_1 - \tilde{g}_2) = 0$, so $v(\tilde{g}_1) = v(\tilde{g}_2)$.
+  Thus, as this holds for any $f \in C^\infty(U)$, $u=0$, proving injectivity.
+- To show that $di_p$ is surjective, let $v \in T_p M$ be an arbitrary derivation. We must construct a derivation $u \in T_p U$ such that $di_p(u) = v$.
 
-The map $u$ is a derivation at $p$ on $U$ because it inherits linearity and the Leibniz property from $v$. Thus, $u \in T_p U$.
+  Define a map $u: C^\infty(U) \to \mathbb{R}$. For any smooth function $g \in C^\infty(U)$, by the Extension Lemma for Smooth Functions, there exists a smooth function $\tilde{g} \in C^\infty(M)$ that extends $g$ (i.e., $\tilde{g}|_U = g$). We define:
 
-Finally, we check if $di_p(u) = v$. For any $f \in C^\infty(M)$:
+  $u(g) := v(\tilde{g})$
 
-$`di_p(u)(f) = u(f|_U)`$
+  This definition is well-defined. If $\tilde{g}_1$ and $\tilde{g}_2$ are two different extensions of $g$, their difference $\tilde{g}_1 - \tilde{g}_2$ is zero on the open neighborhood $U$ of $p$. Since derivations are local operators (their value on a function depends only on the germ of the function at the point), this implies $v(\tilde{g}_1 - \tilde{g}_2) = 0$, so $v(\tilde{g}_1) = v(\tilde{g}_2)$.
 
-By our definition of $u$, this is equal to $v(\widetilde{f|_U})$, where $\widetilde{f|_U}$ is any smooth extension of $f|_U$. We can choose $f$ itself as the extension. Therefore:
+  The map $u$ is a derivation at $p$ on $U$. It inherits linearity from $v$ because for any extensions $\tilde{g_1}, \tilde{g_2}$, $a\tilde{g_1}+b\tilde{g_2}$ is an extension of $ag_1+bg_2$. It also inherits the Leibniz property because $\tilde{g_1}\tilde{g_2}$ is an extension of $g_1g_2$. Thus, $u \in T_p U.
 
-$`di_p(u)(f) = v(f)`$
+  Finally, we check if $di_p(u) = v$. For any $f \in C^\infty(M)$:
 
-Since this holds for all $f \in C^\infty(M)$, we have $di_p(u) = v$. Thus, $di_p$ is surjective.
+  $`di_p(u)(f) = u(f|_U)`$
+
+  By our definition of $u$, this is equal to $v(\widetilde{f|_U})$, where $\widetilde{f|_U}$ is any smooth extension of $f|_U$. We can choose $f$ itself as the extension. Therefore:
+
+  $`di_p(u)(f) = v(f)`$
+
+  Since this holds for all $f \in C^\infty(M)$, we have $di_p(u) = v$. Thus, $di_p$ is surjective.
 
 Since $di_p$ is both injective and surjective, it is an isomorphism. To show that this isomorphism is canonical, we note that it does not depend on the choice of chart or extension, as the construction is based solely on the properties of derivations and the inclusion map.
 
