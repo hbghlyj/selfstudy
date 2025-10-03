@@ -4,7 +4,25 @@ Show that a finite abelian group that is not cyclic contains a subgroup which is
 
 Proof
 
-By the Fundamental Theorem of Finite Abelian Groups, any finite abelian group $G$ can be expressed as a direct sum of cyclic groups of prime power order: $G \cong \mathbb{Z}_{p_1^{k_1}} \oplus \dots \oplus \mathbb{Z}_{p_r^{k_r}}$. A finite abelian group is cyclic if and only if the primes $p_1, \dots, p_r$ in this decomposition are distinct. Since $G$ is not cyclic, at least two of these primes must be the same, say $p_i = p_j = p$ for some $i \neq j$. This implies that $G$ has a subgroup isomorphic to $\mathbb{Z}_{p^{k_i}} \oplus \mathbb{Z}_{p^{k_j}}$ where $k_i, k_j \ge 1$. The group $\mathbb{Z}_{p^{k_i}}$ has a unique subgroup of order $p$ (isomorphic to $\mathbb{Z}_p$), and so does $\mathbb{Z}_{p^{k_j}}$. Therefore, their direct sum contains a subgroup isomorphic to $\mathbb{Z}_p \oplus \mathbb{Z}_p$. Thus, $G$ contains a subgroup isomorphic to $\mathbb{Z}_p \oplus \mathbb{Z}_p$.
+By the Fundamental Theorem of Finite Abelian Groups, any finite abelian group $G$ can be expressed as a direct sum of cyclic groups of prime power order:
+
+$`G \cong \mathbb{Z}_{p_1^{k_1}} \oplus \dots \oplus \mathbb{Z}_{p_r^{k_r}}`$.
+
+A finite abelian group is cyclic if and only if the primes $p_1, \dots, p_r$ in this decomposition are distinct.
+
+Since $G$ is not cyclic, at least two of these primes must be the same, say $p_i = p_j = p$ for some $i \neq j$.
+
+This implies that $G$ has a subgroup isomorphic to
+
+$`\mathbb{Z}_{p^{k_i}} \oplus \mathbb{Z}_{p^{k_j}}`$
+
+where $k_i, k_j \ge 1$.
+
+The group $`\mathbb{Z}_{p^{k_i}}`$ has a unique subgroup of order $p$ (isomorphic to $`\mathbb{Z}_p`$), and so does $`\mathbb{Z}_{p^{k_j}}`$.
+
+Therefore, their direct sum contains a subgroup isomorphic to $`\mathbb{Z}_p \oplus \mathbb{Z}_p`$.
+
+Thus, $G$ contains a subgroup isomorphic to $`\mathbb{Z}_p \oplus \mathbb{Z}_p`$.
 
 ## Problem 7 ($G(p)$ is defined in Lemma II.2.5)
 A (sub)group in which every element has order a power of a fixed prime $p$ is called a $p$-(sub)group (note: $|0|=1=p^0$). Let $G$ be an abelian torsion group.
