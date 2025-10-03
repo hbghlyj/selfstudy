@@ -22,7 +22,24 @@ If $H$ is another abelian torsion group, then $G \cong H$ if and only if $G(p) \
 </li>
 </ol>
 
+Proof
 
+<ol>
+<li>
+
+$G(p)=\{u \in G \mid |u|=p^n \text { for some } n \geq 0\}$ is a subgroup of $G$ since it is closed under the group operation and taking inverses. If $H$ is any $p$-subgroup of $G$, then every element of $H$ has order a power of $p$, so $H \subseteq G(p)$. Thus, $G(p)$ is the unique maximum $p$-subgroup of $G$.
+</li>
+<li>
+
+Let $u \in G$ be an arbitrary element. Since $G$ is a torsion group, $|u|$ is finite and can be expressed as $|u|=p_1^{n_1} p_2^{n_2} \cdots p_t^{n_t}$ for distinct primes $p_1, p_2, \ldots, p_t$ and integers $n_i \geq 0$. Define $m_i = |u| / p_i^{n_i}$. By Bezout's identity, there exist integers $c_i$ such that $c_1 m_1 + c_2 m_2 + \cdots + c_t m_t = 1$. Then we can express $u$ as:
+$$u = c_1 m_1 u + c_2 m_2 u + \cdots + c_t m_t u.$$
+Each term $c_i m_i u$ has order $p_i^{n_i}$, so $c_i m_i u \in G(p_i)$. Therefore, $u$ can be expressed as a sum of elements from different $G(p_i)$, and hence $G = \sum G(p)$.
+</li>
+<li>
+
+If $G \cong H$, then there exists an isomorphism $\phi: G \to H$. This isomorphism preserves the order of elements, so $x \in G(p)$ if and only if $\phi(x) \in H(p)$. Thus, $\phi$ restricts to an isomorphism between $G(p)$ and $H(p)$ for each prime $p$. Conversely, if $G(p) \cong H(p)$ for all primes $p$, by part (ii), we have $G \cong H$.
+</li>
+</ol>
 
 ## Problem 9
 How many subgroups of order $p^2$ does the abelian group $`\mathbb{Z}_{p^3} \oplus \mathbb{Z}_{p^2}`$ have?
