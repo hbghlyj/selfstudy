@@ -133,6 +133,26 @@ By the Fundamental Theorem of Finite Abelian Groups, any subgroup of order $p^2$
 ## Problem 1
 Let $G$ be a group and $A$ a normal abelian subgroup. Show that $G / A$ operates on $A$ by conjugation and obtain a homomorphism $G / A \to \mathrm{Aut} A$.
 
+Proof
+
+Since $A$ is a normal subgroup of $G$, for any $g \in G$ and $a \in A$, the element $gag^{-1}$ is also in $A$. This allows us to define an action of the quotient group $G/A$ on the subgroup $A$ by conjugation.
+
+Define a map $\varphi: G/A \to \mathrm{Aut} A$ by $\varphi(gA)(a) = gag^{-1}$ for all $g \in G$ and $a \in A$.
+
+To show that $\varphi$ is well-defined, we need to check that if $gA = hA$ for some $g, h \in G$, then $\varphi(gA) = \varphi(hA)$. This is true because if $gA = hA$, then $h^{-1}g \in A$, and since $A$ is abelian, we have
+
+$`\varphi(gA)(a) = gag^{-1} = (h(h^{-1}g)h^{-1})(a) = h(h^{-1}g)h^{-1}(a) = h(h^{-1}g)(h^{-1}(a)) = h(h^{-1}(a)) = h(a)h^{-1} = \varphi(hA)(a).`$
+
+Thus, $\varphi$ is well-defined.
+
+Next, we need to show that $\varphi$ is a homomorphism. For any $gA, hA \in G/A$ and $a \in A$, we have
+
+$`\varphi(gA \cdot hA)(a) = \varphi(ghA)(a) = (gh)a(gh)^{-1} = g(hah^{-1})g^{-1} = \varphi(gA)(\varphi(hA)(a)).`$
+
+This shows that $\varphi(gA \cdot hA) = \varphi(gA) \circ \varphi(hA)$, so $\varphi$ is a homomorphism.
+
+Therefore, we have established that $G/A$ operates on $A$ by conjugation and that there is a homomorphism $\varphi: G/A \to \mathrm{Aut} A$.
+
 ## Problem 5
 If $H$ is a subgroup of $G$, the factor group $N_G(H) / C_G(H)$ (see Exercise 4) is isomorphic to a subgroup of $\mathrm{Aut} H$.
 
