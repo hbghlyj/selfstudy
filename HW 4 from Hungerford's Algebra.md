@@ -138,16 +138,36 @@ If $H$ is a subgroup of $G$, the factor group $N_G(H) / C_G(H)$ (see Exercise 4)
 
 Proof
 
-Let $\varphi: N_G(H) \to \mathrm{Aut} H$ be defined by $\varphi(g)(h) = ghg^{-1}$ for all $g \in N_G(H)$ and $h \in H$. Since $g \in N_G(H)$, we have $ghg^{-1} \in H$, so $\varphi(g)$ is indeed an automorphism of $H$.
+Let $\varphi: N_G(H) \to \mathrm{Aut} H$ be defined by $\varphi(g)(h) = ghg^{-1}$ for all $g \in N_G(H)$ and $h \in H$.
 
-The map $\varphi$ is a homomorphism since $\varphi(g_1g_2) =g_1g_2hg_2^{-1}g_1^{-1}= \varphi(g_1)\varphi(g_2)$. The kernel of $\varphi$ is $`\{g \in N_G(H) | ghg^{-1} = h\text{ for all }h \in H\} = N_G(H) \cap C_G(H) = C_G(H)`$, since $C_G(H) \subseteq N_G(H)$. By the First Isomorphism Theorem, we have
+Since $g \in N_G(H)$, we have $ghg^{-1} \in H$, so $\varphi(g)$ is indeed an automorphism of $H$.
+
+The map $\varphi$ is a homomorphism since $\varphi(g_1g_2) =g_1g_2hg_2^{-1}g_1^{-1}= \varphi(g_1)\varphi(g_2)$.
+
+The kernel of $\varphi$ is $`\{g \in N_G(H) | ghg^{-1} = h\text{ for all }h \in H\} = N_G(H) \cap C_G(H) = C_G(H)`$, since $C_G(H) \subseteq N_G(H)$.
+
+By the First Isomorphism Theorem, we have
 
 $N_G(H) / C_G(H) \cong \mathrm{Im}(\varphi),$
 
-where $\mathrm{Im}(\varphi)$ is a subgroup of $\mathrm{Aut} H$. Thus, $N_G(H) / C_G(H)$ is isomorphic to a subgroup of $\mathrm{Aut} H$.
+where $\mathrm{Im}(\varphi)$ is a subgroup of $\mathrm{Aut} H$.
+
+Thus, $N_G(H) / C_G(H)$ is isomorphic to a subgroup of $\mathrm{Aut} H$.
 
 ## Problem 7
 Let $G$ be a group and let $\mathrm{In} G$ be the set of all inner automorphisms of $G$. Show that $\mathrm{In} G$ is a normal subgroup of $\mathrm{Aut} G$.
+
+Proof
+
+Let $\varphi \in \mathrm{In} G$ and $\psi \in \mathrm{Aut} G$. We need to show that $\psi \varphi \psi^{-1} \in \mathrm{In} G$.
+
+Since $\varphi$ is an inner automorphism, there exists $g \in G$ such that $\varphi(x) = gxg^{-1}$ for all $x \in G$. Then, for any $x \in G$, we have
+
+$\psi \varphi \psi^{-1}(x) = \psi(gxg^{-1}) = \psi(g)\psi(x)\psi(g^{-1}).$
+
+Since $\psi(g) \in G$ and $\psi(g^{-1}) \in G$, we see that $\psi \varphi \psi^{-1}(x)$ is of the form $hxh^{-1}$ for some $h \in G$. Thus, $\psi \varphi \psi^{-1} \in \mathrm{In} G$.
+
+Therefore, $\mathrm{In} G$ is a normal subgroup of $\mathrm{Aut} G$.
 
 ## Problem 9
 If $G / C(G)$ is cyclic, then $G$ is abelian.
