@@ -127,7 +127,7 @@ By the Fundamental Theorem of Finite Abelian Groups, any subgroup of order $p^2$
 
 2. **Subgroups isomorphic to $`\mathbb{Z}_p \oplus \mathbb{Z}_p`$**:
 
-   The subgroup of elements with order dividing $p$ is $`G[p] = \{ (a,b) \in G \mid pa=0, pb=0 \}`$. In $G=`\mathbb{Z}_{p^3} \oplus \mathbb{Z}_{p^2}`$, this is the subgroup $`\langle p^2 \rangle \oplus \langle p \rangle \cong \mathbb{Z}_p \oplus \mathbb{Z}_p`$. Any subgroup isomorphic to $`\mathbb{Z}_p \oplus \mathbb{Z}_p`$ must be contained in $G[p]$. Since both have order $p^2$, they must be identical. Therefore, there is only one such subgroup.
+   The subgroup of elements with order dividing $p$ is $`G[p] = \{ (a,b) \in G \mid pa=0, pb=0 \}`$. In $`G=\mathbb{Z}_{p^3} \oplus \mathbb{Z}_{p^2}`$, this is the subgroup $`\langle p^2 \rangle \oplus \langle p \rangle \cong \mathbb{Z}_p \oplus \mathbb{Z}_p`$. Any subgroup isomorphic to $`\mathbb{Z}_p \oplus \mathbb{Z}_p`$ must be contained in $G[p]$. Since both have order $p^2$, they must be identical. Therefore, there is only one such subgroup.
 
 # Section II.4
 ## Problem 1
