@@ -133,6 +133,31 @@ By the Fundamental Theorem of Finite Abelian Groups, any subgroup of order $p^2$
 ## Problem 1
 Let $G$ be a group and $A$ a normal abelian subgroup. Show that $G / A$ operates on $A$ by conjugation and obtain a homomorphism $G / A \to \mathrm{Aut} A$.
 
+Proof
+
+Since $A$ is a normal subgroup of $G$, for any $g \in G$ and $a \in A$, the element $gag^{-1}$ is also in $A$. This allows us to define an action of the quotient group $G/A$ on the subgroup $A$ by conjugation.
+
+Define a map $\varphi: G/A \to \mathrm{Aut} A$ by $\varphi(gA)(a) = gag^{-1}$ for all $g \in G$ and $a \in A$.
+First, we verify that for any $g \in G$, the map $\varphi_g: a \mapsto gag^{-1}$ is an automorphism of $A$. 
+- **Homomorphism**: For any $a, b \in A$, $\varphi_g(ab) = g(ab)g^{-1} = (gag^{-1})(gbg^{-1}) = \varphi_g(a)\varphi_g(b)$.
+- **Bijective**: The map $\varphi_{g^{-1}}$ is its inverse, since $\varphi_g(\varphi_{g^{-1}}(a)) = g(g^{-1}ag)g^{-1} = a$. 
+
+Thus, $\varphi(gA)$ is indeed an element of $\mathrm{Aut} A$.
+
+To show that $\varphi$ is well-defined, we need to check that if $gA = hA$ for some $g, h \in G$, then $\varphi(gA) = \varphi(hA)$. If $gA = hA$, then $h^{-1}g \in A$. Let $k = h^{-1}g$, so $g=hk$. Since $A$ is abelian and $k, a \in A$, we have $kak^{-1} = a$. Thus, for any $a \in A$:
+
+$`\varphi(gA)(a) = gag^{-1} = (hk)a(hk)^{-1} = h(kak^{-1})h^{-1} = hah^{-1} = \varphi(hA)(a).`$
+
+Thus, $\varphi$ is well-defined.
+
+Next, we need to show that $\varphi$ is a homomorphism. For any $gA, hA \in G/A$ and $a \in A$, we have
+
+$`\varphi(gA \cdot hA)(a) = \varphi(ghA)(a) = (gh)a(gh)^{-1} = g(hah^{-1})g^{-1} = \varphi(gA)(\varphi(hA)(a)).`$
+
+This shows that $\varphi(gA \cdot hA) = \varphi(gA) \circ \varphi(hA)$, so $\varphi$ is a homomorphism.
+
+Therefore, we have established that $G/A$ operates on $A$ by conjugation and that there is a homomorphism $\varphi: G/A \to \mathrm{Aut} A$.
+
 ## Problem 5
 If $H$ is a subgroup of $G$, the factor group $N_G(H) / C_G(H)$ (see Exercise 4) is isomorphic to a subgroup of $\mathrm{Aut} H$.
 
