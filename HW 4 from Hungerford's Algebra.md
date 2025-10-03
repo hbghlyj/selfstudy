@@ -129,9 +129,7 @@ By the Fundamental Theorem of Finite Abelian Groups, any subgroup of order $p^2$
 
 2. **Subgroups isomorphic to $`\mathbb{Z}_p \oplus \mathbb{Z}_p`$**:
 
-    Since neither $`\mathbb{Z}_{p^3}`$ nor $`\mathbb{Z}_{p^2}`$ has a subgroup isomorphic to $`\mathbb{Z}_p \oplus \mathbb{Z}_p`$, any such subgroup must involve non-trivial elements from both components.
-
-    $`\mathbb{Z}_{p^3}`$ has $p - 1$ elements of order $p$, and $`\mathbb{Z}_{p^2}`$ has $p - 1$ elements of order $p$. Each pair of such elements can generate a subgroup isomorphic to $`\mathbb{Z}_p \oplus \mathbb{Z}_p`$.
+   $G[p] \cong \mathbb{Z}_p \oplus \mathbb{Z}_p$. Since any subgroup of type $`\mathbb{Z}_p \oplus \mathbb{Z}_p`$ must be contained in $G[p]$, and $G[p]$ itself has this structure and order $p^2$, there is only $1$ such subgroup.
 
 # Section II.4
 ## Problem 1
