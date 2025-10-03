@@ -48,13 +48,39 @@ Proof
 <ol>
 <li>
 
-$G(p)=\{u \in G \mid |u|=p^n \text { for some } n \geq 0\}$ is a subgroup of $G$. To show this: the identity $0 \in G(p)$ since $|0|=1=p^0$. If $u, v \in G(p)$ with $|u|=p^a$ and $|v|=p^b$, then since $G$ is abelian, $|u+v|$ divides $\mathrm{lcm}(|u|,|v|) = p^{\max(a,b)}$, so $u+v \in G(p)$. Also, $|-u|=|u|$, so inverses are in $G(p)$. If $H$ is any $p$-subgroup of $G$, then every element of $H$ has order a power of $p$, so $H \subseteq G(p)$. Thus, $G(p)$ is the unique maximum $p$-subgroup of $G$.
+$`G(p)=\{u \in G \mid |u|=p^n \text { for some } n \geq 0\}`$ is a subgroup of $G$.
+
+To show this:
+
+- the identity $0 \in G(p)$ since $|0|=1=p^0$.
+
+- If $u, v \in G(p)$ with $|u|=p^a$ and $|v|=p^b$, then since $G$ is abelian, $|u+v|$ divides $\mathrm{lcm}(|u|,|v|) = p^{\max(a,b)}$, so $u+v \in G(p)$. Also, $|-u|=|u|$, so inverses are in $G(p)$.
+
+If $H$ is any $p$-subgroup of $G$, then every element of $H$ has order a power of $p$, so $H \subseteq G(p)$. Thus, $G(p)$ is the unique maximum $p$-subgroup of $G$.
 </li>
 <li>
 
-Let $u \in G$ be an arbitrary element. Since $G$ is a torsion group, $|u|$ is finite and can be expressed as $|u|=p_1^{n_1} p_2^{n_2} \cdots p_t^{n_t}$ for distinct primes $p_1, p_2, \ldots, p_t$ and integers $n_i \geq 0$. Define $m_i = |u| / p_i^{n_i}$. By Bezout's identity, there exist integers $c_i$ such that $c_1 m_1 + c_2 m_2 + \cdots + c_t m_t = 1$. Then we can express $u$ as:
-$$u = c_1 m_1 u + c_2 m_2 u + \cdots + c_t m_t u.$$
-Each term $c_i m_i u$ has an order that divides $p_i^{n_i}$, so $c_i m_i u \in G(p_i)$. Therefore, $u$ can be expressed as a sum of elements from different $G(p_i)$, which shows $G = \sum_p G(p)$. This sum is direct, as an element in $G(p) \cap \sum_{q \neq p} G(q)$ must have an order that is a power of $p$ and also coprime to $p$, which implies the order is 1, so the element is 0.
+Let $u \in G$ be an arbitrary element.
+
+Since $G$ is a torsion group, $|u|$ is finite and can be expressed as
+
+$`|u|=p_1^{n_1} p_2^{n_2} \cdots p_t^{n_t}`$ for distinct primes $p_1, p_2, \ldots, p_t$ and integers $n_i \geq 0$.
+
+Define $m_i = |u| / p_i^{n_i}$.
+
+By Bezout's identity, there exist integers $c_i$ such that
+
+$`c_1 m_1 + c_2 m_2 + \cdots + c_t m_t = 1`$
+
+Then we can express $u$ as:
+
+$`u = c_1 m_1 u + c_2 m_2 u + \cdots + c_t m_t u.`$
+
+Each term $c_i m_i u$ has an order that divides $`p_i^{n_i}`$, so $`c_i m_i u \in G(p_i)`$.
+
+Therefore, $u$ can be expressed as a sum of elements from different $G(p_i)$, which shows $G = \sum_p G(p)$.
+
+This sum is direct, as an element in $G(p) \cap \sum_{q \neq p} G(q)$ must have an order that is a power of $p$ and also coprime to $p$, which implies the order is 1, so the element is 0.
 </li>
 <li>
 
