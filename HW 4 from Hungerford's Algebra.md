@@ -163,9 +163,9 @@ Let $\varphi \in \mathrm{In} G$ and $\psi \in \mathrm{Aut} G$. We need to show t
 
 Since $\varphi$ is an inner automorphism, there exists $g \in G$ such that $\varphi(x) = gxg^{-1}$ for all $x \in G$. Then, for any $x \in G$, we have
 
-$\psi \varphi \psi^{-1}(x) = \psi(gxg^{-1}) = \psi(g)\psi(x)\psi(g^{-1}).$
+$\psi \varphi \psi^{-1}(x) = \psi(\varphi(\psi^{-1}(x))) = \psi(g\psi^{-1}(x)g^{-1}) = \psi(g)\psi(\psi^{-1}(x))\psi(g^{-1}) = \psi(g)x(\psi(g))^{-1}.$
 
-Since $\psi(g) \in G$ and $\psi(g^{-1}) \in G$, we see that $\psi \varphi \psi^{-1}(x)$ is of the form $hxh^{-1}$ for some $h \in G$. Thus, $\psi \varphi \psi^{-1} \in \mathrm{In} G$.
+Let $h = \psi(g)$. Since $h \in G$, we see that $\psi \varphi \psi^{-1}$ is the inner automorphism given by conjugation by $h$. Thus, $\psi \varphi \psi^{-1} \in \mathrm{In} G$.
 
 Therefore, $\mathrm{In} G$ is a normal subgroup of $\mathrm{Aut} G$.
 
