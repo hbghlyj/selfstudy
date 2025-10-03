@@ -143,9 +143,9 @@ First, we verify that for any $g \in G$, the map $\varphi_g: a \mapsto gag^{-1}$
 - **Bijective**: The map $\varphi_{g^{-1}}$ is its inverse, since $\varphi_g(\varphi_{g^{-1}}(a)) = g(g^{-1}ag)g^{-1} = a$. 
 Thus, $\varphi(gA)$ is indeed an element of $\mathrm{Aut} A$.
 
-To show that $\varphi$ is well-defined, we need to check that if $gA = hA$ for some $g, h \in G$, then $\varphi(gA) = \varphi(hA)$. This is true because if $gA = hA$, then $h^{-1}g \in A$, and since $A$ is abelian, we have
+To show that $\varphi$ is well-defined, we need to check that if $gA = hA$ for some $g, h \in G$, then $\varphi(gA) = \varphi(hA)$. If $gA = hA$, then $h^{-1}g \in A$. Let $k = h^{-1}g$, so $g=hk$. Since $A$ is abelian and $k, a \in A$, we have $kak^{-1} = a$. Thus, for any $a \in A$:
 
-$`\varphi(gA)(a) = gag^{-1} = (h(h^{-1}g)h^{-1})(a) = h(h^{-1}g)h^{-1}(a) = h(h^{-1}g)(h^{-1}(a)) = h(h^{-1}(a)) = h(a)h^{-1} = \varphi(hA)(a).`$
+$$\varphi(gA)(a) = gag^{-1} = (hk)a(hk)^{-1} = h(kak^{-1})h^{-1} = hah^{-1} = \varphi(hA)(a).$$
 
 Thus, $\varphi$ is well-defined.
 
