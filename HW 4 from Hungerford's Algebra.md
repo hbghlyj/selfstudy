@@ -54,9 +54,13 @@ To show this:
 
 - the identity $0 \in G(p)$ since $|0|=1=p^0$.
 
-- If $u, v \in G(p)$ with $|u|=p^a$ and $|v|=p^b$, then since $G$ is abelian, $|u+v|$ divides $\mathrm{lcm}(|u|,|v|) = p^{\max(a,b)}$, so $u+v \in G(p)$. Also, $|-u|=|u|$, so inverses are in $G(p)$.
+- If $u, v \in G(p)$ with $|u|=p^a$ and $|v|=p^b$, then since $G$ is abelian, $|u+v|$ divides $\mathrm{lcm}(|u|,|v|) = p^{\max(a,b)}$, so $u+v \in G(p)$.
 
-If $H$ is any $p$-subgroup of $G$, then every element of $H$ has order a power of $p$, so $H \subseteq G(p)$. Thus, $G(p)$ is the unique maximum $p$-subgroup of $G$.
+- Also, $|-u|=|u|$, so inverses are in $G(p)$.
+
+If $H$ is any $p$-subgroup of $G$, then every element of $H$ has order a power of $p$, so $H \subseteq G(p)$.
+
+Thus, $G(p)$ is the unique maximum $p$-subgroup of $G$.
 </li>
 <li>
 
@@ -84,7 +88,19 @@ This sum is direct, as an element in $G(p) \cap \sum_{q \neq p} G(q)$ must have 
 </li>
 <li>
 
-If $G \cong H$, then there exists an isomorphism $\phi: G \to H$. This isomorphism preserves the order of elements, so $x \in G(p)$ if and only if $\phi(x) \in H(p)$. Thus, $\phi$ restricts to an isomorphism between $G(p)$ and $H(p)$ for each prime $p$. Conversely, if $G(p) \cong H(p)$ for all primes $p$, let $\phi_p: G(p) \to H(p)$ be an isomorphism for each $p$. By part (ii), $G = \bigoplus_p G(p)$ and $H = \bigoplus_p H(p)$. We can define an isomorphism $\phi: G \to H$ by $\phi(\sum_p g_p) = \sum_p \phi_p(g_p)$ for $g_p \in G(p)$. Thus $G \cong H$.
+If $G \cong H$, then there exists an isomorphism $\phi: G \to H$.
+
+This isomorphism preserves the order of elements, so $x \in G(p)$ if and only if $\phi(x) \in H(p)$.
+
+Thus, $\phi$ restricts to an isomorphism between $G(p)$ and $H(p)$ for each prime $p$.
+
+Conversely, if $G(p) \cong H(p)$ for all primes $p$, let $\phi_p: G(p) \to H(p)$ be an isomorphism for each $p$.
+
+By part (ii), $G = \bigoplus_p G(p)$ and $H = \bigoplus_p H(p)$.
+
+We can define an isomorphism $\phi: G \to H$ by $\phi(\sum_p g_p) = \sum_p \phi_p(g_p)$ for $g_p \in G(p)$.
+
+Thus $G \cong H$.
 </li>
 </ol>
 
