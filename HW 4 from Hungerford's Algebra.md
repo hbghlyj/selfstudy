@@ -37,7 +37,7 @@ Each term $c_i m_i u$ has an order that divides $p_i^{n_i}$, so $c_i m_i u \in G
 </li>
 <li>
 
-If $G \cong H$, then there exists an isomorphism $\phi: G \to H$. This isomorphism preserves the order of elements, so $x \in G(p)$ if and only if $\phi(x) \in H(p)$. Thus, $\phi$ restricts to an isomorphism between $G(p)$ and $H(p)$ for each prime $p$. Conversely, if $G(p) \cong H(p)$ for all primes $p$, by part (ii), we have $G \cong H$.
+If $G \cong H$, then there exists an isomorphism $\phi: G \to H$. This isomorphism preserves the order of elements, so $x \in G(p)$ if and only if $\phi(x) \in H(p)$. Thus, $\phi$ restricts to an isomorphism between $G(p)$ and $H(p)$ for each prime $p$. Conversely, if $G(p) \cong H(p)$ for all primes $p$, let $\phi_p: G(p) \to H(p)$ be an isomorphism for each $p$. By part (ii), $G = \bigoplus_p G(p)$ and $H = \bigoplus_p H(p)$. We can define an isomorphism $\phi: G \to H$ by $\phi(\sum_p g_p) = \sum_p \phi_p(g_p)$ for $g_p \in G(p)$. Thus $G \cong H$.
 </li>
 </ol>
 
