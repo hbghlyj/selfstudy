@@ -33,7 +33,7 @@ $G(p)=\{u \in G \mid |u|=p^n \text { for some } n \geq 0\}$ is a subgroup of $G$
 
 Let $u \in G$ be an arbitrary element. Since $G$ is a torsion group, $|u|$ is finite and can be expressed as $|u|=p_1^{n_1} p_2^{n_2} \cdots p_t^{n_t}$ for distinct primes $p_1, p_2, \ldots, p_t$ and integers $n_i \geq 0$. Define $m_i = |u| / p_i^{n_i}$. By Bezout's identity, there exist integers $c_i$ such that $c_1 m_1 + c_2 m_2 + \cdots + c_t m_t = 1$. Then we can express $u$ as:
 $$u = c_1 m_1 u + c_2 m_2 u + \cdots + c_t m_t u.$$
-Each term $c_i m_i u$ has order $p_i^{n_i}$, so $c_i m_i u \in G(p_i)$. Therefore, $u$ can be expressed as a sum of elements from different $G(p_i)$, and hence $G = \sum G(p)$.
+Each term $c_i m_i u$ has an order that divides $p_i^{n_i}$, so $c_i m_i u \in G(p_i)$. Therefore, $u$ can be expressed as a sum of elements from different $G(p_i)$, which shows $G = \sum_p G(p)$. This sum is direct, as an element in $G(p) \cap \sum_{q \neq p} G(q)$ must have an order that is a power of $p$ and also coprime to $p$, which implies the order is 1, so the element is 0.
 </li>
 <li>
 
