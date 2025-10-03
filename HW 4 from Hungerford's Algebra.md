@@ -142,7 +142,7 @@ Let $\varphi: N_G(H) \to \mathrm{Aut} H$ be defined by $\varphi(g)(h) = ghg^{-1}
 
 Since $g \in N_G(H)$, we have $ghg^{-1} \in H$, so $\varphi(g)$ is indeed an automorphism of $H$.
 
-The map $\varphi$ is a homomorphism since $\varphi(g_1g_2) =g_1g_2hg_2^{-1}g_1^{-1}= \varphi(g_1)\varphi(g_2)$.
+The map $\varphi$ is a homomorphism since for any $h \in H$, $(\varphi(g_1g_2))(h) = (g_1g_2)h(g_1g_2)^{-1} = g_1(g_2hg_2^{-1})g_1^{-1} = \varphi(g_1)(\varphi(g_2)(h)) = (\varphi(g_1) \circ \varphi(g_2))(h)$.
 
 The kernel of $\varphi$ is $`\{g \in N_G(H) | ghg^{-1} = h\text{ for all }h \in H\} = N_G(H) \cap C_G(H) = C_G(H)`$, since $C_G(H) \subseteq N_G(H)$.
 
