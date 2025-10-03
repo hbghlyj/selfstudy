@@ -138,6 +138,10 @@ Proof
 Since $A$ is a normal subgroup of $G$, for any $g \in G$ and $a \in A$, the element $gag^{-1}$ is also in $A$. This allows us to define an action of the quotient group $G/A$ on the subgroup $A$ by conjugation.
 
 Define a map $\varphi: G/A \to \mathrm{Aut} A$ by $\varphi(gA)(a) = gag^{-1}$ for all $g \in G$ and $a \in A$.
+First, we verify that for any $g \in G$, the map $\varphi_g: a \mapsto gag^{-1}$ is an automorphism of $A$. 
+- **Homomorphism**: For any $a, b \in A$, $\varphi_g(ab) = g(ab)g^{-1} = (gag^{-1})(gbg^{-1}) = \varphi_g(a)\varphi_g(b)$.
+- **Bijective**: The map $\varphi_{g^{-1}}$ is its inverse, since $\varphi_g(\varphi_{g^{-1}}(a)) = g(g^{-1}ag)g^{-1} = a$. 
+Thus, $\varphi(gA)$ is indeed an element of $\mathrm{Aut} A$.
 
 To show that $\varphi$ is well-defined, we need to check that if $gA = hA$ for some $g, h \in G$, then $\varphi(gA) = \varphi(hA)$. This is true because if $gA = hA$, then $h^{-1}g \in A$, and since $A$ is abelian, we have
 
