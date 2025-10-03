@@ -27,7 +27,7 @@ Proof
 <ol>
 <li>
 
-$G(p)=\{u \in G \mid |u|=p^n \text { for some } n \geq 0\}$ is a subgroup of $G$ since it is closed under the group operation and taking inverses. If $H$ is any $p$-subgroup of $G$, then every element of $H$ has order a power of $p$, so $H \subseteq G(p)$. Thus, $G(p)$ is the unique maximum $p$-subgroup of $G$.
+$G(p)=\{u \in G \mid |u|=p^n \text { for some } n \geq 0\}$ is a subgroup of $G$. To show this: the identity $0 \in G(p)$ since $|0|=1=p^0$. If $u, v \in G(p)$ with $|u|=p^a$ and $|v|=p^b$, then since $G$ is abelian, $|u+v|$ divides $\mathrm{lcm}(|u|,|v|) = p^{\max(a,b)}$, so $u+v \in G(p)$. Also, $|-u|=|u|$, so inverses are in $G(p)$. If $H$ is any $p$-subgroup of $G$, then every element of $H$ has order a power of $p$, so $H \subseteq G(p)$. Thus, $G(p)$ is the unique maximum $p$-subgroup of $G$.
 </li>
 <li>
 
