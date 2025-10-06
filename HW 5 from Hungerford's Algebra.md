@@ -24,7 +24,7 @@ Let $G$ be a group and $H_1$ and $H_2$ be two subgroups. Construct bijections be
 - The quotient of $\left(G / H_1\right) \times\left(G / H_2\right)$ with $G$ acting on two copies simultaneously (this is called the diagonal action).
 (Going between definitions sometimes requires inverting elements of $g$.) The resulting set is the double quotient $H_1 \backslash G / H_2$; it can be interpreted as the set of double cosets $H_1 g H_2$.
 
-# 2.
+## 2.
 Fix $n$ and put $S_n$; for any $m \leq n$, let $H_m \subset S_n$ be the subgroup $S_m \times S_{n-m}$. The quotient $G / H_m$ can be identified with the set of $m$-element subsets of the set $\{1, \ldots, n\}$. (How?) Show that the double quotient $H_{m_1} \backslash S_n / H_{m_2}$ is a finite set with
 
 $\min \left(m_1, m_2\right)-\max \left(0, m_1+m_2-n\right)+1$
