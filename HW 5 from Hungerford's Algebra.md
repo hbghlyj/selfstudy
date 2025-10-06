@@ -41,7 +41,7 @@ Let $G$ be a group and $H_1$ and $H_2$ be two subgroups. Construct bijections be
 (Going between definitions sometimes requires inverting elements of $g$.) The resulting set is the double quotient $H_1 \backslash G / H_2$; it can be interpreted as the set of double cosets $H_1 g H_2$.
 
 ## 2.
-Fix $n$ and put $S_n$; for any $m ≤ n$, let $H_m ⊂ S_n$ be the subgroup $S_m × S_{n-m}$. The quotient $S_n / H_m$ can be identified with the set of $m$-element subsets of the set {1, …, n}. (How?) Show that the double quotient $H_{m_1} \backslash S_n / H_{m_2}$ is a finite set with
+Fix $n$ and put $S_n$; for any $m ≤ n$, let $H_m ⊂ S_n$ be the subgroup $S_m × S_{n-m}$. The quotient $S_n / H_m$ can be identified with the set of $m$-element subsets of the set $`\{1, …, n\}`$. (How?) Show that the double quotient $H_{m_1} \backslash S_n / H_{m_2}$ is a finite set with
 
 $\min (m_1, m_2)-\max (0, m_1+m_2-n)+1$
 
