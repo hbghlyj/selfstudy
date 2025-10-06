@@ -38,10 +38,10 @@ Let $G$ be a group and $H_1$ and $H_2$ be two subgroups. Construct bijections be
 - The quotient of $G / H_2$ by the action of $H_1$ (on the left);
 - The quotient of $G$ by the action of $H_1 \times H_2$ with $H_1$ acting on the left and $H_2$ acting on the right (i.e., $H_1 \times H_2$ acts as a subgroup of $G \times G$);
 - The quotient of $(G / H_1) \times(G / H_2)$ with $G$ acting on two copies simultaneously (this is called the diagonal action).
-(Going between definitions sometimes requires inverting elements of $g$.) The resulting set is the double quotient $H_1 \backslash G / H_2$; it can be interpreted as the set of double cosets $H_1 g H_2$.
+(Going between definitions sometimes requires inverting elements of $g$.) The resulting set is the double quotient $H_1 ⧵ G / H_2$; it can be interpreted as the set of double cosets $H_1 g H_2$.
 
 ## 2.
-Fix $n$ and put $S_n$; for any $m ≤ n$, let $H_m ⊂ S_n$ be the subgroup $S_m × S_{n-m}$. The quotient $S_n / H_m$ can be identified with the set of $m$-element subsets of the set $`\{1, …, n\}`$. (How?) Show that the double quotient $H_{m_1} \backslash S_n / H_{m_2}$ is a finite set with
+Fix $n$ and put $S_n$; for any $m ≤ n$, let $H_m ⊂ S_n$ be the subgroup $S_m × S_{n-m}$. The quotient $S_n / H_m$ can be identified with the set of $m$-element subsets of the set $`\{1, …, n\}`$. (How?) Show that the double quotient $H_{m_1} ⧵ S_n / H_{m_2}$ is a finite set with
 
 $\min (m_1, m_2)-\max (0, m_1+m_2-n)+1$
 
