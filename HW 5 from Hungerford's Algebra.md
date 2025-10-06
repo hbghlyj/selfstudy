@@ -53,7 +53,7 @@ Suppose $n_p = q$. Then $q \equiv 1 \pmod p$. This means $q = kp + 1$ for some i
 
 Therefore, $n_p$ must be 1. This means there is a unique Sylow $p$-subgroup, $P$. A unique Sylow subgroup is always normal in $G$. The index of $P$ is $|G|/|P| = (p^n q) / p^n = q$.
 
-Thus, $G$ has a unique normal subgroup of index $q.
+Thus, $G$ has a unique normal subgroup of index $q$.
 
 ---
 ## 1.
