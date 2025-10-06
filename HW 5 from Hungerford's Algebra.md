@@ -36,7 +36,7 @@ Since every Sylow $p_i$-subgroup $P_i$ of $G$ is normal, we have that $P_i \tria
 
 By the Sylow theorems, the Sylow $p_i$-subgroups are unique for each prime $p_i$, so they intersect trivially: $`P_i \cap P_j = \{e\}`$ for $i \neq j$.
 
-Now, consider the product $P_1 P_2 \cdots P_k$. Since the orders of the Sylow subgroups multiply to give $|G|$, we have that $|P_1 P_2 \cdots P_k| = |G|$.
+Now, consider the product subgroup $H = P_1 P_2 \cdots P_k$. Since the subgroups $P_i$ are normal and have pairwise coprime orders, the order of $H$ is the product of their orders: $|H| = |P_1|\cdots|P_k| = |G|$.
 
 Thus, $G = P_1 P_2 \cdots P_k$.
 
