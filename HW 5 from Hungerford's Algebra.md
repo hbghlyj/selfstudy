@@ -31,5 +31,5 @@ $\min \left(m_1, m_2\right)-\max \left(0, m_1+m_2-n\right)+1$
 
 elements. (Hint: the set counts the number of possible relative positions of two subsets of size $m_1$ and $m_2$.)
 
-# 3. (A follow-up to II.5.9)
+## 3. (A follow-up to II.5.9)
 Suppose $G$ is a finite group, and that $p$ is the smallest prime factor of $|G|$. Show that any subgroup $H \subset G$ of index $p$ is normal. (One possible way to prove this: consider the action of $H$ on $G / H$, and notice that the trivial coset $H$ is a fixed point.)
