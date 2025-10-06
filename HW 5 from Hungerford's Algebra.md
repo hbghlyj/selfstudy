@@ -16,7 +16,7 @@ If every Sylow $p$-subgroup of a finite group $G$ is normal for every prime $p$,
 If $|G|=p^n q$, with $p>q$ primes, then $G$ contains a unique normal subgroup of index $q$.
 
 ---
-# 1.
+## 1.
 Let $G$ be a group and $H_1$ and $H_2$ be two subgroups. Construct bijections between the following sets:
 - The quotient of $G / H_1$ by the action of $H_2$ (on the left);
 - The quotient of $G / H_2$ by the action of $H_1$ (on the left);
