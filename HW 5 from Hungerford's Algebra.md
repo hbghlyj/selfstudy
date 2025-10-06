@@ -43,6 +43,10 @@ Finally, we have shown $G = P_1 P_2 \cdots P_k$, each $P_i$ is normal, and $P_i 
 ## Problem 9
 If $|G|=p^n q$, with $p>q$ primes, then $G$ contains a unique normal subgroup of index $q$.
 
+Proof
+
+By the Sylow theorems, the number of Sylow $q$-subgroups $n_q$ divides $p^n$ and is congruent to 1 modulo $q$. The only divisor of $p^n$ that is congruent to 1 modulo $q$ is 1 (since $p>q$). Thus, there is a unique Sylow $q$-subgroup $Q$ of $G$, which must be normal.
+
 ---
 ## 1.
 Let $G$ be a group and $H_1$ and $H_2$ be two subgroups. Construct bijections between the following sets:
