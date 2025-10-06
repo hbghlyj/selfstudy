@@ -15,7 +15,7 @@ $`|H| = |H\cap C(G)| + \sum_{i} |O_i|,`$
 
 where $O_i$ are the nontrivial orbits.
 
-Since $|H|=p^k$ and each $|O_i|$ is a power of $p$ greater than 1, it follows that $|H \cap C(G)|$ must also be a power of $p$. Since $`H \neq \{e\}`$, we have $|H \cap C(G)| \geq p^1 = p$. Thus, $`H \cap C(G) \neq \{e\}`$.
+Since $|H|=p^k$ is divisible by $p$ and each $|O_i|$ is divisible by $p$, it follows from the class equation that $|H \cap C(G)|$ is divisible by $p$. As $H \cap C(G)$ is a subgroup, its order is at least 1. Therefore, $|H \cap C(G)| \ge p$, so $H \cap C(G) \neq \{e\}$.
 
 ## Problem 5
 If $P$ is a normal Sylow $p$-subgroup of a finite group $G$ and $f\colon G \to G$ is an endomorphism, then $f(P)\leq P$.
