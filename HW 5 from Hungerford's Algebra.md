@@ -28,6 +28,20 @@ Proof
 ## Problem 8
 If every Sylow $p$-subgroup of a finite group $G$ is normal for every prime $p$, then $G$ is the direct product of its Sylow subgroups.
 
+Proof
+
+Let $|G|=p_1^{n_1} p_2^{n_2} \cdots p_k^{n_k}$ be the prime factorization of $|G|$.
+
+Since every Sylow $p_i$-subgroup $P_i$ of $G$ is normal, we have that $P_i \triangleleft G$ for all $i$.
+
+Since each Sylow $p_i$-subgroup $P_i$ is normal, it is the unique Sylow $p_i$-subgroup of $G$. For $i \neq j$, the intersection $P_i \cap P_j$ is trivial, as its order must divide the coprime integers $|P_i|$ and $|P_j|$.
+
+Now, consider the product subgroup $H = P_1 P_2 \cdots P_k$. Since the subgroups $P_i$ are normal and have pairwise coprime orders, the order of $H$ is the product of their orders: $|H| = |P_1|\cdots|P_k| = |G|$.
+
+Thus, $G = P_1 P_2 \cdots P_k$.
+
+Finally, we have shown $G = P_1 P_2 \cdots P_k$, each $P_i$ is normal, and $P_i \cap (P_1\cdots\hat{P_i}\cdots P_k) = \{e\}$ (since their orders are coprime). These are the conditions for $G$ to be the internal direct product of its Sylow subgroups, so $G \cong P_1 \times P_2 \times \cdots \times P_k$.
+
 ## Problem 9
 If $|G|=p^n q$, with $p>q$ primes, then $G$ contains a unique normal subgroup of index $q$.
 
