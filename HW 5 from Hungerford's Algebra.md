@@ -23,7 +23,7 @@ Proof
 
 - For $S_3$, the Sylow 2-subgroups are $\langle(12)\rangle, \langle(13)\rangle, \langle(23)\rangle$ and the Sylow 3-subgroup is $\langle(123)\rangle$.
 - For $S_4$, the Sylow 2-subgroups are isomorphic to the dihedral group $D_8$ and there are 3 such subgroups. The Sylow 3-subgroups are isomorphic to $C_3$ and there are 4 such subgroups.
-- For $S_5$, the Sylow 2-subgroups are isomorphic to the dihedral group $D_{16}$ and there are 15 such subgroups. The Sylow 3-subgroups are isomorphic to $C_3$ and there are 10 such subgroups.
+- For $S_5$, the Sylow 2-subgroups are isomorphic to the dihedral group $D_8$ and there are 15 such subgroups. The Sylow 3-subgroups are isomorphic to $C_3$ and there are 10 such subgroups.
 
 ## Problem 8
 If every Sylow $p$-subgroup of a finite group $G$ is normal for every prime $p$, then $G$ is the direct product of its Sylow subgroups.
