@@ -28,6 +28,20 @@ Proof
 ## Problem 8
 If every Sylow $p$-subgroup of a finite group $G$ is normal for every prime $p$, then $G$ is the direct product of its Sylow subgroups.
 
+Proof
+
+Let $|G|=p_1^{n_1} p_2^{n_2} \cdots p_k^{n_k}$ be the prime factorization of $|G|$.
+
+Since every Sylow $p_i$-subgroup $P_i$ of $G$ is normal, we have that $P_i \triangleleft G$ for all $i$.
+
+By the Sylow theorems, the Sylow $p_i$-subgroups are unique for each prime $p_i$, so they intersect trivially: $`P_i \cap P_j = \{e\}`$ for $i \neq j$.
+
+Now, consider the product $P_1 P_2 \cdots P_k$. Since the orders of the Sylow subgroups multiply to give $|G|$, we have that $|P_1 P_2 \cdots P_k| = |G|$.
+
+Thus, $G = P_1 P_2 \cdots P_k$.
+
+Finally, since the Sylow subgroups are normal and intersect trivially, we have that $G$ is isomorphic to the direct product of its Sylow subgroups: $G \cong P_1 \times P_2 \times \cdots \times P_k$.
+
 ## Problem 9
 If $|G|=p^n q$, with $p>q$ primes, then $G$ contains a unique normal subgroup of index $q$.
 
