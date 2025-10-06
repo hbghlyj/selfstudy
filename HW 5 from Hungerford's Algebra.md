@@ -5,7 +5,7 @@ If $G$ is a finite $p$-group, $H \triangleleft G$ and $H \neq\langle e\rangle$, 
 
 Proof
 
-Let $|G|=p^n$ for some $n \geq 1$. Since $H \triangleleft G$ and $H \neq \{e\}$, we have $|H|=p^k$ for some $k \geq 1$.
+Let $|G|=p^n$ for some $n \geq 1$. Since $H \triangleleft G$ and $H \neq\langle e\rangle$, we have $|H|=p^k$ for some $k \geq 1$.
 
 Consider the action of $G$ on $H$ by conjugation. The orbit-stabilizer theorem tells us that for any $h \in H$, the size of the orbit of $h$ under this action is equal to the index of the stabilizer of $h$ in $G$. Since $H$ is normal, the orbits are contained in $H$.
 
@@ -15,7 +15,7 @@ $`|H| = |H\cap C(G)| + \sum_{i} |O_i|,`$
 
 where $O_i$ are the nontrivial orbits.
 
-Since $|H|=p^k$ is divisible by $p$ and each $|O_i|$ is divisible by $p$, it follows from the class equation that $|H \cap C(G)|$ is divisible by $p$. As $H \cap C(G)$ is a subgroup, its order is at least 1. Therefore, $|H \cap C(G)| \ge p$, so $H \cap C(G) \neq \{e\}$.
+Since $|H|=p^k$ is divisible by $p$ and each $|O_i|$ is divisible by $p$, it follows from the class equation that $|H \cap C(G)|$ is divisible by $p$. As $H \cap C(G)$ is a subgroup, its order is at least 1. Therefore, $|H \cap C(G)| \ge p$, so $H \cap C(G) \neq\langle e\rangle$.
 
 ## Problem 5
 If $P$ is a normal Sylow $p$-subgroup of a finite group $G$ and $f\colon G \to G$ is an endomorphism, then $f(P)\leq P$.
@@ -52,7 +52,7 @@ Now, consider the product subgroup $H = P_1 P_2 \cdots P_k$. Since the subgroups
 
 Thus, $G = P_1 P_2 \cdots P_k$.
 
-Finally, we have shown $G = P_1 P_2 \cdots P_k$, each $P_i$ is normal, and $P_i \cap (P_1\cdots\hat{P_i}\cdots P_k) = \{e\}$ (since their orders are coprime). These are the conditions for $G$ to be the internal direct product of its Sylow subgroups, so $G \cong P_1 \times P_2 \times \cdots \times P_k$.
+Finally, we have shown $G = P_1 P_2 \cdots P_k$, each $P_i$ is normal, and $P_i \cap (P_1\cdots\hat{P_i}\cdots P_k) = \langle e\rangle$ (since their orders are coprime). These are the conditions for $G$ to be the internal direct product of its Sylow subgroups, so $G \cong P_1 \times P_2 \times \cdots \times P_k$.
 
 ## Problem 9
 If $|G|=p^n q$, with $p>q$ primes, then $G$ contains a unique normal subgroup of index $q$.
