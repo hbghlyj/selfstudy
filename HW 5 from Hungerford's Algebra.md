@@ -32,7 +32,7 @@ Proof
 
 Let $|G|=p_1^{n_1} p_2^{n_2} \cdots p_k^{n_k}$ be the prime factorization of $|G|$.
 
-Since each Sylow $p_i$-subgroup $P_i$ is normal, it is the unique Sylow $p_i$-subgroup of $G$. The intersection $P_i \cap (P_1\cdots\hat{P_i}\cdots P_k)$ is trivial, as its order must divide the coprime integers $|P_i|$ and $|P_1\cdots\hat{P_i}\cdots P_k|$.
+Since each Sylow $p_i$-subgroup $P_i$ is normal, it is the unique Sylow $p_i$-subgroup of $G$. Because the subgroups $P_j$ are normal with pairwise coprime orders, the product $P_1\cdots\hat{P_i}\cdots P_k$ is a subgroup whose order is $\prod_{j \neq i} |P_j|$. Since this order and $|P_i|$ are coprime, the intersection $P_i \cap (P_1\cdots\hat{P_i}\cdots P_k)$ must be trivial.
 
 Now, consider the product subgroup $H = P_1 P_2 \cdots P_k$. Since the subgroups $P_i$ are normal and have pairwise coprime orders, the order of $H$ is the product of their orders: $|H| = |P_1|\cdots|P_k| = |G|$.
 
