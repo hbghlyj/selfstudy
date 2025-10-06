@@ -34,7 +34,7 @@ Let $|G|=p_1^{n_1} p_2^{n_2} \cdots p_k^{n_k}$ be the prime factorization of $|G
 
 Since every Sylow $p_i$-subgroup $P_i$ of $G$ is normal, we have that $P_i \triangleleft G$ for all $i$.
 
-By the Sylow theorems, the Sylow $p_i$-subgroups are unique for each prime $p_i$, so they intersect trivially: $`P_i \cap P_j = \{e\}`$ for $i \neq j$.
+Since each Sylow $p_i$-subgroup $P_i$ is normal, it is the unique Sylow $p_i$-subgroup of $G$. For $i \neq j$, the intersection $P_i \cap P_j$ is trivial, as its order must divide the coprime integers $|P_i|$ and $|P_j|$.
 
 Now, consider the product subgroup $H = P_1 P_2 \cdots P_k$. Since the subgroups $P_i$ are normal and have pairwise coprime orders, the order of $H$ is the product of their orders: $|H| = |P_1|\cdots|P_k| = |G|$.
 
