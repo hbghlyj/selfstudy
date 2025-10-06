@@ -14,7 +14,7 @@ For any endomorphism $f\colon G \to G$, we have that $|f(P)|$ divides $|P|$, so 
 
 Thus, $f(P)$ is a $p$-subgroup of $G$.
 
-By the Sylow theorems, $f(P)$ is contained in some Sylow $p$-subgroup of $G$. But since $P$ is the unique Sylow $p$-subgroup of $G$ (as it is normal), we have that $f(P) \subseteq P$.
+By the Sylow theorems, $f(P)$ is contained in some Sylow $p$-subgroup of $G$. But since $P$ is the unique Sylow $p$-subgroup of $G$ (as it is normal), we have that $f(P) \leq P$.
 
 ## Problem 7
 Find the Sylow 2-subgroups and Sylow 3-subgroups of $S_3, S_4, S_5$.
