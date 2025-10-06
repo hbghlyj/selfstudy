@@ -3,6 +3,20 @@
 ## Problem 2
 If $G$ is a finite $p$-group, $H \triangleleft G$ and $H \neq\langle e\rangle$, then $H \cap C(G) \neq\langle e\rangle$.
 
+Proof
+
+Let $|G|=p^n$ for some $n \geq 1$. Since $H \triangleleft G$ and $H \neq \{e\}$, we have $|H|=p^k$ for some $k \geq 1$.
+
+Consider the action of $G$ on $H$ by conjugation. The orbit-stabilizer theorem tells us that for any $h \in H$, the size of the orbit of $h$ under this action is equal to the index of the stabilizer of $h$ in $G$. Since $H$ is normal, the orbits are contained in $H$.
+
+The size of each orbit divides $|G|=p^n$, so the size of each orbit is a power of $p$. The class equation for this action is:
+
+$`|H| = |H\cap C(G)| + \sum_{i} |O_i|,`$
+
+where $O_i$ are the nontrivial orbits.
+
+Since $|H|=p^k$ is divisible by $p$ and each $|O_i|$ is divisible by $p$, it follows from the class equation that $|H \cap C(G)|$ is divisible by $p$. As $H \cap C(G)$ is a subgroup, its order is at least 1. Therefore, $|H \cap C(G)| \ge p$, so $H \cap C(G) \neq \{e\}$.
+
 ## Problem 5
 If $P$ is a normal Sylow $p$-subgroup of a finite group $G$ and $f\colon G \to G$ is an endomorphism, then $f(P)\leq P$.
 
