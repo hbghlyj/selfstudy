@@ -4,7 +4,17 @@
 If $G$ is a finite $p$-group, $H \triangleleft G$ and $H \neq\langle e\rangle$, then $H \cap C(G) \neq\langle e\rangle$.
 
 ## Problem 5
-If $P$ is a normal Sylow $p$-subgroup of a finite group $G$ and $f\colon G \to G$ is an endomorphism, then $f(P)<P$.
+If $P$ is a normal Sylow $p$-subgroup of a finite group $G$ and $f\colon G \to G$ is an endomorphism, then $f(P)\leq P$.
+
+Proof
+
+Let $|G|=p^n m$ with $p \nmid m$.
+
+For any endomorphism $f\colon G \to G$, we have that $|f(P)|$ divides $|P|$, so $|f(P)|=p^k$ for some $k \leq n$.
+
+Thus, $f(P)$ is a $p$-subgroup of $G$.
+
+By the Sylow theorems, $f(P)$ is contained in some Sylow $p$-subgroup of $G$. But since $P$ is the unique Sylow $p$-subgroup of $G$ (as it is normal), we have that $f(P) \leq P$.
 
 ## Problem 7
 Find the Sylow 2-subgroups and Sylow 3-subgroups of $S_3, S_4, S_5$.
