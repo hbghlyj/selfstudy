@@ -24,7 +24,7 @@ Proof
 
 Let $|G|=p^n m$ with $p \nmid m$.
 
-For any endomorphism $f\colon G \to G$, we have that $|f(P)|$ divides $|P|$, so $|f(P)|=p^k$ for some $k \leq n$.
+For any endomorphism $f\colon G \to G$, we have that $f(P)\cong P/\ker(f|_P)$ so $|f(P)|$ divides $|P|$, so $|f(P)|=p^k$ for some $k \leq n$.
 
 Thus, $f(P)$ is a $p$-subgroup of $G$.
 
