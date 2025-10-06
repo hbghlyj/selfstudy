@@ -40,7 +40,7 @@ Now, consider the product subgroup $H = P_1 P_2 \cdots P_k$. Since the subgroups
 
 Thus, $G = P_1 P_2 \cdots P_k$.
 
-Finally, since the Sylow subgroups are normal and intersect trivially, we have that $G$ is isomorphic to the direct product of its Sylow subgroups: $G \cong P_1 \times P_2 \times \cdots \times P_k$.
+Finally, we have shown $G = P_1 P_2 \cdots P_k$, each $P_i$ is normal, and $P_i \cap (P_1\cdots\hat{P_i}\cdots P_k) = \{e\}$ (since their orders are coprime). These are the conditions for $G$ to be the internal direct product of its Sylow subgroups, so $G \cong P_1 \times P_2 \times \cdots \times P_k$.
 
 ## Problem 9
 If $|G|=p^n q$, with $p>q$ primes, then $G$ contains a unique normal subgroup of index $q$.
