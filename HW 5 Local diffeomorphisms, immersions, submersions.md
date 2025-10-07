@@ -47,7 +47,7 @@ h \\
 k
 \end{pmatrix}$.
 
-2. **Image is a Manifold**: The image of $\tilde{F}$ is the Möbius strip, which is a non-orientable surface. Since $\tilde{F}$ is an embedding, its image is a smooth manifold.
+2. **Homeomorphism onto Image**: To complete the proof, we must show the induced map on the Möbius strip is a homeomorphism onto its image. This requires proving that the map is injective on the quotient space and is a proper map.
 
 # 4
 Note that $P(X, Y, Z, W)=X^2+Z^2-Y^2-W^2$ is a homogeneous polynomial. Consider the hypersurface $S \subset \mathbb{R P}^3$ defined by $P(X, Y, Z, W)=0$. (This makes sense since $P$ is homogeneous.)
