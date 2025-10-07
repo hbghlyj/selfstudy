@@ -12,9 +12,9 @@ Proof
 
 The determinant map $\det\colon \mathrm{GL}(n, \mathbb{R}) \to \mathbb{R}^*$ is smooth and surjective,
 
-$d\det(A) = \mathrm{tr}(A^{-1} dA)$
+$d(\det)_A(H) = \det(A) \mathrm{tr}(A^{-1}H)
 
-so the regular values of $\det$ are precisely the nonzero real numbers.
+Since $\det(A) \neq 0$ for any $A \in \mathrm{GL}(n, \mathbb{R})$, the differential $d(\det)_A$ is always surjective. Thus, all values in $\mathbb{R}^*$ are regular values.
 
 By Corollary 5.14 (Regular Level Set Theorem), the preimage $\mathrm{SL}(n, \mathbb{R}) = \det^{-1}(1)$ is a smooth submanifold of $\mathrm{GL}(n, \mathbb{R})$.
 
