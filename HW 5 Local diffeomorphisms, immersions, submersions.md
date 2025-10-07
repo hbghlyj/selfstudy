@@ -34,7 +34,7 @@ $F$ sends the seam $u \sim u + 2\pi$ to the same point in $\mathbb{R}^3$, so it 
 
 $\tilde{F}(u, v) = \left(\left(1+v \cos \frac{u}{2}\right) \cos u,\left(1+v \cos \frac{u}{2}\right) \sin u, v \sin \frac{u}{2}\right)$.
 
-To show that $\tilde{F}$ is an embedding, we need to check that it is a smooth immersion and that its image is a manifold.
+To show that $F$ induces an embedding, we need to check that it is a smooth immersion and that the induced map is a homeomorphism onto its image.
 
 1. **Smooth Immersion**: We compute the differential $d\tilde{F}_{(u, v)}\colon T_{(u, v)}\left(\mathbb{R} \times\left(-\frac{1}{2}, \frac{1}{2}\right)\right) \to T_{\tilde{F}(u, v)}\mathbb{R}^3$. The Jacobian matrix of $\tilde{F}$ is given by
 
