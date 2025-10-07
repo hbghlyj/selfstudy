@@ -8,6 +8,16 @@ Since $M$ is a compact manifold and $F$ is a smooth map, its image $F(M)$ is a c
 # 2
 Let $`M=\mathrm{SL}(n, \mathbb{R}))=\{A \in \mathrm{GL}(n, \mathbb{R}) \mid \det(A)=1\}`$. Show that $M$ is a smooth manifold.
 
+Proof
+
+The determinant map $\det\colon \mathrm{GL}(n, \mathbb{R}) \to \mathbb{R}^*$ is smooth and surjective,
+
+$d(\det)_A(H) = \det(A) \mathrm{tr}(A^{-1}H)
+
+Since $\det(A) \neq 0$ for any $A \in \mathrm{GL}(n, \mathbb{R})$, the differential $d(\det)_A$ is always surjective. Thus, all values in $\mathbb{R}^*$ are regular values.
+
+By Corollary 5.14 (Regular Level Set Theorem), the preimage $\mathrm{SL}(n, \mathbb{R}) = \det^{-1}(1)$ is a smooth submanifold of $\mathrm{GL}(n, \mathbb{R})$.
+
 # 3
 Show that $F\colon\mathbb{R} \times\left(-\frac{1}{2}, \frac{1}{2}\right) \to \mathbb{R}^3$ induces a smooth embedding of the Möbius strip in $\mathbb{R}^3$.
 
