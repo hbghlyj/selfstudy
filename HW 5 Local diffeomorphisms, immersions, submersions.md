@@ -46,7 +46,7 @@ $`d\tilde{F}_{(u, v)}(h, k) = \begin{pmatrix}
 \frac{\partial \tilde{F}_1}{\partial u} & \frac{\partial \tilde{F}_1}{\partial v} \\
 \frac{\partial \tilde{F}_2}{\partial u} & \frac{\partial \tilde{F}_2}{\partial v} \\
 \frac{\partial \tilde{F}_3}{\partial u} & \frac{\partial \tilde{F}_3}{\partial v}
-\end{pmatrix}_{(u, v)}
+\end{pmatrix}
 =\begin{pmatrix}
     -\frac{1}{2} v \cos(u) \sin(u/2) - (1 + v \cos(u/2)) \sin(u) & \cos(u/2) \cos(u) \\
     \cos(u) + v \cos(u/2) \cos(u) - \frac{1}{2} v \sin(u/2) \sin(u) & \cos(u/2) \sin(u) \\
