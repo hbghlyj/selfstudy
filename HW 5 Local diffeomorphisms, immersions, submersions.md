@@ -40,7 +40,7 @@ $\tilde{F}([u, v]) = F(u,v)$.
 
 To show that $F$ induces an embedding, we need to check that it is a smooth immersion and that the induced map is a homeomorphism onto its image.
 
-1. **Smooth Immersion**: We compute the differential $d\tilde{F}_{(u, v)}\colon T_{(u, v)}\left(\mathbb{R} \times\left(-\frac{1}{2}, \frac{1}{2}\right)\right) \to T_{\tilde{F}(u, v)}\mathbb{R}^3$. The Jacobian matrix of $\tilde{F}$ is given by
+1. **Smooth Immersion**: We compute the differential $`d\tilde{F}_{(u, v)}\colon T_{(u, v)}\left(\mathbb{R} \times\left(-\frac{1}{2}, \frac{1}{2}\right)\right) \to T_{\tilde{F}(u, v)}\mathbb{R}^3`$. The Jacobian matrix of $\tilde{F}$ is given by
 
 $`d\tilde{F}_{(u, v)}(h, k) = \begin{pmatrix}
 \frac{\partial \tilde{F}_1}{\partial u} & \frac{\partial \tilde{F}_1}{\partial v} \\
