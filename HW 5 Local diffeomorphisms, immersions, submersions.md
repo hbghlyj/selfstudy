@@ -36,7 +36,7 @@ Note that $P(X, Y, Z, W)=X^2+Z^2-Y^2-W^2$ is a homogeneous polynomial. Consider 
 Prove that $S$ is an embedded torus. (Hint: Start with $\tilde{S} \in S^3 \subset \mathbb{R}^4$ defined by the same polynomial.)
 
 # 5
-Let $\pi\colon K^{n+1} \backslash\{0\} \to K \mathbb{P}^n$ be the canonical projection for $K=\mathbb{R}, \mathbb{C}$.
+Let $`\pi\colon K^{n+1} \backslash\{0\} \to K \mathbb{P}^n`$ be the canonical projection for $K=\mathbb{R}, \mathbb{C}$.
 <ol type="a">
 <li>  
 
