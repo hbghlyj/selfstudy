@@ -30,7 +30,7 @@ Note: You can think of the Möbius strip as a quotient of $\mathbb{R} \times\lef
 
 Proof
 
-$F$ sends the seam $u \sim u + 2\pi$ to the same point in $\mathbb{R}^3$, so it induces a well-defined map $\tilde{F}\colon\mathbb{R} \times\left(-\frac{1}{2}, \frac{1}{2}\right) \to \mathbb{R}^3$.
+$F$ respects the identification $(u, v) \sim (u + 2\pi, -v)$, so it induces a well-defined map from the Möbius strip into $\mathbb{R}^3$.
 
 $\tilde{F}(u, v) = \left(\left(1+v \cos \frac{u}{2}\right) \cos u,\left(1+v \cos \frac{u}{2}\right) \sin u, v \sin \frac{u}{2}\right)$.
 
