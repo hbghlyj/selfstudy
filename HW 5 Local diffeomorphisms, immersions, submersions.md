@@ -32,9 +32,11 @@ Note: You can think of the Möbius strip as a quotient of $\mathbb{R} \times\lef
 
 Proof
 
-$F$ respects the identification $(u, v) \sim (u + 2\pi, -v)$, so it induces a well-defined map from the Möbius strip into $\mathbb{R}^3$.
+$`F(u+2\pi, -v) = \left(\left(1-v \cos \frac{u+2\pi}{2}\right) \cos(u+2\pi),\left(1-v \cos \frac{u+2\pi}{2}\right) \sin(u+2\pi), -v \sin \frac{u+2\pi}{2}\right)=F(u,v)`$
 
-$\tilde{F}(u, v) = \left(\left(1+v \cos \frac{u}{2}\right) \cos u,\left(1+v \cos \frac{u}{2}\right) \sin u, v \sin \frac{u}{2}\right)$.
+so $F$ respects the identification $(u, v) \sim (u + 2\pi, -v)$, so it induces a well-defined map from the Möbius strip into $\mathbb{R}^3$.
+
+$\tilde{F}([u, v]) = F(u,v)$.
 
 To show that $F$ induces an embedding, we need to check that it is a smooth immersion and that the induced map is a homeomorphism onto its image.
 
