@@ -42,14 +42,14 @@ To show that $F$ induces an embedding, we need to check that it is a smooth imme
 
 1. **Smooth Immersion**: We compute the differential $d\tilde{F}_{(u, v)}\colon T_{(u, v)}\left(\mathbb{R} \times\left(-\frac{1}{2}, \frac{1}{2}\right)\right) \to T_{\tilde{F}(u, v)}\mathbb{R}^3$. The Jacobian matrix of $\tilde{F}$ is given by
 
-$d\tilde{F}_{(u, v)}(h, k) = \begin{pmatrix}
+$`d\tilde{F}_{(u, v)}(h, k) = \begin{pmatrix}
 \frac{\partial \tilde{F}_1}{\partial u} & \frac{\partial \tilde{F}_1}{\partial v} \\
 \frac{\partial \tilde{F}_2}{\partial u} & \frac{\partial \tilde{F}_2}{\partial v} \\
 \frac{\partial \tilde{F}_3}{\partial u} & \frac{\partial \tilde{F}_3}{\partial v}
 \end{pmatrix}_{(u, v)} \begin{pmatrix}
 h \\
 k
-\end{pmatrix}$.
+\end{pmatrix}`$.
 
 2. **Homeomorphism onto Image**: To complete the proof, we must show the induced map on the Möbius strip is a homeomorphism onto its image. This requires proving that the map is injective on the quotient space and is a proper map.
 
