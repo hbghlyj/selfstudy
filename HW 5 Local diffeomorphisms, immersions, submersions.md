@@ -1,6 +1,10 @@
 # 1
 Let $M$ be a nonempty smooth compact manifold. Show that there is no smooth submersion $F\colon M \to \mathbb{R}$.
 
+Proof
+
+Since $M$ is a compact manifold and $F$ is a smooth map, its image $F(M)$ is a compact subset of $\mathbb{R}$. As $M$ is non-empty, $F(M)$ must attain a maximum value at some point $p \in M$. At this maximum, $p$ is a critical point of $F$, meaning its differential $dF_p$ is not surjective. This contradicts the definition of a submersion, which requires $dF_p$ to be surjective for all $p \in M$.
+
 # 2
 Let $`M=\mathrm{SL}(n, \mathbb{R}))=\{A \in \mathrm{GL}(n, \mathbb{R}) \mid \det(A)=1\}`$. Show that $M$ is a smooth manifold.
 
