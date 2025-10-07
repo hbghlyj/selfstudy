@@ -35,6 +35,8 @@ Find the Sylow 2-subgroups and Sylow 3-subgroups of $S_3, S_4, S_5$.
 
 Proof
 
+By the Sylow theorems, all Sylow $p$-subgroups of $S_n$ are conjugate, and therefore have the same cycle structure.
+
 - For $S_3$, the Sylow 2-subgroups are $\langle(12)\rangle, \langle(13)\rangle, \langle(23)\rangle$ and the Sylow 3-subgroup is $\langle(123)\rangle$.
 - For $S_4$, the Sylow 2-subgroups are isomorphic to the dihedral group $D_8$ and there are 3 such subgroups. The Sylow 3-subgroups are $\langle(123)\rangle, \langle(124)\rangle, \langle(134)\rangle, \langle(234)\rangle$.
 - For $S_5$, the Sylow 2-subgroups are isomorphic to the dihedral group $D_8$ and there are 15 such subgroups. The Sylow 3-subgroups are isomorphic to $C_3$ and there are 10 such subgroups.
