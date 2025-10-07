@@ -12,7 +12,7 @@ Proof
 
 The determinant map $\det\colon \mathrm{GL}(n, \mathbb{R}) \to \mathbb{R}^*$ is smooth and surjective,
 
-$d(\det)_A(H) = \det(A) \mathrm{tr}(A^{-1}H)
+$d(\det)_A(H) = \det(A) \mathrm{tr}(A^{-1}H)$
 
 Since $\det(A) \neq 0$ for any $A \in \mathrm{GL}(n, \mathbb{R})$, the differential $d(\det)_A$ is always surjective. Thus, all values in $\mathbb{R}^*$ are regular values.
 
