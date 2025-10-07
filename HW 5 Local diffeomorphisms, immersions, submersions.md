@@ -14,9 +14,11 @@ The determinant map $\det\colon \mathrm{GL}(n, \mathbb{R}) \to \mathbb{R}^*$ is 
 
 $d(\det)_A(H) = \det(A) \mathrm{tr}(A^{-1}H)$
 
-Since $\det(A) \neq 0$ for any $A \in \mathrm{GL}(n, \mathbb{R})$, the differential $d(\det)_A$ is always surjective. Thus, all values in $\mathbb{R}^*$ are regular values.
+Since $\det(A) \neq 0$ for any $A \in \mathrm{GL}(n, \mathbb{R})$, the differential $d(\det)_A$ is always surjective.
 
-By Corollary 5.14 (Regular Level Set Theorem), the preimage $\mathrm{SL}(n, \mathbb{R}) = \det^{-1}(1)$ is a smooth submanifold of $\mathrm{GL}(n, \mathbb{R})$.
+Thus, the determinant map $\det\colon \mathrm{GL}(n, \mathbb{R}) \to \mathbb{R}^*$ is a submersion.
+
+By Corollary 5.13 (Submersion Level Set Theorem), the preimage $\mathrm{SL}(n, \mathbb{R}) = \det^{-1}(1)$ is a smooth submanifold of $\mathrm{GL}(n, \mathbb{R})$ of codimension 1.
 
 # 3
 Show that $F\colon\mathbb{R} \times\left(-\frac{1}{2}, \frac{1}{2}\right) \to \mathbb{R}^3$ induces a smooth embedding of the Möbius strip in $\mathbb{R}^3$.
