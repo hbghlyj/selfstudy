@@ -30,6 +30,27 @@ F\colon(u, v) & =\left(\left(1+v \cos \frac{u}{2}\right) \cos u,\left(1+v \cos \
 
 Note: You can think of the Möbius strip as a quotient of $\mathbb{R} \times\left(-\frac{1}{2}, \frac{1}{2}\right)$.
 
+Proof
+
+$F$ respects the identification $(u, v) \sim (u + 2\pi, -v)$, so it induces a well-defined map from the Möbius strip into $\mathbb{R}^3$.
+
+$\tilde{F}(u, v) = \left(\left(1+v \cos \frac{u}{2}\right) \cos u,\left(1+v \cos \frac{u}{2}\right) \sin u, v \sin \frac{u}{2}\right)$.
+
+To show that $F$ induces an embedding, we need to check that it is a smooth immersion and that the induced map is a homeomorphism onto its image.
+
+1. **Smooth Immersion**: We compute the differential $d\tilde{F}_{(u, v)}\colon T_{(u, v)}\left(\mathbb{R} \times\left(-\frac{1}{2}, \frac{1}{2}\right)\right) \to T_{\tilde{F}(u, v)}\mathbb{R}^3$. The Jacobian matrix of $\tilde{F}$ is given by
+
+$d\tilde{F}_{(u, v)}(h, k) = \begin{pmatrix}
+\frac{\partial \tilde{F}_1}{\partial u} & \frac{\partial \tilde{F}_1}{\partial v} \\
+\frac{\partial \tilde{F}_2}{\partial u} & \frac{\partial \tilde{F}_2}{\partial v} \\
+\frac{\partial \tilde{F}_3}{\partial u} & \frac{\partial \tilde{F}_3}{\partial v}
+\end{pmatrix}_{(u, v)} \begin{pmatrix}
+h \\
+k
+\end{pmatrix}$.
+
+2. **Homeomorphism onto Image**: To complete the proof, we must show the induced map on the Möbius strip is a homeomorphism onto its image. This requires proving that the map is injective on the quotient space and is a proper map.
+
 # 4
 Note that $P(X, Y, Z, W)=X^2+Z^2-Y^2-W^2$ is a homogeneous polynomial. Consider the hypersurface $S \subset \mathbb{R P}^3$ defined by $P(X, Y, Z, W)=0$. (This makes sense since $P$ is homogeneous.)
 
