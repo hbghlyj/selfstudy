@@ -1,6 +1,10 @@
 # 1
 Let $M$ be a nonempty smooth compact manifold. Show that there is no smooth submersion $F\colon M \to \mathbb{R}$.
 
+Proof
+
+The image of a compact manifold under a smooth map is also compact. Since $\mathbb{R}$ is not compact, the image of $M$ under $F$ cannot be all of $\mathbb{R}$. Therefore, the differential $dF_p$ cannot be surjective for all $p \in M$, which contradicts the assumption that $F$ is a submersion.
+
 # 2
 Let $`M=\mathrm{SL}(n, \mathbb{R}))=\{A \in \mathrm{GL}(n, \mathbb{R}) \mid \det(A)=1\}`$. Show that $M$ is a smooth manifold.
 
