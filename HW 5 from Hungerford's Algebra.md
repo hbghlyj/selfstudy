@@ -107,7 +107,7 @@ Let's define a map $f: H_1⧹(G/H_2) \to H_1⧹G/H_2$ by $f(H_1(gH_2)) = H_1 g H
 
 Since $f$ is a bijection, the set of orbits $H_1⧹(G/H_2)$ is in one-to-one correspondence with the set of double cosets $H_1⧹G/H_2$.
 
-To prove the set (3), $H_2⧹(G/H_1)$ is bijective to set (4), $(G/H_1) \times (G/H_2)/G$, we define a map $\phi(\text{Orbit}(g_1H_1,g_2H_2)) = H_1 g_1^{-1} g_2 H_2$.
+To prove a bijection between set (3) and set (4), we define a map from set (4) to set (3): $\phi(\text{Orbit}(g_1H_1,g_2H_2)) = H_1 g_1^{-1} g_2 H_2$.
 
 *   **Well-defined:** Suppose we have two representatives for the same orbit, i.e., $\text{Orbit}(g_1H_1,g_2H_2) = \text{Orbit}(g'_1H_1,g'_2H_2)$. This means there exists a $g \in G$ such that $(g g_1 H_1, g g_2 H_2) = (g'_1 H_1, g'_2 H_2)$. This implies $g'_1 = g g_1 h_1$ for some $h_1 \in H_1$ and $g'_2 = g g_2 h_2$ for some $h_2 \in H_2$. We must show that $\phi(\text{Orbit}(g_1H_1,g_2H_2)) = \phi(\text{Orbit}(g'_1H_1,g'_2H_2))$.
 
