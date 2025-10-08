@@ -111,11 +111,11 @@ To prove a bijection between set (3) and set (4), we define a map from set (4) t
 
 *   **Well-defined:** Suppose we have two representatives for the same orbit, i.e., $\text{Orbit}(g_1H_1,g_2H_2) = \text{Orbit}(g'_1H_1,g'_2H_2)$. This means there exists a $g \in G$ such that $(g g_1 H_1, g g_2 H_2) = (g'_1 H_1, g'_2 H_2)$. This implies $g'_1 = g g_1 h_1$ for some $h_1 \in H_1$ and $g'_2 = g g_2 h_2$ for some $h_2 \in H_2$. We must show that $\phi(\text{Orbit}(g_1H_1,g_2H_2)) = \phi(\text{Orbit}(g'_1H_1,g'_2H_2))$.
 
-    $`\phi(\text{Orbit}(g'_1H_1,g'_2H_2)) = H_1 g'^{-1}_1 g'_2 H_2 = H_1 (h^{-1}_1 g^{-1} g^{-1}_1)(g g_2 h_2) H_2`$
+    $`\phi(\text{Orbit}(g'_1H_1,g'_2H_2)) = H_1 (g'_1)^{-1} g'_2 H_2 = H_1 (g g_1 h_1)^{-1} (g g_2 h_2) H_2 = H_1 (h_1^{-1} g_1^{-1} g^{-1})(g g_2 h_2) H_2`$
 
-    Since $h^{-1}_1 \in H_1$ and $h_2 \in H_2$, we have $H_1 h^{-1}_1 = H_1$ and $h_2 H_2 = H_2$.
+    Since $h_1^{-1} \in H_1$ and $h_2 \in H_2$, we have $H_1 h_1^{-1} = H_1$ and $h_2 H_2 = H_2$.
 
-    Thus, $H_1 (h^{-1}_1 g^{-1} g^{-1}_1)(g g_2 h_2) H_2 = H_1 g^{-1}_1 g_2 H_2 = \phi(\text{Orbit}(g_1H_1,g_2H_2))$.
+    Thus, $H_1 (h_1^{-1} g_1^{-1} g^{-1})(g g_2 h_2) H_2 = H_1 g_1^{-1} (g^{-1} g) g_2 H_2 = H_1 g_1^{-1} g_2 H_2 = \phi(\text{Orbit}(g_1H_1,g_2H_2))$.
 * **Injective:**
 
 ## 2.
