@@ -44,7 +44,7 @@ By the Sylow theorems, all Sylow $p$-subgroups of $S_n$ are conjugate, and there
   3. Stabilizer of \{\{1,4\}, \{2,3\}\}
   
   The Sylow 3-subgroups are $\langle(123)\rangle, \langle(124)\rangle, \langle(134)\rangle, \langle(234)\rangle$.
-- For $S_5$, the Sylow 2-subgroups are isomorphic to the dihedral group $D_8$ and there are 15 such subgroups:
+- For $S_5$, the Sylow 2-subgroups are isomorphic to the dihedral group $D_8$. There are 15 such subgroups, which are the stabilizers of partitions of the set $\{1, \dots, 5\}$ into two pairs and a singleton:
     1. Stabilizer of \{\{1,2\}, \{3,4\}, \{5\}\}
     2. Stabilizer of \{\{1,3\}, \{2,4\}, \{5\}\}
     3. Stabilizer of \{\{1,4\}, \{2,3\}, \{5\}\}
