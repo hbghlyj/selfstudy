@@ -82,7 +82,7 @@ Let $G$ be a group and $H_1$ and $H_2$ be two subgroups. Construct bijections be
 
 Proof
 
-To prove set (2), which is $H_1⧹(G/H_2)$, the set of orbits of left cosets of $H_2$ under the left action of $H_1$, is bijective to the set (3) of double cosets $H_1 g H_2$, we will demonstrate this for set (2)
+To prove that set (2), which is $H_1⧹(G/H_2)$, the set of orbits of left cosets of $H_2$ under the left action of $H_1$, is bijective to set (3), the set of double cosets $H_1 g H_2$, we will construct an explicit map.
 
 Let's define a map $f: H_1⧹(G/H_2) \to H_1⧹G/H_2$ by $f(H_1(gH_2)) = H_1 g H_2$. Here, $H_1(gH_2)$ denotes the orbit of the coset $gH_2$ under the action of $H_1$.
 
