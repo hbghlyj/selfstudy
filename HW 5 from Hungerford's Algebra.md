@@ -117,5 +117,9 @@ $\min (m_1, m_2)-\max (0, m_1+m_2-n)+1$
 
 elements. (Hint: the set counts the number of possible relative positions of two subsets of size $m_1$ and $m_2$.)
 
+Proof
+
+First, we identify the quotient $S_n / H_m$ with the set of $m$-element subsets of $`\{1, \ldots, n\}`$. The subgroup $H_m = S_m \times S_{n-m}$ consists of permutations that permute the first $m$ elements among themselves and the last $n-m$ elements among themselves. Therefore, each left coset of $H_m$ in $S_n$ corresponds to a unique choice of $m$ elements from $\{1, \ldots, n\}$, since any permutation in $S_n$ can be used to map the first $m$ elements to any chosen subset of size $m$. Thus, we have a bijection between $S_n / H_m$ and the set of all $m$-element subsets of $\{1, \ldots, n\}$.
+
 ## 3. (A follow-up to II.5.9)
 Suppose $G$ is a finite group, and that $p$ is the smallest prime factor of $|G|$. Show that any subgroup $H \subset G$ of index $p$ is normal. (One possible way to prove this: consider the action of $H$ on $G / H$, and notice that the trivial coset $H$ is a fixed point.)
