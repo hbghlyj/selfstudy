@@ -82,6 +82,8 @@ Let $G$ be a group and $H_1$ and $H_2$ be two subgroups. Construct bijections be
 
 Proof
 
+There is a natural bijection between $H_1⧹G/H_2$ and $H_2⧹G/H_1$ via the map $H_1 g H_2 \mapsto H_2 g^{-1} H_1$. This provides a bijection between sets (1) and (2), given their correspondence with these double coset spaces (which is established below).
+
 To prove that set (2), which is $H_1⧹(G/H_2)$, the set of orbits of left cosets of $H_2$ under the left action of $H_1$, is bijective to set (3), the set of double cosets $H_1 g H_2$, we will construct an explicit map.
 
 Let's define a map $f: H_1⧹(G/H_2) \to H_1⧹G/H_2$ by $f(H_1(gH_2)) = H_1 g H_2$. Here, $H_1(gH_2)$ denotes the orbit of the coset $gH_2$ under the action of $H_1$.
@@ -105,10 +107,13 @@ Let's define a map $f: H_1⧹(G/H_2) \to H_1⧹G/H_2$ by $f(H_1(gH_2)) = H_1 g H
 
 Since $f$ is a bijection, the set of orbits $H_1⧹(G/H_2)$ is in one-to-one correspondence with the set of double cosets $H_1⧹G/H_2$.
 
-A similar argument shows that set (1), $H_2⧹(G/H_1)$, is also bijective to the set of double cosets $H_2⧹G/H_1$. There is a natural bijection between $H_1⧹G/H_2$ and $H_2⧹G/H_1$ via the map $H_1 g H_2 \mapsto H_2 g^{-1} H_1$. Therefore, sets (1) and (2) are bijective to each other.
+To prove 3 and 4 are bijective, we define a map $g: H_1 \times H_2⧹G \to (G/H_1) \times (G/H_2)$ by $g(H_1 g H_2) = (gH_1, gH_2)$.
 
-To prove 3 and 4 are bijective,
-
+*   **Well-defined:** Suppose $H_1 g H_2 = H_1 g' H_2$. This means $g' = h_1 g h_2$ for some $h_1 \in H_1$ and $h_2 \in H_2$. Then,
+    $g(H_1 g' H_2) = (g'H_1, g'H_2) = ((h_1 g h_2)H_1, (h_1 g h_2)H_2)$.
+    Since $h_1 \in H_1$, we have $(h_1 g h_2)H_1 = gH_1$. Similarly, since $h_2 \in H_2$, we have $(h_1 g h_2)H_2 = gH_2$.
+    Thus, $g(H_1 g' H_2) = (gH_1, gH_2) = g(H_1 g H_2)$, so the map is well-defined.
+*   **Injective:** 
 
 ## 2.
 Fix $n$ and put $S_n$; for any $m ≤ n$, let $H_m ⊂ S_n$ be the subgroup $S_m \times S_{n-m}$. The quotient $S_n / H_m$ can be identified with the set of $m$-element subsets of the set $`\{1, …, n\}`$. (How?) Show that the double quotient $H_{m_1}⧹S_n / H_{m_2}$ is a finite set with
