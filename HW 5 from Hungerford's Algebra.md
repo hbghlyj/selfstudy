@@ -82,19 +82,22 @@ Let $G$ be a group and $H_1$ and $H_2$ be two subgroups. Construct bijections be
 
 Proof
 
-To show a bijection between the sets from (1) and (2), we can show they are both bijective to the set of double cosets $H_1 g H_2$. We will demonstrate this for set (2).
+To prove 1 and 2 are bijective, we need to show that the map $f: H_1⧹(G / H_2) \to (H_1 ⧹ G) / H_2$ given by $f(H_1 (g H_2)) = (H_1 g) H_2$ is well-defined and bijective.
 
-Set (2) is $H_1 \backslash (G/H_2)$, the set of orbits of left cosets ${gH_2}$ under the left action of $H_1$. Let's denote an orbit by $[gH_2]$. The set of double cosets is $H_1 \backslash G / H_2$.
+* **Well-definedness**: If $H_1 (g H_2) = H_1 (g' H_2)$ for some $g, g' \in G$, then $gH_2 = h_1 g' H_2$ for some $h_1 \in H_1$. Thus, $g = h_1 g' h_2$ for some $h_2 \in H_2$.
 
-Consider the map $\phi: H_1 \backslash (G/H_2) \to H_1 \backslash G / H_2$ defined by $\phi([gH_2]) = H_1 g H_2$.
+$f(H_1 (g H_2)) = (H_1 g) H_2$.
 
-- **Well-defined:** If $[gH_2] = [g'H_2]$, then $g'H_2$ is in the orbit of $gH_2$, so $g' = h_1 g h_2$ for some $h_1 \in H_1, h_2 \in H_2$. Then $\phi([g'H_2]) = H_1 g' H_2 = H_1 (h_1 g h_2) H_2 = H_1 g H_2 = \phi([gH_2])$.
+$f(H_1 (g' H_2)) = f(H_1 (h_1 g' H_2)) = (H_1 h_1) (H_1 g') H_2 = (H_1 g') H_2.$
 
-- **Injective:** If $\phi([gH_2]) = \phi([g'H_2])$, then $H_1 g H_2 = H_1 g' H_2$. This means $g' = h_1 g h_2$ for some $h_1 \in H_1, h_2 \in H_2$. The orbit of $g'H_2$ is $[(h_1 g h_2)H_2] = [(h_1 g)H_2]$, which is the same orbit as $[gH_2]$. Thus, the map is injective.
+This shows that $f$ is well-defined.
 
-- **Surjective:** Any double coset $H_1 g H_2$ is the image of the orbit $[gH_2]$.
+Next, we show that $f$ is bijective. To prove that $f$ is injective, suppose $f(g H_2) = f(g' H_2)$ for some $g, g' \in G$. Then $(H_1 g) H_2 = (H_1 g') H_2$, which implies $H_1 g = H_1 g'$. Thus, $g H_1 = g' H_1$, and therefore $g H_2 = g' H_2$. This shows that $f$ is injective.
 
-Since $\phi$ is a bijection, set (2) is bijective to the set of double cosets. A similar argument shows set (1) is also bijective to the set of double cosets (via $g \mapsto g^{-1}$), which proves that (1) and (2) are bijective.
+To prove surjectivity, let $(H_1 g) H_2 \in (H_1 ⧹ G) / H_2$. Then there exists $g H_2 \in G / H_2$ such that $f(g H_2) = (H_1 g) H_2$. This shows that $f$ is surjective.
+
+Thus, $f$ is a bijection, and we conclude that 1 and 2 are bijective.
+
 
 ## 2.
 Fix $n$ and put $S_n$; for any $m ≤ n$, let $H_m ⊂ S_n$ be the subgroup $S_m \times S_{n-m}$. The quotient $S_n / H_m$ can be identified with the set of $m$-element subsets of the set $`\{1, …, n\}`$. (How?) Show that the double quotient $H_{m_1}⧹S_n / H_{m_2}$ is a finite set with
