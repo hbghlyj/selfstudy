@@ -131,7 +131,7 @@ To prove a bijection between set (3) and set (4), we define a map from set (4) t
     Also, using $g'_1 h_1 g_1^{-1} g_2 = g'_2 h_2^{-1}$, we have $g g_2 H_2 = (g'_1 h_1 g_1^{-1}) g_2 H_2 = (g'_2 h_2^{-1}) H_2 = g'_2 H_2$.
 
     Since such a $g$ exists, $(g'_1H_1, g'_2H_2)$ is in the orbit of $(g_1H_1, g_2H_2)$. Because orbits that share an element are identical, the two orbits are equal, and $\phi$ is injective.
-*   **Surjective:** For any double coset $H_1 g H_2$ in the codomain, consider the orbit $\text{Orbit}(gH_1, H_2)$ in the domain. Its image under $\phi$ is $\phi(\text{Orbit}(gH_1, H_2)) = H_1 g^{-1} g H_2 = H_1 e H_2 = H_1 H_2$. Thus, every element in the codomain has a preimage, and $\phi$ is surjective.
+*   **Surjective:** For any double coset $H_1 g H_2$, consider the orbit $\text{Orbit}(H_1, gH_2)$. Its image under $\phi$ is $\phi(\text{Orbit}(H_1, gH_2)) = H_1 e^{-1} g H_2 = H_1 g H_2$. Thus, $\phi$ is surjective.
 
 ## 2.
 Fix $n$ and put $S_n$; for any $m ≤ n$, let $H_m ⊂ S_n$ be the subgroup $S_m \times S_{n-m}$. The quotient $S_n / H_m$ can be identified with the set of $m$-element subsets of the set $`\{1, …, n\}`$. (How?) Show that the double quotient $H_{m_1}⧹S_n / H_{m_2}$ is a finite set with
