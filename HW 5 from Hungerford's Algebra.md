@@ -82,11 +82,9 @@ Let $G$ be a group and $H_1$ and $H_2$ be two subgroups. Construct bijections be
 
 Proof
 
-There is a natural bijection between $H_1⧹G/H_2$ and $H_2⧹G/H_1$ via the map $H_1 g H_2 \mapsto H_2 g^{-1} H_1$. This provides a bijection between sets (1) and (2), given their correspondence with these double coset spaces (which is established below).
+There is a natural bijection between $H_1⧹G/H_2$ and $H_2⧹G/H_1$ via the map $H_1 g H_2 \mapsto H_2 g^{-1} H_1$. This provides a bijection between sets (1) and (2).
 
-To prove that set (2), which is $H_1⧹(G/H_2)$, the set of orbits of left cosets of $H_2$ under the left action of $H_1$, is bijective to set (3), the set of double cosets $H_1 g H_2$, we will construct an explicit map.
-
-Let's define a map $f: H_1⧹(G/H_2) \to H_1⧹G/H_2$ by $f(H_1(gH_2)) = H_1 g H_2$. Here, $H_1(gH_2)$ denotes the orbit of the coset $gH_2$ under the action of $H_1$.
+To prove that set (2), which is $H_1⧹(G/H_2)$, the set of orbits of left cosets of $H_2$ under the left action of $H_1$, is bijective to set (3), the set of double cosets $H_1 g H_2$, define a map $f: H_1⧹(G/H_2) \to H_1⧹G/H_2$ by $f(H_1(gH_2)) = H_1 g H_2$. Here, $H_1(gH_2)$ denotes the orbit of the coset $gH_2$ under the action of $H_1$.
 
 *   **Well-defined:** Suppose we have two representatives for the same orbit, i.e., $H_1(gH_2) = H_1(g'H_2)$. This means $g'H_2$ is in the orbit of $gH_2$, so there exists an $h_1 \in H_1$ such that $g'H_2 = h_1(gH_2) = (h_1g)H_2$. This implies $g' = h_1 g h_2$ for some $h_2 \in H_2$. We must show that $f(H_1(gH_2)) = f(H_1(g'H_2))$.
     Let's compute the image of the orbit represented by $g'$:
@@ -107,7 +105,13 @@ Let's define a map $f: H_1⧹(G/H_2) \to H_1⧹G/H_2$ by $f(H_1(gH_2)) = H_1 g H
 
 Since $f$ is a bijection, the set of orbits $H_1⧹(G/H_2)$ is in one-to-one correspondence with the set of double cosets $H_1⧹G/H_2$.
 
-To prove 3 and 4 are bijective, we define a map $g: H_1 \times H_2⧹G \to (G/H_1) \times (G/H_2)$ by $g(H_1 g H_2) = (gH_1, gH_2)$.
+To prove a bijection between set (3) and set (4), we define a map from set (4) to set (3): $\phi(\text{Orbit}(g_1H_1,g_2H_2)) = H_1 g_1^{-1} g_2 H_2$.
+
+*   **Well-defined:** Suppose we have two representatives for the same orbit, i.e., $\text{Orbit}(g_1H_1,g_2H_2) = \text{Orbit}(g'_1H_1,g'_2H_2)$. This means there exists a $g \in G$ such that $(g g_1 H_1, g g_2 H_2) = (g'_1 H_1, g'_2 H_2)$. This implies $g'_1 = g g_1 h_1$ for some $h_1 \in H_1$ and $g'_2 = g g_2 h_2$ for some $h_2 \in H_2$. We must show that $\phi(\text{Orbit}(g_1H_1,g_2H_2)) = \phi(\text{Orbit}(g'_1H_1,g'_2H_2))$.
+
+    $`\phi(\text{Orbit}(g'_1H_1,g'_2H_2)) = H_1 (g'_1)^{-1} g'_2 H_2 = H_1 (g g_1 h_1)^{-1} (g g_2 h_2) H_2 = H_1 (h_1^{-1} g_1^{-1} g^{-1})(g g_2 h_2) H_2`$
+
+    Since $h_1^{-1} \in H_1$ and $h_2 \in H_2$, we have $H_1 h_1^{-1} = H_1$ and $h_2 H_2 = H_2$.
 
 *   **Well-defined:** Suppose $H_1 g H_2 = H_1 g' H_2$. This means $g' = h_1 g h_2$ for some $h_1 \in H_1$ and $h_2 \in H_2$. Then,
     $g(H_1 g' H_2) = (g'H_1, g'H_2) = ((h_1 g h_2)H_1, (h_1 g h_2)H_2)$.
