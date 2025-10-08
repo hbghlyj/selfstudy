@@ -74,11 +74,27 @@ Thus, $G$ has a unique normal subgroup of index $q$.
 ---
 ## 1.
 Let $G$ be a group and $H_1$ and $H_2$ be two subgroups. Construct bijections between the following sets:
-- The quotient of $G / H_1$ by the action of $H_2$ (on the left);
-- The quotient of $G / H_2$ by the action of $H_1$ (on the left);
-- The quotient of $G$ by the action of $H_1 \times H_2$ with $H_1$ acting on the left and $H_2$ acting on the right (i.e., $H_1 \times H_2$ acts as a subgroup of $G \times G$);
-- The quotient of $(G / H_1) \times(G / H_2)$ with $G$ acting on two copies simultaneously (this is called the diagonal action).
+1. The quotient of $G / H_1$ by the action of $H_2$ (on the left);
+2. The quotient of $G / H_2$ by the action of $H_1$ (on the left);
+3. The quotient of $G$ by the action of $H_1 \times H_2$ with $H_1$ acting on the left and $H_2$ acting on the right (i.e., $H_1 \times H_2$ acts as a subgroup of $G \times G$);
+4. The quotient of $(G / H_1) \times(G / H_2)$ with $G$ acting on two copies simultaneously (this is called the diagonal action).
 (Going between definitions sometimes requires inverting elements of $g$.) The resulting set is the double quotient $H_1⧹G / H_2$; it can be interpreted as the set of double cosets $H_1 g H_2$.
+
+Proof
+
+To prove 1 and 2 are bijective, we need to show that the map $f: H_1⧹(G / H_2) \to (H_1 ⧹ G) / H_2$ given by $f(g H_2) = (H_1 g) H_2$ is well-defined and bijective.
+
+First, we check that the map is well-defined. If $g H_2 = g' H_2$ for some $g, g' \in G$, then $g' = gh$ for some $h \in H_2$. Thus,
+
+$H_1(g' H_2) = H_1(gh H_2) = (H_1 g) H_2$.
+
+This shows that $f$ is well-defined.
+
+Next, we show that $f$ is bijective. To prove that $f$ is injective, suppose $f(g H_2) = f(g' H_2)$ for some $g, g' \in G$. Then $(H_1 g) H_2 = (H_1 g') H_2$, which implies $H_1 g = H_1 g'$. Thus, $g H_1 = g' H_1$, and therefore $g H_2 = g' H_2$. This shows that $f$ is injective.
+
+To prove surjectivity, let $(H_1 g) H_2 \in (H_1 ⧹ G) / H_2$. Then there exists $g H_2 \in G / H_2$ such that $f(g H_2) = (H_1 g) H_2$. This shows that $f$ is surjective.
+
+Thus, $f$ is a bijection, and we conclude that 1 and 2 are bijective.
 
 ## 2.
 Fix $n$ and put $S_n$; for any $m ≤ n$, let $H_m ⊂ S_n$ be the subgroup $S_m \times S_{n-m}$. The quotient $S_n / H_m$ can be identified with the set of $m$-element subsets of the set $`\{1, …, n\}`$. (How?) Show that the double quotient $H_{m_1}⧹S_n / H_{m_2}$ is a finite set with
