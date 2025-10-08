@@ -126,10 +126,10 @@ Suppose $G$ is a finite group, and that $p$ is the smallest prime factor of $|G|
 
 Proof
 
-Consider the action of $G$ on the set of left cosets $G/H$ by left multiplication. By orbit-stabilizer theorem, the size of each orbit divides $|G|$. The class equation for this action is:
+Consider the action of $H$ on the set of left cosets $G/H$ by left multiplication. The class equation for this action is:
 
 $`|G/H| = |(G/H)^H| + \sum_{i} |O_i|,`$
 
-where $(G/H)^H$ is the set of fixed points under the action of $H$, and $O_i$ are the nontrivial orbits.
+where $|G/H|=p$, $(G/H)^H$ is the set of fixed points, and $O_i$ are non-trivial orbits.
 
-Since $|G/H| = p$, the left side is $p$. The size of each nontrivial orbit $|O_i|$ divides $|G|$ and is greater than 1, so it must be a multiple of $p$. Therefore, the sum $|(G/H)^H|$ must be congruent to $p$ modulo $p$. This implies that $|(G/H)^H| \equiv p \pmod{p}$, but since the trivial coset $H$ is a fixed point, we have $|(G/H)^H| \geq 1$, so $|(G/H)^H| = p$, so all cosets are fixed points, so $H$ is normal in $G$.
+The size of any orbit $|O_i|$ must divide $|H|$. Since $p$ is the smallest prime factor of $|G| = |H| \cdot p$, any prime factor of $|H|$ is $\ge p$. Thus, if $|O_i|>1$, then $|O_i| \ge p$. The coset $H$ is a fixed point, so $|(G/H)^H| \ge 1$. If there were any non-trivial orbit, the class equation $p = |(G/H)^H| + \sum |O_i|$ would lead to $p \ge 1 + p$, a contradiction. Therefore, all orbits must be of size 1, meaning all cosets are fixed points. This implies that for any $g \in G$, $g^{-1}Hg \subseteq H$, so $H$ is normal in $G.
