@@ -82,7 +82,7 @@ Let $G$ be a group and $H_1$ and $H_2$ be two subgroups. Construct bijections be
 
 Proof
 
-There is a natural bijection between $H_1⧹G/H_2$ and $H_2⧹G/H_1$ via the map $H_1 g H_2 \mapsto H_2 g^{-1} H_1$. Therefore, sets (1) and (2) are bijective to each other.
+There is a natural bijection between $H_1⧹G/H_2$ and $H_2⧹G/H_1$ via the map $H_1 g H_2 \mapsto H_2 g^{-1} H_1$. This provides a bijection between sets (1) and (2), given their correspondence with these double coset spaces (which is established below).
 
 To prove that set (2), which is $H_1⧹(G/H_2)$, the set of orbits of left cosets of $H_2$ under the left action of $H_1$, is bijective to set (3), the set of double cosets $H_1 g H_2$, we will construct an explicit map.
 
