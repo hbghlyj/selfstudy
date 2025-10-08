@@ -82,7 +82,7 @@ Let $G$ be a group and $H_1$ and $H_2$ be two subgroups. Construct bijections be
 
 Proof
 
-To prove 1 and 2 are bijective, we will show that both are bijective to the set of double cosets $H_1 g H_2$. We will demonstrate this for set (2), which is $H_1⧹(G/H_2)$, the set of orbits of left cosets of $H_2$ under the left action of $H_1$.
+To prove that set (2), which is $H_1⧹(G/H_2)$, the set of orbits of left cosets of $H_2$ under the left action of $H_1$, is bijective to set (3), the set of double cosets $H_1 g H_2$, we will construct an explicit map.
 
 Let's define a map $f: H_1⧹(G/H_2) \to H_1⧹G/H_2$ by $f(H_1(gH_2)) = H_1 g H_2$. Here, $H_1(gH_2)$ denotes the orbit of the coset $gH_2$ under the action of $H_1$.
 
@@ -107,7 +107,7 @@ Since $f$ is a bijection, the set of orbits $H_1⧹(G/H_2)$ is in one-to-one cor
 
 A similar argument shows that set (1), $H_2⧹(G/H_1)$, is also bijective to the set of double cosets $H_2⧹G/H_1$. There is a natural bijection between $H_1⧹G/H_2$ and $H_2⧹G/H_1$ via the map $H_1 g H_2 \mapsto H_2 g^{-1} H_1$. Therefore, sets (1) and (2) are bijective to each other.
 
-To prove 1 and 3 are bijective, one can define a map $g: H_2⧹(G/H_1) \to H_1⧹G/H_2$ by $g(H_2(g'H_1)) = H_1 (g')^{-1} H_2$. Proving this map is well-defined, injective, and surjective establishes the desired bijection.
+To prove 3 and 4 are bijective,
 
 
 ## 2.
