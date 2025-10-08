@@ -42,12 +42,7 @@ To show that $F$ induces an embedding, we need to check that it is a smooth imme
 
 1. **Smooth Immersion**: We compute the differential $`d\tilde{F}_{(u, v)}\colon T_{(u, v)}\left(\mathbb{R} \times\left(-\frac{1}{2}, \frac{1}{2}\right)\right) \to T_{\tilde{F}(u, v)}\mathbb{R}^3`$. The Jacobian matrix of $\tilde{F}$ is given by
 
-$`d\tilde{F}_{(u, v)}(h, k) = \begin{pmatrix}
-\frac{\partial \tilde{F}_1}{\partial u} & \frac{\partial \tilde{F}_1}{\partial v} \\
-\frac{\partial \tilde{F}_2}{\partial u} & \frac{\partial \tilde{F}_2}{\partial v} \\
-\frac{\partial \tilde{F}_3}{\partial u} & \frac{\partial \tilde{F}_3}{\partial v}
-\end{pmatrix}
-=\begin{pmatrix}
+$`d\tilde{F}_{(u, v)}=\begin{pmatrix}
     -\frac{1}{2} v \cos(u) \sin(u/2) - (1 + v \cos(u/2)) \sin(u) & \cos(u/2) \cos(u) \\
     \cos(u) + v \cos(u/2) \cos(u) - \frac{1}{2} v \sin(u/2) \sin(u) & \cos(u/2) \sin(u) \\
     \frac{1}{2} v \cos(u/2) & \sin(u/2)
