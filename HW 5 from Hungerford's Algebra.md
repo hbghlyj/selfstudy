@@ -44,8 +44,24 @@ By the Sylow theorems, all Sylow $p$-subgroups of $S_n$ are conjugate, and there
   3. Stabilizer of \{\{1,4\}, \{2,3\}\}
   
   The Sylow 3-subgroups are $\langle(123)\rangle, \langle(124)\rangle, \langle(134)\rangle, \langle(234)\rangle$.
-- For $S_5$, the Sylow 2-subgroups are isomorphic to the dihedral group $D_8$ and there are 15 such subgroups.
-The Sylow 3-subgroups are isomorphic to $C_3$ and there are 10 such subgroups:
+- For $S_5$, the Sylow 2-subgroups are isomorphic to the dihedral group $D_8$ and there are 15 such subgroups:
+    1. Stabilizer of \{\{1,2\}, \{3,4\}, \{5\}\}
+    2. Stabilizer of \{\{1,3\}, \{2,4\}, \{5\}\}
+    3. Stabilizer of \{\{1,4\}, \{2,3\}, \{5\}\}
+    4. Stabilizer of \{\{1,2\}, \{3,5\}, \{4\}\}
+    5. Stabilizer of \{\{1,3\}, \{2,5\}, \{4\}\}
+    6. Stabilizer of \{\{1,5\}, \{2,3\}, \{4\}\}
+    7. Stabilizer of \{\{1,4\}, \{2,5\}, \{3\}\}
+    8. Stabilizer of \{\{1,5\}, \{2,4\}, \{3\}\}
+    9. Stabilizer of \{\{1,2\}, \{4,5\}, \{3\}\}
+    10. Stabilizer of \{\{1,3\}, \{4,5\}, \{2\}\}
+    11. Stabilizer of \{\{1,4\}, \{3,5\}, \{2\}\}
+    12. Stabilizer of \{\{1,5\}, \{3,4\}, \{2\}\}
+    13. Stabilizer of \{\{2,3\}, \{4,5\}, \{1\}\}
+    14. Stabilizer of \{\{2,4\}, \{3,5\}, \{1\}\}
+    15. Stabilizer of \{\{2,5\}, \{3,4\}, \{1\}\}
+    
+    The Sylow 3-subgroups are isomorphic to $C_3$ and there are 10 such subgroups:
     1. $\langle(123)\rangle$
     2. $\langle(124)\rangle$
     3. $\langle(125)\rangle$
