@@ -82,21 +82,30 @@ Let $G$ be a group and $H_1$ and $H_2$ be two subgroups. Construct bijections be
 
 Proof
 
-To prove 1 and 2 are bijective, we need to show that the map $f: H_1⧹(G / H_2) \to (H_1 ⧹ G) / H_2$ given by $f(H_1 (g H_2)) = (H_1 g) H_2$ is well-defined and bijective.
+To prove 1 and 2 are bijective, we will show that both are bijective to the set of double cosets $H_1 g H_2$. We will demonstrate this for set (2), which is $H_1⧹(G/H_2)$, the set of orbits of left cosets of $H_2$ under the left action of $H_1$.
 
-* **Well-definedness**: If $H_1 (g H_2) = H_1 (g' H_2)$ for some $g, g' \in G$, then $gH_2 = h_1 g' H_2$ for some $h_1 \in H_1$. Thus, $g = h_1 g' h_2$ for some $h_2 \in H_2$.
+Let's define a map $f: H_1⧹(G/H_2) \to H_1⧹G/H_2$ by $f(H_1(gH_2)) = H_1 g H_2$. Here, $H_1(gH_2)$ denotes the orbit of the coset $gH_2$ under the action of $H_1$.
 
-$f(H_1 (g H_2)) = (H_1 g) H_2$.
+*   **Well-defined:** Suppose we have two representatives for the same orbit, i.e., $H_1(gH_2) = H_1(g'H_2)$. This means $g'H_2$ is in the orbit of $gH_2$, so there exists an $h_1 \in H_1$ such that $g'H_2 = h_1(gH_2) = (h_1g)H_2$. This implies $g' = h_1 g h_2$ for some $h_2 \in H_2$. We must show that $f(H_1(gH_2)) = f(H_1(g'H_2))$.
+    Let's compute the image of the orbit represented by $g'$:
+    $f(H_1(g'H_2)) = H_1 g' H_2 = H_1 (h_1 g h_2) H_2$.
+    Since $h_1 \in H_1$ and $h_2 \in H_2$, we have $H_1 h_1 = H_1$ and $h_2 H_2 = H_2$.
+    Thus, $H_1 (h_1 g h_2) H_2 = H_1 g H_2 = f(H_1(gH_2))$.
+    The map $f$ is well-defined.
 
-$f(H_1 (g' H_2)) = f(H_1 (h_1 g' H_2)) = (H_1 h_1) (H_1 g') H_2 = (H_1 g') H_2.$
+*   **Injective:** Suppose $f(H_1(gH_2)) = f(H_1(g'H_2))$. This means $H_1 g H_2 = H_1 g' H_2$.
+    This equality implies that $g' \in H_1 g H_2$, so $g' = h_1 g h_2$ for some $h_1 \in H_1$ and $h_2 \in H_2$.
+    We need to show that the orbits are the same: $H_1(gH_2) = H_1(g'H_2)$.
+    The orbit of $g'H_2$ is $H_1(g'H_2) = H_1((h_1 g h_2)H_2)$. Since $h_2 H_2 = H_2$, this is $H_1((h_1 g)H_2)$.
+    An element in this orbit has the form $h'_1(h_1 g)H_2 = (h'_1 h_1)g H_2$ for some $h'_1 \in H_1$. Since $h'_1 h_1 \in H_1$, this element is also in the orbit $H_1(gH_2)$. Thus, $H_1(g'H_2) \subseteq H_1(gH_2)$.
+    By a symmetric argument (starting with $g = h_1^{-1}g'h_2^{-1}$), we get $H_1(gH_2) \subseteq H_1(g'H_2)$.
+    Therefore, $H_1(gH_2) = H_1(g'H_2)$, and $f$ is injective.
 
-This shows that $f$ is well-defined.
+*   **Surjective:** For any double coset $H_1 g H_2$ in the codomain, consider the orbit $H_1(gH_2)$ in the domain. Its image under $f$ is $f(H_1(gH_2)) = H_1 g H_2$. Thus, every element in the codomain has a preimage, and $f$ is surjective.
 
-Next, we show that $f$ is bijective. To prove that $f$ is injective, suppose $f(g H_2) = f(g' H_2)$ for some $g, g' \in G$. Then $(H_1 g) H_2 = (H_1 g') H_2$, which implies $H_1 g = H_1 g'$. Thus, $g H_1 = g' H_1$, and therefore $g H_2 = g' H_2$. This shows that $f$ is injective.
+Since $f$ is a bijection, the set of orbits $H_1⧹(G/H_2)$ is in one-to-one correspondence with the set of double cosets $H_1⧹G/H_2$.
 
-To prove surjectivity, let $(H_1 g) H_2 \in (H_1 ⧹ G) / H_2$. Then there exists $g H_2 \in G / H_2$ such that $f(g H_2) = (H_1 g) H_2$. This shows that $f$ is surjective.
-
-Thus, $f$ is a bijection, and we conclude that 1 and 2 are bijective.
+A similar argument shows that set (1), $H_2⧹(G/H_1)$, is also bijective to the set of double cosets $H_2⧹G/H_1$. There is a natural bijection between $H_1⧹G/H_2$ and $H_2⧹G/H_1$ via the map $H_1 g H_2 \mapsto H_2 g^{-1} H_1$. Therefore, sets (1) and (2) are bijective to each other.
 
 
 ## 2.
