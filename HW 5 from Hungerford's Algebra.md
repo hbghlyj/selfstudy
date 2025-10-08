@@ -105,13 +105,16 @@ To prove that set (2), which is $H_1⧹(G/H_2)$, the set of orbits of left coset
 
 Since $f$ is a bijection, the set of orbits $H_1⧹(G/H_2)$ is in one-to-one correspondence with the set of double cosets $H_1⧹G/H_2$.
 
-To prove 3 and 4 are bijective, we define a map $g: H_1 \times H_2⧹G \to (G/H_1) \times (G/H_2)$ by $g(H_1 g H_2) = (gH_1, gH_2)$.
+To prove a bijection between set (3) and set (4), we define a map from set (4) to set (3): $\phi(\text{Orbit}(g_1H_1,g_2H_2)) = H_1 g_1^{-1} g_2 H_2$.
 
-*   **Well-defined:** Suppose $H_1 g H_2 = H_1 g' H_2$. This means $g' = h_1 g h_2$ for some $h_1 \in H_1$ and $h_2 \in H_2$. Then,
-    $g(H_1 g' H_2) = (g'H_1, g'H_2) = ((h_1 g h_2)H_1, (h_1 g h_2)H_2)$.
-    Since $h_1 \in H_1$, we have $(h_1 g h_2)H_1 = gH_1$. Similarly, since $h_2 \in H_2$, we have $(h_1 g h_2)H_2 = gH_2$.
-    Thus, $g(H_1 g' H_2) = (gH_1, gH_2) = g(H_1 g H_2)$, so the map is well-defined.
-*   **Injective:** 
+*   **Well-defined:** Suppose we have two representatives for the same orbit, i.e., $\text{Orbit}(g_1H_1,g_2H_2) = \text{Orbit}(g'_1H_1,g'_2H_2)$. This means there exists a $g \in G$ such that $(g g_1 H_1, g g_2 H_2) = (g'_1 H_1, g'_2 H_2)$. This implies $g'_1 = g g_1 h_1$ for some $h_1 \in H_1$ and $g'_2 = g g_2 h_2$ for some $h_2 \in H_2$. We must show that $\phi(\text{Orbit}(g_1H_1,g_2H_2)) = \phi(\text{Orbit}(g'_1H_1,g'_2H_2))$.
+
+    $`\phi(\text{Orbit}(g'_1H_1,g'_2H_2)) = H_1 (g'_1)^{-1} g'_2 H_2 = H_1 (g g_1 h_1)^{-1} (g g_2 h_2) H_2 = H_1 (h_1^{-1} g_1^{-1} g^{-1})(g g_2 h_2) H_2`$
+
+    Since $h_1^{-1} \in H_1$ and $h_2 \in H_2$, we have $H_1 h_1^{-1} = H_1$ and $h_2 H_2 = H_2$.
+
+    Thus, $H_1 (h_1^{-1} g_1^{-1} g^{-1})(g g_2 h_2) H_2 = H_1 g_1^{-1} (g^{-1} g) g_2 H_2 = H_1 g_1^{-1} g_2 H_2 = \phi(\text{Orbit}(g_1H_1,g_2H_2))$.
+* **Injective:**
 
 ## 2.
 Fix $n$ and put $S_n$; for any $m ≤ n$, let $H_m ⊂ S_n$ be the subgroup $S_m \times S_{n-m}$. The quotient $S_n / H_m$ can be identified with the set of $m$-element subsets of the set $`\{1, …, n\}`$. (How?) Show that the double quotient $H_{m_1}⧹S_n / H_{m_2}$ is a finite set with
