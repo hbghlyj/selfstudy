@@ -107,6 +107,8 @@ Since $f$ is a bijection, the set of orbits $H_1⧹(G/H_2)$ is in one-to-one cor
 
 A similar argument shows that set (1), $H_2⧹(G/H_1)$, is also bijective to the set of double cosets $H_2⧹G/H_1$. There is a natural bijection between $H_1⧹G/H_2$ and $H_2⧹G/H_1$ via the map $H_1 g H_2 \mapsto H_2 g^{-1} H_1$. Therefore, sets (1) and (2) are bijective to each other.
 
+To prove 1 and 3 are bijective, define a map $g: H_2⧹(G/H_1) \to H_1⧹(G/H_2)$ by $g(H_2(g'H_1)) = H_1 g' H_2$. This map is well-defined, injective, and surjective, establishing the desired bijection.
+
 
 ## 2.
 Fix $n$ and put $S_n$; for any $m ≤ n$, let $H_m ⊂ S_n$ be the subgroup $S_m \times S_{n-m}$. The quotient $S_n / H_m$ can be identified with the set of $m$-element subsets of the set $`\{1, …, n\}`$. (How?) Show that the double quotient $H_{m_1}⧹S_n / H_{m_2}$ is a finite set with
