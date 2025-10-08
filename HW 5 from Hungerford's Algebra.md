@@ -38,8 +38,23 @@ Proof
 By the Sylow theorems, all Sylow $p$-subgroups of $S_n$ are conjugate, and therefore have the same cycle structure.
 
 - For $S_3$, the Sylow 2-subgroups are $\langle(12)\rangle, \langle(13)\rangle, \langle(23)\rangle$ and the Sylow 3-subgroup is $\langle(123)\rangle$.
-- For $S_4$, the Sylow 2-subgroups are isomorphic to the dihedral group $D_8$ and there are 3 such subgroups. The Sylow 3-subgroups are $\langle(123)\rangle, \langle(124)\rangle, \langle(134)\rangle, \langle(234)\rangle$.
-- For $S_5$, the Sylow 2-subgroups are isomorphic to the dihedral group $D_8$ and there are 15 such subgroups. The Sylow 3-subgroups are isomorphic to $C_3$ and there are 10 such subgroups.
+- For $S_4$, the Sylow 2-subgroups are isomorphic to the dihedral group $D_8$ and there are 3 such subgroups:
+  1. Stabilizer of \{\{1,2\}, \{3,4\}\}
+  2. Stabilizer of \{\{1,3\}, \{2,4\}\}
+  3. Stabilizer of \{\{1,4\}, \{2,3\}\}
+The Sylow 3-subgroups are $\langle(123)\rangle, \langle(124)\rangle, \langle(134)\rangle, \langle(234)\rangle$.
+- For $S_5$, the Sylow 2-subgroups are isomorphic to the dihedral group $D_8$ and there are 15 such subgroups.
+The Sylow 3-subgroups are isomorphic to $C_3$ and there are 10 such subgroups:
+    1. $\langle(123)\rangle$
+    2. $\langle(124)\rangle$
+    3. $\langle(125)\rangle$
+    4. $\langle(134)\rangle$
+    5. $\langle(135)\rangle$
+    6. $\langle(145)\rangle$
+    7. $\langle(234)\rangle$
+    8. $\langle(235)\rangle$
+    9. $\langle(245)\rangle$
+    10. $\langle(345)\rangle$
 
 ## Problem 8
 If every Sylow $p$-subgroup of a finite group $G$ is normal for every prime $p$, then $G$ is the direct product of its Sylow subgroups.
