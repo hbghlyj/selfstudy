@@ -119,7 +119,7 @@ elements. (Hint: the set counts the number of possible relative positions of two
 
 Proof
 
-First, we identify the quotient $S_n / H_m$ with the set of $m$-element subsets of $`\{1, \ldots, n\}`$. The subgroup $H_m = S_m \times S_{n-m}$ consists of permutations that permute the first $m$ elements among themselves and the last $n-m$ elements among themselves. Therefore, each left coset of $H_m$ in $S_n$ corresponds to a unique choice of $m$ elements from $\{1, \ldots, n\}$, since any permutation in $S_n$ can be used to map the first $m$ elements to any chosen subset of size $m$. Thus, we have a bijection between $S_n / H_m$ and the set of all $m$-element subsets of $\{1, \ldots, n\}$.
+To show the identification of the quotient $S_n / H_m$ with the set of $m$-element subsets of $\{1, \ldots, n\}$, we can use the Orbit-Stabilizer Theorem. Consider the natural action of $S_n$ on the set of all $m$-element subsets of $\{1, \ldots, n\}$. The subgroup $H_m = S_m \times S_{n-m}$ is precisely the stabilizer of the specific subset $\{1, \ldots, m\}$. The orbit of this subset under the action of $S_n$ is the set of all $m$-element subsets, as the action is transitive. By the Orbit-Stabilizer Theorem, there is a natural bijection between the set of left cosets of the stabilizer, $S_n / H_m$, and the orbit. This establishes the desired identification, where a coset $\sigma H_m$ is mapped to the subset $\sigma(\{1, \ldots, m\})$.
 
 ## 3. (A follow-up to II.5.9)
 Suppose $G$ is a finite group, and that $p$ is the smallest prime factor of $|G|$. Show that any subgroup $H \subset G$ of index $p$ is normal. (One possible way to prove this: consider the action of $H$ on $G / H$, and notice that the trivial coset $H$ is a fixed point.)
