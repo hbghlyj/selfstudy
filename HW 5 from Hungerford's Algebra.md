@@ -107,6 +107,8 @@ Since $f$ is a bijection, the set of orbits $H_1⧹(G/H_2)$ is in one-to-one cor
 
 A similar argument shows that set (1), $H_2⧹(G/H_1)$, is also bijective to the set of double cosets $H_2⧹G/H_1$. There is a natural bijection between $H_1⧹G/H_2$ and $H_2⧹G/H_1$ via the map $H_1 g H_2 \mapsto H_2 g^{-1} H_1$. Therefore, sets (1) and (2) are bijective to each other.
 
+To prove 1 and 3 are bijective, one can define a map $g: H_2⧹(G/H_1) \to H_1⧹G/H_2$ by $g(H_2(g'H_1)) = H_1 (g')^{-1} H_2$. Proving this map is well-defined, injective, and surjective establishes the desired bijection.
+
 
 ## 2.
 Fix $n$ and put $S_n$; for any $m ≤ n$, let $H_m ⊂ S_n$ be the subgroup $S_m \times S_{n-m}$. The quotient $S_n / H_m$ can be identified with the set of $m$-element subsets of the set $`\{1, …, n\}`$. (How?) Show that the double quotient $H_{m_1}⧹S_n / H_{m_2}$ is a finite set with
@@ -114,6 +116,10 @@ Fix $n$ and put $S_n$; for any $m ≤ n$, let $H_m ⊂ S_n$ be the subgroup $S_m
 $\min (m_1, m_2)-\max (0, m_1+m_2-n)+1$
 
 elements. (Hint: the set counts the number of possible relative positions of two subsets of size $m_1$ and $m_2$.)
+
+Proof
+
+To show the identification of the quotient $S_n / H_m$ with the set of $m$-element subsets of $\{1, \ldots, n\}$, we can use the Orbit-Stabilizer Theorem. Consider the natural action of $S_n$ on the set of all $m$-element subsets of $\{1, \ldots, n\}$. The subgroup $H_m = S_m \times S_{n-m}$ is precisely the stabilizer of the specific subset $\{1, \ldots, m\}$. The orbit of this subset under the action of $S_n$ is the set of all $m$-element subsets, as the action is transitive. By the Orbit-Stabilizer Theorem, there is a natural bijection between the set of left cosets of the stabilizer, $S_n / H_m$, and the orbit. This establishes the desired identification, where a coset $\sigma H_m$ is mapped to the subset $\sigma(\{1, \ldots, m\})$.
 
 ## 3. (A follow-up to II.5.9)
 Suppose $G$ is a finite group, and that $p$ is the smallest prime factor of $|G|$. Show that any subgroup $H \subset G$ of index $p$ is normal. (One possible way to prove this: consider the action of $H$ on $G / H$, and notice that the trivial coset $H$ is a fixed point.)
