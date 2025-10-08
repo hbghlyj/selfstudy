@@ -39,9 +39,9 @@ By the Sylow theorems, all Sylow $p$-subgroups of $S_n$ are conjugate, and there
 
 - For $S_3$, the Sylow 2-subgroups are $\langle(12)\rangle, \langle(13)\rangle, \langle(23)\rangle$ and the Sylow 3-subgroup is $\langle(123)\rangle$.
 - For $S_4$, the Sylow 2-subgroups are isomorphic to the dihedral group $D_8$ and there are 3 such subgroups:
-  1. $\langle(12), (34)\rangle$
-  2. $\langle(13), (24)\rangle$
-  3. $\langle(14), (23)\rangle$
+  1. Stabilizer of \{\{1,2\}, \{3,4\}\}
+  2. Stabilizer of \{\{1,3\}, \{2,4\}\}
+  3. Stabilizer of \{\{1,4\}, \{2,3\}\}
 The Sylow 3-subgroups are $\langle(123)\rangle, \langle(124)\rangle, \langle(134)\rangle, \langle(234)\rangle$.
 - For $S_5$, the Sylow 2-subgroups are isomorphic to the dihedral group $D_8$ and there are 15 such subgroups:
     1. $\langle(12), (34)\rangle$
