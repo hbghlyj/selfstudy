@@ -123,3 +123,13 @@ To show the identification of the quotient $S_n / H_m$ with the set of $m$-eleme
 
 ## 3. (A follow-up to II.5.9)
 Suppose $G$ is a finite group, and that $p$ is the smallest prime factor of $|G|$. Show that any subgroup $H \subset G$ of index $p$ is normal. (One possible way to prove this: consider the action of $H$ on $G / H$, and notice that the trivial coset $H$ is a fixed point.)
+
+Proof
+
+Consider the action of $G$ on the set of left cosets $G/H$ by left multiplication. By orbit-stabilizer theorem, the size of each orbit divides $|G|$. The class equation for this action is:
+
+$`|G/H| = |(G/H)^H| + \sum_{i} |O_i|,`$
+
+where $(G/H)^H$ is the set of fixed points under the action of $H$, and $O_i$ are the nontrivial orbits.
+
+Since $|G/H| = p$, the left side is $p$. The size of each nontrivial orbit $|O_i|$ divides $|G|$ and is greater than 1, so it must be a multiple of $p$. Therefore, the sum $|(G/H)^H|$ must be congruent to $p$ modulo $p$. This implies that $|(G/H)^H| \equiv p \pmod{p}$, but since the trivial coset $H$ is a fixed point, we have $|(G/H)^H| \geq 1$, so $|(G/H)^H| = p$, so all cosets are fixed points, so $H$ is normal in $G$.
