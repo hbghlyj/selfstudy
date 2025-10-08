@@ -113,12 +113,6 @@ To prove a bijection between set (3) and set (4), we define a map from set (4) t
 
     Since $h_1^{-1} \in H_1$ and $h_2 \in H_2$, we have $H_1 h_1^{-1} = H_1$ and $h_2 H_2 = H_2$.
 
-*   **Well-defined:** Suppose $H_1 g H_2 = H_1 g' H_2$. This means $g' = h_1 g h_2$ for some $h_1 \in H_1$ and $h_2 \in H_2$. Then,
-    $g(H_1 g' H_2) = (g'H_1, g'H_2) = ((h_1 g h_2)H_1, (h_1 g h_2)H_2)$.
-    Since $h_1 \in H_1$, we have $(h_1 g h_2)H_1 = gH_1$. Similarly, since $h_2 \in H_2$, we have $(h_1 g h_2)H_2 = gH_2$.
-    Thus, $g(H_1 g' H_2) = (gH_1, gH_2) = g(H_1 g H_2)$, so the map is well-defined.
-
-
 *   **Injective:** Suppose $\phi(\text{Orbit}(g_1H_1,g_2H_2)) = \phi(\text{Orbit}(g'_1H_1,g'_2H_2))$. This means $H_1 g_1^{-1} g_2 H_2 = H_1 g'^{-1}_1 g'_2 H_2$.
 
     This equality implies that $g'^{-1}_1 g'_2 = h_1 (g_1^{-1} g_2) h_2$ for some $h_1 \in H_1$ and $h_2 \in H_2$. We need to show that the orbits are the same: $\text{Orbit}(g_1H_1,g_2H_2) = \text{Orbit}(g'_1H_1,g'_2H_2)$.
