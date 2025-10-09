@@ -80,3 +80,31 @@ Let $\pi_0$ be the restriction of $\pi$ to the sphere $S^n$, for $K=\mathbb{R}$,
   Hint: To prove (b) using (a), it suffices to show that the kernel of $d \pi$ is not contained in the tangent space to the sphere.
 </li>
 </ol>
+
+Proof
+<ol type="a">
+<li>
+
+For the case $K=\mathbb{R}$, we work on the open set $`U = \{(x_1, \ldots, x_{n+1}) \in \mathbb{R}^{n+1} \mid x_{n+1} > 0\}`$. We introduce a coordinate change on $U$ via the map $\phi: U \to \mathbb{R}^n \times \mathbb{R}^+$:
+$`\phi(x_1, \ldots, x_{n+1}) = (\frac{x_1}{x_{n+1}}, \ldots, \frac{x_n}{x_{n+1}}, \sqrt{x_1^2 + \cdots + x_n^2 + x_{n+1}^2})`$.
+
+Local coordinates on $K \mathbb{P}^n$ are given by the map
+$`\psi\colon \{[x_1, \ldots, x_{n+1}] \in K \mathbb{P}^n \mid x_{n+1} \neq 0\} \to K^n`$
+$`\psi([x_1, \ldots, x_{n+1}]) = (\frac{x_1}{x_{n+1}}, \ldots, \frac{x_n}{x_{n+1}})`$.
+
+In these coordinates, the map $\pi$ is given by
+$`\psi \circ \pi \circ \phi^{-1}(y_1, \ldots, y_n, r) = (y_1, \ldots, y_n)`$.
+
+The differential of this map is
+$`d(\psi \circ \pi \circ \phi^{-1})_{(y_1, \ldots, y_n, r)} = \begin{pmatrix}
+1 & 0 & \cdots & 0 & 0 \\
+0 & 1 & \cdots & 0 & 0 \\
+\vdots & \vdots & \ddots & \vdots & \vdots \\
+0 & 0 & \cdots & 1 & 0
+\end{pmatrix}`$.
+
+This matrix has full rank $n$, so the differential is surjective. Since this holds in local coordinates, $\pi$ is a submersion.
+</li>
+<li>
+The kernel of $d\pi_v$ for $v \in K^{n+1} \backslash \{0\}$ is the line spanned by $v$. The tangent space to the sphere at $v$ is the hyperplane orthogonal to $v$. Since the line spanned by $v$ is not contained in this hyperplane, the kernel of $d\pi_v$ is not contained in the tangent space to the sphere. Therefore, the restriction $\pi_0$ is also a submersion.
+</li></ol>
