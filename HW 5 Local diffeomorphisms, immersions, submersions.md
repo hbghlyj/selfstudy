@@ -50,7 +50,7 @@ $`d\tilde{F}_{(u, v)}=\begin{pmatrix}
 
 2. **Homeomorphism onto Image**: To show an embedding, we must prove $\tilde{F}$ is a homeomorphism onto its image. This requires showing both that the map is **injective** (i.e., if $F(u_1, v_1) = F(u_2, v_2)$ then $[u_1, v_1] = [u_2, v_2]$) and that it is a **proper map**.
 
-- **Injectivity**: Suppose $F(u_1, v_1) = F(u_2, v_2)$. By examining the first two components, we can derive that $u_1$ and $u_2$ must be congruent modulo $2\pi$. So either $u_1 = u_2 + 2k\pi$ for some integer $k$, or $u_1 = u_2 + (2k+1)\pi$. In the first case, we must have $v_1 = v_2$. In the second case, we must have $v_1 = -v_2$. Thus, the only identifications are those given by the Möbius strip structure.
+- **Injectivity**: Suppose $F(u_1, v_1) = F(u_2, v_2)$. From the first two components, we can deduce that $u_1 = u_2 + 2k\pi$ for some integer $k$. Substituting this into the equations for all three components, we find that we must have $v_2 = (-1)^k v_1$. The condition for points to be identified by $F$ is $(u_2, v_2) = (u_1 - 2k\pi, (-1)^k v_1)$, which is precisely the equivalence relation for the Möbius strip. Thus, the induced map is injective.
 - **Properness**: The map $F$ is proper if the preimage of every compact set in $\mathbb{R}^3$ is compact in the Möbius strip. Since the Möbius strip is a quotient of a compact set (the rectangle $[0, 2\pi] \times [-\frac{1}{2}, \frac{1}{2}]$ with appropriate identifications), and $F$ is continuous, the preimage of a compact set under $F$ will also be compact.
 
 # 4
