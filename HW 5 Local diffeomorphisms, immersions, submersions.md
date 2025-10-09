@@ -53,7 +53,7 @@ To show that $F$ induces an embedding, we need to check that it is a smooth imme
     $`\begin{vmatrix}
     -\frac{1}{2} v \cos(u) \sin(u/2) - (1 + v \cos(u/2)) \sin(u) & \cos(u/2) \cos(u) \\
     \frac{1}{2} v \cos(u/2) & \sin(u/2)
-    \end{vmatrix} = -\frac{1}{2} v \sin(u) - \sin(u/2) - v \cos(u/2) \sin(u) - \frac{1}{2} v \cos(u) \cos(u/2) \cos(u)`$
+    \end{vmatrix} = -\frac{1}{2}v\cos(u) - \sin(u)\sin(u/2)(1 + v\cos(u/2))`$
 
 3. **Homeomorphism onto Image**: To show an embedding, we must prove $\tilde{F}$ is a homeomorphism onto its image. This requires showing both that the map is **injective** (i.e., if $F(u_1, v_1) = F(u_2, v_2)$ then $[u_1, v_1] = [u_2, v_2]$) and that it is a **proper map**.
 
