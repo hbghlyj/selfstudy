@@ -86,16 +86,21 @@ Proof
 <li>
 
 For the case $K=\mathbb{R}$, we work on the open set $`U = \{(x_1, \ldots, x_{n+1}) \in \mathbb{R}^{n+1} \mid x_{n+1} > 0\}`$. We introduce a coordinate change on $U$ via the map $\phi: U \to \mathbb{R}^n \times \mathbb{R}^+$:
+
 $`\phi(x_1, \ldots, x_{n+1}) = (\frac{x_1}{x_{n+1}}, \ldots, \frac{x_n}{x_{n+1}}, \sqrt{x_1^2 + \cdots + x_n^2 + x_{n+1}^2})`$.
 
 Local coordinates on $K \mathbb{P}^n$ are given by the map
+
 $`\psi\colon \{[x_1, \ldots, x_{n+1}] \in K \mathbb{P}^n \mid x_{n+1} \neq 0\} \to K^n`$
+
 $`\psi([x_1, \ldots, x_{n+1}]) = (\frac{x_1}{x_{n+1}}, \ldots, \frac{x_n}{x_{n+1}})`$.
 
 In these coordinates, the map $\pi$ is given by
+
 $`\psi \circ \pi \circ \phi^{-1}(y_1, \ldots, y_n, r) = (y_1, \ldots, y_n)`$.
 
 The differential of this map is
+
 $`d(\psi \circ \pi \circ \phi^{-1})_{(y_1, \ldots, y_n, r)} = \begin{pmatrix}
 1 & 0 & \cdots & 0 & 0 \\
 0 & 1 & \cdots & 0 & 0 \\
