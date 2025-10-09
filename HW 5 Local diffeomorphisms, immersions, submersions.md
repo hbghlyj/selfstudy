@@ -55,7 +55,7 @@ To show that $F$ induces an embedding, we need to check that it is a smooth imme
     \frac{1}{2} v \cos(u/2) & \sin(u/2)
     \end{vmatrix} = -\frac{1}{2}v\cos(u) - \sin(u)\sin(u/2)(1 + v\cos(u/2))`$
 
-3. **Homeomorphism onto Image**: To show an embedding, we must prove $\tilde{F}$ is a homeomorphism onto its image. This requires showing both that the map is **injective** (i.e., if $F(u_1, v_1) = F(u_2, v_2)$ then $[u_1, v_1] = [u_2, v_2]$) and that it is a **proper map**.
+2. **Homeomorphism onto Image**: To show an embedding, we must prove $\tilde{F}$ is a homeomorphism onto its image. This requires showing both that the map is **injective** (i.e., if $F(u_1, v_1) = F(u_2, v_2)$ then $[u_1, v_1] = [u_2, v_2]$) and that it is a **proper map**.
 
     - **Injectivity**: Suppose $F(u_1, v_1) = F(u_2, v_2)$. From the first two components, we can deduce that $u_1 = u_2 + 2k\pi$ for some integer $k$. Substituting this into the equations for all three components, we find that we must have $v_2 = (-1)^k v_1$. The condition for points to be identified by $F$ is $(u_2, v_2) = (u_1 - 2k\pi, (-1)^k v_1)$, which is precisely the equivalence relation for the Möbius strip. Thus, the induced map is injective.
     - **Properness**: The induced map $\tilde{F}$ is proper if we consider the compact Möbius strip, constructed as a quotient of the rectangle $[0, 2\pi] \times [-\frac{1}{2}, \frac{1}{2}]$. A continuous map from a compact space to a Hausdorff space (like $\mathbb{R}^3$) is always proper. This is because the preimage of a compact set is closed, and a closed subset of a compact space is compact. Therefore, $\tilde{F}$ is a proper map.
