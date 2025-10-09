@@ -50,6 +50,9 @@ $`d\tilde{F}_{(u, v)}=\begin{pmatrix}
 
 2. **Homeomorphism onto Image**: To show an embedding, we must prove $\tilde{F}$ is a homeomorphism onto its image. This requires showing both that the map is **injective** (i.e., if $F(u_1, v_1) = F(u_2, v_2)$ then $[u_1, v_1] = [u_2, v_2]$) and that it is a **proper map**.
 
+- **Injectivity**: Suppose $F(u_1, v_1) = F(u_2, v_2)$. By examining the first two components, we can derive that $u_1$ and $u_2$ must be congruent modulo $2\pi$. So either $u_1 = u_2 + 2k\pi$ for some integer $k$, or $u_1 = u_2 + (2k+1)\pi$. In the first case, we must have $v_1 = v_2$. In the second case, we must have $v_1 = -v_2$. Thus, the only identifications are those given by the Möbius strip structure.
+- **Properness**: The map $F$ is proper if the preimage of every compact set in $\mathbb{R}^3$ is compact in the Möbius strip. Since the Möbius strip is a quotient of a compact set (the rectangle $[0, 2\pi] \times [-\frac{1}{2}, \frac{1}{2}]$ with appropriate identifications), and $F$ is continuous, the preimage of a compact set under $F$ will also be compact.
+
 # 4
 Note that $P(X, Y, Z, W)=X^2+Z^2-Y^2-W^2$ is a homogeneous polynomial. Consider the hypersurface $S \subset \mathbb{R P}^3$ defined by $P(X, Y, Z, W)=0$. (This makes sense since $P$ is homogeneous.)
 
@@ -77,7 +80,7 @@ Prove that $\pi$ is a submersion.
 <li>  
 Let $\pi_0$ be the restriction of $\pi$ to the sphere $S^n$, for $K=\mathbb{R}$, or $S^{2 n+1}$, for $K=\mathbb{C}$. Prove that $\pi_0$ is also a submersion.
 
-  Hint: To prove (b) using (a), it suffices to show that the kernel of $d \pi$ is not contained in the tangent space to the sphere.
+Hint: To prove (b) using (a), it suffices to show that the kernel of $d \pi$ is not contained in the tangent space to the sphere.
 </li>
 </ol>
 
