@@ -85,7 +85,7 @@ Proof
 <ol type="a">
 <li>
 
-For the case $K=\mathbb{R}$, we work on the open set $U = \{(x_1, \ldots, x_{n+1}) \in \mathbb{R}^{n+1} \mid x_{n+1} > 0\}$. We introduce a coordinate change on $U$ via the map $\phi: U \to \mathbb{R}^n \times \mathbb{R}^+$:
+For the case $K=\mathbb{R}$, we work on the open set $`U = \{(x_1, \ldots, x_{n+1}) \in \mathbb{R}^{n+1} \mid x_{n+1} > 0\}`$. We introduce a coordinate change on $U$ via the map $\phi: U \to \mathbb{R}^n \times \mathbb{R}^+$:
 $`\phi(x_1, \ldots, x_{n+1}) = (\frac{x_1}{x_{n+1}}, \ldots, \frac{x_n}{x_{n+1}}, \sqrt{x_1^2 + \cdots + x_n^2 + x_{n+1}^2})`$.
 
 Local coordinates on $K \mathbb{P}^n$ are given by the map
