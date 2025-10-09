@@ -48,7 +48,7 @@ $`d\tilde{F}_{(u, v)}=\begin{pmatrix}
     \frac{1}{2} v \cos(u/2) & \sin(u/2)
 \end{pmatrix}`$.
 
-2. **Homeomorphism onto Image**: To complete the proof, we must show the induced map on the Möbius strip is a homeomorphism onto its image. This requires proving that the map is injective on the quotient space and is a proper map.
+2. **Injectivity**: To show that $\tilde{F}$ is injective, suppose $\tilde{F}([u_1, v_1]) = \tilde{F}([u_2, v_2])$. This implies $F(u_1, v_1) = F(u_2, v_2)$ or $F(u_1, v_1) = F(u_2 + 2\pi, -v_2)$. By analyzing the components of $F$, we can show that this leads to the conclusion that $[u_1, v_1] = [u_2, v_2]$ in the Möbius strip.
 
 # 4
 Note that $P(X, Y, Z, W)=X^2+Z^2-Y^2-W^2$ is a homogeneous polynomial. Consider the hypersurface $S \subset \mathbb{R P}^3$ defined by $P(X, Y, Z, W)=0$. (This makes sense since $P$ is homogeneous.)
