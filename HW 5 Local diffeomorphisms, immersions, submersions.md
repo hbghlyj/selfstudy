@@ -48,12 +48,22 @@ To show that $F$ induces an embedding, we need to check that it is a smooth imme
         \frac{1}{2} v \cos(u/2) & \sin(u/2)
     \end{pmatrix}`$.
     
-    The rank of this matrix is 2 for all $(u, v)$ in the domain, which can be verified by checking that the determinant of any 2x2 minor is non-zero. Thus, $d\tilde{F}_{(u, v)}$ is injective, and $\tilde{F}$ is a smooth immersion.
+    The rank of this matrix is 2 for all $(u, v)$ in the domain, which can be verified by checking that the determinant of any 2x2 minor is not simultaneously zero.
+    
+    Thus, $d\tilde{F}_{(u, v)}$ is injective, and $\tilde{F}$ is a smooth immersion.
 
-    $`\begin{vmatrix}
-    -\frac{1}{2} v \cos(u) \sin(u/2) - (1 + v \cos(u/2)) \sin(u) & \cos(u/2) \cos(u) \\
-    \frac{1}{2} v \cos(u/2) & \sin(u/2)
-    \end{vmatrix} = -\frac{1}{2}v\cos(u) - \sin(u)\sin(u/2)(1 + v\cos(u/2))`$
+    *   The minor of rows 1 and 2 has determinant
+      
+        $`\begin{vmatrix}
+        -\frac{1}{2} v \cos(u) \sin(u/2) - (1 + v \cos(u/2)) \sin(u) & \cos(u/2) \cos(u) \\
+            \cos(u) + v \cos(u/2) \cos(u) - \frac{1}{2} v \sin(u/2) \sin(u) & \cos(u/2) \sin(u)
+        \end{vmatrix} = -\cos(u/2)(1+v\cos(u/2))`$, which is zero only when $u = \pi + 2k\pi$.
+    *   The minor of rows 2 and 3 has determinant
+        $`\begin{vmatrix}
+        \cos(u) + v \cos(u/2) \cos(u) - \frac{1}{2} v \sin(u/2) \sin(u) & \cos(u/2) \sin(u) \\
+        \frac{1}{2} v \cos(u/2) & \sin(u/2)
+        \end{vmatrix} = \sin(u/2)(\cos(u) + v\cos(u/2)(\cos(u)-1))`$, which is non-zero for $u = \pi + 2k\pi$.
+
 
 2. **Homeomorphism onto Image**: To show an embedding, we must prove $\tilde{F}$ is a homeomorphism onto its image. This requires showing both that the map is **injective** (i.e., if $F(u_1, v_1) = F(u_2, v_2)$ then $[u_1, v_1] = [u_2, v_2]$) and that it is a **proper map**.
 
@@ -84,7 +94,7 @@ Let $`\pi\colon K^{n+1} \backslash\{0\} \to K \mathbb{P}^n`$ be the canonical pr
 
 Prove that $\pi$ is a submersion.
 </li>
-<li>  
+<li>
 Let $\pi_0$ be the restriction of $\pi$ to the sphere $S^n$, for $K=\mathbb{R}$, or $S^{2 n+1}$, for $K=\mathbb{C}$. Prove that $\pi_0$ is also a submersion.
 
 Hint: To prove (b) using (a), it suffices to show that the kernel of $d \pi$ is not contained in the tangent space to the sphere.
