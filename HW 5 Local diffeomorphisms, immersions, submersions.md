@@ -57,7 +57,7 @@ Prove that $S$ is an embedded torus. (Hint: Start with $\tilde{S} \in S^3 \subse
 
 Proof
 
-We start by considering the set $\tilde{S} = \{(X, Y, Z, W) \in S^3 \subset \mathbb{R}^4 \mid P(X, Y, Z, W) = 0\}$.
+We start by considering the set $`\tilde{S} = \{(X, Y, Z, W) \in S^3 \subset \mathbb{R}^4 \mid P(X, Y, Z, W) = 0\}`$.
 
 The equation $P(X, Y, Z, W) = 0$ can be rewritten as $X^2 + Z^2 = Y^2 + W^2$. But since we are on the unit sphere $S^3$, we also have $X^2 + Y^2 + Z^2 + W^2 = 1$. Combining these two equations, we find that $X^2 + Z^2 = \frac{1}{2}$ and $Y^2 + W^2 = \frac{1}{2}$.
 
