@@ -63,9 +63,9 @@ The equation $P(X, Y, Z, W) = 0$ can be rewritten as $X^2 + Z^2 = Y^2 + W^2$. Bu
 
 This describes a product of two circles, each of radius $\frac{1}{\sqrt{2}}$, which is topologically a torus $S^1 \times S^1$.
 
-The projection map $\pi\colon S^3 \to \mathbb{R P}^3$ is a smooth submersion, and the image of $\tilde{S}$ under this projection is $S$. Since $\tilde{S}$ is a smooth submanifold of $S^3$ and the projection is a submersion, it follows that $S$ is a smooth embedded submanifold of $\mathbb{R P}^3$.
+The projection map $\pi\colon S^3 \to \mathbb{R P}^3$ is a 2-to-1 covering map that identifies antipodal points. The set $\tilde{S}$ is invariant under the antipodal map, since $P(-v) = P(v)$ for any $v \in \mathbb{R}^4$. The antipodal map has no fixed points on $\tilde{S}$. The induced map from the quotient manifold $\tilde{S}/\{\pm I\}$ to $\mathbb{R P}^3$ is an injective immersion from a compact space, hence a smooth embedding. Therefore, $S$ is a smooth embedded submanifold of $\mathbb{R P}^3$.
 
-To show that $S$ is an embedded torus, we note that the quotient of $S^3$ by the antipodal map is $\mathbb{R P}^3$, and the image of $\tilde{S}$ under this quotient is homeomorphic to a torus. Thus, $S$ is an embedded torus in $\mathbb{R P}^3$.
+To show $S$ is a torus, we identify the quotient manifold. On $\tilde{S} \cong S^1 \times S^1$, the antipodal map corresponds to $(\theta_1, \theta_2) \mapsto (\theta_1+\pi, \theta_2+\pi)$ in angular coordinates. The quotient of the torus $S^1 \times S^1$ by this fixed-point-free involution is diffeomorphic to a torus. Thus, $S$ is an embedded torus in $\mathbb{R P}^3$.
 
 # 5
 Let $`\pi\colon K^{n+1} \backslash\{0\} \to K \mathbb{P}^n`$ be the canonical projection for $K=\mathbb{R}, \mathbb{C}$.
