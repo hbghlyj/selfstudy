@@ -56,7 +56,7 @@ To show that $\tilde{X}:=X_{[\pi_1(X), \pi_1(X)]}$ is universal among all abelia
 
 $\pi_1(X) / K=\pi_1(X) / p(\pi_1(X_K))$
 
-(where $\pi_1(X) / K$ is only a notation of the group). Since $\pi_1(X) / p(\pi_1(X_K))$ is abelian, there is a unique induced group homomorphism $g$ making $p_*(X_{[\pi_1(X), \pi_1(X)]})=[\pi_1(X), \pi_1(X)] \subseteq \pi_1(X_K)$
+(where $\pi_1(X) / K$ is only a notation of the group). Since $\pi_1(X) / p_*(\pi_1(X_K))$ is abelian, it follows that $p_*(\pi_1(X_{[\pi_1(X), \pi_1(X)]}))= [\pi_1(X), \pi_1(X)] \subseteq p_*(\pi_1(X_K))$
 
 # 19
 Use the preceding problem to show that a closed orientable surface $M_g$ of genus $g$ has a connected normal covering space with deck transformation group isomorphic to $\mathbb{Z}^n$ (the product of $n$ copies of $\mathbb{Z}$) iff $n \leq 2 g$.
