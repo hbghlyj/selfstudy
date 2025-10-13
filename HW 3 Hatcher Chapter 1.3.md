@@ -24,6 +24,8 @@ For the second part of the problem (a sphere and a circle intersecting it in two
 
 ![](https://i.upmath.me/svgb/rZbfb9s2EMff9VfcugSzF0mVtBnb4vlhaDCgQIoCbd-iYKDJU0SEIj2SspcI-t8HkrZ-JOm6FfOTeOTdfb53R8lla9Dy-0fBt5roh44SQfsoKrd4x2Xndnac2lZjfxMBAJhdjRr_0ITx1rxOjVUagctNGTaCPX5-dJOlxYo20x3n_SBw03mb-1GuqcB4WDNNDuOq4kJstqLFb4pstDZc8qZtwPBH3BTfv8DhflxK1GBwt8l21lv76DaKzuEdoVqBVT4X2BqPcHDgtgb8syVW6aiUeKCqaYhkXelOhkP9TX4b6L0RFt_my6MIWMxIlmt_7ByuTmlOoSfeZ97_AhbJXEW2PFtCmgJV0molzPRklq6eaE6y9Me5ybkTySZu_9YrTSdOz6HWI_0NI6ZGdvt_qfgqEV-noXdzkCQJfERrubwzUCkNjBtLJEUDxAISWoPAPQp3MCoZVqVfvpd4xY3tinTVT8yfDsqb87RYDeE_KGXhY5guH0UqhjcB6BYWWim7dMkWWZwtoevX0WTUOredUpQWdb8-hbz2SLkvTHguQuhKac9c7ohGaX-Td8JdU-iyGH7JYsh_zmIofsp6OM7vnOU6DyRT98uZ4gA4tP8IeZ2PiONo7FE_gK05vR9kJolPso7CsQF3q4mk9YibOFjPfCL156lSmnFJLMLiukj8MhCfefaLOfrFNO7lrEXDFL9UhSLEHDOcND_TXcx1f0a7Q_PKi0nS4eEcflc6jNorgaR6FQgcUwyEMWDKGlcVbg38AKq1B6IZMK6RWq6kGVMP9WTKfqmY3mF3VzXE1gZt416IXVlxScTV0bvvPlvNiyFFP484bRFTNtkpM3SoCB2a5bjM0pVvxizM6eZsW2OB1kjv_eXco7acEgF7k0KtNH9U0pJwOefub4igrXAUVBkuEVTlX7_E5UzhbQXcfmdAItHwiFrFfneoKXAzJEu_UDKLxr5Rpu_I1iyoMk8ELpdPKsQrxpuTF-ws_ApZmsPx-_RERoDnR9IsBqMCORmLMVA_C-AH21d_aEVXasIN5mmBf5V7N1qT2fU-KAz-M4qyL-BM2vEfgcRLFBUf1v3xw91HJUo2-3PyNw)
 
+The covering map takes each sphere onto the sphere in $X$, and the line segments onto the two arcs of the circle in $X$. This is a covering space for reasons analogous to the previous example. Moreover, the space is simply connected since contracting the line segments yields an infinite wedge of spheres. 
+
 # 8
 Let $\tilde{X}$ and $\tilde{Y}$ be simply-connected covering spaces of the path-connected, locally path-connected spaces $X$ and $Y$.
 
