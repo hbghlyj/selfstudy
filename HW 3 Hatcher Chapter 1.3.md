@@ -42,6 +42,21 @@ For a path-connected, locally path-connected, and semilocally simply-connected s
 
 Show that $X$ has an abelian covering space that is a covering space of every other abelian covering space of $X$, and that such a 'universal' abelian covering space is unique up to isomorphism. Describe this covering space explicitly for $X=S^1 \vee S^1$ and $X=S^1 \vee S^1 \vee S^1$.
 
+Proof
+
+Since the space $X$ is path-connected, locally path-connected, and semilocally simply-connected space, there is a universal covering space $X_0 \rightarrow X$, whose deck transformation is exactly $\pi_1(X)$.
+
+Consider the normal group $[\pi_1(X), \pi_1(X)]$, By Prop 1.36. there is a covering space $p: X_{[\pi_1(X), \pi_1(X)]} \to X$ s.t. $p_*(X_{[\pi_1(X), \pi_1(X)]})=[\pi_1(X), \pi_1(X)]$. By Prop 1.39., $p: X_{[\pi_1(X), \pi_1(X)]} \to X$ is normal and the deck transformation group is
+
+$\pi_1(X) /[\pi_1(X), \pi_1(X)]=\pi_1(X)_{\mathrm{ab}} .$
+
+To show that $\tilde{X}:=X_{[\pi_1(X), \pi_1(X)]}$ is universal among all abelian covering spaces, consider another abelian covering space $X_K \rightarrow X$, with deck transformation group
+
+$\pi_1(X) / K=\pi_1(X) / p\left(\pi_1\left(X_K\right)\right)$
+
+(where $\pi_1(X) / K$ is only a notation of the group). Since $\pi_1(X) / p(\pi_1(X_K))$ is abelian, there is a unique induced group homomorphism $g$ making the diagram
+
+
 # 19
 Use the preceding problem to show that a closed orientable surface $M_g$ of genus $g$ has a connected normal covering space with deck transformation group isomorphic to $\mathbb{Z}^n$ (the product of $n$ copies of $\mathbb{Z}$) iff $n \leq 2 g$.
 
@@ -50,7 +65,7 @@ For $n=3$ and $g \geq 3$, describe such a covering space explicitly as a subspac
 Show that such a covering space in $\mathbb{R}^3$ exists iff there is an embedding of $M_g$ in the 3-torus $T^3=S^1 \times S^1 \times S^1$ such that the induced map $\pi_1\left(M_g\right) \to \pi_1\left(T^3\right)$ is surjective.
 
 # 23
-Show that if a group $G$ acts freely and properly discontinuously on a Hausdorff space $X$, then the action is a covering space action. (Here 'properly discontinuously' means that each $x \in X$ has a neighborhood $U$ such that $\{g \in G \mid U \cap g(U) \neq \varnothing\}$ is finite.)
+Show that if a group $G$ acts freely and properly discontinuously on a Hausdorff space $X$, then the action is a covering space action. (Here 'properly discontinuously' means that each $x \in X$ has a neighborhood $U$ such that $`\{g \in G \mid U \cap g(U) \neq \varnothing\}`$ is finite.)
 
 In particular, a free action of a finite group on a Hausdorff space is a covering space action.
 
