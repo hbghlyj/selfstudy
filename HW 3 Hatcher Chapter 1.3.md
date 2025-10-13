@@ -16,6 +16,8 @@ Consider $\tilde{X}$ which consists of infinitely many copies of $S^2$, stacked 
 
 The covering projection $p: \tilde{X} \to X$ can be defined by sending each point in $\tilde{X}$ to its corresponding point in $X$, and sending the south pole of each $S^2$ to the south pole of $X$, and the north pole of each $S^2$ to the north pole of $X$, and linearly interpolating in between.
 
+To see that $p$ is a covering map, note that for any point $x$ in $S^2$ that is not the north or south pole, there exists an open neighborhood $U$ of $x$ in $S^2$ such that $p^{-1}(U)$ is a disjoint union of open sets in $\tilde{X}$, each of which is homeomorphic to $U$. For the north and south poles, we can take small neighborhoods around them that do not include any other points of $S^2$, and similarly, their preimages in $\tilde{X}$ will be disjoint unions of open sets homeomorphic to these neighborhoods. Thus, $p$ satisfies the definition of a covering map.
+
 # 8
 Let $\tilde{X}$ and $\tilde{Y}$ be simply-connected covering spaces of the path-connected, locally path-connected spaces $X$ and $Y$.
 
