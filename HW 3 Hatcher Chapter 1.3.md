@@ -20,7 +20,7 @@ The covering projection $p: \tilde{X} \to X$ can be defined by mapping each sphe
 
 To see that $p$ is a covering map, note that for any point $x$ in $S^2$ that is not the north or south pole, there exists an open neighborhood $U$ of $x$ in $S^2$ such that $p^{-1}(U)$ is a disjoint union of open sets in $\tilde{X}$, each of which is homeomorphic to $U$. For the north and south poles, we can take small neighborhoods around them that do not include the other pole of $S^2$, and similarly, their preimages in $\tilde{X}$ will be a disjoint union of open sets homeomorphic to these neighborhoods. Thus, $p$ satisfies the definition of a covering map.
 
-For the second part of the problem (a sphere and a circle intersecting it in two points), take the universal cover of $S^1 \vee S^1$ (an infinite 4-valent tree) and attaching a sphere to each vertex.
+For the second part of the problem (a sphere and a circle intersecting it in two points), take the universal cover of $S^1 \vee S^1$ (an infinite 4-valent tree) and attach a sphere to each vertex.
 
 
 # 8
