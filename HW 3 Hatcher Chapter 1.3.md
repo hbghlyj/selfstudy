@@ -54,7 +54,7 @@ $\pi_1(X) /[\pi_1(X), \pi_1(X)]=\pi_1(X)_{\mathrm{ab}} .$
 
 To show that $\tilde{X}:=X_{[\pi_1(X), \pi_1(X)]}$ is universal among all abelian covering spaces, consider another abelian covering space $X_K \to X$, with deck transformation group
 
-$\pi_1(X) / K=\pi_1(X) / p(\pi_1(X_K))$
+$\pi_1(X) / K=\pi_1(X) / p_*(\pi_1(X_K))$
 
 (where $\pi_1(X) / K$ is only a notation of the group). Since $\pi_1(X) / p_*(\pi_1(X_K))$ is abelian, it follows that $p_*(\pi_1(X_{[\pi_1(X), \pi_1(X)]}))= [\pi_1(X), \pi_1(X)] \subseteq p_*(\pi_1(X_K))$
 
