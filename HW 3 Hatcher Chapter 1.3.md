@@ -8,6 +8,14 @@ Construct a simply-connected covering space of the space $X \subset \mathbb{R}^3
 
 Do the same when $X$ is the union of a sphere and a circle intersecting it in two points.
 
+Solution
+
+Consider $\tilde{X}$ which consists of infinitely many copies of $S^2$, stacked vertically in a line, with the south pole of one connected to the north pole of the previous.
+
+The space $\tilde{X}$ is simply-connected because any loop within it is contained in a finite chain of spheres, which is a simply-connected subspace.
+
+![](https://i.upmath.me/svgb/hZNBi9swEIXv_hVz2ILdxCYJhB4CC6U59tZTqfagSON4WHvkynJCavzfi6SEON7A3qxB75uZ5ydxwCPx4Oj9X0vK9RbHBOAL7LEkRnAVAvfNAS2YErq2QotdAiA0loL75lesDNsPqhNaR0rWoKlzkhXCAd0ZkeeUeNxT54bNmATMT2NacAa0lecAu0pAsgZlmFE54iPUxJFTGotSVSAIiGFYL4uiWE7mG2FIADz6h6xVX0sXh7zkyhiriX2hNDYUFbKL-95bB7Voj2UjXdWha6SyZhCXcUgF5evsaz7ZY7z22j-OHxlhp3S1BHHJQJFVNUK6KrbZbq7Cv710xk5l-arYRmVReCOcNXUXyptQ9x9ZcCl9LBVFaBK0uzvxj5Zdhfrtc_LiI3nxhDzfYf6z4EyuAmmtOXdxDCq5bwS9rsPxmcmtxdPvaPTmmdG3XfLXJbiK1Pvb1d-FtxXyPB4DJr87LUpKAK6J-641aOM6nzpiTeqWEOKSmBwCS_84bqlQlST2yWOjEaQLLVbFt20Gw4s4edTLuJtfGPJ0Ekofm8kykAfA-EgQyPrhdf4H)
+
 # 8
 Let $\tilde{X}$ and $\tilde{Y}$ be simply-connected covering spaces of the path-connected, locally path-connected spaces $X$ and $Y$.
 
