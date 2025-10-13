@@ -48,16 +48,15 @@ Proof
 
 Since the space $X$ is path-connected, locally path-connected, and semilocally simply-connected space, there is a universal covering space $X_0 \rightarrow X$, whose deck transformation is exactly $\pi_1(X)$.
 
-Consider the normal group $[\pi_1(X), \pi_1(X)]$, By Prop 1.36. there is a covering space $p: X_{[\pi_1(X), \pi_1(X)]} \to X$ s.t. $p_*(X_{[\pi_1(X), \pi_1(X)]})=[\pi_1(X), \pi_1(X)]$. By Prop 1.39., $p: X_{[\pi_1(X), \pi_1(X)]} \to X$ is normal and the deck transformation group is
+Consider the normal group $[\pi_1(X), \pi_1(X)]$, By Prop 1.36. there is a covering space $p: X_{[\pi_1(X), \pi_1(X)]} \to X$ such that $p_*(X_{[\pi_1(X), \pi_1(X)]})=[\pi_1(X), \pi_1(X)]$. By Prop 1.39., $p: X_{[\pi_1(X), \pi_1(X)]} \to X$ is normal and the deck transformation group is
 
 $\pi_1(X) /[\pi_1(X), \pi_1(X)]=\pi_1(X)_{\mathrm{ab}} .$
 
-To show that $\tilde{X}:=X_{[\pi_1(X), \pi_1(X)]}$ is universal among all abelian covering spaces, consider another abelian covering space $X_K \rightarrow X$, with deck transformation group
+To show that $\tilde{X}:=X_{[\pi_1(X), \pi_1(X)]}$ is universal among all abelian covering spaces, consider another abelian covering space $X_K \to X$, with deck transformation group
 
-$\pi_1(X) / K=\pi_1(X) / p\left(\pi_1\left(X_K\right)\right)$
+$\pi_1(X) / K=\pi_1(X) / p_*(\pi_1(X_K))$
 
-(where $\pi_1(X) / K$ is only a notation of the group). Since $\pi_1(X) / p(\pi_1(X_K))$ is abelian, there is a unique induced group homomorphism $g$ making the diagram
-
+(where $\pi_1(X) / K$ is only a notation of the group). Since $\pi_1(X) / p_*(\pi_1(X_K))$ is abelian, it follows that $p_*(\pi_1(X_{[\pi_1(X), \pi_1(X)]}))= [\pi_1(X), \pi_1(X)] \subseteq p_*(\pi_1(X_K))$
 
 # 19
 Use the preceding problem to show that a closed orientable surface $M_g$ of genus $g$ has a connected normal covering space with deck transformation group isomorphic to $\mathbb{Z}^n$ (the product of $n$ copies of $\mathbb{Z}$) iff $n \leq 2 g$.
