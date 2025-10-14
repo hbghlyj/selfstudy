@@ -50,18 +50,29 @@ Show that $X$ has an abelian covering space that is a covering space of every ot
 
 Proof
 
-Since the space $X$ is path-connected, locally path-connected, and semilocally simply-connected space, there is a universal covering space $X_0 \rightarrow X$, whose deck transformation is exactly $\pi_1(X)$.
+Since the space $X$ is path-connected, locally path-connected, and semilocally simply-connected space, there is a universal covering space $X_0 \to X$, whose deck transformation is exactly $\pi_1(X)$.
 
-Consider the normal group $[\pi_1(X), \pi_1(X)]$, By Prop 1.36. there is a covering space $p: X_{[\pi_1(X), \pi_1(X)]} \to X$ s.t. $p_*(X_{[\pi_1(X), \pi_1(X)]})=[\pi_1(X), \pi_1(X)]$. By Prop 1.39., $p: X_{[\pi_1(X), \pi_1(X)]} \to X$ is normal and the deck transformation group is
+Consider the normal group $[\pi_1(X), \pi_1(X)]$, By Prop 1.36. there is a covering space $p: X_{[\pi_1(X), \pi_1(X)]} \to X$ such that $p_*(X_{[\pi_1(X), \pi_1(X)]})=[\pi_1(X), \pi_1(X)]$. By Prop 1.39., $p: X_{[\pi_1(X), \pi_1(X)]} \to X$ is normal and the deck transformation group is
 
 $\pi_1(X) /[\pi_1(X), \pi_1(X)]=\pi_1(X)_{\mathrm{ab}}$
 
-To show that $\tilde{X}:=X_{[\pi_1(X), \pi_1(X)]}$ is universal among all abelian covering spaces, consider another abelian covering space $X_K \rightarrow X$, with deck transformation group
+To show that $\tilde{X}:=X_{[\pi_1(X), \pi_1(X)]}$ is universal among all abelian covering spaces, consider another abelian covering space $X_K \to X$, with deck transformation group
 
 $\pi_1(X) / K=\pi_1(X) / p(\pi_1(X_K))$
 
 (where $\pi_1(X) / K$ is only a notation of the group). Since $\pi_1(X) / p(\pi_1(X_K))$ is abelian, there is a unique induced group homomorphism $g$ making the diagram
 
+This covering is regular: the deck transformations are exactly the integer translations
+
+$`T_{(u,v)}(m,n)=(m+u,n+v),\qquad (u,v)\in\mathbb Z^2,`$
+
+which clearly preserve $p$. Thus
+$`\operatorname{Homeo}_p(Y)\cong \mathbb Z^2.`$
+
+By the theorem,
+$`\pi_1(X)\big/ p_*(\pi_1(Y)) \cong \operatorname{Homeo}_p(Y\ \cong \mathbb Z^2.`$
+
+But $\pi_1(X)=F_2$ has abelianization $F_2/[F_2,F_2]\cong\mathbb Z^2$. Therefore $p_*\big(\pi_1(Y)\big)=[F_2,F_2]$ (the commutator subgroup). In other words, $\mathbb{Z}^2$ grid is the universal abelian cover of $S^1\vee S^1$. Similarly $\mathbb{Z}^3$ grid is the universal abelian cover of $S^1\vee S^1\vee S^1$..
 
 # 19
 Use the preceding problem to show that a closed orientable surface $M_g$ of genus $g$ has a connected normal covering space with deck transformation group isomorphic to $\mathbb{Z}^n$ (the product of $n$ copies of $\mathbb{Z}$) iff $n \leq 2 g$.
