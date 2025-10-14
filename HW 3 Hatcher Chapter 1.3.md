@@ -41,7 +41,7 @@ Given a group $G$ and a normal subgroup $N$, show that there exists a normal cov
 
 Proof
 
-By Corollary 1.28, there exists a 2-dimensional cell complex $X$ with $\pi_1(X) \cong G$. As a cell complex, $X$ is path-connected, locally path-connected, and semilocally simply-connected. We can therefore apply Proposition 1.36, which guarantees a covering space $p: \tilde{X} \to X$ such that $p_*(\pi_1(\tilde{X})) = N$. For any covering space, the induced homomorphism $p_*$ is injective, so $\pi_1(\tilde{X}) \cong N$. Since $N$ is a normal subgroup of $G$, Proposition 1.39 implies the covering is normal and the deck transformation group $G(\tilde{X})$ is isomorphic to the quotient group $G/N.
+By Corollary 1.28, there exists a 2-dimensional cell complex $X$ with $\pi_1(X) \cong G$. As a cell complex, $X$ is path-connected, locally path-connected, and semilocally simply-connected. We can therefore apply Proposition 1.36, which guarantees a covering space $p: \tilde{X} \to X$ such that $p_*(\pi_1(\tilde{X})) = N$. For any covering space, the induced homomorphism $p_*$ is injective, so $\pi_1(\tilde{X}) \cong N$. Since $N$ is a normal subgroup of $G$, Proposition 1.39 implies the covering is normal and the deck transformation group $G(\tilde{X})$ is isomorphic to the quotient group $G/N$.
 
 # 18
 For a path-connected, locally path-connected, and semilocally simply-connected space $X$, call a path-connected covering space $\tilde{X} \to X$ abelian if it is normal and has abelian deck transformation group.
@@ -54,11 +54,11 @@ Since the space $X$ is path-connected, locally path-connected, and semilocally s
 
 Consider the normal group $[\pi_1(X), \pi_1(X)]$, By Prop 1.36. there is a covering space $p: X_{[\pi_1(X), \pi_1(X)]} \to X$ s.t. $p_*(X_{[\pi_1(X), \pi_1(X)]})=[\pi_1(X), \pi_1(X)]$. By Prop 1.39., $p: X_{[\pi_1(X), \pi_1(X)]} \to X$ is normal and the deck transformation group is
 
-$\pi_1(X) /[\pi_1(X), \pi_1(X)]=\pi_1(X)_{\mathrm{ab}} .$
+$\pi_1(X) /[\pi_1(X), \pi_1(X)]=\pi_1(X)_{\mathrm{ab}}$
 
 To show that $\tilde{X}:=X_{[\pi_1(X), \pi_1(X)]}$ is universal among all abelian covering spaces, consider another abelian covering space $X_K \rightarrow X$, with deck transformation group
 
-$\pi_1(X) / K=\pi_1(X) / p\left(\pi_1\left(X_K\right)\right)$
+$\pi_1(X) / K=\pi_1(X) / p(\pi_1(X_K))$
 
 (where $\pi_1(X) / K$ is only a notation of the group). Since $\pi_1(X) / p(\pi_1(X_K))$ is abelian, there is a unique induced group homomorphism $g$ making the diagram
 
