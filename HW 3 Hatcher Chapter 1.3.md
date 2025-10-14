@@ -50,29 +50,32 @@ Show that $X$ has an abelian covering space that is a covering space of every ot
 
 Proof
 
-Since the space $X$ is path-connected, locally path-connected, and semilocally simply-connected space, there is a universal covering space $X_0 \to X$, whose deck transformation is exactly $\pi_1(X)$.
+Since the space $X$ is path-connected, locally path-connected, and semilocally simply-connected, there exists a universal covering space $X_0 \to X$.
 
-Consider the normal group $[\pi_1(X), \pi_1(X)]$, By Prop 1.36. there is a covering space $p: X_{[\pi_1(X), \pi_1(X)]} \to X$ such that $p_*(X_{[\pi_1(X), \pi_1(X)]})=[\pi_1(X), \pi_1(X)]$. By Prop 1.39., $p: X_{[\pi_1(X), \pi_1(X)]} \to X$ is normal and the deck transformation group is
+Let $[\pi_1(X), \pi_1(X)]$ be the commutator subgroup of $\pi_1(X)$. This is a normal subgroup.
 
-$\pi_1(X) /[\pi_1(X), \pi_1(X)]=\pi_1(X)_{\mathrm{ab}}$
+By Proposition 1.36, there is a covering space $p: \tilde{X} \to X$ such that $p_*(\pi_1(\tilde{X}))=[\pi_1(X), \pi_1(X)]$.
 
-To show that $\tilde{X}:=X_{[\pi_1(X), \pi_1(X)]}$ is universal among all abelian covering spaces, consider another abelian covering space $X_K \to X$, with deck transformation group
+Since the subgroup is normal, by Proposition 1.39, this covering is normal and its deck transformation group is $G(\tilde{X}) \cong \pi_1(X) / [\pi_1(X), \pi_1(X)]$, which is the abelianization of $\pi_1(X)$.
 
-$\pi_1(X) / K=\pi_1(X) / p(\pi_1(X_K))$
+Thus, $\tilde{X}$ is an abelian covering space.
 
-(where $\pi_1(X) / K$ is only a notation of the group). Since $\pi_1(X) / p(\pi_1(X_K))$ is abelian, there is a unique induced group homomorphism $g$ making the diagram
+To show that $\tilde{X}$ is universal, let $p': X' \to X$ be any other path-connected abelian covering space.
 
-This covering is regular: the deck transformations are exactly the integer translations
+Its deck transformation group $`G(X') \cong \pi_1(X) / p'_*(\pi_1(X'))`$ is abelian.
 
-$`T_{(u,v)}(m,n)=(m+u,n+v),\qquad (u,v)\in\mathbb Z^2,`$
+This implies that the subgroup $`p'_*(\pi_1(X'))`$ must contain the commutator subgroup $`[\pi_1(X), \pi_1(X)]`$.
 
-which clearly preserve $p$. Thus
-$`\operatorname{Homeo}_p(Y)\cong \mathbb Z^2.`$
+We have $p_*(\pi_1(\tilde{X})) = [\pi_1(X), \pi_1(X)] \subset p'_*(\pi_1(X'))$.
 
-By the theorem,
-$`\pi_1(X)\big/ p_*(\pi_1(Y)) \cong \operatorname{Homeo}_p(Y\ \cong \mathbb Z^2.`$
+By the lifting criterion (Proposition 1.34), there is a covering map $q: \tilde{X} \to X'$ such that $p' \circ q = p$.
 
-But $\pi_1(X)=F_2$ has abelianization $F_2/[F_2,F_2]\cong\mathbb Z^2$. Therefore $p_*\big(\pi_1(Y)\big)=[F_2,F_2]$ (the commutator subgroup). In other words, $\mathbb{Z}^2$ grid is the universal abelian cover of $S^1\vee S^1$. Similarly $\mathbb{Z}^3$ grid is the universal abelian cover of $S^1\vee S^1\vee S^1$..
+This shows that $\tilde{X}$ is a covering space of $X'$, and is therefore universal. Uniqueness up to isomorphism is a standard result for such universal objects.
+
+* **For $X=S^1 \vee S^1$:**
+  The fundamental group is $\pi_1(X) \cong F_2$, the free group on two generators. The universal abelian cover is the covering space corresponding to the commutator subgroup $`[F_2, F_2]`$. The deck transformation group is $`F_2/[F_2, F_2] \cong \mathbb{Z}^2`$. The covering space itself is the Cayley graph of $\mathbb{Z}^2$, which is the infinite grid of points $(m,n) \in \mathbb{Z}^2$ in the plane, with edges connecting adjacent integer points.
+* **For $X=S^1 \vee S^1 \vee S^1$:**
+  Similarly, $\pi_1(X) \cong F_3$. The universal abelian cover corresponds to the subgroup $`[F_3, F_3]`$ and has deck transformation group $`F_3/[F_3, F_3] \cong \mathbb{Z}^3`$. The covering space is the Cayley graph of $\mathbb{Z}^3$, which is the 3D integer lattice.
 
 # 19
 Use the preceding problem to show that a closed orientable surface $M_g$ of genus $g$ has a connected normal covering space with deck transformation group isomorphic to $\mathbb{Z}^n$ (the product of $n$ copies of $\mathbb{Z}$) iff $n \leq 2 g$.
