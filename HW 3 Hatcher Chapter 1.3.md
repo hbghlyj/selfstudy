@@ -137,6 +137,11 @@ For $n=3$ and $g \geq 3$, describe such a covering space explicitly as a subspac
 
 Show that such a covering space in $\mathbb{R}^3$ exists iff there is an embedding of $M_g$ in the 3-torus $T^3=S^1 \times S^1 \times S^1$ such that the induced map $\pi_1\left(M_g\right) \to \pi_1\left(T^3\right)$ is surjective.
 
+Proof
+
+The universal abelian covering space of $M_g$ corresponds to the commutator subgroup of $\pi_1(M_g)$, which is isomorphic to the free group on $2g$ generators. The abelianization of this group is $\mathbb{Z}^{2g}$. Therefore, the deck transformation group of the universal abelian cover is $\mathbb{Z}^{2g}$.
+
+
 # 23
 Show that if a group $G$ acts freely and properly discontinuously on a Hausdorff space $X$, then the action is a covering space action. (Here 'properly discontinuously' means that each $x \in X$ has a neighborhood $U$ such that $`\{g \in G \mid U \cap g(U) \neq \varnothing\}`$ is finite.)
 
