@@ -162,7 +162,7 @@ Since the action is properly discontinuous, for each $x \in X$, there exists an 
 Now, consider the set $p^{-1}(p(U))$. By the definition of the quotient map, we have
 $p^{-1}(p(U)) = \bigcup_{g \in G} g(U).$
 
-Since $U \cap g(U) = \varnothing$ for all $g \in S$ with $g \neq e$, the sets $g(U)$ for $g \in S$ are disjoint. For $g \notin S$, we have $U \cap g(U) = \varnothing$ by the choice of $U$. Thus, the sets $g(U)$ for all $g \in G$ are disjoint.
+By construction, $U \cap g(U) = \varnothing$ for all $g \in S$ with $g \neq e$. For $g \notin S$, we also have $U \cap g(U) = \varnothing$. Thus, $U \cap g(U) = \varnothing$ for all $g \in G$ with $g \neq e$, which implies the sets $g(U)$ for all $g \in G$ are pairwise disjoint.
 
 Each $g(U)$ is homeomorphic to $U$ via the map $p$, since $p$ restricted to $g(U)$ is a homeomorphism onto its image in $X/G$. Therefore, $p^{-1}(p(U))$ is a disjoint union of open sets in $X$, each homeomorphic to $U$.
 
