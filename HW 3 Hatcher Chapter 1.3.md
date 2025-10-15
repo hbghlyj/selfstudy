@@ -137,6 +137,15 @@ For $n=3$ and $g \geq 3$, describe such a covering space explicitly as a subspac
 
 Show that such a covering space in $\mathbb{R}^3$ exists iff there is an embedding of $M_g$ in the 3-torus $T^3=S^1 \times S^1 \times S^1$ such that the induced map $\pi_1\left(M_g\right) \to \pi_1\left(T^3\right)$ is surjective.
 
+Proof
+
+The fundamental group of a closed orientable surface of genus $g$ is $\pi_1(M_g) = \langle a_1, b_1, \dots, a_g, b_g \mid [a_1, b_1]\cdots[a_g, b_g] = 1 \rangle$. Its abelianization is $H_1(M_g) \cong \mathbb{Z}^{2g}$.
+
+A connected normal covering space with deck group $\mathbb{Z}^n$ corresponds to a surjective homomorphism $\phi: \pi_1(M_g) \to \mathbb{Z}^n$. Since $\mathbb{Z}^n$ is abelian, this homomorphism must factor through the abelianization of $\pi_1(M_g)$. This gives a homomorphism $\bar{\phi}: H_1(M_g) \to \mathbb{Z}^n$. For $\phi$ to be surjective, $\bar{\phi}$ must also be surjective.
+
+A surjective homomorphism from $H_1(M_g) \cong \mathbb{Z}^{2g}$ to $\mathbb{Z}^n$ exists if and only if $n \leq 2g$. This proves the first part of the problem.
+
+
 # 23
 Show that if a group $G$ acts freely and properly discontinuously on a Hausdorff space $X$, then the action is a covering space action. (Here 'properly discontinuously' means that each $x \in X$ has a neighborhood $U$ such that $`\{g \in G \mid U \cap g(U) \neq \varnothing\}`$ is finite.)
 
