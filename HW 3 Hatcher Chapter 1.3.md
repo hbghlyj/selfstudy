@@ -180,13 +180,11 @@ The second action, given by deck transformations, corresponds to the automorphis
 
 In this case, the two actions are not the same because the first action depends on the specific lifts of loops, while the second action is determined by the global structure of the covering space.
 
-For the case $X = S^1 \times S^1$, the fundamental group is $\pi_1(X, x_0) \cong \mathbb{Z} \times \mathbb{Z}$. The universal cover $\tilde{X}$ is homeomorphic to $\mathbb{R}^2$, and the fiber $p^{-1}(x_0)$ can be identified with the integer lattice points in $\mathbb{R}^2$.
+For the case $X = S^1 \times S^1$, the fundamental group is $\pi_1(X, x_0) \cong \mathbb{Z} \times \mathbb{Z}$. The universal cover $\tilde{X}$ is homeomorphic to $\mathbb{R}^2$, and the fiber $p^{-1}(x_0)$ can be identified with the integer lattice points $\mathbb{Z}^2 \subset \mathbb{R}^2$.
 
-The first action, defined by lifting loops, sends a point in the fiber to another point based on the endpoint of the lift of the loop. For example, the loop corresponding to $(1,0)$ lifts to a path in $\tilde{X}$ that starts at a lattice point and ends at the adjacent lattice point in the horizontal direction. Similarly, the loop corresponding to $(0,1)$ lifts to a path that moves vertically.
+As with the previous case, the first action corresponds to acting with an element's inverse, while the second action corresponds to the element itself. Let's take the generator $g = (1,0) \in \mathbb{Z} \times \mathbb{Z}$. Its inverse is $g^{-1} = (-1,0)$. Since $g \neq g^{-1}$, the actions are different.
 
-The second action, given by deck transformations, corresponds to translations in the plane. Each element of $\mathbb{Z} \times \mathbb{Z}$ acts by translating the entire lattice by a fixed vector.
-
-In this case, the two actions are the same because both actions correspond to translations in the integer lattice.
+For example, under Action 1, $g$ maps a point $(m,n)$ to $(m-1, n)$. Under Action 2, $g$ maps $(m,n)$ to $(m+1, n)$. These are clearly not the same.
 
 # 30
 Draw the Cayley graph of the group $\mathbb{Z} * \mathbb{Z}_2=\langle a, b \mid b^2\rangle$.
