@@ -59,7 +59,7 @@ so the lifting criterion (Proposition 1.33) gives such an $\tilde f$.  Similarly
 
 At this point we might like to show that $\tilde g \circ \tilde f \simeq 1$, but this may not be possible; instead we will show that it is homotopic to a deck transformation, which will be good enough.
 
-We have $g \circ f \simeq 1_X$, so $g \circ f \circ p \simeq p$; let $F\colon \tilde X \times I \to X$ be a homotopy from $g \circ f \circ p$ to $p$.  The map $\tilde g \circ \tilde f$ lifts $g \circ f \circ p$, so by the homotopy lifting property (Proposition 1.30), there is a unique lift $\tilde F\colon \tilde X \times I \to \tilde X$ of $F$ such that $\tilde F(-,0) = \tilde g \circ \tilde f$.  Let $\phi = \tilde F(-,1)\colon \tilde X \to \tilde X$.  Then $\phi$ lifts $p\colon \tilde X \to X$, so it is a deck transformation: for one way to see this, by Proposition 1.37 there is a deck transformation $\tilde X \to \tilde X$ taking $\tilde x_0$ to $\phi(\tilde x_0)$, and by the unique lifting property (Proposition 1.34) this deck transformation and $\phi$ must be equal.  In particular, $\phi$ is a homeomorphism.
+We have $g \circ f \simeq 1_X$, so $g \circ f \circ p \simeq p$. Let $F\colon \tilde X \times I \to X$ be a homotopy from $g \circ f \circ p$ to $p$.
 
 Similarly, $\tilde f' \circ \tilde g$ is homotopic to a deck transformation $\psi\colon \tilde Y \to \tilde Y$.
 
