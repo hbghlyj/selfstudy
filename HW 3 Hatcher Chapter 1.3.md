@@ -41,7 +41,7 @@ Proof
 
 Let $f\colon X \to Y$ and $g\colon Y \to X$ be maps with $g \circ f \simeq 1_X$ and $f \circ g \simeq 1_Y$.  Label the covering maps as $p\colon \tilde X \to X$ and $q\colon \tilde Y \to Y$.  Choose a basepoint $\tilde x_0 \in \tilde X$, let 
 
-$x_0 = p(\tilde x_0), \qquad y_0 = f(y_0), \qquad x_0' = g(x_0), \qquad y_0' = f(x_0'),$
+$x_0 = p(\tilde x_0), \qquad y_0 = f(x_0), \qquad x_0' = g(y_0), \qquad y_0' = f(x_0'),$
 
 and choose
 
