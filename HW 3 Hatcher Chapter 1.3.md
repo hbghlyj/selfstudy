@@ -143,7 +143,7 @@ Show that if a group $G$ acts freely and properly discontinuously on a Hausdorff
 In particular, a free action of a finite group on a Hausdorff space is a covering space action.
 
 # 27
-For a universal cover $p: \tilde{X} \to X$ there are two actions of $\pi_1\left(X, x_0\right)$ on the fiber $p^{-1}\left(x_0\right)$. The first is the action defined on page 69 in which the element of $\pi_1\left(X, x_0\right)$ determined by a loop $\gamma$ sends $\tilde{\gamma}(1)$ to $\tilde{\gamma}(0)$ for each lift $\tilde{\gamma}$ of $\gamma$ to $\tilde{X}$, and the second is the action given by restricting deck transformations to the fiber (see Proposition 1.39). Show that these two actions are different when $X=S^1 \vee S^1$ and when $X=S^1 \times S^1$ and determine when the two actions are the same. [This is a revised version of the original form of this exercise.]
+For a universal cover $p: \tilde{X} \to X$ there are two actions of $\pi_1(X, x_0)$ on the fiber $p^{-1}(x_0)$. The first is the action defined on page 69 in which the element of $\pi_1\left(X, x_0\right)$ determined by a loop $\gamma$ sends $\tilde{\gamma}(1)$ to $\tilde{\gamma}(0)$ for each lift $\tilde{\gamma}$ of $\gamma$ to $\tilde{X}$, and the second is the action given by restricting deck transformations to the fiber (see Proposition 1.39). Show that these two actions are different when $X=S^1 \vee S^1$ and when $X=S^1 \times S^1$ and determine when the two actions are the same. [This is a revised version of the original form of this exercise.]
 
 # 30
 Draw the Cayley graph of the group $\mathbb{Z} * \mathbb{Z}_2=\langle a, b \mid b^2\rangle$.
