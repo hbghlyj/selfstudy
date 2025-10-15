@@ -153,6 +153,19 @@ Show that if a group $G$ acts freely and properly discontinuously on a Hausdorff
 
 In particular, a free action of a finite group on a Hausdorff space is a covering space action.
 
+Proof
+
+Let $p: X \to X/G$ be the quotient map. We want to show that for each $x \in X$, there exists an open neighborhood $U$ of $x$ such that $p^{-1}(p(U))$ is a disjoint union of open sets in $X$, each of which is homeomorphic to $U$ via $p$.
+
+Since the action is properly discontinuous, for each $x \in X$, there exists an open neighborhood $U$ of $x$ such that the set $`S = \{g \in G \mid U \cap g(U) \neq \varnothing\}`$ is finite. Since the action is free, for any $g \in G$, if $g \neq e$, then $g(x) \neq x$. Therefore, we can choose $U$ small enough so that $U \cap g(U) = \varnothing$ for all $g \in S$ with $g \neq e$.
+
+Now, consider the set $p^{-1}(p(U))$. By the definition of the quotient map, we have
+$p^{-1}(p(U)) = \bigcup_{g \in G} g(U).$
+
+Since $U \cap g(U) = \varnothing$ for all $g \in S$ with $g \neq e$, the sets $g(U)$ for $g \in S$ are disjoint. For $g \notin S$, we have $U \cap g(U) = \varnothing$ by the choice of $U$. Thus, the sets $g(U)$ for all $g \in G$ are disjoint.
+
+Each $g(U)$ is homeomorphic to $U$ via the map $p$, since $p$ restricted to $g(U)$ is a homeomorphism onto its image in $X/G$. Therefore, $p^{-1}(p(U))$ is a disjoint union of open sets in $X$, each homeomorphic to $U$.
+
 # 27
 For a universal cover $p: \tilde{X} \to X$ there are two actions of $\pi_1(X, x_0)$ on the fiber $p^{-1}(x_0)$. The first is the action defined on page 69 in which the element of $\pi_1\left(X, x_0\right)$ determined by a loop $\gamma$ sends $\tilde{\gamma}(1)$ to $\tilde{\gamma}(0)$ for each lift $\tilde{\gamma}$ of $\gamma$ to $\tilde{X}$, and the second is the action given by restricting deck transformations to the fiber (see Proposition 1.39). Show that these two actions are different when $X=S^1 \vee S^1$ and when $X=S^1 \times S^1$ and determine when the two actions are the same. [This is a revised version of the original form of this exercise.]
 
