@@ -36,7 +36,39 @@ The covering map takes each sphere onto the sphere in $X$, and the line segments
 Let $\tilde{X}$ and $\tilde{Y}$ be simply-connected covering spaces of the path-connected, locally path-connected spaces $X$ and $Y$.
 
 Show that if $X \simeq Y$ then $\tilde{X} \simeq \tilde{Y}$. [Exercise 11 in Chapter 0 may be helpful.]
- 
+
+Proof
+
+Let $f\colon X \to Y$ and $g\colon Y \to X$ be maps with $g \circ f \simeq 1$ and $g \circ f \simeq 1$.  Label the covering maps as $p\colon \tilde X \to X$ and $q\colon \tilde Y \to Y$.  Choose a basepoint $\tilde x_0 \in \tilde X$, let 
+
+$x_0 = p(\tilde x_0), \qquad y_0 = f(y_0), \qquad x_0' = g(x_0), \qquad y_0' = f(x_0'),$
+
+and choose
+
+$\tilde y_0 \in q^{-1}(y_0), \qquad \tilde x_0' \in p^{-1}(x_0'), \qquad \tilde y_0' \in q^{-1}(y_0').$
+
+We want to lift $f \circ p$ through $q$ to get a map $\tilde f$ as in the diagram
+
+![](https://i.upmath.me/svgb/i6mozE0sKcqsqObSiCnJzElJVYjQUYCyKuINNBViEouiU2LjC8CMopTYuOq0gloQx6FaT8-uNrooNq4aqj6tlktNAWZMJNyYSiRjChHGFKbjMCYd2RgU16iT5hx1nO5BGFTIFRPDpRGhA_drUWxcGkhbpE4lklA6SAisSh2LMnVNrloA)
+
+Because $\pi_1(\tilde X, \tilde x_0) = 0$, we have
+
+$f_* p_* \pi_1(\tilde X, \tilde x_0) \subset q_* \pi_1(\tilde Y, \tilde y_0),$
+
+so the lifting criterion (Proposition 1.33) gives such an $\tilde f$.  Similarly we get $\tilde g$ and $\tilde f'$ as in the diagram. 
+
+At this point we might like to show that $\tilde g \circ \tilde f \simeq 1$, but this may not be possible; instead we will show that it is homotopic to a deck transformation, which will be good enough.
+
+We have $g \circ f \simeq 1$, so $g \circ f \circ p \simeq p$; let $F\colon \tilde X \times I \to X$ be a homotopy from $g \circ f \circ p$ to $p$.  The map $\tilde g \circ \tilde f$ lifts $g \circ f \circ p$, so by the homotopy lifting property (Proposition 1.30), there is a unique lift $\tilde F\colon \tilde X \times I \to \tilde X$ of $F$ such that $\tilde F(-,0) = \tilde g \circ \tilde f$.  Let $\phi = \tilde F(-,1)\colon \tilde X \to \tilde X$.  Then $\phi$ lifts $p\colon \tilde X \to X$, so it is a deck transformation: for one way to see this, by Proposition 1.37 there is a deck transformation $\tilde X \to \tilde X$ taking $\tilde x_0$ to $\phi(\tilde x_0)$, and by the unique lifting property (Proposition 1.34) this deck transformation and $\phi$ must be equal.  In particular, $\phi$ is a homeomorphism.
+
+Similarly, $\tilde f' \circ \tilde g$ is homotopic to a deck transformation $\psi\colon \tilde Y \to \tilde Y$.
+
+From $\tilde g \circ \tilde f \simeq \phi$  and $\tilde f' \circ \tilde g \simeq \psi$ we get
+
+$\tilde g \circ (\tilde f \circ \phi^{-1}) \simeq 1 \qquad \text{and} \qquad (\psi^{-1} \circ \tilde f') \circ \tilde g \simeq 1,$
+
+so $\tilde g$ is a homotopy equivalence by Chapter 0 Exercise 11.
+
 # 12
 Let $a$ and $b$ be the generators of $\pi_1(S^1 \vee S^1)$ corresponding to the two $S^1$ summands.
 
