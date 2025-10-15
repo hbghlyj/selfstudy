@@ -47,7 +47,7 @@ Given a group $G$ and a normal subgroup $N$, show that there exists a normal cov
 
 Proof
 
-By Corollary 1.28, there exists a 2-dimensional cell complex $X$ with $\pi_1(X) \cong G$. As a cell complex, $X$ is path-connected, locally path-connected, and semilocally simply-connected. We can therefore apply Proposition 1.36, which guarantees a covering space $p: \tilde{X} \to X$ such that $p_*(\pi_1(\tilde{X})) = N$. For any covering space, the induced homomorphism $p_*$ is injective, so $\pi_1(\tilde{X}) \cong N$. Since $N$ is a normal subgroup of $G$, Proposition 1.39 implies the covering is normal and the deck transformation group $G(\tilde{X})$ is isomorphic to the quotient group $G/N$.
+By Corollary 1.28, there exists a 2-dimensional cell complex $X$ with $\pi_1(X) \cong G$. As a cell complex, $X$ is path-connected, locally path-connected, and semilocally simply-connected. We can therefore apply Proposition 1.36, which guarantees a covering space $p: \tilde{X} \to X$ such that $`p_*(\pi_1(\tilde{X})) = N`$. For any covering space, the induced homomorphism $`p_*`$ is injective, so $`\pi_1(\tilde{X}) \cong N`$. Since $N$ is a normal subgroup of $G$, Proposition 1.39 implies the covering is normal and the deck transformation group $G(\tilde{X})$ is isomorphic to the quotient group $G/N$.
 
 # 18
 For a path-connected, locally path-connected, and semilocally simply-connected space $X$, call a path-connected covering space $\tilde{X} \to X$ abelian if it is normal and has abelian deck transformation group.
