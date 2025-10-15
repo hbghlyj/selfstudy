@@ -147,6 +147,7 @@ A connected normal covering space with deck group $\mathbb{Z}^n$ corresponds to 
 
 A surjective homomorphism from $H_1(M_g) \cong \mathbb{Z}^{2g}$ to $\mathbb{Z}^n$ exists if and only if $n \leq 2g$. This proves the first part of the problem.
 
+For $n=3$ and $g \geq 3$, we can construct such a covering space explicitly. The covering space corresponds to the kernel of a surjective homomorphism $\pi_1(M_g) \to \mathbb{Z}^3$, which factors through $H_1(M_g)$. This covering space can be visualized as an infinite, connected surface embedded in $\mathbb{R}^3$ that is periodic with respect to a rank-3 lattice of translations. The deck transformations are these translations, and the quotient of the surface by this group action is homeomorphic to $M_g$.
 
 # 23
 Show that if a group $G$ acts freely and properly discontinuously on a Hausdorff space $X$, then the action is a covering space action. (Here 'properly discontinuously' means that each $x \in X$ has a neighborhood $U$ such that $`\{g \in G \mid U \cap g(U) \neq \varnothing\}`$ is finite.)
