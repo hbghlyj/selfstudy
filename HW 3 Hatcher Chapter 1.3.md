@@ -147,3 +147,13 @@ For a universal cover $p: \tilde{X} \to X$ there are two actions of $\pi_1\left(
 
 # 30
 Draw the Cayley graph of the group $\mathbb{Z} * \mathbb{Z}_2=\langle a, b \mid b^2\rangle$.
+
+Solution
+
+The edges labeled $a$ form a bi-infinite line.
+
+From the relation $b^2 = e$, we see that each vertex has an edge labeled $b$ going to another vertex, and an edge labeled $b$ returning to the original vertex. Thus, every vertex has a loop of length 2 labeled $b$.
+
+From each vertex of the bi-infinite line, there is a loop of length 2 labeled $b$. From each vertex on these loops, there is an infinite line of edges labeled $a$.
+
+![](https://i.upmath.me/svgb/vZRLj5swFIX3-RV3kWpeJg3TdlWxqdotq-7iaOTHBawYGxmTkEH89wrDZGAidVqp6g6uzz36dHyAcsyV6bw6PFdK-MZhv1sBABzReWw_bmp_1ph0QjmhkYB07EQgU1onXDNxIKCMQQc1Vsm28gRKZVTZlFCrZ0w-V74nwY49oczxYsd1gwR8ocRhEvClwKGczglIVhco-9U-CD_Ad8yUQfAFgmMmR8isC29HVSuuESrmPNgszHLHqiIsUokZTbtP_WryiaIIUiuxHp6m2TfrvS3B2dNgMISgBNbjfmYdMlEAbWGHR6Yb5jGhLbAaqLDWyRaaWpkcHu9puwdloItoSjabDaFpD11wCU7GStyNCe_h9kjbp-0dMA-3kw-B7R10_dew0U9oP231_7niN1zx5sucbJbkD5kvkrxhN4Bh9nI9_JLtFfeCyRdITVNiWzmaRvGCcOjfbizTa3JRBIG8VPLEzgQ4ansi4LH1ydC0PXRrtu4H_dy7fYipQ80Gj2XU1-x-DP9fgsfX4IzbI_4NePwWnL-AC2sMCj9ce-A_2YH_ujG_aUNA5u9k7VRe-AnZoRyI-Ug8p5v3RGtV1VO0ymTKKH--9CZUMFQuerynKUQQjx_Dmgppfb2eqveqC7KHd2Uzu7HDf2B4JVxRNHLxs_wF)
