@@ -178,7 +178,7 @@ The first action, defined by lifting loops, sends a point in the fiber to anothe
 
 The second action, given by deck transformations, corresponds to the automorphisms of the covering space that permute the fibers. In this case, the deck transformations correspond to the elements of $\pi_1(X, x_0)$ acting on the tree structure. Each generator $a$ and $b$ acts by moving along the edges of the tree, but in a way that is consistent with the tree's structure.
 
-In this case, the two actions are not the same because the first action depends on the specific lifts of loops, while the second action is determined by the global structure of the covering space.
+In this case, the two actions are not the same because $\pi_1$ is not abelian.
 
 For the case $X = S^1 \times S^1$, the fundamental group is $\pi_1(X, x_0) \cong \mathbb{Z} \times \mathbb{Z}$. The universal cover $\tilde{X}$ is homeomorphic to $\mathbb{R}^2$, and the fiber $p^{-1}(x_0)$ can be identified with the integer lattice points $\mathbb{Z}^2 \subset \mathbb{R}^2$.
 
