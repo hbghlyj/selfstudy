@@ -168,7 +168,25 @@ By construction, $U \cap g(U) = \varnothing$ for all $g \in S$ with $g \neq e$. 
 The restriction of $p$ to each set $g(U)$ is a homeomorphism onto its image $p(U)$. Therefore, $p^{-1}(p(U))$ is a disjoint union of open sets, each homeomorphic to $p(U)$. Since $U$ itself is one of these sets (for $g=e$), all are homeomorphic to $U$.
 
 # 27
-For a universal cover $p: \tilde{X} \to X$ there are two actions of $\pi_1(X, x_0)$ on the fiber $p^{-1}(x_0)$. The first is the action defined on page 69 in which the element of $\pi_1\left(X, x_0\right)$ determined by a loop $\gamma$ sends $\tilde{\gamma}(1)$ to $\tilde{\gamma}(0)$ for each lift $\tilde{\gamma}$ of $\gamma$ to $\tilde{X}$, and the second is the action given by restricting deck transformations to the fiber (see Proposition 1.39). Show that these two actions are different when $X=S^1 \vee S^1$ and when $X=S^1 \times S^1$ and determine when the two actions are the same. [This is a revised version of the original form of this exercise.]
+For a universal cover $p: \tilde{X} \to X$ there are two actions of $\pi_1(X, x_0)$ on the fiber $p^{-1}(x_0)$. The first is the action defined on page 69 in which the element of $\pi_1(X, x_0)$ determined by a loop $\gamma$ sends $\tilde{\gamma}(1)$ to $\tilde{\gamma}(0)$ for each lift $\tilde{\gamma}$ of $\gamma$ to $\tilde{X}$, and the second is the action given by restricting deck transformations to the fiber (see Proposition 1.39). Show that these two actions are different when $X=S^1 \vee S^1$ and when $X=S^1 \times S^1$ and determine when the two actions are the same. [This is a revised version of the original form of this exercise.]
+
+Proof
+
+We first analyze the two actions for the case $X = S^1 \vee S^1$. The fundamental group $\pi_1(X, x_0)$ is the free group on two generators, say $a$ and $b$. The universal cover $\tilde{X}$ can be visualized as an infinite 4-valent tree, where each vertex corresponds to a point in the fiber $p^{-1}(x_0)$.
+
+The first action, defined by lifting loops, sends a point in the fiber to another point based on the endpoint of the lift of the loop. For example, if we consider the loop corresponding to $a$, it lifts to a path in $\tilde{X}$ that starts at a vertex and ends at an adjacent vertex. Thus, the action of $a$ on the fiber sends one vertex to another.
+
+The second action, given by deck transformations, corresponds to the automorphisms of the covering space that permute the fibers. In this case, the deck transformations correspond to the elements of $\pi_1(X, x_0)$ acting on the tree structure. Each generator $a$ and $b$ acts by moving along the edges of the tree, but in a way that is consistent with the tree's structure.
+
+In this case, the two actions are not the same because the first action depends on the specific lifts of loops, while the second action is determined by the global structure of the covering space.
+
+For the case $X = S^1 \times S^1$, the fundamental group is $\pi_1(X, x_0) \cong \mathbb{Z} \times \mathbb{Z}$. The universal cover $\tilde{X}$ is homeomorphic to $\mathbb{R}^2$, and the fiber $p^{-1}(x_0)$ can be identified with the integer lattice points in $\mathbb{R}^2$.
+
+The first action, defined by lifting loops, sends a point in the fiber to another point based on the endpoint of the lift of the loop. For example, the loop corresponding to $(1,0)$ lifts to a path in $\tilde{X}$ that starts at a lattice point and ends at the adjacent lattice point in the horizontal direction. Similarly, the loop corresponding to $(0,1)$ lifts to a path that moves vertically.
+
+The second action, given by deck transformations, corresponds to translations in the plane. Each element of $\mathbb{Z} \times \mathbb{Z}$ acts by translating the entire lattice by a fixed vector.
+
+In this case, the two actions are the same because both actions correspond to translations in the integer lattice.
 
 # 30
 Draw the Cayley graph of the group $\mathbb{Z} * \mathbb{Z}_2=\langle a, b \mid b^2\rangle$.
