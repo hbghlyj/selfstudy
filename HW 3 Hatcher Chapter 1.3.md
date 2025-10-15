@@ -139,7 +139,11 @@ Show that such a covering space in $\mathbb{R}^3$ exists iff there is an embeddi
 
 Proof
 
-The universal abelian covering space of $M_g$ corresponds to the commutator subgroup of $\pi_1(M_g)$, which is isomorphic to the free group on $2g$ generators. The abelianization of this group is $\mathbb{Z}^{2g}$. Therefore, the deck transformation group of the universal abelian cover is $\mathbb{Z}^{2g}$.
+The fundamental group of a closed orientable surface of genus $g$ is $\pi_1(M_g) = \langle a_1, b_1, \dots, a_g, b_g \mid [a_1, b_1]\cdots[a_g, b_g] = 1 \rangle$. Its abelianization is $H_1(M_g) \cong \mathbb{Z}^{2g}$.
+
+A connected normal covering space with deck group $\mathbb{Z}^n$ corresponds to a surjective homomorphism $\phi: \pi_1(M_g) \to \mathbb{Z}^n$. Since $\mathbb{Z}^n$ is abelian, this homomorphism must factor through the abelianization of $\pi_1(M_g)$. This gives a homomorphism $\bar{\phi}: H_1(M_g) \to \mathbb{Z}^n$. For $\phi$ to be surjective, $\bar{\phi}$ must also be surjective.
+
+A surjective homomorphism from $H_1(M_g) \cong \mathbb{Z}^{2g}$ to $\mathbb{Z}^n$ exists if and only if $n \leq 2g$. This proves the first part of the problem.
 
 
 # 23
