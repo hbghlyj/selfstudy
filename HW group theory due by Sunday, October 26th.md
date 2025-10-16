@@ -1,7 +1,7 @@
 # 1
 1. True or false: In a free abelian group of finite rank, every linearly independent set can be completed to a basis?
 
-   False. The set {2} in $\mathbb{Z}$ is linearly independent, but it does not generate $\mathbb{Z}$ (e.g., 1 is not a multiple of 2), so it cannot be extended to a basis.
+   True. {2} as a linearly independent set in $\mathbb{Z}$ can be completed to a basis {2,3}.
 2. How many different (up to isomorphism) abelian groups of order 300 are there?
    
 3. True or false: For any action of a finite group $G$ on a finite set $X$, the cardinality $|X|$ divides $|G|$ ?
