@@ -1,7 +1,7 @@
 # 1
-In this problem, no explanation is required. All parts are worth 2 points.
 1. True or false: In a free abelian group of finite rank, every linearly independent set can be completed to a basis?
-   
+
+   False. {2} cannot be completed to a basis of $\mathbb{Z}$
 2. How many different (up to isomorphism) abelian groups of order 300 are there?
    
 3. True or false: For any action of a finite group $G$ on a finite set $X$, the cardinality $|X|$ divides $|G|$ ?
