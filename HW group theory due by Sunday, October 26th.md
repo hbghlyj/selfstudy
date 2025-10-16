@@ -33,7 +33,7 @@ Let $\mathbb{Q}^{\times}$ be the group of non-zero rational numbers under multip
   
    We can write any non-zero rational number as $q = (\pm 1)\prod_{p\text{ prime}}p^{n_p}$ where $n_p \in \mathbb{Z}$, so $\mathbb{Q}^{\times}$ can be decomposed as follows:
    
-   $`\mathbb{Q}^{\times} \cong \mathbb{Z} / 2 \mathbb{Z} \times \prod_{p\text{ prime}}\mathbb{Z}`$
+   $`\mathbb{Q}^{\times} \cong \mathbb{Z} / 2 \mathbb{Z} \times \bigoplus_{p\text{ prime}}\mathbb{Z}`$
    
    Here, $\mathbb{Z} / 2 \mathbb{Z}$ corresponds to $\pm1$, and each $\mathbb{Z}$ correspond to $`\{p^n\mid n\in\mathbb Z\}`$ for a prime $p$.
 
