@@ -11,7 +11,9 @@
    $300=2^2 \times 3 \times 5^2$
    
    The number of groups is $p(2) \times p(1) \times p(2) = 2 \times 1 \times 2 = 4$, where $p(n)$ is the number of partitions of $n$.
-4. True or false: For any action of a finite group $G$ on a finite set $X$, the cardinality $|X|$ divides $|G|$ ?
+4. True or false: For any action of a finite group $G$ on a finite set $X$, the cardinality $|X|$ divides $|G|$?
+
+   False. The trivial group acts on any set but $|G|=1$.
    
 5. Give an example of an infinite group $G$ such that every element of $G$ has finite order.
 
