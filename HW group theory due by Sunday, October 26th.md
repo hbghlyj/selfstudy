@@ -4,7 +4,11 @@
    False. The set {2} in $\mathbb{Z}$ is linearly independent, but it does not generate $\mathbb{Z}$ (e.g., 1 is not a multiple of 2), so it cannot be extended to a basis.
 2. How many different (up to isomorphism) abelian groups of order 300 are there?
 
-   $300=2^2 \times 3 \times 5^2$\n\n   The number of groups is $p(2) \times p(1) \times p(2) = 2 \times 1 \times 2 = 4$, where $p(n)$ is the number of partitions of $n$.
+   Four.
+
+   $300=2^2 \times 3 \times 5^2$
+   
+   The number of groups is $p(2) \times p(1) \times p(2) = 2 \times 1 \times 2 = 4$, where $p(n)$ is the number of partitions of $n$.
 4. True or false: For any action of a finite group $G$ on a finite set $X$, the cardinality $|X|$ divides $|G|$ ?
    
 5. Give an example of an infinite group $G$ such that every element of $G$ has finite order.
