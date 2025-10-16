@@ -18,7 +18,7 @@ Let $\mathbb{Q}^{\times}$ be the group of non-zero rational numbers under multip
 # 3
 Let $G$ be a group of order $2017 \times 2027 \times 2029$ (these are all prime numbers). Show that $G$ is cyclic.
 # 4
-Let $G$ be a finite group, and let $A=\operatorname{Aut}(G)$ be the group of automorphisms $\phi: G \to G$. Consider the natural action of $A$ on $G$, and take the quotient $G / A$.
+Let $G$ be a finite group, and let $A=\mathrm{Aut}(G)$ be the group of automorphisms $\phi: G \to G$. Consider the natural action of $A$ on $G$, and take the quotient $G / A$.
 1. What is $|G / A|$ if $G=\mathbb{Z} / 6 \mathbb{Z}$.
 
 2. Show that if $|G / A|=2$, then $G \simeq(\mathbb{Z} / p \mathbb{Z})^n$ for a prime $p$ and $n>0$.
