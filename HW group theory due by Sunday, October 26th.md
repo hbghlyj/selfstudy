@@ -1,8 +1,10 @@
 # 1
 1. True or false: In a free abelian group of finite rank, every linearly independent set can be completed to a basis?
 
-   False. The set {2} in $\mathbb{Z}$ is linearly independent, but it does not generate $\mathbb{Z}$ (e.g., 1 is not a multiple of 2), so it cannot be extended to a basis.
-2. How many different (up to isomorphism) abelian groups of order 300 are there?
+   False.
+
+   The set {2} in $\mathbb{Z}$ is linearly independent, but it does not generate $\mathbb{Z}$ (e.g., 1 is not a multiple of 2), suppose it can be extended to a basis 2,n,⋯ then n×2-2×n=0 so they are linearly dependent, a contradiction.
+3. How many different (up to isomorphism) abelian groups of order 300 are there?
 
    Four.
 
