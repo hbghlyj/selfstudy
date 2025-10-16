@@ -32,11 +32,11 @@ Let $\mathbb{Q}^{\times}$ be the group of non-zero rational numbers under multip
 
   Proof
   
-   We can write any non-zero rational number as $q = \frac{a}{b}$ where $a, b \in \mathbb{Z}$ and $\gcd(a, b) = 1$. The group $\mathbb{Q}^{\times}$ can be decomposed as follows:
+   We can write any non-zero rational number as $q = (\pm 1)\prod_{p\text{ prime}}p^{n_p}$ where $n_p \in \mathbb{Z}$, so $\mathbb{Q}^{\times}$ can be decomposed as follows:
    
-   $`\mathbb{Q}^{\times} \simeq \mathbb{Z} / 2 \mathbb{Z} \times \mathbb{Z}^{\oplus \infty}`$
+   $`\mathbb{Q}^{\times} \cong \mathbb{Z} / 2 \mathbb{Z} \times \bigoplus_{p\text{ prime}}\mathbb{Z}`$
    
-   Here, $\mathbb{Z} / 2 \mathbb{Z}$ corresponds to the sign of the rational number (positive or negative), and $\mathbb{Z}^{\oplus \infty}$ corresponds to the infinite direct sum of the prime factors in the numerator and denominator.
+   Here, $\mathbb{Z} / 2 \mathbb{Z}$ corresponds to $\pm1$, and each $\mathbb{Z}$ corresponds to the exponents of a prime $p$.
 
 2. Describe all group homomorphisms $\mathbb{Z} / 2 \mathbb{Z} \to \mathbb{Q}^{\times}$.
 3. Describe all group homomorphisms $\mathbb{Q}^{\times} \to \mathbb{Z} / 2 \mathbb{Z}$.
