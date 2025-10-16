@@ -35,7 +35,7 @@ Let $\mathbb{Q}^{\times}$ be the group of non-zero rational numbers under multip
    
    $`\mathbb{Q}^{\times} \cong \mathbb{Z} / 2 \mathbb{Z} \times \bigoplus_{p\text{ prime}}\mathbb{Z}`$
    
-   Here, $\mathbb{Z} / 2 \mathbb{Z}$ corresponds to $\pm1$, and each $\mathbb{Z}$ correspond to $`\{p^n\mid n\in\mathbb Z\}`$ for a prime $p$.
+   Here, $\mathbb{Z} / 2 \mathbb{Z}$ corresponds to $\pm1$, and each $\mathbb{Z}$ corresponds to the exponents of a prime $p$.
 
 2. Describe all group homomorphisms $\mathbb{Z} / 2 \mathbb{Z} \to \mathbb{Q}^{\times}$.
 3. Describe all group homomorphisms $\mathbb{Q}^{\times} \to \mathbb{Z} / 2 \mathbb{Z}$.
