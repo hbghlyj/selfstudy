@@ -3,7 +3,7 @@
 
    False.
 
-   The set {2} in $\mathbb{Z}$ is linearly independent, but it does not generate $\mathbb{Z}$ (e.g., 1 is not a multiple of 2), suppose it can be extended to a basis 2,n,⋯ then n×2-2×n=0 so they are linearly dependent, a contradiction.
+   The set {2} in $\mathbb{Z}$ is linearly independent, but it does not generate $\mathbb{Z}$ (e.g., 1 is not a multiple of 2). Any extension, like \{2, n\} for an integer $n \neq 0$, is linearly dependent because of the non-trivial linear combination $n \cdot 2 - 2 \cdot n = 0$. Therefore, \{2\} cannot be extended to a basis.
 3. How many different (up to isomorphism) abelian groups of order 300 are there?
 
    Four.
