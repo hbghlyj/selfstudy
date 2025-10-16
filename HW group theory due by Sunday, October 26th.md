@@ -39,7 +39,11 @@ Let $\mathbb{Q}^{\times}$ be the group of non-zero rational numbers under multip
    Here, $\mathbb{Z} / 2 \mathbb{Z}$ corresponds to $\pm1$, and each $\mathbb{Z}$ corresponds to the exponents of a prime $p$.
 
 2. Describe all group homomorphisms $\mathbb{Z} / 2 \mathbb{Z} \to \mathbb{Q}^{\times}$.
-3. Describe all group homomorphisms $\mathbb{Q}^{\times} \to \mathbb{Z} / 2 \mathbb{Z}$.
+
+   Proof
+   
+   The image of 1 under nontrivial homomorphism must have 2, but the only element of order 2 is $-1$, so only two group homomorphisms: the trivial homomorphism and the homomorphism onto $\{\pm1\}$.
+4. Describe all group homomorphisms $\mathbb{Q}^{\times} \to \mathbb{Z} / 2 \mathbb{Z}$.
 # 3
 Let $G$ be a group of order $2017 \times 2027 \times 2029$ (these are all prime numbers). Show that $G$ is cyclic.
 # 4
