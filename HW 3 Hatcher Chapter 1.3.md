@@ -191,10 +191,8 @@ Draw the Cayley graph of the group $\mathbb{Z} * \mathbb{Z}_2=\langle a, b \mid 
 
 Solution
 
-The edges labeled $a$ form a bi-infinite line.
+Each vertex has an edge labeled $b$ going to another vertex, and an edge labeled $b$ returning to the original vertex. Thus, every vertex has a loop of length 2 labeled $b$.
 
-From the relation $b^2 = e$, we see that each vertex has an edge labeled $b$ going to another vertex, and an edge labeled $b$ returning to the original vertex. Thus, every vertex has a loop of length 2 labeled $b$.
-
-From each vertex of the bi-infinite line, there is a loop of length 2 labeled $b$. From each vertex on these loops, there is an infinite line of edges labeled $a$.
+Each vertex has an incoming edge labeled $a$ and an outgoing edge labeled $a$.
 
 ![](https://i.upmath.me/svgb/jZXNjuIwEITveYo-gAYkmyVBaCQGuO2e9rg3YFd20hALj4Mcw_xEefdV7JiQITAcUbucqq_LYs1xJ1RhxP7zIGJz1Fiu8jTTBhUsF-HBEP9rbn-BSUW8JwEAwAm1wfcfo9x8SFwUsdCxRAKJZm8EtkJKAkIp1JDjYRGOpgdTOiH7h8kOz0K6JMDlEespb0_ndEk0JmWwCYI-_MYTShjP4E-KIBJURpgPQImvqEywVlmCK-eLgGQc5YKjzN5mRQ975QYGOARmYDAm4yEU5UtzZTiDn-6WHLItSFQ7k0IIA0aA_S1oWBLgw6BvP5wLtZMIT-wJKq-g8aAxt1qemRQYMJXUMkiExtiITOV3_THrjzl_E-_vrsLe72Q0dEJ6V8l4dsJZ0eNWxD2LSc1iXa1u5bbjWFFaWXppTcicXgxpeB7zL0I-vOAbdfKNgj780tlrhfKbrJELGjnT09GUhA8gckkZb1TUy9phWZ0nuo7jR3We2q-F_53pgkZ-QbVx-qhzez_32-UX6q4Ebim2Bm4tXTmaadjKwrtjnNviqsnrbkZk-kDDLsrJm3Y22jZ9Xjemu2vnqS3buVITGJxEfmRSfLLqfVW92h61SVED10zFqVC74cXGonbOCsnEGXuuljLqyGUrx5tD41F3gKqXFu2kg7ufRe0G8Ws7nnH1KTq-ZagBas-FtzxxX9xurBdzGg7tNwy-mwWXLN4TW8RN9YT8Kr-0Pyqv_dOaJ70LlHqi9CZS32ePjnZxbaZRx9vswEtDD5jeJ1wdPJf2PmT7Nv2rugG6fca1eI0qaf3v_gc)
