@@ -40,6 +40,10 @@ Let $\mathbb{Q}^{\times}$ be the group of non-zero rational numbers under multip
 
 2. Describe all group homomorphisms $\mathbb{Z} / 2 \mathbb{Z} \to \mathbb{Q}^{\times}$.
 3. Describe all group homomorphisms $\mathbb{Q}^{\times} \to \mathbb{Z} / 2 \mathbb{Z}$.
+
+   Solution
+
+   The group homomorphism is determined by where it sends the basis elements $`\{-1\}\cup\{p:p\text{ is a prime number}\}`$, but the image of the odd primes must be odd, so must be the identity, so the homomorphisms are determined by where it sends $-1$ and $2$. So there are four of them.
 # 3
 Let $G$ be a group of order $2017 \times 2027 \times 2029$ (these are all prime numbers). Show that $G$ is cyclic.
 # 4
