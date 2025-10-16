@@ -32,7 +32,7 @@ Let $\mathbb{Q}^{\times}$ be the group of non-zero rational numbers under multip
 
   Proof
   
-   We can write any non-zero rational number as $q = (\pm 1)\prod_{p\text{ prime}}p^{n_p}$ where $n_p \in \mathbb{Z}$, so $\mathbb{Q}^{\times}$ can be decomposed as follows:
+   Any non-zero rational number has a unique factorization $q = (\pm 1)\prod_{p\text{ prime}}p^{n_p}$, where $n_p \in \mathbb{Z}$ and only finitely many are non-zero, so
    
    $`\mathbb{Q}^{\times} \cong \mathbb{Z} / 2 \mathbb{Z} \times \bigoplus_{p\text{ prime}}\mathbb{Z}`$
    
