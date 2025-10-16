@@ -32,7 +32,7 @@ Let $\mathbb{Q}^{\times}$ be the group of non-zero rational numbers under multip
 
   Proof
   
-   A non-zero rational number has a prime factorization with only a finite number of non-zero exponents, so
+   Any non-zero rational number has a unique factorization $q = (\pm 1)\prod_{p\text{ prime}}p^{n_p}$, where $n_p \in \mathbb{Z}$ and only finitely many are non-zero, so
    
    $`\mathbb{Q}^{\times} \cong \mathbb{Z} / 2 \mathbb{Z} \times \bigoplus_{p\text{ prime}}\mathbb{Z}`$
    
