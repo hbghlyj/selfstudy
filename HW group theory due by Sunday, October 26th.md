@@ -68,7 +68,14 @@ Proof: If $|G / A|=2$, there are exactly two orbits for the action of $A$ on $G$
 
 For all $\phi∈ A$,
 
-$x\in\phi(Z(G))\iff \phi^{-1}(x)g=g\phi^{-1}(x)\forall g\in G\iff x\phi(g)=\phi(g)x\forall g\in G\iff xg=gx\forall g\in G\iff x\in Z(G)$
+$$
+\begin{aligned}
+x \in \phi(Z(G)) &\iff \phi^{-1}(x) \in Z(G) \\
+                 &\iff \phi^{-1}(x)g = g\phi^{-1}(x) \quad \forall g \in G \\
+                 &\iff x\phi(g) = \phi(g)x \quad \forall g \in G \\
+                 &\iff x \in Z(G)
+\end{aligned}
+$$
 
 so $Z(G)=\phi(Z(G))$ is a union of orbits.
 
