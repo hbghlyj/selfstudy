@@ -14,7 +14,7 @@
    The number of groups is $p(2) \times p(1) \times p(2) = 2 \times 1 \times 2 = 4$, where $p(n)$ is the number of partitions of $n$.
 3. True or false: For any action of a finite group $G$ on a finite set $X$, the cardinality $|X|$ divides $|G|$?
 
-   False. For any non-trivial group $G$, consider an action on $X = G \sqcup \{p\}$, where $G$ acts on itself by left multiplication and fixes the point $p$. Then $|X| = |G|+1$, which does not divide $|G|$.
+   False. For any non-trivial group $G$, consider an action on $`X = G \sqcup \{p\}`$, where $G$ acts on itself by left multiplication and fixes the point $p$. Then $|X| = |G|+1$, which does not divide $|G|$.
    
 4. Give an example of an infinite group $G$ such that every element of $G$ has finite order.
 
