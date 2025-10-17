@@ -64,7 +64,7 @@ For each $p_i$, we check the possible values for $n_{p_i}$.
 - Similarly for $p_2=2027$: $2017 \equiv -10 \pmod{2027}$ and $2029 \equiv 2 \pmod{2027}$. Thus $n_{2027}=1$.
 - And for $p_3=2029$: $2017 \equiv -12 \pmod{2029}$ and $2027 \equiv -2 \pmod{2029}$. Thus $n_{2029}=1$.
 
-Thus, each Sylow $p_i$-subgroup is unique and hence normal in $G$. Let $P_i$ be the unique Sylow $p_i$-subgroup of $G$. Since the orders of these subgroups are pairwise coprime, the intersection of any two distinct Sylow subgroups is trivial. Therefore, the product $P_1 P_2 P_3$ is isomorphic to the direct product $P_1 \times P_2 \times P_3$. By the Chinese Remainder Theorem $G$ is cyclic.
+Thus, for each $i$, the Sylow $p_i$-subgroup, let's call it $P_i$, is unique and therefore normal in $G$. Since the orders of these subgroups are pairwise coprime, their intersection is trivial. The product $P_1 P_2 P_3$ is a subgroup of $G$ of order $|P_1||P_2||P_3| = p_1 p_2 p_3 = |G|$, so $G = P_1 P_2 P_3$. Because the $P_i$ are normal, this means $G \cong P_1 \times P_2 \times P_3$. Each $P_i$ is a group of prime order, so it is cyclic, i.e., $P_i \cong \mathbb{Z}/p_i\mathbb{Z}$. Therefore, $G \cong \mathbb{Z}/p_1\mathbb{Z} \times \mathbb{Z}/p_2\mathbb{Z} \times \mathbb{Z}/p_3\mathbb{Z}$. By the Chinese Remainder Theorem, since the orders are pairwise coprime, this direct product is isomorphic to $\mathbb{Z}/(p_1 p_2 p_3)\mathbb{Z}$, which is a cyclic group. Hence, $G$ is cyclic.
 
 # 4
 Let $G$ be a finite group, and let $A=\mathrm{Aut}(G)$ be the group of automorphisms $\phi: G \to G$. Consider the natural action of $A$ on $G$, and take the quotient $G / A$.
