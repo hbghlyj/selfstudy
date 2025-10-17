@@ -59,6 +59,8 @@ Let $G$ be a finite group, and let $A=\mathrm{Aut}(G)$ be the group of automorph
 
 2. Show that if $|G / A|=2$, then $G \simeq(\mathbb{Z} / p \mathbb{Z})^n$ for a prime $p$ and $n>0$.
 
+Proof: If $|G / A| = 2$, there are exactly two orbits $`\{e\},G\setminus\{e\}`$ under the action of $A$ on $G$. One orbit must be the identity element $`\{e\}`$. This implies that all non-identity elements of $G$ are in the same orbit, so they must have the same order, which must be a prime $p$ (since
+
 # 5
 A finite group $G$ acts transitively (that is, with a single orbit) on a finite set $X$ such that $|X|>1$. Show that there exists an element $g \in G$ which does not fix any element of $X$.
 
