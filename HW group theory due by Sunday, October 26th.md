@@ -59,7 +59,7 @@ Let $G$ be a finite group, and let $A=\mathrm{Aut}(G)$ be the group of automorph
 
 Solution
 
-$\phi∈ A$ is determined by $\phi(1)$, which must be a generator of $G$. The generators of $\mathbb{Z}/6\mathbb{Z}$ are $1$ and $5$, so $|A| = 2$. The orbits under the action of $A$ on $G$ are $`\{0\}`$, $`\{1, 5\}`$, $\{2, 4\}`$, and $`\{3\}`$. Thus, there are 4 distinct orbits, giving $|G/A| = 4$.
+$\phi∈ A$ is determined by $\phi(1)$, which must be a generator of $G$. The generators of $\mathbb{Z}/6\mathbb{Z}$ are $1$ and $5$, so $|A| = 2$. The orbits under the action of $A$ on $G$ are $`\{0\}`$, $`\{1, 5\}`$, $`\{2, 4\}`$, and $`\{3\}`$. Thus, there are 4 distinct orbits, giving $|G/A| = 4$.
 
 2. Show that if $|G / A|=2$, then $G \simeq(\mathbb{Z} / p \mathbb{Z})^n$ for a prime $p$ and $n>0$.
 
