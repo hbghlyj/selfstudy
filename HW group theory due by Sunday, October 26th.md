@@ -59,7 +59,7 @@ Let $G$ be a finite group, and let $A=\mathrm{Aut}(G)$ be the group of automorph
 
 2. Show that if $|G / A|=2$, then $G \simeq(\mathbb{Z} / p \mathbb{Z})^n$ for a prime $p$ and $n>0$.
 
-Proof: If $|G / A| = 2$, there are exactly two orbits $`\{e\},G\setminus\{e\}`$ under the action of $A$ on $G$. One orbit must be the identity element $`\{e\}`$. This implies that all non-identity elements of $G$ are in the same orbit, so they must have the same order, which must be a prime $p$ (since
+Proof: If $|G / A|=2$, there are exactly two orbits for the action of $A$ on $G$. As `{e}` is always an orbit, the orbits must be `{e}` and $G \setminus {e}$. This means all non-identity elements are in the same orbit and thus must have the same order. This order must be a prime $p$; otherwise, if an element $g$ had composite order $k=ab$, then $g^a$ would be a non-identity element with a different order $b$, a contradiction. A group where every non-identity element has order $p$ is a $p$-group, which must have a non-trivial center $Z(G)$. Since $Z(G)$ is a characteristic subgroup, it is a union of orbits. For this to be compatible with having only two orbits, `{e}` and $G \setminus {e}$, we must have $Z(G)=G$. Thus $G$ is abelian. A finite abelian group where every element has order $p$ is isomorphic to $(\mathbb{Z}/p\mathbb{Z})^n$ for some $n>0$.
 
 # 5
 A finite group $G$ acts transitively (that is, with a single orbit) on a finite set $X$ such that $|X|>1$. Show that there exists an element $g \in G$ which does not fix any element of $X$.
