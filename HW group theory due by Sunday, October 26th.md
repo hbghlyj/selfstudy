@@ -41,6 +41,7 @@ Let $\mathbb{Q}^{\times}$ be the group of non-zero rational numbers under multip
 2. Describe all group homomorphisms $\mathbb{Z} / 2 \mathbb{Z} \to \mathbb{Q}^{\times}$.
 
   Answer: The image of $1 \in \mathbb{Z}/2\mathbb{Z}$ must have order dividing 2. The only elements in $\mathbb{Q}^{\times}$ of order $\le 2$ are $\pm 1$. This gives two homomorphisms: the trivial one, and the one mapping $1 \mapsto -1$.
+
 3. Describe all group homomorphisms $\mathbb{Q}^{\times} \to \mathbb{Z} / 2 \mathbb{Z}$.
 
    Solution
