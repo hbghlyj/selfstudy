@@ -57,7 +57,7 @@ $f_* p_* \pi_1(\tilde X, \tilde x_0) \subset q_* \pi_1(\tilde Y, \tilde y_0),$
 
 so the lifting criterion (Proposition 1.33) gives such an $\tilde f$.  Similarly we get $\tilde g$ and $\tilde f'$ as in the diagram. 
 
-At this point we might like to show that $\tilde g \circ \tilde f \simeq 1_{\tilde X}$, but this may not be possible; instead we will show that it is homotopic to a deck transformation, which will be good enough.
+The map $\tilde g \circ \tilde f$ does not preserve basepoints, but homotopy fixes basepoints, so we will show that it is homotopic to a deck transformation, which will be good enough.
 
 We have $g \circ f \simeq 1_X$, so $g \circ f \circ p \simeq p$. Let $F\colon \tilde X \times I \to X$ be a homotopy from $g \circ f \circ p$ to $p$.
 
