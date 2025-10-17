@@ -93,7 +93,7 @@ $\phi(x)=a x+b \quad(a, b \in \mathbb{R}: a \neq 0)$
 
    This is again an affine-linear bijection with parameters $a = a_1 a_2$ and $b = a_1 b_2 + b_1$. The identity element is $\phi(x) = 1 \cdot x + 0$, and the inverse of $\phi(x) = a x + b$ is given by $\phi^{-1}(x) = \frac{1}{a} x - \frac{b}{a}$, which is also an affine-linear bijection. Thus, the set of affine-linear bijections forms a group under composition.
    
-3. Show that $G$ is isomorphic to semidirect product of abelian groups $A$ and $B$. Make sure to identify the groups $A$ and $B$, as well as the action of one on the other used in the semidirect product.
+2. Show that $G$ is isomorphic to semidirect product of abelian groups $A$ and $B$. Make sure to identify the groups $A$ and $B$, as well as the action of one on the other used in the semidirect product.
    
    Solution: Let $A$ be the group of translations $`\{ \phi_b(x) = x + b \mid b \in \mathbb{R} \}`$, which is isomorphic to $(\mathbb{R}, +)$, and let $B$ be the group of dilations $`\{ \phi_a(x) = a x \mid a \in \mathbb{R}^* \}`$, which is isomorphic to $(\mathbb{R}^*, \cdot)$.
 
