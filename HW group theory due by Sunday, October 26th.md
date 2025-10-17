@@ -64,7 +64,21 @@ A finite group $G$ acts transitively (that is, with a single orbit) on a finite 
 
 Proof
 
-Assume for contradiction that every element of $G$ fixes at least one element of $X$. This implies $G = \bigcup_{x \in X} G_x$, where $G_x = \{g \in G \mid g \cdot x = x\}$ is the stabilizer of $x$. By the Orbit-Stabilizer Theorem and transitivity, $|G_x| = |G|/|X|$ for all $x \in X$. Since $|X| > 1$, each $G_x$ is a proper subgroup. Using a counting argument, we can bound the size of the union. Since the identity element $e$ is in every stabilizer, we have $|G| = |\bigcup_{x \in X} G_x| \le 1 + \sum_{x \in X} (|G_x| - 1) = 1 + |X|(\frac{|G|}{|X|} - 1) = 1 + |G| - |X|$. This inequality simplifies to $|X| \le 1$, which contradicts the given condition that $|X| > 1$. Therefore, our initial assumption was false, and there must exist an element $g \in G$ that fixes no element of $X$.
+Assume for contradiction that every element of $G$ fixes at least one element of $X$.
+
+This implies $G = \bigcup_{x \in X} G_x$, where $`G_x = \{g \in G \mid g \cdot x = x\}`$ is the stabilizer of $x$.
+
+By the Orbit-Stabilizer Theorem and transitivity, $|G_x| = |G|/|X|$ for all $x \in X$.
+
+Since $|X| > 1$, each $G_x$ is a proper subgroup.
+
+Using a counting argument, we can bound the size of the union.
+
+Since the identity element $e$ is in every stabilizer, we have $|G| = |\bigcup_{x \in X} G_x| \le 1 + \sum_{x \in X} (|G_x| - 1) = 1 + |X|(\frac{|G|}{|X|} - 1) = 1 + |G| - |X|$.
+
+This inequality simplifies to $|X| \le 1$, which contradicts the given condition that $|X| > 1$.
+
+Therefore, our initial assumption was false, and there must exist an element $g \in G$ that fixes no element of $X$.
 
 # 6
 A map $\phi: \mathbb{R} \to \mathbb{R}$ is said to be an affine-linear bijection if it is of the form
@@ -74,7 +88,9 @@ $\phi(x)=a x+b \quad(a, b \in \mathbb{R}: a \neq 0)$
 1. Show that the set of affine-linear bijections forms a group $G$ under composition.
 
    Proof: Let $\phi_1(x) = a_1 x + b_1$ and $\phi_2(x) = a_2 x + b_2$ be two affine-linear bijections. Their composition is given by
+
    $\phi_1 \circ \phi_2 (x) = \phi_1(a_2 x + b_2) = a_1 (a_2 x + b_2) + b_1 = (a_1 a_2)x + (a_1 b_2 + b_1)$
+
    This is again an affine-linear bijection with parameters $a = a_1 a_2$ and $b = a_1 b_2 + b_1$. The identity element is $\phi(x) = 1 \cdot x + 0$, and the inverse of $\phi(x) = a x + b$ is given by $\phi^{-1}(x) = \frac{1}{a} x - \frac{b}{a}$, which is also an affine-linear bijection. Thus, the set of affine-linear bijections forms a group under composition.
    
 2. Show that $G$ is isomorphic to semidirect product of abelian groups $A$ and $B$. Make sure to identify the groups $A$ and $B$, as well as the action of one on the other used in the semidirect product.
