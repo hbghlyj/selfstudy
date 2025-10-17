@@ -77,8 +77,8 @@ $\phi(x)=a x+b \quad(a, b \in \mathbb{R}: a \neq 0)$
    
    Solution: Let $A$ be the group of translations $`\{ \phi_b(x) = x + b \mid b \in \mathbb{R} \}`$, which is isomorphic to $(\mathbb{R}, +)$, and let $B$ be the group of dilations $`\{ \phi_a(x) = a x \mid a \in \mathbb{R}^* \}`$, which is isomorphic to $(\mathbb{R}^*, \cdot)$.
 
-   The group $G$ can be expressed as the semidirect product $G \cong A \rtimes B$, where the action of $B$ on $A$ is given by conjugation:
+   The group $G$ can be expressed as the semidirect product $G \cong B \rtimes A$, where the action of $A$ on $B$ is given by conjugation:
 
    $\phi_a \circ \phi_b \circ \phi_a^{-1}(x) = a\left(\frac{x}{a} + b\right) = x + ab$
    
-   Thus, the action of $B$ on $A$ is given by scaling the translation parameter by the dilation factor.
+   Thus, the action of $A$ on $B$ is given by scaling the translation parameter by the dilation factor.
