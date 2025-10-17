@@ -68,6 +68,17 @@ A map $\phi: \mathbb{R} \to \mathbb{R}$ is said to be an affine-linear bijection
 $\phi(x)=a x+b \quad(a, b \in \mathbb{R}: a \neq 0)$
 
 1. Show that the set of affine-linear bijections forms a group $G$ under composition.
+
+   Proof: Let $\phi_1(x) = a_1 x + b_1$ and $\phi_2(x) = a_2 x + b_2$ be two affine-linear bijections. Their composition is given by
+   $\phi_1 \circ \phi_2 (x) = \phi_1(a_2 x + b_2) = a_1 (a_2 x + b_2) + b_1 = (a_1 a_2)x + (a_1 b_2 + b_1)$
+   This is again an affine-linear bijection with parameters $a = a_1 a_2$ and $b = a_1 b_2 + b_1$. The identity element is $\phi(x) = 1 \cdot x + 0$, and the inverse of $\phi(x) = a x + b$ is given by $\phi^{-1}(x) = \frac{1}{a} x - \frac{b}{a}$, which is also an affine-linear bijection. Thus, the set of affine-linear bijections forms a group under composition.
    
 2. Show that $G$ is isomorphic to semidirect product of abelian groups $A$ and $B$. Make sure to identify the groups $A$ and $B$, as well as the action of one on the other used in the semidirect product.
    
+   Solution: Let $A$ be the group of translations $`\{ \phi_b(x) = x + b \mid b \in \mathbb{R} \}`$, which is isomorphic to $(\mathbb{R}, +)$, and let $B$ be the group of dilations $`\{ \phi_a(x) = a x \mid a \in \mathbb{R}^* \}`$, which is isomorphic to $(\mathbb{R}^*, \cdot)$.
+
+   The group $G$ can be expressed as the semidirect product $G \cong A \rtimes B$, where the action of $B$ on $A$ is given by conjugation:
+
+   $\phi_a \circ \phi_b \circ \phi_a^{-1}(x) = a(x + b)/a = x + (b/a)$
+   
+   Thus, the action of $B$ on $A$ is given by scaling the translation parameter by the inverse of the dilation factor.
