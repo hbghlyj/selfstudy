@@ -54,6 +54,15 @@ Let $\mathbb{Q}^{\times}$ be the group of non-zero rational numbers under multip
 
 # 3
 Let $G$ be a group of order $2017 \times 2027 \times 2029$ (these are all prime numbers). Show that $G$ is cyclic.
+
+Proof: Since the order of $G$ is the product of three distinct primes, we can apply the Sylow theorems. Let $p_1 = 2017$, $p_2 = 2027$, and $p_3 = 2029$. The number of Sylow $p_i$-subgroups, denoted $n_{p_i}$, must satisfy the following conditions: 
+1. $n_{p_i} \equiv 1 \mod p_i$
+2. $n_{p_i}$ divides $\frac{|G|}{p_i} = p_j p_k$ where $j,k \neq i$.
+
+For each $p_i$, the possible values for $n_{p_i}$ are 1 or $p_j$ or $p_k$ or $p_j p_k$. However, since $n_{p_i} \equiv 1 \mod p_i$, the only value that satisfies this condition is $n_{p_i} = 1$.
+
+Thus, each Sylow $p_i$-subgroup is unique and hence normal in $G$. Let $P_i$ be the unique Sylow $p_i$-subgroup of $G$. Since the orders of these subgroups are pairwise coprime, the intersection of any two distinct Sylow subgroups is trivial. Therefore, the product $P_1 P_2 P_3$ is isomorphic to the direct product $P_1 \times P_2 \times P_3$. By the Chinese Remainder Theorem $G$ is cyclic.
+
 # 4
 Let $G$ be a finite group, and let $A=\mathrm{Aut}(G)$ be the group of automorphisms $\phi: G \to G$. Consider the natural action of $A$ on $G$, and take the quotient $G / A$.
 1. What is $|G / A|$ if $G=\mathbb{Z} / 6 \mathbb{Z}$.
