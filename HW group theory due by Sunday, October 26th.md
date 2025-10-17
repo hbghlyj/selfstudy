@@ -79,6 +79,6 @@ $\phi(x)=a x+b \quad(a, b \in \mathbb{R}: a \neq 0)$
 
    The group $G$ can be expressed as the semidirect product $G \cong A \rtimes B$, where the action of $B$ on $A$ is given by conjugation:
 
-   $\phi_a \circ \phi_b \circ \phi_a^{-1}(x) = a(x + b)/a = x + (b/a)$
+   $\phi_a \circ \phi_b \circ \phi_a^{-1}(x) = a\left(\frac{x}{a} + b\right) = x + ab$
    
-   Thus, the action of $B$ on $A$ is given by scaling the translation parameter by the inverse of the dilation factor.
+   Thus, the action of $B$ on $A$ is given by scaling the translation parameter by the dilation factor.
