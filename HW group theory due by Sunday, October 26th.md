@@ -47,7 +47,7 @@ Let $\mathbb{Q}^{\times}$ be the group of non-zero rational numbers under multip
 
    A homomorphism $f: \mathbb{Q}^{\times} \to \mathbb{Z}/2\mathbb{Z}$ is determined by its values on the basis elements `\{-1\}\cup\{p:p\text{ is prime}\}`. The value of $f$ on each basis element can be chosen independently to be either 0 or 1 in $\mathbb{Z}/2\mathbb{Z}$.
 
-   The group of homomorphisms, $\text{Hom}(\mathbb{Q}^{\times}, \mathbb{Z}/2\mathbb{Z})$, is therefore isomorphic to the direct product of copies of $\mathbb{Z}/2\mathbb{Z}$, indexed by the set `\{-1\}\cup\{p:p\text{ is prime}\}`. This can be written as $\prod_{i \in \{-1\} \cup P} \mathbb{Z}/2\mathbb{Z}$, where $P$ is the set of primes.
+   The group of homomorphisms, $\text{Hom}(\mathbb{Q}^{\times}, \mathbb{Z}/2\mathbb{Z})$, is therefore isomorphic to the direct product of copies of $\mathbb{Z}/2\mathbb{Z}$, indexed by the set $`\{-1\}\cup\{p:p\text{ is prime}\}`$. This can be written as $\prod_{i \in \{-1\} \cup P} \mathbb{Z}/2\mathbb{Z}$, where $P$ is the set of primes.
    
 
 
