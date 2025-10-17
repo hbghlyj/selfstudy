@@ -40,9 +40,17 @@ Let $\mathbb{Q}^{\times}$ be the group of non-zero rational numbers under multip
 
 2. Describe all group homomorphisms $\mathbb{Z} / 2 \mathbb{Z} \to \mathbb{Q}^{\times}$.
 
-   Answer: The image of $1 \in \mathbb{Z}/2\mathbb{Z}$ must have order dividing 2. The only elements in $\mathbb{Q}^{\times}$ of order $\le 2$ are $\pm 1$. This gives two homomorphisms: the trivial one, and the one mapping $1 \mapsto -1$.
+  Answer: The image of $1 \in \mathbb{Z}/2\mathbb{Z}$ must have order dividing 2. The only elements in $\mathbb{Q}^{\times}$ of order $\le 2$ are $\pm 1$. This gives two homomorphisms: the trivial one, and the one mapping $1 \mapsto -1$.
+3. Describe all group homomorphisms $\mathbb{Q}^{\times} \to \mathbb{Z} / 2 \mathbb{Z}$.
 
-3. Describe all group homomorphisms $\mathbb{Q}^{\times} \to \mathbb{Z} / 2 \mathbb{Z}.
+   Solution
+
+   A homomorphism $f: \mathbb{Q}^{\times} \to \mathbb{Z}/2\mathbb{Z}$ is determined by its values on the basis elements `\{-1\}\cup\{p:p\text{ is prime}\}`. The value of $f$ on each basis element can be chosen independently to be either 0 or 1 in $\mathbb{Z}/2\mathbb{Z}$.
+
+   The group of homomorphisms, $\text{Hom}(\mathbb{Q}^{\times}, \mathbb{Z}/2\mathbb{Z})$, is therefore isomorphic to the direct product of copies of $\mathbb{Z}/2\mathbb{Z}$, indexed by the set `\{-1\}\cup\{p:p\text{ is prime}\}`. This can be written as $\prod_{i \in \{-1\} \cup P} \mathbb{Z}/2\mathbb{Z}$, where $P$ is the set of primes.
+   
+
+
 # 3
 Let $G$ be a group of order $2017 \times 2027 \times 2029$ (these are all prime numbers). Show that $G$ is cyclic.
 # 4
