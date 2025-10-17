@@ -62,6 +62,10 @@ Let $G$ be a finite group, and let $A=\mathrm{Aut}(G)$ be the group of automorph
 # 5
 A finite group $G$ acts transitively (that is, with a single orbit) on a finite set $X$ such that $|X|>1$. Show that there exists an element $g \in G$ which does not fix any element of $X$.
 
+Proof
+
+Assume for contradiction that every element of $G$ fixes at least one element of $X$. This implies $G = \bigcup_{x \in X} G_x$, where $G_x = \{g \in G \mid g \cdot x = x\}$ is the stabilizer of $x$. By the Orbit-Stabilizer Theorem and transitivity, $|G_x| = |G|/|X|$ for all $x \in X$. Since $|X| > 1$, each $G_x$ is a proper subgroup. Using a counting argument, we can bound the size of the union. Since the identity element $e$ is in every stabilizer, we have $|G| = |\bigcup_{x \in X} G_x| \le 1 + \sum_{x \in X} (|G_x| - 1) = 1 + |X|(\frac{|G|}{|X|} - 1) = 1 + |G| - |X|$. This inequality simplifies to $|X| \le 1$, which contradicts the given condition that $|X| > 1$. Therefore, our initial assumption was false, and there must exist an element $g \in G$ that fixes no element of $X$.
+
 # 6
 A map $\phi: \mathbb{R} \to \mathbb{R}$ is said to be an affine-linear bijection if it is of the form
 
