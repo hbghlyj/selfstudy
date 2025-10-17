@@ -59,7 +59,10 @@ Proof: Since the order of $G$ is the product of three distinct primes, we can ap
 1. $n_{p_i} \equiv 1 \mod p_i$
 2. $n_{p_i}$ divides $\frac{|G|}{p_i} = p_j p_k$ where $j,k \neq i$.
 
-For each $p_i$, the possible values for $n_{p_i}$ are 1 or $p_j$ or $p_k$ or $p_j p_k$. However, since $n_{p_i} \equiv 1 \mod p_i$, the only value that satisfies this condition is $n_{p_i} = 1$.
+For each $p_i$, we check the possible values for $n_{p_i}$.
+- For $p_1=2017$, $n_{2017}$ divides $2027 \times 2029$ and $n_{2017} \equiv 1 \pmod{2017}$. Since $2027 \equiv 10 \pmod{2017}$ and $2029 \equiv 12 \pmod{2017}$, none of the divisors $2027, 2029, 2027 \times 2029$ are $1 \pmod{2017}$. Thus $n_{2017}=1$.
+- Similarly for $p_2=2027$: $2017 \equiv -10 \pmod{2027}$ and $2029 \equiv 2 \pmod{2027}$. Thus $n_{2027}=1$.
+- And for $p_3=2029$: $2017 \equiv -12 \pmod{2029}$ and $2027 \equiv -2 \pmod{2029}$. Thus $n_{2029}=1$.
 
 Thus, each Sylow $p_i$-subgroup is unique and hence normal in $G$. Let $P_i$ be the unique Sylow $p_i$-subgroup of $G$. Since the orders of these subgroups are pairwise coprime, the intersection of any two distinct Sylow subgroups is trivial. Therefore, the product $P_1 P_2 P_3$ is isomorphic to the direct product $P_1 \times P_2 \times P_3$. By the Chinese Remainder Theorem $G$ is cyclic.
 
