@@ -54,6 +54,18 @@ Let $\mathbb{Q}^{\times}$ be the group of non-zero rational numbers under multip
 
 # 3
 Let $G$ be a group of order $2017 \times 2027 \times 2029$ (these are all prime numbers). Show that $G$ is cyclic.
+
+Proof: Since the order of $G$ is the product of three distinct primes, we can apply the Sylow theorems. Let $p_1 = 2017$, $p_2 = 2027$, and $p_3 = 2029$. The number of Sylow $p_i$-subgroups, denoted $n_{p_i}$, must satisfy the following conditions: 
+1. $n_{p_i} \equiv 1 \mod p_i$
+2. $n_{p_i}$ divides $\frac{|G|}{p_i} = p_j p_k$ where $j,k \neq i$.
+
+For each $p_i$, we check the possible values for $n_{p_i}$.
+- For $p_1=2017$, $n_{2017}$ divides $2027 \times 2029$ and $n_{2017} \equiv 1 \pmod{2017}$. Since $2027 \equiv 10 \pmod{2017}$ and $2029 \equiv 12 \pmod{2017}$, none of the divisors $2027, 2029, 2027 \times 2029$ are $1 \pmod{2017}$. Thus $n_{2017}=1$.
+- Similarly for $p_2=2027$: $2017 \equiv -10 \pmod{2027}$ and $2029 \equiv 2 \pmod{2027}$. Thus $n_{2027}=1$.
+- And for $p_3=2029$: $2017 \equiv -12 \pmod{2029}$ and $2027 \equiv -2 \pmod{2029}$. Thus $n_{2029}=1$.
+
+Thus, for each $i$, the Sylow $p_i$-subgroup, let's call it $P_i$, is unique and therefore normal in $G$. Since the orders of these subgroups are pairwise coprime, their intersection is trivial. The product $P_1 P_2 P_3$ is a subgroup of $G$ of order $|P_1||P_2||P_3| = p_1 p_2 p_3 = |G|$, so $G = P_1 P_2 P_3$. Because the $P_i$ are normal, this means $G \cong P_1 \times P_2 \times P_3$. Each $P_i$ is a group of prime order, so it is cyclic, i.e., $P_i \cong \mathbb{Z}/p_i\mathbb{Z}$. Therefore, $G \cong \mathbb{Z}/p_1\mathbb{Z} \times \mathbb{Z}/p_2\mathbb{Z} \times \mathbb{Z}/p_3\mathbb{Z}$. By the Chinese Remainder Theorem, since the orders are pairwise coprime, this direct product is isomorphic to $\mathbb{Z}/(p_1 p_2 p_3)\mathbb{Z}$, which is a cyclic group. Hence, $G$ is cyclic.
+
 # 4
 Let $G$ be a finite group, and let $A=\mathrm{Aut}(G)$ be the group of automorphisms $\phi: G \to G$. Consider the natural action of $A$ on $G$, and take the quotient $G / A$.
 1. What is $|G / A|$ if $G=\mathbb{Z} / 6 \mathbb{Z}$.
