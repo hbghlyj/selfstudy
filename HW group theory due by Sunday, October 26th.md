@@ -43,7 +43,10 @@ Let $\mathbb{Q}^{\times}$ be the group of non-zero rational numbers under multip
 
    Solution
 
-   The group homomorphism is determined by where it sends the basis elements $`\{-1\}\cup\{p:p\text{ is a prime number}\}`$, but the image of the odd primes must be odd, so must be the identity, so the homomorphisms are determined by where it sends $-1$ and $2$. So there are four of them.
+   A homomorphism $f: \mathbb{Q}^{\times} \to \mathbb{Z}/2\mathbb{Z}$ is determined by its values on the basis elements `\{-1\}\cup\{p:p\text{ is prime}\}`. The value of $f$ on each basis element can be chosen independently to be either 0 or 1 in $\mathbb{Z}/2\mathbb{Z}$.
+
+   The group of homomorphisms, $\text{Hom}(\mathbb{Q}^{\times}, \mathbb{Z}/2\mathbb{Z})$, is therefore isomorphic to the direct product of copies of $\mathbb{Z}/2\mathbb{Z}$, indexed by the set `\{-1\}\cup\{p:p\text{ is prime}\}`. This can be written as $\prod_{i \in \{-1\} \cup P} \mathbb{Z}/2\mathbb{Z}$, where $P$ is the set of primes.
+   
 # 3
 Let $G$ be a group of order $2017 \times 2027 \times 2029$ (these are all prime numbers). Show that $G$ is cyclic.
 # 4
