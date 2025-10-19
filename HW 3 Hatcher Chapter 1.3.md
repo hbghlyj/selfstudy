@@ -174,7 +174,7 @@ Proof
 
 Given $\widetilde{x} \in p^{-1}(x_0)$ and $\gamma \in \pi_1(X, x_0)$, the first action is defined (in p.69) by lifting $\gamma$ to a path $\widetilde{\gamma}$ in $\widetilde{X}$ ending at $\widetilde{x}$, and taking its starting point $\widetilde{\gamma}(0)$. This is equivalent to the standard action of $\bar{\gamma}$. The second action, via deck transformations (Proposition 1.39), is the standard action of $\gamma$. Thus, for any given $\gamma$, the two actions are inverse operations on the fiber.
 
-Thus, these actions are the same only when $\pi_1(X, x_0)$ is a group of exponent 2, i.e: $g^2=1$ for all $g \in \pi_1(X, x_0)$. In particular, these actions are not the same when $X=S^1 \vee S^1$ or $X=S^1 \times S^1$.
+Thus, these actions are the same only when $\pi_1(X, x_0)$ is a group of exponent 2, i.e., $g^2=1$ for all $g \in \pi_1(X, x_0)$. In particular, these actions are not the same when $X=S^1 \vee S^1$ or $X=S^1 \times S^1$.
 
 # 30
 Draw the Cayley graph of the group $\mathbb{Z} * \mathbb{Z}_2=\langle a, b \mid b^2\rangle$.
