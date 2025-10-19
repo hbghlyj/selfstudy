@@ -172,19 +172,9 @@ For a universal cover $p: \tilde{X} \to X$ there are two actions of $\pi_1(X, x_
 
 Proof
 
-We first analyze the two actions for the case $X = S^1 \vee S^1$. The fundamental group $\pi_1(X, x_0)$ is the free group on two generators, say $a$ and $b$. The universal cover $\tilde{X}$ can be visualized as an infinite 4-valent tree, where each vertex corresponds to a point in the fiber $p^{-1}(x_0)$.
+Given $\widetilde{x} \in p^{-1}(x_0)$ and $\gamma \in \pi_1(X, x_0)$, the first action is defined (in p.69) by lifting $\gamma$ to a path $\widetilde{\gamma}$ in $\widetilde{X}$ whose endpoint $\widetilde{\gamma}(1)=\widetilde{x}$, and then letting $\gamma \cdot \widetilde{x}=\widetilde{\gamma}(0)$. This is the same as lifting the inverse $\bar{\gamma}$ to a path $\widetilde{\bar{\gamma}}$ starting at $\widetilde{x}$, and mapping $\widetilde{x}$ to its endpoint $\widetilde{\bar{\gamma}}(1)$. On the other hand, Proposition 1.39 identifies $\pi(X, x_0)$ with the group of deck transformation $G(\widetilde{X})$ by sending $\gamma$ to the deck transformation taking $\widetilde{\gamma}(0)=\widetilde{x}$ to $\widetilde{\gamma}(1)$. Thus, we can see that the two actions are inverses of each other, i.e: $\gamma \cdot{ }_2 \widetilde{x}=\bar{\gamma} \cdot{ }_1 \widetilde{x}$, where $\cdot_2$ is the second action, and $\cdot_1$ is the first action.
 
-The first action, defined by lifting loops, sends a point in the fiber to another point based on the endpoint of the lift of the loop. For example, if we consider the loop corresponding to $a$, it lifts to a path in $\tilde{X}$ that starts at a vertex and ends at an adjacent vertex. Thus, the action of $a$ on the fiber sends one vertex to another.
-
-The second action, given by deck transformations, corresponds to the automorphisms of the covering space that permute the fibers. In this case, the deck transformations correspond to the elements of $\pi_1(X, x_0)$ acting on the tree structure. Each generator $a$ and $b$ acts by moving along the edges of the tree, but in a way that is consistent with the tree's structure.
-
-In this case, the two actions are not the same because the first corresponds to the action of an element's inverse and the second to the element itself, and in $\pi_1(S^1 \vee S^1)$ not every element is its own inverse.
-
-For the case $X = S^1 \times S^1$, the fundamental group is $\pi_1(X, x_0) \cong \mathbb{Z} \times \mathbb{Z}$. The universal cover $\tilde{X}$ is homeomorphic to $\mathbb{R}^2$, and the fiber $p^{-1}(x_0)$ can be identified with the integer lattice points $\mathbb{Z}^2 \subset \mathbb{R}^2$.
-
-As with the previous case, the first action corresponds to acting with an element's inverse, while the second action corresponds to the element itself. Let's take the generator $g = (1,0) \in \mathbb{Z} \times \mathbb{Z}$. Its inverse is $g^{-1} = (-1,0)$. Since $g \neq g^{-1}$, the actions are different.
-
-For example, under Action 1, $g$ maps a point $(m,n)$ to $(m-1, n)$. Under Action 2, $g$ maps $(m,n)$ to $(m+1, n)$. These are clearly not the same.
+Thus, these actions are the same only when $\pi_1(X, x_0)$ is a group of exponent 2, i.e: $g^2=1$ for all $g \in \pi_1(X, x_0)$. In particular, these actions are not the same when $X=S^1 \vee S^1$ or $X=S^1 \times S^1$.
 
 # 30
 Draw the Cayley graph of the group $\mathbb{Z} * \mathbb{Z}_2=\langle a, b \mid b^2\rangle$.
