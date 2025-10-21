@@ -30,8 +30,8 @@
 Let $\mathbb{Q}^{\times}$ be the group of non-zero rational numbers under multiplication.
 1. Show that $\mathbb{Q}^{\times}$ is isomorphic to the product of $\mathbb{Z} / 2 \mathbb{Z}$ and a free abelian group.
 
-  Proof
-  
+   Proof
+   
    Any non-zero rational number has a unique factorization $q = (\pm 1)\prod_{p\text{ prime}}p^{n_p}$, where $n_p \in \mathbb{Z}$ and only finitely many are non-zero, so
    
    $`\mathbb{Q}^{\times} \cong \mathbb{Z} / 2 \mathbb{Z} \times \bigoplus_{p\text{ prime}}\mathbb{Z}`$
@@ -40,9 +40,11 @@ Let $\mathbb{Q}^{\times}$ be the group of non-zero rational numbers under multip
 
 2. Describe all group homomorphisms $\mathbb{Z} / 2 \mathbb{Z} \to \mathbb{Q}^{\times}$.
 
-  Answer: The image of $1 \in \mathbb{Z}/2\mathbb{Z}$ must have order dividing 2. The only elements in $\mathbb{Q}^{\times}$ of order $\le 2$ are $\pm 1$. This gives two homomorphisms: the trivial one, and the one mapping $1 \mapsto -1$.
+   Answer
 
-3. Describe all group homomorphisms $\mathbb{Q}^{\times} \to \mathbb{Z} / 2 \mathbb{Z}$.
+   The image of $1 \in \mathbb{Z}/2\mathbb{Z}$ must have order dividing 2. The only elements in $\mathbb{Q}^{\times}$ of order $\le 2$ are $\pm 1$. This gives two homomorphisms: the trivial one, and the one mapping $1 \mapsto -1$.
+
+4. Describe all group homomorphisms $\mathbb{Q}^{\times} \to \mathbb{Z} / 2 \mathbb{Z}$.
 
    Solution
 
