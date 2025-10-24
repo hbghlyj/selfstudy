@@ -105,7 +105,7 @@ For a finite group $G$, denote by $s(G)$ the number of its subgroups.
 2. Show that if $H$ is a nontrivial normal subgroup of $G$, then $s(G / H)<s(G)$.
 3. Show that $s(G)=2$ if and only if $G$ is cyclic of prime order.
 4. Show that $s(G)=3$ if and only if $G$ is a cyclic group whose order is a square of a prime.
-5. Show that $s(G)=4$ if and only if $G$ is a cyclic.
+5. Show that $s(G)=4$ if and only if $G$ is cyclic of order $p^3$ for a prime $p$, or of order $pq$ for distinct primes $p, q$.
 
 Proof
 
