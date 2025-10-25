@@ -152,7 +152,7 @@ For $n=2$ and $g=1$, the surface is the torus $M_1=T^2$. The required covering s
 For $n=3$ and $g=3$, the covering space is the periodic surface in $\mathbb{R}^3$ given by $`\{(x,y,z)\in\mathbb{R}^3\mid \cos(2\pi x) + \cos(2\pi y) + \cos(2\pi z) = 0\}`$. Its quotient by integer translations is a surface of genus 3.
 By attaching handles to this quotient surface, we can produce higher-genus surfaces embedded in $\mathbb{T}^3$.
 
-For the last part, the covering space in question is normal because it corresponds to the kernel of the surjective homomorphism $\pi_1(M_g) \to \mathbb{Z}^n$, which is a normal subgroup.
+For the last part, if there is an embedding of $M_g$ in $T^3$ such that the induced map on fundamental groups is surjective, then the preimage of $M_g$ in the universal cover $\mathbb{R}^3$ of $T^3$ is a connected normal covering space of $M_g$ with deck transformation group $\mathbb{Z}^3$, the covering space is normal because it corresponds to the kernel of the surjective homomorphism $\pi_1(M_g) \to \mathbb{Z}^n$, which is a normal subgroup.
 
 # 23
 Show that if a group $G$ acts freely and properly discontinuously on a Hausdorff space $X$, then the action is a covering space action. (Here 'properly discontinuously' means that each $x \in X$ has a neighborhood $U$ such that $`\{g \in G \mid U \cap g(U) \neq \varnothing\}`$ is finite.)
