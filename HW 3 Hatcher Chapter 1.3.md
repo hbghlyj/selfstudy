@@ -149,8 +149,8 @@ A surjective homomorphism from $H_1(M_g) \cong \mathbb{Z}^{2g}$ to $\mathbb{Z}^n
 
 For $n=2$ and $g=1$, the surface is the torus $M_1=T^2$. The required covering space is its universal cover, $\mathbb{R}^2$, which has a deck transformation group isomorphic to $\pi_1(T^2) \cong \mathbb{Z}^2$.
 
-The connected, orientable surface $`\{(x,y,z)\in\mathbb{T}^3\mid \cos(2\pi x) + \cos(2\pi y) + \cos(2\pi z) = 0\}`$ is of genus 3, because the periods in the $x,y$ and $z$ directions each contribute $1$ to the genus.
-By attaching extra handles to the surface, we can produce higher-genus surface embedded in $\mathbb{T}^3$.
+For $n=3$ and $g=3$, the covering space is the periodic surface in $\mathbb{R}^3$ given by $`\{(x,y,z)\in\mathbb{R}^3\mid \cos(2\pi x) + \cos(2\pi y) + \cos(2\pi z) = 0\}`$. Its quotient by integer translations is a surface of genus 3.
+By attaching handles to this quotient surface, we can produce higher-genus surfaces embedded in $\mathbb{T}^3$.
 
 For the last part, suppose there is such a covering space, then it is normal because the deck transformation group is transitive on fibers.
 
