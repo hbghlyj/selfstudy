@@ -82,7 +82,7 @@ To show that these tensor products span $W$, let $T \in W$ be a multilinear map.
 
 $T(v_1, \ldots, v_n) = \sum_{i_1, \ldots, i_n} v_1^{i_1} \cdots v_n^{i_n} T(e_{i_1}, \ldots, e_{i_n})$
 
-Since $v_k^{i_k} = \epsilon_{i_k}(v_k)$, this is equivalent to $T = \sum_{i_1, \ldots, i_n} T(e_{i_1}, \ldots, e_{i_n}) \epsilon_{i_1} \otimes \cdots \otimes \epsilon_{i_n}$. This proves that the set spans $W.
+Since $v_k^{i_k} = \epsilon_{i_k}(v_k)$, this is equivalent to $T = \sum_{i_1, \ldots, i_n} T(e_{i_1}, \ldots, e_{i_n}) \epsilon_{i_1} \otimes \cdots \otimes \epsilon_{i_n}$. This proves that the set spans $W$.
 
 To show that these tensor products are linearly independent, suppose we have a linear combination
 
