@@ -69,3 +69,29 @@ Recall that if $`\{e_1, \ldots, e_n\}`$ is a basis for $V$ then $`\{\epsilon_1, 
 The tensor product of $`\omega, \eta \in V^*`$ is defined to be $\omega \otimes \eta(v_1, v_2)=\omega(v_1) \eta(v_2)$.
 This generalizes to $\omega_1 \otimes \cdots \otimes \omega_k$ for $\omega_i \in V^*$. Let $W=L(V^n ; \mathbb{R})$ be the vector space of multilinear maps from $V^n \to \mathbb{R}$.
 Find a basis for $W$ in terms of tensors of $\epsilon_i$ (and prove it).
+
+Proof
+
+Consider the set of all possible tensor products of the form $\epsilon_{i_1} \otimes \epsilon_{i_2} \otimes \cdots \otimes \epsilon_{i_n}$, where each $i_j$ ranges from $1$ to $n$.
+
+There are $n^n$ such tensor products, as each of the $n$ positions can be filled with any of the $n$ basis covectors.
+
+We will show that these tensor products form a basis for $W$.
+
+To show that these tensor products span $W$, let $T \in W$ be a multilinear map. We can express $T$ in terms of the basis $\{\epsilon_1, \ldots, \epsilon_n\}$ by using the fact that any multilinear map can be decomposed into a sum of tensor products. Specifically, we can write
+
+$T(v_1, \ldots, v_n) = \sum_{i_1, \ldots, i_n} c_{i_1, \ldots, i_n} \epsilon_{i_1} \otimes \cdots \otimes \epsilon_{i_n}(v_1, \ldots, v_n)$
+
+for some coefficients $c_{i_1, \ldots, i_n} \in \mathbb{R}$. This shows that any multilinear map can be expressed as a linear combination of the tensor products $\epsilon_{i_1} \otimes \cdots \otimes \epsilon_{i_n}$, proving that they span $W$.
+
+To show that these tensor products are linearly independent, suppose we have a linear combination
+
+$\sum_{i_1, \ldots, i_n} c_{i_1, \ldots, i_n} \epsilon_{i_1} \otimes \cdots \otimes \epsilon_{i_n} = 0$
+
+for some coefficients $c_{i_1, \ldots, i_n} \in \mathbb{R}$.
+
+We can evaluate this expression on a set of basis vectors $e_{j_1}, \ldots, e_{j_n} \in V$ to obtain a system of equations. 
+
+Since the tensor products $\epsilon_{i_1} \otimes \cdots \otimes \epsilon_{i_n}$ are linearly independent, it follows that all coefficients must be zero, proving linear independence.
+
+Thus, we conclude that the set of tensor products $`\{\epsilon_{i_1} \otimes \cdots \otimes \epsilon_{i_n}\}`$ forms a basis for $W$.
