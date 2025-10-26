@@ -90,8 +90,10 @@ $\sum_{i_1, \ldots, i_n} c_{i_1, \ldots, i_n} \epsilon_{i_1} \otimes \cdots \oti
 
 for some coefficients $c_{i_1, \ldots, i_n} \in \mathbb{R}$.
 
-We can evaluate this expression on a set of basis vectors $e_{j_1}, \ldots, e_{j_n} \in V$ to obtain a system of equations. 
+We can evaluate this expression on a set of basis vectors $(e_{j_1}, \ldots, e_{j_n})$:
 
-Since the tensor products $\epsilon_{i_1} \otimes \cdots \otimes \epsilon_{i_n}$ are linearly independent, it follows that all coefficients must be zero, proving linear independence.
+$0 = \left(\sum_{i_1, \ldots, i_n} c_{i_1, \ldots, i_n} \epsilon_{i_1} \otimes \cdots \otimes \epsilon_{i_n}\right)(e_{j_1}, \ldots, e_{j_n}) = \sum_{i_1, \ldots, i_n} c_{i_1, \ldots, i_n} \delta_{i_1 j_1} \cdots \delta_{i_n j_n} = c_{j_1, \ldots, j_n}$.
+
+Since this holds for any choice of indices $(j_1, \ldots, j_n)$, all coefficients must be zero, proving linear independence.
 
 Thus, we conclude that the set of tensor products $`\{\epsilon_{i_1} \otimes \cdots \otimes \epsilon_{i_n}\}`$ forms a basis for $W$.
