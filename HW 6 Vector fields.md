@@ -29,7 +29,7 @@ $a X_p+b Y_p+c Z_p=0 .$
 
 Evaluating this at the point $(1,0,0)$ gives $b=0$ and $c=0$. Evaluating at $(0,1,0)$ then gives $a=0$. Thus, the kernel of $\varphi$ is trivial, so $\varphi$ is injective.
 
-Since the domain and codomain of $\varphi$ both have dimension 3, it follows that $\varphi$ is an isomorphism onto its image.
+Since the domain of $\varphi$ has dimension 3 and $\varphi$ is injective, its image is also 3-dimensional. It follows that $\varphi$ is an isomorphism onto its image.
 
 Therefore, the image of $\varphi$ is a 3-dimensional Lie subalgebra of $\mathscr{X}(S^2)$ isomorphic to $\mathbb{R}^3$ with the cross product.
 
