@@ -19,7 +19,7 @@ $[X, Y]=Z, \quad [Y, Z]=X, \quad [Z, X]=Y .$
 
 From these relations, it follows that for any $(a, b, c),(d, e, f) \in \mathbb{R}^3$,
 
-$`\begin{aligned}[\varphi(a, b, c), \varphi(d, e, f)] &= [a X+b Y+c Z, d X+e Y+f Z] \\ &=a d[X, X]+a e[X, Y]+a f[X, Z]+b d[Y, X]+b e[Y, Y]+b f[Y, Z]+c d[Z, X]+c e[Z, Y]+c f[Z, Z] \\ &=a e Z-a f Y-b d Z+b f X+c d Y-c e X \\ &=\varphi(0, 0, a e-b d)+\varphi(c d-b f, 0, 0)+\varphi(0, c e-a f, 0) \\ &=\varphi((b, c, a) \times(d, e, f)) .\end{aligned}`$
+$`\begin{aligned}[\varphi(a, b, c), \varphi(d, e, f)] &= [a X+b Y+c Z, d X+e Y+f Z] \\ &=a d[X, X]+a e[X, Y]+a f[X, Z]+b d[Y, X]+b e[Y, Y]+b f[Y, Z]+c d[Z, X]+c e[Z, Y]+c f[Z, Z] \\ &=a e Z - a f Y - b d Z + b f X + c d Y - c e X \\ &= (bf-ce)X + (cd-af)Y + (ae-bd)Z \\ &= \varphi((a,b,c) \times (d,e,f)).\end{aligned}`$
 
 Thus, $\varphi$ is a Lie algebra homomorphism.
 
