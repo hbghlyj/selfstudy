@@ -5,6 +5,34 @@ $X=z \frac{\partial}{\partial y}-y \frac{\partial}{\partial z}, \quad Y=x \frac{
 
 Show that these span a 3-dimensional Lie subalgebra of $\mathscr{X}(S^2)$ which is isomorphic to $\mathbb{R}^3$ equipped with the cross product $\times$.
 
+Proof
+
+Let $\varphi: \mathbb{R}^3 \to \mathscr{X}(S^2)$ be defined by
+
+$\varphi(a, b, c)=a X+b Y+c Z .$
+
+It is clear that $\varphi$ is linear. We will show that it is a Lie algebra homomomorphism with trivial kernel, which will prove the result.
+
+First, we compute the Lie brackets of $X, Y, Z$:
+
+$[X, Y]=Z, \quad [Y, Z]=X, \quad [Z, X]=Y .$
+
+From these relations, it follows that for any $(a, b, c),(d, e, f) \in \mathbb{R}^3$,
+
+$`\begin{aligned}[\varphi(a, b, c), \varphi(d, e, f)] &= [a X+b Y+c Z, d X+e Y+f Z] \\ &=a d[X, X]+a e[X, Y]+a f[X, Z]+b d[Y, X]+b e[Y, Y]+b f[Y, Z]+c d[Z, X]+c e[Z, Y]+c f[Z, Z] \\ &=a e Z - a f Y - b d Z + b f X + c d Y - c e X \\ &= (bf-ce)X + (cd-af)Y + (ae-bd)Z \\ &= \varphi((a,b,c) \times (d,e,f)).\end{aligned}`$
+
+Thus, $\varphi$ is a Lie algebra homomorphism.
+
+Next, suppose that $\varphi(a, b, c)=0$. Then, for all $p \in S^2$, we have
+
+$a X_p+b Y_p+c Z_p=0 .$
+
+Evaluating this at the point $(1,0,0)$ gives $b=0$ and $c=0$. Evaluating at $(0,1,0)$ then gives $a=0$. Thus, the kernel of $\varphi$ is trivial, so $\varphi$ is injective.
+
+Since the domain of $\varphi$ has dimension 3 and $\varphi$ is injective, its image is also 3-dimensional. It follows that $\varphi$ is an isomorphism onto its image.
+
+Therefore, the image of $\varphi$ is a 3-dimensional Lie subalgebra of $\mathscr{X}(S^2)$ isomorphic to $\mathbb{R}^3$ with the cross product.
+
 # 2.
 Prove the Jacobi identity $\mathscr{L}_X[Y, Z]=[\mathscr{L}_X Y, Z]+[Y, \mathscr{L}_X Z]$ (Corollary 21.3b) directly from Definition 21.1.
 
