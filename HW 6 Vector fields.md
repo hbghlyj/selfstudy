@@ -78,11 +78,11 @@ There are $n^n$ such tensor products, as each of the $n$ positions can be filled
 
 We will show that these tensor products form a basis for $W$.
 
-To show that these tensor products span $W$, let $T \in W$ be a multilinear map. We can express $T$ in terms of the basis $\{\epsilon_1, \ldots, \epsilon_n\}$ by using the fact that any multilinear map can be decomposed into a sum of tensor products. Specifically, we can write
+To show that these tensor products span $W$, let $T \in W$ be a multilinear map. For any vectors $v_k = \sum_j v_k^j e_j$, we can expand $T$ by multilinearity:
 
-$T(v_1, \ldots, v_n) = \sum_{i_1, \ldots, i_n} c_{i_1, \ldots, i_n} \epsilon_{i_1} \otimes \cdots \otimes \epsilon_{i_n}(v_1, \ldots, v_n)$
+$T(v_1, \ldots, v_n) = \sum_{i_1, \ldots, i_n} v_1^{i_1} \cdots v_n^{i_n} T(e_{i_1}, \ldots, e_{i_n})$
 
-for some coefficients $c_{i_1, \ldots, i_n} \in \mathbb{R}$. This shows that any multilinear map can be expressed as a linear combination of the tensor products $\epsilon_{i_1} \otimes \cdots \otimes \epsilon_{i_n}$, proving that they span $W$.
+Since $v_k^{i_k} = \epsilon_{i_k}(v_k)$, this is equivalent to $T = \sum_{i_1, \ldots, i_n} T(e_{i_1}, \ldots, e_{i_n}) \epsilon_{i_1} \otimes \cdots \otimes \epsilon_{i_n}$. This proves that the set spans $W.
 
 To show that these tensor products are linearly independent, suppose we have a linear combination
 
