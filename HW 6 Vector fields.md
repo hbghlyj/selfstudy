@@ -70,6 +70,24 @@ Proof
 
 <ol type="a">
 <li>
+
+Since $F: M \to N$ is a submersion, for each point $p \in M$, there exists a neighborhood $U_p$ of $p$ such that we can choose local coordinates $(x_1, \ldots, x_m)$ on $U_p$ and $(y_1, \ldots, y_n)$ on $F(U_p)$ such that $F$ takes the form of a projection onto the first $n$ coordinates.
+
+In these local coordinates, we can express the vector field $Y$ on $N$ as $Y = \sum_{i=1}^n Y^i(y) \frac{\partial}{\partial y_i}$. We can then define a local vector field $X_p$ on $U_p$ by lifting the components of $Y$ to $M$:
+
+$X_p = \sum_{i=1}^n Y^i(F(x)) \frac{\partial}{\partial x_i}$.
+
+This construction ensures that $X_p$ is $F$-related to $Y$ on $U_p$.
+
+Next, we cover $M$ with such neighborhoods $`\{U_\alpha\}`$, each with a local $F$-related vector field $X_\alpha$. We can then use a partition of unity $`\{\rho_\alpha\}`$ subordinate to this cover to define a global vector field $X$ on $M$ by
+
+$X = \sum_\alpha \rho_\alpha X_\alpha$.
+
+Since each $X_\alpha$ is smooth and the $\rho_\alpha$ are smooth functions, the resulting vector field $X$ is also smooth. Furthermore, $X$ is $F$-related to $Y$. This follows from the linearity of the pushforward map $dF_p$ at each point $p \in M$:
+
+$dF_p(X_p) = dF_p(\sum_\alpha \rho_\alpha(p) (X_\alpha)_p) = \sum_\alpha \rho_\alpha(p) dF_p((X_\alpha)_p) = (\sum_\alpha \rho_\alpha(p)) Y_{F(p)} = Y_{F(p)}.$
+
+Thus, we have constructed a global vector field $X$ on $M$ that is $F$-related to the given vector field $Y$ on $N$.
 </li>
 <li>
 
