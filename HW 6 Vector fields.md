@@ -41,7 +41,7 @@ Prove the Jacobi identity $\mathscr{L}_X[Y, Z]=[\mathscr{L}_X Y, Z]+[Y, \mathscr
 Proof
 
 By definition, $`(\mathscr{L}_X Y)_p = \lim_{t \to 0} \frac{Y_{\theta_t(p)} - (\theta_t)_* Y_p}{t}`$.
-The LHS of the identity is $(\mathscr{L}_X[Y, Z])_p = \lim_{t \to 0} \frac{[Y, Z]_{\theta_t(p)} - (\theta_t)_*[Y, Z]_p}{t}$.
+The LHS of the identity is $`(\mathscr{L}_X[Y, Z])_p = \lim_{t \to 0} \frac{[Y, Z]_{\theta_t(p)} - (\theta_t)_*[Y, Z]_p}{t}`$.
 
 Using the hint that pushforward commutes with the Lie bracket, $`(\theta_t)_*[Y, Z]_p = [(\theta_t)_*Y_p, (\theta_t)_*Z_p]`$. The numerator becomes:
 $`[Y_{\theta_t(p)}, Z_{\theta_t(p)}] - [(\theta_t)_*Y_p, (\theta_t)_*Z_p]`$
