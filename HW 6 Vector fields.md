@@ -66,6 +66,23 @@ Suppose that $F$ is proper and surjective. Given $p \in M$, show that the maxima
 </li>
 </ol>
 
+Proof
+
+<ol type="a">
+<li>
+
+Since $F$ is a submersion, for each $p \in M$, the differential $dF_p: T_p M \to T_{F(p)} N$ is surjective. Given a vector field $Y$ on $N$, for each $p \in M$, we can choose a local section $s: U_p \to M$ of $F$ around $F(p)$ such that $F \circ s = \text{id}_{U_p}$. We can then define a vector field $X$ on $M$ by setting
+
+$X = s_* Y$
+
+where $s_*$ is the pushforward of the section $s$. To construct a global smooth vector field, we can use a partition of unity subordinate to a cover of $M$ by such local sections. This ensures that $X$ is smooth and $F$-related to $Y$.
+</li>
+<li>
+
+Using (a), let $X$ be a vector field on $M$ that is $F$-related to $Y$. Let $\gamma: I \to M$ be the maximal integral curve of $X$ through $p$, and let $\delta: J \to N$ be the maximal integral curve of $Y$ through $F(p)$. Since $F$ is proper and surjective, the image of $\gamma$ under $F$ is contained in the image of $\delta$. By the uniqueness of integral curves, we have $F \circ \gamma(t) = \delta(t)$ for all $t \in I$. Therefore, the intervals $I$ and $J$ must coincide, meaning that the maximal integral curve of $X$ through $p$ is defined on the same interval as that of $Y$ through $F(p)$.
+</li>
+</ol>
+
 # 4.
 Suppose that $X, Y$ are smooth vector fields on $M$ with associated flows $\theta: \mathbb{R} \times M \rightarrow M$ and $\eta: \mathbb{R} \times M \rightarrow M$. Show that $X, Y$ commute if and only if $\theta_t \circ \eta_s=\eta_s \circ \theta_t$ for all $t, s \in \mathbb{R}$.
 
