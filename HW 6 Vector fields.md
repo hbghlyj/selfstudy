@@ -38,6 +38,23 @@ Prove the Jacobi identity $\mathscr{L}_X[Y, Z]=[\mathscr{L}_X Y, Z]+[Y, \mathscr
 
 (Note: you may use the fact that pushforward commutes with the Lie bracket, i.e. Proposition 17.10.)
 
+Proof
+
+By definition $`\left(\mathscr{L}_X Y\right)_p=\lim_{t \to 0} \frac{Y_{\theta_t(p)}-\left(\theta_t\right)_* Y_p}{t}`$, where $\theta_t$ is the flow of $X$.
+
+$\left(\theta_t\right)_*[Y, Z]_p(f)
+=[Y, Z]_{\theta_{-t}(p)}(f\circ \theta_t)
+=Y_{\theta_{-t}(p)}(Z(f\circ \theta_t)) - Z_{\theta_{-t}(p)}(Y(f\circ \theta_t))
+=\left(\theta_t\right)_* Y_p(Z(f)) - \left(\theta_t\right)_* Z_p(Y(f)).$
+
+Using the fact that pushforward commutes with the Lie bracket, we have
+
+$`\begin{aligned}{}(\mathscr{L}_X[Y, Z])_p (f) &= \lim_{t \to 0} \frac{[Y, Z]_{\theta_t(p)}(f)-\left(\theta_t\right)_*[Y, Z]_p(f)}{t} \\ &= \lim_{t \to 0} \frac{Y_{\theta_t(p)}(Z(f)) - Z_{\theta_t(p)}(Y(f)) - \left(\theta_t\right)_* Y_p(Z(f)) + \left(\theta_t\right)_* Z_p(Y(f))}{t} \\ &= \lim_{t \to 0} \frac{Y_{\theta_t(p)}(Z(f)) - \left(\theta_t\right)_* Y_p(Z(f))}{t} - \lim_{t \to 0} \frac{Z_{\theta_t(p)}(Y(f)) - \left(\theta_t\right)_* Z_p(Y(f))}{t}\end{aligned}`$
+
+On the other hand, we have
+
+$`\begin{aligned}{}[\mathscr{L}_X Y, Z]_p(f) + [Y, \mathscr{L}_X Z]_p(f) &= (\mathscr{L}_X Y)_p(Z(f)) - Z_p((\mathscr{L}_X Y)(f)) + Y_p((\mathscr{L}_X Z)(f)) - (\mathscr{L}_X Z)_p(Y(f)) \\ &= \lim_{t \to 0} \frac{Y_{\theta_t(p)}(Z(f)) - \left(\theta_t\right)_* Y_p(Z(f))}{t} - \lim_{t \to 0} \frac{Z_{\theta_t(p)}(Y(f)) - \left(\theta_t\right)_* Z_p(Y(f))}{t}\end{aligned}`$
+
 # 3.
 <ol type="a">
 <li>
