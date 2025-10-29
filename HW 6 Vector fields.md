@@ -73,7 +73,15 @@ Proof
 </li>
 <li>
 
-Since $F$ is proper and surjective, the preimage of any compact set in $N$ is compact in $M$. Let $\gamma_Y: I_Y \to N$ be the maximal integral curve of $Y$ through $F(p)$, defined on the interval $I_Y = (a, b)$. By Proposition 20.9 (Suppose $M$ is noncompact. If $p \in M$ is a point such that $I_p=(a, b)$, with $b<\infty$, then the image $\gamma_p([0, b))$ fails to be contained in any compact subset of $M$.), if the maximal integral curve $\gamma_X: I_X \to M$ of $X$ through $p$ were defined on a strictly smaller interval than $I_Y$, say $I_X = (a', b')$ with $b' < b$, then the image $\gamma_X([0, b'))$ would fail to be contained in any compact subset of $M$. However, since $F$ is proper, the image $F(\gamma_X([0, b')))$ would be contained in a compact subset of $N$, contradicting the maximality of $\gamma_Y$. Therefore, the maximal integral curve of $X$ through $p$ must be defined on the same interval as that of $Y$ through $F(p)$.
+First, we establish the relationship between the integral curves. Since $X$ and $Y$ are $F$-related, if $\gamma_X: I_X \to M$ is the maximal integral curve of $X$ through $p$, then $F \circ \gamma_X$ is an integral curve of $Y$ through $F(p)$. By the definition of a maximal integral curve, this implies that $I_X$ is a subinterval of $I_Y$ (the maximal interval for $Y$'s integral curve through $F(p)$), and $F(\gamma_X(t)) = \gamma_Y(t)$ for all $t \in I_X$. 
+
+Now, we prove $I_X = I_Y$ by contradiction. Assume $I_X$ is a proper subinterval of $I_Y$. Let $I_X = (a', b')$ and $I_Y = (a, b)$, and suppose $b' < b$ (the case $a' > a$ is similar). Since $b' < \infty$, Proposition 20.9 implies that the image $\gamma_X([0, b'))$ is not contained in any compact subset of $M$.
+
+On the other hand, consider the interval $[0, b'] \subset I_Y$. Since $\gamma_Y$ is continuous, the image $K = \gamma_Y([0, b'])$ is a compact subset of $N$. For any $t \in [0, b')$, we have $F(\gamma_X(t)) = \gamma_Y(t) \in K$. Thus, the image $F(\gamma_X([0, b')))$ is contained in the compact set $K$.
+
+Since $F$ is a proper map, the preimage $F^{-1}(K)$ is a compact subset of $M$. We have $\gamma_X([0, b')) \subseteq F^{-1}(F(\gamma_X([0, b')))) \subseteq F^{-1}(K)$. This shows that $\gamma_X([0, b'))$ is contained in a compact set in $M$, which contradicts the conclusion from Proposition 20.9.
+
+Therefore, the assumption $b' < b$ must be false. This means $b' = b$. A similar argument for the lower bound shows $a' = a$. We conclude that $I_X = I_Y$.
 </li>
 </ol>
 
