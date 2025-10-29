@@ -66,6 +66,17 @@ Suppose that $F$ is proper and surjective. Given $p \in M$, show that the maxima
 </li>
 </ol>
 
+Proof
+
+<ol type="a">
+<li>
+</li>
+<li>
+
+Since $F$ is proper and surjective, the preimage of any compact set in $N$ is compact in $M$. Let $\gamma_Y: I_Y \to N$ be the maximal integral curve of $Y$ through $F(p)$, defined on the interval $I_Y = (a, b)$. By Proposition 20.9 (Suppose $M$ is noncompact. If $p \in M$ is a point such that $I_p=(a, b)$, with $b<\infty$, then the image $\gamma_p([0, b))$ fails to be contained in any compact subset of $M$.), if the maximal integral curve $\gamma_X: I_X \to M$ of $X$ through $p$ were defined on a strictly smaller interval than $I_Y$, say $I_X = (a', b')$ with $b' < b$, then the image $\gamma_X([0, b'))$ would fail to be contained in any compact subset of $M$. However, since $F$ is proper, the image $F(\gamma_X([0, b')))$ would be contained in a compact subset of $N$, contradicting the maximality of $\gamma_Y$. Therefore, the maximal integral curve of $X$ through $p$ must be defined on the same interval as that of $Y$ through $F(p)$.
+</li>
+</ol>
+
 # 4.
 Suppose that $X, Y$ are smooth vector fields on $M$ with associated flows $\theta: \mathbb{R} \times M \rightarrow M$ and $\eta: \mathbb{R} \times M \rightarrow M$. Show that $X, Y$ commute if and only if $\theta_t \circ \eta_s=\eta_s \circ \theta_t$ for all $t, s \in \mathbb{R}$.
 
