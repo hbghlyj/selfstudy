@@ -38,6 +38,22 @@ Prove the Jacobi identity $\mathscr{L}_X[Y, Z]=[\mathscr{L}_X Y, Z]+[Y, \mathscr
 
 (Note: you may use the fact that pushforward commutes with the Lie bracket, i.e. Proposition 17.10.)
 
+Proof
+
+By definition, $`(\mathscr{L}_X Y)_p = \lim_{t \to 0} \frac{Y_{\theta_t(p)} - (\theta_t)_* Y_p}{t}`$.
+The LHS of the identity is $(\mathscr{L}_X[Y, Z])_p = \lim_{t \to 0} \frac{[Y, Z]_{\theta_t(p)} - (\theta_t)_*[Y, Z]_p}{t}$.
+
+Using the hint that pushforward commutes with the Lie bracket, $`(\theta_t)_*[Y, Z]_p = [(\theta_t)_*Y_p, (\theta_t)_*Z_p]`$. The numerator becomes:
+$`[Y_{\theta_t(p)}, Z_{\theta_t(p)}] - [(\theta_t)_*Y_p, (\theta_t)_*Z_p]`$
+
+Using bilinearity of the bracket, this is equal to:
+$`[Y_{\theta_t(p)}, Z_{\theta_t(p)} - (\theta_t)_*Z_p] + [Y_{\theta_t(p)} - (\theta_t)_*Y_p, (\theta_t)_*Z_p]`$
+
+Substituting this back and taking the limit:
+$`\begin{aligned} (\mathscr{L}_X[Y, Z])_p &= \lim_{t \to 0} \frac{[Y_{\theta_t(p)}, Z_{\theta_t(p)} - (\theta_t)_*Z_p] + [Y_{\theta_t(p)} - (\theta_t)_*Y_p, (\theta_t)_*Z_p]}{t} \\ &= \lim_{t \to 0} [Y_{\theta_t(p)}, \frac{Z_{\theta_t(p)} - (\theta_t)_*Z_p}{t}] + \lim_{t \to 0} [\frac{Y_{\theta_t(p)} - (\theta_t)_*Y_p}{t}, (\theta_t)_*Z_p] \\ &= [Y_p, (\mathscr{L}_X Z)_p] + [(\mathscr{L}_X Y)_p, Z_p] \\ &= [\mathscr{L}_X Y, Z]_p + [Y, \mathscr{L}_X Z]_p \end{aligned}`$
+
+This completes the proof.
+
 # 3.
 <ol type="a">
 <li>
