@@ -66,6 +66,23 @@ Suppose that $F$ is proper and surjective. Given $p \in M$, show that the maxima
 </li>
 </ol>
 
+Proof
+
+<ol type="a">
+<li>
+
+Since $F$ is a submersion, for each $p \in M$, the differential $dF_p: T_p M \to T_{F(p)} N$ is surjective. Given a vector field $Y$ on $N$, for each $p \in M$, we can choose a local section $s: U_p \to M$ of $F$ around $F(p)$ such that $F \circ s = \text{id}_{U_p}$. We can then define a vector field $X$ on $M$ by setting
+
+$X = s_* Y$
+
+where $s_*$ is the pushforward of the section $s$. This construction ensures that $X$ is $F$-related to $Y$, since $dF_p(X_p) = Y_{F(p)}$ for all $p \in M$.
+</li>
+<li>
+
+Let $\gamma: I \to N$ be the maximal integral curve of $Y$ through $F(p)$, defined on an interval $I \subseteq \mathbb{R}$. Since $F$ is proper and surjective, the preimage $F^{-1}(\gamma(I))$ is compact in $M$. The integral curve of $X$ through $p$ can be lifted from $\gamma$ via $F$, and since $F$ is proper, the lifted curve remains within a compact set in $M$. Therefore, the maximal integral curve of $X$ through $p$ is defined on the same interval $I$ as that of $Y$ through $F(p)$.
+</li>
+</ol>
+
 # 4.
 Suppose that $X, Y$ are smooth vector fields on $M$ with associated flows $\theta: \mathbb{R} \times M \rightarrow M$ and $\eta: \mathbb{R} \times M \rightarrow M$. Show that $X, Y$ commute if and only if $\theta_t \circ \eta_s=\eta_s \circ \theta_t$ for all $t, s \in \mathbb{R}$.
 
