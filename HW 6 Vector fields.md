@@ -83,7 +83,9 @@ Next, we cover $M$ with such neighborhoods $`\{U_\alpha\}`$, each with a local $
 
 $X = \sum_\alpha \rho_\alpha X_\alpha$.
 
-Since each $X_\alpha$ is smooth and the $\rho_\alpha$ are smooth functions, the resulting vector field $X$ is also smooth. Furthermore, because each $X_\alpha$ is $F$-related to $Y$, the linearity of the $F$-relation ensures that $X$ is also $F$-related to $Y$.
+Since each $X_\alpha$ is smooth and the $\rho_\alpha$ are smooth functions, the resulting vector field $X$ is also smooth. Furthermore, $X$ is $F$-related to $Y$. This follows from the linearity of the pushforward map $dF_p$ at each point $p \in M$:
+
+$dF_p(X_p) = dF_p(\sum_\alpha \rho_\alpha(p) (X_\alpha)_p) = \sum_\alpha \rho_\alpha(p) dF_p((X_\alpha)_p) = (\sum_\alpha \rho_\alpha(p)) Y_{F(p)} = Y_{F(p)}.$
 
 Thus, we have constructed a global vector field $X$ on $M$ that is $F$-related to the given vector field $Y$ on $N$.
 </li>
