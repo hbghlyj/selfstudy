@@ -66,6 +66,25 @@ Suppose that $F$ is proper and surjective. Given $p \in M$, show that the maxima
 </li>
 </ol>
 
+Proof
+
+<ol type="a">
+<li>
+</li>
+<li>
+
+First, we establish the relationship between the integral curves. Since $X$ and $Y$ are $F$-related, if $\gamma_X: I_X \to M$ is the maximal integral curve of $X$ through $p$, then $F \circ \gamma_X$ is an integral curve of $Y$ through $F(p)$. By the definition of a maximal integral curve, this implies that $I_X$ is a subinterval of $I_Y$ (the maximal interval for $Y$'s integral curve through $F(p)$), and $F(\gamma_X(t)) = \gamma_Y(t)$ for all $t \in I_X$. 
+
+Now, we prove $I_X = I_Y$ by contradiction. Assume $I_X$ is a proper subinterval of $I_Y$. Let $I_X = (a', b')$ and $I_Y = (a, b)$, and suppose $b' < b$ (the case $a' > a$ is similar). Since $b' < \infty$, Proposition 20.9 implies that the image $\gamma_X([0, b'))$ is not contained in any compact subset of $M$.
+
+On the other hand, consider the interval $[0, b'] \subset I_Y$. Since $\gamma_Y$ is continuous, the image $K = \gamma_Y([0, b'])$ is a compact subset of $N$. For any $t \in [0, b')$, we have $F(\gamma_X(t)) = \gamma_Y(t) \in K$. Thus, the image $F(\gamma_X([0, b')))$ is contained in the compact set $K$.
+
+Since $F$ is a proper map, the preimage $F^{-1}(K)$ is a compact subset of $M$. We have $\gamma_X([0, b')) \subseteq F^{-1}(F(\gamma_X([0, b')))) \subseteq F^{-1}(K)$. This shows that $\gamma_X([0, b'))$ is contained in a compact set in $M$, which contradicts the conclusion from Proposition 20.9.
+
+Therefore, the assumption $b' < b$ must be false. This means $b' = b$. A similar argument for the lower bound shows $a' = a$. We conclude that $I_X = I_Y$.
+</li>
+</ol>
+
 # 4.
 Suppose that $X, Y$ are smooth vector fields on $M$ with associated flows $\theta: \mathbb{R} \times M \rightarrow M$ and $\eta: \mathbb{R} \times M \rightarrow M$. Show that $X, Y$ commute if and only if $\theta_t \circ \eta_s=\eta_s \circ \theta_t$ for all $t, s \in \mathbb{R}$.
 
