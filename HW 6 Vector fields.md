@@ -124,7 +124,19 @@ $[X, Y]_p = \lim_{t \to 0} \frac{X_p - X_p}{t} = 0$.
 
 ($\Rightarrow$) Assume that $[X, Y] = 0$. We want to show that $\theta_t \circ \eta_s = \eta_s \circ \theta_t$ for all $t, s \in \mathbb{R}$.
 
-Consider the map $F(t, s, p) = \theta_t(\eta_s(p))$. We will show that $F(t, s, p)$ satisfies the same differential equations as $\eta_s(\theta_t(p))$.
+Consider the map $F(t, s, p) = \theta_t(\eta_s(p))$. We will show that $F(t, s, p)$ satisfies the same partial differential equations and initial conditions as $G(t, s, p) = \eta_s(\theta_t(p))$.
+
+First, we compute the partial derivatives of $F$:
+
+$\frac{\partial F}{\partial t}(t, s, p) = X_{F(t, s, p)}$,
+
+$\frac{\partial F}{\partial s}(t, s, p) = d\theta_t(Y_{\eta_s(p)})$.
+
+Next, we compute the partial derivatives of $G$:
+
+$\frac{\partial G}{\partial t}(t, s, p) = d\eta_s(X_{\theta_t(p)})$,
+
+$\frac{\partial G}{\partial s}(t, s, p) = Y_{G(t, s, p)}$.
 
 # 5. (Lee 9-17b)
 Define two vector fields on $\mathbb{R}^2$ by
