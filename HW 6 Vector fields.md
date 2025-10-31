@@ -163,17 +163,7 @@ $\theta_t(x, y) = ((x + 1)e^t - 1, (y + 1)e^{-t} - 1)$.
 
 Let $\eta_s(x, y)$ be the flow of $Y$. Then $\frac{d}{ds}\eta_s(x, y) = Y(\eta_s(x, y))$.
 
-Let $\eta_s(x, y) = (u(s), v(s))$. Then:
-
-$\frac{du}{ds} = u + 1$,
-
-$\frac{dv}{ds} = v + 1$.
-
-Solving these ODEs:
-
-$\frac{du}{ds} = u + 1 \Rightarrow \frac{du}{u + 1} = ds \Rightarrow \ln|u + 1| = s + D_1 \Rightarrow u(s) = D_2 e^s - 1$.
-
-$\frac{dv}{ds} = v + 1 \Rightarrow \frac{dv}{v + 1} = ds \Rightarrow \ln|v + 1| = s + D_3 \Rightarrow v(s) = D_4 e^s - 1$.
+Let $\eta_s(x, y) = (\tilde{x}(s), \tilde{y}(s))$. Then:\n\n$\frac{d\tilde{x}}{ds} = \tilde{x} + 1$,\n\n$\frac{d\tilde{y}}{ds} = \tilde{y} + 1$.\n\nSolving these ODEs:\n\n$\frac{d\tilde{x}}{ds} = \tilde{x} + 1 \Rightarrow \frac{d\tilde{x}}{\tilde{x} + 1} = ds \Rightarrow \ln|\tilde{x} + 1| = s + D_1 \Rightarrow \tilde{x}(s) = D_2 e^s - 1$.\n\n$\frac{d\tilde{y}}{ds} = \tilde{y} + 1 \Rightarrow \frac{d\tilde{y}}{\tilde{y} + 1} = ds \Rightarrow \ln|\tilde{y} + 1| = s + D_3 \Rightarrow \tilde{y}(s) = D_4 e^s - 1$.
 
 Therefore, the flow is $\eta_s(x, y) = (D_2 e^s - 1, D_4 e^s - 1)$.
 
