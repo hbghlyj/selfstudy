@@ -11,7 +11,7 @@ To show that $X$ is Hausdorff, let $x, y \in X$ with $x \neq y$. (If no such $x,
 
 For each $`x_k \in p^{-1}(U)=\bigsqcup_\alpha U_\alpha`$, let $U_k$ denote an open set in the union for which $x_k \in U_k$. Define $`V_j`$ for $`y_j \in \bigsqcup_\alpha V_\alpha`$ analogously. Since $U_k, \widetilde{U_k}$ are open in $\widetilde{X}$, $`U_k':=\widetilde{U_k} \cap U_k`$ is a neighborhood of $x_k$ open in $\widetilde{X}$ (and $V_j':=\widetilde{V}_j \cap V_j$ is an open neighborhood of $y_j$ as well). Also, $\widetilde{U_k} \cap \widetilde{V_j}$ are disjoint for all pairs of $k$ and $j$, so $U_k' \cap V_j'=\emptyset$ for all $k, j$ as well.
 
-Since each $p: U_k \rightarrow U$ is a homeomorphism (so $p^{-1}: U \rightarrow U_k$ is continuous) and $U_k'=U_k \cap \widetilde{U_k}$ is open in $U_k, p\left(U_k'\right)$ is open in $U$. Similarly, each $p\left(V_j'\right)$ is open in $U$. Since $p\left(U_k'\right), p\left(V_j'\right) \subseteq U$ and $p\left(U_k'\right), p\left(V_j'\right)$ are open in $U$, by the subspace topology $p\left(U_k'\right), p\left(V_j'\right)$ are open in $X$. Consider
+Since each $p: U_k \rightarrow U$ is a homeomorphism and $U_k'=U_k \cap \widetilde{U_k}$ is open in $U_k$, $p\left(U_k'\right)$ is open in $U$ and therefore open in $X$. Similarly, each $p\left(V_j'\right)$ is open in $V$ and therefore open in $X$. Consider
 
 $\widetilde{U}:=\bigcap_k p\left(U_k'\right) \quad \text { and } \quad \widetilde{V}:=\bigcap_j p\left(V_j'\right)$
 
