@@ -175,6 +175,8 @@ $\frac{d\tilde{x}}{ds} = \tilde{x} + 1 \Rightarrow \frac{d\tilde{x}}{\tilde{x} +
 
 $\frac{d\tilde{y}}{ds} = \tilde{y} + 1 \Rightarrow \frac{d\tilde{y}}{\tilde{y} + 1} = ds \Rightarrow \ln|\tilde{y} + 1| = s + D_3 \Rightarrow \tilde{y}(s) = D_4 e^s - 1$.
 
+[absolute value takes positive sign, in a neighborhood of $(1, 0)$, where $x+1 > 0$ and $y+1 > 0$]
+
 Therefore, the flow is $\eta_s(x, y) = (D_2 e^s - 1, D_4 e^s - 1)$.
 
 To find the constants $D_2$ and $D_4$, we use the initial conditions $\eta_0(x, y) = (x, y)$:
