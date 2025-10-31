@@ -1,11 +1,11 @@
 # 3
-Let $p: \tilde{X} \to X$ be a covering space with $p^{-1}(x)$ finite and nonempty for all $x \in X$.
+Let $p: \widetilde{X} \to X$ be a covering space with $p^{-1}(x)$ finite and nonempty for all $x \in X$.
 
-Show that $\tilde{X}$ is compact Hausdorff iff $X$ is compact Hausdorff.
+Show that $\widetilde{X}$ is compact Hausdorff iff $X$ is compact Hausdorff.
 
 Proof
 
-* **($\Rightarrow$)** Suppose $\tilde{X}$ is compact Hausdorff. Since $p^{-1}(\{x\}) \neq \emptyset$ for all $x \in X, p$ is surjective. Since the continuous image of compact sets is compact, and $\widetilde{X}$ is compact, we have that $p(\widetilde{X})=X$ is compact as well. We now show that $X$ is also Hausdorff.
+* **($\Rightarrow$)** Suppose $\widetilde{X}$ is compact Hausdorff. Since $p^{-1}(\{x\}) \neq \emptyset$ for all $x \in X, p$ is surjective. Since the continuous image of compact sets is compact, and $\widetilde{X}$ is compact, we have that $p(\widetilde{X})=X$ is compact as well. We now show that $X$ is also Hausdorff.
 
 To show that $X$ is Hausdorff, let $x, y \in X$ with $x \neq y$. (If no such $x, y \in X$ exist, $X$ is trivially Hausdorff.) By definition of a covering space, there exist open neighborhoods $U$ and $V$ of $x$ and $y$ respectively such that $p^{-1}(U)=\bigsqcup_\alpha U_\alpha$ and $p^{-1}(V)=\bigsqcup_\alpha V_\alpha$ with the $U_\alpha, V_\alpha$ open in $\widetilde{X}$ and $p$ mapping each $U_\alpha, V_\alpha$ homeomorphically onto $U$ and $V$. By hypothesis, $`p^{-1}(\{x\}):=\left\{x_k\right\}`$ and $`p^{-1}(\{y\}):=\left\{y_j\right\}`$ are nonempty and finite. Hence, there are finitely many pairs $`\left(x_k, y_j\right)`$. For each pair $`\left(x_k, y_j\right)`$, since $\widetilde{X}$ is Hausdorff, there exist open neighborhoods $`\widetilde{U_{k j}}`$ of $`x_k`$ and $`\widetilde{V_{k j}}`$ of $y_j$ such that $`\widetilde{U}_{k j} \cap \widetilde{V}_{k j}=\emptyset`$. Let $`\widetilde{U}_k=\cap_j \widetilde{U}_{k j}`$ and $`\widetilde{V}_j=\cap_k \widetilde{V_{k j}}`$. Since these intersections are finite, $`\widetilde{U_k}`$ and $`\widetilde{V}_j`$ are open neighborhood of $`x_k`$ and $`y_j`$ respectively such that $`\widetilde{U_k} \cap \widetilde{V_j}=\emptyset`$ for all $k$ and $j$.
 
@@ -17,9 +17,9 @@ $\widetilde{U}:=\bigcap_k p\left(U_k'\right) \quad \text { and } \quad \widetild
 
 which are finite intersections of open sets (and hence open). Since each $U_k'$ and $V_j'$ are neighborhoods of some $x_k, y_j$ such that $p\left(x_k\right)=x, p\left(y_j\right)=y$, we have that $x \in p\left(U_k'\right)$ and $y \in p\left(V_j'\right)$ for all $k$ and $j$. Thus, the intersections $\widetilde{U}$ and $\widetilde{V}$ are neighborhoods open in $X$ of $x$ and $y$ respectively.
 
-Finally, suppose $\widetilde{U} \cap \widetilde{V} \neq \emptyset$, so $\exists z \in \bigcap_{k, j} p\left(U_k'\right) \cap p\left(V_j'\right)$. Then $\exists z_k \in U_k'$ such that $p\left(z_k\right)=z$. However, since $z \in V$ we have that $z_k \in p^{-1}(V)=\bigsqcup_j V_j$. So $z_k \in V_j$ for some $j$. Also, since $z \in p\left(V_j'\right)$ for that particular $j, \exists z_j \in V_j'$ such that $p\left(z_j\right)=z=p\left(z_k\right)$. However, $z_j \in V_j' \subseteq V_j$, meaning both $z_k$ and $z_j$ are elements of $V_j$. Since $p$ is homeomorphic (injective in particular) on $V_j$ and $p\left(z_k\right)=p\left(z_j\right)$, we have that $z_k=z_j$. But $z_k \in U_k'$ and $z_j \in V_j'$, so $z_k = z_j$ would be an element of both $U_k'$ and $V_j'$. This contradicts $U_k' \cap V_j'=\emptyset$. Thus $\widetilde{U} \cap \widetilde{V}=\emptyset$. Therefore, we have found open disjoint neighborhoods $\widetilde{U}$ and $\tilde{V}$ of $x$ and $y$ respectively, meaning $X$ is Hausdorff.
+Finally, suppose $\widetilde{U} \cap \widetilde{V} \neq \emptyset$, so $\exists z \in \bigcap_{k, j} p\left(U_k'\right) \cap p\left(V_j'\right)$. Then $\exists z_k \in U_k'$ such that $p\left(z_k\right)=z$. However, since $z \in V$ we have that $z_k \in p^{-1}(V)=\bigsqcup_j V_j$. So $z_k \in V_j$ for some $j$. Also, since $z \in p\left(V_j'\right)$ for that particular $j, \exists z_j \in V_j'$ such that $p\left(z_j\right)=z=p\left(z_k\right)$. However, $z_j \in V_j' \subseteq V_j$, meaning both $z_k$ and $z_j$ are elements of $V_j$. Since $p$ is homeomorphic (injective in particular) on $V_j$ and $p\left(z_k\right)=p\left(z_j\right)$, we have that $z_k=z_j$. But $z_k \in U_k'$ and $z_j \in V_j'$, so $z_k = z_j$ would be an element of both $U_k'$ and $V_j'$. This contradicts $U_k' \cap V_j'=\emptyset$. Thus $\widetilde{U} \cap \widetilde{V}=\emptyset$. Therefore, we have found open disjoint neighborhoods $\widetilde{U}$ and $\widetilde{V}$ of $x$ and $y$ respectively, meaning $X$ is Hausdorff.
 
-* **($\Leftarrow$)** Conversely, suppose $X$ is compact Hausdorff. First, we show $\tilde{X}$ is Hausdorff. Let $\tilde{x}_1, \tilde{x}_2 \in \tilde{X}$ be distinct points. If $p(\tilde{x}_1) \neq p(\tilde{x}_2)$, since $X$ is Hausdorff, their images have disjoint open neighborhoods $U_1, U_2$. Then $p^{-1}(U_1)$ and $p^{-1}(U_2)$ are disjoint open neighborhoods of $\tilde{x}_1$ and $\tilde{x}_2$. If $p(\tilde{x}_1) = p(\tilde{x}_2)$, they lie in distinct sheets over an evenly covered neighborhood of their image, which provides disjoint neighborhoods. Thus $\tilde{X}$ is Hausdorff.
+* **($\Leftarrow$)** Conversely, suppose $X$ is compact Hausdorff. First, we show $\widetilde{X}$ is Hausdorff. Let $\widetilde{x}_1, \widetilde{x}_2 \in \widetilde{X}$ be distinct points. If $p(\widetilde{x}_1) \neq p(\widetilde{x}_2)$, since $X$ is Hausdorff, their images have disjoint open neighborhoods $U_1, U_2$. Then $p^{-1}(U_1)$ and $p^{-1}(U_2)$ are disjoint open neighborhoods of $\widetilde{x}_1$ and $\widetilde{x}_2$. If $p(\widetilde{x}_1) = p(\widetilde{x}_2)$, they lie in distinct sheets over an evenly covered neighborhood of their image, which provides disjoint neighborhoods. Thus $\widetilde{X}$ is Hausdorff.
 
 Now we prove that $`\widetilde{X}`$ is compact. Each $x \in X$ has an evenly covered open neighborhood $U_x$, so $`\{U_x\}_{x \in X}`$ is an open cover of $X$. Since $X$ is compact, this cover has a finite subcover $`\{U_j\}`$. As a compact Hausdorff space, $X$ is normal, so we can find another finite open cover $`\{V_j\}`$ of $X$ such that $`\overline{V_j} \subseteq U_j`$. Each $`\overline{V_j}`$ is a closed subset of the compact space $X$, and is therefore compact. For each $j$, $`p^{-1}(\overline{V_j})`$ is compact. This is because $`p^{-1}(U_j)`$ is a disjoint union of a finite number of sheets, each homeomorphic to $U_j$. The restriction of $p$ to each of these sheets is a homeomorphism, so the preimage of the compact set $`\overline{V_j}`$ in each sheet is compact. The preimage $`p^{-1}(\overline{V_j})`$ is the union of the preimages of $`\overline{V_j}`$ in each sheet. Since there are finitely many sheets, $`p^{-1}(\overline{V_j})`$ is a finite union of compact sets, hence compact. Since $`\{\overline{V_j}\}`$ covers $X$, the collection $`\{p^{-1}(\overline{V_j})\}`$ covers $`\widetilde{X}`$. Thus, $`\widetilde{X} = \bigcup_j p^{-1}(\overline{V_j})`$ is a finite union of compact sets, which implies $`\widetilde{X}`$ is compact.
 
@@ -30,13 +30,13 @@ Do the same when $X$ is the union of a sphere and a circle intersecting it in tw
 
 Solution
 
-Consider $\tilde{X}$ which consists of infinitely many copies of $S^2$, stacked vertically in a line, with the south pole of one connected to the north pole of the previous.
+Consider $\widetilde{X}$ which consists of infinitely many copies of $S^2$, stacked vertically in a line, with the south pole of one connected to the north pole of the previous.
 
-The space $\tilde{X}$ is simply-connected because any loop within it is contained in a finite chain of spheres, which is a simply-connected subspace.
+The space $\widetilde{X}$ is simply-connected because any loop within it is contained in a finite chain of spheres, which is a simply-connected subspace.
 
 ![](https://i.upmath.me/svgb/hZNBi9swEIXv_hVz2ILdxCYJhB4CC6U59tZTqfagSON4WHvkynJCavzfi6SEON7A3qxB75uZ5ydxwCPx4Oj9X0vK9RbHBOAL7LEkRnAVAvfNAS2YErq2QotdAiA0loL75lesDNsPqhNaR0rWoKlzkhXCAd0ZkeeUeNxT54bNmATMT2NacAa0lecAu0pAsgZlmFE54iPUxJFTGotSVSAIiGFYL4uiWE7mG2FIADz6h6xVX0sXh7zkyhiriX2hNDYUFbKL-95bB7Voj2UjXdWha6SyZhCXcUgF5evsaz7ZY7z22j-OHxlhp3S1BHHJQJFVNUK6KrbZbq7Cv710xk5l-arYRmVReCOcNXUXyptQ9x9ZcCl9LBVFaBK0uzvxj5Zdhfrtc_LiI3nxhDzfYf6z4EyuAmmtOXdxDCq5bwS9rsPxmcmtxdPvaPTmmdG3XfLXJbiK1Pvb1d-FtxXyPB4DJr87LUpKAK6J-641aOM6nzpiTeqWEOKSmBwCS_84bqlQlST2yWOjEaQLLVbFt20Gw4s4edTLuJtfGPJ0Ekofm8kykAfA-EgQyPrhdf4H)
 
-The covering projection $p: \tilde{X} \to X$ maps each sphere $S^2_n$ to the sphere in $X$. In $\tilde{X}$, each sphere $S^2_n$ is attached along two distinguished points:
+The covering projection $p: \widetilde{X} \to X$ maps each sphere $S^2_n$ to the sphere in $X$. In $\widetilde{X}$, each sphere $S^2_n$ is attached along two distinguished points:
 
 - its “north pole” $\rightarrow$ the vertex $n$,
 
@@ -44,7 +44,7 @@ The covering projection $p: \tilde{X} \to X$ maps each sphere $S^2_n$ to the sph
 
 The interval $(n,n+1)$ between these vertices is the preimage of the diameter.
 
-To see that $p$ is a covering map, note that for any point $x$ in $S^2$ that is not the north or south pole, there exists an open neighborhood $U$ of $x$ in $S^2$ such that $p^{-1}(U)$ is a disjoint union of open sets in $\tilde{X}$, each of which is homeomorphic to $U$. For the north and south poles, we can take small neighborhoods around them that do not include the other pole of $S^2$, and similarly, their preimages in $\tilde{X}$ will be a disjoint union of open sets homeomorphic to these neighborhoods. Thus, $p$ satisfies the definition of a covering map.
+To see that $p$ is a covering map, note that for any point $x$ in $S^2$ that is not the north or south pole, there exists an open neighborhood $U$ of $x$ in $S^2$ such that $p^{-1}(U)$ is a disjoint union of open sets in $\widetilde{X}$, each of which is homeomorphic to $U$. For the north and south poles, we can take small neighborhoods around them that do not include the other pole of $S^2$, and similarly, their preimages in $\widetilde{X}$ will be a disjoint union of open sets homeomorphic to these neighborhoods. Thus, $p$ satisfies the definition of a covering map.
 
 For the second part of the problem (a sphere and a circle intersecting it in two points), take the universal cover of $S^1 \vee S^1$ (an infinite 4-valent tree) and attach a sphere to each vertex.
 
@@ -53,43 +53,43 @@ For the second part of the problem (a sphere and a circle intersecting it in two
 The covering map takes each sphere onto the sphere in $X$, and the line segments onto the two arcs of the circle in $X$. This is a covering space for reasons analogous to the previous example. Moreover, the space is simply connected since contracting the line segments yields an infinite wedge of spheres. 
 
 # 8
-Let $\tilde{X}$ and $\tilde{Y}$ be simply-connected covering spaces of the path-connected, locally path-connected spaces $X$ and $Y$.
+Let $\widetilde{X}$ and $\widetilde{Y}$ be simply-connected covering spaces of the path-connected, locally path-connected spaces $X$ and $Y$.
 
-Show that if $X \simeq Y$ then $\tilde{X} \simeq \tilde{Y}$. [Exercise 11 in Chapter 0 may be helpful.]
+Show that if $X \simeq Y$ then $\widetilde{X} \simeq \widetilde{Y}$. [Exercise 11 in Chapter 0 may be helpful.]
 
 Proof
 
-Let $f\colon X \to Y$ and $g\colon Y \to X$ be maps with $g \circ f \simeq 1_X$ and $f \circ g \simeq 1_Y$.  Label the covering maps as $p\colon \tilde X \to X$ and $q\colon \tilde Y \to Y$.  Choose a basepoint $\tilde x_0 \in \tilde X$, let 
+Let $f\colon X \to Y$ and $g\colon Y \to X$ be maps with $g \circ f \simeq 1_X$ and $f \circ g \simeq 1_Y$.  Label the covering maps as $p\colon \widetilde X \to X$ and $q\colon \widetilde Y \to Y$.  Choose a basepoint $\widetilde x_0 \in \widetilde X$, let 
 
-$x_0 = p(\tilde x_0), \qquad y_0 = f(x_0), \qquad x_0' = g(y_0), \qquad y_0' = f(x_0'),$
+$x_0 = p(\widetilde x_0), \qquad y_0 = f(x_0), \qquad x_0' = g(y_0), \qquad y_0' = f(x_0'),$
 
 and choose
 
-$\tilde y_0 \in q^{-1}(y_0), \qquad \tilde x_0' \in p^{-1}(x_0'), \qquad \tilde y_0' \in q^{-1}(y_0').$
+$\widetilde y_0 \in q^{-1}(y_0), \qquad \widetilde x_0' \in p^{-1}(x_0'), \qquad \widetilde y_0' \in q^{-1}(y_0').$
 
-We want to lift $f \circ p$ through $q$ to get a map $\tilde f$ as in the diagram
+We want to lift $f \circ p$ through $q$ to get a map $\widetilde f$ as in the diagram
 
 ![](https://i.upmath.me/svgb/i6mozE0sKcqsqObSiCnJzElJVYjQUYCyKuINNBViEouiU2LjC8CMopTYuOq0gloQx6FaT8-uNrooNq4aqj6tlktNAWZMJNyYSiRjChHGFKbjMCYd2RgU16iT5hx1nO5BGFTIFRPDpRGhA_drUWxcGkhbpE4lklA6SAisSh2LMnVNrloA)
 
-Because $\pi_1(\tilde X, \tilde x_0) = 0$, we have
+Because $\pi_1(\widetilde X, \widetilde x_0) = 0$, we have
 
-$f_* p_* \pi_1(\tilde X, \tilde x_0) \subset q_* \pi_1(\tilde Y, \tilde y_0),$
+$f_* p_* \pi_1(\widetilde X, \widetilde x_0) \subset q_* \pi_1(\widetilde Y, \widetilde y_0),$
 
-so the lifting criterion (Proposition 1.33) gives such an $\tilde f$.  Similarly we get $\tilde g$ and $\tilde f'$ as in the diagram. 
+so the lifting criterion (Proposition 1.33) gives such an $\widetilde f$.  Similarly we get $\widetilde g$ and $\widetilde f'$ as in the diagram. 
 
-The map $\tilde g \circ \tilde f$ does not preserve the basepoint, so it is not generally homotopic to the identity map. Instead, we will show that it is homotopic to a deck transformation, which will be good enough.
+The map $\widetilde g \circ \widetilde f$ does not preserve the basepoint, so it is not generally homotopic to the identity map. Instead, we will show that it is homotopic to a deck transformation, which will be good enough.
 
-We have $g \circ f \simeq 1_X$, so $g \circ f \circ p \simeq p$. Let $F\colon \tilde X \times I \to X$ be a homotopy from $g \circ f \circ p$ to $p$.
+We have $g \circ f \simeq 1_X$, so $g \circ f \circ p \simeq p$. Let $F\colon \widetilde X \times I \to X$ be a homotopy from $g \circ f \circ p$ to $p$.
 
-The map $\tilde g \circ \tilde f$ lifts $g \circ f \circ p$, so by the homotopy lifting property (Proposition 1.30), there is a unique lift $\tilde F\colon \tilde X \times I \to \tilde X$ of $F$ such that $\tilde F(-,0) = \tilde g \circ \tilde f$.  Let $\phi = \tilde F(-,1)\colon \tilde X \to \tilde X$.  Then $\phi$ lifts $p\colon \tilde X \to X$, so it is a deck transformation. To see this, note that by Proposition 1.37 there is a deck transformation taking $\tilde x_0$ to $\phi(\tilde x_0)$. Since this deck transformation and $\phi$ are both lifts of $p$ that agree at a point, they must be equal by the unique lifting property (Proposition 1.34). In particular, $\phi$ is a homeomorphism.
+The map $\widetilde g \circ \widetilde f$ lifts $g \circ f \circ p$, so by the homotopy lifting property (Proposition 1.30), there is a unique lift $\widetilde F\colon \widetilde X \times I \to \widetilde X$ of $F$ such that $\widetilde F(-,0) = \widetilde g \circ \widetilde f$.  Let $\phi = \widetilde F(-,1)\colon \widetilde X \to \widetilde X$.  Then $\phi$ lifts $p\colon \widetilde X \to X$, so it is a deck transformation. To see this, note that by Proposition 1.37 there is a deck transformation taking $\widetilde x_0$ to $\phi(\widetilde x_0)$. Since this deck transformation and $\phi$ are both lifts of $p$ that agree at a point, they must be equal by the unique lifting property (Proposition 1.34). In particular, $\phi$ is a homeomorphism.
 
-Similarly, $\tilde f' \circ \tilde g$ is homotopic to a deck transformation $\psi\colon \tilde Y \to \tilde Y$.
+Similarly, $\widetilde f' \circ \widetilde g$ is homotopic to a deck transformation $\psi\colon \widetilde Y \to \widetilde Y$.
 
-From $\tilde g \circ \tilde f \simeq \phi$  and $\tilde f' \circ \tilde g \simeq \psi$ we get
+From $\widetilde g \circ \widetilde f \simeq \phi$  and $\widetilde f' \circ \widetilde g \simeq \psi$ we get
 
-$\tilde g \circ (\tilde f \circ \phi^{-1}) \simeq 1_{\tilde X} \qquad \text{and} \qquad (\psi^{-1} \circ \tilde f') \circ \tilde g \simeq 1_{\tilde Y},$
+$\widetilde g \circ (\widetilde f \circ \phi^{-1}) \simeq 1_{\widetilde X} \qquad \text{and} \qquad (\psi^{-1} \circ \widetilde f') \circ \widetilde g \simeq 1_{\widetilde Y},$
 
-so $\tilde g$ is a homotopy equivalence by Chapter 0 Exercise 11.
+so $\widetilde g$ is a homotopy equivalence by Chapter 0 Exercise 11.
 
 # 12
 Let $a$ and $b$ be the generators of $\pi_1(S^1 \vee S^1)$ corresponding to the two $S^1$ summands.
@@ -107,19 +107,19 @@ $D_4 = \langle r,s \mid r^4 = s^2 = 1, rs = sr^{-1} \rangle,$
 
 where $a \mapsto s$ and $b \mapsto sr$.  So the quotient has order 8.
 
-The subgroup in question is the normal subgroup generated by $a^2, b^2$, and $(ab)^4$. Since the quotient group has order 8, this subgroup has index 8. We therefore seek a normal, 8-sheeted cover $p\colon \tilde X \to S^1 \vee S^1$ such that the image of $p_*$ is this subgroup; it will necessarily be unique up to isomorphism.
+The subgroup in question is the normal subgroup generated by $a^2, b^2$, and $(ab)^4$. Since the quotient group has order 8, this subgroup has index 8. We therefore seek a normal, 8-sheeted cover $p\colon \widetilde X \to S^1 \vee S^1$ such that the image of $p_*$ is this subgroup; it will necessarily be unique up to isomorphism.
 
 ![](https://i.upmath.me/svgb/pZTPUtswEMbvPMV3gAkpTkooTCnUXFrOfYA4ZdbSOtlBljyynD94_O4dOSFt6AFKjyvv9-3uTytndUnGZDnPxbZBHp8qUaHx3E2PAGDJPvD647gOG8Npq8Qrwwm0p1WCQoxJc0PqMYFYyx41V-l5FRKUYqVsStTyxOllFbqkt6MH1nPe243uktw0nCAsJJrUC-cDW9ylk2jyHH6N4c4h_8vBs36bwdHsqLc4wWg0wncuxDKu-xFFcQ2xIAunAs2dJQNDG9eEmNzLssJ5JrVAJjG1PU_G43HyuUPbf-5TrNM83TKb4XSZyRAUcPrlHCNcXn3IBDf4pMoh2u62V3UHLXlagUxgbymInWNAA5DVGOQDxLFrkHeN1QgLRsVeSg7s9x2e4D72p5y1rII4C6lBqEg8XIGcbQB571Y1gotwVpj_vEAKfuuAJ_hGRjWGAvc9iNW8jt4xsLwOu4WJ-nikNsrwbzzVvCgpLIJvrKLAJSnv2izqpGtLp08zOZskuB7usPQiKZzWmewPtn380Bp14Oqm30XQnhEK70osHyTOuHxo5WzSHWizKJhu9yjB6O75ooKb5mw1DBchnVzN0F9mKXpFmwTUBJcg8DqknvUM7XF-3EVl3_3w9vUS28T3lvmzRMam5hc87pdsD4DYfnv-gQi9n0h8xLFXeg0J_R-SF3UOmBSye1AZW33wJ_sF)
 
 # 17
-Given a group $G$ and a normal subgroup $N$, show that there exists a normal covering space $\tilde{X} \to X$ with $\pi_1(X) \cong G, \pi_1(\tilde{X}) \cong N$, and deck transformation group $G(\tilde{X}) \cong G / N$.
+Given a group $G$ and a normal subgroup $N$, show that there exists a normal covering space $\widetilde{X} \to X$ with $\pi_1(X) \cong G, \pi_1(\widetilde{X}) \cong N$, and deck transformation group $G(\widetilde{X}) \cong G / N$.
 
 Proof
 
-By Corollary 1.28, there exists a 2-dimensional cell complex $X$ with $\pi_1(X) \cong G$. As a cell complex, $X$ is path-connected, locally path-connected, and semilocally simply-connected. We can therefore apply Proposition 1.36, which guarantees a covering space $p: \tilde{X} \to X$ such that $`p_*(\pi_1(\tilde{X})) = N`$. For any covering space, the induced homomorphism $`p_*`$ is injective, so $`\pi_1(\tilde{X}) \cong N`$. Since $N$ is a normal subgroup of $G$, Proposition 1.39 implies the covering is normal and the deck transformation group $G(\tilde{X})$ is isomorphic to the quotient group $G/N$.
+By Corollary 1.28, there exists a 2-dimensional cell complex $X$ with $\pi_1(X) \cong G$. As a cell complex, $X$ is path-connected, locally path-connected, and semilocally simply-connected. We can therefore apply Proposition 1.36, which guarantees a covering space $p: \widetilde{X} \to X$ such that $`p_*(\pi_1(\widetilde{X})) = N`$. For any covering space, the induced homomorphism $`p_*`$ is injective, so $`\pi_1(\widetilde{X}) \cong N`$. Since $N$ is a normal subgroup of $G$, Proposition 1.39 implies the covering is normal and the deck transformation group $G(\widetilde{X})$ is isomorphic to the quotient group $G/N$.
 
 # 18
-For a path-connected, locally path-connected, and semilocally simply-connected space $X$, call a path-connected covering space $\tilde{X} \to X$ abelian if it is normal and has abelian deck transformation group.
+For a path-connected, locally path-connected, and semilocally simply-connected space $X$, call a path-connected covering space $\widetilde{X} \to X$ abelian if it is normal and has abelian deck transformation group.
 
 Show that $X$ has an abelian covering space that is a covering space of every other abelian covering space of $X$, and that such a 'universal' abelian covering space is unique up to isomorphism. Describe this covering space explicitly for $X=S^1 \vee S^1$ and $X=S^1 \vee S^1 \vee S^1$.
 
@@ -129,23 +129,23 @@ Since the space $X$ is path-connected, locally path-connected, and semilocally s
 
 Let $[\pi_1(X), \pi_1(X)]$ be the commutator subgroup of $\pi_1(X)$. This is a normal subgroup.
 
-By Proposition 1.36, there is a covering space $p: \tilde{X} \to X$ such that $p_*(\pi_1(\tilde{X}))=[\pi_1(X), \pi_1(X)]$.
+By Proposition 1.36, there is a covering space $p: \widetilde{X} \to X$ such that $p_*(\pi_1(\widetilde{X}))=[\pi_1(X), \pi_1(X)]$.
 
-Since the subgroup is normal, by Proposition 1.39, this covering is normal and its deck transformation group is $G(\tilde{X}) \cong \pi_1(X) / [\pi_1(X), \pi_1(X)]$, which is the abelianization of $\pi_1(X)$.
+Since the subgroup is normal, by Proposition 1.39, this covering is normal and its deck transformation group is $G(\widetilde{X}) \cong \pi_1(X) / [\pi_1(X), \pi_1(X)]$, which is the abelianization of $\pi_1(X)$.
 
-Thus, $\tilde{X}$ is an abelian covering space.
+Thus, $\widetilde{X}$ is an abelian covering space.
 
-To show that $\tilde{X}$ is universal, let $p': X' \to X$ be any other path-connected abelian covering space.
+To show that $\widetilde{X}$ is universal, let $p': X' \to X$ be any other path-connected abelian covering space.
 
 Its deck transformation group $`G(X') \cong \pi_1(X) / p'_*(\pi_1(X'))`$ is abelian.
 
 This implies that the subgroup $`p'_*(\pi_1(X'))`$ must contain the commutator subgroup $`[\pi_1(X), \pi_1(X)]`$.
 
-We have $`p_*(\pi_1(\tilde{X})) = [\pi_1(X), \pi_1(X)] \subset p'_*(\pi_1(X'))`$.
+We have $`p_*(\pi_1(\widetilde{X})) = [\pi_1(X), \pi_1(X)] \subset p'_*(\pi_1(X'))`$.
 
-By the lifting criterion (Proposition 1.34), there is a covering map $q: \tilde{X} \to X'$ such that $p' \circ q = p$.
+By the lifting criterion (Proposition 1.34), there is a covering map $q: \widetilde{X} \to X'$ such that $p' \circ q = p$.
 
-This shows that $\tilde{X}$ is a covering space of $X'$, and is therefore universal. Uniqueness up to isomorphism is a standard result for such universal objects.
+This shows that $\widetilde{X}$ is a covering space of $X'$, and is therefore universal. Uniqueness up to isomorphism is a standard result for such universal objects.
 
 * **For $X=S^1 \vee S^1$:**
   The fundamental group is $\pi_1(X) \cong F_2$, the free group on two generators. The universal abelian cover is the covering space corresponding to the commutator subgroup $`[F_2, F_2]`$. The deck transformation group is $`F_2/[F_2, F_2] \cong \mathbb{Z}^2`$. The covering space itself is the Cayley graph of $\mathbb{Z}^2$, which is the infinite grid of points $(m,n) \in \mathbb{Z}^2$ in the plane, with edges connecting adjacent integer points.
@@ -193,7 +193,7 @@ By construction, $U \cap g(U) = \varnothing$ for all $g \in S$ with $g \neq e$. 
 The restriction of $p$ to each set $g(U)$ is a homeomorphism onto its image $p(U)$. Therefore, $p^{-1}(p(U))$ is a disjoint union of open sets, each homeomorphic to $p(U)$. Since $U$ itself is one of these sets (for $g=e$), all are homeomorphic to $U$.
 
 # 27
-For a universal cover $p: \tilde{X} \to X$ there are two actions of $\pi_1(X, x_0)$ on the fiber $p^{-1}(x_0)$. The first is the action defined on page 69 in which the element of $\pi_1(X, x_0)$ determined by a loop $\gamma$ sends $\tilde{\gamma}(1)$ to $\tilde{\gamma}(0)$ for each lift $\tilde{\gamma}$ of $\gamma$ to $\tilde{X}$, and the second is the action given by restricting deck transformations to the fiber (see Proposition 1.39). Show that these two actions are different when $X=S^1 \vee S^1$ and when $X=S^1 \times S^1$ and determine when the two actions are the same. [This is a revised version of the original form of this exercise.]
+For a universal cover $p: \widetilde{X} \to X$ there are two actions of $\pi_1(X, x_0)$ on the fiber $p^{-1}(x_0)$. The first is the action defined on page 69 in which the element of $\pi_1(X, x_0)$ determined by a loop $\gamma$ sends $\widetilde{\gamma}(1)$ to $\widetilde{\gamma}(0)$ for each lift $\widetilde{\gamma}$ of $\gamma$ to $\widetilde{X}$, and the second is the action given by restricting deck transformations to the fiber (see Proposition 1.39). Show that these two actions are different when $X=S^1 \vee S^1$ and when $X=S^1 \times S^1$ and determine when the two actions are the same. [This is a revised version of the original form of this exercise.]
 
 Proof
 
