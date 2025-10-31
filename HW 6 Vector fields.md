@@ -106,6 +106,16 @@ Therefore, the assumption $b' < b$ must be false. This means $b' = b$. A similar
 # 4.
 Suppose that $X, Y$ are smooth vector fields on $M$ with associated flows $\theta: \mathbb{R} \times M \rightarrow M$ and $\eta: \mathbb{R} \times M \rightarrow M$. Show that $X, Y$ commute if and only if $\theta_t \circ \eta_s=\eta_s \circ \theta_t$ for all $t, s \in \mathbb{R}$.
 
+Proof
+
+For any $p \in M$, we have:
+
+$\frac{d}{ds}\Big|_{s=0} \theta_t(\eta_s(p)) = d\theta_t\left( \frac{d}{ds}\Big|_{s=0} \eta_s(p) \right) = d\theta_t(Y_p) = X(\theta_t(p))$.
+
+$\frac{d}{dt}\Big|_{t=0} \eta_s(\theta_t(p)) = d\eta_s\left( \frac{d}{dt}\Big|_{t=0} \theta_t(p) \right) = d\eta_s(X_p) = Y(\eta_s(p))$.
+
+($\Rightarrow$) Suppose that $X$ and $Y$ commute, i.e. $[X, Y] = 0$. We want to show that $\theta_t \circ \eta_s = \eta_s \circ \theta_t$ for all $t, s \in \mathbb{R}$. Define the map $\phi(t, s, p) = \theta_t(\eta_s(p))$. We will show that $\phi(t, s, p)$ satisfies the same differential equations as $\eta_s(\theta_t(p))$.
+
 # 5. (Lee 9-17b)
 Define two vector fields on $\mathbb{R}^2$ by
 
