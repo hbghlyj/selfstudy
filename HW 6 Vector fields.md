@@ -137,7 +137,7 @@ Thus, $X(Y^2) - Y(X^2) = 0$.
 
 Combining these results, we find that $[X, Y] = 0$, confirming that $X$ and $Y$ commute.
 
-Let $\theta_t(x, y)$ be the flow of $X$. Then $\frac{d}{dt}\theta_t(x, y) = X(\theta_t(x, y))$.
+Let $\theta_t(x, y)$ be the flow of $X$. Then $\frac{d}{dt}\theta_t(x, y) = X(x, y)$.
 
 Let $\theta_t(x, y) = (x(t), y(t))$. Then:
 
@@ -161,7 +161,7 @@ Thus, the flow of $X$ is:
 
 $\theta_t(x, y) = ((x + 1)e^t - 1, (y + 1)e^{-t} - 1)$.
 
-Let $\eta_s(x, y)$ be the flow of $Y$. Then $\frac{d}{ds}\eta_s(x, y) = Y(\eta_s(x, y))$.
+Let $\eta_s(x, y)$ be the flow of $Y$. Then $\frac{d}{ds}\eta_s(x, y) = Y(x, y)$.
 
 Let $\eta_s(x, y) = (\tilde{x}(s), \tilde{y}(s))$. Then:
 
