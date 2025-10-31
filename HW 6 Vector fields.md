@@ -115,6 +115,110 @@ Check that $X$ and $Y$ commute, and find coordinates $u, v$ in a neighborhood of
 
 (Hint: Follow example 9.47 in Lee)
 
+Solution
+
+The formula for the Lie bracket is $[X, Y] = (X(Y^1) - Y(X^1)) \frac{\partial}{\partial x} + (X(Y^2) - Y(X^2)) \frac{\partial}{\partial y}$.
+
+Calculating the components, we have:
+
+$X^1 = x + 1, \quad X^2 = -(y + 1), \quad Y^1 = x + 1, \quad Y^2 = y + 1$.
+
+$X(Y^1) = X(x + 1) = (x + 1) \cdot 1 - (y + 1) \cdot 0 = x + 1$,
+
+$Y(X^1) = Y(x + 1) = (x + 1) \cdot 1 + (y + 1) \cdot 0 = x + 1$.
+
+Thus, $X(Y^1) - Y(X^1) = 0$.
+
+$X(Y^2) = X(y + 1) = (x + 1) \cdot 0 - (y + 1) \cdot 1 = -(y + 1)$,
+
+$Y(X^2) = Y(-(y + 1)) = (x + 1) \cdot 0 + (y + 1) \cdot (-1) = -(y + 1)$.
+
+Thus, $X(Y^2) - Y(X^2) = 0$.
+
+Combining these results, we find that $[X, Y] = 0$, confirming that $X$ and $Y$ commute.
+
+Let $\theta_t(x, y)$ be the flow of $X$. Then $\frac{d}{dt}\theta_t(x, y) = X(\theta_t(x, y))$.
+
+Let $\theta_t(x, y) = (x(t), y(t))$. Then:
+
+$\frac{dx}{dt} = x + 1$,
+
+$\frac{dy}{dt} = -(y + 1)$.
+
+Solving these ODEs:
+
+$\frac{dx}{dt} = x + 1 \Rightarrow \frac{dx}{x + 1} = dt \Rightarrow \ln|x + 1| = t + C_1 \Rightarrow x(t) = C_2 e^t - 1$.
+
+$\frac{dy}{dt} = -(y + 1) \Rightarrow \frac{dy}{y + 1} = -dt \Rightarrow \ln|y + 1| = -t + C_3 \Rightarrow y(t) = C_4 e^{-t} - 1$.
+
+Therefore, the flow is $\theta_t(x, y) = (C_2 e^t - 1, C_4 e^{-t} - 1)$.
+
+To find the constants $C_2$ and $C_4$, we use the initial conditions $\theta_0(x, y) = (x, y)$:
+
+$C_2 = x + 1$, $C_4 = y + 1$.
+
+Thus, the flow of $X$ is:
+
+$\theta_t(x, y) = ((x + 1)e^t - 1, (y + 1)e^{-t} - 1)$.
+
+Let $\eta_s(x, y)$ be the flow of $Y$. Then $\frac{d}{ds}\eta_s(x, y) = Y(\eta_s(x, y))$.
+
+Let $\eta_s(x, y) = (\tilde{x}(s), \tilde{y}(s))$. Then:
+
+$\frac{d\tilde{x}}{ds} = \tilde{x} + 1$,
+
+$\frac{d\tilde{y}}{ds} = \tilde{y} + 1$.
+
+Solving these ODEs:
+
+$\frac{d\tilde{x}}{ds} = \tilde{x} + 1 \Rightarrow \frac{d\tilde{x}}{\tilde{x} + 1} = ds \Rightarrow \ln|\tilde{x} + 1| = s + D_1 \Rightarrow \tilde{x}(s) = D_2 e^s - 1$.
+
+$\frac{d\tilde{y}}{ds} = \tilde{y} + 1 \Rightarrow \frac{d\tilde{y}}{\tilde{y} + 1} = ds \Rightarrow \ln|\tilde{y} + 1| = s + D_3 \Rightarrow \tilde{y}(s) = D_4 e^s - 1$.
+
+Therefore, the flow is $\eta_s(x, y) = (D_2 e^s - 1, D_4 e^s - 1)$.
+
+To find the constants $D_2$ and $D_4$, we use the initial conditions $\eta_0(x, y) = (x, y)$:
+
+$D_2 = x + 1$, $D_4 = y + 1$.
+
+Thus, the flow of $Y$ is:
+
+$\eta_s(x, y) = ((x + 1)e^s - 1, (y + 1)e^s - 1)$.
+
+Define the coordinate map: At $p = (1, 0)$, define $\Phi(u,v) = \eta_v(\theta_u(1,0))$.
+
+Calculating $\theta_u(1,0)$:
+
+$\theta_u(1,0) = ((1 + 1)e^u - 1, (0 + 1)e^{-u} - 1) = (2e^u - 1, e^{-u} - 1)$.
+
+Now compute $\Phi(u,v) = \eta_v(\theta_u(1,0))$:
+
+$\Phi(u,v) = \eta_v(2e^u - 1, e^{-u} - 1) = ((2e^u - 1 + 1)e^v - 1, (e^{-u} - 1 + 1)e^v - 1)$
+
+$= (2e^{u+v} - 1, e^{v-u} - 1)$.
+
+Find the inverse of $\Phi$:
+
+Let $(x,y) = \Phi(u,v) = (2e^{u+v} - 1, e^{v-u} - 1)$.
+
+From the second equation, we have $y + 1 = e^{v-u} \Rightarrow v - u = \ln(y + 1)$.
+
+From the first equation, we have $x + 1 = 2e^{u+v} \Rightarrow u + v = \ln\left(\frac{x + 1}{2}\right)$.
+
+Solving these two equations for $u$ and $v$:
+
+Adding the two equations:
+
+$2v = \ln\left(\frac{x + 1}{2}\right) + \ln(y + 1) \Rightarrow v = \frac{1}{2} \ln\left(\frac{(x + 1)(y + 1)}{2}\right)$.
+
+Subtracting the second from the first:
+
+$2u = \ln\left(\frac{x + 1}{2}\right) - \ln(y + 1) \Rightarrow u = \frac{1}{2} \ln\left(\frac{x + 1}{2(y + 1)}\right)$.
+
+Thus, the inverse map is:
+
+$\Phi^{-1}(x,y) = \left(\frac{1}{2} \ln\left(\frac{x + 1}{2(y + 1)}\right), \frac{1}{2} \ln\left(\frac{(x + 1)(y + 1)}{2}\right)\right)$.
+
 # 6. Multilinear algebra needed later.
 Recall that the dual space $V^*$ of a vector space $V$ is the set of linear maps $\omega: V \to \mathbb{R}$ (also called covectors).
 Recall that if $`\{e_1, \ldots, e_n\}`$ is a basis for $V$ then $`\{\epsilon_1, \ldots, \epsilon_n\}`$ is a basis for $`V^*`$ where $\epsilon_i(e_j)=\delta_{i j}$.
