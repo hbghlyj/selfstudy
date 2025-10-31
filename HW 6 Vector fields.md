@@ -106,6 +106,26 @@ Therefore, the assumption $b' < b$ must be false. This means $b' = b$. A similar
 # 4.
 Suppose that $X, Y$ are smooth vector fields on $M$ with associated flows $\theta: \mathbb{R} \times M \rightarrow M$ and $\eta: \mathbb{R} \times M \rightarrow M$. Show that $X, Y$ commute if and only if $\theta_t \circ \eta_s=\eta_s \circ \theta_t$ for all $t, s \in \mathbb{R}$.
 
+Proof
+
+($\Leftarrow$) Assume that $\theta_t \circ \eta_s = \eta_s \circ \theta_t$ for all $t, s \in \mathbb{R}$. We want to show that $[X, Y] = 0$.
+
+By definition, the Lie bracket $[X, Y]$ at a point $p \in M$ is given by
+$[X, Y]_p = \lim_{t \to 0} \frac{(\eta_{-t})_* X_{\eta_t(p)} - X_p}{t}$.
+
+Using the definition of the flow, we have
+$(\eta_{-t})_* X_{\eta_t(p)} = \frac{d}{dt} \bigg|_{t=0} \eta_{-t}(\theta_t(\eta_t(p)))$.
+
+Since $\theta_t \circ \eta_s = \eta_s \circ \theta_t$, we can rewrite this as
+$(\eta_{-t})_* X_{\eta_t(p)} = \frac{d}{dt} \bigg|_{t=0} \theta_t(\eta_{-t}(\eta_t(p))) = \frac{d}{dt} \bigg|_{t=0} \theta_t(p) = X_p$.
+
+Thus, we have
+$[X, Y]_p = \lim_{t \to 0} \frac{X_p - X_p}{t} = 0$.
+
+($\Rightarrow$) Assume that $[X, Y] = 0$. We want to show that $\theta_t \circ \eta_s = \eta_s \circ \theta_t$ for all $t, s \in \mathbb{R}$.
+
+Consider the map $F(t, s, p) = \theta_t(\eta_s(p))$. We will show that $F(t, s, p)$ satisfies the same differential equations as $\eta_s(\theta_t(p))$.
+
 # 5. (Lee 9-17b)
 Define two vector fields on $\mathbb{R}^2$ by
 
