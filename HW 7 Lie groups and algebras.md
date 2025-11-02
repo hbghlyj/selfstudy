@@ -72,8 +72,6 @@ $
 
 Show that a basis for $\omega \in \Lambda^k V^*$ is given by
 
-$
-\left\{\epsilon_{i_1} \wedge \cdots \wedge \epsilon_{i_k} \mid i_1<i_2<\cdots<i_k\right\}
-$
+$`\left\{\epsilon_{i_1} \wedge \cdots \wedge \epsilon_{i_k} \mid i_1<i_2<\cdots<i_k\right\}`$
 
 (Recall from the last homework that the $\epsilon_i$ form a basis for $V^*$ dual to a basis $`\{e_1, \cdots, e_n\}`$ of $V$.)
