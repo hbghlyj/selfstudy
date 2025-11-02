@@ -2,19 +2,19 @@
 First read example 25.5 and 25.6 in Waldron's notes. Then let
 
 $`I_{p, q}=\begin{pmatrix}
-1 & 0 & \cdots & & & \\
-0 & \ddots & & & & \\
-\vdots & & 1 & & & \\
-& & & -1 & & \\
-& & & & \ddots & \\
+1 & 0 & \cdots & & & \
+0 & \ddots & & & & \
+\vdots & & 1 & & & \
+& & & -1 & & \
+& & & & \ddots & \
 & & & & & -1
 \end{pmatrix},`$
 
-where there are $p$ 1's and $q$ -1's. Let
+where there are  1's and  -1's. Let
 
 $`\mathrm{O}(p, q)=\left\{A \in \mathrm{GL}(n, \mathbb{R}) \mid A^T I_{p, q} A=I_{p, q}\right\} .`$
 
-(a) Calculate $o(p, q)=T_e \mathrm{O}(p, q)$ and check directly that it is a Lie subalgebra of $g l(n, \mathbb{R})$.
+(a) Calculate   and check directly that it is a Lie subalgebra of .
 
 (b) Calculate its dimension.
 
@@ -23,53 +23,53 @@ Solution
 (a) Define
 
 $`\begin{aligned}
-\Phi: \mathrm{GL}(n, \mathbb{R}) & \rightarrow \mathrm{Mat}_{\mathbb{R}}^{n \times n} \\
+\Phi: \mathrm{GL}(n, \mathbb{R}) & \rightarrow \mathrm{Mat}_{\mathbb{R}}^{n \times n} \
 A & \mapsto A^T I_{p, q} A .
 \end{aligned}`$
 
-Let $\mathrm{GL}(n, \mathbb{R})$ act on itself by right-multiplication, and act on $X \in \mathrm{Mat}_{\mathbb{R}}^{n \times n}$ by:
+Let  act on itself by right-multiplication, and act on   by:
 
-$X \cdot B=B^T X B .$
+  
 
 We have
 
-$\Phi(A B)=(A B)^T I_{p, q} A B=B^T A^T I_{p, q} A B=B^T \Phi(A) B=\Phi(A) \cdot B,$
+     
 
-so $\Phi$ intertwines the two actions. By the equivariant rank theorem, $\mathrm{O}(p, q)=\Phi^{-1}\left(I_{p, q}\right)$ is a closed Lie subgroup of $\mathrm{GL}(n, \mathbb{R})$ (indeed it is closed in $\mathrm{Mat}_{\mathbb{R}}^{n \times n}$).
+so  intertwines the two actions. By the equivariant rank theorem,   is a closed Lie subgroup of  (indeed it is closed in ).
 
-To determine the dimension of $\mathrm{O}(p, q)$, we need only calculate the tangent space at the identity element $e=I_n$. Since
+To determine the dimension of , we need only calculate the tangent space at the identity element  . Since
 
-$d \Phi_{I_n}(X)=X^T I_{p, q}+I_{p, q} X,$
+  
 
 we have
 
 $`T_e \mathrm{O}(p, q)=\left\{X \in \mathrm{Mat}_{\mathbb{R}}^{n \times n} \mid X^T I_{p, q}+I_{p, q} X=0\right\}=: o(p, q) .`$
 
-This is the set of matrices $X$ such that the $(i, j)$-th entry satisfies
+This is the set of matrices  such that the -th entry satisfies
 
-$X_{i j}=-X_{j i}$ if $i, j \leq p$ or $i, j>p,$
+  if   or  
 
-$X_{i j}=X_{j i}$ otherwise.
+  otherwise.
 
-To check directly that it is a Lie subalgebra, let $X, Y \in o(p, q)$. We need to show that their Lie bracket $[X, Y]=X Y-Y X$ is also in $o(p, q)$. From the defining condition of $o(p, q)$, we have
+To check directly that it is a Lie subalgebra, let  . We need to show that their Lie bracket $[X, Y]=X Y-Y Xo(p, q)o(p, q)$, we have
 
-$X^T I_{p, q}+I_{p, q} X=0$ and $Y^T I_{p, q}+I_{p, q} Y=0.$
+   and   
 
 Taking the transpose, we get
 
-$X^T=-I_{p, q} X I_{p, q}^{-1}$ and $Y^T=-I_{p, q} Y I_{p, q}^{-1}.$
+  and  
 
 Now, compute the transpose of the Lie bracket:
 
 $[X, Y]^T=(X Y-Y X)^T=Y^T X^T-X^T Y^T.$
 
-Substituting the expressions for $X^T$ and $Y^T$, we have
+Substituting the expressions for  and , we have
 
 $[X, Y]^T=-I_{p, q} Y I_{p, q}^{-1}(-I_{p, q} X I_{p, q}^{-1})+I_{p, q} X I_{p, q}^{-1}(-I_{p, q} Y I_{p, q}^{-1})=I_{p, q}(YX-XY) I_{p, q}^{-1}=-I_{p, q} [X, Y] I_{p, q}^{-1}.$
 
-Thus, $[X, Y] \in o(p, q)$, proving that $o(p, q)$ is a Lie subalgebra.
+Thus, $[X, Y] \in o(p, q)o(p, q)$ is a Lie subalgebra.
 
-(b) To calculate the dimension of $o(p, q)$, note that
+(b) To calculate the dimension of , note that
 
 - There are $\frac{p(p-1)}{2}$ free entries above the diagonal in the top-left $p \times p$ block (skew-symmetric).
 
@@ -106,7 +106,7 @@ where $`A=\begin{pmatrix}a_{11} & a_{12} \\ a_{21} & a_{22}\end{pmatrix}`$. This
 
 (b) Since $-I \in \mathrm{SL}(2, \mathbb{C})$ acts trivially on $\mathbb{C P}^1$, the action descends to an action of $\mathrm{PSL}(2, \mathbb{C})=\mathrm{SL}(2, \mathbb{C})/\pm 1$ on $\mathbb{C P}^1$.
 
-(c) The action of $\mathrm{PSL}(2, \mathbb{C})$ is faithful, as the kernel of the $\mathrm{SL}(2, \mathbb{C})$ action is ${\pm I}$, which is the identity element in the quotient group $\mathrm{PSL}(2, \mathbb{C})$. The action is transitive because for any two points $[z_1:z_2]$ and $[w_1:w_2]$ in $\mathbb{C P}^1$, there exists an $A \in \mathrm{SL}(2, \mathbb{C})$ such that $A \cdot [z_1:z_2]=[w_1:w_2]$. The stabilizer of the point $[1:0]$ is the subgroup of upper triangular matrices in $\mathrm{PSL}(2, \mathbb{C})$.
+(c) The action of $\mathrm{PSL}(2, \mathbb{C})$ is faithful, as the kernel of the $\mathrm{SL}(2, \mathbb{C})$ action is $`\{\pm I\}`$, which is the identity element in the quotient group $\mathrm{PSL}(2, \mathbb{C})$. The action is transitive because for any two points $[z_1:z_2]$ and $[w_1:w_2]$ in $\mathbb{C P}^1$, there exists an $A \in \mathrm{SL}(2, \mathbb{C})$ such that $A \cdot [z_1:z_2]=[w_1:w_2]$. The stabilizer of the point $[1:0]$ is the subgroup of upper triangular matrices in $\mathrm{PSL}(2, \mathbb{C})$.
 
 # 3.
 Suppose that $G$ acts transitively on two manifolds $M$ and $N$, and that for some $p \in M$ and $q \in N$, we have $G_p=G_q$.
