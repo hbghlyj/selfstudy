@@ -18,6 +18,51 @@ $`\mathrm{O}(p, q)=\left\{A \in \mathrm{GL}(n, \mathbb{R}) \mid A^T I_{p, q} A=I
 
 (b) Calculate its dimension.
 
+Solution
+
+(a) Define
+
+$`\begin{aligned}
+\Phi: \mathrm{GL}(n, \mathbb{R}) & \rightarrow \mathrm{Mat}_{\mathbb{R}}^{n \times n} \\
+A & \mapsto A^T I_{p, q} A .
+\end{aligned}`$
+
+Let $\mathrm{GL}(n, \mathbb{R})$ act on itself by right-multiplication, and act on $X \in \mathrm{Mat}_{\mathbb{R}}^{n \times n}$ by:
+
+$X \cdot B=B^T X B .$
+
+We have
+
+$\Phi(A B)=(A B)^T I_{p, q} A B=B^T A^T I_{p, q} A B=B^T \Phi(A) B=\Phi(A) \cdot B,$
+
+so $\Phi$ intertwines the two actions. By the equivariant rank theorem, $\mathrm{O}(p, q)=\Phi^{-1}\left(I_{p, q}\right)$ is a closed Lie subgroup of $\mathrm{GL}(n, \mathbb{R})$ (indeed it is closed in $\mathrm{Mat}_{\mathbb{R}}^{n \times n}$).
+
+To determine the dimension of $\mathrm{O}(p, q)$, we need only calculate the tangent space at the identity element $e=I_n$. Since
+
+$d \Phi_{I_n}(X)=X^T I_{p, q}+I_{p, q} X,$
+
+we have
+
+$`T_e \mathrm{O}(p, q)=\left\{X \in \mathrm{Mat}_{\mathbb{R}}^{n \times n} \mid X^T I_{p, q}+I_{p, q} X=0\right\}=: o(p, q) .`$
+
+This is the set of matrices $X$ such that the $(i, j)$-th entry satisfies
+
+$X_{i j}=-X_{j i}$ if $i, j \leq p$ or $i, j>p,$
+
+$X_{i j}=X_{j i}$ otherwise.
+
+(b) To calculate the dimension of $o(p, q)$, note that
+
+- There are $\frac{p(p-1)}{2}$ free entries above the diagonal in the top-left $p \times p$ block (skew-symmetric).
+
+- There are $\frac{q(q-1)}{2}$ free entries above the diagonal in the bottom-right $q \times q$ block (skew-symmetric).
+
+- There are $p q$ free entries in the off-diagonal blocks (symmetric).
+
+Thus,
+
+$\mathrm{dim} o(p, q)=\frac{p(p-1)}{2}+\frac{q(q-1)}{2}+p q=\frac{(p+q)(p+q-1)}{2}=\frac{n(n-1)}{2} .$
+
 # 2.
 (a) Show that the action of $\mathrm{SL}(2, \mathbb{C})$ on $\mathbb{C}^2$ (by left multiplication) descends to a Lie group action on $\mathbb{C P}^1$.
 
