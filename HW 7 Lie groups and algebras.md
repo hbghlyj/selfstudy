@@ -12,7 +12,7 @@ I_{p, q}=\left(\begin{array}{cccccc}
 \end{array}\right),
 $
 
-where there are $p$ 1's and $q-1$ 's. Let
+where there are $p$ 1's and $q$ -1's. Let
 
 $
 \mathrm{O}(p, q)=\left\{A \in \mathrm{GL}(n, \mathbb{R}) \mid A^T I_{p, q} A=I_{p, q}\right\} .
@@ -22,7 +22,7 @@ $
 (b) Calculate its dimension.
 
 # 2.
-(a) Show that the action of $\operatorname{SL}(2, \mathbb{C})$ on $\mathbb{C}^2$ (by left multiplication) descends to a Liegroup action on $\mathbb{C P}^1$.
+(a) Show that the action of $\operatorname{SL}(2, \mathbb{C})$ on $\mathbb{C}^2$ (by left multiplication) descends to a Lie group action on $\mathbb{C P}^1$.
 (b) $\operatorname{PSL}(2, \mathbb{C}):=\operatorname{SL}(2, \mathbb{C}) / \pm 1$. Show that the action descends to an action of $\operatorname{PSL}(2, \mathbb{C})$ on $\mathbb{C P}^1$.
 (c) Show that this action is faithful and transitive, and identify the stabilizer of a point.
 (d) Show that the restriction of this action to $\operatorname{PSL}(2, \mathbb{R})$ has two open orbits and one closed orbit.
@@ -61,10 +61,10 @@ $
 \operatorname{Alt} f=\frac{1}{k!} \sum_{\sigma \in S_k} \operatorname{sgn}(\sigma) f\left(v_{\sigma(1)}, \ldots, v_{\sigma(k)}\right)
 $
 
-We denote $\Lambda^k V^*$ to be the set of all alternating $k$ tensors. For $\omega \in \Lambda^k V^*$ and $\eta \in \Lambda^{\ell} V^*$ we define the wedge product
+We denote $`\Lambda^k V^*`$ to be the set of all alternating $k$ tensors. For $`\omega \in \Lambda^k V^*`$ and $`\eta \in \Lambda^{\ell} V^*`$ we define the wedge product
 
 $
-\omega \wedge \eta:=\frac{(k+\ell)}{k!\ell!} \operatorname{Alt}(\omega \otimes \eta) \in \Lambda^{k+\ell} V^*
+\omega \wedge \eta:=\frac{(k+\ell)!}{k!\ell!} \operatorname{Alt}(\omega \otimes \eta) \in \Lambda^{k+\ell} V^*
 $
 
 Show that a basis for $\omega \in \Lambda^k V^*$ is given by
