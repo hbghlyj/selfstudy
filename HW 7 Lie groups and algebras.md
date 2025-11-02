@@ -96,6 +96,14 @@ $\dim o(p, q)=\frac{p(p-1)}{2}+\frac{q(q-1)}{2}+p q=\frac{(p+q)(p+q-1)}{2}=\frac
 
 (g) By restricting the action to a smaller subgroup $\mathrm{PSL}(2, \mathbb{R})$, can you make the action on each open orbit free and transitive? How about on the closed orbit?
 
+Proof
+
+(a) The action of $\mathrm{SL}(2, \mathbb{C})$ on $\mathbb{C}^2$ is given by matrix multiplication. For any $A \in \mathrm{SL}(2, \mathbb{C})$ and $[z_1:z_2] \in \mathbb{C P}^1$, define
+
+$A \cdot [z_1:z_2]=[a_{11} z_1+a_{12} z_2:a_{21} z_1+a_{22} z_2],$
+
+where $`A=\begin{pmatrix}a_{11} & a_{12} \\ a_{21} & a_{22}\end{pmatrix}`$. This action is well-defined on projective space since scalar multiples of $[z_1:z_2]$ yield the same point in $\mathbb{C P}^1$. Thus, the action descends to a Lie group action on $\mathbb{C P}^1$.
+
 # 3.
 Suppose that $G$ acts transitively on two manifolds $M$ and $N$, and that for some $p \in M$ and $q \in N$, we have $G_p=G_q$.
 (a) Prove that $M$ and $N$ are diffeomorphic.
