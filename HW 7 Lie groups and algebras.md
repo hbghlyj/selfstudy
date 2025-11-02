@@ -104,6 +104,10 @@ $A \cdot [z_1:z_2]=[a_{11} z_1+a_{12} z_2:a_{21} z_1+a_{22} z_2],$
 
 where $`A=\begin{pmatrix}a_{11} & a_{12} \\ a_{21} & a_{22}\end{pmatrix}`$. This action is well-defined on projective space because for any $\lambda \in \mathbb{C}^*$, $A \cdot [\lambda z_1:\lambda z_2]$ represents the same point as $A \cdot [z_1:z_2]$, and since $A$ is invertible, the image is never $[0:0]$. Thus, the action descends to a Lie group action on $\mathbb{C P}^1$.
 
+(b) Since $-I \in \mathrm{SL}(2, \mathbb{C})$ acts trivially on $\mathbb{C P}^1$, the action descends to an action of $\mathrm{PSL}(2, \mathbb{C})=\mathrm{SL}(2, \mathbb{C})/\pm 1$ on $\mathbb{C P}^1$.
+
+(c) The action of $\mathrm{PSL}(2, \mathbb{C})$ is faithful, as the kernel of the $\mathrm{SL}(2, \mathbb{C})$ action is ${\pm I}$, which is the identity element in the quotient group $\mathrm{PSL}(2, \mathbb{C})$. The action is transitive because for any two points $[z_1:z_2]$ and $[w_1:w_2]$ in $\mathbb{C P}^1$, there exists an $A \in \mathrm{SL}(2, \mathbb{C})$ such that $A \cdot [z_1:z_2]=[w_1:w_2]$. The stabilizer of the point $[1:0]$ is the subgroup of upper triangular matrices in $\mathrm{PSL}(2, \mathbb{C})$.
+
 # 3.
 Suppose that $G$ acts transitively on two manifolds $M$ and $N$, and that for some $p \in M$ and $q \in N$, we have $G_p=G_q$.
 (a) Prove that $M$ and $N$ are diffeomorphic.
