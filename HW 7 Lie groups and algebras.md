@@ -1,22 +1,18 @@
 # 1.
 First read example 25.5 and 25.6 in Waldron's notes. Then let
 
-$
-I_{p, q}=\begin{pmatrix}
+$`I_{p, q}=\begin{pmatrix}
 1 & 0 & \cdots & & & \\
 0 & \ddots & & & & \\
 \vdots & & 1 & & & \\
 & & & -1 & & \\
 & & & & \ddots & \\
 & & & & & -1
-\end{pmatrix},
-$
+\end{pmatrix},`$
 
 where there are $p$ 1's and $q$ -1's. Let
 
-$
-\mathrm{O}(p, q)=\left\{A \in \mathrm{GL}(n, \mathbb{R}) \mid A^T I_{p, q} A=I_{p, q}\right\} .
-$
+$`\mathrm{O}(p, q)=\left\{A \in \mathrm{GL}(n, \mathbb{R}) \mid A^T I_{p, q} A=I_{p, q}\right\} .`$
 
 (a) Calculate $o(p, q)=T_e \mathrm{O}(p, q)$ and check directly that it is a Lie subalgebra of $g l(n, \mathbb{R})$.
 (b) Calculate its dimension.
