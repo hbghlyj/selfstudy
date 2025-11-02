@@ -47,7 +47,7 @@ $`T_e \mathrm{O}(p, q)=\left\{X \in \mathrm{Mat}_{\mathbb{R}}^{n \times n} \mid 
 
 This is the set of matrices $X$ such that the $(i, j)$-th entry satisfies
 
-$X_{i j}=-X_{j i}$ if $i, j \leq$ or $i, j>q,$
+$X_{i j}=-X_{j i}$ if $i, j \leq p$ or $i, j>p,$
 
 $X_{i j}=X_{j i}$ otherwise.
 
