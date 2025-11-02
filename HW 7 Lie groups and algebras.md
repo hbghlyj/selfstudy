@@ -112,6 +112,10 @@ $`A=\frac{1}{\sqrt{|z_1|^2+|z_2|^2}}\begin{pmatrix}z_1 & -\overline{z_2} \\ z_2 
 
 The stabilizer of the point $[1:0]$ is the subgroup of upper triangular matrices in $\mathrm{PSL}(2, \mathbb{C})$.
 
+(d) The restriction of the action to $\mathrm{PSL}(2, \mathbb{R})$ has two open orbits: the upper half-plane and the lower half-plane, and one closed orbit: the real projective line $\mathbb{R P}^1$.
+
+(e) The stabilizer $G_p$ of a point $p$ in one of the open orbits (e.g., the upper half-plane) is isomorphic to the group of rotations, which can be represented by matrices of the form
+
 # 3.
 Suppose that $G$ acts transitively on two manifolds $M$ and $N$, and that for some $p \in M$ and $q \in N$, we have $G_p=G_q$.
 (a) Prove that $M$ and $N$ are diffeomorphic.
