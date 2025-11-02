@@ -15,15 +15,22 @@ where there are $p$ 1's and $q$ -1's. Let
 $`\mathrm{O}(p, q)=\left\{A \in \mathrm{GL}(n, \mathbb{R}) \mid A^T I_{p, q} A=I_{p, q}\right\} .`$
 
 (a) Calculate $o(p, q)=T_e \mathrm{O}(p, q)$ and check directly that it is a Lie subalgebra of $g l(n, \mathbb{R})$.
+
 (b) Calculate its dimension.
 
 # 2.
 (a) Show that the action of $\mathrm{SL}(2, \mathbb{C})$ on $\mathbb{C}^2$ (by left multiplication) descends to a Lie group action on $\mathbb{C P}^1$.
+
 (b) $\mathrm{PSL}(2, \mathbb{C}):=\mathrm{SL}(2, \mathbb{C}) / \pm 1$. Show that the action descends to an action of $\mathrm{PSL}(2, \mathbb{C})$ on $\mathbb{C P}^1$.
+
 (c) Show that this action is faithful and transitive, and identify the stabilizer of a point.
+
 (d) Show that the restriction of this action to $\mathrm{PSL}(2, \mathbb{R})$ has two open orbits and one closed orbit.
+
 (e) Given a point $p$ in one of the open orbits, identify the stabilizer $G_p<\mathrm{PSL}(2, \mathbb{R})$.
+
 (f) Given a point $q$ in the closed orbit, identify the stabilizer $G_q<\mathrm{PSL}(2, \mathbb{R})$.
+
 (g) By restricting the action to a smaller subgroup $\mathrm{PSL}(2, \mathbb{R})$, can you make the action on each open orbit free and transitive? How about on the closed orbit?
 
 # 3.
