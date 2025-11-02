@@ -108,9 +108,7 @@ where $`A=\begin{pmatrix}a_{11} & a_{12} \\ a_{21} & a_{22}\end{pmatrix}`$. This
 
 (c) The action of $\mathrm{PSL}(2, \mathbb{C})$ is faithful, as the kernel of the $\mathrm{SL}(2, \mathbb{C})$ action is $`\{\pm I\}`$, which is the identity element in the quotient group $\mathrm{PSL}(2, \mathbb{C})$. The action is transitive because for any two points $[z_1:z_2]$ in $\mathbb{C P}^1$, there exists an $A \in \mathrm{SL}(2, \mathbb{C})$ such that $A \cdot [1:0]=[z_1:z_2]$ given by
 
-$`A=\frac{1}{\sqrt{|z_1|^2+|z_2|^2}}\begin{pmatrix}`
-z_1 & -\overline{z_2} \\ z_2 & \overline{z_1}
-\end{pmatrix}`$
+$`A=\frac{1}{\sqrt{|z_1|^2+|z_2|^2}}\begin{pmatrix}z_1 & -\overline{z_2} \\ z_2 & \overline{z_1}\end{pmatrix}`$
 
 The stabilizer of the point $[1:0]$ is the subgroup of upper triangular matrices in $\mathrm{PSL}(2, \mathbb{C})$.
 
