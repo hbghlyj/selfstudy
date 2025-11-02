@@ -102,7 +102,7 @@ Proof
 
 $A \cdot [z_1:z_2]=[a_{11} z_1+a_{12} z_2:a_{21} z_1+a_{22} z_2],$
 
-where $A=\begin{pmatrix}a_{11} & a_{12} \\ a_{21} & a_{22}\end{pmatrix}$. This action is well-defined on projective space because for any $\lambda \in \mathbb{C}^*$, $A \cdot [\lambda z_1:\lambda z_2]$ represents the same point as $A \cdot [z_1:z_2]$, and since $A$ is invertible, the image is never $[0:0]$. Thus, the action descends to a Lie group action on $\mathbb{C P}^1$.
+where $`A=\begin{pmatrix}a_{11} & a_{12} \\ a_{21} & a_{22}\end{pmatrix}`$. This action is well-defined on projective space because for any $\lambda \in \mathbb{C}^*$, $A \cdot [\lambda z_1:\lambda z_2]$ represents the same point as $A \cdot [z_1:z_2]$, and since $A$ is invertible, the image is never $[0:0]$. Thus, the action descends to a Lie group action on $\mathbb{C P}^1$.
 
 # 3.
 Suppose that $G$ acts transitively on two manifolds $M$ and $N$, and that for some $p \in M$ and $q \in N$, we have $G_p=G_q$.
