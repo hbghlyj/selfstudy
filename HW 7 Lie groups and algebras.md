@@ -114,6 +114,8 @@ The stabilizer of the point $[1:0]$ is the subgroup of upper triangular matrices
 
 (d) The restriction of the action to $\mathrm{PSL}(2, \mathbb{R})$ has two open orbits: the upper half-plane and the lower half-plane, and one closed orbit: the real projective line $\mathbb{R P}^1$.
 
+The action of $\mathrm{PSL}(2, \mathbb{R})$ on $\mathbb{R P}^1$ can be identified with the action of $\mathrm{PSL}(2, \mathbb{R})$ on the upper half-plane $\mathbb{H}$ via the map $[x:y] \mapsto x/y$. The orbits are determined by the sign of the imaginary part of $x/y$. Points in the upper half-plane have positive imaginary part, and points in the lower half-plane have negative imaginary part. These are open orbits because they are open sets in $\mathbb{H}$. The real projective line $\mathbb{R P}^1$ is a closed orbit because it is a single point in the boundary of $\mathbb{H}$.
+
 (e) The stabilizer $G_p$ of a point $p$ in one of the open orbits (e.g., the upper half-plane) is isomorphic to the group of rotations, $\mathrm{PSO}(2)$, which can be represented by matrices of the form $`\begin{pmatrix} \cos\theta & \sin\theta \\ -\sin\theta & \cos\theta \end{pmatrix}`$.
 
 # 3.
