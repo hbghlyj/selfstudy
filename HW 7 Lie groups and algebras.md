@@ -51,6 +51,24 @@ $X_{i j}=-X_{j i}$ if $i, j \leq p$ or $i, j>p,$
 
 $X_{i j}=X_{j i}$ otherwise.
 
+To check directly that it is a Lie subalgebra, let $X, Y \in o(p, q)$. We need to show that their Lie bracket $[X, Y]=X Y-Y X$ is also in $o(p, q)$. From the defining condition of $o(p, q)$, we have
+
+$X^T I_{p, q}+I_{p, q} X=0$ and $Y^T I_{p, q}+I_{p, q} Y=0.$
+
+Taking the transpose, we get
+
+$X^T=-I_{p, q} X I_{p, q}^{-1}$ and $Y^T=-I_{p, q} Y I_{p, q}^{-1}.$
+
+Now, compute the transpose of the Lie bracket:
+
+$[X, Y]^T=(X Y-Y X)^T=Y^T X^T-X^T Y^T.$
+
+Substituting the expressions for $X^T$ and $Y^T$, we have
+
+$[X, Y]^T=-I_{p, q} Y I_{p, q}^{-1}(-I_{p, q} X I_{p, q}^{-1})+I_{p, q} X I_{p, q}^{-1}(-I_{p, q} Y I_{p, q}^{-1})=I_{p, q}(YX-XY) I_{p, q}^{-1}=-I_{p, q} [X, Y] I_{p, q}^{-1}.$
+
+Thus, $[X, Y] \in o(p, q)$, proving that $o(p, q)$ is a Lie subalgebra.
+
 (b) To calculate the dimension of $o(p, q)$, note that
 
 - There are $\frac{p(p-1)}{2}$ free entries above the diagonal in the top-left $p \times p$ block (skew-symmetric).
@@ -61,7 +79,7 @@ $X_{i j}=X_{j i}$ otherwise.
 
 Thus,
 
-$\mathrm{dim} o(p, q)=\frac{p(p-1)}{2}+\frac{q(q-1)}{2}+p q=\frac{(p+q)(p+q-1)}{2}=\frac{n(n-1)}{2} .$
+$\dim o(p, q)=\frac{p(p-1)}{2}+\frac{q(q-1)}{2}+p q=\frac{(p+q)(p+q-1)}{2}=\frac{n(n-1)}{2} .$
 
 # 2.
 (a) Show that the action of $\mathrm{SL}(2, \mathbb{C})$ on $\mathbb{C}^2$ (by left multiplication) descends to a Lie group action on $\mathbb{C P}^1$.
