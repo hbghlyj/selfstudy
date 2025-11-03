@@ -122,8 +122,9 @@ The action of $\mathrm{PSL}(2, \mathbb{R})$ on $\mathbb{C P}^1$ can be analyzed 
 
 (g) Yes, this is possible for both orbit types, by using the stabilizer of a point in the *other* type of orbit.
 
-For an open orbit like $\mathbb{H}$, the affine subgroup from (f) acts freely and transitively  because any point in $\mathbb{H}$ can be reached from $i$ by a unique affine transformation:
+For an open orbit like $\mathbb{H}$, the affine subgroup from (f) acts freely and transitively because any point in $\mathbb{H}$ can be reached from $i$ by a unique affine transformation:
 $`\begin{pmatrix} a & b \\ 0 & a^{-1} \end{pmatrix} \cdot [i:1] = [a i + b : a^{-1}]`$
+This corresponds to the complex number $a^2i+ab$, which can represent any point $x+iy \in \mathbb{H}$ by uniquely choosing $a=\sqrt{y}$ and $b=x/\sqrt{y}$.
 
 For the closed orbit $\mathbb{R P}^1$, the compact subgroup $\mathrm{PSO}(2)$ from (e) acts freely and transitively because every point can be reached by a unique rotation:
 $`\begin{pmatrix} \cos\theta & \sin\theta \\ -\sin\theta & \cos\theta \end{pmatrix} \cdot [1:0] = [\cos\theta : -\sin\theta]`$
