@@ -52,7 +52,7 @@ $`\{k_i v_j : 1 \leq i \leq n, 1 \leq j \leq m\}`$
 
 is a basis of $V$ over $L$.
 
-To show that this set spans $V$ over $L$, take any $v \in V$. Since $\{v_1, \ldots, v_m\}$ is a basis over $K$, we can write
+To show that this set spans $V$ over $L$, take any $v \in V$. Since $`\{v_1, \ldots, v_m\}`$ is a basis over $K$, we can write
 
 $v = \sum_{j=1}^m a_j v_j$
 
