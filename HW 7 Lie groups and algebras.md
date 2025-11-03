@@ -136,10 +136,15 @@ Suppose that $G \circlearrowright M$ is a transitive left Lie-group action. Let 
 
 # 5.
 As in class, define the exponential map $\exp : T_e G \rightarrow G$ by $\exp (\xi)=\gamma_e^{X_{\xi}}(1)$.
+
 (a) Prove that any left-invariant vector field on a Lie group is complete. (So that this definition makes sense).
+
 (b) Prove that $\exp t \xi=\gamma_e^{X_{\xi}}(t)$.
+
 (c) Prove that $\exp (t+s) \xi=\exp (t \xi) \exp (s \xi)$.
+
 (d) Show that for $\mathrm{GL}(n, K)$, the map so defined agrees with the ordinary exponential map of matrices.
+
 Hint: Compare with Example 19.4 in the notes.
 
 # 6. Multilinear algebra needed later.
