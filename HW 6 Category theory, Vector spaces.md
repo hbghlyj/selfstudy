@@ -19,12 +19,12 @@ To show that the sum is direct, suppose $w \in \mathrm{im}(P) \cap \ker(P)$. The
 # 4.
 Continuing with the previous problem, suppose that $\dim(V)=n$. Prove that there exists a basis of $V$ such that the matrix of $P$ is of the form $\mathrm{diag}(1,1, \ldots, 1,0, \ldots, 0)$. (diag denotes the diagonal matrix with given entries.)
 
-Proof: Since $V = \ker(P) \oplus \mathrm{im}(P)$, we can form a basis for $V$ by combining a basis for $\ker(P)$ and a basis for $\mathrm{im}(P)$. Let $\{u_1, \ldots, u_{n-k}\}$ be a basis for $\ker(P)$ and $\{v_1, \ldots, v_k\}$ be a basis for $\mathrm{im}(P)$. For any $u_i$, $P(u_i) = 0$ by definition. For any $v_j \in \mathrm{im}(P)$, we know $v_j = P(w)$ for some $w \in V$. Since $P^2=P$, it follows that $P(v_j) = P(P(w)) = P^2(w) = P(w) = v_j$. Therefore, in the basis $\{v_1, \ldots, v_k, u_1, \ldots, u_{n-k}\}$, the matrix of $P$ is $\mathrm{diag}(1, \ldots, 1, 0, \ldots, 0)$, with $k$ ones and $n-k$ zeros.
+Proof: Since $V = \ker(P) \oplus \mathrm{im}(P)$, we can form a basis for $V$ by combining a basis for $\ker(P)$ and a basis for $\mathrm{im}(P)$. Let $`\{u_1, \ldots, u_{n-k}\}`$ be a basis for $\ker(P)$ and $`\{v_1, \ldots, v_k\}`$ be a basis for $\mathrm{im}(P)$. For any $u_i$, $P(u_i) = 0$ by definition. For any $v_j \in \mathrm{im}(P)$, we know $v_j = P(w)$ for some $w \in V$. Since $P^2=P$, it follows that $P(v_j) = P(P(w)) = P^2(w) = P(w) = v_j$. Therefore, in the basis $`\{v_1, \ldots, v_k, u_1, \ldots, u_{n-k}\}`$, the matrix of $P$ is $\mathrm{diag}(1, \ldots, 1, 0, \ldots, 0)$, with $k$ ones and $n-k$ zeros.
 
 # 5.
 Fix $n$, and consider the vector space
 
-$V=\{p(t) \in \mathbb{R}[t]: \deg(p) \leq n\}$
+$`V=\{p(t) \in \mathbb{R}[t]: \deg(p) \leq n\}`$
 
 over $\mathbb{R}$. Fix $n+1$ numbers $a_0, \ldots, a_n \in \mathbb{R}$ and consider the map
 
