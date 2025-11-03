@@ -45,3 +45,37 @@ Let $V$ be a vector space over a field $K$. A (linear) functional on $V$ is a li
 Let $K$ be a field and $L \subset K$ be a smaller field (e.g., $L=\mathbb{R}$ and $K=\mathbb{C}$ ). Given a $K$-vector space $V$, we can also consider it as a $L$-vector space, so we get two notions of dimension: as a vector space over $K$ and as a vector space over $L$. Denote them by $\dim_K V$ and $\dim_L V$, respectively. Show that
 
 $\dim_L(V)=\dim_K(V) \cdot \dim_L(K) .$
+
+Proof: Let $`\{v_1, v_2, \ldots, v_m\}`$ be a basis of $V$ over $K$, $`\{k_1, k_2, \ldots, k_n\}`$ be a basis of $K$ over $L$. We claim that the set
+
+$`\{k_i v_j : 1 \leq i \leq n, 1 \leq j \leq m\}`$
+
+is a basis of $V$ over $L$.
+
+To show that this set spans $V$ over $L$, take any $v \in V$. Since $\{v_1, \ldots, v_m\}$ is a basis over $K$, we can write
+
+$v = \sum_{j=1}^m a_j v_j$
+
+for some $a_j \in K$. Each $a_j$ can be expressed as a linear combination of the basis elements of $K$ over $L$:
+
+$a_j = \sum_{i=1}^n b_{ij} k_i$
+
+for some $b_{ij} \in L$. Substituting this back, we have
+
+$v = \sum_{j=1}^m \left( \sum_{i=1}^n b_{ij} k_i \right) v_j = \sum_{i=1}^n \sum_{j=1}^m b_{ij} (k_i v_j)$,
+
+which shows that $v$ is in the span of $`\{k_i v_j\}`$ over $L$.
+
+To show linear independence, suppose we have a linear combination over $L$ that equals zero:
+
+$\sum_{i=1}^n \sum_{j=1}^m c_{ij} (k_i v_j) = 0$
+
+for some $c_{ij} \in L$. Grouping terms by $v_j$, we get
+
+$\sum_{j=1}^m \left( \sum_{i=1}^n c_{ij} k_i \right) v_j = 0$.
+
+Since $`\{v_1, \ldots, v_m\}`$ is a basis over $K$, each coefficient must be zero:
+
+$\sum_{i=1}^n c_{ij} k_i = 0$ for all $j$.
+
+Since $`\{k_1, \ldots, k_n\}`$ is a basis of $K$ over $L$, it follows that each $c_{ij} = 0$. Thus, the set $`\{k_i v_j\}`$ is linearly independent over $L$.
