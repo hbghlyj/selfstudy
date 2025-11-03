@@ -149,7 +149,19 @@ Both maps are surjective submersions, and their fibers coincide since $\pi_M^{-1
 (b) We know that $\mathrm{SU}(2)$ acts transitively on both $S^2$ and $\mathbb{C P}^1$. For a suitable choice of points $p \in S^2$ and $q \in \mathbb{C P}^1$, the stabilizer subgroups $G_p$ and $G_q$ are identical. For instance, the stabilizer of $[1:0] \in \mathbb{C P}^1$ is the subgroup of diagonal matrices in $\mathrm{SU}(2)$, which is the same subgroup that stabilizes the north pole in $S^2$ under the adjoint action. Since the stabilizers are the same subgroup, by part (a), we conclude that $S^2$ is diffeomorphic to $\mathbb{C P}^1$.
 
 # 4.
-Suppose that $G \circlearrowright M$ is a transitive left Lie-group action. Let $G_p$ be the stabilizer of $p \in M$. Let $X$ be any vector field on $G$ which is invariant under $\left(R_g\right)_*$ for all $g \in G_p$. Prove that $X$ descends to a vector field on $M$. In particular, any right-invariant vector field on $G$ descends to a vector field on $M$.
+Suppose that $G \circlearrowright M$ is a transitive left Lie-group action. Let $G_p$ be the stabilizer of $p \in M$. Let $X$ be any vector field on $G$ which is invariant under $(R_g)_*$ for all $g \in G_p$. Prove that $X$ descends to a vector field on $M$. In particular, any right-invariant vector field on $G$ descends to a vector field on $M$.
+
+Proof
+
+According to Proposition 18.1 (Smooth descent by submersions) (page 58), a vector field $X \in \mathfrak{X}(G)$ descends to a smooth vector field on $M$ if $d\pi_g(X_g)$ is constant on the fibers of the submersion $\pi: G \rightarrow M$, defined by $\pi(g) = g \cdot p$. The fibers of $\pi$ are the left cosets of the stabilizer $G_p$.
+
+Let $g_1, g_2$ be in the same fiber, so $g_2 = g_1 h$ for some $h \in G_p$. We need to show $d\pi_{g_1}(X_{g_1}) = d\pi_{g_2}(X_{g_2})$.
+For any $g \in G$ and $h \in G_p$, we have $\pi(g h) = (g h) \cdot p = g \cdot (h \cdot p) = g \cdot p = \pi(g)$. Thus, $\pi \circ R_h = \pi$. Differentiating gives $d\pi_{gh} \circ (dR_h)_g = d\pi_g$.
+By hypothesis, $X_{gh} = (dR_h)_g(X_g)$.
+So, $d\pi_{g_2}(X_{g_2}) = d\pi_{g_1 h}(X_{g_1 h}) = d\pi_{g_1 h}((dR_h)_{g_1}(X_{g_1})) = (d\pi_{g_1 h} \circ (dR_h)_{g_1})(X_{g_1}) = d\pi_{g_1}(X_{g_1})$.
+This shows the condition is met, so $X$ descends.
+
+In particular, any right-invariant vector field on $G$ is invariant under $(R_g)_*$ for all $g \in G$, so it is for $g \in G_p$. Thus it descends to a vector field on $M.
 
 # 5.
 As in class, define the exponential map $\exp : T_e G \rightarrow G$ by $\exp (\xi)=\gamma_e^{X_{\xi}}(1)$.
