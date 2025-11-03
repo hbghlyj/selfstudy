@@ -34,7 +34,7 @@ Show that $\phi$ is invertible (and therefore an isomorphism of vector spaces) i
 
 Proof: 
 
-(⇒) Suppose $\phi$ is invertible. If the $a_i$'s were not all distinct, say $a_i = a_j$ for some $i \neq j$, then for any polynomial $p(t)$, we would have $p(a_i) = p(a_j)$. This means that the map $\phi$ would not be injective, as different polynomials could yield the same image under $\phi$. This contradicts the assumption that $\phi$ is invertible.
+(⇒) Suppose $\phi$ is invertible. If the $a_i$'s were not all distinct, say $a_i = a_j$ for some $i \neq j$, then for any polynomial $p(t)$, we would have $p(a_i) = p(a_j)$. This implies the image of $\phi$ is contained in the proper subspace of $\mathbb{R}^{n+1}$ where the $i$-th and $j$-th coordinates are equal. Thus, $\phi$ is not surjective. A linear map between finite-dimensional spaces of the same dimension is invertible if and only if it is surjective, so this contradicts the assumption that $\phi$ is invertible.
 
 (⇐) Now suppose the $a_i$'s are all distinct. Since $V$ is the space of polynomials of degree at most $n$, any polynomial is uniquely determined by its values at $n+1$ distinct points since Vandermonde matrices are invertible. Thus, for any vector in $\mathbb{R}^{n+1}$, there exists a unique polynomial in $V$ that maps to it under $\phi$. This shows that $\phi$ is both injective and surjective, hence invertible.
 
