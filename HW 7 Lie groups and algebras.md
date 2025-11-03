@@ -157,7 +157,7 @@ According to Proposition 18.1 (Smooth descent by submersions), a vector field $X
 
 Let $g_1, g_2$ be in the same fiber, so $g_2 = g_1 h$ for some $h \in G_p$. We need to show $d\pi_{g_1}(X_{g_1}) = d\pi_{g_2}(X_{g_2})$.
 
-For any $g \in G$ and $h \in G_p$, we have $\pi(g h) = (g h) \cdot p = g \cdot (h \cdot p) = g \cdot p = \pi(g)$. Thus, $\pi \circ R_h = \pi$. Differentiating gives `$d\pi_{gh} \circ (dR_h)_g = d\pi_g`$.
+For any $g \in G$ and $h \in G_p$, we have $\pi(g h) = (g h) \cdot p = g \cdot (h \cdot p) = g \cdot p = \pi(g)$. Thus, $\pi \circ R_h = \pi$. Differentiating gives $`d\pi_{gh} \circ (dR_h)_g = d\pi_g`$.
 
 By hypothesis, $X_{gh} = (dR_h)_g(X_g)$.
 
@@ -165,7 +165,7 @@ So, $`d\pi_{g_2}(X_{g_2}) = d\pi_{g_1 h}(X_{g_1 h}) = d\pi_{g_1 h}((dR_h)_{g_1}(
 
 This shows the condition is met, so $X$ descends.
 
-In particular, any right-invariant vector field on $G$ is invariant under $(R_g)_*$ for all $g \in G$, so it is for $g \in G_p$. Thus it descends to a vector field on $M.
+In particular, any right-invariant vector field on $G$ is invariant under $(R_g)_*$ for all $g \in G$, so it is for $g \in G_p$. Thus it descends to a vector field on $M$.
 
 # 5.
 As in class, define the exponential map $\exp : T_e G \rightarrow G$ by $\exp (\xi)=\gamma_e^{X_{\xi}}(1)$.
