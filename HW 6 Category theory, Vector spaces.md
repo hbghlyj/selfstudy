@@ -43,7 +43,7 @@ Let $V$ be a vector space over a field $K$. A (linear) functional on $V$ is a li
 
 Proof: If $\phi$ is the zero functional, then $\ker(\phi) = V$, and since $\ker(\phi) \subset \ker(\psi)$, it follows that $\ker(\psi) = V$, which means $\psi$ is also the zero functional. In this case, we can take $a=0$.
 
-Now, assume $\phi$ is not the zero functional. Then there exists some $v_0 \in V$ such that $\psi(v_0) \neq 0$. Since $\ker(\phi) \subset \ker(\psi)$, we have $\phi(v_0) \neq 0$. Define $a = \frac{\psi(v_0)}{\phi(v_0)}$. We will show that $\psi = a \phi$. For any $v \in V$, we can write
+Now, assume $\phi$ is not the zero functional. Then there exists some $v_0 \in V$ such that $\phi(v_0) \neq 0$. Define $a = \frac{\psi(v_0)}{\phi(v_0)}$. We will show that $\psi = a \phi$. For any $v \in V$, we can write
 
 $v = v_1 + \frac{\phi(v)}{\phi(v_0)} v_0$,
 
