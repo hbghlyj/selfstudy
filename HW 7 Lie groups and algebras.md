@@ -149,7 +149,7 @@ $
 f\left(v_{\sigma(1)}, \ldots, v_{\sigma(k)}\right)=\mathrm{sgn}(\sigma) f\left(v_1, \ldots, v_k\right)
 $
 
-We can make an alternating $k$ tensor Alt $f: V^k \rightarrow \mathbb{R}$ from $f$ by setting
+We can make an alternating $k$ tensor $\mathrm{Alt} f: V^k \rightarrow \mathbb{R}$ from $f$ by setting
 
 $
 \mathrm{Alt} f=\frac{1}{k!} \sum_{\sigma \in S_k} \mathrm{sgn}(\sigma) f\left(v_{\sigma(1)}, \ldots, v_{\sigma(k)}\right)
