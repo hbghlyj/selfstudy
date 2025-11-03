@@ -13,7 +13,7 @@ Let $V$ be a linear space and $P: V \rightarrow V$ be a linear operator such tha
 
 Proof: Let $v \in V$. Then $v = P(v) + (v - P(v))$. Since $P^2 = P$, we have $P(v - P(v)) = P(v) - P^2(v) = P(v) - P(v) = 0$, so $v - P(v) \in \ker(P)$. Also, $P(v) \in \mathrm{im}(P)$, so $v = P(v) + (v - P(v))$ is a sum of elements from $\mathrm{im}(P)$ and $\ker(P)$.
 
-To show that the sum is direct, suppose $w \in \mathrm{im}(P) \cap \ker(P)$. Then there exists $u$ such that $w = P(u)$ and $P(w) = 0$. But then $w = P(w) = 0$, so the intersection is trivial.
+To show that the sum is direct, suppose $w \in \mathrm{im}(P) \cap \ker(P)$. Then $w = P(u)$ for some $u \in V$, and $P(w) = 0$. Substituting the first equation into the second gives $P(P(u)) = 0$, so $P^2(u) = 0$. Since $P^2=P$, we have $P(u)=0$. As $w=P(u)$, it follows that $w=0$, so the intersection is trivial.
 
 
 # 4.
