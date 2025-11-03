@@ -149,7 +149,11 @@ Both maps are surjective submersions, and their fibers coincide since $\pi_M^{-1
 (b) We know that $\mathrm{SU}(2)$ acts transitively on both $S^2$ and $\mathbb{C P}^1$. For a suitable choice of points $p \in S^2$ and $q \in \mathbb{C P}^1$, the stabilizer subgroups $G_p$ and $G_q$ are identical. For instance, the stabilizer of $[1:0] \in \mathbb{C P}^1$ is the subgroup of diagonal matrices in $\mathrm{SU}(2)$, which is the same subgroup that stabilizes the north pole in $S^2$ under the adjoint action. Since the stabilizers are the same subgroup, by part (a), we conclude that $S^2$ is diffeomorphic to $\mathbb{C P}^1$.
 
 # 4.
-Suppose that $G \circlearrowright M$ is a transitive left Lie-group action. Let $G_p$ be the stabilizer of $p \in M$. Let $X$ be any vector field on $G$ which is invariant under $\left(R_g\right)_*$ for all $g \in G_p$. Prove that $X$ descends to a vector field on $M$. In particular, any right-invariant vector field on $G$ descends to a vector field on $M$.
+Suppose that $G \circlearrowright M$ is a transitive left Lie-group action. Let $G_p$ be the stabilizer of $p \in M$. Let $X$ be any vector field on $G$ which is invariant under $(R_g)_*$ for all $g \in G_p$. Prove that $X$ descends to a vector field on $M$. In particular, any right-invariant vector field on $G$ descends to a vector field on $M$.
+
+Proof
+
+According to Proposition 18.1 (Smooth descent by submersions) (page 58), a vector field $X \in \mathfrak{X}(G)$ descends to a smooth vector field $Y \in \mathfrak{X}(M)$ if $d\pi_g(X_g)$ is constant on the fibers of $\pi$. Here, $\pi: G \rightarrow M$ is the quotient map defined by $\pi(g) = g \cdot p$. The fibers of $\pi$ are the left cosets of $G_p$ in $G$, i.e., $\pi^{-1}(m) = \{g \in G \mid g \cdot p = m\} = g G_p$ for some $g \in G$.
 
 # 5.
 As in class, define the exponential map $\exp : T_e G \rightarrow G$ by $\exp (\xi)=\gamma_e^{X_{\xi}}(1)$.
