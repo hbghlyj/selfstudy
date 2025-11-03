@@ -1,5 +1,5 @@
 # 1.
-Verify that the following construction is a contravariant functor $F$ from the category of sets to itself: for a set $A, F(A)$ is the power set of $A$ (that is, the set of all the subsets of $A$ ), while for a map $f: A \rightarrow B$, the induced map $F(f): F(B) \rightarrow F(A)$ sends $X \subset B$ to $f^{-1}(X) \subset A$.
+Verify that the following construction is a contravariant functor $F$ from the category of sets to itself: for a set $A$, $F(A)$ is the power set of $A$ (that is, the set of all the subsets of $A$ ), while for a map $f: A \rightarrow B$, the induced map $F(f): F(B) \rightarrow F(A)$ sends $X \subset B$ to $f^{-1}(X) \subset A$.
 
 # 2.
 Let $\mathcal{C}$ be any category. Fix an object $a \in \mathcal{C}$ and suppose that for any object $x \in \mathcal{C}$, the product $a \times x$ exists. Show that the correspondence
