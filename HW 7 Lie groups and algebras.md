@@ -120,9 +120,11 @@ The action of $\mathrm{PSL}(2, \mathbb{R})$ on $\mathbb{C P}^1$ can be analyzed 
 
 # 3.
 Suppose that $G$ acts transitively on two manifolds $M$ and $N$, and that for some $p \in M$ and $q \in N$, we have $G_p=G_q$.
+
 (a) Prove that $M$ and $N$ are diffeomorphic.
 
 Hint: Use Theorem 12.10 in the notes.
+
 (b) Use this result to give a proof that $S^2$ is diffeomorphic to $\mathbb{C P}^1$.
 
 # 4.
