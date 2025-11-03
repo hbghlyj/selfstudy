@@ -146,7 +146,7 @@ and
 $`\pi_N: G \rightarrow N, \quad g \mapsto g \cdot q`$.
 Both maps are surjective submersions, and their fibers coincide since $\pi_M^{-1}(p)=G_p=G_q=\pi_N^{-1}(q)$. By Theorem 12.10, there exists a unique diffeomorphism $f: M \rightarrow N$ such that $f \circ \pi_M = \pi_N$. Thus, $M$ and $N$ are diffeomorphic.
 
-(b) We know that $\mathrm{SU}(2)$ acts transitively on both $S^2$ and $\mathbb{C P}^1$. The stabilizer of a point in $S^2$ under this action is isomorphic to $\mathrm{U}(1)$, and the stabilizer of a point in $\mathbb{C P}^1$ is also isomorphic to $\mathrm{U}(1)$. Since the stabilizers are the same, by part (a), we conclude that $S^2$ is diffeomorphic to $\mathbb{C P}^1$.
+(b) We know that $\mathrm{SU}(2)$ acts transitively on both $S^2$ and $\mathbb{C P}^1$. For a suitable choice of points $p \in S^2$ and $q \in \mathbb{C P}^1$, the stabilizer subgroups $G_p$ and $G_q$ are identical. For instance, the stabilizer of $[1:0] \in \mathbb{C P}^1$ is the subgroup of diagonal matrices in $\mathrm{SU}(2)$, which is the same subgroup that stabilizes the north pole in $S^2$ under the adjoint action. Since the stabilizers are the same subgroup, by part (a), we conclude that $S^2$ is diffeomorphic to $\mathbb{C P}^1$.
 
 # 4.
 Suppose that $G \circlearrowright M$ is a transitive left Lie-group action. Let $G_p$ be the stabilizer of $p \in M$. Let $X$ be any vector field on $G$ which is invariant under $\left(R_g\right)_*$ for all $g \in G_p$. Prove that $X$ descends to a vector field on $M$. In particular, any right-invariant vector field on $G$ descends to a vector field on $M$.
