@@ -78,4 +78,4 @@ Since $`\{v_1, \ldots, v_m\}`$ is a basis over $K$, each coefficient must be zer
 
 $\sum_{i=1}^n c_{ij} k_i = 0$ for all $j$.
 
-Since $`\{k_1, \ldots, k_n\}`$ is a basis of $K$ over $L$, it follows that each $c_{ij} = 0$. Thus, the set $`\{k_i v_j\}`$ is linearly independent over $L$.
+Since $\{k_1, \ldots, k_n\}$ is a basis of $K$ over $L$, it follows that each $c_{ij} = 0$. Thus, the set $\{k_i v_j\}$ is linearly independent over $L$.\n\nHaving shown that the set $\{k_i v_j : 1 \leq i \leq n, 1 \leq j \leq m\}$ spans $V$ over $L$ and is linearly independent, it forms a basis for $V$ over $L$. This basis contains $m \cdot n$ elements, so we conclude that $\dim_L(V) = m \cdot n = \dim_K(V) \cdot \dim_L(K)$.
