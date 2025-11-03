@@ -11,6 +11,11 @@ is a functor. (Technically, there is a subtlety here: we know that if a product 
 # 3.
 Let $V$ be a linear space and $P: V \rightarrow V$ be a linear operator such that $P^2=P$. (Operators having this property are called projectors.) Show that $V$ is the internal direct sum of subspaces $\ker(P)$ and $\mathrm{im}(P)$.
 
+Proof: Let $v \in V$. Then $v = P(v) + (v - P(v))$. Since $P^2 = P$, we have $P(v - P(v)) = P(v) - P^2(v) = P(v) - P(v) = 0$, so $v - P(v) \in \ker(P)$. Also, $P(v) \in \mathrm{im}(P)$, so $v = P(v) + (v - P(v))$ is a sum of elements from $\mathrm{im}(P)$ and $\ker(P)$.
+
+To show that the sum is direct, suppose $w \in \mathrm{im}(P) \cap \ker(P)$. Then $w = P(u)$ for some $u \in V$, and $P(w) = 0$. Substituting the first equation into the second gives $P(P(u)) = 0$, so $P^2(u) = 0$. Since $P^2=P$, we have $P(u)=0$. As $w=P(u)$, it follows that $w=0$, so the intersection is trivial.
+
+
 # 4.
 Continuing with the previous problem, suppose that $\dim(V)=n$. Prove that there exists a basis of $V$ such that the matrix of $P$ is of the form $\mathrm{diag}(1,1, \ldots, 1,0, \ldots, 0)$. (diag denotes the diagonal matrix with given entries.)
 
