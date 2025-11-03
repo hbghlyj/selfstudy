@@ -46,7 +46,7 @@ Let $K$ be a field and $L \subset K$ be a smaller field (e.g., $L=\mathbb{R}$ an
 
 $\dim_L(V)=\dim_K(V) \cdot \dim_L(K) .$
 
-Proof: Let $`\{v_1, v_2, \ldots, v_m\}`$ be a basis of $V$ over $K$, $`\{k_1, k_2, \ldots, k_n\}`$ be a basis of $K$ over $L$. We claim that the set
+Proof: Let $\dim_K(V) = m$ and $\dim_L(K) = n$. Let $\{v_1, v_2, \ldots, v_m\}$ be a basis of $V$ over $K$, and $\{k_1, k_2, \ldots, k_n\}$ be a basis of $K$ over $L$. We claim that the set
 
 $`\{k_i v_j : 1 \leq i \leq n, 1 \leq j \leq m\}`$
 
