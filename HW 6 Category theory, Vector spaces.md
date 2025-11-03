@@ -41,6 +41,18 @@ Proof:
 # 6.
 Let $V$ be a vector space over a field $K$. A (linear) functional on $V$ is a linear operator $\phi: V \rightarrow K$. Show that if two functionals $\phi, \psi: V \rightarrow K$ satisfy $\ker(\phi) \subset \ker(\psi)$, there exists $a \in K$ such that $\psi=a \phi$. (If you need to, you can assume that $V$ is finite-dimensional, but it should not be necessary.)
 
+Proof: If $\phi$ is the zero functional, then $\ker(\phi) = V$, and since $\ker(\phi) \subset \ker(\psi)$, it follows that $\ker(\psi) = V$, which means $\psi$ is also the zero functional. In this case, we can take $a=0$.
+
+Now, assume $\phi$ is not the zero functional. Then there exists some $v_0 \in V$ such that $\psi(v_0) \neq 0$. Since $\ker(\phi) \subset \ker(\psi)$, we have $\phi(v_0) \neq 0$. Define $a = \frac{\psi(v_0)}{\phi(v_0)}$. We will show that $\psi = a \phi$. For any $v \in V$, we can write
+
+$v = v_1 + \frac{\phi(v)}{\phi(v_0)} v_0$,
+
+where $v_1 \in \ker(\phi)$. Then,
+
+$\psi(v) = \psi(v_1) + \frac{\phi(v)}{\phi(v_0)} \psi(v_0) = 0 + \frac{\phi(v)}{\phi(v_0)} \cdot a \phi(v_0) = a \phi(v)$.
+
+Thus, $\psi = a \phi$.
+
 # 7.
 Let $K$ be a field and $L \subset K$ be a smaller field (e.g., $L=\mathbb{R}$ and $K=\mathbb{C}$ ). Given a $K$-vector space $V$, we can also consider it as a $L$-vector space, so we get two notions of dimension: as a vector space over $K$ and as a vector space over $L$. Denote them by $\dim_K V$ and $\dim_L V$, respectively. Show that
 
