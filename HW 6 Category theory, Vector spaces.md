@@ -14,7 +14,7 @@ Let $V$ be a linear space and $P: V \rightarrow V$ be a linear operator such tha
 # 4.
 Continuing with the previous problem, suppose that $\dim(V)=n$. Prove that there exists a basis of $V$ such that the matrix of $P$ is of the form $\mathrm{diag}(1,1, \ldots, 1,0, \ldots, 0)$. (diag denotes the diagonal matrix with given entries.)
 
-Proof: Since $V$ is the internal direct sum of $\ker(P)$ and $\mathrm{im}(P)$, we can choose a basis for each of these subspaces. Let $`\{v_1, v_2, \ldots, v_k\}`$ be a basis for $\mathrm{im}(P)$ and $`\{u_1, u_2, \ldots, u_{n-k}\}`$ be a basis for $\ker(P)$. Then the union of these two bases forms a basis for $V$. The matrix of $P$ with respect to this basis will have $1$s on the diagonal corresponding to the basis vectors of $\mathrm{im}(P)$ and $0$s corresponding to the basis vectors of $\ker(P)$, resulting in the desired diagonal form.
+Proof: Since $V = \ker(P) \oplus \mathrm{im}(P)$, we can form a basis for $V$ by combining a basis for $\ker(P)$ and a basis for $\mathrm{im}(P)$. Let $\{u_1, \ldots, u_{n-k}\}$ be a basis for $\ker(P)$ and $\{v_1, \ldots, v_k\}$ be a basis for $\mathrm{im}(P)$. For any $u_i$, $P(u_i) = 0$ by definition. For any $v_j \in \mathrm{im}(P)$, we know $v_j = P(w)$ for some $w \in V$. Since $P^2=P$, it follows that $P(v_j) = P(P(w)) = P^2(w) = P(w) = v_j$. Therefore, in the basis $\{v_1, \ldots, v_k, u_1, \ldots, u_{n-k}\}$, the matrix of $P$ is $\mathrm{diag}(1, \ldots, 1, 0, \ldots, 0)$, with $k$ ones and $n-k$ zeros.
 
 # 5.
 Fix $n$, and consider the vector space
