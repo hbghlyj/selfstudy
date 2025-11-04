@@ -30,17 +30,15 @@ Proof: To show that the correspondence $F: \mathcal{C} \rightarrow \mathcal{C}$ 
 
 1. **Preservation of composition**: For any two morphisms $f: x \rightarrow y$ and $g: y \rightarrow z$ in $\mathcal{C}$, we need to show that $F(g \circ f) = F(g) \circ F(f)$.
 
-   The product $a \times x$ comes with projection morphisms $\pi_a: a \times x \rightarrow a$ and $\pi_x: a \times x \rightarrow x$. Given a morphism $f: x \rightarrow y$, there exists a unique morphism $F(f): a \times x \rightarrow a \times y$ such that the following diagram commutes:
+   The product $a \times x$ comes with projection morphisms $\pi_a: a \times x \rightarrow a$ and $\pi_x: a \times x \rightarrow x$. Given a morphism $f: x \rightarrow y$, the universal property of the product $a \times y$ (with projections $\pi'_a, \pi'_y$) defines a unique morphism $F(f): a \times x \rightarrow a \times y$ such that $\pi'_a \circ F(f) = \pi_a$ and $\pi'_y \circ F(f) = f \circ \pi_x$. 
 
-   $`\begin{CD}
-a \times x @>F(f)>> a \times y\\
-@V\pi_xVV @VV\pi_yV\\
-x @>f>> y
-\end{CD}`$
+   To show $F(g \circ f) = F(g) \circ F(f)$, we verify that $F(g) \circ F(f)$ satisfies the universal property that uniquely defines $F(g \circ f)$. The morphism $F(g \circ f)$ is the unique map from $a \times x$ to $a \times z$ such that $\pi''_a \circ F(g \circ f) = \pi_a$ and $\pi''_z \circ F(g \circ f) = (g \circ f) \circ \pi_x$, where $\pi''_a, \pi''_z$ are projections from $a \times z$.
 
-   Similarly, for $g: y \rightarrow z$, there exists a unique morphism $F(g): a \times y \rightarrow a \times z$. Now, consider the composition $g \circ f: x \rightarrow z$. By the universal property of the product, there exists a unique morphism $F(g \circ f): a \times x \rightarrow a \times z$ such that the diagram commutes.
+   Let's check the composition $F(g) \circ F(f)$:
+   - $\pi''_a \circ (F(g) \circ F(f)) = (\pi''_a \circ F(g)) \circ F(f) = \pi'_a \circ F(f) = \pi_a$.
+   - $\pi''_z \circ (F(g) \circ F(f)) = (\pi''_z \circ F(g)) \circ F(f) = (g \circ \pi'_y) \circ F(f) = g \circ (\pi'_y \circ F(f)) = g \circ (f \circ \pi_x) = (g \circ f) \circ \pi_x$.
 
-   By the uniqueness of these morphisms, we have $F(g \circ f) = F(g) \circ F(f)$.
+   Since $F(g) \circ F(f)$ satisfies the same defining properties as $F(g \circ f)$, by uniqueness, they must be equal.
 
 2. **Preservation of identity**: For any object $x \in \mathcal{C}$, we need to show that $F(\text{id}_x) = \text{id}_{F(x)}$.
 
