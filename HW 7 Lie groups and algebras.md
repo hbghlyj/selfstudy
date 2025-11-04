@@ -190,7 +190,7 @@ Proof
 
 For any $g \in G$, the integral curve $\gamma_g^X(t)$ is given by $\gamma_g^X(t) = L_g(\gamma_e^X(t))$. Since $\gamma_e^X(t)$ is defined for all $t \in \mathbb{R}$ and $L_g$ is a diffeomorphism, $\gamma_g^X(t)$ is also defined for all $t \in \mathbb{R}$. Thus, $X$ is complete.
 
-(b) By definition, $\exp(t \xi) = \gamma_e^{X_{t\xi}}(1)$. The left-invariant vector field $X_{t \xi}$ satisfies $X_{t \xi}(g) = (dL_g)_e(t \xi) = t X_{\xi}(g)$. Therefore, the integral curve $\gamma_e^{X_{t \xi}}(s)$ satisfies
+(b) By definition, $\exp(t \xi) = \gamma_e^{X_{t\xi}}(1)$. The left-invariant vector field $X_{t \xi}$ satisfies $`X_{t \xi}(g) = (dL_g)_e(t \xi) = t X_{\xi}(g)`$. Therefore, the integral curve $\gamma_e^{X_{t \xi}}(s)$ satisfies
 
 $\frac{d}{ds} \gamma_e^{X_{t \xi}}(s) = t X_{\xi}(\gamma_e^{X_{t \xi}}(s))$ with initial condition $\gamma_e^{X_{t \xi}}(0) = e$.
 
