@@ -184,6 +184,12 @@ As in class, define the exponential map $\exp : T_e G \rightarrow G$ by $\exp (\
 
 Hint: Compare with Example 19.4 in the notes.
 
+Proof
+
+(a) Suppose $X$ is a left-invariant vector field on $G$. For any $g \in G$, the flow $\gamma_g^X(t)$ satisfies
+$\gamma_g^X(t) = L_g(\gamma_e^X(t))$,
+where $L_g$ is left multiplication by $g$. Since $\gamma_e^X(t)$ is defined for all $t \in \mathbb{R}$, so is $\gamma_g^X(t)$. Thus, $X$ is complete.
+
 # 6. Multilinear algebra needed later.
 Review the last question on last week's homework. Recall that any permutation $\sigma \in S_k$ can be written as product of $s$ transpositions. The sign of a permutation $\mathrm{sgn}(\sigma)$ is 1 if $s$ is even and -1 if odd. Let $V$ be a vector space. We say that a multilinear map ($k$-tensor) $f: V^k \rightarrow \mathbb{R}$ is alternating if for all $\sigma \in S_k$
 
