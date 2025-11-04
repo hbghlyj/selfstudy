@@ -186,9 +186,9 @@ Hint: Compare with Example 19.4 in the notes.
 
 Proof
 
-(a) Suppose $X$ is a left-invariant vector field on $G$. For any $g \in G$, the flow $\gamma_g^X(t)$ satisfies
-$\gamma_g^X(t) = L_g(\gamma_e^X(t))$,
-where $L_g$ is left multiplication by $g$. Since $\gamma_e^X(t)$ is defined for all $t \in \mathbb{R}$, so is $\gamma_g^X(t)$. Thus, $X$ is complete.
+(a) Suppose $X$ is a left-invariant vector field on $G$. We first show the integral curve through the identity, $\gamma_e^X(t)$, is defined for all $t \in \mathbb{R}$. Let its maximal domain be $(a,b)$. Assume $b < \infty$. By local existence, $\gamma_e^X(t)$ exists for $t \in (-\epsilon, \epsilon)$ for some $\epsilon > 0$. For any $t_0 \in (b-\epsilon, b)$, the curve $\tilde{\gamma}(t) = \gamma_e^X(t_0) \cdot \gamma_e^X(t-t_0)$ is an integral curve that matches $\gamma_e^X(t)$ on their common domain, but is defined on $(t_0-\epsilon, t_0+\epsilon)$, which extends beyond $b$. This contradicts maximality, so $b=\infty$. A similar argument shows $a=-\infty$.
+
+For any $g \in G$, the integral curve $\gamma_g^X(t)$ is given by $\gamma_g^X(t) = L_g(\gamma_e^X(t))$. Since $\gamma_e^X(t)$ is defined for all $t \in \mathbb{R}$ and $L_g$ is a diffeomorphism, $\gamma_g^X(t)$ is also defined for all $t \in \mathbb{R}$. Thus, $X$ is complete.
 
 # 6. Multilinear algebra needed later.
 Review the last question on last week's homework. Recall that any permutation $\sigma \in S_k$ can be written as product of $s$ transpositions. The sign of a permutation $\mathrm{sgn}(\sigma)$ is 1 if $s$ is even and -1 if odd. Let $V$ be a vector space. We say that a multilinear map ($k$-tensor) $f: V^k \rightarrow \mathbb{R}$ is alternating if for all $\sigma \in S_k$
