@@ -15,7 +15,7 @@ Proof: To verify that $F$ is a contravariant functor, we need to check two prope
 
    Thus, $F(g \circ f)(X) = (F(f) \circ F(g))(X)$ for all $X \subset C$, confirming that $F$ preserves composition.
 
-2. **Preservation of identity**: For any set $A$, we need to show that $F(\text{id}_A) = \text{id}_{F(A)}$.
+2. **Preservation of identity**: For any set $A$, we need to show that $`F(\text{id}_A) = \text{id}_{F(A)}`$.
 
    Let $X \subset A$. Then $`F(\text{id}_A)(X) = \text{id}_A^{-1}(X) = X`$. The identity map on $F(A)$, $\text{id}_{F(A)}$, also sends $X$ to $X$. Thus, $`F(\text{id}_A) = \text{id}_{F(A)}`$, confirming that $F$ preserves identity morphisms.
 
