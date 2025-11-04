@@ -50,7 +50,7 @@ Proof: To show that the correspondence $F: \mathcal{C} \rightarrow \mathcal{C}$ 
     1. $\pi_a \circ \text{id}_{a \times x} = \pi_a$
     2. $\pi_x \circ \text{id}_{a \times x} = \pi_x$
 
-    By the uniqueness of the morphism defined by these properties, we must have $F(\text{id}_x) = \text{id}_{a \times x} = \text{id}_{F(x)}$.
+    By the uniqueness of the morphism defined by these properties, we must have $`F(\text{id}_x) = \text{id}_{a \times x} = \text{id}_{F(x)}`$.
 
 # 3.
 Let $V$ be a linear space and $P: V \rightarrow V$ be a linear operator such that $P^2=P$. (Operators having this property are called projectors.) Show that $V$ is the internal direct sum of subspaces $\ker(P)$ and $\mathrm{im}(P)$.
