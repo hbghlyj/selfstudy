@@ -26,6 +26,34 @@ $x \mapsto a \times x$
 
 is a functor. (Technically, there is a subtlety here: we know that if a product exists, it is unique up to isomorphism, however, in order to construct a functor, we need to make a specific choice of $a \times x$ for all $x$. It would be better to say that the functor is defined up to a canonical isomorphism, but this detail is usually ignored.)
 
+Proof: To show that the correspondence $F: \mathcal{C} \rightarrow \mathcal{C}$ defined by $F(x) = a \times x$ is a functor, we need to verify two properties:
+
+1. **Preservation of composition**: For any two morphisms $f: x \rightarrow y$ and $g: y \rightarrow z$ in $\mathcal{C}$, we need to show that $F(g \circ f) = F(g) \circ F(f)$.
+
+   The product $a \times x$ comes with projection morphisms $\pi_a: a \times x \rightarrow a$ and $\pi_x: a \times x \rightarrow x$. Given a morphism $f: x \rightarrow y$, there exists a unique morphism $F(f): a \times x \rightarrow a \times y$ such that the following diagram commutes:
+
+$`\begin{CD}
+a \times x @>F(f)>> a \times y\\
+@V\pi_xVV @VV\pi_yV\\
+x @>f>> y
+\end{CD}`$
+
+   Similarly, for $g: y \rightarrow z$, there exists a unique morphism $F(g): a \times y \rightarrow a \times z$. Now, consider the composition $g \circ f: x \rightarrow z$. By the universal property of the product, there exists a unique morphism $F(g \circ f): a \times x \rightarrow a \times z$ such that the diagram commutes.
+
+   By the uniqueness of these morphisms, we have $F(g \circ f) = F(g) \circ F(f)$.
+
+2. **Preservation of identity**: For any object $x \in \mathcal{C}$, we need to show that $F(\text{id}_x) = \text{id}_{F(x)}$.
+
+    The identity morphism $\text{id}_x: x \rightarrow x$ induces a unique morphism $F(\text{id}_x): a \times x \rightarrow a \times x$ such that the following diagram commutes:
+    
+\begin{CD}
+a \times x @>F(id_x)>> a \times x\\
+@V\pi_xVV @VV\pi_xV\\
+x @>\text{id}_x>> x
+\end{CD}
+    
+    By the universal property of the product, the only morphism that makes this diagram commute is the identity morphism on $a \times x$. Thus, $F(\text{id}_x) = \text{id}_{F(x)}$.
+
 # 3.
 Let $V$ be a linear space and $P: V \rightarrow V$ be a linear operator such that $P^2=P$. (Operators having this property are called projectors.) Show that $V$ is the internal direct sum of subspaces $\ker(P)$ and $\mathrm{im}(P)$.
 
