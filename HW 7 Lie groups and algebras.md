@@ -190,6 +190,12 @@ Proof
 
 For any $g \in G$, the integral curve $\gamma_g^X(t)$ is given by $\gamma_g^X(t) = L_g(\gamma_e^X(t))$. Since $\gamma_e^X(t)$ is defined for all $t \in \mathbb{R}$ and $L_g$ is a diffeomorphism, $\gamma_g^X(t)$ is also defined for all $t \in \mathbb{R}$. Thus, $X$ is complete.
 
+(b) By definition, $\exp(t \xi) = \gamma_e^{X_{t\xi}}(1)$. The left-invariant vector field $X_{t \xi}$ satisfies $X_{t \xi}(g) = (dL_g)_e(t \xi) = t X_{\xi}(g)$. Therefore, the integral curve $\gamma_e^{X_{t \xi}}(s)$ satisfies
+
+$\frac{d}{ds} \gamma_e^{X_{t \xi}}(s) = t X_{\xi}(\gamma_e^{X_{t \xi}}(s))$ with initial condition $\gamma_e^{X_{t \xi}}(0) = e$.
+
+By the chain rule, the curve $\alpha(s) = \gamma_e^{X_{\xi}}(t s)$ satisfies $\frac{d}{ds}\alpha(s) = t X_{\xi}(\alpha(s))$ and $\alpha(0)=e$. By uniqueness of solutions to ODEs, it must be that $\gamma_e^{X_{t \xi}}(s) = \gamma_e^{X_{\xi}}(t s)$. Evaluating at $s=1$, we get $\exp(t \xi) = \gamma_e^{X_{\xi}}(t)$.
+
 # 6. Multilinear algebra needed later.
 Review the last question on last week's homework. Recall that any permutation $\sigma \in S_k$ can be written as product of $s$ transpositions. The sign of a permutation $\mathrm{sgn}(\sigma)$ is 1 if $s$ is even and -1 if odd. Let $V$ be a vector space. We say that a multilinear map ($k$-tensor) $f: V^k \rightarrow \mathbb{R}$ is alternating if for all $\sigma \in S_k$
 
