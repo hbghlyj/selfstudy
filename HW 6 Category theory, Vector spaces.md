@@ -32,7 +32,7 @@ Proof: To show that the correspondence $F: \mathcal{C} \rightarrow \mathcal{C}$ 
 
    The product $a \times x$ comes with projection morphisms $\pi_a: a \times x \rightarrow a$ and $\pi_x: a \times x \rightarrow x$. Given a morphism $f: x \rightarrow y$, there exists a unique morphism $F(f): a \times x \rightarrow a \times y$ such that the following diagram commutes:
 
-$`\begin{CD}
+   $`\begin{CD}
 a \times x @>F(f)>> a \times y\\
 @V\pi_xVV @VV\pi_yV\\
 x @>f>> y
@@ -46,8 +46,8 @@ x @>f>> y
 
     The identity morphism $\text{id}_x: x \rightarrow x$ induces a unique morphism $F(\text{id}_x): a \times x \rightarrow a \times x$ such that the following diagram commutes:
     
-$`\begin{CD}
-a \times x @>F(id_x)>> a \times x\\
+   $`\begin{CD}
+a \times x @>F(\text{id}_x)>> a \times x\\
 @V\pi_xVV @VV\pi_xV\\
 x @>\text{id}_x>> x
 \end{CD}`$
