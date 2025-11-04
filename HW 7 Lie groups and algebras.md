@@ -196,29 +196,12 @@ $\frac{d}{ds} \gamma_e^{X_{t \xi}}(s) = t X_{\xi}(\gamma_e^{X_{t \xi}}(s))$ with
 
 By the chain rule, the curve $\alpha(s) = \gamma_e^{X_{\xi}}(t s)$ satisfies $\frac{d}{ds}\alpha(s) = t X_{\xi}(\alpha(s))$ and $\alpha(0)=e$. By uniqueness of solutions to ODEs, it must be that $\gamma_e^{X_{t \xi}}(s) = \gamma_e^{X_{\xi}}(t s)$. Evaluating at $s=1$, we get $\exp(t \xi) = \gamma_e^{X_{\xi}}(t)$.
 
-
 (c) Using part (b), we have
 
-$\exp((t+s) \xi) = \gamma_e^{X_{(t+s)\xi}}(1) = \gamma_e^{X_{t\xi + s\xi}}(1)$.
+$\exp((t+s) \xi) = \gamma_e^{X_\{\xi}}(t+s) = \gamma_e^{X_{\xi}}(t) \cdot \gamma_e^{X_{\xi}}(s) = \exp(t \xi) \exp(s \xi)$.
 
-By the definition of the exponential map and the fact that $X_{t\xi + s\xi} = X_{t\xi} + X_{s\xi}$, we have
-
-$\exp((t+s) \xi) = \gamma_e^{X_{t\xi} + X_{s\xi}}(1)$.
-
-Since $X_{t\xi}$ and $X_{s\xi}$ are left-invariant vector fields, their sum is also left-invariant. The integral curve of $X_{t\xi} + X_{s\xi}$ at time 1 is given by $\gamma_e^{X_{t\xi} + X_{s\xi}}(1)$. Using the properties of left-invariant vector fields and the exponential map, we get
-
-$\exp((t+s) \xi) = \exp(t \xi)\exp(s \xi)$.
-
-(d) For $G = \mathrm{GL}(n, K)$, the left-invariant vector field corresponding to $`\xi \in T_e G \cong \mathrm{Mat}_{K}^{n \times n}`$ is given by $X_{\xi}(A) = A \xi$ for $A \in \mathrm{GL}(n, K)$. The integral curve $\gamma_e^{X_{\xi}}(t)$ satisfies the matrix differential equation
-
-$\frac{d}{dt} \gamma_e^{X_{\xi}}(t) = \gamma_e^{X_{\xi}}(t) \xi$ with initial condition $\gamma_e^{X_{\xi}}(0) = I_n$. The solution to this equation is given by the matrix exponential:
-$\gamma_e^{X_{\xi}}(t) = e^{t \xi}$.
-
-Thus, by part (b), we have
-
-$\exp(t \xi) = \gamma_e^{X_{\xi}}(t) = e^{t \xi}$,
-
-which shows that the exponential map defined via left-invariant vector fields agrees with the ordinary matrix exponential.
+(d) For $G = \mathrm{GL}(n, K)$, the left-invariant vector field corresponding to $\xi \in T_e G \cong \mathrm{Mat}_{K}^{n \times n}$ is given by $X_{\xi}(A) = A \xi$ for $A \in \mathrm{GL}(n, K)$. The integral curve through the identity is given by the solution to the matrix differential equation
+$\frac{d}{dt} \gamma_e^{X_{\xi}}(t) = \gamma_e^{X_{\xi}}(t) \xi$ with initial condition $\gamma_e^{X_{\xi}}(0) = I_n$. The solution to this equation is the matrix exponential $\gamma_e^{X_{\xi}}(t) = e^{t \xi}$. Therefore, by part (b), we have $\exp(\xi) = \gamma_e^{X_{\xi}}(1) = e^{\xi}$, which agrees with the ordinary exponential map of matrices.
 
 # 6. Multilinear algebra needed later.
 Review the last question on last week's homework. Recall that any permutation $\sigma \in S_k$ can be written as product of $s$ transpositions. The sign of a permutation $\mathrm{sgn}(\sigma)$ is 1 if $s$ is even and -1 if odd. Let $V$ be a vector space. We say that a multilinear map ($k$-tensor) $f: V^k \rightarrow \mathbb{R}$ is alternating if for all $\sigma \in S_k$
