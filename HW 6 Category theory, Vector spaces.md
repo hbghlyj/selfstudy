@@ -1,5 +1,19 @@
 # 1.
-Verify that the following construction is a contravariant functor $F$ from the category of sets to itself: for a set $A$, $F(A)$ is the power set of $A$ (that is, the set of all the subsets of $A$ ), while for a map $f: A \rightarrow B$, the induced map $F(f): F(B) \rightarrow F(A)$ sends $X \subset B$ to $f^{-1}(X) \subset A$.
+Verify that the following construction is a contravariant functor $F$ from the category of sets to itself: for a set $A$, $F(A)$ is the power set of $A$ (that is, the set of all the subsets of $A$), while for a map $f: A \rightarrow B$, the induced map $F(f): F(B) \rightarrow F(A)$ sends $X \subset B$ to $f^{-1}(X) \subset A$.
+
+Proof: To verify that $F$ is a contravariant functor, we need to check two properties:
+
+1. **Preservation of composition**: For any two maps $f: A \rightarrow B$ and $g: B \rightarrow C$, we need to show that $F(g \circ f) = F(f) \circ F(g)$. 
+
+   Let $X \subset C$. Then,
+   
+   $F(g \circ f)(X) = (g \circ f)^{-1}(X) = f^{-1}(g^{-1}(X)).$
+
+   On the other hand,
+   
+   $(F(f) \circ F(g))(X) = F(f)(F(g)(X)) = F(f)(g^{-1}(X)) = f^{-1}(g^{-1}(X)).$
+
+   Thus, $F(g \circ f)(X) = (F(f) \circ F(g))(X)$ for all $X \subset C$, confirming that $F$ preserves composition.
 
 # 2.
 Let $\mathcal{C}$ be any category. Fix an object $a \in \mathcal{C}$ and suppose that for any object $x \in \mathcal{C}$, the product $a \times x$ exists. Show that the correspondence
