@@ -44,15 +44,15 @@ x @>f>> y
 
 2. **Preservation of identity**: For any object $x \in \mathcal{C}$, we need to show that $F(\text{id}_x) = \text{id}_{F(x)}$.
 
-    The identity morphism $\text{id}_x: x \rightarrow x$ induces a unique morphism $F(\text{id}_x): a \times x \rightarrow a \times x$ such that the following diagram commutes:
-    
-   $`\begin{CD}
-a \times x @>F(\text{id}_x)>> a \times x\\
-@V\pi_xVV @VV\pi_xV\\
-x @>\text{id}_x>> x
-\end{CD}`$
-    
-    By the universal property of the product, the only morphism that makes this diagram commute is the identity morphism on $a \times x$. Thus, $`F(\text{id}_x) = \text{id}_{F(x)}`$.
+    The identity morphism $\text{id}_x: x \rightarrow x$ induces a unique morphism $F(\text{id}_x): a \times x \rightarrow a \times x$. By the universal property of the product $a \times x$, this morphism must satisfy:
+    1. $\pi_a \circ F(\text{id}_x) = \pi_a$
+    2. $\pi_x \circ F(\text{id}_x) = \text{id}_x \circ \pi_x = \pi_x$
+
+    The identity morphism on $F(x) = a \times x$, which is $\text{id}_{a \times x}$, also satisfies these properties:
+    1. $\pi_a \circ \text{id}_{a \times x} = \pi_a$
+    2. $\pi_x \circ \text{id}_{a \times x} = \pi_x$
+
+    By the uniqueness of the morphism defined by these properties, we must have $F(\text{id}_x) = \text{id}_{a \times x} = \text{id}_{F(x)}$.
 
 # 3.
 Let $V$ be a linear space and $P: V \rightarrow V$ be a linear operator such that $P^2=P$. (Operators having this property are called projectors.) Show that $V$ is the internal direct sum of subspaces $\ker(P)$ and $\mathrm{im}(P)$.
