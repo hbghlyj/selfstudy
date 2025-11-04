@@ -26,6 +26,32 @@ $x \mapsto a \times x$
 
 is a functor. (Technically, there is a subtlety here: we know that if a product exists, it is unique up to isomorphism, however, in order to construct a functor, we need to make a specific choice of $a \times x$ for all $x$. It would be better to say that the functor is defined up to a canonical isomorphism, but this detail is usually ignored.)
 
+Proof: To show that the correspondence $F: \mathcal{C} \rightarrow \mathcal{C}$ defined by $F(x) = a \times x$ is a functor, we need to verify two properties:
+
+1. **Preservation of composition**: For any two morphisms $f: x \rightarrow y$ and $g: y \rightarrow z$ in $\mathcal{C}$, we need to show that $F(g \circ f) = F(g) \circ F(f)$.
+
+   The product $a \times x$ comes with projection morphisms $\pi_a: a \times x \rightarrow a$ and $\pi_x: a \times x \rightarrow x$. Given a morphism $f: x \rightarrow y$, the universal property of the product $a \times y$ (with projections $\pi'_a, \pi'_y$) defines a unique morphism $F(f): a \times x \rightarrow a \times y$ such that $\pi'_a \circ F(f) = \pi_a$ and $\pi'_y \circ F(f) = f \circ \pi_x$. 
+
+   To show $F(g \circ f) = F(g) \circ F(f)$, we verify that $F(g) \circ F(f)$ satisfies the universal property that uniquely defines $F(g \circ f)$. The morphism $F(g \circ f)$ is the unique map from $a \times x$ to $a \times z$ such that $\pi''_a \circ F(g \circ f) = \pi_a$ and $\pi''_z \circ F(g \circ f) = (g \circ f) \circ \pi_x$, where $\pi''_a, \pi''_z$ are projections from $a \times z$.
+
+   Let's check the composition $F(g) \circ F(f)$:
+   - $\pi''_a \circ (F(g) \circ F(f)) = (\pi''_a \circ F(g)) \circ F(f) = \pi'_a \circ F(f) = \pi_a$.
+   - $\pi''_z \circ (F(g) \circ F(f)) = (\pi''_z \circ F(g)) \circ F(f) = (g \circ \pi'_y) \circ F(f) = g \circ (\pi'_y \circ F(f)) = g \circ (f \circ \pi_x) = (g \circ f) \circ \pi_x$.
+
+   Since $F(g) \circ F(f)$ satisfies the same defining properties as $F(g \circ f)$, by uniqueness, they must be equal.
+
+2. **Preservation of identity**: For any object $x \in \mathcal{C}$, we need to show that $F(\text{id}_x) = \text{id}_{F(x)}$.
+
+    The identity morphism $\text{id}_x: x \rightarrow x$ induces a unique morphism $F(\text{id}_x): a \times x \rightarrow a \times x$. By the universal property of the product $a \times x$, this morphism must satisfy:
+    1. $\pi_a \circ F(\text{id}_x) = \pi_a$
+    2. $\pi_x \circ F(\text{id}_x) = \text{id}_x \circ \pi_x = \pi_x$
+
+    The identity morphism on $F(x) = a \times x$, which is $\text{id}_{a \times x}$, also satisfies these properties:
+    1. $\pi_a \circ \text{id}_{a \times x} = \pi_a$
+    2. $\pi_x \circ \text{id}_{a \times x} = \pi_x$
+
+    By the uniqueness of the morphism defined by these properties, we must have $F(\text{id}_x) = \text{id}_{a \times x} = \text{id}_{F(x)}$.
+
 # 3.
 Let $V$ be a linear space and $P: V \rightarrow V$ be a linear operator such that $P^2=P$. (Operators having this property are called projectors.) Show that $V$ is the internal direct sum of subspaces $\ker(P)$ and $\mathrm{im}(P)$.
 
