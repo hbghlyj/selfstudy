@@ -40,7 +40,7 @@ Proof: To show that the correspondence $F: \mathcal{C} \rightarrow \mathcal{C}$ 
 
    Since $F(g) \circ F(f)$ satisfies the same defining properties as $F(g \circ f)$, by uniqueness, they must be equal.
 
-2. **Preservation of identity**: For any object $x \in \mathcal{C}$, we need to show that $F(\text{id}_x) = \text{id}_{F(x)}$.
+2. **Preservation of identity**: For any object $x \in \mathcal{C}$, we need to show that $`F(\text{id}_x) = \text{id}_{F(x)}`$.
 
     The identity morphism $\text{id}_x: x \rightarrow x$ induces a unique morphism $F(\text{id}_x): a \times x \rightarrow a \times x$. By the universal property of the product $a \times x$, this morphism must satisfy:
     1. $\pi_a \circ F(\text{id}_x) = \pi_a$
