@@ -17,7 +17,7 @@ Proof: To verify that $F$ is a contravariant functor, we need to check two prope
 
 2. **Preservation of identity**: For any set $A$, we need to show that $F(\text{id}_A) = \text{id}_{F(A)}$.
 
-   Let $X \subset A$. Then $`F(\text{id}_A)(X) = \text{id}_A^{-1}(X) = X`$. The identity map on $F(A)$, $\text{id}_{F(A)}$, also sends $X$ to $X$. Thus, $F(\text{id}_A) = \text{id}_{F(A)}$, confirming that $F$ preserves identity morphisms.
+   Let $X \subset A$. Then $`F(\text{id}_A)(X) = \text{id}_A^{-1}(X) = X`$. The identity map on $F(A)$, $\text{id}_{F(A)}$, also sends $X$ to $X$. Thus, $`F(\text{id}_A) = \text{id}_{F(A)}`$, confirming that $F$ preserves identity morphisms.
 
 # 2.
 Let $\mathcal{C}$ be any category. Fix an object $a \in \mathcal{C}$ and suppose that for any object $x \in \mathcal{C}$, the product $a \times x$ exists. Show that the correspondence
