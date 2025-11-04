@@ -52,7 +52,7 @@ a \times x @>F(\text{id}_x)>> a \times x\\
 x @>\text{id}_x>> x
 \end{CD}`$
     
-    By the universal property of the product, the only morphism that makes this diagram commute is the identity morphism on $a \times x$. Thus, $F(\text{id}_x) = \text{id}_{F(x)}$.
+    By the universal property of the product, the only morphism that makes this diagram commute is the identity morphism on $a \times x$. Thus, $`F(\text{id}_x) = \text{id}_{F(x)}`$.
 
 # 3.
 Let $V$ be a linear space and $P: V \rightarrow V$ be a linear operator such that $P^2=P$. (Operators having this property are called projectors.) Show that $V$ is the internal direct sum of subspaces $\ker(P)$ and $\mathrm{im}(P)$.
