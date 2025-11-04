@@ -46,11 +46,11 @@ x @>f>> y
 
     The identity morphism $\text{id}_x: x \rightarrow x$ induces a unique morphism $F(\text{id}_x): a \times x \rightarrow a \times x$ such that the following diagram commutes:
     
-\begin{CD}
+$`\begin{CD}
 a \times x @>F(id_x)>> a \times x\\
 @V\pi_xVV @VV\pi_xV\\
 x @>\text{id}_x>> x
-\end{CD}
+\end{CD}`$
     
     By the universal property of the product, the only morphism that makes this diagram commute is the identity morphism on $a \times x$. Thus, $F(\text{id}_x) = \text{id}_{F(x)}$.
 
