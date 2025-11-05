@@ -194,7 +194,7 @@ For any $g \in G$, the integral curve $\gamma_g^X(t)$ is given by $\gamma_g^X(t)
 
 (c) By Naturality of integral curves, $L_{\exp(s \xi)}(\gamma_e^{X_{\xi}}(t))$ is an integral curve of $X_{\xi}$ starting at $\exp(s \xi)$. Thus,
 
-$`\gamma_e^{X_{\xi}}(t+s) = L_{\exp(s \xi)}(\gamma_e^{X_{\xi}}(t)) = \gamma_e^{X_{\xi}}(s \xi) \cdot \gamma_e^{X_{\xi}}(t)`$.
+$`\gamma_e^{X_{\xi}}(t+s) = L_{\exp(s \xi)}(\gamma_e^{X_{\xi}}(t)) = \gamma_e^{X_{\xi}}(s) \cdot \gamma_e^{X_{\xi}}(t)`$.
 
 Setting $t=1$ gives $\exp((t+s) \xi) = \exp(t \xi) \exp(s \xi)$.
 
