@@ -206,21 +206,15 @@ $\frac{d}{dt} \gamma_e^{X_{\xi}}(t) = \gamma_e^{X_{\xi}}(t) \xi$ with initial co
 # 6. Multilinear algebra needed later.
 Review the last question on last week's homework. Recall that any permutation $\sigma \in S_k$ can be written as product of $s$ transpositions. The sign of a permutation $\mathrm{sgn}(\sigma)$ is 1 if $s$ is even and -1 if odd. Let $V$ be a vector space. We say that a multilinear map ($k$-tensor) $f: V^k \rightarrow \mathbb{R}$ is alternating if for all $\sigma \in S_k$
 
-$
-`f\left(v_{\sigma(1)}, \ldots, v_{\sigma(k)}\right)=\mathrm{sgn}(\sigma) f\left(v_1, \ldots, v_k\right)`
-$
+$`f\left(v_{\sigma(1)}, \ldots, v_{\sigma(k)}\right)=\mathrm{sgn}(\sigma) f\left(v_1, \ldots, v_k\right)`$
 
 We can make an alternating $k$ tensor $\mathrm{Alt} f: V^k \rightarrow \mathbb{R}$ from $f$ by setting
 
-$
-`\mathrm{Alt} f=\frac{1}{k!} \sum_{\sigma \in S_k} \mathrm{sgn}(\sigma) f\left(v_{\sigma(1)}, \ldots, v_{\sigma(k)}\right)`
-$
+$`\mathrm{Alt} f=\frac{1}{k!} \sum_{\sigma \in S_k} \mathrm{sgn}(\sigma) f\left(v_{\sigma(1)}, \ldots, v_{\sigma(k)}\right)`$
 
 We denote $`\Lambda^k V^*`$ to be the set of all alternating $k$ tensors. For $`\omega \in \Lambda^k V^*`$ and $`\eta \in \Lambda^{\ell} V^*`$ we define the wedge product
 
-$
-`\omega \wedge \eta:=\frac{(k+\ell)!}{k!\ell!} \mathrm{Alt}(\omega \otimes \eta) \in \Lambda^{k+\ell} V^*`
-$
+$`\omega \wedge \eta:=\frac{(k+\ell)!}{k!\ell!} \mathrm{Alt}(\omega \otimes \eta) \in \Lambda^{k+\ell} V^*`$
 
 Show that a basis for $\omega \in \Lambda^k V^*$ is given by
 
@@ -230,7 +224,11 @@ $`\left\{\epsilon_{i_1} \wedge \cdots \wedge \epsilon_{i_k} \mid i_1<i_2<\cdots<
 
 Proof
 
-Since the projection of a basis spans the image, the set $`\left\{\mathrm{Alt}\left(\epsilon_{i_1} \otimes \cdots \otimes \epsilon_{i_k}\right) \mid 1 \leq i_1, \ldots, i_k \leq n\right\}`$ spans $`\Lambda^k V^*`$.
+Since $`\Lambda^k V^*`$ is the image of the map $`\mathrm{Alt}: (V^*)^{\otimes k} \rightarrow (V^*)^{\otimes k}`$, and the image of a basis under a linear map spans the image, we can find a spanning set for $`\Lambda^k V^*`$ by projecting a basis of $`(V^*)^{\otimes k}`$. A basis for $`(V^*)^{\otimes k}`$ is given by
+
+$`\left\{\epsilon_{i_1} \otimes \cdots \otimes \epsilon_{i_k} \mid 1 \leq i_1, \ldots, i_k \leq n\right\}`$.
+
+so the set $`\left\{\mathrm{Alt}\left(\epsilon_{i_1} \otimes \cdots \otimes \epsilon_{i_k}\right) \mid 1 \leq i_1, \ldots, i_k \leq n\right\}`$ spans $`\Lambda^k V^*`$. 
 
 Note that if any two indices $i_j = i_m$ for $j \neq m$, then $\mathrm{Alt}\left(\epsilon_{i_1} \otimes \cdots \otimes \epsilon_{i_k}\right) = 0$.
 
