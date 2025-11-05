@@ -207,19 +207,19 @@ $\frac{d}{dt} \gamma_e^{X_{\xi}}(t) = \gamma_e^{X_{\xi}}(t) \xi$ with initial co
 Review the last question on last week's homework. Recall that any permutation $\sigma \in S_k$ can be written as product of $s$ transpositions. The sign of a permutation $\mathrm{sgn}(\sigma)$ is 1 if $s$ is even and -1 if odd. Let $V$ be a vector space. We say that a multilinear map ($k$-tensor) $f: V^k \rightarrow \mathbb{R}$ is alternating if for all $\sigma \in S_k$
 
 $
-f\left(v_{\sigma(1)}, \ldots, v_{\sigma(k)}\right)=\mathrm{sgn}(\sigma) f\left(v_1, \ldots, v_k\right)
+`f\left(v_{\sigma(1)}, \ldots, v_{\sigma(k)}\right)=\mathrm{sgn}(\sigma) f\left(v_1, \ldots, v_k\right)`
 $
 
 We can make an alternating $k$ tensor $\mathrm{Alt} f: V^k \rightarrow \mathbb{R}$ from $f$ by setting
 
 $
-\mathrm{Alt} f=\frac{1}{k!} \sum_{\sigma \in S_k} \mathrm{sgn}(\sigma) f\left(v_{\sigma(1)}, \ldots, v_{\sigma(k)}\right)
+`\mathrm{Alt} f=\frac{1}{k!} \sum_{\sigma \in S_k} \mathrm{sgn}(\sigma) f\left(v_{\sigma(1)}, \ldots, v_{\sigma(k)}\right)`
 $
 
 We denote $`\Lambda^k V^*`$ to be the set of all alternating $k$ tensors. For $`\omega \in \Lambda^k V^*`$ and $`\eta \in \Lambda^{\ell} V^*`$ we define the wedge product
 
 $
-\omega \wedge \eta:=\frac{(k+\ell)!}{k!\ell!} \mathrm{Alt}(\omega \otimes \eta) \in \Lambda^{k+\ell} V^*
+`\omega \wedge \eta:=\frac{(k+\ell)!}{k!\ell!} \mathrm{Alt}(\omega \otimes \eta) \in \Lambda^{k+\ell} V^*`
 $
 
 Show that a basis for $\omega \in \Lambda^k V^*$ is given by
@@ -230,11 +230,25 @@ $`\left\{\epsilon_{i_1} \wedge \cdots \wedge \epsilon_{i_k} \mid i_1<i_2<\cdots<
 
 Proof
 
-Since the projection of a basis spans the image, the set $`\left\{\mathrm{Alt}\left(\epsilon_{i_1} \otimes \cdots \otimes \epsilon_{i_k}\right) \mid 1 \leq i_1, \ldots, i_k \leq n\right\}`$ spans $`\Lambda^k V^*`$. Note that if any two indices $i_j = i_m$ for $j \neq m$, then $\mathrm{Alt}\left(\epsilon_{i_1} \otimes \cdots \otimes \epsilon_{i_k}\right) = 0$. Therefore, the set $`\left\{\mathrm{Alt}\left(\epsilon_{i_1} \otimes \cdots \otimes \epsilon_{i_k}\right) \mid i_1<i_2<\cdots<i_k\right\}`$ spans $`\Lambda^k V^*`$. By definition of the wedge product, we have
+Since the projection of a basis spans the image, the set $`\left\{\mathrm{Alt}\left(\epsilon_{i_1} \otimes \cdots \otimes \epsilon_{i_k}\right) \mid 1 \leq i_1, \ldots, i_k \leq n\right\}`$ spans $`\Lambda^k V^*`$.
+
+Note that if any two indices $i_j = i_m$ for $j \neq m$, then $\mathrm{Alt}\left(\epsilon_{i_1} \otimes \cdots \otimes \epsilon_{i_k}\right) = 0$.
+
+Therefore, the set $`\left\{\mathrm{Alt}\left(\epsilon_{i_1} \otimes \cdots \otimes \epsilon_{i_k}\right) \mid i_1<i_2<\cdots<i_k\right\}`$ spans $`\Lambda^k V^*`$.
+
+By definition of the wedge product, we have
 $`\epsilon_{i_1} \wedge \cdots \wedge \epsilon_{i_k} = k! \mathrm{Alt}\left(\epsilon_{i_1} \otimes \cdots \otimes \epsilon_{i_k}\right)`$,
 so the set $`\left\{\epsilon_{i_1} \wedge \cdots \wedge \epsilon_{i_k} \mid i_1<i_2<\cdots<i_k\right\}`$ also spans $`\Lambda^k V^*`$.
 
 Next, we show that these elements are linearly independent. Suppose we have a linear combination
-$`\sum_{i_1 < i_2 < \cdots < i_k} c_{i_1, \ldots, i_k} \mathrm{Alt}\left(\epsilon_{i_1} \otimes \cdots \otimes \epsilon_{i_k}\right) = 0`$. Then for any $v_1, \ldots, v_k \in V$, we have
-$`\sum_{i_1 < i_2 < \cdots < i_k} c_{i_1, \ldots, i_k} \mathrm{Alt}\left(\epsilon_{i_1} \otimes \cdots \otimes \epsilon_{i_k}\right)(v_1, \ldots, v_k) = 0`$. Choosing $v_j = e_{i_j}$ for $j=1, \ldots, k$, we find that only the term with indices $i_1, \ldots, i_k$ contributes to the sum, yielding
-$`c_{i_1, \ldots, i_k} \mathrm{Alt}\left(\epsilon_{i_1} \otimes \cdots \otimes \epsilon_{i_k}\right)(e_{i_1}, \ldots, e_{i_k}) = 0`$. Since $\mathrm{Alt}\left(\epsilon_{i_1} \otimes \cdots \otimes \epsilon_{i_k}\right)(e_{i_1}, \ldots, e_{i_k}) = 1$, it follows that $c_{i_1, \ldots, i_k} = 0$. Thus, all coefficients must be zero, proving linear independence.
+$`\sum_{i_1 < i_2 < \cdots < i_k} c_{i_1, \ldots, i_k} \mathrm{Alt}\left(\epsilon_{i_1} \otimes \cdots \otimes \epsilon_{i_k}\right) = 0`$.
+
+Then for any $v_1, \ldots, v_k \in V$, we have
+$`\sum_{i_1 < i_2 < \cdots < i_k} c_{i_1, \ldots, i_k} \mathrm{Alt}\left(\epsilon_{i_1} \otimes \cdots \otimes \epsilon_{i_k}\right)(v_1, \ldots, v_k) = 0`$.
+
+Choosing $v_j = e_{i_j}$ for $j=1, \ldots, k$, we find that only the term with indices $i_1, \ldots, i_k$ contributes to the sum, yielding
+$`c_{i_1, \ldots, i_k} \mathrm{Alt}\left(\epsilon_{i_1} \otimes \cdots \otimes \epsilon_{i_k}\right)(e_{i_1}, \ldots, e_{i_k}) = 0`$.
+
+Since $\mathrm{Alt}\left(\epsilon_{i_1} \otimes \cdots \otimes \epsilon_{i_k}\right)(e_{i_1}, \ldots, e_{i_k}) = 1$, it follows that $c_{i_1, \ldots, i_k} = 0$.
+
+Thus, all coefficients must be zero, proving linear independence.
