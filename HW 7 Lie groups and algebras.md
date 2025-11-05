@@ -227,3 +227,23 @@ Show that a basis for $\omega \in \Lambda^k V^*$ is given by
 $`\left\{\epsilon_{i_1} \wedge \cdots \wedge \epsilon_{i_k} \mid i_1<i_2<\cdots<i_k\right\}`$
 
 (Recall from the last homework that the $\epsilon_i$ form a basis for $V^*$ dual to a basis $`\{e_1, \cdots, e_n\}`$ of $V$.)
+
+Proof
+
+To prove that the set $`\left\{\epsilon_{i_1} \wedge \cdots \wedge \epsilon_{i_k} \mid i_1<i_2<\cdots<i_k\right\}`$ forms a basis for $`\Lambda^k V^*`$, we need to show two things: that the set spans $`\Lambda^k V^*`$ and that the elements are linearly independent.
+
+1. **Spanning**: Given any $k$-tuple of indices $(j_1, j_2, \ldots, j_k)$, we can express $`\omega`$ in terms of the basis elements by considering the action of $`\omega`$ on the basis vectors $`(e_{j_1}, e_{j_2}, \ldots, e_{j_k})`$. Since $`\omega`$ is alternating, we have
+
+$`\omega(e_{j_1}, e_{j_2}, \ldots, e_{j_k}) = \mathrm{sgn}(\sigma) \omega(e_{i_1}, e_{i_2}, \ldots, e_{i_k})`$
+
+for some permutation $\sigma$ that rearranges $(j_1, j_2, \ldots, j_k)$ into $(i_1, i_2, \ldots, i_k)$ with $i_1 < i_2 < \cdots < i_k$. Thus, any alternating tensor can be expressed as a linear combination of the wedge products of the basis elements.
+
+2. **Linear Independence**: Suppose we have a linear combination of the basis elements that equals zero:
+
+$`c_{i_1, \ldots, i_k} (\epsilon_{i_1} \wedge \cdots \wedge \epsilon_{i_k}) = 0`$
+
+for some coefficients $`c_{i_1, \ldots, i_k} \in \mathbb{R}`$. To show linear independence, we need to prove that all coefficients must be zero. We can evaluate this linear combination on the basis vectors $`(e_{i_1}, e_{i_2}, \ldots, e_{i_k})`$. Since the wedge product $`\epsilon_{i_1} \wedge \cdots \wedge \epsilon_{i_k}`$ evaluates to 1 on this specific tuple and 0 on any other tuple (due to the alternating property), we find that
+
+$`c_{i_1, \ldots, i_k} = 0`$
+
+for all $`(i_1, \ldots, i_k)`$. Thus, the set is linearly independent.
