@@ -190,15 +190,11 @@ Proof
 
 For any $g \in G$, the integral curve $\gamma_g^X(t)$ is given by $\gamma_g^X(t) = L_g(\gamma_e^X(t))$. Since $\gamma_e^X(t)$ is defined for all $t \in \mathbb{R}$ and $L_g$ is a diffeomorphism, $\gamma_g^X(t)$ is also defined for all $t \in \mathbb{R}$. Thus, $X$ is complete.
 
-(b) By definition, $\exp(t \xi) = \gamma_e^{X_{t\xi}}(1)$. The left-invariant vector field $X_{t \xi}$ satisfies $`X_{t \xi}(g) = (dL_g)_e(t \xi) = t X_{\xi}(g)`$. Therefore, the integral curve $\gamma_e^{X_{t \xi}}(s)$ satisfies
+(b) By definition, $\exp(t \xi) = \gamma_e^{X_{t\xi}}(1)$. By Lemma 9.3 (Rescaling Lemma) in Lee's *Introduction to Smooth Manifolds*, $\gamma_e^{X_{t \xi}}(s) = \gamma_e^{X_{\xi}}(t s)$. Evaluating at $s=1$, we get $\exp(t \xi) = \gamma_e^{X_{\xi}}(t)$.
 
-$\frac{d}{ds} \gamma_e^{X_{t \xi}}(s) = t X_{\xi}(\gamma_e^{X_{t \xi}}(s))$ with initial condition $\gamma_e^{X_{t \xi}}(0) = e$.
-
-By the chain rule, the curve $\alpha(s) = \gamma_e^{X_{\xi}}(t s)$ satisfies $\frac{d}{ds}\alpha(s) = t X_{\xi}(\alpha(s))$ and $\alpha(0)=e$. By uniqueness of solutions to ODEs, it must be that $\gamma_e^{X_{t \xi}}(s) = \gamma_e^{X_{\xi}}(t s)$. Evaluating at $s=1$, we get $\exp(t \xi) = \gamma_e^{X_{\xi}}(t)$.
-
-(c) Using part (b), we have
-
-$\exp((t+s) \xi) = \gamma_e^{X_\xi}(t+s) = \gamma_e^{X_{\xi}}(t) \cdot \gamma_e^{X_{\xi}}(s) = \exp(t \xi) \exp(s \xi)$.
+(c) By Naturality of integral curves, $L_{\exp(s \xi)}(\gamma_e^{X_{\xi}}(t))$ is an integral curve of $X_{\xi}$ starting at $\exp(s \xi)$. Thus,
+$`\gamma_e^{X_{\xi}}(t+s) = L_{\exp(s \xi)}(\gamma_e^{X_{\xi}}(t)) = \exp(s \xi) \cdot \gamma_e^{X_{\xi}}(t) = \exp(s \xi) \exp(t \xi)`$.
+Setting $t=1$ gives $\exp((t+s) \xi) = \exp(t \xi) \exp(s \xi)$.
 
 (d) For $G = \mathrm{GL}(n, K)$, the left-invariant vector field corresponding to $`\xi \in T_e G \cong \mathrm{Mat}_{K}^{n \times n}`$ is given by $X_{\xi}(A) = A \xi$ for $A \in \mathrm{GL}(n, K)$. The integral curve through the identity is given by the solution to the matrix differential equation
 $\frac{d}{dt} \gamma_e^{X_{\xi}}(t) = \gamma_e^{X_{\xi}}(t) \xi$ with initial condition $\gamma_e^{X_{\xi}}(0) = I_n$. The solution to this equation is the matrix exponential $\gamma_e^{X_{\xi}}(t) = e^{t \xi}$. Therefore, by part (b), we have $\exp(\xi) = \gamma_e^{X_{\xi}}(1) = e^{\xi}$, which agrees with the ordinary exponential map of matrices.
