@@ -230,16 +230,11 @@ $`\left\{\epsilon_{i_1} \wedge \cdots \wedge \epsilon_{i_k} \mid i_1<i_2<\cdots<
 
 Proof
 
-To prove that the set $`\left\{\epsilon_{i_1} \wedge \cdots \wedge \epsilon_{i_k} \mid i_1<i_2<\cdots<i_k\right\}`$ forms a basis for $`\Lambda^k V^*`$, we need to show two things: that the set spans $`\Lambda^k V^*`$ and that the elements are linearly independent.
+Since the projection of a basis spans the image, the set $`\left\{\mathrm{Alt}\left(\epsilon_{i_1} \otimes \cdots \otimes \epsilon_{i_k}\right) \mid 1 \leq i_1, \ldots, i_k \leq n\right\}`$ spans $`\Lambda^k V^*`$. Note that if any two indices $i_j = i_m$ for $j \neq m$, then $\mathrm{Alt}\left(\epsilon_{i_1} \otimes \cdots \otimes \epsilon_{i_k}\right) = 0$. Therefore, the set $`\left\{\mathrm{Alt}\left(\epsilon_{i_1} \otimes \cdots \otimes \epsilon_{i_k}\right) \mid i_1<i_2<\cdots<i_k\right\}`$ spans $`\Lambda^k V^*`$. By definition of the wedge product, we have
+$`\epsilon_{i_1} \wedge \cdots \wedge \epsilon_{i_k} = k! \mathrm{Alt}\left(\epsilon_{i_1} \otimes \cdots \otimes \epsilon_{i_k}\right)`$,
+so the set $`\left\{\epsilon_{i_1} \wedge \cdots \wedge \epsilon_{i_k} \mid i_1<i_2<\cdots<i_k\right\}`$ also spans $`\Lambda^k V^*`$.
 
-1. **Spanning**: An alternating $k$-tensor $`\omega`$ is determined by its values $`c_{i_1, \dots, i_k} = \omega(e_{i_1}, \dots, e_{i_k})`$ on ordered basis k-vectors. Consider the tensor $`\eta = \sum_{i_1 < \dots < i_k} c_{i_1, \dots, i_k} (\epsilon_{i_1} \wedge \dots \wedge \epsilon_{i_k})`$. By construction, $`\eta(e_{i_1}, \dots, e_{i_k}) = c_{i_1, \dots, i_k}`$. Since both $`\omega`$ and $`\eta`$ are alternating and agree on a basis, they must be equal. Thus, $`\omega`$ is a linear combination of the wedge products of the basis elements.
-
-2. **Linear Independence**: Suppose a linear combination of the basis elements is zero:
-
-$`\sum_{i_1 < \dots < i_k} c_{i_1, \ldots, i_k} (\epsilon_{i_1} \wedge \cdots \wedge \epsilon_{i_k}) = 0`$
-
-for some coefficients $`c_{i_1, \ldots, i_k} \in \mathbb{R}`$. To show all coefficients are zero, evaluate this equation on an arbitrary ordered basis k-vector $`(e_{j_1}, \dots, e_{j_k})`$ where $`j_1 < \dots < j_k`$. Since $`(\epsilon_{i_1} \wedge \cdots \wedge \epsilon_{i_k})(e_{j_1}, \dots, e_{j_k})`$ is 1 only when the index tuple $`(i_1, \dots, i_k)`$ matches $`(j_1, \dots, j_k)`$ and 0 otherwise, the sum collapses to a single term:
-
-$`c_{j_1, \ldots, j_k} = 0`$
-
-Since this holds for any ordered k-tuple of indices, all coefficients must be zero. Thus, the set is linearly independent.
+Next, we show that these elements are linearly independent. Suppose we have a linear combination
+$`\sum_{i_1 < i_2 < \cdots < i_k} c_{i_1, \ldots, i_k} \mathrm{Alt}\left(\epsilon_{i_1} \otimes \cdots \otimes \epsilon_{i_k}\right) = 0`$. Then for any $v_1, \ldots, v_k \in V$, we have
+$`\sum_{i_1 < i_2 < \cdots < i_k} c_{i_1, \ldots, i_k} \mathrm{Alt}\left(\epsilon_{i_1} \otimes \cdots \otimes \epsilon_{i_k}\right)(v_1, \ldots, v_k) = 0`$. Choosing $v_j = e_{i_j}$ for $j=1, \ldots, k$, we find that only the term with indices $i_1, \ldots, i_k$ contributes to the sum, yielding
+$`c_{i_1, \ldots, i_k} \mathrm{Alt}\left(\epsilon_{i_1} \otimes \cdots \otimes \epsilon_{i_k}\right)(e_{i_1}, \ldots, e_{i_k}) = 0`$. Since $\mathrm{Alt}\left(\epsilon_{i_1} \otimes \cdots \otimes \epsilon_{i_k}\right)(e_{i_1}, \ldots, e_{i_k}) = 1$, it follows that $c_{i_1, \ldots, i_k} = 0$. Thus, all coefficients must be zero, proving linear independence.
