@@ -234,12 +234,12 @@ To prove that the set $`\left\{\epsilon_{i_1} \wedge \cdots \wedge \epsilon_{i_k
 
 1. **Spanning**: An alternating $k$-tensor $`\omega`$ is determined by its values $`c_{i_1, \dots, i_k} = \omega(e_{i_1}, \dots, e_{i_k})`$ on ordered basis k-vectors. Consider the tensor $`\eta = \sum_{i_1 < \dots < i_k} c_{i_1, \dots, i_k} (\epsilon_{i_1} \wedge \dots \wedge \epsilon_{i_k})`$. By construction, $`\eta(e_{i_1}, \dots, e_{i_k}) = c_{i_1, \dots, i_k}`$. Since both $`\omega`$ and $`\eta`$ are alternating and agree on a basis, they must be equal. Thus, $`\omega`$ is a linear combination of the wedge products of the basis elements.
 
-2. **Linear Independence**: Suppose we have a linear combination of the basis elements that equals zero:
+2. **Linear Independence**: Suppose a linear combination of the basis elements is zero:
 
-$`c_{i_1, \ldots, i_k} (\epsilon_{i_1} \wedge \cdots \wedge \epsilon_{i_k}) = 0`$
+$`\sum_{i_1 < \dots < i_k} c_{i_1, \ldots, i_k} (\epsilon_{i_1} \wedge \cdots \wedge \epsilon_{i_k}) = 0`$
 
-for some coefficients $`c_{i_1, \ldots, i_k} \in \mathbb{R}`$. To show linear independence, we need to prove that all coefficients must be zero. We can evaluate this linear combination on the basis vectors $`(e_{i_1}, e_{i_2}, \ldots, e_{i_k})`$. Since the wedge product $`\epsilon_{i_1} \wedge \cdots \wedge \epsilon_{i_k}`$ evaluates to 1 on this specific tuple and 0 on any other tuple (due to the alternating property), we find that
+for some coefficients $`c_{i_1, \ldots, i_k} \in \mathbb{R}`$. To show all coefficients are zero, evaluate this equation on an arbitrary ordered basis k-vector $`(e_{j_1}, \dots, e_{j_k})`$ where $`j_1 < \dots < j_k`$. Since $`(\epsilon_{i_1} \wedge \cdots \wedge \epsilon_{i_k})(e_{j_1}, \dots, e_{j_k})`$ is 1 only when the index tuple $`(i_1, \dots, i_k)`$ matches $`(j_1, \dots, j_k)`$ and 0 otherwise, the sum collapses to a single term:
 
-$`c_{i_1, \ldots, i_k} = 0`$
+$`c_{j_1, \ldots, j_k} = 0`$
 
-for all $`(i_1, \ldots, i_k)`$. Thus, the set is linearly independent.
+Since this holds for any ordered k-tuple of indices, all coefficients must be zero. Thus, the set is linearly independent.
