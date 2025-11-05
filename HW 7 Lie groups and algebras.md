@@ -193,7 +193,9 @@ For any $g \in G$, the integral curve $\gamma_g^X(t)$ is given by $\gamma_g^X(t)
 (b) By definition, $\exp(t \xi) = \gamma_e^{X_{t\xi}}(1)$. By Lemma 9.3 (Rescaling Lemma) in Lee's *Introduction to Smooth Manifolds*, $\gamma_e^{X_{t \xi}}(s) = \gamma_e^{X_{\xi}}(t s)$. Evaluating at $s=1$, we get $\exp(t \xi) = \gamma_e^{X_{\xi}}(t)$.
 
 (c) By Naturality of integral curves, $L_{\exp(s \xi)}(\gamma_e^{X_{\xi}}(t))$ is an integral curve of $X_{\xi}$ starting at $\exp(s \xi)$. Thus,
-$`\gamma_e^{X_{\xi}}(t+s) = L_{\exp(s \xi)}(\gamma_e^{X_{\xi}}(t)) = \exp(s \xi) \cdot \gamma_e^{X_{\xi}}(t) = \exp(s \xi) \exp(t \xi)`$.
+
+$`\gamma_e^{X_{\xi}}(t+s) = L_{\exp(s \xi)}(\gamma_e^{X_{\xi}}(t)) = \gamma_e^{X_{\xi}}(s) \cdot \gamma_e^{X_{\xi}}(t)`$.
+
 Setting $t=1$ gives $\exp((t+s) \xi) = \exp(t \xi) \exp(s \xi)$.
 
 (d) For $G = \mathrm{GL}(n, K)$, the left-invariant vector field corresponding to $`\xi \in T_e G \cong \mathrm{Mat}_{K}^{n \times n}`$ is given by $X_{\xi}(A) = A \xi$ for $A \in \mathrm{GL}(n, K)$. The integral curve through the identity is given by the solution to the matrix differential equation
