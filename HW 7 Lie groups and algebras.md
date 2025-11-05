@@ -227,3 +227,19 @@ Show that a basis for $\omega \in \Lambda^k V^*$ is given by
 $`\left\{\epsilon_{i_1} \wedge \cdots \wedge \epsilon_{i_k} \mid i_1<i_2<\cdots<i_k\right\}`$
 
 (Recall from the last homework that the $\epsilon_i$ form a basis for $V^*$ dual to a basis $`\{e_1, \cdots, e_n\}`$ of $V$.)
+
+Proof
+
+To prove that the set $`\left\{\epsilon_{i_1} \wedge \cdots \wedge \epsilon_{i_k} \mid i_1<i_2<\cdots<i_k\right\}`$ forms a basis for $`\Lambda^k V^*`$, we need to show two things: that the set spans $`\Lambda^k V^*`$ and that the elements are linearly independent.
+
+1. **Spanning**: An alternating $k$-tensor $`\omega`$ is determined by its values $`c_{i_1, \dots, i_k} = \omega(e_{i_1}, \dots, e_{i_k})`$ on ordered basis k-vectors. Consider the tensor $`\eta = \sum_{i_1 < \dots < i_k} c_{i_1, \dots, i_k} (\epsilon_{i_1} \wedge \dots \wedge \epsilon_{i_k})`$. By construction, $`\eta(e_{i_1}, \dots, e_{i_k}) = c_{i_1, \dots, i_k}`$. Since both $`\omega`$ and $`\eta`$ are alternating and agree on a basis, they must be equal. Thus, $`\omega`$ is a linear combination of the wedge products of the basis elements.
+
+2. **Linear Independence**: Suppose a linear combination of the basis elements is zero:
+
+$`\sum_{i_1 < \dots < i_k} c_{i_1, \ldots, i_k} (\epsilon_{i_1} \wedge \cdots \wedge \epsilon_{i_k}) = 0`$
+
+for some coefficients $`c_{i_1, \ldots, i_k} \in \mathbb{R}`$. To show all coefficients are zero, evaluate this equation on an arbitrary ordered basis k-vector $`(e_{j_1}, \dots, e_{j_k})`$ where $`j_1 < \dots < j_k`$. Since $`(\epsilon_{i_1} \wedge \cdots \wedge \epsilon_{i_k})(e_{j_1}, \dots, e_{j_k})`$ is 1 only when the index tuple $`(i_1, \dots, i_k)`$ matches $`(j_1, \dots, j_k)`$ and 0 otherwise, the sum collapses to a single term:
+
+$`c_{j_1, \ldots, j_k} = 0`$
+
+Since this holds for any ordered k-tuple of indices, all coefficients must be zero. Thus, the set is linearly independent.
