@@ -230,7 +230,11 @@ $`\left\{\epsilon_{i_1} \wedge \cdots \wedge \epsilon_{i_k} \mid i_1<i_2<\cdots<
 
 Proof
 
-Since the projection of a basis spans the image, the set $`\left\{\mathrm{Alt}\left(\epsilon_{i_1} \otimes \cdots \otimes \epsilon_{i_k}\right) \mid 1 \leq i_1, \ldots, i_k \leq n\right\}`$ spans $`\Lambda^k V^*`$.
+Since $`\Lambda^k V^*`$ is the image of the projection map $\mathrm{Alt}: (V^*)^{\otimes k} \rightarrow (V^*)^{\otimes k}$, and the image of a basis under a linear map spans the image, we can find a spanning set for $`\Lambda^k V^*`$ by projecting a basis of $`(V^*)^{\otimes k}`$. A basis for $`(V^*)^{\otimes k}`$ is given by
+
+$`\left\{\epsilon_{i_1} \otimes \cdots \otimes \epsilon_{i_k} \mid 1 \leq i_1, \ldots, i_k \leq n\right\}`$.
+
+so the set $`\left\{\mathrm{Alt}\left(\epsilon_{i_1} \otimes \cdots \otimes \epsilon_{i_k}\right) \mid 1 \leq i_1, \ldots, i_k \leq n\right\}`$ spans $`\Lambda^k V^*`$. 
 
 Note that if any two indices $i_j = i_m$ for $j \neq m$, then $\mathrm{Alt}\left(\epsilon_{i_1} \otimes \cdots \otimes \epsilon_{i_k}\right) = 0$.
 
