@@ -206,21 +206,15 @@ $\frac{d}{dt} \gamma_e^{X_{\xi}}(t) = \gamma_e^{X_{\xi}}(t) \xi$ with initial co
 # 6. Multilinear algebra needed later.
 Review the last question on last week's homework. Recall that any permutation $\sigma \in S_k$ can be written as product of $s$ transpositions. The sign of a permutation $\mathrm{sgn}(\sigma)$ is 1 if $s$ is even and -1 if odd. Let $V$ be a vector space. We say that a multilinear map ($k$-tensor) $f: V^k \rightarrow \mathbb{R}$ is alternating if for all $\sigma \in S_k$
 
-$
-`f\left(v_{\sigma(1)}, \ldots, v_{\sigma(k)}\right)=\mathrm{sgn}(\sigma) f\left(v_1, \ldots, v_k\right)`
-$
+$`f\left(v_{\sigma(1)}, \ldots, v_{\sigma(k)}\right)=\mathrm{sgn}(\sigma) f\left(v_1, \ldots, v_k\right)`$
 
 We can make an alternating $k$ tensor $\mathrm{Alt} f: V^k \rightarrow \mathbb{R}$ from $f$ by setting
 
-$
-`\mathrm{Alt} f=\frac{1}{k!} \sum_{\sigma \in S_k} \mathrm{sgn}(\sigma) f\left(v_{\sigma(1)}, \ldots, v_{\sigma(k)}\right)`
-$
+$`\mathrm{Alt} f=\frac{1}{k!} \sum_{\sigma \in S_k} \mathrm{sgn}(\sigma) f\left(v_{\sigma(1)}, \ldots, v_{\sigma(k)}\right)`$
 
 We denote $`\Lambda^k V^*`$ to be the set of all alternating $k$ tensors. For $`\omega \in \Lambda^k V^*`$ and $`\eta \in \Lambda^{\ell} V^*`$ we define the wedge product
 
-$
-`\omega \wedge \eta:=\frac{(k+\ell)!}{k!\ell!} \mathrm{Alt}(\omega \otimes \eta) \in \Lambda^{k+\ell} V^*`
-$
+$`\omega \wedge \eta:=\frac{(k+\ell)!}{k!\ell!} \mathrm{Alt}(\omega \otimes \eta) \in \Lambda^{k+\ell} V^*`$
 
 Show that a basis for $\omega \in \Lambda^k V^*$ is given by
 
