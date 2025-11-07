@@ -10,7 +10,7 @@ Construct a $\Delta$-complex structure on $\mathbb{RP}^n$ as a quotient of a $\D
 
 Proof
 
-To construct a $\Delta$-complex structure on $\mathbb{RP}^n$, we start with the standard $\Delta$-complex structure on $S^n$. The sphere $S^n$ is homeomorphic to the set of points in $\mathbb{R}^{n+1}$ satisfying the equation $|x_0| + |x_1| + \cdots + |x_n| = 1$.
+To construct a $\Delta$-complex structure on $\mathbb{RP}^n$, we start with a convenient $\Delta$-complex structure on $S^n$. We view $S^n$ as being homeomorphic to the boundary of the $(n+1)$-dimensional cross-polytope, which is the set of points in $\mathbb{R}^{n+1}$ satisfying the equation $|x_0| + |x_1| + \cdots + |x_n| = 1$.
 
 This representation decomposes $S^n$ into $2^{n+1}$ n-simplices, each corresponding to a unique combination of signs for the coordinates $(x_0, x_1, \ldots, x_n)$. The set of vertices for this entire $\Delta$-complex consists of the unit vectors along each coordinate axis, both positive and negative.
 
