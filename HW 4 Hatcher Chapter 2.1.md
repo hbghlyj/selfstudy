@@ -8,6 +8,10 @@ The quotient $\Delta$-complex is homeomorphic to a Möbius strip. By identifying
 # 3
 Construct a $\Delta$-complex structure on $\mathbb{RP}^n$ as a quotient of a $\Delta$-complex structure on $S^n$ having vertices the two vectors of length 1 along each coordinate axis in $\mathbb{R}^{n+1}$.
 
+Proof
+
+A $\Delta$-complex structure on $S^n$ can be constructed using $2^{n+1}$ n-simplices, each corresponding to a choice of sign for each coordinate axis in $\mathbb{R}^{n+1}$. The vertices of these simplices are the unit vectors along each coordinate axis, both positive and negative. To obtain a $\Delta$-complex structure on $\mathbb{RP}^n$, we identify antipodal points on $S^n$. This identification pairs each simplex with its antipodal counterpart, effectively halving the number of simplices in the quotient space. The resulting $\Delta$-complex structure on $\mathbb{RP}^n$ consists of $2^n$ n-simplices, with vertices corresponding to the lines through the origin in $\mathbb{R}^{n+1}$ defined by the unit vectors along each coordinate axis.
+
 # 4
 Compute the simplicial homology groups of the triangular parachute obtained from $\Delta^2$ by identifying its three vertices to a single point.
 
