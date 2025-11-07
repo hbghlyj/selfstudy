@@ -19,6 +19,20 @@ To obtain a $\Delta$-complex structure on $\mathbb{RP}^n$, we identify antipodal
 # 4
 Compute the simplicial homology groups of the triangular parachute obtained from $\Delta^2$ by identifying its three vertices to a single point.
 
+Proof
+
+The triangular parachute has one 2-simplex, three 1-simplices (the edges of the triangle), and one 0-simplex (the identified vertex).
+
+- The boundary of the 2-simplex is $[v_1, v_2] - [v_0, v_2] + [v_0, v_1]$. $\ker(\partial_2) = 0$ and $\operatorname{im}(\partial_2) = \langle [v_1, v_2] - [v_0, v_2] + [v_0, v_1] \rangle$.
+
+- The boundary of each 1-simplex is $\partial([v_i, v_j]) = v_j - v_i$. Since all vertices are identified, $\partial([v_i, v_j]) = 0$. Thus, $\ker(\partial_1) = \langle [v_0, v_1], [v_1, v_2], [v_0, v_2] \rangle$ and $\operatorname{im}(\partial_1) = 0$.
+
+Calculating the homology groups:
+
+- $H_2 = \ker(\partial_2) / \operatorname{im}(\partial_3) = 0 / 0 = 0$.
+- $H_1 = \ker(\partial_1) / \operatorname{im}(\partial_2) = \langle [v_0, v_1], [v_1, v_2], [v_0, v_2] \rangle / \langle [v_1, v_2] - [v_0, v_2] + [v_0, v_1] \rangle \cong \mathbb{Z}^2$, since the relation reduces the number of free generators for the group from three to two.
+- $H_0 = \ker(\partial_0) / \operatorname{im}(\partial_1) = \mathbb{Z} / 0 \cong \mathbb{Z}$.
+
 # 6
 Compute the simplicial homology groups of the $\Delta$-complex obtained from $n+1$ 2-simplices $\Delta_0^2, \cdots, \Delta_n^2$ by identifying all three edges of $\Delta_0^2$ to a single edge, and for $i>0$ identifying the edges $[v_0, v_1]$ and $[v_1, v_2]$ of $\Delta_i^2$ to a single edge and the edge $[v_0, v_2]$ to the edge $[v_0, v_1]$ of $\Delta_{i-1}^2$.
 
