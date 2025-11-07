@@ -10,7 +10,11 @@ Construct a $\Delta$-complex structure on $\mathbb{RP}^n$ as a quotient of a $\D
 
 Proof
 
-A $\Delta$-complex structure on $S^n$ can be constructed using $2^{n+1}$ n-simplices, each corresponding to a choice of sign for each coordinate axis in $\mathbb{R}^{n+1}$. The vertices of these simplices are the unit vectors along each coordinate axis, both positive and negative. To obtain a $\Delta$-complex structure on $\mathbb{RP}^n$, we identify antipodal points on $S^n$. This identification pairs each simplex with its antipodal counterpart, effectively halving the number of simplices in the quotient space. The resulting $\Delta$-complex structure on $\mathbb{RP}^n$ consists of $2^n$ n-simplices, with vertices corresponding to the lines through the origin in $\mathbb{R}^{n+1}$ defined by the unit vectors along each coordinate axis.
+To construct a $\Delta$-complex structure on $\mathbb{RP}^n$, we start with a convenient $\Delta$-complex structure on $S^n$. We view $S^n$ as being homeomorphic to the boundary of the $(n+1)$-dimensional cross-polytope, which is the set of points in $\mathbb{R}^{n+1}$ satisfying the equation $|x_0| + |x_1| + \cdots + |x_n| = 1$.
+
+This representation decomposes $S^n$ into $2^{n+1}$ n-simplices, each corresponding to a unique combination of signs for the coordinates $(x_0, x_1, \ldots, x_n)$. The set of vertices for this entire $\Delta$-complex consists of the unit vectors along each coordinate axis, both positive and negative.
+
+To obtain a $\Delta$-complex structure on $\mathbb{RP}^n$, we identify antipodal points on $S^n$. This identification pairs each simplex with its antipodal counterpart, effectively halving the number of simplices in the quotient space. The resulting $\Delta$-complex structure on $\mathbb{RP}^n$ consists of $2^n$ n-simplices, with vertices corresponding to the lines through the origin in $\mathbb{R}^{n+1}$ defined by the unit vectors along each coordinate axis.
 
 # 4
 Compute the simplicial homology groups of the triangular parachute obtained from $\Delta^2$ by identifying its three vertices to a single point.
