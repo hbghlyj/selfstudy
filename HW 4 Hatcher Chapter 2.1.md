@@ -30,7 +30,7 @@ The triangular parachute has one 2-simplex, three 1-simplices (the edges of the 
 Calculating the homology groups:
 
 - $H_2 = \ker(\partial_2) / \operatorname{im}(\partial_3) = 0 / 0 = 0$.
-- $H_1 = \ker(\partial_1) / \operatorname{im}(\partial_2) = \langle [v_0, v_1], [v_1, v_2], [v_0, v_2] \rangle / \langle [v_1, v_2] - [v_0, v_2] + [v_0, v_1] \rangle \cong \mathbb{Z}^2$.
+- $H_1 = \ker(\partial_1) / \operatorname{im}(\partial_2) = \langle [v_0, v_1], [v_1, v_2], [v_0, v_2] \rangle / \langle [v_1, v_2] - [v_0, v_2] + [v_0, v_1] \rangle \cong \mathbb{Z}^2$, since the relation reduces the number of free generators for the group from three to two.
 - $H_0 = \ker(\partial_0) / \operatorname{im}(\partial_1) = \mathbb{Z} / 0 \cong \mathbb{Z}$.
 
 # 6
