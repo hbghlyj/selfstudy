@@ -1,6 +1,10 @@
 # 1
 What familiar space is the quotient $\Delta$-complex of a 2-simplex $[v_0, v_1, v_2]$ obtained by identifying the edges $[v_0, v_1]$ and $[v_1, v_2]$, preserving the ordering of vertices?
 
+Proof
+
+The quotient $\Delta$-complex is homeomorphic to a Möbius strip. By identifying the edges $[v_0, v_1]$ and $[v_1, v_2]$ while preserving the vertex ordering, we create a twist in the surface, resulting in a non-orientable surface with a single boundary component, which is characteristic of a Möbius strip.
+
 # 3
 Construct a $\Delta$-complex structure on $\mathbb{RP}^n$ as a quotient of a $\Delta$-complex structure on $S^n$ having vertices the two vectors of length 1 along each coordinate axis in $\mathbb{R}^{n+1}$.
 
