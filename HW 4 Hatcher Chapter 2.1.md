@@ -49,6 +49,8 @@ The kernel of $\partial_2$ is trivial. For a 2-chain $\sum c_i \Delta_i^2$, its 
 # 8
 Construct a 3-dimensional $\Delta$-complex $X$ from $n$ tetrahedra $T_1, \cdots, T_n$ by the following two steps. First arrange the tetrahedra in a cyclic pattern as in the figure, so that each $T_i$ shares a common vertical face with its two neighbors $T_{i-1}$ and $T_{i+1}$, subscripts being taken $\bmod n$. Then identify the bottom face of $T_i$ with the top face of $T_{i+1}$ for each $i$. Show the simplicial homology groups of $X$ in dimensions $0,1,2,3$ are $\mathbb{Z}, \mathbb{Z}_n, 0, \mathbb{Z}$, respectively. [The space $X$ is an example of a lens space; see Example 2.43 for the general case.]
 
+![](https://riemannianhunger.wordpress.com/wp-content/uploads/2013/09/hatcher-2-1-8.png)
+
 # 10
 <ol type="a">
 <li>
