@@ -11,7 +11,7 @@ Prove that for any line bundle, $L \otimes L^*$ is trivial.
 Show that for a smooth submanifold $S \subset M$, the tangent bundle $T S \subset T M|_S$ is a subbundle.
 
 # 5.
-Let $E \rightarrow X$ and $F \rightarrow X$ be vector bundles of rank $r$ over the same space. Then $E$ and $F$ are isomorphic if and only if, after passing to a common refinement $\left\{U_a\right\}_{a \in \mathcal{I}}$, their respective transition functions $\sigma_{a b}$ and $\sigma_{a b}^{\prime}$ are related by
+Let $E \rightarrow X$ and $F \rightarrow X$ be vector bundles of rank $r$ over the same space. Then $E$ and $F$ are isomorphic if and only if, after passing to a common refinement $`\{U_a\}_{a \in \mathcal{I}}`$, their respective transition functions $\sigma_{a b}$ and $\sigma_{a b}'$ are related by
 
 $\sigma_{a b}=\tau_b^{-1} \sigma_{a b}' \tau_a$
 
