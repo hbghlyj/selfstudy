@@ -51,6 +51,10 @@ Construct a 3-dimensional $\Delta$-complex $X$ from $n$ tetrahedra $T_1, \cdots,
 
 ![](https://riemannianhunger.wordpress.com/wp-content/uploads/2013/09/hatcher-2-1-8.png)
 
+Proof
+
+Let $a_i, b_i, c_i, d_i$ be the edges of each tetrahedron $T_i$ as labeled in the figure, and let $f_i, g_i, h_i, k_i$ be the faces opposite these edges, respectively. By the identifications, we have $d_i = d_{i+1}$ for all $i$, so we denote this common edge by $d$. Also, $f_i = k_{i+1}$ for all $i$. One can show that all vertices are identified to a single vertex $v$. Since there is only one vertex, $H_0(X) = \mathbb{Z}$.
+
 # 10
 <ol type="a">
 <li>
