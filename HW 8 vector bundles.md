@@ -4,6 +4,18 @@ Show that $\mathscr{O}_{\mathbb{R} \mathbb{P}^1}(-1)$ is isomorphic to the Möbi
 # 2.
 State and prove a universal property that characterizes the tensor-product bundle $E \otimes F$ up to canonical isomorphism.
 
+Statement:
+
+For vector bundles $E$ and $F$ over a topological space $X$, the tensor-product bundle $E \otimes F$ is a vector bundle over $X$ together with a bilinear map of bundles
+
+$\varphi: E \times_X F \to E \otimes F$
+
+such that for any vector bundle $G$ over $X$ and any bilinear map of bundles $\psi: E \times_X F \to G$, there exists a unique bundle morphism $\tilde{\psi}: E \otimes F \to G$ such that
+
+$\psi = \tilde{\psi} \circ \varphi.$
+
+Proof:
+
 # 3.
 Prove that for any line bundle, $L \otimes L^*$ is trivial.
 
