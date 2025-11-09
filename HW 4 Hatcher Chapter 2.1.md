@@ -59,9 +59,7 @@ We can group the original 6n edges (from n tetrahedra) into three types based on
 
 The "Axis" Edge: The n vertical edges running down the center (connecting the top and bottom poles of each tetrahedron) are all identified together. This forms 1 edge (which is a loop).
 
-The "Rim" Edge: The n horizontal edges on the "top" faces and the n on the "bottom" faces are all identified. The identification of the bottom face of T_i
-​
-  with the top face of T_{i+1}  merges all 2n of these edges into a single equivalence class. This forms 1 edge (which is also a loop).
+The "Rim" Edge: Each tetrahedron has one horizontal "equator" edge (part of both the top and bottom faces), for a total of $n$ such edges. The face identifications merge these into a single edge, which forms a loop.
 
 The "Spoke" Edges: These are the 2n slanted edges that connect the poles to the rim. The identification of the bottom face of T_i with the top face of T_{i+1}
   (specifically, bottom_spoke i
