@@ -120,7 +120,7 @@ Proof
   
   *   **Interior of a 2-cell:** An open neighborhood is contained entirely within the 2-simplex, which is homeomorphic to a disk in $\mathbb{R}^2$.
   *   **Interior of a 1-cell:** A point on an edge has a neighborhood formed by gluing two half-disks from adjacent 2-simplices, which results in a space homeomorphic to a disk.
-  *   **0-cell (vertex):** A neighborhood is formed by sectors of disks from all incident 2-simplices. You need to argue that these glue together to form a single disk.
+  *   **0-cell (vertex):** A neighborhood is formed by sectors of disks from all incident 2-simplices. ????????these glue together to form a single disk.
 </li>
 <li>
   
