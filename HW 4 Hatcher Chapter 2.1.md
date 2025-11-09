@@ -53,31 +53,9 @@ Construct a 3-dimensional $\Delta$-complex $X$ from $n$ tetrahedra $T_1, \cdots,
 
 Proof
 
-First, we arrange the $n$ tetrahedra $T_i = [v_N, v_S, e_i, e_{i+1}]$ in a cycle. This identifies the vertical face $[v_N, v_S, e_i]$ of $T_i$ with the corresponding face on $T_{i-1}$.
-
-At this stage, we have $n+2$ vertices ($v_N, v_S$, and $e_1, \ldots, e_n$) and the following $3n+1$ edges:
-
-* Axis Edge ($1$): All $n$ internal edges $[v_N, v_S]$ are identified into 1 edge.
-
-* Top Spoke Edges (n): Each tetrahedron $T_i$ has two top spoke edges, $[v_N, e_i]$ and $[v_N, e_{i+1}]$. The cyclic identification of vertical faces identifies the edge $[v_N, e_i]$ from $T_i$ with the corresponding edge from $T_{i-1}$, and the edge $[v_N, e_{i+1}]$ from $T_i$ with the corresponding edge from $T_{i+1}$. This process results in $n$ distinct top spoke edges in the complex, one for each vertex $e_i$.
-
-* Bottom Spoke Edges (n): Similarly, the identifications on the bottom spokes leave $n$ distinct bottom spoke edges.
-
-* Rim Edges (n): The n edges $[e_i, e_{i+1}]$ forming the outer rim. These give n distinct edges.
-
-Now, we apply the second identification: "identify the bottom face of $T_i$ with the top face of $T_{i+1}$".
-
-This map $f:\text{Bottom}(T_i) \to\text{Top}(T_{i+1})$ identifies the vertices and edges of these faces.
-
-* Vertices: $v_S \sim v_N$ (poles merge) and $e_i \sim e_{i+1}$ (all rim vertices merge). This leaves 2 vertices.
-
-* Edges: This map forces new edge identifications on our 3n+1 edges.
-
-Let's see what happens to each group:
-
 * Axis Edge:
 
-  The axis edge $[v_N, v_S]$ is not part of any face being glued.
+  The axis edge $[v_S, v_N]$ is not part of any face being glued.
 
   Its endpoints $v_N$ and $v_S$ are identified, so it just becomes a loop.
 
@@ -110,7 +88,7 @@ Let's see what happens to each group:
 
 Boundary maps:
 
-* $\partial_2([e_i,v_N,v_S]) = A - S_i + S_{i-1}$
+* $\partial_2([e_i,v_N,v_S]) = - A - S_i + S_{i-1}$
 * $\partial_2([v_N,e_i,e_{i+1}]) = R - S_i + S_{i-1}$
 * $\partial_3([v_N,v_S,e_i,e_{i+1}]) = [v_S, e_i, e_{i+1}] - [v_N, e_i, e_{i+1}] + [v_N, v_S, e_{i+1}] - [v_N, v_S, e_i]$
 
