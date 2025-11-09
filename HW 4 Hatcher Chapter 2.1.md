@@ -118,11 +118,11 @@ Proof
 <ol type="a">
 <li>
   
-  For any point on the interior of a 2-cell,
+  For any point on the interior of a 2-cell, each point has a neighborhood homeomorphic to $\mathbb{R}^2$ since
   
-  For any point on the interior of a 1-cell,
+  For any point on the interior of a 1-cell, each point has a neighborhood homeomorphic to $\mathbb{R}^2$ since
 
-  For a point that is a 0-cell,
+  For a point that is a 0-cell, each point has a neighborhood homeomorphic to $\mathbb{R}^2$ since
 </li>
 <li>
   
