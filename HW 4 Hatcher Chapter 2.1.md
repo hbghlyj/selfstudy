@@ -112,3 +112,20 @@ Calculating homology groups:
   Show the edges can always be oriented so as to define a $\Delta$-complex structure on the quotient surface. [This is more difficult.]
 </li>
 </ol>
+
+Proof
+
+<ol type="a">
+<li>
+  
+  For any point on the interior of a 2-cell,
+  
+  For any point on the interior of a 1-cell,
+
+  For a point that is a 0-cell,
+</li>
+<li>
+  
+  Show the edges can always be oriented so as to define a $\Delta$-complex structure on the quotient surface. [This is more difficult.]
+</li>
+</ol>
