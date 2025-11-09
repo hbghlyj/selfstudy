@@ -112,7 +112,7 @@ Boundary maps:
 
 * $\partial_2([v_N,v_S,e_i]) = A + S_i - S_{i-1}$
 * $\partial_2([v_N,e_i,e_{i+1}]) = R - S_i + S_{i-1}$
-* $\partial_3([v_N,v_S,e_i,e_{i+1}]) = [v_N,v_S,e_{i+1}] - [v_N,v_S,e_i] + [v_N,e_i,e_{i+1}] - [v_S,e_i,e_{i+1}]$
+* $\partial_3([v_N,v_S,e_i,e_{i+1}]) = [v_S, e_i, e_{i+1}] - [v_N, e_i, e_{i+1}] + [v_N, v_S, e_{i+1}] - [v_N, v_S, e_i]$
 
 Calculating homology groups:
 - $H_0(X) = \mathbb{Z}$ since there is one vertex after identifications.
