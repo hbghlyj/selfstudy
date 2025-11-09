@@ -117,7 +117,7 @@ Boundary maps:
 Calculating homology groups:
 - $H_0(X) = \mathbb{Z}$ since there is one vertex after identifications.
 - $H_1(X) = \mathbb{Z}_n$ since the relations $\partial_2$ create a cyclic structure among the edges.
-- $H_2(X) = 0$ as the kernel of $\partial_2$ is trivial.
+- $H_2(X) = 0$ as $\ker(\partial_2) = \mathrm{im}(\partial_3)$.
 - $H_3(X) = \mathbb{Z}$ since there is one 3-simplex after identifications.
 
 # 10
