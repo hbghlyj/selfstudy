@@ -247,38 +247,10 @@ i+1
 
 This links the 2n total spoke edges into n pairs. For example, if n=4:
 
-BottomSpoke 
-1
-​
- ∼TopSpoke 
-2
-​
- 
-
-BottomSpoke 
-2
-​
- ∼TopSpoke 
-3
-​
- 
-
-BottomSpoke 
-3
-​
- ∼TopSpoke 
-4
-​
- 
-
-BottomSpoke 
-4
-​
- ∼TopSpoke 
-1
-​
- 
-
+* $BottomSpoke_1 \sim TopSpoke_2$
+* $BottomSpoke_2 \sim TopSpoke_3$
+* $BottomSpoke_3 \sim TopSpoke_4$
+* $BottomSpoke_4 \sim TopSpoke_1$
 These are n distinct equivalence classes.
 
 Result: n edges
