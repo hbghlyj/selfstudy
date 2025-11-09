@@ -54,37 +54,7 @@ Construct a 3-dimensional $\Delta$-complex $X$ from $n$ tetrahedra $T_1, \cdots,
 Proof
 
 1. After Step 1 (Cyclic Arrangement)
-First, we arrange the n tetrahedra T 
-i
-​
- =[v 
-N
-​
- ,v 
-S
-​
- ,e 
-i
-​
- ,e 
-i+1
-​
- ] in a cycle. This identifies the vertical face [v 
-N
-​
- ,v 
-S
-​
- ,e 
-i
-​
- ] of T 
-i
-​
-  with the corresponding face on T 
-i−1
-​
- .
+First, we arrange the n tetrahedra $T_i = [v_N, v_S, e_i, e_{i+1}]$ in a cycle. This identifies the vertical face $[v_N, v_S, e_i]$ of $T_i$ with the corresponding face on $T_{i-1}$.
 
 At this stage, we have n+2 vertices (v 
 N
