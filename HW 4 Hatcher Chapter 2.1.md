@@ -61,9 +61,7 @@ The "Axis" Edge: The n vertical edges running down the center (connecting the to
 
 The "Rim" Edge: Each tetrahedron has one horizontal "equator" edge (part of both the top and bottom faces), for a total of $n$ such edges. The face identifications merge these into a single edge, which forms a loop.
 
-The "Spoke" Edges: These are the 2n slanted edges that connect the poles to the rim. The identification of the bottom face of T_i with the top face of T_{i+1}
-  (specifically, bottom_spoke i
-  with top_spoke i+1) identifies these 2n edges into n distinct edges.
+The "Spoke" Edges: Each tetrahedron has 4 slanted "spoke" edges connecting its pole vertices to its equator vertices (2 on top, 2 on bottom), for a total of $4n$ such edges. The face identifications merge these $4n$ edges into $n$ distinct edges.
 
 Counting these up, the total number of edges in the final complex X is 1 (axis)+1 (rim)+n (spokes).
 
