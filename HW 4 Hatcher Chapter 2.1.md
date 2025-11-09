@@ -101,7 +101,7 @@ Let's see what happens to each group:
 
   Specifically, the bottom spoke $[v_S, e_i]$ (from Bottom($T_i$)) is identified with the top spoke $[v_N, e_{i+1}]$ (from Top($T_{i+1}$)).
 
-  This gives the relation: $\text{BottomSpoke}_i \sim \text{TopSpoke}_{i+1}$ for all i=1,…,n.
+  This gives the relation: $`\text{BottomSpoke}_i \sim \text{TopSpoke}_{i+1}`$ for all i=1,…,n.
   This links the $2n$ total spoke edges into n pairs.
 
   These are $n$ distinct equivalence classes.
