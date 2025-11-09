@@ -108,10 +108,10 @@ Specifically, the bottom spoke $[v_S, e_i]$ (from Bottom($T_i$)) is identified w
 This gives the relation: $BottomSpoke_i \sim TopSpoke_{i+1}$ for all i=1,…,n.
 This links the 2n total spoke edges into n pairs. For example, if n=4:
 
-* BottomSpoke_1 ∼ TopSpoke_2
-* BottomSpoke_2 ∼ TopSpoke_3
-* BottomSpoke_3 ∼ TopSpoke_4
-* BottomSpoke_4 ∼ TopSpoke_1
+* $BottomSpoke_1 \sim TopSpoke_2$
+* $BottomSpoke_2 \sim TopSpoke_3$
+* $BottomSpoke_3 \sim TopSpoke_4$
+* $BottomSpoke_4 \sim TopSpoke_1$
 
 These are n distinct equivalence classes.
 
