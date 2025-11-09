@@ -53,75 +53,27 @@ Construct a 3-dimensional $\Delta$-complex $X$ from $n$ tetrahedra $T_1, \cdots,
 
 Proof
 
-1. After Step 1 (Cyclic Arrangement)
 First, we arrange the n tetrahedra $T_i = [v_N, v_S, e_i, e_{i+1}]$ in a cycle. This identifies the vertical face $[v_N, v_S, e_i]$ of $T_i$ with the corresponding face on $T_{i-1}$.
 
-At this stage, we have n+2 vertices (v 
-N
-​
- , v 
-S
-​
- , and e 
-1
-​
- ,…,e 
-n
-​
- ) and the following 3n+1 edges:
+At this stage, we have n+2 vertices ($v_N, v_S$, and $e_1, \ldots, e_n$) and the following 3n+1 edges:
 
-Axis Edge (1): All n internal edges [v 
-N
-​
- ,v 
-S
-​
- ] are identified into 1 edge.
+Axis Edge (1): All n internal edges $[v_N, v_S]$ are identified into 1 edge.
 
 Top Spoke Edges (n): Each tetrahedron $T_i$ has two top spoke edges, $[v_N, e_i]$ and $[v_N, e_{i+1}]$. The cyclic identification of vertical faces identifies the edge $[v_N, e_i]$ from $T_i$ with the corresponding edge from $T_{i-1}$, and the edge $[v_N, e_{i+1}]$ from $T_i$ with the corresponding edge from $T_{i+1}$. This process results in $n$ distinct top spoke edges in the complex, one for each vertex $e_i$.
 
 Bottom Spoke Edges (n): Similarly, the identifications on the bottom spokes leave $n$ distinct bottom spoke edges.
 
-Rim Edges (n): The n edges [e 
-i
-​
- ,e 
-i+1
-​
- ] forming the outer rim. These give n distinct edges.
+Rim Edges (n): The n edges $[e_i, e_{i+1}]$ forming the outer rim. These give n distinct edges.
 
 Total before Step 2: 1+n+n+n=3n+1 edges.
 
 2. After Step 2 (Final Identification)
-Now, we apply the second identification: "identify the bottom face of T 
-i
-​
-  with the top face of T 
-i+1
-​
- ."
+Now, we apply the second identification: "identify the bottom face of $T_i$ with the top face of $T_{i+1}$".
 
-This map f:Bottom(T 
-i
-​
- )→Top(T 
-i+1
-​
- ) identifies the vertices and edges of these faces.
+This map $f:Bottom(T_i) \to Top(T_{i+1})$ identifies the vertices and edges of these faces.
+$f:Bottom(T_i) \to Top(T_{i+1})$ identifies the vertices and edges of these faces.
 
-Vertices: v 
-S
-​
- ∼v 
-N
-​
-  (poles merge) and e 
-i
-​
- ∼e 
-i+1
-​
-  (all rim vertices merge). This leaves 2 vertices.
+Vertices: $v_S \sim v_N$ (poles merge) and $e_i \sim e_{i+1}$ (all rim vertices merge). This leaves 2 vertices.
 
 Edges: This map forces new edge identifications on our 3n+1 edges.
 
@@ -129,21 +81,9 @@ Let's see what happens to each group:
 
 Axis Edge:
 
-The axis edge [v 
-N
-​
- ,v 
-S
-​
- ] is not part of any face being glued.
+The axis edge $[v_N, v_S]$ is not part of any face being glued.
 
-Its endpoints v 
-N
-​
-  and v 
-S
-​
-  are identified, so it just becomes a loop.
+Its endpoints $v_N$ and $v_S$ are identified, so it just becomes a loop.
 
 It is not identified with any other edge.
 
@@ -151,45 +91,9 @@ Result: 1 edge
 
 Rim Edges:
 
-The map identifies the bottom rim edge of T 
-i
-​
-  (which is R 
-i
-​
- =[e 
-i
-​
- ,e 
-i+1
-​
- ]) with the top rim edge of T 
-i+1
-​
-  (which is R 
-i+1
-​
- =[e 
-i+1
-​
- ,e 
-i+2
-​
- ]).
+The map identifies the bottom rim edge of $T_i$ (which is $R_i = [e_i, e_{i+1}]$) with the top rim edge of $T_{i+1}$ (which is $R_{i+1} = [e_{i+1}, e_{i+2}]$).
 
-This creates the chain of identifications R 
-1
-​
- ∼R 
-2
-​
- ∼⋯∼R 
-n
-​
- ∼R 
-1
-​
- .
+This creates the chain of identifications $R_1 \sim R_2 \sim \cdots \sim R_n \sim R_1$.
 
 All n rim edges are identified into a single equivalence class (a loop).
 
@@ -197,48 +101,18 @@ Result: 1 edge
 
 Spoke Edges:
 
-This is the key part. The map identifies the bottom spokes of T 
-i
-​
-  with the top spokes of T 
-i+1
-​
- .
+This is the key part. The map identifies the bottom spokes of $T_i$ with the top spokes of $T_{i+1}$.
 
-Specifically, the bottom spoke [v 
-S
-​
- ,e 
-i
-​
- ] (from Bottom(T 
-i
-​
- )) is identified with the top spoke [v 
-N
-​
- ,e 
-i+1
-​
- ] (from Top(T 
-i+1
-​
- )).
+Specifically, the bottom spoke $[v_S, e_i]$ (from Bottom($T_i$)) is identified with the top spoke $[v_N, e_{i+1}]$ (from Top($T_{i+1}$)).
 
-This gives the relation: BottomSpoke 
-i
-​
- ∼TopSpoke 
-i+1
-​
-  for all i=1,…,n.
-
+This gives the relation: $BottomSpoke_i \sim TopSpoke_{i+1}$ for all i=1,…,n.
 This links the 2n total spoke edges into n pairs. For example, if n=4:
 
 * $BottomSpoke_1 \sim TopSpoke_2$
 * $BottomSpoke_2 \sim TopSpoke_3$
 * $BottomSpoke_3 \sim TopSpoke_4$
 * $BottomSpoke_4 \sim TopSpoke_1$
+
 These are n distinct equivalence classes.
 
 Result: n edges
@@ -254,6 +128,7 @@ n (from the spoke edges)
 
 Total = n+2 edges
 
+Boundary maps:
 # 10
 <ol type="a">
 <li>
