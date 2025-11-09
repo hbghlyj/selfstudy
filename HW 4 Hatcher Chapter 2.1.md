@@ -112,7 +112,7 @@ Let's see what happens to each group:
 
   These are $n$ distinct equivalence classes.
 
-  Result: $n$ edges, labeled $S_1, S_2, \ldots, S_n$.
+  Result: $n$ edges, with the class containing $BottomSpoke_i$ labeled as $S_i$.
 
 Boundary maps:
 
