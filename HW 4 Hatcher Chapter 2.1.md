@@ -106,7 +106,7 @@ Let's see what happens to each group:
 
   These are $n$ distinct equivalence classes.
 
-  Result: $n$ edges, with the class containing $\text{BottomSpoke}_i$ labeled as $S_i$.
+  Result: $n$ edges, with the class $[v_S, e_i]\sim[v_N, e_{i+1}]$ labeled as $S_i$.
 
 Boundary maps:
 
