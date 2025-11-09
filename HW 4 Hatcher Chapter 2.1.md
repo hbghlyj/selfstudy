@@ -91,6 +91,7 @@ Boundary maps:
 Calculating homology groups:
 - $H_0(X) = \mathbb{Z}$ since there is one vertex after identifications.
 - $H_1(X) = \mathbb{Z}_n$. The calculation is as follows:
+
   $`\begin{aligned}
   H_1(X) &= \frac{\langle A,R,S_i\rangle}{\langle- A - S_i + S_{i-1}, R + S_i - S_{i-1}\rangle} \\
          &= \frac{\langle A,R,S_i\rangle}{\langle- A - S_i + S_{i-1}, R-A\rangle} \\
