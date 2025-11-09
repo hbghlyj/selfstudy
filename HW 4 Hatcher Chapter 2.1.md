@@ -55,7 +55,7 @@ Proof
 
 First, we arrange the $n$ tetrahedra $T_i = [v_N, v_S, e_i, e_{i+1}]$ in a cycle. This identifies the vertical face $[v_N, v_S, e_i]$ of $T_i$ with the corresponding face on $T_{i-1}$.
 
-At this stage, we have $n+2$ vertices ($v_N, v_S$, and $e_1, \ldots, e_n$) and the following 3n+1 edges:
+At this stage, we have $n+2$ vertices ($v_N, v_S$, and $e_1, \ldots, e_n$) and the following $3n+1$ edges:
 
 * Axis Edge ($1$): All $n$ internal edges $[v_N, v_S]$ are identified into 1 edge.
 
