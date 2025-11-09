@@ -53,20 +53,206 @@ Construct a 3-dimensional $\Delta$-complex $X$ from $n$ tetrahedra $T_1, \cdots,
 
 Proof
 
-All the "equator" vertices being identified into one, and the "top" and "bottom" pole vertices being identified into another. This leaves 2 vertices in the final complex.
+1. After Step 1 (Cyclic Arrangement)
+First, we arrange the n tetrahedra $T_i = [v_N, v_S, e_i, e_{i+1}]$ in a cycle. This identifies the vertical face $[v_N, v_S, e_i]$ of $T_i$ with the corresponding face on $T_{i-1}$.
 
-We can group the original 6n edges (from n tetrahedra) into three types based on the identifications:
+At this stage, we have n+2 vertices (v 
+N
+​
+ , v 
+S
+​
+ , and e 
+1
+​
+ ,…,e 
+n
+​
+ ) and the following 3n+1 edges:
 
-The "Axis" Edge: The n vertical edges running down the center (connecting the top and bottom poles of each tetrahedron) are all identified together. This forms 1 edge (which is a loop).
+Axis Edge (1): All n internal edges [v 
+N
+​
+ ,v 
+S
+​
+ ] are identified into 1 edge.
 
-The "Rim" Edge: Each tetrahedron has one horizontal "equator" edge (part of both the top and bottom faces), for a total of $n$ such edges. The face identifications merge these into a single edge, which forms a loop.
+Top Spoke Edges (n): Each tetrahedron $T_i$ has two top spoke edges, $[v_N, e_i]$ and $[v_N, e_{i+1}]$. The cyclic identification of vertical faces identifies the edge $[v_N, e_i]$ from $T_i$ with the corresponding edge from $T_{i-1}$, and the edge $[v_N, e_{i+1}]$ from $T_i$ with the corresponding edge from $T_{i+1}$. This process results in $n$ distinct top spoke edges in the complex, one for each vertex $e_i$.
 
-The "Spoke" Edges: Each tetrahedron has 4 slanted "spoke" edges connecting its pole vertices to its equator vertices (2 on top, 2 on bottom), for a total of $4n$ such edges. The face identifications merge these $4n$ edges into $n$ distinct edges.
+Bottom Spoke Edges (n): Similarly, the identifications on the bottom spokes leave $n$ distinct bottom spoke edges.
 
-Counting these up, the total number of edges in the final complex X is 1 (axis)+1 (rim)+n (spokes).
+Rim Edges (n): The n edges [e 
+i
+​
+ ,e 
+i+1
+​
+ ] forming the outer rim. These give n distinct edges.
 
-After all identifications, the complex has n+2 edges.
+Total before Step 2: 1+n+n+n=3n+1 edges.
 
+2. After Step 2 (Final Identification)
+Now, we apply the second identification: "identify the bottom face of T 
+i
+​
+  with the top face of T 
+i+1
+​
+ ."
+
+This map f:Bottom(T 
+i
+​
+ )→Top(T 
+i+1
+​
+ ) identifies the vertices and edges of these faces.
+
+Vertices: v 
+S
+​
+ ∼v 
+N
+​
+  (poles merge) and e 
+i
+​
+ ∼e 
+i+1
+​
+  (all rim vertices merge). This leaves 2 vertices.
+
+Edges: This map forces new edge identifications on our 3n+1 edges.
+
+Let's see what happens to each group:
+
+Axis Edge:
+
+The axis edge [v 
+N
+​
+ ,v 
+S
+​
+ ] is not part of any face being glued.
+
+Its endpoints v 
+N
+​
+  and v 
+S
+​
+  are identified, so it just becomes a loop.
+
+It is not identified with any other edge.
+
+Result: 1 edge
+
+Rim Edges:
+
+The map identifies the bottom rim edge of T 
+i
+​
+  (which is R 
+i
+​
+ =[e 
+i
+​
+ ,e 
+i+1
+​
+ ]) with the top rim edge of T 
+i+1
+​
+  (which is R 
+i+1
+​
+ =[e 
+i+1
+​
+ ,e 
+i+2
+​
+ ]).
+
+This creates the chain of identifications R 
+1
+​
+ ∼R 
+2
+​
+ ∼⋯∼R 
+n
+​
+ ∼R 
+1
+​
+ .
+
+All n rim edges are identified into a single equivalence class (a loop).
+
+Result: 1 edge
+
+Spoke Edges:
+
+This is the key part. The map identifies the bottom spokes of T 
+i
+​
+  with the top spokes of T 
+i+1
+​
+ .
+
+Specifically, the bottom spoke [v 
+S
+​
+ ,e 
+i
+​
+ ] (from Bottom(T 
+i
+​
+ )) is identified with the top spoke [v 
+N
+​
+ ,e 
+i+1
+​
+ ] (from Top(T 
+i+1
+​
+ )).
+
+This gives the relation: BottomSpoke 
+i
+​
+ ∼TopSpoke 
+i+1
+​
+  for all i=1,…,n.
+
+This links the 2n total spoke edges into n pairs. For example, if n=4:
+
+* $BottomSpoke_1 \sim TopSpoke_2$
+* $BottomSpoke_2 \sim TopSpoke_3$
+* $BottomSpoke_3 \sim TopSpoke_4$
+* $BottomSpoke_4 \sim TopSpoke_1$
+These are n distinct equivalence classes.
+
+Result: n edges
+
+Final Count
+Adding them all up, the total number of edges after all identifications is:
+
+1 (from the axis)
+
+1 (from the rim edges)
+
+n (from the spoke edges)
+
+Total = n+2 edges
 
 # 10
 <ol type="a">
