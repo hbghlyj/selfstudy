@@ -55,13 +55,11 @@ Proof
 
 * Axis Edge:
 
-  The axis edge $[v_S, v_N]$ is not part of any face being glued.
+  The axis edge $A=[v_S, v_N]$ is not part of any face being glued.
 
   Its endpoints $v_N$ and $v_S$ are identified, so it just becomes a loop.
 
   It is not identified with any other edge.
-
-  Result: 1 edge, labeled $A$.
 
 * Rim Edges:
 
@@ -69,9 +67,7 @@ Proof
 
   This creates the chain of identifications $R_1 \sim R_2 \sim \cdots \sim R_n \sim R_1$.
 
-  All $n$ rim edges are identified into a single equivalence class (a loop).
-
-  Result: 1 edge, labeled $R$.
+  All $n$ rim edges are identified into a single equivalence class (a loop), labeled $R$.
 
 * Spoke Edges:
 
