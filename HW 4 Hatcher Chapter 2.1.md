@@ -78,21 +78,9 @@ S
 ​
  ] are identified into 1 edge.
 
-Top Spoke Edges (n): As you noted, the n edges connecting the top pole to the rim ([v 
-N
-​
- ,e 
-i
-​
- ]) are shared between adjacent top faces. This gives n distinct edges.
+Top Spoke Edges (n): Each tetrahedron $T_i$ has two top spoke edges, $[v_N, e_i]$ and $[v_N, e_{i+1}]$. The cyclic identification of vertical faces identifies the edge $[v_N, e_i]$ from $T_i$ with the corresponding edge from $T_{i-1}$, and the edge $[v_N, e_{i+1}]$ from $T_i$ with the corresponding edge from $T_{i+1}$. This process results in $n$ distinct top spoke edges in the complex, one for each vertex $e_i$.
 
-Bottom Spoke Edges (n): Similarly, the n edges connecting the bottom pole to the rim ([v 
-S
-​
- ,e 
-i
-​
- ]) give n distinct edges.
+Bottom Spoke Edges (n): Similarly, the identifications on the bottom spokes leave $n$ distinct bottom spoke edges.
 
 Rim Edges (n): The n edges [e 
 i
