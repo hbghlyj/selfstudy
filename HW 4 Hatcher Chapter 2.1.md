@@ -99,7 +99,7 @@ Let's see what happens to each group:
 
   The map identifies the bottom spokes of $T_i$ with the top spokes of $T_{i+1}$.
 
-  Specifically, the bottom spoke $[v_S, e_i]$ (from Bottom($T_i$)) is identified with the top spoke $[v_N, e_{i+1}]$ (from Top($T_{i+1}$)).
+  Specifically, the bottom spoke $[e_i,v_S]$ from $T_i$ is identified with the top spoke $[e_{i+1},v_N]$ from $T_{i+1}$.
 
   This gives the relation: $`\text{BottomSpoke}_i \sim \text{TopSpoke}_{i+1}`$ for all i=1,…,n.
   This links the $2n$ total spoke edges into n pairs.
@@ -110,7 +110,7 @@ Let's see what happens to each group:
 
 Boundary maps:
 
-* $\partial_2([e_i,v_N,v_S]) = A + S_i - S_{i-1}$
+* $\partial_2([e_i,v_N,v_S]) = A - S_i + S_{i-1}$
 * $\partial_2([v_N,e_i,e_{i+1}]) = R - S_i + S_{i-1}$
 * $\partial_3([v_N,v_S,e_i,e_{i+1}]) = [v_S, e_i, e_{i+1}] - [v_N, e_i, e_{i+1}] + [v_N, v_S, e_{i+1}] - [v_N, v_S, e_i]$
 
