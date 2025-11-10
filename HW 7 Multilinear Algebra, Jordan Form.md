@@ -22,7 +22,7 @@ Let $A = (a_{ij})$ be the matrix representation of $\phi$ with respect to this b
 $\beta(\phi(e_1), \ldots, \phi(e_n)) = \beta\left(\sum_{i_1=1}^n a_{i_1 1} e_{i_1}, \ldots, \sum_{i_n=1}^n a_{i_n n} e_{i_n}\right)$
 $= \sum_{i_1, \ldots, i_n=1}^n a_{i_1 1} \cdots a_{i_n n} \beta(e_{i_1}, \ldots, e_{i_n})$
 
-Since $\beta$ is antisymmetric, $\beta(e_{i_1}, \ldots, e_{i_n})$ is non-zero only if the indices $(i_1, \ldots, i_n)$ are a permutation of $(1, \ldots, n)$. If $i_j = \sigma(j)$ for some permutation $\sigma \in S_n$, then $\beta(e_{\sigma(1)}, \ldots, e_{\sigma(n)}) = \text{sgn}(\sigma) \beta(e_1, \ldots, e_n)$.
+Since $\beta$ is antisymmetric, $\beta(e_{i_1}, \ldots, e_{i_n})$ is non-zero only if the indices $(i_1, \ldots, i_n)$ are a permutation of $(1, \ldots, n)$. For any permutation $\sigma \in S_n$, we have $\beta(e_{\sigma(1)}, \ldots, e_{\sigma(n)}) = \text{sgn}(\sigma) \beta(e_1, \ldots, e_n)$.
 
 The sum thus simplifies to:
 $\left(\sum_{\sigma \in S_n} \text{sgn}(\sigma) a_{\sigma(1) 1} \cdots a_{\sigma(n) n}\right) \beta(e_1, \ldots, e_n)$
