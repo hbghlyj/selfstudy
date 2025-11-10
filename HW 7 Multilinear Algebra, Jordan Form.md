@@ -1,5 +1,5 @@
 # 1.
-Let $V$ be an $n$-dimensional vector space, and let $\phi: V \rightarrow V$ be a linear map. Show that, for any $n$-linear antisymmetric form $\beta(v_1, \ldots, v_n)$ on $n$, we have
+Let $V$ be an $n$-dimensional vector space, and let $\phi: V \rightarrow V$ be a linear map. Show that, for any $n$-linear antisymmetric form $\beta(v_1, \ldots, v_n)$ on $V$, we have
 
 $\beta(\phi(v_1), \ldots, \phi(v_n))=\det(\phi) \beta(v_1, \ldots, v_n) .$
 
