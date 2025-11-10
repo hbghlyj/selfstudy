@@ -102,6 +102,24 @@ Consider $\det(A)$ as a multivariable function of the entries of a real matrix $
 Compute the directional derivative of this function at the point $A=I$ in the direction of some matrix $B$.
 (Equivalently, find the linear approximation for $f(t)=\det(I+B t)$ at $t=0$.)
 
+Proof
+
+To compute the directional derivative of the determinant function at the identity matrix $I$ in the direction of a matrix $B$, we consider the function $f(t) = \det(I + tB)$ and find its derivative $f'(0)$.
+
+The derivative of the determinant is given by Jacobi's formula:
+
+$\frac{d}{dt}\det(A(t)) = \text{tr}\left(\text{adj}(A(t)) \frac{dA(t)}{dt}\right)$
+
+For $A(t) = I + tB$, we have $\frac{dA(t)}{dt} = B$. Applying the formula and evaluating at $t=0$:
+
+$f'(0) = \frac{d}{dt}\det(I + tB)\bigg|_{t=0} = \text{tr}(\text{adj}(I) \cdot B)$
+
+Since $\text{adj}(I) = I$ (because $A \cdot \text{adj}(A) = (\det A)I$), the expression simplifies:
+
+$f'(0) = \text{tr}(I \cdot B) = \text{tr}(B)$
+
+Thus, the directional derivative is $\text{tr}(B).
+
 # 6.
 Let $A$ be a square $n \times n$ matrix whose characteristic polynomial has $n$ roots in $K$, counting with multiplicity.
 Consider the Jordan form of $A$: suppose that it consists of blocks $J_{\lambda_i, n_i}$, where $\lambda_i$ is the eigenvalue and $n_i$ is the size of the block.
