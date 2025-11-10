@@ -5,11 +5,10 @@ $\beta(\phi(v_1), \ldots, \phi(v_n))=\det(\phi) \beta(v_1, \ldots, v_n) .$
 
 (This formalizes the following idea: any "unit of volume" on $V$, given by $\beta$, gets scaled by $\det(\phi)$ when we apply $\phi$.
 In fact, this can be used as a definition of $\det(\phi)$: this way, some of its properties, such as independence of basis and multiplicativity become clear.)
+
 Proof
 
 Let's define a new form $\beta'(v_1, \ldots, v_n) = \beta(\phi(v_1), \ldots, \phi(v_n))$. Since $\phi$ is linear and $\beta$ is an $n$-linear antisymmetric form, it follows that $\beta'$ is also an $n$-linear antisymmetric form on $V$.
-
-Proof
 
 The space of $n$-linear antisymmetric forms on an $n$-dimensional vector space $V$ is one-dimensional. Therefore, $\beta'$ must be a scalar multiple of $\beta$. That is, there exists a scalar $\lambda \in K$ such that:
 
@@ -91,6 +90,34 @@ of $V$ such that
 $\gamma(a_i, b_i)=1, \quad \gamma(b_i, a_i)=-1 \quad(i=1, \ldots, k),$
 
 and $\gamma$ vanishes on all other pairs of basis vectors. (When $n=2 k$, this is called a symplectic basis.)
+
+Proof
+
+We will prove this by induction on the dimension $n$ of the vector space $V$.
+
+Base Case: If $n=0$, the statement is trivially true as there are no vectors to consider.
+
+Inductive Step: Assume the statement holds for all vector spaces of dimension less than $n$. We will show it holds for dimension $n$.
+
+If $\gamma$ is the zero form, then we can take $k=0$ and choose any basis for $V$, and the statement holds.
+
+\nand $\gamma$ vanishes on all other pairs of basis vectors. (When $n=2 k$, this is called a symplectic basis.)\n\nProof\n\nWe will prove this by induction on the dimension $n$ of the vector space $V$.\n\nBase Case: If $n=0$, the statement is trivially true as there are no vectors to consider.\n\nInductive Step: Assume the statement holds for all vector spaces of dimension less than $n$. We will show it holds for dimension $n$.\n\nIf $\gamma$ is the zero form, then we can take $k=0$ and choose any basis for $V$, and the statement holds.\n\nIf $\gamma$ is not the zero form, there exist vectors $u, v \in V$ such that $\gamma(u, v) \neq 0$. We can scale $u$ and $v$ such that $\gamma(u, v) = 1$. Set $a_1 = u$ and $b_1 = v$. Note that $u$ and $v$ must be linearly independent. If $v = c u$ for some scalar $c$, then $\gamma(u, v) = \gamma(u, c u) = c \gamma(u, u) = 0$ (since $\gamma$ is anti-symmetric), which contradicts $\gamma(u, v) \neq 0$. Thus, $W = \text{span}\{a_1, b_1\}$ is a 2-dimensional subspace.
+
+Now, consider the subspace $`W = \text{span}\{a_1, b_1\}`$. The restriction of $\gamma$ to $W$ is non-degenerate, and we can define the orthogonal complement of $W$ with respect to $\gamma$:
+
+$`W^\perp = \{x \in V \mid \gamma(x, w) = 0 \text{ for all } w \in W\}`$
+
+The dimension of $W^\perp$ is $n-2$. This follows from the fact that the restriction of $\gamma$ to $W$ is non-degenerate, implying $V = W \oplus W^\perp$. Since $\dim(V) = n$ and $\dim(W) = 2$ (as $a_1$ and $b_1$ are linearly independent), we have $\dim(W^\perp) = \dim(V) - \dim(W) = n - 2$. By the inductive hypothesis, there exists a basis for $W^\perp$ of the form:
+
+$`\{a_2, \ldots, a_k, b_2, \ldots, b_k, c_1, \ldots, c_{n-2k}\}`$
+
+such that $\gamma(a_i, b_i) = 1$, $\gamma(b_i, a_i) = -1$ for $i=2, \ldots, k$, and $\gamma$ vanishes on all other pairs of basis vectors in $W^\perp$.
+
+Combining the basis $`\{a_1, b_1\}`$ with the basis of $W^\perp$, we obtain a basis for $V$:
+
+$`\{a_1, b_1, a_2, \ldots, a_k, b_2, \ldots, b_k, c_1, \ldots, c_{n-2k}\}`$
+
+This basis satisfies the required properties, completing the inductive step.
 
 # 5.
 Consider $\det(A)$ as a multivariable function of the entries of a real matrix $A$.
