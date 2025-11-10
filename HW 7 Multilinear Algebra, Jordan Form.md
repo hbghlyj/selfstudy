@@ -53,15 +53,17 @@ Compute $\det(\phi)$.
 
 Proof
 
-The space $V$ of polynomials of degree at most $n$ has a natural basis given by the monomials $\{1, t, t^2, \ldots, t^n\}$. The linear map $\phi$ acts on this basis as follows:
+The space $V$ of polynomials of degree at most $n$ has a natural basis given by the monomials $`\{1, t, t^2, \ldots, t^n\}`$. The linear map $\phi$ acts on this basis as follows:
 
 $\phi(t^k) = (a t + b)^k = \sum_{j=0}^k \binom{k}{j} a^j b^{k-j} t^j$
 
-To find the matrix representation of $\phi$ with respect to the ordered basis $B = \{1, t, t^2, \ldots, t^n\}$, we note that $\phi(t^k) = (at+b)^k$ is a polynomial of degree $k$. Thus, its expansion only involves basis vectors $t^j$ with $j \le k$. When the matrix of $\phi$ is constructed with columns as the images of the basis vectors, this property ensures the matrix is upper triangular.\n\nThe diagonal entry corresponding to $t^k$ is the coefficient of $t^k$ in the expansion of $\phi(t^k)$, which is $a^k$. Therefore, the diagonal entries of the matrix are:
+To find the matrix representation of $\phi$ with respect to the ordered basis $`B = \{1, t, t^2, \ldots, t^n\}`$, we note that $\phi(t^k) = (at+b)^k$ is a polynomial of degree $k$. Thus, its expansion only involves basis vectors $t^j$ with $j \le k$. When the matrix of $\phi$ is constructed with columns as the images of the basis vectors, this property ensures the matrix is upper triangular.
+
+The diagonal entry corresponding to $t^k$ is the coefficient of $t^k$ in the expansion of $\phi(t^k)$, which is $a^k$. Therefore, the diagonal entries of the matrix are:
 - For $k=0$: $a^0 = 1$
 - For $k=1$: $a^1 = a$
 - For $k=2$: $a^2$
-- ...
+- $\cdots$
 - For $k=n$: $a^n$
 
 The determinant of an upper triangular matrix is the product of its diagonal entries. Thus, we have:
