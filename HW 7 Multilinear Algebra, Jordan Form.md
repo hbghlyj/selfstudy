@@ -72,15 +72,10 @@ Find $\det(m_M)$. (Of course, the answer depends on $M$.)
 
 Proof
 
-The space $V$ of $n \times m$ matrices can be viewed as a vector space of dimension $nm$. A natural basis for this space is given by the set of matrices $E_{ij}$, where $E_{ij}$ has a 1 in the $(i,j)$-th position and 0 elsewhere.
+For a fixed column index $j$, the subspace $V_j$ of matrices with non-zero entries only in column $j$ is invariant under $m_M$.
+The subspace $V_j$ is invariant (the map $m_M$ sends any matrix in $V_j$ to another matrix in $V_j$).The action of the map within this subspace is just $v \mapsto Mv$ (if we identify the subspace with $K^n$ by just looking at the $j$-th column). So the action of $m_M$ on this $n$-dimensional subspace is represented by the matrix $M$.
 
-To find the matrix representation of the linear map $m_M$ with respect to this basis, we compute the image of each basis element under $m_M$.
-
-$m_M(E_{ij}) = M E_{ij}$ is the matrix with the $i$-th column of $M$ in its $j$-th column, and zeros elsewhere.
-
-This means that for a fixed column index $j$, the subspace $V_j$ of matrices with non-zero entries only in column $j$ is invariant under $m_M$. The action of $m_M$ on this $n$-dimensional subspace is represented by the matrix $M$.
-
-Since the whole space $V$ is a direct sum of $m$ such subspaces, the matrix representation of $m_M$ with respect to a suitable basis (e.g., ordering basis vectors by columns) is a block diagonal matrix with $m$ blocks, each being $M$. Therefore, the determinant is the product of the determinants of the blocks: $\det(m_M) = (\det(M))^m$
+The space $V$ of $n \times m$ matrices can be viewed as a vector space of dimension $nm$. Since the whole space $V$ is a direct sum of $m$ such subspaces, the matrix representation of $m_M$ with respect to basis vectors ordered by columns is a block diagonal matrix with $m$ blocks, each being $M$. Therefore, the determinant is the product of the determinants of the blocks: $\det(m_M) = (\det(M))^m$.
 
 # 4.
 Let $K$ be a field and $V$ be a finite-dimensional vector space. Let
