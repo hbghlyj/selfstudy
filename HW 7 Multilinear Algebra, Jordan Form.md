@@ -108,7 +108,7 @@ By Leibniz formula, we have
 
 $f(t) = \det(I + tB) = \sum_{\sigma \in S_n} \text{sgn}(\sigma) \prod_{i=1}^n (I + tB)_{i, \sigma(i)}$
 
-where $(I + tB)_{i, \sigma(i)} = \delta_{i, \sigma(i)} + t B_{i, \sigma(i)}$.
+where $`(I + tB)_{i, \sigma(i)} = \delta_{i, \sigma(i)} + t B_{i, \sigma(i)}`$.
 
 The derivative at $t=0$ is the coefficient of the linear term in $t$. For the term linear in $t$ to be non-zero in the expansion of $\prod_{i=1}^n (\delta_{i, \sigma(i)} + t B_{i, \sigma(i)})$, at most one of the $\delta_{i, \sigma(i)}$ terms can be zero. This condition is only met by the identity permutation ($\sigma = \text{id}$). For any other permutation, at least two indices are not fixed, causing the linear term to vanish. For $\sigma = \text{id}$, the linear term's coefficient is $\sum_{i=1}^n B_{i,i}$, so:
 
