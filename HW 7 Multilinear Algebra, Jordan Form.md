@@ -70,6 +70,18 @@ Consider the linear map $m_M: V \rightarrow V$ given by left multiplication by $
 
 Find $\det(m_M)$. (Of course, the answer depends on $M$.)
 
+Proof
+
+The space $V$ of $n \times m$ matrices can be viewed as a vector space of dimension $nm$. A natural basis for this space is given by the set of matrices $E_{ij}$, where $E_{ij}$ has a 1 in the $(i,j)$-th position and 0 elsewhere.
+
+To find the matrix representation of the linear map $m_M$ with respect to this basis, we compute the image of each basis element under $m_M$. Specifically, we have:
+
+$m_M(E_{ij}) = M E_{ij}$ is the matrix with the $i$-th column of $M$ in its $j$-th column, and zeros elsewhere.
+
+This means that for a fixed column index $j$, the subspace $V_j$ of matrices with non-zero entries only in column $j$ is invariant under $m_M$. The action of $m_M$ on this $n$-dimensional subspace is represented by the matrix $M$.
+
+Since the whole space $V$ is a direct sum of $m$ such subspaces, the matrix representation of $m_M$ with respect to a suitable basis (e.g., ordering basis vectors by columns) is a block diagonal matrix with $m$ blocks, each being $M$. Therefore, the determinant is the product of the determinants of the blocks: $\det(m_M) = (\det(M))^m$
+
 # 4.
 Let $K$ be a field and $V$ be a finite-dimensional vector space. Let
 
@@ -97,5 +109,5 @@ Consider the Jordan form of $A$: suppose that it consists of blocks $J_{\lambda_
 Express the following invariants of $A$ in terms of $n_i$ and $\lambda_i$: its characteristic polynomial, its minimal polynomial, the dimension of eigenspace for each $\lambda$ (this is called "the geometric multiplicity of an eigenvalue") and rank. (No explanation is required.)
 
 # 7.
-Following up on the previous problem, let us go in the opposite direction: explain how to find $\lambda_i$ and $n_i$ from the data of $\operatorname{rk}(A-\lambda I)^k$ for all $\lambda \in K$ and $k>0$.
+Following up on the previous problem, let us go in the opposite direction: explain how to find $\lambda_i$ and $n_i$ from the data of $\mathrm{rk}(A-\lambda I)^k$ for all $\lambda \in K$ and $k>0$.
 In particular, this implies that the Jordan form is unique.
