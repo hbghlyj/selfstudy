@@ -112,7 +112,7 @@ Now, consider the subspace $`W = \text{span}\{a_1, b_1\}`$. The restriction of $
 
 $`W^\perp = \{x \in V \mid \gamma(x, w) = 0 \text{ for all } w \in W\}`$
 
-The dimension of $W^\perp$ is $n-2$. By the inductive hypothesis, there exists a basis for $W^\perp$ of the form:
+The dimension of $W^\perp$ is $n-2$. This follows from the fact that the restriction of $\gamma$ to $W$ is non-degenerate, implying $V = W \oplus W^\perp$. Since $\dim(V) = n$ and $\dim(W) = 2$ (as $a_1$ and $b_1$ are linearly independent), we have $\dim(W^\perp) = \dim(V) - \dim(W) = n - 2$. By the inductive hypothesis, there exists a basis for $W^\perp$ of the form:
 
 $`\{a_2, \ldots, a_k, b_2, \ldots, b_k, c_1, \ldots, c_{n-2k}\}`$
 
