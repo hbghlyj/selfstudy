@@ -73,7 +73,7 @@ Find $\det(m_M)$. (Of course, the answer depends on $M$.)
 Proof
 
 For a fixed column index $j$, the subspace $V_j$ of matrices with non-zero entries only in column $j$ is invariant under $m_M$.
-The action of the map within this subspace is just $v \mapsto Mv$ (if we identify the subspace with $K^n$ by just looking at the $j$-th column). Therefore, the action of $m_M$ on this $n$-dimensional subspace is represented by the matrix $M.
+The action of the map within this subspace is just $v \mapsto Mv$ (if we identify the subspace with $K^n$ by just looking at the $j$-th column). Therefore, the action of $m_M$ on this $n$-dimensional subspace is represented by the matrix $M$.
 
 The space $V$ of $n \times m$ matrices can be viewed as a vector space of dimension $nm$. Since the whole space $V$ is a direct sum of $m$ such subspaces, the matrix representation of $m_M$ with respect to basis vectors ordered by columns is a block diagonal matrix with $m$ blocks, each being $M$. Therefore, the determinant is the product of the determinants of the blocks: $\det(m_M) = (\det(M))^m$.
 
