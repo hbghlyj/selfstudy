@@ -70,6 +70,18 @@ Consider the linear map $m_M: V \rightarrow V$ given by left multiplication by $
 
 Find $\det(m_M)$. (Of course, the answer depends on $M$.)
 
+Proof
+
+The space $V$ of $n \times m$ matrices can be viewed as a vector space of dimension $nm$. A natural basis for this space is given by the set of matrices $E_{ij}$, where $E_{ij}$ has a 1 in the $(i,j)$-th position and 0 elsewhere.
+
+To find the matrix representation of the linear map $m_M$ with respect to this basis, we compute the image of each basis element under $m_M$. Specifically, we have:
+
+$m_M(E_{ij}) = M E_{ij} = \text{the } j\text{-th column of } M \text{ placed in the } i\text{-th column of a zero matrix}$
+
+The resulting matrix has the $j$-th column of $M$ in the $i$-th column and zeros elsewhere. This means that the action of $m_M$ on the basis elements can be represented as a block matrix, where each block corresponds to the multiplication by $M$.
+
+The matrix representation of $m_M$ with respect to the basis $`\{E_{ij}\}`$ is a block diagonal matrix with $m$ blocks, each block being the matrix $M$. Therefore, the determinant of this block diagonal matrix is given by: $\det(m_M) = (\det(M))^m$
+
 # 4.
 Let $K$ be a field and $V$ be a finite-dimensional vector space. Let
 
