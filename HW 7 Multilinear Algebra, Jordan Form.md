@@ -101,7 +101,19 @@ Inductive Step: Assume the statement holds for all vector spaces of dimension le
 
 If $\gamma$ is the zero form, then we can take $k=0$ and choose any basis for $V$, and the statement holds.
 
-\nand $\gamma$ vanishes on all other pairs of basis vectors. (When $n=2 k$, this is called a symplectic basis.)\n\nProof\n\nWe will prove this by induction on the dimension $n$ of the vector space $V$.\n\nBase Case: If $n=0$, the statement is trivially true as there are no vectors to consider.\n\nInductive Step: Assume the statement holds for all vector spaces of dimension less than $n$. We will show it holds for dimension $n$.\n\nIf $\gamma$ is the zero form, then we can take $k=0$ and choose any basis for $V$, and the statement holds.\n\nIf $\gamma$ is not the zero form, there exist vectors $u, v \in V$ such that $\gamma(u, v) \neq 0$. We can scale $u$ and $v$ such that $\gamma(u, v) = 1$. Set $a_1 = u$ and $b_1 = v$. Note that $u$ and $v$ must be linearly independent. If $v = c u$ for some scalar $c$, then $\gamma(u, v) = \gamma(u, c u) = c \gamma(u, u) = 0$ (since $\gamma$ is anti-symmetric), which contradicts $\gamma(u, v) \neq 0$. Thus, $W = \text{span}\{a_1, b_1\}$ is a 2-dimensional subspace.
+and $\gamma$ vanishes on all other pairs of basis vectors. (When $n=2 k$, this is called a symplectic basis.)
+
+Proof
+
+We will prove this by induction on the dimension $n$ of the vector space $V$.
+
+Base Case: If $n=0$, the statement is trivially true as there are no vectors to consider.
+
+Inductive Step: Assume the statement holds for all vector spaces of dimension less than $n$. We will show it holds for dimension $n$.
+
+If $\gamma$ is the zero form, then we can take $k=0$ and choose any basis for $V$, and the statement holds.
+
+If $\gamma$ is not the zero form, there exist vectors $u, v \in V$ such that $\gamma(u, v) \neq 0$. We can scale $u$ and $v$ such that $\gamma(u, v) = 1$. Set $a_1 = u$ and $b_1 = v$. Note that $u$ and $v$ must be linearly independent. If $v = c u$ for some scalar $c$, then $\gamma(u, v) = \gamma(u, c u) = c \gamma(u, u) = 0$ (since $\gamma$ is anti-symmetric), which contradicts $\gamma(u, v) \neq 0$. Thus, $W = \text{span}\{a_1, b_1\}$ is a 2-dimensional subspace.
 
 Now, consider the subspace $`W = \text{span}\{a_1, b_1\}`$. The restriction of $\gamma$ to $W$ is non-degenerate, and we can define the orthogonal complement of $W$ with respect to $\gamma$:
 
