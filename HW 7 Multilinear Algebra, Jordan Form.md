@@ -109,5 +109,5 @@ Consider the Jordan form of $A$: suppose that it consists of blocks $J_{\lambda_
 Express the following invariants of $A$ in terms of $n_i$ and $\lambda_i$: its characteristic polynomial, its minimal polynomial, the dimension of eigenspace for each $\lambda$ (this is called "the geometric multiplicity of an eigenvalue") and rank. (No explanation is required.)
 
 # 7.
-Following up on the previous problem, let us go in the opposite direction: explain how to find $\lambda_i$ and $n_i$ from the data of $\operatorname{rk}(A-\lambda I)^k$ for all $\lambda \in K$ and $k>0$.
+Following up on the previous problem, let us go in the opposite direction: explain how to find $\lambda_i$ and $n_i$ from the data of $\mathrm{rk}(A-\lambda I)^k$ for all $\lambda \in K$ and $k>0$.
 In particular, this implies that the Jordan form is unique.
