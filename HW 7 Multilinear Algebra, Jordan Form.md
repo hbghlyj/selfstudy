@@ -104,21 +104,15 @@ Compute the directional derivative of this function at the point $A=I$ in the di
 
 Proof
 
-To compute the directional derivative of the determinant function at the identity matrix $I$ in the direction of a matrix $B$, we consider the function $f(t) = \det(I + tB)$ and find its derivative $f'(0)$.
+By Leibniz formula, we have
 
-The derivative of the determinant is given by Jacobi's formula:
+$f(t) = \det(I + tB) = \sum_{\sigma \in S_n} \text{sgn}(\sigma) \prod_{i=1}^n (I + tB)_{i, \sigma(i)}$
 
-$\frac{d}{dt}\det(A(t)) = \text{tr}\left(\text{adj}(A(t)) \frac{dA(t)}{dt}\right)$
+where $(I + tB)_{i, \sigma(i)} = \delta_{i, \sigma(i)} + t B_{i, \sigma(i)}$.
 
-For $A(t) = I + tB$, we have $\frac{dA(t)}{dt} = B$. Applying the formula and evaluating at $t=0$:
+The contribution to the derivative at $t=0$ comes from terms where exactly one factor is $t B_{i, \sigma(i)}$ and the rest are $\delta_{i, \sigma(i)}$. This happens when $\sigma$ is the identity permutation, giving us:
 
-$f'(0) = \frac{d}{dt}\det(I + tB)\bigg|_{t=0} = \text{tr}(\text{adj}(I) \cdot B)$
-
-Since $\text{adj}(I) = I$ (because $A \cdot \text{adj}(A) = (\det A)I$), the expression simplifies:
-
-$f'(0) = \text{tr}(I \cdot B) = \text{tr}(B)$
-
-Thus, the directional derivative is $\text{tr}(B).
+$f'(0) = \sum_{i=1}^n B_{i, i} = \text{tr}(B)$
 
 # 6.
 Let $A$ be a square $n \times n$ matrix whose characteristic polynomial has $n$ roots in $K$, counting with multiplicity.
