@@ -101,7 +101,7 @@ Inductive Step: Assume the statement holds for all vector spaces of dimension le
 
 If $\gamma$ is the zero form, then we can take $k=0$ and choose any basis for $V$, and the statement holds.
 
-If $\gamma$ is not the zero form, there exist vectors $u, v \in V$ such that $\gamma(u, v) \neq 0$. We can scale $u$ and $v$ such that $\gamma(u, v) = 1$. Set $a_1 = u$ and $b_1 = v$. Note that $u$ and $v$ must be linearly independent. If $v = c u$ for some scalar $c$, then $\gamma(u, v) = \gamma(u, c u) = c \gamma(u, u) = 0$ (since $\gamma$ is anti-symmetric), which contradicts $\gamma(u, v) \neq 0$. Thus, $W = \text{span}\{a_1, b_1\}$ is a 2-dimensional subspace.
+If $\gamma$ is not the zero form, there exist vectors $u, v \in V$ such that $\gamma(u, v) \neq 0$. We can scale $u$ and $v$ such that $\gamma(u, v) = 1$. Set $a_1 = u$ and $b_1 = v$. Note that $u$ and $v$ must be linearly independent. If $v = c u$ for some scalar $c$, then $\gamma(u, v) = \gamma(u, c u) = c \gamma(u, u) = 0$ (since $\gamma$ is anti-symmetric), which contradicts $\gamma(u, v) \neq 0$. Thus, $`W = \text{span}\{a_1, b_1\}`$ is a 2-dimensional subspace.
 
 Now, consider the subspace $`W = \text{span}\{a_1, b_1\}`$. The restriction of $\gamma$ to $W$ is non-degenerate, and we can define the orthogonal complement of $W$ with respect to $\gamma$:
 
