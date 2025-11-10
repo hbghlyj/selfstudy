@@ -104,17 +104,21 @@ Compute the directional derivative of this function at the point $A=I$ in the di
 
 Proof
 
-To compute the directional derivative of the determinant function at the identity matrix $I$ in the direction of a matrix $B$, we start by considering the function:
+To compute the directional derivative of the determinant function at the identity matrix $I$ in the direction of a matrix $B$, we consider the function $f(t) = \det(I + tB)$ and find its derivative $f'(0)$.
 
-$f(t) = \det(I + tB)$
+The derivative of the determinant is given by Jacobi's formula:
 
-Taking the derivative with respect to $t$ and evaluating at $t=0$:
+$\frac{d}{dt}\det(A(t)) = \text{tr}\left(\text{adj}(A(t)) \frac{dA(t)}{dt}\right)$
 
-$f'(0) = \frac{d}{dt}\det(I + tB)\bigg|_{t=0}$
+For $A(t) = I + tB$, we have $\frac{dA(t)}{dt} = B$. Applying the formula and evaluating at $t=0$:
 
-Using the formula for the derivative of a determinant:
+$f'(0) = \frac{d}{dt}\det(I + tB)\bigg|_{t=0} = \text{tr}(\text{adj}(I) \cdot B)$
 
-$f'(0) = \text{tr}(\text{adj}(I) \cdot B) = \text{tr}(B)$
+Since $\text{adj}(I) = I$ (because $A \cdot \text{adj}(A) = (\det A)I$), the expression simplifies:
+
+$f'(0) = \text{tr}(I \cdot B) = \text{tr}(B)$
+
+Thus, the directional derivative is $\text{tr}(B).
 
 # 6.
 Let $A$ be a square $n \times n$ matrix whose characteristic polynomial has $n$ roots in $K$, counting with multiplicity.
