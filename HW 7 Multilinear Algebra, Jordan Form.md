@@ -74,7 +74,7 @@ Proof
 
 The space $V$ of $n \times m$ matrices can be viewed as a vector space of dimension $nm$. A natural basis for this space is given by the set of matrices $E_{ij}$, where $E_{ij}$ has a 1 in the $(i,j)$-th position and 0 elsewhere.
 
-To find the matrix representation of the linear map $m_M$ with respect to this basis, we compute the image of each basis element under $m_M$. Specifically, we have:
+To find the matrix representation of the linear map $m_M$ with respect to this basis, we compute the image of each basis element under $m_M$.
 
 $m_M(E_{ij}) = M E_{ij}$ is the matrix with the $i$-th column of $M$ in its $j$-th column, and zeros elsewhere.
 
