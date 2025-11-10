@@ -102,6 +102,20 @@ Consider $\det(A)$ as a multivariable function of the entries of a real matrix $
 Compute the directional derivative of this function at the point $A=I$ in the direction of some matrix $B$.
 (Equivalently, find the linear approximation for $f(t)=\det(I+B t)$ at $t=0$.)
 
+Proof
+
+To compute the directional derivative of the determinant function at the identity matrix $I$ in the direction of a matrix $B$, we start by considering the function:
+
+$f(t) = \det(I + tB)$
+
+Taking the derivative with respect to $t$ and evaluating at $t=0$:
+
+$f'(0) = \frac{d}{dt}\det(I + tB)\bigg|_{t=0}$
+
+Using the formula for the derivative of a determinant:
+
+$f'(0) = \text{tr}(\text{adj}(I) \cdot B) = \text{tr}(B)$
+
 # 6.
 Let $A$ be a square $n \times n$ matrix whose characteristic polynomial has $n$ roots in $K$, counting with multiplicity.
 Consider the Jordan form of $A$: suppose that it consists of blocks $J_{\lambda_i, n_i}$, where $\lambda_i$ is the eigenvalue and $n_i$ is the size of the block.
