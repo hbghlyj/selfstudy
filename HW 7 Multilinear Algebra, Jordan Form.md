@@ -97,6 +97,34 @@ $\gamma(a_i, b_i)=1, \quad \gamma(b_i, a_i)=-1 \quad(i=1, \ldots, k),$
 
 and $\gamma$ vanishes on all other pairs of basis vectors. (When $n=2 k$, this is called a symplectic basis.)
 
+Proof
+
+We will prove this by induction on the dimension $n$ of the vector space $V$.
+
+Base Case: If $n=0$, the statement is trivially true as there are no vectors to consider.
+
+Inductive Step: Assume the statement holds for all vector spaces of dimension less than $n$. We will show it holds for dimension $n$.
+
+If $\gamma$ is the zero form, then we can take $k=0$ and choose any basis for $V$, and the statement holds.
+
+If $\gamma$ is not the zero form, there exist vectors $u, v \in V$ such that $\gamma(u, v) \neq 0$. We can scale $u$ and $v$ such that $\gamma(u, v) = 1$. Set $a_1 = u$ and $b_1 = v$.
+
+Now, consider the subspace $`W = \text{span}\{a_1, b_1\}`$. The restriction of $\gamma$ to $W$ is non-degenerate, and we can define the orthogonal complement of $W$ with respect to $\gamma$:
+
+$`W^\perp = \{x \in V \mid \gamma(x, w) = 0 \text{ for all } w \in W\}`$
+
+The dimension of $W^\perp$ is $n-2$. By the inductive hypothesis, there exists a basis for $W^\perp$ of the form:
+
+$`\{a_2, \ldots, a_k, b_2, \ldots, b_k, c_1, \ldots, c_{n-2k}\}`$
+
+such that $\gamma(a_i, b_i) = 1$, $\gamma(b_i, a_i) = -1$ for $i=2, \ldots, k$, and $\gamma$ vanishes on all other pairs of basis vectors in $W^\perp$.
+
+Combining the basis $`\{a_1, b_1\}`$ with the basis of $W^\perp$, we obtain a basis for $V$:
+
+$`\{a_1, b_1, a_2, \ldots, a_k, b_2, \ldots, b_k, c_1, \ldots, c_{n-2k}\}`$
+
+This basis satisfies the required properties, completing the inductive step.
+
 # 5.
 Consider $\det(A)$ as a multivariable function of the entries of a real matrix $A$.
 Compute the directional derivative of this function at the point $A=I$ in the direction of some matrix $B$.
