@@ -5,11 +5,10 @@ $\beta(\phi(v_1), \ldots, \phi(v_n))=\det(\phi) \beta(v_1, \ldots, v_n) .$
 
 (This formalizes the following idea: any "unit of volume" on $V$, given by $\beta$, gets scaled by $\det(\phi)$ when we apply $\phi$.
 In fact, this can be used as a definition of $\det(\phi)$: this way, some of its properties, such as independence of basis and multiplicativity become clear.)
+
 Proof
 
 Let's define a new form $\beta'(v_1, \ldots, v_n) = \beta(\phi(v_1), \ldots, \phi(v_n))$. Since $\phi$ is linear and $\beta$ is an $n$-linear antisymmetric form, it follows that $\beta'$ is also an $n$-linear antisymmetric form on $V$.
-
-Proof
 
 The space of $n$-linear antisymmetric forms on an $n$-dimensional vector space $V$ is one-dimensional. Therefore, $\beta'$ must be a scalar multiple of $\beta$. That is, there exists a scalar $\lambda \in K$ such that:
 
