@@ -142,6 +142,17 @@ Consider the Jordan form of $A$: suppose that it consists of blocks $J_{\lambda_
 
 Express the following invariants of $A$ in terms of $n_i$ and $\lambda_i$: its characteristic polynomial, its minimal polynomial, the dimension of eigenspace for each $\lambda$ (this is called "the geometric multiplicity of an eigenvalue") and rank. (No explanation is required.)
 
+Proof
+
+- Characteristic Polynomial:
+  $`p_A(t) = \prod_{i} (t - \lambda_i)^{n_i}`$
+- Minimal Polynomial:
+  $`m_A(t) = \prod_{i} (t - \lambda_i)^{m_i}`$, where $m_i$ is the size of the largest Jordan block corresponding to $\lambda_i$.
+- Geometric Multiplicity of Eigenvalue $\lambda$:
+  $`g_\lambda = \text{number of Jordan blocks corresponding to } \lambda`$
+- Rank of $A$:
+  $`\text{rk}(A) = n - \sum_{i} (n_i - 1)`$, where the sum is taken over all Jordan blocks.
+
 # 7.
 Following up on the previous problem, let us go in the opposite direction: explain how to find $\lambda_i$ and $n_i$ from the data of $\mathrm{rk}(A-\lambda I)^k$ for all $\lambda \in K$ and $k>0$.
 In particular, this implies that the Jordan form is unique.
