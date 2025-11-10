@@ -76,11 +76,11 @@ The space $V$ of $n \times m$ matrices can be viewed as a vector space of dimens
 
 To find the matrix representation of the linear map $m_M$ with respect to this basis, we compute the image of each basis element under $m_M$. Specifically, we have:
 
-$m_M(E_{ij}) = M E_{ij} = \text{the } j\text{-th column of } M \text{ placed in the } i\text{-th column of a zero matrix}$
+$m_M(E_{ij}) = M E_{ij}$ is the matrix with the $i$-th column of $M$ in its $j$-th column, and zeros elsewhere.
 
-The resulting matrix has the $j$-th column of $M$ in the $i$-th column and zeros elsewhere. This means that the action of $m_M$ on the basis elements can be represented as a block matrix, where each block corresponds to the multiplication by $M$.
+This means that for a fixed column index $j$, the subspace $V_j$ of matrices with non-zero entries only in column $j$ is invariant under $m_M$. The action of $m_M$ on this $n$-dimensional subspace is represented by the matrix $M$.
 
-The matrix representation of $m_M$ with respect to the basis $`\{E_{ij}\}`$ is a block diagonal matrix with $m$ blocks, each block being the matrix $M$. Therefore, the determinant of this block diagonal matrix is given by: $\det(m_M) = (\det(M))^m$
+Since the whole space $V$ is a direct sum of $m$ such subspaces, the matrix representation of $m_M$ with respect to a suitable basis (e.g., ordering basis vectors by columns) is a block diagonal matrix with $m$ blocks, each being $M$. Therefore, the determinant is the product of the determinants of the blocks: $\det(m_M) = (\det(M))^m$
 
 # 4.
 Let $K$ be a field and $V$ be a finite-dimensional vector space. Let
