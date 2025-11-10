@@ -110,7 +110,7 @@ $f(t) = \det(I + tB) = \sum_{\sigma \in S_n} \text{sgn}(\sigma) \prod_{i=1}^n (I
 
 where $(I + tB)_{i, \sigma(i)} = \delta_{i, \sigma(i)} + t B_{i, \sigma(i)}$.
 
-The contribution to the derivative at $t=0$ comes from terms where exactly one factor is $t B_{i, \sigma(i)}$ and the rest are $\delta_{i, \sigma(i)}$. This happens when $\sigma$ is the identity permutation, giving us:
+The derivative at $t=0$ is the coefficient of the linear term in $t$. For the term linear in $t$ to be non-zero in the expansion of $\prod_{i=1}^n (\delta_{i, \sigma(i)} + t B_{i, \sigma(i)})$, at most one of the $\delta_{i, \sigma(i)}$ terms can be zero. This condition is only met by the identity permutation ($\sigma = \text{id}$). For any other permutation, at least two indices are not fixed, causing the linear term to vanish. For $\sigma = \text{id}$, the linear term's coefficient is $\sum_{i=1}^n B_{i,i}$, so:
 
 $f'(0) = \sum_{i=1}^n B_{i, i} = \text{tr}(B)$
 
