@@ -57,7 +57,7 @@ The space $V$ of polynomials of degree at most $n$ has a basis given by the mono
 
 To find the matrix representation of $\phi$ with respect to the ordered basis $`B = \{1, t, t^2, \ldots, t^n\}`$, we note that $\phi(t^k) = (at+b)^k$ is a polynomial of degree $k$. Thus, its expansion only involves basis vectors $t^j$ with $j \le k$. When the matrix of $\phi$ is constructed with columns as the images of the basis vectors, this property ensures the matrix is upper triangular.
 
-The diagonal entry corresponding to $t^k$ is the coefficient of $t^k$ in the expansion of $\phi(t^k)= = (a t + b)^k$, which is $a^k$.
+The diagonal entry corresponding to $t^k$ is the coefficient of $t^k$ in the expansion of $\phi(t^k) = (a t + b)^k$, which is $a^k$.
 
 The determinant of an upper triangular matrix is the product of its diagonal entries. Thus, we have:
 
