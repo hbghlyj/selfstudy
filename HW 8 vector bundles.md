@@ -1,4 +1,13 @@
-# 1.
+# 1.1
+Prove that the Möbius bundle $S \rightarrow S^1$ is nontrivial.
+
+# 1.2
+Prove that $S \oplus S \rightarrow S^1$ is trivial.
+
+# 1.3
+Prove that $T S^2 \oplus \underline{\mathbb{R}} \rightarrow S^2$ is trivial.
+
+# 1.4
 Viewing $\mathbb{R P}^n$ as the space of line through the origin we can define the tautological bundle $`\mathcal{O}(-1):=\left\{(\ell, v) \in \mathbb{RP}^n \times \mathbb{R}^{n+1} \mid v \in \ell\right\}`$. The projection map is the restriction of the projection to the first factor.
 
 Show that $\mathscr{O}_{\mathbb{RP}^1}(-1)$ is isomorphic to the Möbius bundle.
