@@ -173,4 +173,4 @@ Let $c_k$ be the number of blocks of size $k$.
 
 $c_k = (\text{number of blocks of size} \ge k) - (\text{number of blocks of size} \ge k+1)$
 
-$c_k = \text{rk}(A - \lambda I)^{k-1} - 2\text{rk}(A - \lambda I)^k + \text{rk}(A - \lambda I)^{k+1}
+$c_k = \text{rk}(A - \lambda I)^{k-1} - 2\text{rk}(A - \lambda I)^k + \text{rk}(A - \lambda I)^{k+1}$
