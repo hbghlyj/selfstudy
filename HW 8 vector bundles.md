@@ -39,20 +39,8 @@ $\psi = \tilde{\psi} \circ \pi.$
 
 Proof:
 
-First note that any map $A: V_1 \times \cdots \times V_k \rightarrow X$ extends uniquely to a linear map $\bar{A}: \mathcal{F}\left(V_1 \times \cdots \times V_k\right) \rightarrow X$ by the characteristic property of the free vector space. This map is characterized by the fact that $\bar{A}\left(v_1, \ldots, v_k\right)=A\left(v_1, \ldots, v_k\right)$ whenever $\left(v_1, \ldots, v_k\right) \in V_1 \times \cdots \times V_k \subseteq \mathcal{F}\left(V_1 \times \cdots \times V_k\right)$. The fact that $A$ is multilinear means precisely that the subspace $\mathcal{R}$ is contained in the kernel of $\bar{A}$, because
-
-\[
-\begin{aligned}
-\bar{A}\left(v_1, \ldots, a v_i, \ldots, v_k\right) & =A\left(v_1, \ldots, a v_i, \ldots, v_k\right)=a A\left(v_1, \ldots, v_i, \ldots, v_k\right) \\
-& =a \bar{A}\left(v_1, \ldots, v_i, \ldots, v_k\right)=\bar{A}\left(a\left(v_1, \ldots, v_i, \ldots, v_k\right)\right),
-\end{aligned}
-\]
-
-with a similar computation for the other expression in (12.4). Therefore, $\bar{A}$ descends to a linear map $\widetilde{A}: V_1 \otimes \cdots \otimes V_k=\mathcal{F}\left(V_1 \times \cdots \times V_k\right) / \mathcal{R} \rightarrow X$ satisfying $\widetilde{A} \circ \Pi=\bar{A}$. Since $\pi$ is equal to the inclusion $V_1 \times \cdots \times V_k \hookrightarrow \mathcal{F}\left(V_1 \times \cdots \times V_k\right)$ followed by $\Pi$, this implies $\tilde{A} \circ \pi=A$, which is (12.6). Uniqueness follows from the fact that every element of $V_1 \otimes \cdots \otimes V_k$ can be written as a linear combination of elements of the form $v_1 \otimes \cdots \otimes v_k$, and $\widetilde{A}$ is uniquely determined on such elements by
-
-\[
-\tilde{A}\left(v_1 \otimes \cdots \otimes v_k\right)=\bar{A}\left(v_1, \ldots, v_k\right)=A\left(v_1, \ldots, v_k\right) .
-\]
+Proof:
+To prove the universal property for vector bundles, we first consider the construction fiber-wise. For each point $x \in X$, the fibers $E_x$ and $F_x$ are vector spaces. We can form their tensor product $E_x \otimes F_x$ using the known universal property for vector spaces. This defines a collection of vector spaces over $X$. The main task is then to show that these fibers can be endowed with a topology and smooth structure to form a vector bundle $E \otimes F$ over $X$, and that the canonical bilinear map $\pi: E \times_X F \to E \otimes F$ and the induced map $\tilde{\psi}: E \otimes F \to G$ are indeed bundle morphisms. This typically involves using local trivializations of $E$ and $F.
 
 # 3.
 Prove that for any line bundle, $L \otimes L^*$ is trivial.
