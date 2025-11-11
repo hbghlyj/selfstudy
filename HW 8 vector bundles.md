@@ -114,7 +114,7 @@ The transition function between these two charts is given by $w' = 1/w$. The tan
 
 To find the transition function for the tangent bundle, we compute how the vector fields transform under the change of coordinates:
 
-$\frac{\partial}{\partial w'} = \frac{\partial w}{\partial w'} \frac{\partial}{\partial w} = -\frac{1}{w^2} \frac{\partial}{\partial w}.$
+$\frac{\partial}{\partial w} = \frac{\partial w'}{\partial w} \frac{\partial}{\partial w'} = -\frac{1}{w^2} \frac{\partial}{\partial w'}.$
 
 Thus, the transition function for the tangent bundle $T \mathbb{CP}^1$ is given by
 
