@@ -79,9 +79,16 @@ Proof
 
 (⇒) Suppose $E$ and $F$ are isomorphic vector bundles over $X$. Then there exists a bundle isomorphism $\Phi: E \to F$. Let $`\{U_a\}_{a \in \mathcal{I}}`$ be a common refinement of the trivializing covers for $E$ and $F$.
 
-Over each $U_a$, we can choose local trivializations $`\phi_a: E|_{U_a} \to U_a \times K^r`$ and $\psi_a: F|_{U_a} \to U_a \times K^r$. The isomorphism $\Phi$ induces a collection of maps $\tau_a: U_a \to \mathrm{GL}(r, K)$ defined by
+Over each $U_a$, we have local trivializations $`\phi_a: E|_{U_a} \to U_a \times K^r`$ and $\psi_a: F|_{U_a} \to U_a \times K^r$. These induce fiber-wise linear isomorphisms $\phi_{a,x}: E_x \to K^r$ and $\psi_{a,x}: F_x \to K^r$ for each $x \in U_a$.
 
-$\tau_a(x) = \psi_a \circ \Phi \circ \phi_a^{-1}(x)$ for $x \in U_a$.
+The isomorphism $\Phi$ restricts to a linear isomorphism on fibers $\Phi_x: E_x \to F_x$. We can define a collection of maps $\tau_a: U_a \to \mathrm{GL}(r, K)$ by the composition on each fiber:
+$\tau_a(x) = \psi_{a,x} \circ \Phi_x \circ \phi_{a,x}^{-1}$
+
+(⇐) Conversely, suppose the transition functions $\sigma_{ab}$ and $\sigma'_{ab}$ of $E$ and $F$ satisfy the relation
+
+$\sigma_{a b}=\tau_b^{-1} \sigma_{a b}' \tau_a$
+
+for some collection of functions $\tau_a: U_a \to \mathrm{GL}(r, K)$. We construct a bundle isomorphism $\Phi: E \to F$ by defining it locally on each $U_a$ as $`\Phi_x = \psi_{a,x}^{-1} \circ \tau_a(x) \circ \phi_{a,x}`$. This map is well-defined: on an overlap $U_a \cap U_b$, the definition using chart $b$, $\psi_{b,x}^{-1} \circ \tau_b(x) \circ \phi_{b,x}$, becomes $\psi_{a,x}^{-1} \circ (\sigma'_{ab})^{-1} \tau_b \sigma_{ab} \circ \phi_{a,x}$ when expressed in chart $a$. The given condition is equivalent to $\tau_a = (\sigma'_{ab})^{-1} \tau_b \sigma_{ab}$, so the two definitions agree. This yields a well-defined global isomorphism, completing the proof.
 
 # 6.
 Exhibit an isomorphism between $T \mathbb{C P}^1$ and $\mathscr{O}(n)$ for some $n \in \mathbb{Z}$ (please say which).
