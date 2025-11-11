@@ -3,13 +3,15 @@ Show that $\mathscr{O}_{\mathbb{RP}^1}(-1)$ is isomorphic to the Möbius bundle.
 
 Proof
 
-The tautological line bundle $\mathscr{O}_{\mathbb{RP}^1}(-1)$ over the real projective line $\mathbb{RP}^1$ is defined as the set of pairs $(\ell, v)$ where $\ell$ is a line in $\mathbb{R}^2$ (a point in $\mathbb{RP}^1$) and $v$ is a vector in that line. The Möbius bundle can be constructed as a quotient of the cylinder $S^1 \times \mathbb{R}$ by identifying $(\theta, t)$ with $(\theta + \pi, -t)$.
+The tautological line bundle $\mathscr{O}_{\mathbb{RP}^1}(-1)$ is the set of pairs $(\ell, v)$ where $\ell \in \mathbb{RP}^1$ is a line through the origin in $\mathbb{R}^2$ and $v \in \ell$. The Möbius bundle $M$ can be constructed as the quotient of $S^1 \times \mathbb{R}$ by the equivalence relation $(u, t) \sim (-u, -t)$ for any unit vector $u \in S^1 \subset \mathbb{R}^2$ and scalar $t \in \mathbb{R}$. The base space of this bundle is $\mathbb{RP}^1 = S^1 / \{u \sim -u\}$.
 
-To show that these two bundles are isomorphic, we can construct an explicit isomorphism. Consider the map
+To show these bundles are isomorphic, we construct an explicit map $\Phi: \mathscr{O}_{\mathbb{RP}^1}(-1) \to M$.
+For any point $(\ell, v) \in \mathscr{O}_{\mathbb{RP}^1}(-1)$, choose a unit vector $u$ that spans the line $\ell$. Then $v$ can be uniquely written as $v = tu$ for some $t \in \mathbb{R}$. We define the map as:
+$\Phi(\ell, v) = [u, t]$, where $[u, t]$ is the equivalence class of $(u, t)$ in $M$.
 
-$\Phi: \mathscr{O}_{\mathbb{RP}^1}(-1) \to \text{Möbius bundle}$
+This map is well-defined because if we chose $-u$ to span $\ell$ instead, the vector $v$ would be written as $v = (-t)(-u)$. The map would then yield $[-u, -t]$. By the definition of the equivalence relation on $M$, $[-u, -t] = [u, t]$, so the map's output is independent of our choice of spanning vector.
 
-defined by sending a point $(\ell, v)$ in $\mathscr{O}_{\mathbb{RP}^1}(-1)$ to the point $(\theta, t)$ in the Möbius bundle, where $\theta$ is the angle corresponding to the line $\ell$ and $t$ is the coordinate of the vector $v$ along that line. This map is well-defined, continuous, and bijective. Moreover, it respects the vector space structure on the fibers, making it a vector bundle isomorphism.
+The map $\Phi$ is a bijection which is linear on each fiber. It is also continuous, and thus defines a vector bundle isomorphism.
 
 # 2.
 State and prove a universal property that characterizes the tensor-product bundle $E \otimes F$ up to canonical isomorphism.
