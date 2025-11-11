@@ -120,8 +120,8 @@ Thus, the transition function for the tangent bundle $T \mathbb{CP}^1$ is given 
 
 $g_{01}(w) = -\frac{1}{w^2}.$
 
-On the other hand, the line bundle $\mathscr{O}(n)$ has transition functions given by $h_{01}(w) = w^n$. To find $n$ such that $T \mathbb{CP}^1 \cong \mathscr{O}(n)$, we need to match the transition functions:
+On the other hand, the line bundle $\mathscr{O}(n)$ has transition function $h_{01}(w) = w^{-n}$. We check for isomorphism with $\mathscr{O}(2)$, which has $h_{01}(w) = w^{-2}$.
 
-$g_{01}(w) = h_{01}(w)$
-
-$-\frac{1}{w^2} = w^n.$
+Two line bundles are isomorphic if their transition functions are cohomologous. We compute the ratio:
+$$ \frac{g_{01}(w)}{h_{01}(w)} = \frac{-1/w^2}{w^{-2}} = -1 $$
+This ratio can be written as a coboundary $\frac{\tau_0(w)}{\tau_1(w')}$ by choosing the non-vanishing holomorphic functions $\tau_0(w) = 1$ and $\tau_1(w') = -1$. Therefore, $T \mathbb{CP}^1 \cong \mathscr{O}(2)$.
