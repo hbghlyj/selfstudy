@@ -37,9 +37,7 @@ A vector bundle is trivial if and only if it has a set of transition functions t
 
 Let $L$ be a line bundle over a space $X$. Let $`\{U_\alpha\}_{\alpha \in I}`$ be an open cover of $X$ such that $L$ is trivial over each $U_\alpha$. The bundle $L$ is defined by a set of transition functions
 
-$g_{\alpha\beta}: U_\alpha \cap U_\beta \to \text{GL}(1, K) \cong K^*$
-
-where $K$ is the base field.
+$g_{\alpha\beta}: U_\alpha \cap U_\beta \to \text{GL}(1, \mathbb{R})$.
 
 The dual bundle $L^*$ has transition functions $h_{\alpha\beta}$ given by the inverse transpose of $g_{\alpha\beta}$. Since the rank is 1, this is simply the inverse:
 
