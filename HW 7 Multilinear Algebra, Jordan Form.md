@@ -156,3 +156,11 @@ Proof
 # 7.
 Following up on the previous problem, let us go in the opposite direction: explain how to find $\lambda_i$ and $n_i$ from the data of $\mathrm{rk}(A-\lambda I)^k$ for all $\lambda \in K$ and $k>0$.
 In particular, this implies that the Jordan form is unique.
+
+Proof
+
+The number of $J_{\lambda, n}$ blocks for a fixed eigenvalue $\lambda$ can be determined by examining the ranks of the powers of $(A - \lambda I)$. Specifically, the number of Jordan blocks of size at least $k$ corresponding to the eigenvalue $\lambda$ is given by:
+
+$b_{\lambda, k} = \text{rk}(A - \lambda I)^{k-1} - \text{rk}(A - \lambda I)^k$\n\nThe size of the largest Jordan block corresponding to $\lambda$ can be found by identifying the smallest $k$ such that:\n\n$\text{rk}(A - \lambda I)^k = \text{rk}(A - \lambda I)^{k+1}$
+
+This $k$ gives the size of the largest Jordan block for the eigenvalue $\lambda$.
