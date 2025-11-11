@@ -117,7 +117,7 @@ Proof
 
 We will show that the tangent bundle $T \mathbb{CP}^1$ is isomorphic to the line bundle $\mathscr{O}(2)$.
 
-The complex projective line $\mathbb{CP}^1$ can be covered by two standard charts: $U_0 = \{[z_0:z_1] \mid z_0 \neq 0\}$ and $U_1 = \{[z_0:z_1] \mid z_1 \neq 0\}$. In these charts, we can use the inhomogeneous coordinates $w = z_1/z_0$ on $U_0$ and $w' = z_0/z_1$ on $U_1$.
+The complex projective line $\mathbb{CP}^1$ can be covered by two standard charts: $`U_0 = \{[z_0:z_1] \mid z_0 \neq 0\}`$ and $`U_1 = \{[z_0:z_1] \mid z_1 \neq 0\}`$. In these charts, we can use the inhomogeneous coordinates $w = z_1/z_0$ on $U_0$ and $w' = z_0/z_1$ on $U_1$.
 
 The transition function between these two charts is given by $w' = 1/w$. The tangent bundle $T \mathbb{CP}^1$ can be described in terms of these charts. The local trivializations of $T \mathbb{CP}^1$ over $U_0$ and $U_1$ are given by the vector fields $\frac{\partial}{\partial w}$ and $\frac{\partial}{\partial w'}$, respectively.
 
@@ -132,5 +132,7 @@ $g_{01}(w) = -\frac{1}{w^2}.$
 On the other hand, the line bundle $\mathscr{O}(n)$ has transition function $h_{01}(w) = w^{-n}$. We check for isomorphism with $\mathscr{O}(2)$, which has $h_{01}(w) = w^{-2}$.
 
 Two line bundles are isomorphic if their transition functions are cohomologous. We compute the ratio:
-$$ \frac{g_{01}(w)}{h_{01}(w)} = \frac{-1/w^2}{w^{-2}} = -1 $$
+
+$\frac{g_{01}(w)}{h_{01}(w)} = \frac{-1/w^2}{w^{-2}} = -1$
+
 This ratio can be written as a coboundary $\frac{\tau_0(w)}{\tau_1(w')}$ by choosing the non-vanishing holomorphic functions $\tau_0(w) = 1$ and $\tau_1(w') = -1$. Therefore, $T \mathbb{CP}^1 \cong \mathscr{O}(2)$.
