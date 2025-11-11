@@ -56,6 +56,18 @@ Since all transition functions for $L \otimes L^*$ can be chosen to be the ident
 # 4.
 Show that for a smooth submanifold $S \subset M$, the tangent bundle $T S \subset T M|_S$ is a subbundle.
 
+Proof
+
+By Local Frame Criterion for Subbundles, it suffices to show that for each point $p \in S$, there exists a neighborhood $U$ of $p$ in $M$ and smooth local sections $`\{s_1, \ldots, s_k\}`$ of $T M|_U$ such that their restrictions to $S \cap U$ form a local frame for $`T S|_{S \cap U}`$.
+
+Since $S$ is a smooth submanifold of $M$, for each point $p \in S$, there exists a coordinate chart $(U, \varphi)$ around $p$ in $M$ such that $\varphi(U \cap S)$ is given by the vanishing of some coordinates. Without loss of generality, we can assume that in these coordinates, $S$ is defined by the equations $x_{k+1} = x_{k+2} = \ldots = x_n = 0$ for some $k < n$, where $n = \dim M$.
+
+In this coordinate chart, the tangent bundle $T M|_U$ has a local frame given by the coordinate vector fields $`\left\{\frac{\partial}{\partial x_1}, \ldots, \frac{\partial}{\partial x_n}\right\}`$. The tangent bundle $`T S|_{S \cap U}`$ is then spanned by the restrictions of the first $k$ coordinate vector fields:
+
+$`\left\{\frac{\partial}{\partial x_1}, \ldots, \frac{\partial}{\partial x_k}\right\}`$.
+
+These vector fields are smooth sections of $`T M|_U`$, and their restrictions to $S \cap U$ form a local frame for $T S|_{S \cap U}$. Thus, by the Local Frame Criterion for Subbundles, $T S$ is a subbundle of $T M|_S$.
+
 # 5.
 Let $E \rightarrow X$ and $F \rightarrow X$ be vector bundles of rank $r$ over the same space. Then $E$ and $F$ are isomorphic if and only if, after passing to a common refinement $`\{U_a\}_{a \in \mathcal{I}}`$, their respective transition functions $\sigma_{a b}$ and $\sigma_{a b}'$ are related by
 
