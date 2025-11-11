@@ -151,7 +151,7 @@ Proof
 - Geometric Multiplicity of Eigenvalue $\lambda$:
   $`g_\lambda = \text{number of Jordan blocks corresponding to } \lambda`$
 - Rank of $A$:
-  $`\text{rk}(A) = n - \sum_{i} (n_i - 1)`$, where the sum is taken over all Jordan blocks.
+  $`\text{rk}(A) = n - g_0`$, where $g_0$ is the geometric multiplicity of the eigenvalue 0 (i.e., the number of Jordan blocks with $\lambda_i=0$).
 
 # 7.
 Following up on the previous problem, let us go in the opposite direction: explain how to find $\lambda_i$ and $n_i$ from the data of $\mathrm{rk}(A-\lambda I)^k$ for all $\lambda \in K$ and $k>0$.
