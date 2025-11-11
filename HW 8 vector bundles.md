@@ -95,6 +95,14 @@ and
 
 $`\psi_{b,x} = \sigma'_{ab}(x) \circ \psi_{a,x}`$.
 
+then, we have
+
+$`\begin{aligned}
+\tau_b(x) &= \psi_{b,x} \circ \Phi_x \circ \phi_{b,x}^{-1} \\
+&= \sigma'_{ab}(x) \circ \psi_{a,x} \circ \Phi_x \circ \phi_{a,x}^{-1} \circ \sigma_{ab}(x)^{-1} \\
+&= \sigma'_{ab}(x) \circ \tau_a(x) \circ \sigma_{ab}(x)^{-1}
+\end{aligned}`$
+
 (⇐) Conversely, suppose the transition functions $\sigma_{ab}$ and $\sigma'_{ab}$ of $E$ and $F$ satisfy the relation
 
 $\sigma_{a b}=\tau_b^{-1} \sigma_{a b}' \tau_a$
