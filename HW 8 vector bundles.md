@@ -31,13 +31,16 @@ Statement:
 
 For vector bundles $E$ and $F$ over a topological space $X$, the tensor-product bundle $E \otimes F$ is a vector bundle over $X$ together with a bilinear map of bundles
 
-$\varphi: E \times_X F \to E \otimes F$
+$\pi: E \times_X F \to E \otimes F$
 
 such that for any vector bundle $G$ over $X$ and any bilinear map of bundles $\psi: E \times_X F \to G$, there exists a unique bundle morphism $\tilde{\psi}: E \otimes F \to G$ such that
 
-$\psi = \tilde{\psi} \circ \varphi.$
+$\psi = \tilde{\psi} \circ \pi.$
 
 Proof:
+
+Proof:
+To prove the universal property for vector bundles, we first consider the construction fiber-wise. For each point $x \in X$, the fibers $E_x$ and $F_x$ are vector spaces. We can form their tensor product $E_x \otimes F_x$ using the known universal property for vector spaces. This defines a collection of vector spaces over $X$. The main task is then to show that these fibers can be endowed with a topology and smooth structure to form a vector bundle $E \otimes F$ over $X$, and that the canonical bilinear map $\pi: E \times_X F \to E \otimes F$ and the induced map $\tilde{\psi}: E \otimes F \to G$ are indeed bundle morphisms. This typically involves using local trivializations of $E$ and $F.
 
 # 3.
 Prove that for any line bundle, $L \otimes L^*$ is trivial.
