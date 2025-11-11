@@ -47,7 +47,11 @@ We can form their tensor product $E_x \otimes F_x$ using the known universal pro
 
 This defines a collection of vector spaces over $X$.
 
-The main task is then to show that these fibers can be endowed with a topology and smooth structure to form a vector bundle $E \otimes F$ over $X$, and that the canonical bilinear map $\pi: E \times_X F \to E \otimes F$ and the induced map $\tilde{\psi}: E \otimes F \to G$ are indeed bundle morphisms. This typically involves using local trivializations of $E$ and $F.
+The main task is then to show that:
+- these fibers can be endowed with a topology and smooth structure to form a vector bundle $E \otimes F$ over $X$.
+- the canonical bilinear map $\pi: E \times_X F \to E \otimes F$ and the induced map $\tilde{\psi}: E \otimes F \to G$ are indeed bundle morphisms.
+
+This typically involves using local trivializations of $E$ and $F.
 
 ...
 
