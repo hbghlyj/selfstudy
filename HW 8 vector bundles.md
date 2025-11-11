@@ -5,7 +5,7 @@ Proof
 
 The tautological line bundle $\mathscr{O}_{\mathbb{RP}^1}(-1)$ is the set of pairs $(\ell, v)$ where $\ell \in \mathbb{RP}^1$ is a line through the origin in $\mathbb{R}^2$ and $v \in \ell$. The Möbius bundle $M$ can be constructed as the quotient of $S^1 \times \mathbb{R}$ by the equivalence relation $(u, t) \sim (-u, -t)$ for any unit vector $u \in S^1 \subset \mathbb{R}^2$ and scalar $t \in \mathbb{R}$. The base space of this bundle is $\mathbb{RP}^1 = S^1 / \{u \sim -u\}$.
 
-To show these bundles are isomorphic, we construct an explicit map $\Phi: \mathscr{O}_{\mathbb{RP}^1}(-1) \to M$.
+To show these bundles are isomorphic, we construct an explicit map $`\Phi: \mathscr{O}_{\mathbb{RP}^1}(-1) \to M`$.
 For any point $(\ell, v) \in \mathscr{O}_{\mathbb{RP}^1}(-1)$, choose a unit vector $u$ that spans the line $\ell$. Then $v$ can be uniquely written as $v = tu$ for some $t \in \mathbb{R}$. We define the map as:
 $\Phi(\ell, v) = [u, t]$, where $[u, t]$ is the equivalence class of $(u, t)$ in $M$.
 
