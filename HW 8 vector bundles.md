@@ -33,21 +33,27 @@ Prove that for any line bundle, $L \otimes L^*$ is trivial.
 
 Proof
 
-A vector bundle is trivial if and only if it has a set of transition functions that can all be chosen to be the identity. We will show this is the case for $L \otimes L^*$.
+A vector bundle is trivial if and only if it has a set of transition functions that can all be chosen to be the identity on the overlaps of the trivializing neighborhoods. We will show this is the case for $L \otimes L^*$.
 
-Let $L$ be a line bundle over a space $X$. Let $\{U_\alpha\}_{\alpha \in I}$ be an open cover of $X$ such that $L$ is trivial over each $U_\alpha$. The bundle $L$ is defined by a set of transition functions
-$$ g_{\alpha\beta}: U_\alpha \cap U_\beta \to \text{GL}(1, K) \cong K^* $$
+Let $L$ be a line bundle over a space $X$. Let $`\{U_\alpha\}_{\alpha \in I}`$ be an open cover of $X$ such that $L$ is trivial over each $U_\alpha$. The bundle $L$ is defined by a set of transition functions
+
+$g_{\alpha\beta}: U_\alpha \cap U_\beta \to \text{GL}(1, K) \cong K^*$
+
 where $K$ is the base field.
 
 The dual bundle $L^*$ has transition functions $h_{\alpha\beta}$ given by the inverse transpose of $g_{\alpha\beta}$. Since the rank is 1, this is simply the inverse:
-$$ h_{\alpha\beta} = (g_{\alpha\beta}^T)^{-1} = g_{\alpha\beta}^{-1} $$
 
-The tensor product bundle $L \otimes L^*$ has transition functions $t_{\alpha\beta}$ given by the tensor product of the transition functions of $L$ and $L^*$. For rank 1 bundles, this corresponds to the product of the scalar-valued functions:
-$$ t_{\alpha\beta}(x) = g_{\alpha\beta}(x) \otimes h_{\alpha\beta}(x) = g_{\alpha\beta}(x) \cdot g_{\alpha\beta}(x)^{-1} = 1 $$
+$h_{\alpha\beta} = (g_{\alpha\beta}^T)^{-1} = g_{\alpha\beta}^{-1}$
+
+The tensor product bundle $`L \otimes L^*`$ has transition functions $t_{\alpha\beta}$ given by the tensor product of the transition functions of $L$ and $L^*$.
+
+For rank 1 bundles, this corresponds to the product of the scalar-valued functions:
+
+$t_{\alpha\beta}(x) = g_{\alpha\beta}(x) \otimes h_{\alpha\beta}(x) = g_{\alpha\beta}(x) \cdot g_{\alpha\beta}(x)^{-1} = 1$
+
 for all $x \in U_\alpha \cap U_\beta$.
 
-Since all transition functions for $L \otimes L^*$ can be chosen to be the identity map (the constant function 1), the bundle is globally trivial.
-
+Since all transition functions for $L \otimes L^*$ can be chosen to be the identity map, the bundle is globally trivial.
 
 # 4.
 Show that for a smooth submanifold $S \subset M$, the tangent bundle $T S \subset T M|_S$ is a subbundle.
