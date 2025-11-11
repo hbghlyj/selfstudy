@@ -103,3 +103,25 @@ for some collection of functions $\tau_a: U_a \to \mathrm{GL}(r, K)$. We constru
 
 # 6.
 Exhibit an isomorphism between $T \mathbb{C P}^1$ and $\mathscr{O}(n)$ for some $n \in \mathbb{Z}$ (please say which).
+
+Proof
+
+We will show that the tangent bundle $T \mathbb{CP}^1$ is isomorphic to the line bundle $\mathscr{O}(2)$.
+
+The complex projective line $\mathbb{CP}^1$ can be covered by two standard charts: $U_0 = \{[z_0:z_1] \mid z_0 \neq 0\}$ and $U_1 = \{[z_0:z_1] \mid z_1 \neq 0\}$. In these charts, we can use the inhomogeneous coordinates $w = z_1/z_0$ on $U_0$ and $w' = z_0/z_1$ on $U_1$.
+
+The transition function between these two charts is given by $w' = 1/w$. The tangent bundle $T \mathbb{CP}^1$ can be described in terms of these charts. The local trivializations of $T \mathbb{CP}^1$ over $U_0$ and $U_1$ are given by the vector fields $\frac{\partial}{\partial w}$ and $\frac{\partial}{\partial w'}$, respectively.
+
+To find the transition function for the tangent bundle, we compute how the vector fields transform under the change of coordinates:
+
+$\frac{\partial}{\partial w'} = \frac{\partial w}{\partial w'} \frac{\partial}{\partial w} = -\frac{1}{w^2} \frac{\partial}{\partial w}.$
+
+Thus, the transition function for the tangent bundle $T \mathbb{CP}^1$ is given by
+
+$g_{01}(w) = -\frac{1}{w^2}.$
+
+On the other hand, the line bundle $\mathscr{O}(n)$ has transition functions given by $h_{01}(w) = w^n$. To find $n$ such that $T \mathbb{CP}^1 \cong \mathscr{O}(n)$, we need to match the transition functions:
+
+$g_{01}(w) = h_{01}(w)$
+
+$-\frac{1}{w^2} = w^n.$
