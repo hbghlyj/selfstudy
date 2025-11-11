@@ -89,7 +89,7 @@ $\tau_a(x) = \psi_{a,x} \circ \Phi_x \circ \phi_{a,x}^{-1}$
 
 $\sigma_{a b}=\tau_b^{-1} \sigma_{a b}' \tau_a$
 
-for some collection of functions $\tau_a: U_a \to \mathrm{GL}(r, K)$. We construct a bundle isomorphism $\Phi: E \to F$ by defining it locally on each $U_a$ as $`\Phi_x = \psi_{a,x}^{-1} \circ \tau_a(x) \circ \phi_{a,x}`$. This map is well-defined: on an overlap $U_a \cap U_b$, the definition using chart $b$, $\psi_{b,x}^{-1} \circ \tau_b(x) \circ \phi_{b,x}$, becomes $\psi_{a,x}^{-1} \circ (\sigma'_{ab})^{-1} \tau_b \sigma_{ab} \circ \phi_{a,x}$ when expressed in chart $a$. The given condition is equivalent to $`\tau_a = (\sigma'_{ab})^{-1} \tau_b \sigma_{ab}`$, so the two definitions agree. This yields a well-defined global isomorphism, completing the proof.
+for some collection of functions $\tau_a: U_a \to \mathrm{GL}(r, K)$. We construct a bundle isomorphism $\Phi: E \to F$ by defining it locally on each $U_a$ as $`\Phi_x = \psi_{a,x}^{-1} \circ \tau_a(x) \circ \phi_{a,x}`$. This map is well-defined: on an overlap $U_a \cap U_b$, the definition using chart $b$, $\psi_{b,x}^{-1} \circ \tau_b(x) \circ \phi_{b,x}$, becomes $`\psi_{a,x}^{-1} \circ (\sigma'_{ab})^{-1} \tau_b \sigma_{ab} \circ \phi_{a,x}`$ when expressed in chart $a$. The given condition is equivalent to $`\tau_a = (\sigma'_{ab})^{-1} \tau_b \sigma_{ab}`$, so the two definitions agree. This yields a well-defined global isomorphism, completing the proof.
 
 # 6.
 Exhibit an isomorphism between $T \mathbb{C P}^1$ and $\mathscr{O}(n)$ for some $n \in \mathbb{Z}$ (please say which).
