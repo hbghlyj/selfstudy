@@ -147,7 +147,7 @@ Proof
 - Characteristic Polynomial:
   $`p_A(t) = \prod_{i} (t - \lambda_i)^{n_i}`$
 - Minimal Polynomial:
-  $`m_A(t) = \prod_{i} (t - \lambda_i)^{m_i}`$, where $m_i$ is the size of the largest Jordan block corresponding to $\lambda_i$.
+  $`m_A(t) = \prod_{\lambda \in \text{spec}(A)} (t - \lambda)^{m_\lambda}`$, where $m_\lambda$ is the size of the largest Jordan block corresponding to the eigenvalue $\lambda$.
 - Geometric Multiplicity of Eigenvalue $\lambda$:
   $`g_\lambda = \text{number of Jordan blocks corresponding to } \lambda`$
 - Rank of $A$:
