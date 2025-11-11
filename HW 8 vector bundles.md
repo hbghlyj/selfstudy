@@ -31,6 +31,31 @@ Proof:
 # 3.
 Prove that for any line bundle, $L \otimes L^*$ is trivial.
 
+Proof
+
+By definition, the dual bundle $L^*$ of a line bundle $L$ consists of all linear functionals on the fibers of $L$.
+
+The tensor product $L \otimes L^*$ then consists of pairs
+
+$(v, f)$
+
+where $v \in L_x$ and $f \in L_x^*$ for some point $x \in X$, with the equivalence relation that identifies $(v, f)$ with $(\lambda v, \lambda^{-1} f)$ for any nonzero scalar $\lambda$. 
+
+We can define a global section of $L \otimes L^*$ by choosing a nowhere-zero section $s$ of $L$.
+
+Then, for any point $x \in X$, we have $s(x) \in L_x$.
+
+The dual section $s^*$ is defined by
+
+$s^*(v) = v \cdot s(x)^{-1}$
+
+for any $v \in L_x$.
+
+The tensor product $`s \otimes s^*`$ defines a nowhere-zero section of $L \otimes L^*$.
+
+Since this section is nowhere zero, it provides a global trivialization of the bundle, proving that it is trivial.
+
+
 # 4.
 Show that for a smooth submanifold $S \subset M$, the tangent bundle $T S \subset T M|_S$ is a subbundle.
 
