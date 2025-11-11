@@ -1,5 +1,5 @@
 # 1.
-Show that $\mathscr{O}_{\mathbb{R} \mathbb{P}^1}(-1)$ is isomorphic to the Möbius bundle.
+Show that $\mathscr{O}_{\mathbb{RP}^1}(-1)$ is isomorphic to the Möbius bundle.
 
 # 2.
 State and prove a universal property that characterizes the tensor-product bundle $E \otimes F$ up to canonical isomorphism.
