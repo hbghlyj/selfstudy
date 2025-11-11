@@ -146,4 +146,4 @@ Two line bundles are isomorphic if their transition functions are cohomologous. 
 
 $\frac{g_{01}(w)}{h_{01}(w)} = \frac{-1/w^2}{w^{-2}} = -1$
 
-By problem 5, choose $\tau_0(w) = 1$ and $\tau_1(w') = -1$. Therefore, $T \mathbb{CP}^1 \cong \mathscr{O}(2)$.
+By problem 5, this ratio can be written as a coboundary $\frac{\tau_0(w)}{\tau_1(w')}$ by choosing the non-vanishing holomorphic functions $\tau_0(w) = 1$ and $\tau_1(w') = -1$. Therefore, $T \mathbb{CP}^1 \cong \mathscr{O}(2).
