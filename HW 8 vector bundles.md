@@ -1,6 +1,16 @@
 # 1.
 Show that $\mathscr{O}_{\mathbb{RP}^1}(-1)$ is isomorphic to the Möbius bundle.
 
+Proof
+
+The tautological line bundle $\mathscr{O}_{\mathbb{RP}^1}(-1)$ over the real projective line $\mathbb{RP}^1$ is defined as the set of pairs $(\ell, v)$ where $\ell$ is a line in $\mathbb{R}^2$ (a point in $\mathbb{RP}^1$) and $v$ is a vector in that line. The Möbius bundle can be constructed as a quotient of the cylinder $S^1 \times \mathbb{R}$ by identifying $(\theta, t)$ with $(\theta + \pi, -t)$.
+
+To show that these two bundles are isomorphic, we can construct an explicit isomorphism. Consider the map
+
+$\Phi: \mathscr{O}_{\mathbb{RP}^1}(-1) \to \text{Möbius bundle}$
+
+defined by sending a point $(\ell, v)$ in $\mathscr{O}_{\mathbb{RP}^1}(-1)$ to the point $(\theta, t)$ in the Möbius bundle, where $\theta$ is the angle corresponding to the line $\ell$ and $t$ is the coordinate of the vector $v$ along that line. This map is well-defined, continuous, and bijective. Moreover, it respects the vector space structure on the fibers, making it a vector bundle isomorphism.
+
 # 2.
 State and prove a universal property that characterizes the tensor-product bundle $E \otimes F$ up to canonical isomorphism.
 
