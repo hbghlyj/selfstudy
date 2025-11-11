@@ -1,4 +1,6 @@
 # 1.
+Viewing $\mathbb{R P}^n$ as the space of line through the origin we can define the tautological bundle $`\mathcal{O}(-1):=\left\{(\ell, v) \in \mathbb{R} P^n \times \mathbb{R}^{n+1} \mid v \in \ell\right\}`$. The projection map is the restriction of the projection to the first factor.
+
 Show that $\mathscr{O}_{\mathbb{RP}^1}(-1)$ is isomorphic to the Möbius bundle.
 
 Proof
