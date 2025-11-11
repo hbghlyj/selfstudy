@@ -151,7 +151,7 @@ Proof
 - Geometric Multiplicity of Eigenvalue $\lambda$:
   $`g_\lambda = \text{number of Jordan blocks corresponding to } \lambda`$
 - Rank of $A$:
-  $`\text{rk}(A) = n - g_0`$, where $g_0$ is the geometric multiplicity of the eigenvalue 0 (i.e., the number of Jordan blocks with $\lambda_i=0$).
+  $`\mathrm{rk}(A) = n - g_0`$, where $g_0$ is the geometric multiplicity of the eigenvalue 0 (i.e., the number of Jordan blocks with $\lambda_i=0$).
 
 # 7.
 Following up on the previous problem, let us go in the opposite direction: explain how to find $\lambda_i$ and $n_i$ from the data of $\mathrm{rk}(A-\lambda I)^k$ for all $\lambda \in K$ and $k>0$.
@@ -161,11 +161,11 @@ Proof
 
 The number of Jordan blocks of size at least $k$ corresponding to the eigenvalue $\lambda$ is given by:
 
-$b_{\lambda, k} = \text{rk}(A - \lambda I)^{k-1} - \text{rk}(A - \lambda I)^k$
+$b_{\lambda, k} = \mathrm{rk}(A - \lambda I)^{k-1} - \mathrm{rk}(A - \lambda I)^k$
 
 The size of the largest Jordan block corresponding to $\lambda$ is the smallest $k$ such that:
 
-$\text{rk}(A - \lambda I)^k = \text{rk}(A - \lambda I)^{k+1}$
+$\mathrm{rk}(A - \lambda I)^k = \mathrm{rk}(A - \lambda I)^{k+1}$
 
 This $k$ gives the size of the largest Jordan block for the eigenvalue $\lambda$.
 
@@ -173,4 +173,4 @@ Let $c_k$ be the number of blocks of size $k$.
 
 $c_k = (\text{number of blocks of size} \ge k) - (\text{number of blocks of size} \ge k+1)$
 
-$c_k = \text{rk}(A - \lambda I)^{k-1} - 2\text{rk}(A - \lambda I)^k + \text{rk}(A - \lambda I)^{k+1}$
+$c_k = \mathrm{rk}(A - \lambda I)^{k-1} - 2\mathrm{rk}(A - \lambda I)^k + \mathrm{rk}(A - \lambda I)^{k+1}$
