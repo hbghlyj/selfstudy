@@ -75,5 +75,13 @@ $\sigma_{a b}=\tau_b^{-1} \sigma_{a b}' \tau_a$
 
 for a collection of matrix-valued functions $`\{\tau_a \in C^0\left(U_a, \mathrm{GL}(r, K)\right)\}_{a \in \mathcal{I}}`$.
 
+Proof
+
+(⇒) Suppose $E$ and $F$ are isomorphic vector bundles over $X$. Then there exists a bundle isomorphism $\Phi: E \to F$. Let $`\{U_a\}_{a \in \mathcal{I}}`$ be a common refinement of the trivializing covers for $E$ and $F$.
+
+Over each $U_a$, we can choose local trivializations $`\phi_a: E|_{U_a} \to U_a \times K^r`$ and $\psi_a: F|_{U_a} \to U_a \times K^r$. The isomorphism $\Phi$ induces a collection of maps $\tau_a: U_a \to \mathrm{GL}(r, K)$ defined by
+
+$\tau_a(x) = \psi_a \circ \Phi \circ \phi_a^{-1}(x)$ for $x \in U_a$.
+
 # 6.
 Exhibit an isomorphism between $T \mathbb{C P}^1$ and $\mathscr{O}(n)$ for some $n \in \mathbb{Z}$ (please say which).
