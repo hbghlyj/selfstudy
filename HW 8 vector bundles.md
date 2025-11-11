@@ -85,6 +85,16 @@ The isomorphism $\Phi$ restricts to a linear isomorphism on fibers $\Phi_x: E_x 
 
 $\tau_a(x) = \psi_{a,x} \circ \Phi_x \circ \phi_{a,x}^{-1}$
 
+that is, $\tau_a(x)$ is the matrix representing the isomorphism $\Phi_x$ in the local trivializations.
+
+On the overlap $U_a \cap U_b$, the transition functions $\sigma_{ab}$ and $\sigma'_{ab}$ relate the local trivializations as follows:
+
+$`\phi_{b,x} = \sigma_{ab}(x) \circ \phi_{a,x}`$
+
+and
+
+$`\psi_{b,x} = \sigma'_{ab}(x) \circ \psi_{a,x}`$.
+
 (⇐) Conversely, suppose the transition functions $\sigma_{ab}$ and $\sigma'_{ab}$ of $E$ and $F$ satisfy the relation
 
 $\sigma_{a b}=\tau_b^{-1} \sigma_{a b}' \tau_a$
