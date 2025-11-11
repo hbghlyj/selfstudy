@@ -33,27 +33,20 @@ Prove that for any line bundle, $L \otimes L^*$ is trivial.
 
 Proof
 
-By definition, the dual bundle $L^*$ of a line bundle $L$ consists of all linear functionals on the fibers of $L$.
+A vector bundle is trivial if and only if it has a set of transition functions that can all be chosen to be the identity. We will show this is the case for $L \otimes L^*$.
 
-The tensor product $L \otimes L^*$ then consists of pairs
+Let $L$ be a line bundle over a space $X$. Let $\{U_\alpha\}_{\alpha \in I}$ be an open cover of $X$ such that $L$ is trivial over each $U_\alpha$. The bundle $L$ is defined by a set of transition functions
+$$ g_{\alpha\beta}: U_\alpha \cap U_\beta \to \text{GL}(1, K) \cong K^* $$
+where $K$ is the base field.
 
-$(v, f)$
+The dual bundle $L^*$ has transition functions $h_{\alpha\beta}$ given by the inverse transpose of $g_{\alpha\beta}$. Since the rank is 1, this is simply the inverse:
+$$ h_{\alpha\beta} = (g_{\alpha\beta}^T)^{-1} = g_{\alpha\beta}^{-1} $$
 
-where $v \in L_x$ and $f \in L_x^*$ for some point $x \in X$, with the equivalence relation that identifies $(v, f)$ with $(\lambda v, \lambda^{-1} f)$ for any nonzero scalar $\lambda$. 
+The tensor product bundle $L \otimes L^*$ has transition functions $t_{\alpha\beta}$ given by the tensor product of the transition functions of $L$ and $L^*$. For rank 1 bundles, this corresponds to the product of the scalar-valued functions:
+$$ t_{\alpha\beta}(x) = g_{\alpha\beta}(x) \otimes h_{\alpha\beta}(x) = g_{\alpha\beta}(x) \cdot g_{\alpha\beta}(x)^{-1} = 1 $$
+for all $x \in U_\alpha \cap U_\beta$.
 
-We can define a global section of $L \otimes L^*$ by choosing a nowhere-zero section $s$ of $L$.
-
-Then, for any point $x \in X$, we have $s(x) \in L_x$.
-
-The dual section $s^*$ is defined by
-
-$s^*(v) = v \cdot s(x)^{-1}$
-
-for any $v \in L_x$.
-
-The tensor product $`s \otimes s^*`$ defines a nowhere-zero section of $L \otimes L^*$.
-
-Since this section is nowhere zero, it provides a global trivialization of the bundle, proving that it is trivial.
+Since all transition functions for $L \otimes L^*$ can be chosen to be the identity map (the constant function 1), the bundle is globally trivial.
 
 
 # 4.
