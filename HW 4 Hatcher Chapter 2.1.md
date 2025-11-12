@@ -1,48 +1,48 @@
 # 1
-What familiar space is the quotient $\Delta$-complex of a 2-simplex $[v_0, v_1, v_2]$ obtained by identifying the edges $[v_0, v_1]$ and $[v_1, v_2]$, preserving the ordering of vertices?
+What familiar space is the quotient -complex of a 2-simplex $[v_0, v_1, v_2][v_0, v_1][v_1, v_2]$, preserving the ordering of vertices?
 
 Proof
 
-The quotient $\Delta$-complex is homeomorphic to a Möbius strip. By identifying the edges $[v_0, v_1]$ and $[v_1, v_2]$ while preserving the vertex ordering, we create a twist in the surface, resulting in a non-orientable surface with a single boundary component, which is characteristic of a Möbius strip.
+The quotient -complex is homeomorphic to a Möbius strip. By identifying the edges $[v_0, v_1][v_1, v_2]$ while preserving the vertex ordering, we create a twist in the surface, resulting in a non-orientable surface with a single boundary component, which is characteristic of a Möbius strip.
 
 # 3
-Construct a $\Delta$-complex structure on $\mathbb{RP}^n$ as a quotient of a $\Delta$-complex structure on $S^n$ having vertices the two vectors of length 1 along each coordinate axis in $\mathbb{R}^{n+1}$.
+Construct a -complex structure on  as a quotient of a -complex structure on  having vertices the two vectors of length 1 along each coordinate axis in .
 
 Proof
 
-To construct a $\Delta$-complex structure on $\mathbb{RP}^n$, we start with a convenient $\Delta$-complex structure on $S^n$. We view $S^n$ as being homeomorphic to the boundary of the $(n+1)$-dimensional cross-polytope, which is the set of points in $\mathbb{R}^{n+1}$ satisfying the equation $|x_0| + |x_1| + \cdots + |x_n| = 1$.
+To construct a -complex structure on , we start with a convenient -complex structure on . We view  as being homeomorphic to the boundary of the  -dimensional cross-polytope, which is the set of points in  satisfying the equation     .
 
-This representation decomposes $S^n$ into $2^{n+1}$ n-simplices, each corresponding to a unique combination of signs for the coordinates $(x_0, x_1, \ldots, x_n)$. The set of vertices for this entire $\Delta$-complex consists of the unit vectors along each coordinate axis, both positive and negative.
+This representation decomposes  into  n-simplices, each corresponding to a unique combination of signs for the coordinates . The set of vertices for this entire -complex consists of the unit vectors along each coordinate axis, both positive and negative.
 
-To obtain a $\Delta$-complex structure on $\mathbb{RP}^n$, we identify antipodal points on $S^n$. This identification pairs each simplex with its antipodal counterpart, effectively halving the number of simplices in the quotient space. The resulting $\Delta$-complex structure on $\mathbb{RP}^n$ consists of $2^n$ n-simplices, with vertices corresponding to the lines through the origin in $\mathbb{R}^{n+1}$ defined by the unit vectors along each coordinate axis.
+To obtain a -complex structure on , we identify antipodal points on . This identification pairs each simplex with its antipodal counterpart, effectively halving the number of simplices in the quotient space. The resulting -complex structure on  consists of  n-simplices, with vertices corresponding to the lines through the origin in  defined by the unit vectors along each coordinate axis.
 
 # 4
-Compute the simplicial homology groups of the triangular parachute obtained from $\Delta^2$ by identifying its three vertices to a single point.
+Compute the simplicial homology groups of the triangular parachute obtained from  by identifying its three vertices to a single point.
 
 Proof
 
 The triangular parachute has one 2-simplex, three 1-simplices (the edges of the triangle), and one 0-simplex (the identified vertex).
 
-- The boundary of the 2-simplex is $[v_1, v_2] - [v_0, v_2] + [v_0, v_1]$. $\ker(\partial_2) = 0$ and $\mathrm{im}(\partial_2) = \langle [v_1, v_2] - [v_0, v_2] + [v_0, v_1] \rangle$.
+- The boundary of the 2-simplex is   .   and    .
 
-- The boundary of each 1-simplex is $\partial([v_i, v_j]) = v_j - v_i$. Since all vertices are identified, $\partial([v_i, v_j]) = 0$. Thus, $\ker(\partial_1) = \langle [v_0, v_1], [v_1, v_2], [v_0, v_2] \rangle$ and $\mathrm{im}(\partial_1) = 0$.
+- The boundary of each 1-simplex is   . Since all vertices are identified,  . Thus,   and  .
 
 Calculating the homology groups:
 
-- $H_2 = \ker(\partial_2) / \mathrm{im}(\partial_3) = 0 / 0 = 0$.
-- $H_1 = \ker(\partial_1) / \mathrm{im}(\partial_2) = \langle [v_0, v_1], [v_1, v_2], [v_0, v_2] \rangle / \langle [v_1, v_2] - [v_0, v_2] + [v_0, v_1] \rangle \cong \mathbb{Z}^2$, since the relation reduces the number of free generators for the group from three to two.
-- $H_0 = \ker(\partial_0) / \mathrm{im}(\partial_1) = \mathbb{Z} / 0 \cong \mathbb{Z}$.
+-    .
+-      , since the relation reduces the number of free generators for the group from three to two.
+-    .
 
 # 6
-Compute the simplicial homology groups of the $\Delta$-complex obtained from $n+1$ 2-simplices $\Delta_0^2, \cdots, \Delta_n^2$ by identifying all three edges of $\Delta_0^2$ to a single edge, and for $i>0$ identifying the edges $[v_0, v_1]$ and $[v_1, v_2]$ of $\Delta_i^2$ to a single edge and the edge $[v_0, v_2]$ to the edge $[v_0, v_1]$ of $\Delta_{i-1}^2$.
+Compute the simplicial homology groups of the -complex obtained from   2-simplices  by identifying all three edges of  to a single edge, and for   identifying the edges  and  of  to a single edge and the edge  to the edge  of .
 
 Proof
 
-Let $a_i, b_i, c_i$ be the edges $[v_0, v_1], [v_1, v_2], [v_0, v_2]$ respectively of each $\Delta_i^2$. Then $a_0 = b_0 = c_0$, and for $i>0$, $a_i = b_i$ and $c_i = a_{i-1}$. One can show inductively that all vertices are identified to a single vertex $v$. If $\partial$ is the boundary homomorphism, then $\partial_0 = \partial_1 = 0$. Since there’s only one vertex, it follows that $H_0 = \mathbb{Z}$.
+Let  be the edges  respectively of each . Then   , and for  ,   and  . One can show inductively that all vertices are identified to a single vertex . If  is the boundary homomorphism, then   . Since there’s only one vertex, it follows that  .
 
-Also, by the identifications, the 1-chain group $C_1$ is generated by $\{a_0, a_1, \ldots , a_n\}$. One can compute that the boundary map $\partial_2$ is given by $\partial_2(\Delta_0^2) = a_0$ and $\partial_2(\Delta_i^2) = 2a_i - a_{i-1}$ for $i>0$.
+Also, by the identifications, the 1-chain group  is generated by . One can compute that the boundary map  is given by   and    for  .
 
-Since $\partial_1 = 0$, $H_1 = C_1/\mathrm{im}(\partial_2)$. The relations defining the quotient group are $a_0=0$ and $a_{i-1}=2a_i$ for $i=1, \ldots, n$. These relations imply $a_0 = 2a_1 = 4a_2 = \dots = 2^n a_n$. As $a_0=0$, we have $2^n a_n = 0$. The group is generated by $a_n$ and is therefore cyclic of order $2^n$. Thus, $H_1 \cong \mathbb{Z}/2^n\mathbb{Z}$.
+Since  ,  . The relations defining the quotient group are   and   for  . These relations imply     . As  , we have  . The group is generated by  and is therefore cyclic of order . Thus,  .
 
 The kernel of $\partial_2$ is trivial. For a 2-chain $\sum c_i \Delta_i^2$, its boundary is $(c_0-c_1)a_0 + \sum_{i=1}^{n-1} (2c_i-c_{i+1})a_i + 2c_n a_n$. Setting this to 0 forces all $c_i=0$, starting from $c_n$. Thus $H_2 = 0$. Of course, $H_k = 0$ for $k > 2$.
 
@@ -123,7 +123,14 @@ Proof
   *   **0-cell (vertex):** A neighborhood is formed by sectors of disks from all incident 2-simplices. Since edges are identified in pairs, these sectors fit together around the vertex to form a complete disk.
 </li>
 <li>
-  
-  Show the edges can always be oriented so as to define a $\Delta$-complex structure on the quotient surface. [This is more difficult.]
+
+  To orient the edges consistently, we can proceed as follows:
+
+  1. **Choose an initial orientation:** Start with one 2-simplex and assign an arbitrary orientation to its edges.
+  2. **Propagate orientations:** For each edge that is identified with another edge, ensure that the orientations are compatible. If two edges are identified, they must have opposite orientations to maintain consistency in the quotient space.
+  3. **Check for consistency:** As we propagate orientations through the identifications, we must ensure that no contradictions arise. If a contradiction occurs, we may need to reverse the orientation of some edges to restore consistency.
+  4. **Complete the process:** Continue this process until all edges in the quotient space have been assigned orientations that are consistent with the identifications.
+
+  By following these steps, we can ensure that the resulting quotient space has a well-defined $\Delta$-complex structure with oriented edges.
 </li>
 </ol>
