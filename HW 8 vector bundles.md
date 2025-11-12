@@ -7,13 +7,13 @@ The orientation double cover $M_L$ is a new space built from $L$. For each fiber
 
 **Claim:** If a line bundle $L$ is trivial, then its orientation double cover $M_L$ is disconnected.
 
-Assume $L$ is trivial. By definition, this means it has a nonvanishing global section $s$. Think of s as a continuous choice of a "positive" vector $s(x)$ in every fiber.Because s is a non-zero vector, it also defines an orientation at every point (the direction it points in). Let's call this collection of "positive" orientations $s(M)$. This $s(M)$ is one part of the total space $M_L$.
+Assume $L$ is trivial. By definition, this means it has a nonvanishing global section $s$. Because $s(x)$ is a non-zero vector for all $x$, it defines an orientation in each fiber $L_x$. This defines a section $\hat{s}$ of the orientation bundle $M_L$. Let $C_1 = \hat{s}(M)$ be its image.
 
-If s is a nonvanishing global section, then -s (the vector pointing in the exact opposite direction in each fiber) is also a nonvanishing global section.This $-s$ section defines the other orientation at every point. Let's call this collection of "negative" orientations $(-s)(M)$.
+If $s$ is a nonvanishing global section, then $-s$ is also a nonvanishing global section, and it defines a different section $-\hat{s}$ of the orientation bundle. Let $C_2 = (-\hat{s})(M)$ be its image.
 
-Every possible orientation in $M_L$ is either the one defined by s or the one defined by -s. Therefore, the total space $M_L$ is the union of these two sets: $M_L = s(M) \cup (-s)(M)$.
+Every possible orientation in $M_L$ is in either $C_1$ or $C_2$, so the total space $M_L$ is the union of these two sets: $M_L = C_1 \cup C_2$.
 
-These two sets, $s(M)$ and $(-s)(M)$, are disjoint (an orientation can't be both positive and negative) and open.Since $M_L$ is the union of two disjoint, non-empty, open sets, it is, by definition, disconnected.
+These two sets, $C_1$ and $C_2$, are disjoint. As they are images of sections of a covering space, they are also open. Since $M_L$ is the union of two disjoint, non-empty, open sets, it is, by definition, disconnected.
 
 If $L$ is the Möbius bundle over $S^1$, its orientation double cover $M_L$ is the connected double cover of $S^1$ (which is homeomorphic to $S^1$). Since this space is connected, it follows that the Möbius bundle is nontrivial.
 
