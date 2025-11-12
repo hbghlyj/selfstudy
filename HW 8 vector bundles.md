@@ -1,6 +1,28 @@
 # 1.1
 Prove that the Möbius bundle $S \rightarrow S^1$ is nontrivial.
 
+Proof
+
+# 1.1
+Prove that the Möbius bundle $S \rightarrow S^1$ is nontrivial.
+
+Proof
+
+Let $L$ denote the Möbius bundle $S \rightarrow S^1$, with base space $M = S^1$.
+The orientation double cover, denoted $M_L$, is the total space of the orientation bundle. It is a new space built from $L$. For each fiber $L_x$ (which is just a line $\cong \mathbb{R}$), there are two possible orientations (a "positive" direction and a "negative" direction). The fiber of $M_L$ at $x$ consists of these two choices. So, $M_L$ is a 2-to-1 cover of $M$.
+
+**Claim:** If a line bundle $L$ is trivial, then its orientation double cover $M_L$ is disconnected.
+
+Assume $L$ is trivial. By definition, this means it has a nonvanishing global section $s$. Because $s(x)$ is a non-zero vector for all $x$, it defines an orientation in each fiber $L_x$. This defines a section $\hat{s}$ of the orientation bundle $M_L$. Let $C_1 = \hat{s}(M)$ be its image.
+
+If $s$ is a nonvanishing global section, then $-s$ is also a nonvanishing global section, and it defines a different section $-\hat{s}$ of the orientation bundle. Let $C_2 = (-\hat{s})(M)$ be its image.
+
+Every possible orientation in $M_L$ is in either $C_1$ or $C_2$, so the total space $M_L$ is the union of these two sets: $M_L = C_1 \cup C_2$.
+
+These two sets, $C_1$ and $C_2$, are disjoint. As they are images of sections of a covering space, they are also open. Since $M_L$ is the union of two disjoint, non-empty, open sets, it is, by definition, disconnected.
+
+If $L$ is the Möbius bundle over $S^1$, its orientation double cover $M_L$ is the connected double cover of $S^1$ (which is homeomorphic to $S^1$). Since this space is connected, it follows that the Möbius bundle is nontrivial.
+
 # 1.2
 Prove that $S \oplus S \rightarrow S^1$ is trivial.
 
