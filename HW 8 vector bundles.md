@@ -1,6 +1,27 @@
 # 1.1
 Prove that the Möbius bundle $S \rightarrow S^1$ is nontrivial.
 
+Proof
+
+The orientation double cover $M_L$ is a new space built from $L$. For each fiber $L_x$ (which is just a line $\cong \mathbb{R}$), there are two possible orientations (a "positive" direction and a "negative" direction). The fiber of $M_L$ at $x$ consists of these two choices. So, $M_L$ is a 2-to-1 cover of $M$.
+
+"If $L$ is trivial, then $M_L$ is disconnected"
+
+Assume $L$ is trivial. By definition, this means it has a nonvanishing global section $s$. Think of s as a continuous choice of a "positive" vector $s(x)$ in every fiber.Because s is a non-zero vector, it also defines an orientation at every point (the direction it points in). Let's call this collection of "positive" orientations $s(M)$. This $s(M)$ is one part of the total space $M_L$.
+
+If s is a nonvanishing global section, then -s (the vector pointing in the exact opposite direction in each fiber) is also a nonvanishing global section.This $-s$ section defines the other orientation at every point. Let's call this collection of "negative" orientations $(-s)(M)$.
+
+Every possible orientation in $M_L$ is either the one defined by s or the one defined by -s. Therefore, the total space $M_L$ is the union of these two sets: $M_L = s(M) \cup (-s)(M)$.
+
+These two sets, $s(M)$ and $(-s)(M)$, are disjoint (an orientation can't be both positive and negative) and open.Since $M_L$ is the union of two disjoint, non-empty, open sets, it is, by definition, disconnected.
+
+If L is the M¨obius bundle over S
+1
+, the orientation double cover ML is again
+S
+1
+. This is connected, i.e., the M¨obius strip is nontrivial.
+
 # 1.2
 Prove that $S \oplus S \rightarrow S^1$ is trivial.
 
