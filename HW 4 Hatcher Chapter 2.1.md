@@ -124,6 +124,14 @@ Proof
 </li>
 <li>
   
-  To define the $\Delta$-complex structure, we must define the oriented simplices. We can proceed as follows:\n\n  1. **Orient edges:** The edges of the quotient space are the equivalence classes of edges from the original 2-simplices. For each class, choose an arbitrary orientation. This defines all the 1-simplices.\n\n  2. **Orient faces:** The faces of the quotient space are the images of the original 2-simplices. For each face, choose an arbitrary orientation by ordering its vertices. This defines all the 2-simplices.\n\n  3. **Define boundary maps:** The orientation of a 2-simplex induces an orientation on its boundary edges. The boundary of each 2-simplex is then a formal sum of its three edge 1-simplices. The sign of each term is positive if the induced orientation matches the orientation chosen in step 1, and negative otherwise.\n\n  This procedure always yields a valid $\Delta$-complex structure because the choices of orientation are independent and the boundary maps are defined to be consistent with them.
+  To define the $\Delta$-complex structure, we must define the oriented simplices. We can proceed as follows:
+
+  1. **Orient edges:** The edges of the quotient space are the equivalence classes of edges from the original 2-simplices. For each class, choose an arbitrary orientation. This defines all the 1-simplices.
+
+  2. **Orient faces:** The faces of the quotient space are the images of the original 2-simplices. For each face, choose an arbitrary orientation by ordering its vertices. This defines all the 2-simplices.
+
+  3. **Define boundary maps:** The orientation of a 2-simplex induces an orientation on its boundary edges. The boundary of each 2-simplex is then a formal sum of its three edge 1-simplices. The sign of each term is positive if the induced orientation matches the orientation chosen in step 1, and negative otherwise.
+
+  This procedure always yields a valid $\Delta$-complex structure because the choices of orientation are independent and the boundary maps are defined to be consistent with them.
 </li>
 </ol>
