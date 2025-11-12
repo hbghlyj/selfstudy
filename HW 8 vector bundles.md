@@ -5,7 +5,7 @@ Proof
 
 The orientation double cover $M_L$ is a new space built from $L$. For each fiber $L_x$ (which is just a line $\cong \mathbb{R}$), there are two possible orientations (a "positive" direction and a "negative" direction). The fiber of $M_L$ at $x$ consists of these two choices. So, $M_L$ is a 2-to-1 cover of $M$.
 
-"If $L$ is trivial, then $M_L$ is disconnected"
+**Claim:** If a line bundle $L$ is trivial, then its orientation double cover $M_L$ is disconnected.
 
 Assume $L$ is trivial. By definition, this means it has a nonvanishing global section $s$. Think of s as a continuous choice of a "positive" vector $s(x)$ in every fiber.Because s is a non-zero vector, it also defines an orientation at every point (the direction it points in). Let's call this collection of "positive" orientations $s(M)$. This $s(M)$ is one part of the total space $M_L$.
 
