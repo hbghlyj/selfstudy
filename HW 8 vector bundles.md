@@ -46,7 +46,7 @@ The tangent bundle $T S^2$ and the normal bundle together form the restriction o
 $T S^2 \oplus \underline{\mathbb{R}} \cong T \mathbb{R}^3|_{S^2}$.
 
 Since $T \mathbb{R}^3$ is a trivial bundle (as $\mathbb{R}^3$ is contractible), its restriction to any submanifold, including $S^2$, is also trivial. Therefore, we conclude that:
-$T S^2 \oplus \underline{\mathbb{R}} \cong \underline{\mathbb{R}}^3,$
+$T S^2 \oplus \underline{\mathbb{R}} \cong \underline{\mathbb{R}}^3$,
 which is a trivial bundle.
 
 # 1.4
