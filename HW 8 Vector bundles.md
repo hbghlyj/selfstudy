@@ -29,7 +29,7 @@ The fiber of $S$ over a point $p = e^{i\theta} \in S^1$ is the line $S_p$ in $\m
 
 The orthogonal complement bundle, $S^\perp$, is the subbundle of $E$ whose fiber $(S^\perp)_p$ at each point $p$ is the orthogonal complement of $S_p$ in $\mathbb{R}^2$. The fiber $(S^\perp)_p$ is spanned by the vector $(-\sin(\theta/2), \cos(\theta/2))$.
 
-First, we show that $S \cong S^\perp$. Both are line bundles over $S^1$, and up to isomorphism, there are only two such bundles: the trivial bundle and the non-trivial Möbius bundle. We can show that both $S$ and $S^\perp$ are non-trivial.
+First, we show that $S \cong S^\perp$ by proving they are both non-trivial line bundles over $S^1$. Up to isomorphism, there are only two such bundles: the trivial bundle and the non-trivial Möbius bundle.
 
 The local frame for $S$ given by $s(\theta) = (\cos(\theta/2), \sin(\theta/2))$ shows a twist: as $\theta$ goes from $0$ to $2\pi$, the vector rotates by $\pi$ (from $(1,0)$ to $(-1,0)$). This means $S$ is the non-trivial Möbius bundle.
 
