@@ -124,6 +124,13 @@ Proof
 </li>
 <li>
   
-  Show the edges can always be oriented so as to define a $\Delta$-complex structure on the quotient surface. [This is more difficult.]
+  To orient the edges consistently, we can proceed as follows:
+
+  1. **Choose an initial orientation:** Start with one 2-simplex and assign an arbitrary orientation to its edges.
+  2. **Propagate orientations:** For each edge that is identified with another edge, ensure that the orientations are compatible. If two edges are identified, they must have opposite orientations to maintain consistency in the quotient space.
+  3. **Check for consistency:** As we propagate orientations through the identifications, we must ensure that no contradictions arise. If a contradiction occurs, we may need to reverse the orientation of some edges to restore consistency.
+  4. **Complete the process:** Continue this process until all edges in the quotient space have been assigned orientations that are consistent with the identifications.
+
+  By following these steps, we can ensure that the resulting quotient space has a well-defined $\Delta$-complex structure with oriented edges.
 </li>
 </ol>
