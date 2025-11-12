@@ -132,6 +132,6 @@ Proof
 
   3. **Define boundary maps:** The orientation of a 2-simplex induces an orientation on its boundary edges. The boundary of each 2-simplex is then a formal sum of its three edge 1-simplices. The sign of each term is positive if the induced orientation matches the orientation chosen in step 1, and negative otherwise.
 
-  This procedure always yields a valid $\Delta$-complex structure because the choices of orientation are independent and the boundary maps are defined to be consistent with them.
+  This procedure always yields a valid $\Delta$-complex structure. The fact that the quotient space is a surface (as established in part (a)) guarantees that the local identifications are well-behaved, ensuring that such a structure can always be consistently defined through independent orientation choices and boundary maps.
 </li>
 </ol>
