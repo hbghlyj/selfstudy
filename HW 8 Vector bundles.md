@@ -23,17 +23,11 @@ Prove that $S \oplus S \rightarrow S^1$ is trivial.
 
 Proof
 
-By #5, it suffices to show that the transition function of $S \oplus S$ is cohomologous to the identity. The transition function for the Möbius bundle $S$ is $g_{12} = -1$. Thus, the transition function for $S \oplus S$ is $G_{12} = \mathrm{diag}(-1, -1) = -I_2$.
 
-To show the bundle is trivial, we need to find continuous maps $\tau_1: U_1 \to \mathrm{GL}(2, \mathbb{R})$ and $\tau_2: U_2 \to \mathrm{GL}(2, \mathbb{R})$ on a trivializing cover $\{U_1, U_2\}$ such that $G_{12} = \tau_2^{-1} I_2 \tau_1$, which simplifies to $\tau_1 = - \tau_2$ on $U_1 \cap U_2$.
 
-Unlike in $\mathrm{GL}(1, \mathbb{R})$, the matrices $I_2$ and $-I_2$ are in the same path component of $\mathrm{GL}(2, \mathbb{R})$ (connected by a rotation of $\pi$). This allows us to construct the required maps. For instance, on a standard cover of $S^1$ by two overlapping contractible arcs $U_1, U_2$:
-1. Define $\tau_2: U_2 \to \mathrm{GL}(2, \mathbb{R})$ as the constant map $\tau_2(x) = I_2$.
-2. This forces $\tau_1(x) = -I_2$ on the overlap $U_1 \cap U_2$.
-3. Since $U_1$ is contractible, we can extend this to a constant map on all of $U_1$, i.e., $\tau_1(x) = -I_2$.
+Proof
 
-These maps are continuous and satisfy the required condition. Therefore, $S \oplus S$ is trivial.
-
+Consider the Möbius bundle $S \rightarrow S^1$ constructed as a subbundle of the trivial rank 2 bundle $E = S^1 \times \mathbb{R}^2$. The fiber of $S$ over a point $p = e^{i\theta} \in S^1$ is the line $S_p$ in $\mathbb{R}^2$ spanned by the vector $(\cos(\theta/2), \sin(\theta/2))$.\n\nThe orthogonal complement bundle, $S^\perp$, is the subbundle of $E$ whose fiber $(S^\perp)_p$ at each point $p$ is the orthogonal complement of $S_p$ in $\mathbb{R}^2$. The fiber $(S^\perp)_p$ is spanned by the vector $(-\sin(\theta/2), \cos(\theta/2))$.\n\nFirst, we show that $S \cong S^\perp$. Both are line bundles over $S^1$, and up to isomorphism, there are only two such bundles: the trivial bundle and the non-trivial Möbius bundle. We can show that both $S$ and $S^\perp$ are non-trivial.\n\nThe local frame for $S$ given by $s(\theta) = (\cos(\theta/2), \sin(\theta/2))$ shows a twist: as $\theta$ goes from $0$ to $2\pi$, the vector rotates by $\pi$ (from $(1,0)$ to $(-1,0)$). This means $S$ is the non-trivial Möbius bundle.\n\nSimilarly, the local frame for $S^\perp$ given by $s^\perp(\theta) = (-\sin(\theta/2), \cos(\theta/2))$ also rotates by $\pi$ as $\theta$ goes from $0$ to $2\pi$ (from $(0,1)$ to $(0,-1)$). Thus, $S^\perp$ is also the non-trivial Möbius bundle.\n\nSince both $S$ and $S^\perp$ are isomorphic to the Möbius bundle, they are isomorphic to each other.\n\nNext, consider the Whitney sum $S \oplus S^\perp$. At each point $p \in S^1$, the fiber is $(S \oplus S^\perp)_p = S_p \oplus (S^\perp)_p$. Since $S_p$ and $(S^\perp)_p$ are orthogonal complements in $\mathbb{R}^2$, their direct sum is $\mathbb{R}^2$. Thus, the bundle $S \oplus S^\perp$ is isomorphic to the trivial bundle $S^1 \times \mathbb{R}^2$.\n\nSince $S \cong S^\perp$, we have $S \oplus S \cong S \oplus S^\perp$. Therefore, $S \oplus S$ is isomorphic to the trivial bundle $S^1 \times \mathbb{R}^2.
 
 # 1.3
 Prove that $T S^2 \oplus \underline{\mathbb{R}} \rightarrow S^2$ is trivial.
