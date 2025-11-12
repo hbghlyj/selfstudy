@@ -43,7 +43,7 @@ Proof
 The tangent bundle of the 2-sphere $S^2$ can be understood via the normal bundle. The normal bundle of $S^2$ in $\mathbb{R}^3$ is a line bundle that assigns to each point on $S^2$ the line perpendicular to the tangent plane at that point. This normal bundle is isomorphic to the trivial line bundle $\underline{\mathbb{R}}$ because we can choose a global section given by the outward-pointing unit normal vector field.
 
 The tangent bundle $T S^2$ and the normal bundle together form the restriction of the tangent bundle of $\mathbb{R}^3$ to $S^2$. Specifically, we have the following isomorphism of vector bundles over $S^2$:
-$T S^2 \oplus \underline{\mathbb{R}} \cong T \mathbb{R}^3|_{S^2}.$
+$T S^2 \oplus \underline{\mathbb{R}} \cong T \mathbb{R}^3|_{S^2}$.
 
 Since $T \mathbb{R}^3$ is a trivial bundle (as $\mathbb{R}^3$ is contractible), its restriction to any submanifold, including $S^2$, is also trivial. Therefore, we conclude that:
 $T S^2 \oplus \underline{\mathbb{R}} \cong \underline{\mathbb{R}}^3,$
