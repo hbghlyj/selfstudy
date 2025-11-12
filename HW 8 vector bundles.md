@@ -15,12 +15,7 @@ Every possible orientation in $M_L$ is either the one defined by s or the one de
 
 These two sets, $s(M)$ and $(-s)(M)$, are disjoint (an orientation can't be both positive and negative) and open.Since $M_L$ is the union of two disjoint, non-empty, open sets, it is, by definition, disconnected.
 
-If L is the M¨obius bundle over S
-1
-, the orientation double cover ML is again
-S
-1
-. This is connected, i.e., the M¨obius strip is nontrivial.
+If $L$ is the Möbius bundle over $S^1$, its orientation double cover $M_L$ is the connected double cover of $S^1$ (which is homeomorphic to $S^1$). Since this space is connected, it follows that the Möbius bundle is nontrivial.
 
 # 1.2
 Prove that $S \oplus S \rightarrow S^1$ is trivial.
