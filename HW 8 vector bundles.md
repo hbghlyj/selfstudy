@@ -3,7 +3,13 @@ Prove that the Möbius bundle $S \rightarrow S^1$ is nontrivial.
 
 Proof
 
-The orientation double cover $M_L$ is a new space built from $L$. For each fiber $L_x$ (which is just a line $\cong \mathbb{R}$), there are two possible orientations (a "positive" direction and a "negative" direction). The fiber of $M_L$ at $x$ consists of these two choices. So, $M_L$ is a 2-to-1 cover of $M$.
+# 1.1
+Prove that the Möbius bundle $S \rightarrow S^1$ is nontrivial.
+
+Proof
+
+Let $L$ denote the Möbius bundle $S \rightarrow S^1$, with base space $M = S^1$.
+The orientation double cover, denoted $M_L$, is the total space of the orientation bundle. It is a new space built from $L$. For each fiber $L_x$ (which is just a line $\cong \mathbb{R}$), there are two possible orientations (a "positive" direction and a "negative" direction). The fiber of $M_L$ at $x$ consists of these two choices. So, $M_L$ is a 2-to-1 cover of $M$.
 
 **Claim:** If a line bundle $L$ is trivial, then its orientation double cover $M_L$ is disconnected.
 
