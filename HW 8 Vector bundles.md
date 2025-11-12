@@ -39,7 +39,7 @@ Since both $S$ and $S^\perp$ are isomorphic to the Möbius bundle, they are isom
 
 Next, consider the Whitney sum $S \oplus S^\perp$. At each point $p \in S^1$, the fiber is $(S \oplus S^\perp)_p = S_p \oplus (S^\perp)_p$. Since $S_p$ and $(S^\perp)_p$ are orthogonal complements in $\mathbb{R}^2$, their direct sum is $\mathbb{R}^2$. Thus, the bundle $S \oplus S^\perp$ is isomorphic to the trivial bundle $S^1 \times \mathbb{R}^2$.
 
-Since $S \cong S^\perp$, we have $S \oplus S \cong S \oplus S^\perp$. Therefore, $S \oplus S$ is isomorphic to the trivial bundle $S^1 \times \mathbb{R}^2.
+Since $S \cong S^\perp$, we have $S \oplus S \cong S \oplus S^\perp$. Therefore, $S \oplus S$ is isomorphic to the trivial bundle $S^1 \times \mathbb{R}^2$.
 
 # 1.3
 Prove that $T S^2 \oplus \underline{\mathbb{R}} \rightarrow S^2$ is trivial.
