@@ -4,6 +4,11 @@ Prove that the Möbius bundle $S \rightarrow S^1$ is nontrivial.
 # 1.2
 Prove that $S \oplus S \rightarrow S^1$ is trivial.
 
+Proof
+
+By #5, it suffices to show that the transition functions of $S \oplus S$ are cohomologous to the identity. Let $U_1$ and $U_2$ be the two standard open sets covering $S^1$ used to define the Möbius bundle, with transition function on the overlap $U_1 \cap U_2$ given by $g_{12}(x) = -1$.
+
+
 # 1.3
 Prove that $T S^2 \oplus \underline{\mathbb{R}} \rightarrow S^2$ is trivial.
 
