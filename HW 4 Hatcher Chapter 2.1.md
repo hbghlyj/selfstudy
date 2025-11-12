@@ -3,7 +3,7 @@ What familiar space is the quotient $\Delta$-complex of a 2-simplex $[v_0, v_1, 
 
 Proof
 
-The quotient space is homeomorphic to a Möbius strip. The identification of the oriented edges $[v_0, v_1] \sim [v_1, v_2]$ implies the identification of their vertices, so $v_0 \sim v_1$ and $v_1 \sim v_2$. Consequently, all three vertices $v_0, v_1, v_2$ are identified to a single point. The boundary of the resulting space is the image of the edge $[v_2, v_0]$. Since its endpoints $v_0$ and $v_2$ are identified, the boundary is a single circle. This means the space is a surface with one boundary component. The identification of two adjacent boundary edges, $[v_0, v_1]$ and $[v_1, v_2]$, as one traverses the boundary of the 2-simplex introduces a twist, making the surface non-orientable. The simplest non-orientable surface with one boundary component is the Möbius strip.
+The identification of edge $[v_0, v_1]$ with $[v_1, v_2]$ implies that vertices $v_0, v_1, v_2$ are all identified to a single point. The remaining edge $[v_0, v_2]$ therefore becomes a closed loop, forming the single boundary of the resulting surface. The identification of two adjacent edges of the simplex with matching orientation introduces a half-twist, making the surface non-orientable. A non-orientable surface with a single boundary is a Möbius strip.
 
 # 3
 Construct a $\Delta$-complex structure on $\mathbb{RP}^n$ as a quotient of a $\Delta$-complex structure on $S^n$ having vertices the two vectors of length 1 along each coordinate axis in $\mathbb{R}^{n+1}$.
