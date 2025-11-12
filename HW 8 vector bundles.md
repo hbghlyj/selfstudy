@@ -6,7 +6,16 @@ Prove that $S \oplus S \rightarrow S^1$ is trivial.
 
 Proof
 
-By #5, it suffices to show that the transition functions of $S \oplus S$ are cohomologous to the identity. Let $U_1$ and $U_2$ be the two standard open sets covering $S^1$ used to define the Möbius bundle, with transition function on the overlap $U_1 \cap U_2$ given by $g_{12}(x) = -1$.
+By #5, it suffices to show that the transition function of $S \oplus S$ is cohomologous to the identity. The transition function for the Möbius bundle $S$ is $g_{12} = -1$. Thus, the transition function for $S \oplus S$ is $G_{12} = \mathrm{diag}(-1, -1) = -I_2$.
+
+To show the bundle is trivial, we need to find continuous maps $\tau_1: U_1 \to \mathrm{GL}(2, \mathbb{R})$ and $\tau_2: U_2 \to \mathrm{GL}(2, \mathbb{R})$ on a trivializing cover $\{U_1, U_2\}$ such that $G_{12} = \tau_2^{-1} I_2 \tau_1$, which simplifies to $\tau_1 = - \tau_2$ on $U_1 \cap U_2$.
+
+Unlike in $\mathrm{GL}(1, \mathbb{R})$, the matrices $I_2$ and $-I_2$ are in the same path component of $\mathrm{GL}(2, \mathbb{R})$ (connected by a rotation of $\pi$). This allows us to construct the required maps. For instance, on a standard cover of $S^1$ by two overlapping contractible arcs $U_1, U_2$:
+1. Define $\tau_2: U_2 \to \mathrm{GL}(2, \mathbb{R})$ as the constant map $\tau_2(x) = I_2$.
+2. This forces $\tau_1(x) = -I_2$ on the overlap $U_1 \cap U_2$.
+3. Since $U_1$ is contractible, we can extend this to a constant map on all of $U_1$, i.e., $\tau_1(x) = -I_2$.
+
+These maps are continuous and satisfy the required condition. Therefore, $S \oplus S$ is trivial.
 
 
 # 1.3
