@@ -23,17 +23,19 @@ Prove that $S \oplus S \rightarrow S^1$ is trivial.
 
 Proof
 
-By #5, it suffices to show that the transition function of $S \oplus S$ is cohomologous to the identity. The transition function for the Möbius bundle $S$ is $g_{12} = -1$. Thus, the transition function for $S \oplus S$ is $G_{12} = \mathrm{diag}(-1, -1) = -I_2$.
+Consider the Möbius bundle $S \rightarrow S^1$ as a subbundle of the trivial rank 2 bundle $`S^1 \times \mathbb{R}^2 \rightarrow S^1`$. The fibers of $S$ are 1-dimensional subspaces of $\mathbb{R}^2$ that "twist" as we move around the base space $S^1$. It is defined by the identification $(\theta, v) \sim (\theta + \pi, -v)$ for $\theta \in [0, 2\pi)$ and $v \in \mathbb{R}$. The Orthogonal Complement Bundle $S^\perp$ is defined by taking, at each point $\theta \in S^1$, the orthogonal complement of the fiber $S_\theta$ in $\mathbb{R}^2$.
 
-To show the bundle is trivial, we need to find continuous maps $\tau_1: U_1 \to \mathrm{GL}(2, \mathbb{R})$ and $\tau_2: U_2 \to \mathrm{GL}(2, \mathbb{R})$ on a trivializing cover $\{U_1, U_2\}$ such that $G_{12} = \tau_2^{-1} I_2 \tau_1$, which simplifies to $\tau_1 = - \tau_2$ on $U_1 \cap U_2$.
+The fibers of $S^\perp$ are also 1-dimensional subspaces of $\mathbb{R}^2$, and they "twist" in the opposite manner to the fibers of $S$. Specifically, the identification for $S^\perp$ is given by $(\theta, w) \sim (\theta + \pi, -w)$, where $w$ is a vector orthogonal to $v$.
 
-Unlike in $\mathrm{GL}(1, \mathbb{R})$, the matrices $I_2$ and $-I_2$ are in the same path component of $\mathrm{GL}(2, \mathbb{R})$ (connected by a rotation of $\pi$). This allows us to construct the required maps. For instance, on a standard cover of $S^1$ by two overlapping contractible arcs $U_1, U_2$:
-1. Define $\tau_2: U_2 \to \mathrm{GL}(2, \mathbb{R})$ as the constant map $\tau_2(x) = I_2$.
-2. This forces $\tau_1(x) = -I_2$ on the overlap $U_1 \cap U_2$.
-3. Since $U_1$ is contractible, we can extend this to a constant map on all of $U_1$, i.e., $\tau_1(x) = -I_2$.
+Now, consider the direct sum bundle $S \oplus S^\perp$. At each point $\theta \in S^1$, the fiber of this bundle is given by the direct sum of the fibers of $S$ and $S^\perp$:
 
-These maps are continuous and satisfy the required condition. Therefore, $S \oplus S$ is trivial.
+$(S \oplus S^\perp)_\theta = S_\theta \oplus S^\perp_\theta$.
 
+Since $S_\theta$ and $S^\perp_\theta$ are orthogonal complements in $\mathbb{R}^2$, their direct sum is isomorphic to $\mathbb{R}^2$. Therefore, we have an isomorphism of vector bundles:
+
+$S \oplus S^\perp \cong S^1 \times \mathbb{R}^2$
+
+which is the trivial rank 2 bundle over $S^1$.
 
 # 1.3
 Prove that $T S^2 \oplus \underline{\mathbb{R}} \rightarrow S^2$ is trivial.
