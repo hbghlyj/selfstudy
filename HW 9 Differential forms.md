@@ -1,6 +1,20 @@
 # 1. (Lee 14-1, 4)
 
-(a) Let $V$ be a finite-dimensional vector space and $v_1, \ldots, v_k \in V$. Prove that $v_1, \ldots, v_k$ are linearly dependent if and only if $v_1 \wedge \cdots \wedge v_k=0$.
+Let $V$ be a finite-dimensional vector space and $v_1, \ldots, v_k \in V$. Prove that $v_1, \ldots, v_k$ are linearly dependent if and only if $v_1 \wedge \cdots \wedge v_k=0$.
+
+Proof
+
+($\Rightarrow$) If $v_1, \ldots, v_k$ are linearly dependent, then there exist scalars $a_1, \ldots, a_k$, not all zero, such that
+$$
+\sum_{i=1}^k a_i v_i = 0.
+$$
+Then, since not all coefficients are zero, we may assume without loss of generality that $a_1 \neq 0$. Wedging the linear dependence equation with $v_2 \wedge \dots \wedge v_k$ gives:
+$$
+0 = \left(\sum_{i=1}^k a_i v_i\right) \wedge v_2 \wedge \dots \wedge v_k = a_1(v_1 \wedge v_2 \wedge \dots \wedge v_k)
+$$
+All other terms in the expansion are zero because they contain repeated vectors. Since $a_1 \neq 0$, we conclude that $v_1 \wedge \dots \wedge v_k = 0.
+
+($\Leftarrow$) Conversely, suppose $v_1 \wedge \cdots \wedge v_k = 0$. If $v_1, \ldots, v_k$ were linearly independent, they would form a basis for a $k$-dimensional subspace of $V$. The wedge product of a basis is non-zero, contradicting our assumption. Therefore, $v_1, \ldots, v_k$ must be linearly dependent.
 
 # 2.
 Check directly that the formula for $\mathscr{L}_V A$ in Lee, Corollary 12.33 is $C^{\infty}$-linear in $X_1, \ldots, X_m$. This is for $f_1, \ldots, f_m \in C^{\infty}(M)$ we have 
