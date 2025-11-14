@@ -12,7 +12,7 @@ Then, since not all coefficients are zero, we may assume without loss of general
 
 $0 = \left(\sum_{i=1}^k a_i v_i\right) \wedge v_2 \wedge \dots \wedge v_k = a_1(v_1 \wedge v_2 \wedge \dots \wedge v_k)$
 
-All other terms in the expansion are zero because they contain repeated vectors. Since $a_1 \neq 0$, we conclude that $v_1 \wedge \dots \wedge v_k = 0.
+All other terms in the expansion are zero because they contain repeated vectors. Since $a_1 \neq 0$, we conclude that $v_1 \wedge \dots \wedge v_k = 0$.
 
 ($\Leftarrow$) Conversely, suppose $v_1 \wedge \cdots \wedge v_k = 0$. If $v_1, \ldots, v_k$ were linearly independent, they would form a basis for a $k$-dimensional subspace of $V$. The wedge product of a basis is non-zero, contradicting our assumption. Therefore, $v_1, \ldots, v_k$ must be linearly dependent.
 
