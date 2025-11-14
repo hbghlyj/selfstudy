@@ -30,4 +30,4 @@ $(x, y, z)=(\rho \sin \varphi \cos \theta, \rho \sin \varphi \sin \theta, \rho \
 
 (b) Compute $d \omega$ in both Cartesian and spherical coordinates and verify that both expressions represent the same 3-form.
 
-(d) Show that $\iota_{S^2}^* \omega$ is nowhere zero.
+(c) Show that $\iota_{S^2}^* \omega$ is nowhere zero.
