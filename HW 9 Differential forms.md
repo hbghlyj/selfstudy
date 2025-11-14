@@ -3,7 +3,9 @@
 (a) Let $V$ be a finite-dimensional vector space and $v_1, \ldots, v_k \in V$. Prove that $v_1, \ldots, v_k$ are linearly dependent if and only if $v_1 \wedge \cdots \wedge v_k=0$.
 
 # 2.
-Check directly that the formula for $\mathscr{L}_V A$ in Lee, Corollary 12.33 is $C^{\infty}$-linear in $X_1, \ldots, X_m$. This is for $f_1, \ldots, f_m \in C^{\infty}(M)$ we have $\left(\mathscr{L}_V A\right)\left(f_1 X_1, \ldots, f_m X_m\right)=f_1 \cdots f_m\left(\mathscr{L}_V A\right)\left(X_1, \ldots, X_m\right).
+Check directly that the formula for $\mathscr{L}_V A$ in Lee, Corollary 12.33 is $C^{\infty}$-linear in $X_1, \ldots, X_m$. This is for $f_1, \ldots, f_m \in C^{\infty}(M)$ we have 
+
+$\left(\mathscr{L}_V A\right)\left(f_1 X_1, \ldots, f_m X_m\right)=f_1 \cdots f_m\left(\mathscr{L}_V A\right)\left(X_1, \ldots, X_m\right)$.
 
 # 3. (Interior Product)
 Define $\iota: \mathscr{X}(M) \times \Omega^k(M) \rightarrow \Omega^{k-1}(M)$ by
