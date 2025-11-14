@@ -8,9 +8,10 @@ Check directly that the formula for $\mathscr{L}_V A$ in Lee, Corollary 12.33 is
 # 3. (Interior Product)
 Define $\iota: \mathscr{X}(M) \times \Omega^k(M) \rightarrow \Omega^{k-1}(M)$ by
 
-$(X, \omega) \mapsto \iota_X \omega=X\right\lrcorner \omega=\omega(X,-, \ldots,-)$
+$(X, \omega) \mapsto \iota_X \omega=X\lrcorner \omega=\omega(X,-, \ldots,-)$
 
 a) For $X=x \frac{\partial}{\partial y}$ and $\omega=d x \wedge d y$ compute $\iota_X \omega$.
+
 b) Prove that in general $\iota_X(\omega \wedge \eta)=\left(\iota_X \omega\right) \wedge \eta+(-1)^k \omega \wedge \iota_X \eta$.
 
 # 4. (Lee 12-11)
