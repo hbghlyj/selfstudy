@@ -29,10 +29,16 @@ $`\left(\mathscr{L}_V A\right)\left(f_1 X_1, \ldots, f_m X_m\right) = \lim_{t \t
 Define $\iota: \mathscr{X}(M) \times \Omega^k(M) \rightarrow \Omega^{k-1}(M)$ by
 
 $(X, \omega) \mapsto \iota_X \omega=X\mathbin\lrcorner \omega=\omega(X,-, \ldots,-)$
+<ol type="a">
+<li>
 
-a) For $X=x \frac{\partial}{\partial y}$ and $\omega=d x \wedge d y$ compute $\iota_X \omega$.
+For $X=x \frac{\partial}{\partial y}$ and $\omega=d x \wedge d y$ compute $\iota_X \omega$.
+</li>
+<li>
 
-b) Prove that in general $\iota_X(\omega \wedge \eta)=\left(\iota_X \omega\right) \wedge \eta+(-1)^k \omega \wedge \iota_X \eta$.
+Prove that in general $\iota_X(\omega \wedge \eta)=\left(\iota_X \omega\right) \wedge \eta+(-1)^k \omega \wedge \iota_X \eta$.
+</li>
+</ol>
 
 # 4. (Lee 12-11)
 Suppose $M$ is a smooth manifold, $A \in \Omega^k(M)$ and $V, W \in \mathscr{X}(M)$. Show that
@@ -44,11 +50,20 @@ Hint: use induction on $k$ starting from the formula in Corollary 12.33 of Lee o
 Define a 2-form $\omega$ on $\mathbb{R}^3$ by
 
 $\omega=x d y \wedge d z+y d z \wedge d x+z d x \wedge d y$
+<ol type="a">
+<li>
 
-(a) Compute $\omega$ in spherical coordinates ( $\rho, \varphi, \theta$ ) defined by
+Compute $\omega$ in spherical coordinates ( $\rho, \varphi, \theta$ ) defined by
 
 $(x, y, z)=(\rho \sin \varphi \cos \theta, \rho \sin \varphi \sin \theta, \rho \cos \varphi)$
+</li>
+<li>
 
-(b) Compute $d \omega$ in both Cartesian and spherical coordinates and verify that both expressions represent the same 3-form.
+Compute $d \omega$ in both Cartesian and spherical coordinates and verify that both expressions represent the same 3-form.
+</li>
+</li>
+<li>
 
-(c) Show that $\iota_{S^2}^* \omega$ is nowhere zero.
+Show that $\iota_{S^2}^* \omega$ is nowhere zero.
+</li>
+</ol>
