@@ -28,7 +28,7 @@ $`\left(\mathscr{L}_V A\right)\left(f_1 X_1, \ldots, f_m X_m\right) = \lim_{t \t
 # 3. (Interior Product)
 Define $\iota: \mathscr{X}(M) \times \Omega^k(M) \rightarrow \Omega^{k-1}(M)$ by
 
-$(X, \omega) \mapsto \iota_X \omega=X\lrcorner \omega=\omega(X,-, \ldots,-)$
+$(X, \omega) \mapsto \iota_X \omega=X\mathbin\lrcorner \omega=\omega(X,-, \ldots,-)$
 
 a) For $X=x \frac{\partial}{\partial y}$ and $\omega=d x \wedge d y$ compute $\iota_X \omega$.
 
