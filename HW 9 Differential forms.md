@@ -41,19 +41,20 @@ Prove that in general $\iota_X(\omega \wedge \eta)=\left(\iota_X \omega\right) \
 </ol>
 
 Proof
-
 <ol type="a">
 <li>
 
 $\iota_X \omega = \iota_{x \frac{\partial}{\partial y}}(dx \wedge dy) = x \cdot \iota_{\frac{\partial}{\partial y}}(dx \wedge dy) = x\left(dx\left(\frac{\partial}{\partial y}\right)dy - dy\left(\frac{\partial}{\partial y}\right)dx\right) = x\left(0 \cdot dy - 1 \cdot dx\right) = -x dx$
 </li>
 <li>
-  
+
 Let $v_1, \ldots, v_{k+l-1}$ be arbitrary vector fields.
 
 $(\iota_X(\omega \wedge \eta))(v_1, \ldots, v_{k+l-1}) = (\omega \wedge \eta)(X, v_1, \ldots, v_{k+l-1})$
 
 Expand this using the definition of the wedge product, partitioning terms where $X$ is an argument of $\omega$ and where $X$ is an argument of $\eta$.
+
+$= \sum_{\sigma \in S_{k+l-1}} \text{sgn}(\sigma) \left[ \omega(X, v_{\sigma(1)}, \ldots, v_{\sigma(k-1)}) \eta(v_{\sigma(k)}, \ldots, v_{\sigma(k+l-1)}) + (-1)^k \omega(v_{\sigma(1)}, \ldots, v_{\sigma(k)}) \eta(X, v_{\sigma(k+1)}, \ldots, v_{\sigma(k+l-1)}) \right]$
 
 $= ((\iota_X \omega) \wedge \eta + (-1)^k \omega \wedge (\iota_X \eta))(v_1, \ldots, v_{k+l-1})$
 </li>
@@ -72,7 +73,7 @@ $\omega=x d y \wedge d z+y d z \wedge d x+z d x \wedge d y$
 <ol type="a">
 <li>
 
-Compute $\omega$ in spherical coordinates ( $\rho, \varphi, \theta$ ) defined by
+Compute $\omega$ in spherical coordinates ($\rho, \varphi, \theta$) defined by
 
 $(x, y, z)=(\rho \sin \varphi \cos \theta, \rho \sin \varphi \sin \theta, \rho \cos \varphi)$
 </li>
