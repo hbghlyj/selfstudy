@@ -40,6 +40,14 @@ Prove that in general $\iota_X(\omega \wedge \eta)=\left(\iota_X \omega\right) \
 </li>
 </ol>
 
+Proof
+
+(a) For $X=x \frac{\partial}{\partial y}$ and $\omega=d x \wedge d y$, we compute:
+
+$\iota_X \omega = (d x \wedge d y)(X, -) = (d x \wedge d y)\left(x \frac{\partial}{\partial y}, -\right) = x \frac{∂ x}{∂ y} d y - x \frac{∂ y}{∂ y} d x = -x d x$
+
+(b)
+
 # 4. (Lee 12-11)
 Suppose $M$ is a smooth manifold, $A \in \Omega^k(M)$ and $V, W \in \mathscr{X}(M)$. Show that
 
