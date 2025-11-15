@@ -49,8 +49,14 @@ $\iota_X \omega = \iota_{x \frac{\partial}{\partial y}}(dx \wedge dy) = x \cdot 
 </li>
 <li>
   
-Let $v_1, \ldots, v_{k+l-1}$ be arbitrary vector fields. We show that $(\iota_X(\omega \wedge \eta))(v_1, \ldots, v_{k+l-1}) = ((\iota_X \omega) \wedge \eta + (-1)^k \omega \wedge (\iota_X \eta))(v_1, \ldots, v_{k+l-1})$.
+Let $v_1, \ldots, v_{k+l-1}$ be arbitrary vector fields.
 
+$(\iota_X(\omega \wedge \eta))(v_1, \ldots, v_{k+l-1}) = (\omega \wedge \eta)(X, v_1, \ldots, v_{k+l-1})$
+
+$(\iota_X(\omega \wedge \eta))(v_1, \ldots, v_{k+l-1}) = (\omega \wedge \eta)(X, v_1, \ldots, v_{k+l-1})$
+$\text{Expand this using the definition of the wedge product, partitioning terms where } X \text{ is an argument of } \omega \text{ and where } X \text{ is an argument of } \eta.$
+
+$= ((\iota_X \omega) \wedge \eta + (-1)^k \omega \wedge (\iota_X \eta))(v_1, \ldots, v_{k+l-1})$
 </li>
 </ol>
 
