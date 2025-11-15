@@ -21,6 +21,10 @@ Check directly that the formula for $\mathscr{L}_V A$ in Lee, Corollary 12.33 is
 
 $\left(\mathscr{L}_V A\right)\left(f_1 X_1, \ldots, f_m X_m\right)=f_1 \cdots f_m\left(\mathscr{L}_V A\right)\left(X_1, \ldots, X_m\right)$.
 
+Proof
+
+$\left(\mathscr{L}_V A\right)\left(f_1 X_1, \ldots, f_m X_m\right) = \lim_{t \to 0} \frac{(\Phi_t^* A)(f_1 X_1, \ldots, f_m X_m) - A(f_1 X_1, \ldots, f_m X_m)}{t} = \lim_{t \to 0} \frac{f_1 \cdots f_m (\Phi_t^* A)(X_1, \ldots, X_m) - f_1 \cdots f_m A(X_1, \ldots, X_m)}{t} = f_1 \cdots f_m \lim_{t \to 0} \frac{(\Phi_t^* A)(X_1, \ldots, X_m) - A(X_1, \ldots, X_m)}{t} = f_1 \cdots f_m (\mathscr{L}_V A)(X_1, \ldots, X_m).$
+
 # 3. (Interior Product)
 Define $\iota: \mathscr{X}(M) \times \Omega^k(M) \rightarrow \Omega^{k-1}(M)$ by
 
