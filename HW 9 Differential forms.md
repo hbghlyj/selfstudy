@@ -50,8 +50,8 @@ $\iota_X \omega = \iota_{x \frac{\partial}{\partial y}}(dx \wedge dy) = x \cdot 
 
 Using the definition of the wedge product
 
-$(f \wedge g)(v_1,\ldots, v_{k + l}) = \sum_{Sh(k,l)} \ \sigma} \operatorname{sgn}(\sigma) 
-f(v_{\sigma(1)},\ldots, v_{\sigma (k)})g(v_{\sigma_{(k + 1)}}, \ldots, v_{\sigma_{k + l}})$ where $Sh(k,l)=S_{k+l}/(S_k\times S_l)$ denotes shuffles,
+$(f \wedge g)(v_1,\ldots, v_{k + l}) = \sum_{\sigma \in Sh(k,l)} \operatorname{sgn}(\sigma) 
+f(v_{\sigma(1)},\ldots, v_{\sigma(k)})g(v_{\sigma(k+1)}, \ldots, v_{\sigma(k+l)})$ where $Sh(k,l)=S_{k+l}/(S_k\times S_l)$ denotes shuffles,
 
 Let $v_1, \ldots, v_{k+l-1}$ be arbitrary vector fields.
 
