@@ -49,7 +49,17 @@ $\iota_X \omega = \iota_{x \frac{\partial}{\partial y}}(dx \wedge dy) = x \cdot 
 </li>
 <li>
 
-$\iota_X(\omega \wedge \eta) = \iota_X(\frac{1}{k!l!} \sum_{\sigma \in S_{k+l}} \text{sgn}(\sigma) \omega(v_{\sigma(1)}, \ldots, v_{\sigma(k)}) \eta(v_{\sigma(k+1)}, \ldots, v_{\sigma(k+l)})) = \frac{1}{k!l!} \sum_{\sigma \in S_{k+l}} \text{sgn}(\sigma) [\omega(X, v_{\sigma(1)}, \ldots, v_{\sigma(k-1)}) \eta(v_{\sigma(k)}, \ldots, v_{\sigma(k+l-1)}) + (-1)^k \omega(v_{\sigma(1)}, \ldots, v_{\sigma(k)}) \eta(X, v_{\sigma(k+1)}, \ldots, v_{\sigma(k+l-1)})] = (\iota_X \omega) \wedge \eta + (-1)^k \omega \wedge (\iota_X \eta)$
+
+Proof
+
+<ol type="a">
+<li>
+
+$\iota_X \omega = \iota_{x \frac{\partial}{\partial y}}(dx \wedge dy) = x \cdot \iota_{\frac{\partial}{\partial y}}(dx \wedge dy) = x\left(dx\left(\frac{\partial}{\partial y}\right)dy - dy\left(\frac{\partial}{\partial y}\right)dx\right) = x\left(0 \cdot dy - 1 \cdot dx\right) = -x dx$
+</li>
+<li>
+Let $v_1, \ldots, v_{k+l-1}$ be arbitrary vector fields. We show that $(\iota_X(\omega \wedge \eta))(v_1, \ldots, v_{k+l-1}) = ((\iota_X \omega) \wedge \eta + (-1)^k \omega \wedge (\iota_X \eta))(v_1, \ldots, v_{k+l-1})$.
+
 </li>
 </ol>
 
