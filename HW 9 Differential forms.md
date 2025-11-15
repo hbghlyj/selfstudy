@@ -44,7 +44,7 @@ Proof
 
 (a) For $X=x \frac{\partial}{\partial y}$ and $\omega=d x \wedge d y$, we compute:
 
-$\iota_X \omega = (d x \wedge d y)(X, -) = (d x \wedge d y)\left(x \frac{\partial}{\partial y}, -\right) = x \frac{∂ x}{∂ y} d y - x \frac{∂ y}{∂ y} d x = -x d x$
+$\iota_X \omega = \iota_{x \frac{\partial}{\partial y}}(dx \wedge dy) = x \cdot \iota_{\frac{\partial}{\partial y}}(dx \wedge dy) = x\left(dx\left(\frac{\partial}{\partial y}\right)dy - dy\left(\frac{\partial}{\partial y}\right)dx\right) = x\left(0 \cdot dy - 1 \cdot dx\right) = -x dx$
 
 (b)
 
