@@ -48,16 +48,7 @@ Proof
 $\iota_X \omega = \iota_{x \frac{\partial}{\partial y}}(dx \wedge dy) = x \cdot \iota_{\frac{\partial}{\partial y}}(dx \wedge dy) = x\left(dx\left(\frac{\partial}{\partial y}\right)dy - dy\left(\frac{\partial}{\partial y}\right)dx\right) = x\left(0 \cdot dy - 1 \cdot dx\right) = -x dx$
 </li>
 <li>
-
-
-Proof
-
-<ol type="a">
-<li>
-
-$\iota_X \omega = \iota_{x \frac{\partial}{\partial y}}(dx \wedge dy) = x \cdot \iota_{\frac{\partial}{\partial y}}(dx \wedge dy) = x\left(dx\left(\frac{\partial}{\partial y}\right)dy - dy\left(\frac{\partial}{\partial y}\right)dx\right) = x\left(0 \cdot dy - 1 \cdot dx\right) = -x dx$
-</li>
-<li>
+  
 Let $v_1, \ldots, v_{k+l-1}$ be arbitrary vector fields. We show that $(\iota_X(\omega \wedge \eta))(v_1, \ldots, v_{k+l-1}) = ((\iota_X \omega) \wedge \eta + (-1)^k \omega \wedge (\iota_X \eta))(v_1, \ldots, v_{k+l-1})$.
 
 </li>
