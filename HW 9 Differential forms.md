@@ -80,7 +80,7 @@ Base Case ($k=1$): For a 1-form $A$, we have
 
 $\left(\mathscr{L}_V \mathscr{L}_W A\right)(X) - \left(\mathscr{L}_W \mathscr{L}_V A\right)(X) = V\left((\mathscr{L}_W A)(X)\right) - W\left((\mathscr{L}_V A)(X)\right) - (\mathscr{L}_W A)([V, X]) + (\mathscr{L}_V A)([W, X])$
 
-$$= V(W(A(X)) - A([W,X])) - W(V(A(X)) - A([V,X])) - (W(A([V,X])) - A([W,[V,X]])) + (V(A([W,X])) - A([V,[W,X]])) \\n= (VW-WV)(A(X)) - A([V,[W,X]]) + A([W,[V,X]]) \\n= [V,W](A(X)) - A([V,[W,X]] - [W,[V,X]]) \\n= [V,W](A(X)) - A([[V,W],X])  (\text{by Jacobi identity}) \\n= (\mathscr{L}_{[V,W]} A)(X) $$
+$`= V(W(A(X)) - A([W,X])) - W(V(A(X)) - A([V,X])) - (W(A([V,X])) - A([W,[V,X]])) + (V(A([W,X])) - A([V,[W,X]])) \\n= (VW-WV)(A(X)) - A([V,[W,X]]) + A([W,[V,X]]) \\n= [V,W](A(X)) - A([V,[W,X]] - [W,[V,X]]) \\n= [V,W](A(X)) - A([[V,W],X])  (\text{by Jacobi identity}) \\n= (\mathscr{L}_{[V,W]} A)(X) `$
 
 Inductive Step:
 Consider the operator $\mathcal{D} = [\mathscr{L}_V, \mathscr{L}_W] - \mathscr{L}_{[V,W]}$. We aim to show that $\mathcal{D}A = 0$ for any $k$-form $A$.
