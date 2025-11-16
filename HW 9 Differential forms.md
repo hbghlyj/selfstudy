@@ -150,7 +150,7 @@ Substituting these into the expression for $\omega$,
 $`\begin{aligned}[t]
 \omega & = x d y \wedge d z + y d z \wedge d x + z d x \wedge d y \\
 & = i_R (dx \wedge dy \wedge dz) \quad \text{where } R = x \frac{\partial}{\partial x} + y \frac{\partial}{\partial y} + z \frac{\partial}{\partial z} \\
-& = i_{\rho \frac{\partial}{\partial \rho}} (\rho^2 \sin \varphi \, d\rho \wedge d\varphi \wedge d\theta) \\
+& \quad \text{In spherical coordinates, } R=\rho \frac{\partial}{\partial \rho} \text{ and } dx \wedge dy \wedge dz = \rho^2 \sin\varphi \, d\rho \wedge d\varphi \wedge d\theta. \\ & = i_{\rho \frac{\partial}{\partial \rho}} (\rho^2 \sin \varphi \, d\rho \wedge d\varphi \wedge d\theta) \\
 & = \rho^2 \sin \varphi \, i_{\rho \frac{\partial}{\partial \rho}} (d\rho \wedge d\varphi \wedge d\theta) \\
 & = \rho^2 \sin \varphi \, (\rho \, d\varphi \wedge d\theta) \\
 & = \rho^3 \sin \varphi \, d\varphi \wedge d\theta
