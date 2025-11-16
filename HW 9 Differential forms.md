@@ -82,13 +82,23 @@ $\left(\mathscr{L}_V \mathscr{L}_W A\right)(X) - \left(\mathscr{L}_W \mathscr{L}
 
 $$= V(W(A(X)) - A([W,X])) - W(V(A(X)) - A([V,X])) - (W(A([V,X])) - A([W,[V,X]])) + (V(A([W,X])) - A([V,[W,X]])) \\n= (VW-WV)(A(X)) - A([V,[W,X]]) + A([W,[V,X]]) \\n= [V,W](A(X)) - A([V,[W,X]] - [W,[V,X]]) \\n= [V,W](A(X)) - A([[V,W],X])  (\text{by Jacobi identity}) \\n= (\mathscr{L}_{[V,W]} A)(X) $$
 
-Inductive Step: Assume the statement holds for $(k-1)$-forms. Let $A$ be a $k$-form. Then, for vector fields $X_1, \ldots, X_k$, we have
+Inductive Step:
+Consider the operator $\mathcal{D} = [\mathscr{L}_V, \mathscr{L}_W] - \mathscr{L}_{[V,W]}$. We aim to show that $\mathcal{D}A = 0$ for any $k$-form $A$.
 
-$\left(\mathscr{L}_V \mathscr{L}_W A\right)(X_1, \ldots, X_k) - \left(\mathscr{L}_W \mathscr{L}_V A\right)(X_1, \ldots, X_k)$
+First, we establish that $\mathcal{D}$ is a derivation of degree 0 on the algebra of differential forms, $\Omega(M)$. This means it satisfies the Leibniz rule: $\mathcal{D}(A \wedge B) = (\mathcal{D}A) \wedge B + A \wedge (\mathcal{D}B)$. (The proof of this property relies on the properties of Lie derivatives and the definition of the Lie bracket of vector fields, and can be shown by direct computation or by using the fact that both $\mathscr{L}_V$ and $\mathscr{L}_W$ are derivations, and the commutator of two derivations is also a derivation).
 
-$= V\left((\mathscr{L}_W A)(X_1, \ldots, X_k)\right) - W\left((\mathscr{L}_V A)(X_1, \ldots, X_k)\right) - (\mathscr{L}_W A)([V, X_1], X_2, \ldots, X_k) + (\mathscr{L}_V A)([W, X_1], X_2, \ldots, X_k) + \cdots + (\text{similar terms for } X_2, \ldots, X_k)$
+Now, we proceed by induction using this property.
+Assume the statement holds for $(k-1)$-forms, i.e., $\mathcal{D}C = 0$ for any $(k-1)$-form $C$.
+Let $A$ be a $k$-form. Locally, any $k$-form can be expressed as a sum of wedge products of 1-forms and $(k-1)$-forms. It suffices to prove the statement for $A = B \wedge C$, where $B$ is a 1-form and $C$ is a $(k-1)$-form.
 
-By the inductive hypothesis and properties of Lie derivatives, this expression simplifies to $\left(\mathscr{L}_{[V, W]} A\right)(X_1, \ldots, X_k)$. Thus, the statement holds for $k$-forms.
+Applying the Leibniz rule for $\mathcal{D}$:
+$\mathcal{D}(A) = \mathcal{D}(B \wedge C) = (\mathcal{D}B) \wedge C + B \wedge (\mathcal{D}C)$.
+
+From the base case ($k=1$), we know that $\mathcal{D}B = 0$ for any 1-form $B$.
+From the inductive hypothesis, we know that $\mathcal{D}C = 0$ for any $(k-1)$-form $C$.
+
+Therefore, $\mathcal{D}(A) = (0) \wedge C + B \wedge (0) = 0$.
+Since $\mathcal{D}A = 0$, it follows that $\mathscr{L}_V \mathscr{L}_W A-\mathscr{L}_W \mathscr{L}_V A=\mathscr{L}_{[V, W]} A$ for $k$-forms. Thus, the statement holds for $k$-forms.
 
 # 5. (Lee 14-6)
 Define a 2-form $\omega$ on $\mathbb{R}^3$ by
