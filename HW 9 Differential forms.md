@@ -180,6 +180,11 @@ $`\begin{aligned}[t]
 </li>
 <li>
 
-
+$`\begin{aligned}[t]
+d\omega & = d(x d y \wedge d z + y d z \wedge d x + z d x \wedge d y) \\
+& = d x \wedge d y \wedge d z + d y \wedge d z \wedge d x + d z \wedge d x \wedge d y \\
+& = 3 d x \wedge d y \wedge d z \\
+& = 3 \rho^2 \sin \varphi \, d\rho \wedge d\varphi \wedge d\theta
+\end{aligned}`$
 </li>
 </ol>
