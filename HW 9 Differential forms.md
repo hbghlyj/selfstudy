@@ -153,8 +153,8 @@ R = \rho(\frac{\partial\rho}{\partial x}\frac{\partial}{\partial x}+\frac{\parti
 \end{aligned}`$
 
 $`\begin{aligned}[t]
-dx \wedge dy \wedge dz &= \rho^2 \sin\varphi \, d\rho \wedge d\varphi \wedge d\theta. \\
-& = i_{\rho \frac{\partial}{\partial \rho}} (\rho^2 \sin \varphi \, d\rho \wedge d\varphi \wedge d\theta)
+dx \wedge dy \wedge dz &=  \\
+& = \rho^2 \sin\varphi \, d\rho \wedge d\varphi \wedge d\theta
 \end{aligned}`$
 
 Substituting these into the expression for $\omega$,
