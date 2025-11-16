@@ -199,4 +199,20 @@ d\omega & = d(\rho^3 \sin \varphi \, d\varphi \wedge d\theta) \\
 
 The results match.
 </li>
+<li>
+
+Consider the point $(1,0,0)$ on $S^2$. At this point, we have
+
+$`\omega = x d y \wedge d z + y d z \wedge d x + z d x \wedge d y = 1 \cdot d y \wedge d z + 0 + 0 = d y \wedge d z`$
+
+The tangent space $T_{(1,0,0)} S^2$ is spanned by the vectors $`\frac{\partial}{\partial y}\big|_{(1,0,0)}`$ and $`\frac{\partial}{\partial z}\big|_{(1,0,0)}`$. Evaluating $\iota_{S^2}^* \omega$ on these vectors gives:
+
+$`\iota_{S^2}^* \omega\left(\frac{\partial}{\partial y}, \frac{\partial}{\partial z}\right) = \omega\left(\frac{\partial}{\partial y}, \frac{\partial}{\partial z}\right) = d y \wedge d z\left(\frac{\partial}{\partial y}, \frac{\partial}{\partial z}\right) = 1`$
+
+Since $\iota_{S^2}^* \omega$ is non-zero at $(1,0,0)$ and is invariant under rotations. To see this invariance by direct computation, note that at any point $p=(x,y,z)$, the form $\omega$ acts on two tangent vectors $v_1, v_2$ as $`\omega_p(v_1, v_2) = p \cdot (v_1 \times v_2)`$. For any rotation $R$, the pullback $`(R^* \omega)_p(v_1, v_2)`$ is defined as $`\omega_{R(p)}(R v_1, R v_2)`$. Since rotations are isometries that preserve both the dot product and the cross product, we have:
+
+$`(R^* \omega)_p(v_1, v_2) = (R p) \cdot ((R v_1) \times (R v_2)) = (R p) \cdot (R (v_1 \times v_2)) = p \cdot (v_1 \times v_2) = \omega_p(v_1, v_2)`$
+
+Thus, $`R^* \omega = \omega`$, demonstrating that $\omega$ is rotationally invariant. It follows that $\iota_{S^2}^* \omega$ is nowhere zero on $S^2$.
+</li>
 </ol>
