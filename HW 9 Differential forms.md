@@ -135,3 +135,14 @@ Compute $d \omega$ in both Cartesian and spherical coordinates and verify that b
 Show that $\iota_{S^2}^* \omega$ is nowhere zero.
 </li>
 </ol>
+Proof
+<ol type="a">
+<li>
+
+$\begin{aligned}
+d x & =\sin \varphi \cos \theta d \rho+\rho \cos \varphi \cos \theta d \varphi-\rho \sin \varphi \sin \theta d \theta \\
+d y & =\sin \varphi \sin \theta d \rho+\rho \cos \varphi \sin \theta d \varphi+\rho \sin \varphi \cos \theta d \theta \\
+d z & =\cos \varphi d\rho-\rho\sin\varphi d\varphi
+\end{aligned}$
+</li>
+</ol>
