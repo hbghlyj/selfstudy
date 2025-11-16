@@ -148,12 +148,17 @@ d z & =\cos \varphi d\rho-\rho\sin\varphi d\varphi
 Let $R = \rho \frac{\partial}{\partial \rho}$
 
 $`\begin{aligned}[t]
-R&= \rho(\frac{\partial\rho}{\partial x}\frac{\partial}{\partial x}+\frac{\partial\rho}{\partial y}\frac{\partial}{\partial y}+\frac{\partial\rho}{\partial z}\frac{\partial}{\partial z})\\
+R&= \rho(\frac{\partial x}{\partial\rho}\frac{\partial}{\partial x}+\frac{\partial y}{\partial\rho}\frac{\partial}{\partial y}+\frac{\partial z}{\partial\rho}\frac{\partial}{\partial z})\\
+R&= \rho(\frac{x}{\rho}\frac{\partial}{\partial x}+\frac{y}{\rho}\frac{\partial}{\partial y}+\frac{z}{\rho}\frac{\partial}{\partial z})\\
 &= x \frac{\partial}{\partial x} + y \frac{\partial}{\partial y} + z \frac{\partial}{\partial z}
 \end{aligned}`$
 
 $`\begin{aligned}[t]
-dx \wedge dy \wedge dz &=  \\
+dx \wedge dy \wedge dz &= \begin{vmatrix}
+\sin \varphi \cos \theta &\rho \cos \varphi \cos \theta &-\rho \sin \varphi \sin \theta \\
+\sin \varphi \sin \theta&\rho \cos \varphi \sin \theta&\rho \sin \varphi \cos \theta \\
+\cos \varphi&-\rho\sin\varphi&0
+\end{vmatrix}d\rho \wedge d\varphi \wedge d\theta\\
 & = \rho^2 \sin\varphi \, d\rho \wedge d\varphi \wedge d\theta
 \end{aligned}`$
 
