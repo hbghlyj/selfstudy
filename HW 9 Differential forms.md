@@ -144,5 +144,20 @@ d x & =\sin \varphi \cos \theta d \rho+\rho \cos \varphi \cos \theta d \varphi-\
 d y & =\sin \varphi \sin \theta d \rho+\rho \cos \varphi \sin \theta d \varphi+\rho \sin \varphi \cos \theta d \theta \\
 d z & =\cos \varphi d\rho-\rho\sin\varphi d\varphi
 \end{aligned}`$
+
+Substituting these into the expression for $\omega$,
+
+$`\begin{aligned}[t]
+\omega & = x d y \wedge d z + y d z \wedge d x + z d x \wedge d y \\
+& = \rho^3 \sin^3 \varphi \cos^2 \theta \, d\varphi \wedge d\theta + \rho^3 \sin^3 \varphi \sin^2 \theta \, d\varphi \wedge d\theta + \rho^3 \sin \varphi \cos^2 \varphi \, d\varphi \wedge d\theta \\
+& = \rho^3 \sin^3 \varphi (\cos^2 \theta + \sin^2 \theta) \, d\varphi \wedge d\theta + \rho^3 \sin \varphi \cos^2 \varphi \, d\varphi \wedge d\theta \\
+& = \rho^3 \sin^3 \varphi \, d\varphi \wedge d\theta + \rho^3 \sin \varphi \cos^2 \varphi \, d\varphi \wedge d\theta \\
+& = \rho^3 \sin \varphi (\sin^2 \varphi + \cos^2 \varphi) \, d\varphi \wedge d\theta \\
+& = \rho^3 \sin \varphi \, d\varphi \wedge d\theta
+\end{aligned}`$
+</li>
+<li>
+
+
 </li>
 </ol>
