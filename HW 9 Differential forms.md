@@ -199,4 +199,16 @@ d\omega & = d(\rho^3 \sin \varphi \, d\varphi \wedge d\theta) \\
 
 The results match.
 </li>
+<li>
+
+Consider the point $(1,0,0)$ on $S^2$. At this point, we have
+
+$`\omega = x d y \wedge d z + y d z \wedge d x + z d x \wedge d y = 1 \cdot d y \wedge d z + 0 + 0 = d y \wedge d z`$
+
+The tangent space $T_{(1,0,0)} S^2$ is spanned by the vectors $\frac{\partial}{\partial y}$ and $\frac{\partial}{\partial z}$. Evaluating $\iota_{S^2}^* \omega$ on these vectors gives:
+
+$`\iota_{S^2}^* \omega\left(\frac{\partial}{\partial y}, \frac{\partial}{\partial z}\right) = \omega\left(\frac{\partial}{\partial y}, \frac{\partial}{\partial z}\right) = d y \wedge d z\left(\frac{\partial}{\partial y}, \frac{\partial}{\partial z}\right) = 1`$
+
+Since $\iota_{S^2}^* \omega$ is non-zero at $(1,0,0)$ and is invariant under rotations (due to the symmetry of $\omega$), it follows that $\iota_{S^2}^* \omega$ is nowhere zero on $S^2$.
+</li>
 </ol>
