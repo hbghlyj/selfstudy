@@ -145,12 +145,23 @@ d y & =\sin \varphi \sin \theta d \rho+\rho \cos \varphi \sin \theta d \varphi+\
 d z & =\cos \varphi d\rho-\rho\sin\varphi d\varphi
 \end{aligned}`$
 
+Let $R = \rho \frac{\partial}{\partial \rho}$
+
+$`\begin{aligned}[t]
+R = \rho(\frac{\partial\rho}{\partial x}\frac{\partial}{\partial x}+\frac{\partial\rho}{\partial y}\frac{\partial}{\partial y}+\frac{\partial\rho}{\partial z}\frac{\partial}{\partial z})\\
+&= x \frac{\partial}{\partial x} + y \frac{\partial}{\partial y} + z \frac{\partial}{\partial z}
+\end{aligned}`$
+
+$`\begin{aligned}[t]
+dx \wedge dy \wedge dz &= \rho^2 \sin\varphi \, d\rho \wedge d\varphi \wedge d\theta. \\
+& = i_{\rho \frac{\partial}{\partial \rho}} (\rho^2 \sin \varphi \, d\rho \wedge d\varphi \wedge d\theta)
+\end{aligned}`$
+
 Substituting these into the expression for $\omega$,
 
 $`\begin{aligned}[t]
 \omega & = x d y \wedge d z + y d z \wedge d x + z d x \wedge d y \\
-& = i_R (dx \wedge dy \wedge dz) \quad \text{where } R = x \frac{\partial}{\partial x} + y \frac{\partial}{\partial y} + z \frac{\partial}{\partial z} \\
-& \quad \text{In spherical coordinates, } R=\rho \frac{\partial}{\partial \rho} \text{ and } dx \wedge dy \wedge dz = \rho^2 \sin\varphi \, d\rho \wedge d\varphi \wedge d\theta. \\ & = i_{\rho \frac{\partial}{\partial \rho}} (\rho^2 \sin \varphi \, d\rho \wedge d\varphi \wedge d\theta) \\
+& = i_R (dx \wedge dy \wedge dz) \\
 & = \rho^2 \sin \varphi \, i_{\rho \frac{\partial}{\partial \rho}} (d\rho \wedge d\varphi \wedge d\theta) \\
 & = \rho^2 \sin \varphi \, (\rho \, d\varphi \wedge d\theta) \\
 & = \rho^3 \sin \varphi \, d\varphi \wedge d\theta
