@@ -162,6 +162,7 @@ Substituting these into the expression for $\omega$,
 $`\begin{aligned}[t]
 \omega & = x d y \wedge d z + y d z \wedge d x + z d x \wedge d y \\
 & = i_R (dx \wedge dy \wedge dz) \\
+& = i_{\rho \frac{\partial}{\partial \rho}} (\rho^2 \sin \varphi \, d\rho \wedge d\varphi \wedge d\theta) \\
 & = \rho^2 \sin \varphi \, i_{\rho \frac{\partial}{\partial \rho}} (d\rho \wedge d\varphi \wedge d\theta) \\
 & = \rho^2 \sin \varphi \, (\rho \, d\varphi \wedge d\theta) \\
 & = \rho^3 \sin \varphi \, d\varphi \wedge d\theta
