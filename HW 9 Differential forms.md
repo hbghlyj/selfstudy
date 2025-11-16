@@ -159,6 +159,11 @@ dx \wedge dy \wedge dz &= \begin{vmatrix}
 \sin \varphi \sin \theta&\rho \cos \varphi \sin \theta&\rho \sin \varphi \cos \theta \\
 \cos \varphi&-\rho\sin\varphi&0
 \end{vmatrix}d\rho \wedge d\varphi \wedge d\theta\\
+&= \rho^2 \sin\varphi \begin{vmatrix}
+\sin \varphi \cos \theta & \cos \varphi \cos \theta &-\sin \theta \\
+\sin \varphi \sin \theta& \cos \varphi \sin \theta&\cos \theta \\
+\cos \varphi&-\sin\varphi&0
+\end{vmatrix}d\rho \wedge d\varphi \wedge d\theta\\
 & = \rho^2 \sin\varphi \, d\rho \wedge d\varphi \wedge d\theta
 \end{aligned}`$
 
