@@ -149,10 +149,10 @@ Substituting these into the expression for $\omega$,
 
 $`\begin{aligned}[t]
 \omega & = x d y \wedge d z + y d z \wedge d x + z d x \wedge d y \\
-& = \rho^3 \sin^3 \varphi \cos^2 \theta \, d\varphi \wedge d\theta + \rho^3 \sin^3 \varphi \sin^2 \theta \, d\varphi \wedge d\theta + \rho^3 \sin \varphi \cos^2 \varphi \, d\varphi \wedge d\theta \\
-& = \rho^3 \sin^3 \varphi (\cos^2 \theta + \sin^2 \theta) \, d\varphi \wedge d\theta + \rho^3 \sin \varphi \cos^2 \varphi \, d\varphi \wedge d\theta \\
-& = \rho^3 \sin^3 \varphi \, d\varphi \wedge d\theta + \rho^3 \sin \varphi \cos^2 \varphi \, d\varphi \wedge d\theta \\
-& = \rho^3 \sin \varphi (\sin^2 \varphi + \cos^2 \varphi) \, d\varphi \wedge d\theta \\
+& = i_R (dx \wedge dy \wedge dz) \quad \text{where } R = x \frac{\partial}{\partial x} + y \frac{\partial}{\partial y} + z \frac{\partial}{\partial z} \\
+& = i_{\rho \frac{\partial}{\partial \rho}} (\rho^2 \sin \varphi \, d\rho \wedge d\varphi \wedge d\theta) \\
+& = \rho^2 \sin \varphi \, i_{\rho \frac{\partial}{\partial \rho}} (d\rho \wedge d\varphi \wedge d\theta) \\
+& = \rho^2 \sin \varphi \, (\rho \, d\varphi \wedge d\theta) \\
 & = \rho^3 \sin \varphi \, d\varphi \wedge d\theta
 \end{aligned}`$
 </li>
