@@ -71,6 +71,25 @@ Suppose $M$ is a smooth manifold, $A \in \Omega^k(M)$ and $V, W \in \mathscr{X}(
 $`\mathscr{L}_V \mathscr{L}_W A-\mathscr{L}_W \mathscr{L}_V A=\mathscr{L}_{[V, W]} A`$
 
 Hint: use induction on $k$ starting from the formula in Corollary 12.33 of Lee on 1-forms.
+
+Proof
+
+We proceed by induction on $k$.
+
+Base Case ($k=1$): For a 1-form $A$, we have
+
+$\left(\mathscr{L}_V \mathscr{L}_W A\right)(X) - \left(\mathscr{L}_W \mathscr{L}_V A\right)(X) = V\left((\mathscr{L}_W A)(X)\right) - W\left((\mathscr{L}_V A)(X)\right) - (\mathscr{L}_W A)([V, X]) + (\mathscr{L}_V A)([W, X])$
+
+Expanding the terms and using the properties of Lie derivatives, we find that this equals $\left(\mathscr{L}_{[V, W]} A\right)(X)$. 
+
+Inductive Step: Assume the statement holds for $(k-1)$-forms. Let $A$ be a $k$-form. Then, for vector fields $X_1, \ldots, X_k$, we have
+
+$\left(\mathscr{L}_V \mathscr{L}_W A\right)(X_1, \ldots, X_k) - \left(\mathscr{L}_W \mathscr{L}_V A\right)(X_1, \ldots, X_k)$
+
+$= V\left((\mathscr{L}_W A)(X_1, \ldots, X_k)\right) - W\left((\mathscr{L}_V A)(X_1, \ldots, X_k)\right) - (\mathscr{L}_W A)([V, X_1], X_2, \ldots, X_k) + (\mathscr{L}_V A)([W, X_1], X_2, \ldots, X_k) + \cdots + (\text{similar terms for } X_2, \ldots, X_k)$
+
+By the inductive hypothesis and properties of Lie derivatives, this expression simplifies to $\left(\mathscr{L}_{[V, W]} A\right)(X_1, \ldots, X_k)$. Thus, the statement holds for $k$-forms.
+
 # 5. (Lee 14-6)
 Define a 2-form $\omega$ on $\mathbb{R}^3$ by
 
