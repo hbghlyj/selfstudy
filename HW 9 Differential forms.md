@@ -148,7 +148,7 @@ d z & =\cos \varphi d\rho-\rho\sin\varphi d\varphi
 Let $R = \rho \frac{\partial}{\partial \rho}$
 
 $`\begin{aligned}[t]
-R = \rho(\frac{\partial\rho}{\partial x}\frac{\partial}{\partial x}+\frac{\partial\rho}{\partial y}\frac{\partial}{\partial y}+\frac{\partial\rho}{\partial z}\frac{\partial}{\partial z})\\
+R&= \rho(\frac{\partial\rho}{\partial x}\frac{\partial}{\partial x}+\frac{\partial\rho}{\partial y}\frac{\partial}{\partial y}+\frac{\partial\rho}{\partial z}\frac{\partial}{\partial z})\\
 &= x \frac{\partial}{\partial x} + y \frac{\partial}{\partial y} + z \frac{\partial}{\partial z}
 \end{aligned}`$
 
