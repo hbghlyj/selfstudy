@@ -78,7 +78,7 @@ We proceed by induction on $k$.
 
 Base Case ($k=1$): For a 1-form $A$, we have
 
-$`\left(\mathscr{L}_V \mathscr{L}_W A\right)(X) - \left(\mathscr{L}_W \mathscr{L}_V A\right)(X) = V\left((\mathscr{L}_W A)(X)\right) - W\left((\mathscr{L}_V A)(X)\right) - (\mathscr{L}_W A)([V, X]) + (\mathscr{L}_V A)([W, X])`$
+$`\left(\mathscr{L}_V \mathscr{L}_W A\right)(X) - \left(\mathscr{L}_W \mathscr{L}_V A\right)(X) = V\left((\mathscr{L}_W A)(X)\right) - W\left((\mathscr{L}_V A)(X)\right) - (\mathscr{L}_W A)([V, X]) + (\mathscr{L}_V A)([W, X])`$ (by Corollary 12.33)
 
 $`= V(W(A(X)) - A([W,X])) - W(V(A(X)) - A([V,X])) - (W(A([V,X])) - A([W,[V,X]])) + (V(A([W,X])) - A([V,[W,X]]))`$
 
@@ -88,7 +88,7 @@ $`= [V,W](A(X)) - A([V,[W,X]] - [W,[V,X]])`$
 
 $`= [V,W](A(X)) - A([[V,W],X])`$ (by Jacobi identity)
 
-$`= (\mathscr{L}_{[V,W]} A)(X) `$
+$`= (\mathscr{L}_{[V,W]} A)(X) `$ (by Corollary 12.33)
 
 Inductive Step:
 
