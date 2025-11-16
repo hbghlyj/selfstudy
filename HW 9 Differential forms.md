@@ -205,7 +205,7 @@ Consider the point $(1,0,0)$ on $S^2$. At this point, we have
 
 $`\omega = x d y \wedge d z + y d z \wedge d x + z d x \wedge d y = 1 \cdot d y \wedge d z + 0 + 0 = d y \wedge d z`$
 
-The tangent space $T_{(1,0,0)} S^2$ is spanned by the vectors $\frac{\partial}{\partial y}\big|_{(1,0,0)}$ and $\frac{\partial}{\partial z}\big|_{(1,0,0)}$. Evaluating $\iota_{S^2}^* \omega$ on these vectors gives:
+The tangent space $T_{(1,0,0)} S^2$ is spanned by the vectors $`\frac{\partial}{\partial y}\big|_{(1,0,0)}`$ and $`\frac{\partial}{\partial z}\big|_{(1,0,0)}`$. Evaluating $\iota_{S^2}^* \omega$ on these vectors gives:
 
 $`\iota_{S^2}^* \omega\left(\frac{\partial}{\partial y}, \frac{\partial}{\partial z}\right) = \omega\left(\frac{\partial}{\partial y}, \frac{\partial}{\partial z}\right) = d y \wedge d z\left(\frac{\partial}{\partial y}, \frac{\partial}{\partial z}\right) = 1`$
 
