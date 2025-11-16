@@ -185,15 +185,18 @@ d\omega & = d(x d y \wedge d z + y d z \wedge d x + z d x \wedge d y) \\
 & = d x \wedge d y \wedge d z + d y \wedge d z \wedge d x + d z \wedge d x \wedge d y \\
 & = 3 d x \wedge d y \wedge d z
 \end{aligned}`$
+
 In spherical coordinates, this is $`3 \rho^2 \sin \varphi \, d\rho \wedge d\varphi \wedge d\theta`$.
 
 To verify, we also compute $d\omega$ from its spherical representation $`\omega = \rho^3 \sin \varphi \, d\varphi \wedge d\theta`$:
+
 $`\begin{aligned}[t]
 d\omega & = d(\rho^3 \sin \varphi \, d\varphi \wedge d\theta) \\
 & = d(\rho^3 \sin \varphi) \wedge d\varphi \wedge d\theta \\
 & = (3\rho^2 \sin\varphi \, d\rho + \rho^3 \cos\varphi \, d\varphi) \wedge d\varphi \wedge d\theta \\
 & = 3\rho^2 \sin\varphi \, d\rho \wedge d\varphi \wedge d\theta
 \end{aligned}`$
+
 The results match.
 </li>
 </ol>
