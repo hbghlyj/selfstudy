@@ -78,12 +78,12 @@ We proceed by induction on $k$.
 
 Base Case ($k=1$): For a 1-form $A$, we have
 
-$\left(\mathscr{L}_V \mathscr{L}_W A\right)(X) - \left(\mathscr{L}_W \mathscr{L}_V A\right)(X) = V\left((\mathscr{L}_W A)(X)\right) - W\left((\mathscr{L}_V A)(X)\right) - (\mathscr{L}_W A)([V, X]) + (\mathscr{L}_V A)([W, X])$
+$`\left(\mathscr{L}_V \mathscr{L}_W A\right)(X) - \left(\mathscr{L}_W \mathscr{L}_V A\right)(X) = V\left((\mathscr{L}_W A)(X)\right) - W\left((\mathscr{L}_V A)(X)\right) - (\mathscr{L}_W A)([V, X]) + (\mathscr{L}_V A)([W, X])`$
 
 $`= V(W(A(X)) - A([W,X])) - W(V(A(X)) - A([V,X])) - (W(A([V,X])) - A([W,[V,X]])) + (V(A([W,X])) - A([V,[W,X]])) \\n= (VW-WV)(A(X)) - A([V,[W,X]]) + A([W,[V,X]]) \\n= [V,W](A(X)) - A([V,[W,X]] - [W,[V,X]]) \\n= [V,W](A(X)) - A([[V,W],X])  (\text{by Jacobi identity}) \\n= (\mathscr{L}_{[V,W]} A)(X) `$
 
 Inductive Step:
-Consider the operator $\mathcal{D} = [\mathscr{L}_V, \mathscr{L}_W] - \mathscr{L}_{[V,W]}$. We aim to show that $\mathcal{D}A = 0$ for any $k$-form $A$.
+Consider the operator $`\mathcal{D} = [\mathscr{L}_V, \mathscr{L}_W] - \mathscr{L}_{[V,W]}`$. We aim to show that $\mathcal{D}A = 0$ for any $k$-form $A$.
 
 First, we establish that $\mathcal{D}$ is a derivation of degree 0 on the algebra of differential forms, $\Omega(M)$. This means it satisfies the Leibniz rule: $\mathcal{D}(A \wedge B) = (\mathcal{D}A) \wedge B + A \wedge (\mathcal{D}B)$. (The proof of this property relies on the properties of Lie derivatives and the definition of the Lie bracket of vector fields, and can be shown by direct computation or by using the fact that both $\mathscr{L}_V$ and $\mathscr{L}_W$ are derivations, and the commutator of two derivations is also a derivation).
 
