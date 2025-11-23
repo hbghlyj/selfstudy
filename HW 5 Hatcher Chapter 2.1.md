@@ -40,17 +40,12 @@ Now, we compute the homology groups for each subcomplex $A$ and the correspondin
     $\dots \rightarrow 0 \rightarrow 0 \rightarrow H_2(X/e^2_1) \rightarrow \mathbb{Z} \rightarrow 0 \rightarrow H_1(X/e^2_1) \rightarrow \mathbb{Z} \rightarrow \mathbb{Z} \rightarrow H_0(X/e^2_1) \rightarrow 0$
     
     From this, we deduce that $H_2(X/e^2_1) \cong 0$, $H_1(X/e^2_1) \cong \mathbb{Z}/2\mathbb{Z}$, and $H_0(X/e^2_1) \cong \mathbb{Z}$.
-4. For the other 2-cell (say $e^2_2$, attached via degree 3 map):
+4. For the subcomplex $A_2 = S^1 \cup e^2_2$ (attached via degree 3 map):
 
-    The Mayer-Vietoris sequence reads
-    
-    $\dots \rightarrow H_2(S^1) \rightarrow H_2(e^2_2) \oplus H_2(\text{point}) \rightarrow H_2(X/e^2_2) \rightarrow H_1(S^1) \rightarrow H_1(e^2_2) \oplus H_1(\text{point}) \rightarrow H_1(X/e^2_2) \rightarrow H_0(S^1) \rightarrow H_0(e^2_2) \oplus H_0(\text{point}) \rightarrow H_0(X/e^2_2) \rightarrow 0$
-    
-    After plugging in the known homology groups, we find:
-    
-    $\dots \rightarrow 0 \rightarrow 0 \rightarrow H_2(X/e^2_2) \rightarrow \mathbb{Z} \rightarrow 0 \rightarrow H_1(X/e^2_2) \rightarrow \mathbb{Z} \rightarrow \mathbb{Z} \rightarrow H_0(X/e^2_2) \rightarrow 0$
-    
-    From this, we deduce that $H_2(X/e^2_2) \cong 0$, $H_1(X/e^2_2) \cong \mathbb{Z}/3\mathbb{Z}$, and $H_0(X/e^2_2) \cong \mathbb{Z}$.
+    The homology groups of the subcomplex $A_2$ are $H_0(A_2) \cong \mathbb{Z}$, $H_1(A_2) \cong \mathbb{Z}/3\mathbb{Z}$, and $H_n(A_2) = 0$ for $n > 1$.
+
+    For the quotient complex $X/A_2$:
+    The space $X/A_2$ is also homotopy equivalent to $S^2 \vee S^1$, so its homology groups are $H_0(X/A_2) \cong \mathbb{Z}$, $H_1(X/A_2) \cong \mathbb{Z}$, $H_2(X/A_2) \cong \mathbb{Z}$, and $H_n(X/A_2) = 0$ for $n > 2$.
 4. For both 2-cells (the entire complex $X$): Mayer-Vietoris sequence reads
     
     $\dots \rightarrow H_2(S^1) \rightarrow H_2(e^2_1) \oplus H_2(e^2_2) \rightarrow H_2(X) \rightarrow H_1(S^1) \rightarrow H_1(e^2_1) \oplus H_1(e^2_2) \rightarrow H_1(X) \rightarrow H_0(S^1) \rightarrow H_0(e^2_1) \oplus H_0(e^2_2) \rightarrow H_0(X) \rightarrow 0$
