@@ -67,7 +67,7 @@ Now, we compute the homology groups for each subcomplex $A$ and the correspondin
 
    $\dots \rightarrow H_2(S^1) \rightarrow H_2(e^2_1) \oplus H_2(e^2_2) \rightarrow H_2(X) \rightarrow H_1(S^1) \rightarrow H_1(e^2_1) \oplus H_1(e^2_2) \rightarrow H_1(X) \rightarrow H_0(S^1) \rightarrow H_0(e^2_1) \oplus H_0(e^2_2) \rightarrow H_0(X) \rightarrow 0$
    
-   After plugin in the known homology groups, we find:
+   After plugging in the known homology groups, we find:
    
    $\dots \rightarrow 0 \rightarrow 0 \rightarrow H_2(X) \rightarrow \mathbb{Z} \rightarrow 0 \rightarrow H_1(X) \rightarrow \mathbb{Z} \rightarrow \mathbb{Z} \rightarrow H_0(X) \rightarrow 0$
    
