@@ -18,21 +18,30 @@ To compute the homology groups of all the subcomplexes $A \subset X$ and the cor
 
 All subcomplexes $A$ of $X$ are:
 1. The trivial subcomplex (0-cell only).
-2. The 1-cell (the circle).
-3. One of the 2-cells.
+2. The 0-cell and the 1-cell (the 1-skeleton, which is $S^1$).
+3. The 1-skeleton and one of the 2-cells.
 4. Both 2-cells (the entire complex $X$).
 
 Now, we compute the homology groups for each subcomplex $A$ and the corresponding quotient complexes $X / A$:
 1. For the trivial subcomplex:
 
    $H_0(A) \cong \mathbb{Z}$, $H_n(A) = 0$ for $n > 0$.
-2. For the 1-cell:
+2. For the 1-skeleton $S^1$:
 
-   $H_0(A) \cong \mathbb{Z}$, $H_1(A) \cong \mathbb{Z}$, $H_n(A) = 0$ for $n > 1$.
-3. For one of the 2-cells:
+3. For the subcomplex $A_1 = S^1 \cup e^2_1$ (attached via degree 2 map):
 
-   Since a 2-cell is contractible, we have $H_0(A) \cong \mathbb{Z}$, $H_n(A) = 0$ for $n > 0$.
-4. For both 2-cells (the entire complex $X$): Mayer-Vietoris sequence reads
+    The homology groups of the subcomplex $A_1$ can be computed using the long exact sequence of the pair $(A_1, S^1)$, which gives $H_0(A_1) \cong \mathbb{Z}$, $H_1(A_1) \cong \mathbb{Z}/2\mathbb{Z}$, and $H_n(A_1) = 0$ for $n > 1$.
+
+    For the quotient complex $X/A_1$:
+    The space $X/A_1 = (S^1 \cup e^2_1 \cup e^2_2) / (S^1 \cup e^2_1)$ is homotopy equivalent to $S^2 \vee S^1$.
+    Thus, the homology groups are $H_0(X/A_1) \cong \mathbb{Z}$, $H_1(X/A_1) \cong \mathbb{Z}$, $H_2(X/A_1) \cong \mathbb{Z}$, and $H_n(X/A_1) = 0$ for $n > 2$.
+4. For the subcomplex $A_2 = S^1 \cup e^2_2$ (attached via degree 3 map):
+
+    The homology groups of the subcomplex $A_2$ are $H_0(A_2) \cong \mathbb{Z}$, $H_1(A_2) \cong \mathbb{Z}/3\mathbb{Z}$, and $H_n(A_2) = 0$ for $n > 1$.
+
+    For the quotient complex $X/A_2$:
+    The space $X/A_2$ is also homotopy equivalent to $S^2 \vee S^1$, so its homology groups are $H_0(X/A_2) \cong \mathbb{Z}$, $H_1(X/A_2) \cong \mathbb{Z}$, $H_2(X/A_2) \cong \mathbb{Z}$, and $H_n(X/A_2) = 0$ for $n > 2$.
+5. For both 2-cells (the entire complex $X$): Mayer-Vietoris sequence reads
     
     $\dots \rightarrow H_2(S^1) \rightarrow H_2(e^2_1) \oplus H_2(e^2_2) \rightarrow H_2(X) \rightarrow H_1(S^1) \rightarrow H_1(e^2_1) \oplus H_1(e^2_2) \rightarrow H_1(X) \rightarrow H_0(S^1) \rightarrow H_0(e^2_1) \oplus H_0(e^2_2) \rightarrow H_0(X) \rightarrow 0$
    
