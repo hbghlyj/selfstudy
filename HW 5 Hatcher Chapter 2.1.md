@@ -28,7 +28,7 @@ Now, we compute the homology groups for each subcomplex $A$ and the correspondin
    $X/A = X$.
 2. For the 1-skeleton $S^1$:
 
-   $X/A = S^2\vee S^2$
+   $X/A = S^2 \vee S^2$.
 3. For the subcomplex $A_1 = S^1 \cup e^2_1$ (attached via degree 2 map):
 
    $X/A=S^2$.
