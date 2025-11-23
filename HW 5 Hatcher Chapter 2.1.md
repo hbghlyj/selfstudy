@@ -26,18 +26,51 @@ Now, we compute the homology groups for each subcomplex $A$ and the correspondin
 1. For the trivial subcomplex:
 
    $X/A = X$.
-2. For the 1-skeleton $S^1$:
+
+   $H_0(A) \cong \mathbb{Z}$, $H_n(A) = 0$ for $n > 0$.
+3. For the 1-skeleton $S^1$:
 
    $X/A = S^2 \vee S^2$.
-3. For the subcomplex $S^1 \cup e^2_1$ (attached via degree 2 map):
+   
+   $H_0(A) \cong \mathbb{Z}$, $H_1(A) \cong \mathbb{Z}$, $H_n(A) = 0$ for $n > 1$.
+5. For the subcomplex $S^1 \cup e^2_1$ (attached via degree 2 map):
 
    $X/A = S^2$.
-4. For the subcomplex $S^1 \cup e^2_2$ (attached via degree 3 map):
+   
+   The Mayer-Vietoris sequence reads
+   
+   $\dots \rightarrow H_2(S^1) \rightarrow H_2(e^2_1) \oplus H_2(\text{point}) \rightarrow H_2(X/e^2_1) \rightarrow H_1(S^1) \rightarrow H_1(e^2_1) \oplus H_1(\text{point}) \rightarrow H_1(X/e^2_1) \rightarrow H_0(S^1) \rightarrow H_0(e^2_1) \oplus H_0(\text{point}) \rightarrow H_0(X/e^2_1) \rightarrow 0$
+   
+   After plugging in the known homology groups, we find:
+   
+   $\dots \rightarrow 0 \rightarrow 0 \rightarrow H_2(X/e^2_1) \rightarrow \mathbb{Z} \rightarrow 0 \rightarrow H_1(X/e^2_1) \rightarrow \mathbb{Z} \rightarrow \mathbb{Z} \rightarrow H_0(X/e^2_1) \rightarrow 0$
+   
+   From this, we deduce that $H_2(X/e^2_1) \cong 0$, $H_1(X/e^2_1) \cong \mathbb{Z}/2\mathbb{Z}$, and $H_0(X/e^2_1) \cong \mathbb{Z}$.
+
+6. For the subcomplex $S^1 \cup e^2_2$ (attached via degree 3 map):
 
    $X/A = S^2$.
-5. For the entire complex $X$:
+   
+   The Mayer-Vietoris sequence reads
+   
+   $\dots \rightarrow H_2(S^1) \rightarrow H_2(e^2_2) \oplus H_2(\text{point}) \rightarrow H_2(X/e^2_2) \rightarrow H_1(S^1) \rightarrow H_1(e^2_2) \oplus H_1(\text{point}) \rightarrow H_1(X/e^2_2) \rightarrow H_0(S^1) \rightarrow H_0(e^2_2) \oplus H_0(\text{point}) \rightarrow H_0(X/e^2_2) \rightarrow 0$
+   
+   After plugging in the known homology groups, we find:
+   
+   $\dots \rightarrow 0 \rightarrow 0 \rightarrow H_2(X/e^2_2) \rightarrow \mathbb{Z} \rightarrow 0 \rightarrow H_1(X/e^2_2) \rightarrow \mathbb{Z} \rightarrow \mathbb{Z} \rightarrow H_0(X/e^2_2) \rightarrow 0$
+   
+   From this, we deduce that $H_2(X/e^2_2) \cong 0$, $H_1(X/e^2_2) \cong \mathbb{Z}/3\mathbb{Z}$, and $H_0(X/e^2_2) \cong \mathbb{Z}$.
+
+8. For the entire complex $X$:
     
    $X/A = \text{a single point}$.
+
+   The homology of $X$ is computed using its cellular chain complex $0 \to \mathbb{Z}^2 \xrightarrow{d_2} \mathbb{Z} \xrightarrow{d_1} \mathbb{Z} \to 0$, where the boundary map $d_2$ sends the generators of the two 2-cells to $2$ and $3$ times the generator of the 1-cell, respectively.
+   
+   This gives the homology groups:
+   $H_0(X) \cong \mathbb{Z}$
+   $H_1(X) = \ker(d_1)/\mathrm{im}(d_2) = \mathbb{Z}/\langle 2,3 \rangle\mathbb{Z} = 0$
+   $H_2(X) = \ker(d_2) \cong \mathbb{Z}$
 </li>
 <li>
 
