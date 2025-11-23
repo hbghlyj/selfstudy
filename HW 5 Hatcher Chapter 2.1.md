@@ -69,13 +69,12 @@ To show that $X$ is homotopy equivalent to the 2-sphere, consider the attaching 
 
 To construct an explicit homotopy equivalence, we can define a map $f: X \to S^2$ that induces an isomorphism on all homology groups. By Whitehead's theorem, such a map is a homotopy equivalence. We construct $f$ as a composition $f = h \circ q$.
 
-**Step A: The Quotient Map $q$**
-
-First, consider the quotient map $q: X \to X / S^1$ that collapses the 1-skeleton $S^1$ to a point. The quotient space $X / S^1$ is the wedge sum of two 2-spheres, $S^2 \vee S^2$. Let's denote these spheres as $S^2_1$ and $S^2_2$, corresponding to the 2-cells $e^2_1$ and $e^2_2$.
-
-**Step B: The Map $h$**
-
-Next, define a map $h: S^2_1 \vee S^2_2 \to S^2$. We can specify this map by its degrees on each sphere. Let the degree of $h$ on $S^2_1$ be $k_1$ and on $S^2_2$ be $k_2$.
+1. **The Quotient Map $q$**
+   
+   First, consider the quotient map $q: X \to X / S^1$ that collapses the 1-skeleton $S^1$ to a point. The quotient space $X / S^1$ is the wedge sum of two 2-spheres, $S^2 \vee S^2$. Let's denote these spheres as $S^2_1$ and $S^2_2$, corresponding to the 2-cells $e^2_1$ and $e^2_2$.
+2. **The Map $h$**
+   
+   Next, define a map $h: S^2_1 \vee S^2_2 \to S^2$. We can specify this map by its degrees on each sphere. Let the degree of $h$ on $S^2_1$ be $k_1$ and on $S^2_2$ be $k_2$.
 
 **The Composition $f$ and Homology**
 
@@ -83,7 +82,7 @@ The composite map is $f = h \circ q: X \to S^2$. We need to choose $k_1$ and $k_
 
 The generator of $H_2(X) \cong \mathbb{Z}$ is represented by the cellular chain $3e_1^2 - 2e_2^2$. The map $q_*$ on $H_2$ sends this generator to the element $(3, -2)$ in $H_2(S^2 \vee S^2) \cong \mathbb{Z} \oplus \mathbb{Z}$. The map $h_*$ sends an element $(n, m) \in \mathbb{Z} \oplus \mathbb{Z}$ to $k_1 n + k_2 m \in H_2(S^2) \cong \mathbb{Z}$.
 
-Therefore, the induced map $f_* = h_* \circ q_*$ sends the generator of $H_2(X)$ to $k_1(3) + k_2(-2) = 3k_1 - 2k_2$. For $f_*$ to be an isomorphism, we need this value to be a generator of $\mathbb{Z}$, i.e., $3k_1 - 2k_2 = \pm 1$. A simple integer solution is $k_1=1, k_2=1$. With this choice, $f$ is a homotopy equivalence.
+Therefore, the induced map $`f_* = h_* \circ q_*`$ sends the generator of $H_2(X)$ to $k_1(3) + k_2(-2) = 3k_1 - 2k_2$. For $f_*$ to be an isomorphism, we need this value to be a generator of $\mathbb{Z}$, i.e., $3k_1 - 2k_2 = \pm 1$. A simple integer solution is $k_1=1, k_2=1$. With this choice, $f$ is a homotopy equivalence.
 
 The quotient map for the trivial 0-cell subcomplex, $X \to X/\{e^0\}$, is a homotopy equivalence because one is collapsing a contractible subcomplex. For the 1-skeleton subcomplex $S^1$, the quotient map $X \to X/S^1$ is not a homotopy equivalence, since $H_2(X/S^1) \cong \mathbb{Z} \oplus \mathbb{Z}$ while $H_2(X) \cong \mathbb{Z}$.
 
