@@ -47,7 +47,7 @@ Now, we compute the homology groups for each subcomplex $A$ and the correspondin
 To show that $X$ is homotopy equivalent to the 2-sphere,
 
 
-The map $X \rightarrow X / *=X$ is obviously a homotopy equivalence. Since $H_2\left(X / S^1\right) \cong \mathbb{Z} \oplus \mathbb{Z}$ but $H_2(X) \cong \mathbb{Z}, X \rightarrow X / S^1$ cannot be a homotopy equivalence.
+The quotient map for the trivial 0-cell subcomplex, $X \to X/\{e^0\}$, is a homotopy equivalence because one is collapsing a contractible subcomplex. For the 1-skeleton subcomplex $S^1$, the quotient map $X \to X/S^1$ is not a homotopy equivalence, since $H_2(X/S^1) \cong \mathbb{Z} \oplus \mathbb{Z}$ while $H_2(X) \cong \mathbb{Z}.
 
 For $X / B$ we cannot use a similar argument, since both $X$ and $X / B$ have the same homology. However, the quotient map $q: X \rightarrow X / B$ is not a homotopy equivalence. To show this, we compare the two cellular chain complexes. The map $q$ induces a commutative diagram
 
