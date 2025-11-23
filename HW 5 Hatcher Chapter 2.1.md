@@ -48,7 +48,7 @@ Now, we compute the homology groups for each subcomplex $A$ and the correspondin
    The homology groups of the quotient are $H_0(X/A) \cong \mathbb{Z}$, $H_2(X/A) \cong \mathbb{Z}$, and $H_n(X/A) = 0$ for $n \notin \{0, 2\}$.
    The subcomplex $A = S^1 \cup e^2_1$ is homeomorphic to the real projective plane, $\mathbb{RP}^2$. Its homology groups, computed via cellular homology, are $H_0(A) \cong \mathbb{Z}$, $H_1(A) \cong \mathbb{Z}/2\mathbb{Z}$, and $H_n(A) = 0$ for $n > 1$.
 
-6. For the entire complex $X$:
+5. For the entire complex $X$:
     
    $X/A = \text{a single point}$.
 
