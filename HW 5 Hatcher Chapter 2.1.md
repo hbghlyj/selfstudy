@@ -86,7 +86,7 @@ To construct an explicit homotopy equivalence, we can define a map $f: X \to S^2
 
 The quotient map for the trivial 0-cell subcomplex, $`X \to X/\{e^0\}`$, is a homotopy equivalence because one is collapsing a contractible subcomplex. For the 1-skeleton subcomplex $S^1$, the quotient map $X \to X/S^1$ is not a homotopy equivalence, since $`H_2(X/S^1) \cong \mathbb{Z} \oplus \mathbb{Z}`$ while $`H_2(X) \cong \mathbb{Z}`$.
 
-For $X / B$ we cannot use a similar argument, since both $X$ and $X / B$ have the same homology. However, the quotient map $q: X \rightarrow X / B$ is not a homotopy equivalence. To show this, we compare the two cellular chain complexes. The map $q$ induces a commutative diagram
+For $X / S^1\cup e_2^2$ we cannot use a similar argument, since both $X$ and $X / S^1\cup e_2^2$ have the same homology. However, the quotient map $q: X \rightarrow X / S^1\cup e_2^2$ is not a homotopy equivalence. To show this, we compare the two cellular chain complexes. The map $q$ induces a commutative diagram
 
 $`\begin{CD}
 \mathbb{Z}[e_1^2, e_2^2] @>d_2=(2,3)>> \mathbb{Z}[e^1] @>>> \mathbb{Z}[e^0] @>>> 0 \\
@@ -96,7 +96,7 @@ $`\begin{CD}
 
 The left-hand vertical map $C_2(q)$ sends the generator corresponding to $e_1^2$ to $e_1^2$ and $e_2^2$ to 0 . But the elements in the kernel of $d_2=(2,3)$ are integer multiples of the element $3e_1^2 - 2e_2^2$. Hence an element $m(3e_1^2 - 2e_2^2)$ in the kernel of $d_2$ is sent to $3 m e_1^2$ by $C_2(q)$. That implies that the image of
 
-$H_2(q): H_2(X) \rightarrow H_2(X / B)$
+$H_2(q): H_2(X) \rightarrow H_2(X / S^1\cup e_2^2)$
 
 is isomorphic to $3 \mathbb{Z}$ in $\mathbb{Z}$. Hence $H_2(q)$ is not surjective, and therefore $q$ is not a homotopy equivalence.
 A similar argument with the roles of $e_1^2$ and $e_2^2$ reversed yields the result for $X \rightarrow X / A$.
@@ -124,7 +124,7 @@ For the $k$-skeleton of $\Delta^n$, denoted $(\Delta^n)^k$, the homology groups 
 
 - For $i < k$: The chain complex of $(\Delta^n)^k$ is identical to that of $\Delta^n$ up to dimension $k-1$. Since $\Delta^n$ is contractible, its reduced homology groups are trivial, so $\tilde{H}_i((\Delta^n)^k) = 0$.
 
-- For $i = k$: The homology group $\tilde{H}_k((\Delta^n)^k)$ is given by $Z_k((\Delta^n)^k) / B_k((\Delta^n)^k)$.
+- For $i = k$: The homology group $`\tilde{H}_k((\Delta^n)^k)`$ is given by $Z_k((\Delta^n)^k) / B_k((\Delta^n)^k)$.
   Since $C_{k+1}((\Delta^n)^k) = 0$, the boundary group $B_k((\Delta^n)^k) = 0$.
   The cycle group $Z_k((\Delta^n)^k) = \mathrm{Ker}(\partial_k: C_k(\Delta^n) \to C_{k-1}(\Delta^n)) = Z_k(\Delta^n)$.
   Therefore, $\tilde{H}_k((\Delta^n)^k) \cong Z_k(\Delta^n)$, and its rank is $\binom{n}{k+1}$.
