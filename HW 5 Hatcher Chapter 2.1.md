@@ -87,7 +87,7 @@ To construct an explicit homotopy equivalence, we can define a map $f: X \to S^2
 The quotient map for the trivial 0-cell subcomplex, $`X \to X/\{e^0\}`$, is a homotopy equivalence because one is collapsing a contractible subcomplex.
 
 For the 1-skeleton subcomplex $S^1$, the quotient map $X \to X/S^1$ is not a homotopy equivalence, since $`H_2(X/S^1) \cong \mathbb{Z} \oplus \mathbb{Z}`$ while $`H_2(X) \cong \mathbb{Z}`$.
-Similarly the quotient map $X \to X/X$ is not a homotopy equivalence.
+Similarly, the quotient map $`X \to X/X`$ is not a homotopy equivalence, since $`X/X`$ is a point and thus has $`H_2(X/X) = 0`$, while $`H_2(X) \cong \mathbb{Z}`$.
 
 For $X / S^1\cup e_2^2$ we cannot use a similar argument, since both $X$ and $X / S^1\cup e_2^2$ have the same homology. However, the quotient map $q: X \rightarrow X / S^1\cup e_2^2$ is not a homotopy equivalence. To show this, we compare the two cellular chain complexes. The map $q$ induces a commutative diagram
 
