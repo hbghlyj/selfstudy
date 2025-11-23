@@ -28,40 +28,27 @@ Now, we compute the homology groups for each subcomplex $A$ and the correspondin
    $X/A = X$.
 
    $H_0(A) \cong \mathbb{Z}$, $H_n(A) = 0$ for $n > 0$.
-3. For the 1-skeleton $S^1$:
+2. For the 1-skeleton $S^1$:
 
    $X/A = S^2 \vee S^2$.
    
    $H_0(A) \cong \mathbb{Z}$, $H_1(A) \cong \mathbb{Z}$, $H_n(A) = 0$ for $n > 1$.
-5. For the subcomplex $S^1 \cup e^2_1$ (attached via degree 2 map):
+3. For the subcomplex $S^1 \cup e^2_1$ (attached via degree 2 map):
 
    $X/A = S^2$.
    
-   The Mayer-Vietoris sequence reads
-   
-   $\dots \rightarrow H_2(S^1) \rightarrow H_2(e^2_1) \oplus H_2(\text{point}) \rightarrow H_2(X/e^2_1) \rightarrow H_1(S^1) \rightarrow H_1(e^2_1) \oplus H_1(\text{point}) \rightarrow H_1(X/e^2_1) \rightarrow H_0(S^1) \rightarrow H_0(e^2_1) \oplus H_0(\text{point}) \rightarrow H_0(X/e^2_1) \rightarrow 0$
-   
-   After plugging in the known homology groups, we find:
-   
-   $\dots \rightarrow 0 \rightarrow 0 \rightarrow H_2(X/e^2_1) \rightarrow \mathbb{Z} \rightarrow 0 \rightarrow H_1(X/e^2_1) \rightarrow \mathbb{Z} \rightarrow \mathbb{Z} \rightarrow H_0(X/e^2_1) \rightarrow 0$
-   
-   From this, we deduce that $H_2(X/e^2_1) \cong 0$, $H_1(X/e^2_1) \cong \mathbb{Z}/2\mathbb{Z}$, and $H_0(X/e^2_1) \cong \mathbb{Z}$.
+   The homology groups of the quotient are $H_0(X/A) \cong \mathbb{Z}$, $H_2(X/A) \cong \mathbb{Z}$, and $H_n(X/A) = 0$ for $n \notin \{0, 2\}$.
 
-6. For the subcomplex $S^1 \cup e^2_2$ (attached via degree 3 map):
+   The subcomplex $A = S^1 \cup e^2_1$ is homeomorphic to the real projective plane, $\mathbb{RP}^2$. Its homology groups, computed via cellular homology, are $H_0(A) \cong \mathbb{Z}$, $H_1(A) \cong \mathbb{Z}/2\mathbb{Z}$, and $H_n(A) = 0$ for $n > 1$.
+
+4. For the subcomplex $S^1 \cup e^2_2$ (attached via degree 3 map):
 
    $X/A = S^2$.
    
-   The Mayer-Vietoris sequence reads
-   
-   $\dots \rightarrow H_2(S^1) \rightarrow H_2(e^2_2) \oplus H_2(\text{point}) \rightarrow H_2(X/e^2_2) \rightarrow H_1(S^1) \rightarrow H_1(e^2_2) \oplus H_1(\text{point}) \rightarrow H_1(X/e^2_2) \rightarrow H_0(S^1) \rightarrow H_0(e^2_2) \oplus H_0(\text{point}) \rightarrow H_0(X/e^2_2) \rightarrow 0$
-   
-   After plugging in the known homology groups, we find:
-   
-   $\dots \rightarrow 0 \rightarrow 0 \rightarrow H_2(X/e^2_2) \rightarrow \mathbb{Z} \rightarrow 0 \rightarrow H_1(X/e^2_2) \rightarrow \mathbb{Z} \rightarrow \mathbb{Z} \rightarrow H_0(X/e^2_2) \rightarrow 0$
-   
-   From this, we deduce that $H_2(X/e^2_2) \cong 0$, $H_1(X/e^2_2) \cong \mathbb{Z}/3\mathbb{Z}$, and $H_0(X/e^2_2) \cong \mathbb{Z}$.
+   The homology groups of the quotient are $H_0(X/A) \cong \mathbb{Z}$, $H_2(X/A) \cong \mathbb{Z}$, and $H_n(X/A) = 0$ for $n \notin \{0, 2\}$.
+   The subcomplex $A = S^1 \cup e^2_2$ is obtained by attaching a 2-cell to $S^1$ via a map of degree 3. Its homology groups are $H_0(A) \cong \mathbb{Z}$, $H_1(A) \cong \mathbb{Z}/3\mathbb{Z}$, and $H_n(A) = 0$ for $n > 1$.
 
-8. For the entire complex $X$:
+5. For the entire complex $X$:
     
    $X/A = \text{a single point}$.
 
