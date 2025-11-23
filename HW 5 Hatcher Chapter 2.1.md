@@ -65,7 +65,7 @@ Now, we compute the homology groups for each subcomplex $A$ and the correspondin
 </li>
 <li>
 
-To show that $X$ is homotopy equivalent to the 2-sphere, consider the attaching maps of the 2-cells. The degrees of the attaching maps (2 and 3) imply that the fundamental group of $X$ is trivial, as the relations imposed by the attaching maps kill all loops in $S^1$. Since $X$ is simply connected and has nontrivial second homology, it follows from the Hurewicz theorem that $X$ is homotopy equivalent to $S^2$.
+To show that $X$ is homotopy equivalent to the 2-sphere, consider the attaching maps of the 2-cells. The degrees of the attaching maps (2 and 3) imply that the fundamental group of $X$ is trivial, as the relations imposed by the attaching maps kill all loops in $S^1$. Since $X$ is a simply connected CW complex with the same homology groups as $S^2$, it follows from Whitehead's theorem that $X$ is homotopy equivalent to $S^2$.
 
 The quotient map for the trivial 0-cell subcomplex, $X \to X/\{e^0\}$, is a homotopy equivalence because one is collapsing a contractible subcomplex. For the 1-skeleton subcomplex $S^1$, the quotient map $X \to X/S^1$ is not a homotopy equivalence, since $H_2(X/S^1) \cong \mathbb{Z} \oplus \mathbb{Z}$ while $H_2(X) \cong \mathbb{Z}$.
 
