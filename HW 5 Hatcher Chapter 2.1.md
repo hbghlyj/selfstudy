@@ -61,7 +61,7 @@ Now, we compute the homology groups for each subcomplex $A$ and the correspondin
 
    $H_1(X) = \ker(d_1)/\mathrm{im}(d_2) = \mathbb{Z}/\langle 2,3 \rangle\mathbb{Z} = 0$
 
-   $H_2(X) = \ker(d_2) =\langle 3,-2\rangle\mathbb{Z} \cong \mathbb{Z}$
+$H_2(X) = \ker(d_2) = \langle (3,-2) \rangle \cong \mathbb{Z}
 </li>
 <li>
 
