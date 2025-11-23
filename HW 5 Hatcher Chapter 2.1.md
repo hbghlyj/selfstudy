@@ -99,7 +99,7 @@ The left-hand vertical map $C_2(q)$ sends the generator corresponding to $e_1^2$
 $H_2(q): H_2(X) \rightarrow H_2(X / S^1\cup e_2^2)$
 
 is isomorphic to $3 \mathbb{Z}$ in $\mathbb{Z}$. Hence $H_2(q)$ is not surjective, and therefore $q$ is not a homotopy equivalence.
-A similar argument with the roles of $e_1^2$ and $e_2^2$ reversed yields the result for $X \rightarrow X / A$.
+A similar argument with the roles of $e_1^2$ and $e_2^2$ reversed yields the result for $X \rightarrow X / S^1\cup e_1^2$.
 </li>
 </ol>
 
