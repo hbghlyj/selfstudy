@@ -94,7 +94,7 @@ $`\begin{CD}
 \mathbb{Z}[e_1^2] @>>> 0 @>>> \mathbb{Z}[e^0] @>>> 0
 \end{CD}`$
 
-The left-hand vertical map $C_2(q)$ sends the generator corresponding to $e_1^2$ to $e_1^2$ and $e_2^2$ to 0 . But the elements in the kernel of $d_2=(2,3)$ are integer multiples of the element $3e_1^2 - 2e_2^2$. Hence an element $m(3e_1^2 - 2e_2^2)$ in the kernel of $d_2$ is sent to $3 m e_1^2$ by $C_2(q)$. That implies that the image of
+The left-hand vertical map $C_2(q)$ sends the generator corresponding to $e_1^2$ to $e_1^2$ and $e_2^2$ to 0. But the elements in the kernel of $d_2=(2,3)$ are integer multiples of the element $3e_1^2 - 2e_2^2$. Hence an element $m(3e_1^2 - 2e_2^2)$ in the kernel of $d_2$ is sent to $3 m e_1^2$ by $C_2(q)$. That implies that the image of
 
 $H_2(q): H_2(X) \rightarrow H_2(X / S^1\cup e_2^2)$
 
