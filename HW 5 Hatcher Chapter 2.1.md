@@ -37,7 +37,7 @@ Now, we compute the homology groups for each subcomplex $A$ and the correspondin
    $X/A=S^2$.
 5. For both 2-cells (the entire complex $X$): Mayer-Vietoris sequence reads
     
-   $X/A=$single point.
+   $X/A = \text{a single point}$.
 </li>
 <li>
 
