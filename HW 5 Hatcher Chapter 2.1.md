@@ -19,7 +19,7 @@ To compute the homology groups of all the subcomplexes $A \subset X$ and the cor
 All subcomplexes $A$ of $X$ are:
 1. The trivial subcomplex (0-cell only).
 2. The 0-cell and the 1-cell (the 1-skeleton, which is $S^1$).
-3. One of the 2-cells attached to the 1-cell.
+3. The 1-skeleton and one of the 2-cells.
 4. Both 2-cells (the entire complex $X$).
 
 Now, we compute the homology groups for each subcomplex $A$ and the corresponding quotient complexes $X / A$:
