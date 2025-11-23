@@ -35,7 +35,7 @@ Now, we compute the homology groups for each subcomplex $A$ and the correspondin
 4. For the subcomplex $A_2 = S^1 \cup e^2_2$ (attached via degree 3 map):
 
    $X/A = S^2$.
-5. For both 2-cells (the entire complex $X$): Mayer-Vietoris sequence reads
+5. For both 2-cells (the entire complex $X$):
     
    $X/A = \text{a single point}$.
 </li>
