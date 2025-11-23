@@ -41,7 +41,7 @@ Now, we compute the homology groups for each subcomplex $A$ and the correspondin
 
    The subcomplex $A = S^1 \cup e^2_1$ is homeomorphic to the real projective plane, $\mathbb{RP}^2$. Its homology groups, computed via cellular homology, are $H_0(A) \cong \mathbb{Z}$, $H_1(A) \cong \mathbb{Z}/2\mathbb{Z}$, and $H_n(A) = 0$ for $n > 1$.
 
-5. For the subcomplex $S^1 \cup e^2_2$ (attached via degree 3 map):
+4. For the subcomplex $S^1 \cup e^2_2$ (attached via degree 3 map):
 
    $X/A = S^2$.
    
