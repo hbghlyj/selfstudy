@@ -18,20 +18,39 @@ To compute the homology groups of all the subcomplexes $A \subset X$ and the cor
 
 All subcomplexes $A$ of $X$ are:
 1. The trivial subcomplex (0-cell only).
-2. The 1-cell (the circle).
-3. One of the 2-cells.
+2. The 0-cell and the 1-cell (the 1-skeleton, which is $S^1$).
+3. One of the 2-cells attached to the 1-cell.
 4. Both 2-cells (the entire complex $X$).
 
 Now, we compute the homology groups for each subcomplex $A$ and the corresponding quotient complexes $X / A$:
 1. For the trivial subcomplex:
 
    $H_0(A) \cong \mathbb{Z}$, $H_n(A) = 0$ for $n > 0$.
-2. For the 1-cell:
+2. For the 1-skeleton $S^1$:
 
    $H_0(A) \cong \mathbb{Z}$, $H_1(A) \cong \mathbb{Z}$, $H_n(A) = 0$ for $n > 1$.
-3. For one of the 2-cells:
+3. For one of the 2-cells (say $e^2_1$, attached via degree 2 map):
 
-   Since a 2-cell is contractible, we have $H_0(A) \cong \mathbb{Z}$, $H_n(A) = 0$ for $n > 0$.
+    The Mayer-Vietoris sequence reads
+    
+    $\dots \rightarrow H_2(S^1) \rightarrow H_2(e^2_1) \oplus H_2(\text{point}) \rightarrow H_2(X/e^2_1) \rightarrow H_1(S^1) \rightarrow H_1(e^2_1) \oplus H_1(\text{point}) \rightarrow H_1(X/e^2_1) \rightarrow H_0(S^1) \rightarrow H_0(e^2_1) \oplus H_0(\text{point}) \rightarrow H_0(X/e^2_1) \rightarrow 0$
+    
+    After plugging in the known homology groups, we find:
+    
+    $\dots \rightarrow 0 \rightarrow 0 \rightarrow H_2(X/e^2_1) \rightarrow \mathbb{Z} \rightarrow 0 \rightarrow H_1(X/e^2_1) \rightarrow \mathbb{Z} \rightarrow \mathbb{Z} \rightarrow H_0(X/e^2_1) \rightarrow 0$
+    
+    From this, we deduce that $H_2(X/e^2_1) \cong 0$, $H_1(X/e^2_1) \cong \mathbb{Z}/2\mathbb{Z}$, and $H_0(X/e^2_1) \cong \mathbb{Z}$.
+4. For the other 2-cell (say $e^2_2$, attached via degree 3 map):
+
+    The Mayer-Vietoris sequence reads
+    
+    $\dots \rightarrow H_2(S^1) \rightarrow H_2(e^2_2) \oplus H_2(\text{point}) \rightarrow H_2(X/e^2_2) \rightarrow H_1(S^1) \rightarrow H_1(e^2_2) \oplus H_1(\text{point}) \rightarrow H_1(X/e^2_2) \rightarrow H_0(S^1) \rightarrow H_0(e^2_2) \oplus H_0(\text{point}) \rightarrow H_0(X/e^2_2) \rightarrow 0$
+    
+    After plugging in the known homology groups, we find:
+    
+    $\dots \rightarrow 0 \rightarrow 0 \rightarrow H_2(X/e^2_2) \rightarrow \mathbb{Z} \rightarrow 0 \rightarrow H_1(X/e^2_2) \rightarrow \mathbb{Z} \rightarrow \mathbb{Z} \rightarrow H_0(X/e^2_2) \rightarrow 0$
+    
+    From this, we deduce that $H_2(X/e^2_2) \cong 0$, $H_1(X/e^2_2) \cong \mathbb{Z}/3\mathbb{Z}$, and $H_0(X/e^2_2) \cong \mathbb{Z}$.
 4. For both 2-cells (the entire complex $X$): Mayer-Vietoris sequence reads
     
     $\dots \rightarrow H_2(S^1) \rightarrow H_2(e^2_1) \oplus H_2(e^2_2) \rightarrow H_2(X) \rightarrow H_1(S^1) \rightarrow H_1(e^2_1) \oplus H_1(e^2_2) \rightarrow H_1(X) \rightarrow H_0(S^1) \rightarrow H_0(e^2_1) \oplus H_0(e^2_2) \rightarrow H_0(X) \rightarrow 0$
