@@ -45,6 +45,24 @@ Now, we compute the homology groups for each subcomplex $A$ and the correspondin
 <li>
 
 To show that $X$ is homotopy equivalent to the 2-sphere,
+
+
+The map $X \rightarrow X / *=X$ is obviously a homotopy equivalence. Since $H_2\left(X / S^1\right) \cong \mathbb{Z} \oplus \mathbb{Z}$ but $H_2(X) \cong \mathbb{Z}, X \rightarrow X / S^1$ cannot be a homotopy equivalence.
+
+For $X / B$ we cannot use a similar argument, since both $X$ and $X / B$ have the same homology. However, the quotient map $q: X \rightarrow X / B$ is not a homotopy equivalence. To show this, we compare the two cellular chain complexes. The map $q$ induces a commutative diagram
+
+$`\begin{CD}
+\mathbb{Z}[e_1^2, e_2^2] @>d_2=(2,3)>> \mathbb{Z}[e^1] @>>> \mathbb{Z}[e^0] @>>> 0 \\
+@V{C_2(q)}VV @VVV @VV{\text{id}}V \\
+\mathbb{Z}[e_1^2] @>>> 0 @>>> \mathbb{Z}[e^0] @>>> 0
+\end{CD}`$
+
+The left-hand vertical map $C_2(q)$ sends the generator corresponding to $e_1^2$ to $e_1^2$ and $e_2^2$ to 0 . But the elements in the kernel of $d_2=(2,3)$ are elements of the form $m\left(3 e_1^2,-2 e_2^2\right)$ for $m \in \mathbb{Z}$. Hence an element $m\left(3 e_1^2,-2 e_2^2\right)$ in the kernel of $d_2$ is sent to $3 m e_1^2$ by $C_2(q)$. That implies that the image of
+
+$H_2(q): H_2(X) \rightarrow H_2(X / B)$
+
+is isomorphic to $3 \mathbb{Z}$ in $\mathbb{Z}$. Hence $H_2(q)$ is not surjective, and therefore $q$ is not a homotopy equivalence.
+A similar argument with the roles of $e_1^2$ and $e_2^2$ reversed yields the result for $X \rightarrow X / A$.
 </li>
 </ol>
 
