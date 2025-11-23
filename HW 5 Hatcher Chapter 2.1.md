@@ -84,7 +84,10 @@ To construct an explicit homotopy equivalence, we can define a map $f: X \to S^2
    
    Therefore, the induced map $`f_* = h_* \circ q_*`$ sends the generator of $H_2(X)$ to $`k_1(3) + k_2(-2) = 3k_1 - 2k_2`$. For $f_*$ to be an isomorphism, we need this value to be a generator of $\mathbb{Z}$, i.e., $`3k_1 - 2k_2 = \pm 1`$. A simple integer solution is $`k_1=1, k_2=1`$. With this choice, $f$ is a homotopy equivalence.
 
-The quotient map for the trivial 0-cell subcomplex, $`X \to X/\{e^0\}`$, is a homotopy equivalence because one is collapsing a contractible subcomplex. For the 1-skeleton subcomplex $S^1$, the quotient map $X \to X/S^1$ is not a homotopy equivalence, since $`H_2(X/S^1) \cong \mathbb{Z} \oplus \mathbb{Z}`$ while $`H_2(X) \cong \mathbb{Z}`$.
+The quotient map for the trivial 0-cell subcomplex, $`X \to X/\{e^0\}`$, is a homotopy equivalence because one is collapsing a contractible subcomplex.
+
+For the 1-skeleton subcomplex $S^1$, the quotient map $X \to X/S^1$ is not a homotopy equivalence, since $`H_2(X/S^1) \cong \mathbb{Z} \oplus \mathbb{Z}`$ while $`H_2(X) \cong \mathbb{Z}`$.
+Similarly the quotient map $X \to X/X$ is not a homotopy equivalence.
 
 For $X / S^1\cup e_2^2$ we cannot use a similar argument, since both $X$ and $X / S^1\cup e_2^2$ have the same homology. However, the quotient map $q: X \rightarrow X / S^1\cup e_2^2$ is not a homotopy equivalence. To show this, we compare the two cellular chain complexes. The map $q$ induces a commutative diagram
 
