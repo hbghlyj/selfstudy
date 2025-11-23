@@ -46,7 +46,7 @@ Now, we compute the homology groups for each subcomplex $A$ and the correspondin
 
     For the quotient complex $X/A_2$:
     The space $X/A_2$ is also homotopy equivalent to $S^2 \vee S^1$, so its homology groups are $H_0(X/A_2) \cong \mathbb{Z}$, $H_1(X/A_2) \cong \mathbb{Z}$, $H_2(X/A_2) \cong \mathbb{Z}$, and $H_n(X/A_2) = 0$ for $n > 2$.
-4. For both 2-cells (the entire complex $X$): Mayer-Vietoris sequence reads
+5. For both 2-cells (the entire complex $X$): Mayer-Vietoris sequence reads
     
     $\dots \rightarrow H_2(S^1) \rightarrow H_2(e^2_1) \oplus H_2(e^2_2) \rightarrow H_2(X) \rightarrow H_1(S^1) \rightarrow H_1(e^2_1) \oplus H_1(e^2_2) \rightarrow H_1(X) \rightarrow H_0(S^1) \rightarrow H_0(e^2_1) \oplus H_0(e^2_2) \rightarrow H_0(X) \rightarrow 0$
    
