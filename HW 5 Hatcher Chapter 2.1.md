@@ -37,7 +37,7 @@ Now, we compute the homology groups for each subcomplex $A$ and the correspondin
 
    $X/A = S^2$.
    
-   The homology groups of the quotient are $H_0(X/A) \cong \mathbb{Z}$, $H_2(X/A) \cong \mathbb{Z}$, and $H_n(X/A) = 0$ for $n \notin \{0, 2\}$.
+   The homology groups of the quotient are $H_0(X/A) \cong \mathbb{Z}$, $H_2(X/A) \cong \mathbb{Z}$, and $H_n(X/A) = 0$ for $`n \notin \{0, 2\}`$.
 
    The subcomplex $A = S^1 \cup e^2_1$ is homeomorphic to the real projective plane, $\mathbb{RP}^2$. Its homology groups, computed via cellular homology, are $H_0(A) \cong \mathbb{Z}$, $H_1(A) \cong \mathbb{Z}/2\mathbb{Z}$, and $H_n(A) = 0$ for $n > 1$.
 
@@ -45,18 +45,22 @@ Now, we compute the homology groups for each subcomplex $A$ and the correspondin
 
    $X/A = S^2$.
    
-   The homology groups of the quotient are $H_0(X/A) \cong \mathbb{Z}$, $H_2(X/A) \cong \mathbb{Z}$, and $H_n(X/A) = 0$ for $n \notin \{0, 2\}$.
+   The homology groups of the quotient are $H_0(X/A) \cong \mathbb{Z}$, $H_2(X/A) \cong \mathbb{Z}$, and $H_n(X/A) = 0$ for $`n \notin \{0, 2\}`$.
+
    The subcomplex $A = S^1 \cup e^2_2$ is obtained by attaching a 2-cell to $S^1$ via a map of degree 3. Its homology groups are $H_0(A) \cong \mathbb{Z}$, $H_1(A) \cong \mathbb{Z}/3\mathbb{Z}$, and $H_n(A) = 0$ for $n > 1$.
 
-5. For the entire complex $X$:
+6. For the entire complex $X$:
     
    $X/A = \text{a single point}$.
 
    The homology of $X$ is computed using its cellular chain complex $0 \to \mathbb{Z}^2 \xrightarrow{d_2} \mathbb{Z} \xrightarrow{d_1} \mathbb{Z} \to 0$, where the boundary map $d_2$ sends the generators of the two 2-cells to $2$ and $3$ times the generator of the 1-cell, respectively.
    
    This gives the homology groups:
+
    $H_0(X) \cong \mathbb{Z}$
+
    $H_1(X) = \ker(d_1)/\mathrm{im}(d_2) = \mathbb{Z}/\langle 2,3 \rangle\mathbb{Z} = 0$
+
    $H_2(X) = \ker(d_2) \cong \mathbb{Z}$
 </li>
 <li>
