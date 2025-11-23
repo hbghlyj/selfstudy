@@ -65,13 +65,12 @@ Now, we compute the homology groups for each subcomplex $A$ and the correspondin
     
    $X/A = \text{a single point}$.
 
-   $\dots \rightarrow H_2(S^1) \rightarrow H_2(e^2_1) \oplus H_2(e^2_2) \rightarrow H_2(X) \rightarrow H_1(S^1) \rightarrow H_1(e^2_1) \oplus H_1(e^2_2) \rightarrow H_1(X) \rightarrow H_0(S^1) \rightarrow H_0(e^2_1) \oplus H_0(e^2_2) \rightarrow H_0(X) \rightarrow 0$
+   The homology of $X$ is computed using its cellular chain complex $0 \to \mathbb{Z}^2 \xrightarrow{d_2} \mathbb{Z} \xrightarrow{d_1} \mathbb{Z} \to 0$, where the boundary map $d_2$ sends the generators of the two 2-cells to $2$ and $3$ times the generator of the 1-cell, respectively.
    
-   After plugging in the known homology groups, we find:
-   
-   $\dots \rightarrow 0 \rightarrow 0 \rightarrow H_2(X) \rightarrow \mathbb{Z} \rightarrow 0 \rightarrow H_1(X) \rightarrow \mathbb{Z} \rightarrow \mathbb{Z} \rightarrow H_0(X) \rightarrow 0$
-   
-   From this, we deduce that $H_2(X) \cong \mathbb{Z}$, $H_1(X) \cong 0$, and $H_0(X) \cong \mathbb{Z}$.
+   This gives the homology groups:
+   $H_0(X) \cong \mathbb{Z}$
+   $H_1(X) = \ker(d_1)/\mathrm{im}(d_2) = \mathbb{Z}/\langle 2,3 \rangle\mathbb{Z} = 0$
+   $H_2(X) = \ker(d_2) \cong \mathbb{Z}$
 </li>
 <li>
 
