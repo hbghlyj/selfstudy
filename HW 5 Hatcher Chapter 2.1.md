@@ -88,9 +88,9 @@ For the $n$-simplex $\Delta^n$:
 - The rank of the simplicial chain group $\Delta_i(\Delta^n)$ is $\binom{n+1}{i+1}$, corresponding to the number of $i$-simplices.
 - Since $\Delta^n$ is contractible, its reduced homology groups are trivial: $\tilde{H}_i(\Delta^n) = 0$ for all $i$.
 - The ranks of the subgroups of cycles $Z_i(\Delta^n)$ and boundaries $B_i(\Delta^n)$ are:
-    - $\operatorname{rank}(B_i(\Delta^n)) = \binom{n}{i+1}$ for $i \ge 0$.
-    - $\operatorname{rank}(Z_i(\Delta^n)) = \binom{n}{i+1}$ for $i > 0$.
-    - $\operatorname{rank}(Z_0(\Delta^n)) = \binom{n}{1} + 1 = n+1$.
+    - $\mathrm{rank}(B_i(\Delta^n)) = \binom{n}{i+1}$ for $i \ge 0$.
+    - $\mathrm{rank}(Z_i(\Delta^n)) = \binom{n}{i+1}$ for $i > 0$.
+    - $\mathrm{rank}(Z_0(\Delta^n)) = \binom{n}{1} + 1 = n+1$.
 
 For the $k$-skeleton of $\Delta^n$, denoted $(\Delta^n)^k$, the homology groups $\tilde{H}_i((\Delta^n)^k)$ can be computed as follows:
 
@@ -98,7 +98,7 @@ For the $k$-skeleton of $\Delta^n$, denoted $(\Delta^n)^k$, the homology groups 
 
 - For $i = k$: The homology group $\tilde{H}_k((\Delta^n)^k)$ is given by $Z_k((\Delta^n)^k) / B_k((\Delta^n)^k)$.
   Since $C_{k+1}((\Delta^n)^k) = 0$, the boundary group $B_k((\Delta^n)^k) = 0$.
-  The cycle group $Z_k((\Delta^n)^k) = \operatorname{Ker}(\partial_k: C_k(\Delta^n) \to C_{k-1}(\Delta^n)) = Z_k(\Delta^n)$.
+  The cycle group $Z_k((\Delta^n)^k) = \mathrm{Ker}(\partial_k: C_k(\Delta^n) \to C_{k-1}(\Delta^n)) = Z_k(\Delta^n)$.
   Therefore, $\tilde{H}_k((\Delta^n)^k) \cong Z_k(\Delta^n)$, and its rank is $\binom{n}{k+1}$.
 
 
@@ -109,7 +109,7 @@ A map $f: X \rightarrow Y$ that is cellular - satisfying $f(X^n) \subset Y^n$ fo
 
 Solution:
 
-$H_n^{CW}(X) \approx H_n(X)$: $H_n(X)$ can be identified with $H_n\left(X^n\right) / \operatorname{Im} \partial_{n+1}$. Since $j_n$ is injective, it maps $\operatorname{Im} \partial_{n+1}$ isomorphically onto $\operatorname{Im}\left(j_n \partial_{n+1}\right)=\operatorname{Im} d_{n+1}$ and $H_n\left(X^n\right)$ isomorphically onto $\operatorname{Im} j_n=\operatorname{Ker} \partial_n$. Since $j_{n-1}$ is injective, $\operatorname{Ker} \partial_n= \operatorname{Ker} d_n$. Thus $j_n$ induces an isomorphism of the quotient $H_n\left(X^n\right) / \operatorname{Im} \partial_{n+1}$ onto $\operatorname{Ker} d_n / \operatorname{Im} d_{n+1}$.
+$H_n^{CW}(X) \approx H_n(X)$: $H_n(X)$ can be identified with $H_n\left(X^n\right) / \mathrm{Im} \partial_{n+1}$. Since $j_n$ is injective, it maps $\mathrm{Im} \partial_{n+1}$ isomorphically onto $\mathrm{Im}\left(j_n \partial_{n+1}\right)=\mathrm{Im} d_{n+1}$ and $H_n\left(X^n\right)$ isomorphically onto $\mathrm{Im} j_n=\mathrm{Ker} \partial_n$. Since $j_{n-1}$ is injective, $\mathrm{Ker} \partial_n= \mathrm{Ker} d_n$. Thus $j_n$ induces an isomorphism of the quotient $H_n\left(X^n\right) / \mathrm{Im} \partial_{n+1}$ onto $\mathrm{Ker} d_n / \mathrm{Im} d_{n+1}$.
 
 To show naturality, 
 
