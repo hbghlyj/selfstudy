@@ -61,12 +61,11 @@ Now, we compute the homology groups for each subcomplex $A$ and the correspondin
 
    $H_1(X) = \ker(d_1)/\mathrm{im}(d_2) = \mathbb{Z}/\langle 2,3 \rangle\mathbb{Z} = 0$
 
-$H_2(X) = \ker(d_2) = \langle (3,-2) \rangle \cong \mathbb{Z}
+   $H_2(X) = \ker(d_2) = \langle (3,-2) \rangle \cong \mathbb{Z}$
 </li>
 <li>
 
-To show that $X$ is homotopy equivalent to the 2-sphere,
-
+To show that $X$ is homotopy equivalent to the 2-sphere, consider the attaching maps of the 2-cells. The degrees of the attaching maps (2 and 3) imply that the fundamental group of $X$ is trivial, as the relations imposed by the attaching maps kill all loops in $S^1$. Since $X$ is simply connected and has nontrivial second homology, it follows from the Hurewicz theorem that $X$ is homotopy equivalent to $S^2$.
 
 The quotient map for the trivial 0-cell subcomplex, $X \to X/\{e^0\}$, is a homotopy equivalence because one is collapsing a contractible subcomplex. For the 1-skeleton subcomplex $S^1$, the quotient map $X \to X/S^1$ is not a homotopy equivalence, since $H_2(X/S^1) \cong \mathbb{Z} \oplus \mathbb{Z}$ while $H_2(X) \cong \mathbb{Z}$.
 
