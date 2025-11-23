@@ -93,11 +93,7 @@ Show that if the closed orientable surface $M_g$ of genus $g$ is a covering spac
 
 Solution:
 
-The Euler characteristic is the alternate sum of the ranks of the homology groups. For a closed orientable surface $M_g$ of genus $g$, we have:
-$H_0(M_g) \cong \mathbb{Z}$,
-$H_1(M_g) \cong \mathbb{Z}^{2g}$,
-$H_2(M_g) \cong \mathbb{Z}$.
-
+For covering spaces, the Euler characteristic satisfies $\chi(M_g) = n \chi(M_h)$, where $n$ is the number of sheets in the covering. The Euler characteristic of a closed orientable surface of genus $g$ is given by $\chi(M_g) = 2 - 2g$. Therefore, we have: $2 - 2g = n(2 - 2h)$. Rearranging this equation gives: $g = n(h - 1) + 1$. This shows that if $M_g$ is a covering space of $M_h$, then $g$ must be of the form $n(h - 1) + 1$ for some integer $n$.
 
 # 29
 The surface $M_g$ of genus $g$, embedded in $\mathbb{R}^3$ in the standard way, bounds a compact region $R$.
