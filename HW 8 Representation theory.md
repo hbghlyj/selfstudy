@@ -1,7 +1,7 @@
 # 1
 Let $V$ be a finite-dimensional vector space. For any subspace $W \subset V$, put
 
-$W^{\perp}:=\left\{\phi \in V^*:\left.\phi\right|_W=0\right\}$
+$`W^{\perp}:=\left\{\phi \in V^*:\left.\phi\right|_W=0\right\}`$
 
 Construct natural isomorphisms $W^* \simeq V^* / W^{\perp}$ and $(V / W)^* \simeq W^{\perp}$. (The assumption that $V$ is finite-dimensional is not actually required, but it makes the problem easier.)
 
