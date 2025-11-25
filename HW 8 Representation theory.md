@@ -51,7 +51,8 @@ $V^* \otimes W \rightarrow \mathrm{Hom}_K(V, W): \phi \otimes w \mapsto \phi(-) 
 
 Proof
 
-Let's call this map $T$. So, $T = \phi(-)w$.If you plug a vector $v$ (from the space $V$) into that placeholder slot, the formula becomes:$$T(v) = \phi(v)w$$
+Let's call the map $\Psi: V^* \otimes W \to \mathrm{Hom}_K(V, W)$. The map acts on a pure tensor $\phi \otimes w$ to produce a linear map $\Psi(\phi \otimes w): V \to W$ defined by:
+$$ (\Psi(\phi \otimes w))(v) = \phi(v)w $$
 
 # 4
 Let $V$ and $W$ be finite-dimensional vector spaces, and let $\phi: V \rightarrow V$ and $\psi: W \rightarrow W$ be linear transformations. Consider the linear transformation
