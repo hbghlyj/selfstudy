@@ -29,7 +29,7 @@ $\phi \otimes \psi: V \otimes W \rightarrow V \otimes W: v \otimes w \mapsto \ph
 Find a formula for $\det(\phi \otimes \psi)$. If you want, you can assume that you work over an algebraically closed field.
 
 # 5
-Let $V$ be a finite-dimensional vector space over $\mathbb{C}$, and let $\phi, \psi: V \rightarrow V$ be two linear operators. Prove that there exists a vector $v \in V, v \neq 0$, that is an eigenvector for both $V$ and $W$ simultaneously. (Consider the restriction of $\psi$ to the eigenspaces of $\phi$.)
+Let $V$ be a finite-dimensional vector space over $\mathbb{C}$, and let $\phi, \psi: V \rightarrow V$ be two linear operators. Prove that there exists a vector $v \in V, v \neq 0$, that is an eigenvector for both $\phi$ and $\psi$ simultaneously. (Consider the restriction of $\psi$ to the eigenspaces of $\phi$.)
 
 # 6
 Let $G$ be an abelian group and $V$ be a finite-dimensional irreducible representation of $G$ over $\mathbb{C}$. Show that $\dim(V)=1$. (This is closely related to the previous problem.)
