@@ -70,7 +70,7 @@ To show that $\Psi$ is an isomorphism when either $V$ or $W$ is finite-dimension
 
 **Case 1: $V$ is finite-dimensional.**
 
-Let $\dim(V) = n$ and let $\{v_1, v_2, \ldots, v_n\}$ be a basis for $V$. Then, the dual basis $\{\phi_1, \phi_2, \ldots, \phi_n\}$ of $V^*$ is defined by $\phi_i(v_j) = \delta_{ij}$.
+Let $\dim(V) = n$ and let $`\{v_1, v_2, \ldots, v_n\}`$ be a basis for $V$. Then, the dual basis $`\{\phi_1, \phi_2, \ldots, \phi_n\}`$ of $V^*$ is defined by $\phi_i(v_j) = \delta_{ij}$.
 
 Any linear map $T \in \mathrm{Hom}_K(V, W)$ is determined by its action on the basis vectors of $V$. Specifically, we can write:
 
@@ -84,11 +84,11 @@ for any $v \in V$.
 
 This shows that every linear map $T$ can be expressed as a sum of maps of the form $\phi_j \otimes w_j$. Therefore, $\Psi$ is surjective.
 
-To show injectivity, let an arbitrary element $u \in V^* \otimes W$ be in the kernel of $\Psi$. Since $V$ is finite-dimensional, we can fix a basis $\{\phi'_1, \ldots, \phi'_n\}$ for $V^*$ and write $u = \sum_{j=1}^n \phi'_j \otimes w'_j$ for some unique vectors $w'_j \in W$.
+To show injectivity, let an arbitrary element $u \in V^* \otimes W$ be in the kernel of $\Psi$. Since $V$ is finite-dimensional, we can fix a basis $`\{\phi'_1, \ldots, \phi'_n\}`$ for $V^*$ and write $`u = \sum_{j=1}^n \phi'_j \otimes w'_j`$ for some unique vectors $w'_j \in W$.
 
 The condition $\Psi(u) = 0$ means $\sum_{j=1}^n \phi'_j(v) w'_j = 0$ for all $v \in V$.
 
-Let $\{v_1, \ldots, v_n\}$ be the basis of $V$ dual to $\{\phi'_1, \ldots, \phi'_n\}$. Evaluating at $v_k$ for any $k \in \{1, \ldots, n\}$ gives:
+Let $`\{v_1, \ldots, v_n\}`$ be the basis of $V$ dual to $`\{\phi'_1, \ldots, \phi'_n\}`$. Evaluating at $v_k$ for any $`k \in \{1, \ldots, n\}`$ gives:
 
 $\sum_{j=1}^n \phi'_j(v_k) w'_j = w'_k = 0.$
 
