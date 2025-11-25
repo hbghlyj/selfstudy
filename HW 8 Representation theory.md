@@ -104,11 +104,11 @@ for some linear functionals $\psi_j \in V^*$.
 
 This shows that every linear map $T$ can be expressed as a sum of maps of the form $\phi \otimes w_j$. Therefore, $\Psi$ is surjective.
 
-To show injectivity, suppose $\Psi\left(\sum_{i} \phi_i \otimes w_i\right) = 0$. This means that for all $v \in V$,
+To show injectivity, let $u = \sum_{i=1}^k \phi_i \otimes w_i$ be an element in the kernel of $\Psi$. We can assume without loss of generality that the vectors $\{w_1, \ldots, w_k\}$ are linearly independent (otherwise, we can rewrite the sum with fewer terms).
 
-$\sum_{i} \phi_i(v) w_i = 0.$
+The condition $\Psi(u) = 0$ means $\sum_{i=1}^k \phi_i(v) w_i = 0$ for all $v \in V$.
 
-Since the $w_i$ form a basis for $W$, this implies that each $\phi_i = 0$. Thus, the kernel of $\Psi$ is trivial, and $\Psi$ is injective.
+Since $\{w_1, \ldots, w_k\}$ are linearly independent, this implies that for each $i$, the coefficient $\phi_i(v)$ must be zero for all $v \in V$. Thus, each $\phi_i$ is the zero functional, which means $u=0$. The kernel of $\Psi$ is trivial, and $\Psi$ is injective.
 
 # 4
 Let $V$ and $W$ be finite-dimensional vector spaces, and let $\phi: V \rightarrow V$ and $\psi: W \rightarrow W$ be linear transformations. Consider the linear transformation
