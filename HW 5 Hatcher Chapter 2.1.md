@@ -40,7 +40,7 @@ Conversely, if $A$ meets each path-component of $X$, then $`i_*: H_0(A) \to H_0(
 
 From the long exact sequence of the pair $(X, A)$, we have the segment
 
-$$ \cdots \rightarrow H_1(A) \xrightarrow{i_*} H_1(X) \xrightarrow{j_*} H_1(X, A) \xrightarrow{\partial_*} H_0(A) \xrightarrow{i_*} H_0(X) \rightarrow \cdots $$
+$`\cdots \rightarrow H_1(A) \xrightarrow{i_*} H_1(X) \xrightarrow{j_*} H_1(X, A) \xrightarrow{\partial_*} H_0(A) \xrightarrow{i_*} H_0(X) \rightarrow \cdots`$
 
 If $H_1(X, A) = 0$, then from the exact sequence, the map $i_*: H_1(A) \to H_1(X)$ is surjective, and the map $i_*: H_0(A) \to H_0(X)$ is injective. The injectivity of the latter map implies that each path-component of $X$ contains at most one path-component of $A$.
 
