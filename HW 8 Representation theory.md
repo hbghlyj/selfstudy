@@ -53,6 +53,28 @@ is a bijection
 
 $G(V, k) \simeq G(V^*, n-k)$
 
+Proof
+
+**Injectivity:** Suppose $W_1, W_2 \in G(V, k)$ such that $W_1^{\perp} = W_2^{\perp}$. We want to show that $W_1 = W_2$.
+
+Let $v \in W_1$. For any $\phi \in W_1^{\perp}$, we have $\phi(v) = 0$. Since $W_1^{\perp} = W_2^{\perp}$, it follows that $\phi(v) = 0$ for all $\phi \in W_2^{\perp}$. This implies $v \in (W_2^{\perp})^{\perp}$. Since $V$ is finite-dimensional, $(W_2^{\perp})^{\perp} = W_2$. Thus, $W_1 \subseteq W_2$. By symmetry, we also have $W_2 \subseteq W_1$. Therefore, $W_1 = W_2$, proving injectivity.
+
+**Surjectivity:** Let $U \in G(V^*, n-k)$. We want to find a $k$-dimensional subspace $W \in G(V, k)$ such that $W^{\perp} = U$.
+
+Define $W = \{ v \in V : \phi(v) = 0 \text{ for all } \phi \in U \}$. We need to show that $\dim(W) = k$ and that $W^{\perp} = U$.
+
+To find the dimension of $W$, we use the rank-nullity theorem. The map $\Phi: V \to U^*$ defined by $\Phi(v)(\phi) = \phi(v)$ for $\phi \in U$ has kernel $W$. The image of $\Phi$ is isomorphic to $U^*$, which has dimension $n-k$. Thus, by the rank-nullity theorem:
+
+$\dim(V) = \dim(\ker(\Phi)) + \dim(\mathrm{Im}(\Phi))$
+
+$n = \dim(W) + (n-k)$
+
+This implies $\dim(W) = k$.
+
+Next, we show that $W^{\perp} = U$. By definition, for any $\phi \in U$, we have $\phi(v) = 0$ for all $v \in W$. Thus, $U \subseteq W^{\perp}$.
+
+We have shown $U \subseteq W^{\perp}$. We also know $\dim(U) = n-k$. From a standard result for finite-dimensional spaces, $\dim(W^{\perp}) = \dim(V) - \dim(W) = n - k$. Since $U$ is a subspace of $W^{\perp}$ and they have the same dimension, it must be that $W^{\perp} = U$, proving surjectivity.
+
 # 3
 Let $V$ and $W$ be two vector spaces, not necessarily finite-dimensional. Consider the map
 
