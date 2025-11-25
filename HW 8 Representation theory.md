@@ -132,7 +132,7 @@ The determinant of a linear transformation is the product of its eigenvalues. Th
 $\det(\phi \otimes \psi) = \prod_{i=1}^n \prod_{j=1}^m (\lambda_i \mu_j) = \left( \prod_{i=1}^n \lambda_i \right)^m \left( \prod_{j=1}^m \mu_j \right)^n = (\det(\phi))^m (\det(\psi))^n.
 
 # 5
-Let $V$ be a finite-dimensional vector space over $\mathbb{C}$, and let $\phi, \psi: V \rightarrow V$ be two linear operators. Prove that there exists a vector $v \in V, v \neq 0$, that is an eigenvector for both $\phi$ and $\psi$ simultaneously. (Consider the restriction of $\psi$ to the eigenspaces of $\phi$.)
+Let $V$ be a finite-dimensional vector space over $\mathbb{C}$, and let $\phi, \psi: V \rightarrow V$ be two commuting linear operators. Prove that there exists a vector $v \in V, v \neq 0$, that is an eigenvector for both $\phi$ and $\psi$ simultaneously. (Consider the restriction of $\psi$ to the eigenspaces of $\phi$.)
 
 # 6
 Let $G$ be an abelian group and $V$ be a finite-dimensional irreducible representation of $G$ over $\mathbb{C}$. Show that $\dim(V)=1$. (This is closely related to the previous problem.)
