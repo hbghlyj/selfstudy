@@ -63,7 +63,48 @@ $V^* \otimes W \rightarrow \mathrm{Hom}_K(V, W): \phi \otimes w \mapsto \phi(-) 
 Proof
 
 Let's call the map $\Psi: V^* \otimes W \to \mathrm{Hom}_K(V, W)$. The map acts on a pure tensor $\phi \otimes w$ to produce a linear map $\Psi(\phi \otimes w): V \to W$ defined by:
-$$ (\Psi(\phi \otimes w))(v) = \phi(v)w $$
+
+$(\Psi(\phi \otimes w))(v) = \phi(v)w$
+
+To show that $\Psi$ is an isomorphism when either $V$ or $W$ is finite-dimensional, we will consider both cases separately.
+
+**Case 1: $V$ is finite-dimensional.**
+
+Let $\dim(V) = n$ and let $\{v_1, v_2, \ldots, v_n\}$ be a basis for $V$. Then, the dual basis $\{\phi_1, \phi_2, \ldots, \phi_n\}$ of $V^*$ is defined by $\phi_i(v_j) = \delta_{ij}$.
+
+Any linear map $T \in \mathrm{Hom}_K(V, W)$ is determined by its action on the basis vectors of $V$. Specifically, we can write:
+
+$T(v_j) = w_j \in W$ for each $j = 1, 2, \ldots, n$.
+
+Thus, we can express $T$ as:
+
+$T(v) = \sum_{j=1}^n \phi_j(v) w_j$
+
+for any $v \in V$.
+
+This shows that every linear map $T$ can be expressed as a sum of maps of the form $\phi_j \otimes w_j$. Therefore, $\Psi$ is surjective.
+
+To show injectivity, suppose $\Psi\left(\sum_{i} \phi_i \otimes w_i\right) = 0$. This means that for all $v \in V$,
+
+$\sum_{i} \phi_i(v) w_i = 0.$
+
+Since the $\phi_i$ form a basis for $V^*$, this implies that each $w_i = 0$. Thus, the kernel of $\Psi$ is trivial, and $\Psi$ is injective.
+
+**Case 2: $W$ is finite-dimensional.**
+
+Let $\dim(W) = m$ and let $\{w_1, w_2, \ldots, w_m\}$ be a basis for $W$. Any linear map $T \in \mathrm{Hom}_K(V, W)$ can be expressed in terms of this basis as:
+
+$T(v) = \sum_{j=1}^m \psi_j(v) w_j$
+
+for some linear functionals $\psi_j \in V^*$.
+
+This shows that every linear map $T$ can be expressed as a sum of maps of the form $\phi \otimes w_j$. Therefore, $\Psi$ is surjective.
+
+To show injectivity, suppose $\Psi\left(\sum_{i} \phi_i \otimes w_i\right) = 0$. This means that for all $v \in V$,
+
+$\sum_{i} \phi_i(v) w_i = 0.$
+
+Since the $w_i$ form a basis for $W$, this implies that each $\phi_i = 0$. Thus, the kernel of $\Psi$ is trivial, and $\Psi$ is injective.
 
 # 4
 Let $V$ and $W$ be finite-dimensional vector spaces, and let $\phi: V \rightarrow V$ and $\psi: W \rightarrow W$ be linear transformations. Consider the linear transformation
