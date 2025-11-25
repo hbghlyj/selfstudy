@@ -117,6 +117,18 @@ $\phi \otimes \psi: V \otimes W \rightarrow V \otimes W: v \otimes w \mapsto \ph
 
 Find a formula for $\det(\phi \otimes \psi)$. If you want, you can assume that you work over an algebraically closed field.
 
+Proof
+
+Let $\dim(V) = n$ and $\dim(W) = m$. Let the eigenvalues of $\phi$ be $`\lambda_1, \lambda_2, \ldots, \lambda_n`$ and the eigenvalues of $\psi$ be $`\mu_1, \mu_2, \ldots, \mu_m`$.
+
+The eigenvalues of the tensor product transformation $\phi \otimes \psi$ are given by all possible products of the eigenvalues of $\phi$ and $\psi$. Specifically, the eigenvalues of $\phi \otimes \psi$ are:
+
+$`\lambda_i \mu_j`$ for $`i = 1, 2, \ldots, n`$ and $`j = 1, 2, \ldots, m`$.
+
+The determinant of a linear transformation is the product of its eigenvalues. Therefore, we have:
+
+$\det(\phi \otimes \psi) = \prod_{i=1}^n \prod_{j=1}^m (\lambda_i \mu_j) = \left( \prod_{i=1}^n \lambda_i^m \right) \left( \prod_{j=1}^m \mu_j^n \right) = (\det(\phi))^m (\det(\psi))^n.
+
 # 5
 Let $V$ be a finite-dimensional vector space over $\mathbb{C}$, and let $\phi, \psi: V \rightarrow V$ be two linear operators. Prove that there exists a vector $v \in V, v \neq 0$, that is an eigenvector for both $\phi$ and $\psi$ simultaneously. (Consider the restriction of $\psi$ to the eigenspaces of $\phi$.)
 
