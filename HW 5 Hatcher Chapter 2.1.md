@@ -23,6 +23,31 @@ Show that $H_1(X, A)=0$ iff $H_1(A) \rightarrow H_1(X)$ is surjective and each p
 </li>
 </ol>
 
+Proof
+
+<ol type="a">
+<li>
+
+From the long exact sequence of the pair $(X, A)$, we have the segment
+
+$$ \cdots \rightarrow H_1(X, A) \rightarrow H_0(A) \xrightarrow{i_*} H_0(X) \rightarrow H_0(X, A) \rightarrow 0 $$
+
+If $H_0(X, A) = 0$, then the map $i_*$ is surjective. Since $H_0(X)$ is a free abelian group with rank equal to the number of path-components of $X$, for $i_*$ to be surjective, each path-component of $X$ must contain at least one point from $A$.
+
+Conversely, if $A$ meets each path-component of $X$, then $i_*$ is surjective, which implies that $H_0(X, A) = 0$.
+</li>
+<li>
+
+From the long exact sequence of the pair $(X, A)$, we have the segment
+
+$$ \cdots \rightarrow H_1(A) \xrightarrow{i_*} H_1(X) \rightarrow H_1(X, A) \rightarrow H_0(A) \xrightarrow{j_*} H_0(X) \rightarrow \cdots $$
+
+If $H_1(X, A) = 0$, then the map $i_*$ is surjective, and the map $j_*$ is injective. The injectivity of $j_*$ implies that each path-component of $X$ contains at most one path-component of $A$.
+
+Conversely, if $H_1(A) \rightarrow H_1(X)$ is surjective and each path-component of $X$ contains at most one path-component of $A$, then $j_*$ is injective, and $i_*$ is surjective, which implies that $H_1(X, A) = 0$.
+</li>
+</ol>
+
 # 17
 <ol type="a">
 <li>
