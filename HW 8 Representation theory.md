@@ -15,9 +15,9 @@ $`\rho(\phi) = \phi|_W`$
 
 for any $\phi \in V^*$.
 
-The kernel of this map is precisely $W^{\perp}$, since these are the functionals that vanish on $W$. By the First Isomorphism Theorem, we have
-
-$V^* / W^{\perp} \simeq \mathrm{Im}(\rho) = W^*$.
+The kernel of this map is precisely $W^{\perp}$, since these are the functionals that vanish on $W$. Since any $\psi \in W^*$ can be extended to $\tilde{\psi} \in V^*$ (e.g., via Hahn-Banach or basis extension), $\rho$ is surjective, so $\mathrm{Im}(\rho) = W^*$.
+By the First Isomorphism Theorem, we have
+$V^* / W^{\perp} \simeq W^*$. 
 
 Next, we will construct the isomorphism $`(V / W)^* \simeq W^{\perp}`$. Consider the natural projection map $\pi: V \to V / W$ defined by
 
