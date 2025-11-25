@@ -9,7 +9,7 @@ $$ \partial P = g_{\sharp} - f_{\sharp} - P \partial $$
 
 which implies that for a cycle $c$ (where $\partial c = 0$), $f_{\sharp}(c)$ and $g_{\sharp}(c)$ are homologous because their difference is a boundary: $g_{\sharp}(c) - f_{\sharp}(c) = \partial(P(c))$. Therefore:
 
-$$ f_*([c]) = [f_{\sharp}(c)] = [g_{\sharp}(c)] = g_*([c]) $$
+$`f_*([c]) = [f_{\sharp}(c)] = [g_{\sharp}(c)] = g_*([c])`$
 
 # 16
 <ol type="a">
