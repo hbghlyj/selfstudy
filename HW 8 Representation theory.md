@@ -9,7 +9,7 @@ Proof
 
 First, we will construct the isomorphism $W^* \simeq V^* / W^{\perp}$.
 
-Consider the natural restriction map $`\rho: V^* \to W^*$ defined by
+Consider the natural restriction map $`\rho: V^* \to W^*`$ defined by
 
 $`\rho(\phi) = \phi|_W`$
 
