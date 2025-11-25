@@ -19,7 +19,7 @@ Let $V$ and $W$ be two vector spaces, not necessarily finite-dimensional. Consid
 
 $V^* \otimes W \rightarrow \mathrm{Hom}_K(V, W): \phi \otimes w \mapsto \phi(-) w$
 
-(the maps was considered in class). Prove that the map is an isomorphism if either $V$ or $W$ is finite-dimensional. (In fact, this is an "if and only if"; in general, the map is only injective.)
+(the map was considered in class). Prove that the map is an isomorphism if either $V$ or $W$ is finite-dimensional. (In fact, this is an "if and only if"; in general, the map is only injective.)
 
 # 4
 Let $V$ and $W$ be finite-dimensional vector spaces, and let $\phi: V \rightarrow V$ and $\psi: W \rightarrow W$ be linear transformations. Consider the linear transformation
