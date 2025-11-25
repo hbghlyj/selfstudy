@@ -84,11 +84,15 @@ for any $v \in V$.
 
 This shows that every linear map $T$ can be expressed as a sum of maps of the form $\phi_j \otimes w_j$. Therefore, $\Psi$ is surjective.
 
-To show injectivity, suppose $\Psi\left(\sum_{i} \phi_i \otimes w_i\right) = 0$. This means that for all $v \in V$,
+To show injectivity, let an arbitrary element $u \in V^* \otimes W$ be in the kernel of $\Psi$. Since $V$ is finite-dimensional, we can fix a basis $\{\phi'_1, \ldots, \phi'_n\}$ for $V^*$ and write $u = \sum_{j=1}^n \phi'_j \otimes w'_j$ for some unique vectors $w'_j \in W$.
 
-$\sum_{i} \phi_i(v) w_i = 0.$
+The condition $\Psi(u) = 0$ means $\sum_{j=1}^n \phi'_j(v) w'_j = 0$ for all $v \in V$.
 
-Since the $\phi_i$ form a basis for $V^*$, this implies that each $w_i = 0$. Thus, the kernel of $\Psi$ is trivial, and $\Psi$ is injective.
+Let $\{v_1, \ldots, v_n\}$ be the basis of $V$ dual to $\{\phi'_1, \ldots, \phi'_n\}$. Evaluating at $v_k$ for any $k \in \{1, \ldots, n\}$ gives:
+
+$\sum_{j=1}^n \phi'_j(v_k) w'_j = w'_k = 0.$
+
+Since this holds for all $k$, all $w'_j$ are zero, which implies $u=0$. Thus, $\Psi$ is injective.
 
 **Case 2: $W$ is finite-dimensional.**
 
