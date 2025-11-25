@@ -63,7 +63,52 @@ $V^* \otimes W \rightarrow \mathrm{Hom}_K(V, W): \phi \otimes w \mapsto \phi(-) 
 Proof
 
 Let's call the map $\Psi: V^* \otimes W \to \mathrm{Hom}_K(V, W)$. The map acts on a pure tensor $\phi \otimes w$ to produce a linear map $\Psi(\phi \otimes w): V \to W$ defined by:
-$$ (\Psi(\phi \otimes w))(v) = \phi(v)w $$
+
+$(\Psi(\phi \otimes w))(v) = \phi(v)w$
+
+To show that $\Psi$ is an isomorphism when either $V$ or $W$ is finite-dimensional, we will consider both cases separately.
+
+**Case 1: $V$ is finite-dimensional.**
+
+Let $\dim(V) = n$ and let $\{v_1, v_2, \ldots, v_n\}$ be a basis for $V$. Then, the dual basis $\{\phi_1, \phi_2, \ldots, \phi_n\}$ of $V^*$ is defined by $\phi_i(v_j) = \delta_{ij}$.
+
+Any linear map $T \in \mathrm{Hom}_K(V, W)$ is determined by its action on the basis vectors of $V$. Specifically, we can write:
+
+$T(v_j) = w_j \in W$ for each $j = 1, 2, \ldots, n$.
+
+Thus, we can express $T$ as:
+
+$T(v) = \sum_{j=1}^n \phi_j(v) w_j$
+
+for any $v \in V$.
+
+This shows that every linear map $T$ can be expressed as a sum of maps of the form $\phi_j \otimes w_j$. Therefore, $\Psi$ is surjective.
+
+To show injectivity, let an arbitrary element $u \in V^* \otimes W$ be in the kernel of $\Psi$. Since $V$ is finite-dimensional, we can fix a basis $\{\phi'_1, \ldots, \phi'_n\}$ for $V^*$ and write $u = \sum_{j=1}^n \phi'_j \otimes w'_j$ for some unique vectors $w'_j \in W$.
+
+The condition $\Psi(u) = 0$ means $\sum_{j=1}^n \phi'_j(v) w'_j = 0$ for all $v \in V$.
+
+Let $\{v_1, \ldots, v_n\}$ be the basis of $V$ dual to $\{\phi'_1, \ldots, \phi'_n\}$. Evaluating at $v_k$ for any $k \in \{1, \ldots, n\}$ gives:
+
+$\sum_{j=1}^n \phi'_j(v_k) w'_j = w'_k = 0.$
+
+Since this holds for all $k$, all $w'_j$ are zero, which implies $u=0$. Thus, $\Psi$ is injective.
+
+**Case 2: $W$ is finite-dimensional.**
+
+Let $\dim(W) = m$ and let $\{w_1, w_2, \ldots, w_m\}$ be a basis for $W$. Any linear map $T \in \mathrm{Hom}_K(V, W)$ can be expressed in terms of this basis as:
+
+$T(v) = \sum_{j=1}^m \psi_j(v) w_j$
+
+for some linear functionals $\psi_j \in V^*$.
+
+This shows that every linear map $T$ can be expressed as a sum of maps of the form $\phi \otimes w_j$. Therefore, $\Psi$ is surjective.
+
+To show injectivity, let $u = \sum_{i=1}^k \phi_i \otimes w_i$ be an element in the kernel of $\Psi$. We can assume without loss of generality that the vectors $\{w_1, \ldots, w_k\}$ are linearly independent (otherwise, we can rewrite the sum with fewer terms).
+
+The condition $\Psi(u) = 0$ means $\sum_{i=1}^k \phi_i(v) w_i = 0$ for all $v \in V$.
+
+Since $\{w_1, \ldots, w_k\}$ are linearly independent, this implies that for each $i$, the coefficient $\phi_i(v)$ must be zero for all $v \in V$. Thus, each $\phi_i$ is the zero functional, which means $u=0$. The kernel of $\Psi$ is trivial, and $\Psi$ is injective.
 
 # 4
 Let $V$ and $W$ be finite-dimensional vector spaces, and let $\phi: V \rightarrow V$ and $\psi: W \rightarrow W$ be linear transformations. Consider the linear transformation
