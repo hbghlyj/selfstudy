@@ -32,9 +32,9 @@ From the long exact sequence of the pair $(X, A)$, we have the segment
 
 $$ \cdots \rightarrow H_1(X, A) \rightarrow H_0(A) \xrightarrow{i_*} H_0(X) \rightarrow H_0(X, A) \rightarrow 0 $$
 
-If $H_0(X, A) = 0$, then the map $i_*$ is surjective. Since $H_0(X)$ is a free abelian group with rank equal to the number of path-components of $X$, for $i_*$ to be surjective, each path-component of $X$ must contain at least one point from $A$.
+If $H_0(X, A) = 0$, then the map $`i_*`$ is surjective. Since $H_0(X)$ is a free abelian group with rank equal to the number of path-components of $X$, for $i_*$ to be surjective, each path-component of $X$ must contain at least one point from $A$.
 
-Conversely, if $A$ meets each path-component of $X$, then $i_*: H_0(A) \to H_0(X)$ is surjective. From the exactness of the sequence $H_0(A) \xrightarrow{i_*} H_0(X) \to H_0(X, A) \to 0$, surjectivity of $i_*$ implies the map $H_0(X) \to H_0(X,A)$ is the zero map. Since this map is also surjective (by exactness), $H_0(X,A)$ must be 0.
+Conversely, if $A$ meets each path-component of $X$, then $`i_*: H_0(A) \to H_0(X)`$ is surjective. From the exactness of the sequence $H_0(A) \xrightarrow{i_*} H_0(X) \to H_0(X, A) \to 0$, surjectivity of $i_*$ implies the map $H_0(X) \to H_0(X,A)$ is the zero map. Since this map is also surjective (by exactness), $H_0(X,A)$ must be 0.
 </li>
 <li>
 
