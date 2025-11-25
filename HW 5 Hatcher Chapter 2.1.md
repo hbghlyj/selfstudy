@@ -60,6 +60,32 @@ Compute the groups $H_n(X, A)$ and $H_n(X, B)$ for $X$ a closed orientable surfa
 </li>
 </ol>
 
+Proof
+
+<ol type="a">
+<li>
+
+The pair $(S^2, A)$ where $A$ is a finite set of points in $S^2$ is homotopy equivalent to the wedge sum of $|A| - 1$ copies of $S^1$. Therefore, the homology groups are:
+
+$$ H_n(S^2, A) \cong \begin{cases} \mathbb{Z}^{|A| - 1} & n = 1 \\ 0 & n \neq 1 \end{cases} $$
+
+For the pair $(S^1 \times S^1, A)$ where $A$ is a finite set of points in $S^1 \times S^1$, the space is homotopy equivalent to a wedge sum of $|A| - 1$ copies of $S^1$. Thus, the homology groups are:
+
+$$ H_n(S^1 \times S^1, A) \cong \begin{cases} \mathbb{Z}^{|A| - 1} & n = 1 \\ 0 & n \neq 1 \end{cases} $$
+</li>
+<li>
+
+For the pair $(X, A)$ where $X$ is a closed orientable surface of genus two and $A$ is the circle shown, the quotient space $X / A$ is homotopy equivalent to a wedge sum of two circles. Therefore, the homology groups are:
+
+$$ H_n(X, A) \cong \begin{cases} \mathbb{Z}^2 & n = 1 \\ 0 & n \neq 1 \end{cases} $$
+
+For the pair $(X, B)$ where $B$ is the other circle shown, the quotient space $X / B$ is homotopy equivalent to a wedge sum of three circles. Thus, the homology groups are:
+
+$$ H_n(X, B) \cong \begin{cases} \mathbb{Z}^3 & n = 1 \\ 0 & n \neq 1 \end{cases} $$
+
+</li>
+</ol>
+
 # 23
 Show that the second barycentric subdivision of a $\Delta$-complex is a simplicial complex.
 
