@@ -42,7 +42,7 @@ From the long exact sequence of the pair $(X, A)$, we have the segment
 
 $`\cdots \rightarrow H_1(A) \xrightarrow{i_*} H_1(X) \xrightarrow{j_*} H_1(X, A) \xrightarrow{\partial_*} H_0(A) \xrightarrow{i_*} H_0(X) \rightarrow \cdots`$
 
-If $H_1(X, A) = 0$, then from the exact sequence, the map $i_*: H_1(A) \to H_1(X)$ is surjective, and the map $i_*: H_0(A) \to H_0(X)$ is injective. The injectivity of the latter map implies that each path-component of $X$ contains at most one path-component of $A$.
+If $H_1(X, A) = 0$, then from the exact sequence, the map $`i_*: H_1(A) \to H_1(X)`$ is surjective, and the map $i_*: H_0(A) \to H_0(X)$ is injective. The injectivity of the latter map implies that each path-component of $X$ contains at most one path-component of $A$.
 
 Conversely, if $H_1(A) \rightarrow H_1(X)$ is surjective and each path-component of $X$ contains at most one path-component of $A$, then $`i_*: H_1(A) \to H_1(X)`$ is surjective and $i_*: H_0(A) \to H_0(X)$ is injective. From the exact sequence, this means the map $`j_*: H_1(X) \to H_1(X,A)`$ is zero, and the map $`\partial_*: H_1(X,A) \to H_0(A)`$ is zero. Exactness at $H_1(X,A)$ implies $`\text{Im}(j_*) = \ker(\partial_*)`$, so $0 = H_1(X,A)$.
 </li>
