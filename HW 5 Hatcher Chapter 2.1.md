@@ -23,6 +23,31 @@ Show that $H_1(X, A)=0$ iff $H_1(A) \rightarrow H_1(X)$ is surjective and each p
 </li>
 </ol>
 
+Proof
+
+<ol type="a">
+<li>
+
+From the long exact sequence of the pair $(X, A)$, we have the segment
+
+$$ \cdots \rightarrow H_1(X, A) \rightarrow H_0(A) \xrightarrow{i_*} H_0(X) \rightarrow H_0(X, A) \rightarrow 0 $$
+
+If $H_0(X, A) = 0$, then the map $i_*$ is surjective. Since $H_0(X)$ is a free abelian group with rank equal to the number of path-components of $X$, for $i_*$ to be surjective, each path-component of $X$ must contain at least one point from $A$.
+
+Conversely, if $A$ meets each path-component of $X$, then $i_*: H_0(A) \to H_0(X)$ is surjective. From the exactness of the sequence $H_0(A) \xrightarrow{i_*} H_0(X) \to H_0(X, A) \to 0$, surjectivity of $i_*$ implies the map $H_0(X) \to H_0(X,A)$ is the zero map. Since this map is also surjective (by exactness), $H_0(X,A)$ must be 0.
+</li>
+<li>
+
+From the long exact sequence of the pair $(X, A)$, we have the segment
+
+$$ \cdots \rightarrow H_1(A) \xrightarrow{i_*} H_1(X) \xrightarrow{j_*} H_1(X, A) \xrightarrow{\partial_*} H_0(A) \xrightarrow{i_*} H_0(X) \rightarrow \cdots $$
+
+If $H_1(X, A) = 0$, then from the exact sequence, the map $i_*: H_1(A) \to H_1(X)$ is surjective, and the map $i_*: H_0(A) \to H_0(X)$ is injective. The injectivity of the latter map implies that each path-component of $X$ contains at most one path-component of $A$.
+
+Conversely, if $H_1(A) \rightarrow H_1(X)$ is surjective and each path-component of $X$ contains at most one path-component of $A$, then $i_*: H_1(A) \to H_1(X)$ is surjective and $i_*: H_0(A) \to H_0(X)$ is injective. From the exact sequence, this means the map $j_*: H_1(X) \to H_1(X,A)$ is zero, and the map $\partial_*: H_1(X,A) \to H_0(A)$ is zero. Exactness at $H_1(X,A)$ implies $\text{Im}(j_*) = \ker(\partial_*)$, so $0 = H_1(X,A)$.
+</li>
+</ol>
+
 # 17
 <ol type="a">
 <li>
