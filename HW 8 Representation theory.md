@@ -63,7 +63,7 @@ Let $v \in W_1$. For any $\phi \in W_1^{\perp}$, we have $\phi(v) = 0$. Since $W
 
 Define $W = \{ v \in V : \phi(v) = 0 \text{ for all } \phi \in U \}$. We need to show that $\dim(W) = k$ and that $W^{\perp} = U$.
 
-To find the dimension of $W$, we use the rank-nullity theorem. The map $\Phi: V \to U^*$ defined by $\Phi(v)(\phi) = \phi(v)$ for $\phi \in U$ has kernel $W$. The image of $\Phi$ is isomorphic to $U^*$, which has dimension $n-k$. Thus, by the rank-nullity theorem:
+To find the dimension of $W$, we use the rank-nullity theorem. The map $\Phi: V \to U^*$ defined by $\Phi(v)(\phi) = \phi(v)$ for $\phi \in U$ has kernel $W$. The image of $\Phi$ is isomorphic to $`U^*`$, which has dimension $n-k$. Thus, by the rank-nullity theorem:
 
 $\dim(V) = \dim(\ker(\Phi)) + \dim(\mathrm{Im}(\Phi))$
 
