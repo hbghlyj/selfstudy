@@ -57,7 +57,7 @@ Proof
 
 **Injectivity:** Suppose $W_1, W_2 \in G(V, k)$ such that $W_1^{\perp} = W_2^{\perp}$. We want to show that $W_1 = W_2$.
 
-Let $v \in W_1$. For any $\phi \in W_1^{\perp}$, we have $\phi(v) = 0$. Since $W_1^{\perp} = W_2^{\perp}$, it follows that $\phi(v) = 0$ for all $\phi \in W_2^{\perp}$. This implies that $v \in W_2$. Thus, $W_1 \subseteq W_2$. By symmetry, we also have $W_2 \subseteq W_1$. Therefore, $W_1 = W_2$, proving injectivity.
+Let $v \in W_1$. For any $\phi \in W_1^{\perp}$, we have $\phi(v) = 0$. Since $W_1^{\perp} = W_2^{\perp}$, it follows that $\phi(v) = 0$ for all $\phi \in W_2^{\perp}$. This implies $v \in (W_2^{\perp})^{\perp}$. Since $V$ is finite-dimensional, $(W_2^{\perp})^{\perp} = W_2$. Thus, $W_1 \subseteq W_2$. By symmetry, we also have $W_2 \subseteq W_1$. Therefore, $W_1 = W_2$, proving injectivity.
 
 **Surjectivity:** Let $U \in G(V^*, n-k)$. We want to find a $k$-dimensional subspace $W \in G(V, k)$ such that $W^{\perp} = U$.
 
