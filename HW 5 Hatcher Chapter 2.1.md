@@ -1,5 +1,15 @@
 # 13
-Verify that $f \simeq g$ implies $f_*=g_*$ for induced homomorphisms of reduced homology groups.
+Verify that $f \simeq g$ implies $`f_*=g_*`$ for induced homomorphisms of reduced homology groups.
+
+Proof
+
+Given a homotopy $F: X \times I \rightarrow Y$ from $f$ to $g$ and a singular simplex $\sigma: \Delta^n \rightarrow X$, we can form the composition $F \circ(\sigma \times \mathbb{1}): \Delta^n \times I \rightarrow X \times I \rightarrow Y$. Using this, we can define prism operators $P: C_n(X) \rightarrow C_{n+1}(Y)$. These prism operators satisfy the basic relation
+
+$$ \partial P = g_{\sharp} - f_{\sharp} - P \partial $$
+
+which implies that for a cycle $c$ (where $\partial c = 0$), $f_{\sharp}(c)$ and $g_{\sharp}(c)$ are homologous because their difference is a boundary: $g_{\sharp}(c) - f_{\sharp}(c) = \partial(P(c))$. Therefore:
+
+$$ f_*([c]) = [f_{\sharp}(c)] = [g_{\sharp}(c)] = g_*([c]) $$
 
 # 16
 <ol type="a">
@@ -21,7 +31,7 @@ Compute the homology groups $H_n(X, A)$ when $X$ is $S^2$ or $S^1 \times S^1$ an
 </li>
 <li>
 
-Compute the groups $H_n(X, A)$ and $H_n(X, B)$ for $X$ a closed orientable surface of genus two with $A$ and $B$ the circles shown. [What are $X / A$ and $X / B$ ?]
+Compute the groups $H_n(X, A)$ and $H_n(X, B)$ for $X$ a closed orientable surface of genus two with $A$ and $B$ the circles shown. [What are $X / A$ and $X / B$?]
 </li>
 </ol>
 
