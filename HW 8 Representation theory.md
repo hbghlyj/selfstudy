@@ -73,9 +73,7 @@ This implies $\dim(W) = k$.
 
 Next, we show that $W^{\perp} = U$. By definition, for any $\phi \in U$, we have $\phi(v) = 0$ for all $v \in W$. Thus, $U \subseteq W^{\perp}$.
 
-Conversely, let $\psi \in W^{\perp}$. Then, for all $v \in W$, $\psi(v) = 0$. Since $W$ is defined as the set of vectors annihilated by all functionals in $U$, it follows that $\psi$ must be in $U$. Thus, $W^{\perp} \subseteq U$.
-
-Combining both inclusions, we have $W^{\perp} = U$, proving surjectivity.
+We have shown $U \subseteq W^{\perp}$. We also know $\dim(U) = n-k$. From a standard result for finite-dimensional spaces, $\dim(W^{\perp}) = \dim(V) - \dim(W) = n - k$. Since $U$ is a subspace of $W^{\perp}$ and they have the same dimension, it must be that $W^{\perp} = U$, proving surjectivity.
 
 # 3
 Let $V$ and $W$ be two vector spaces, not necessarily finite-dimensional. Consider the map
