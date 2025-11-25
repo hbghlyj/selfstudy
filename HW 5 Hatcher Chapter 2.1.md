@@ -5,11 +5,11 @@ Proof
 
 Given a homotopy $F: X \times I \rightarrow Y$ from $f$ to $g$ and a singular simplex $\sigma: \Delta^n \rightarrow X$, we can form the composition $F \circ(\sigma \times \mathbb{1}): \Delta^n \times I \rightarrow X \times I \rightarrow Y$. Using this, we can define prism operators $P: C_n(X) \rightarrow C_{n+1}(Y)$. These prism operators satisfy the basic relation
 
-$\partial P=g_{\sharp}-f_{\sharp}-P \partial$
+$$ \partial P = g_{\sharp} - f_{\sharp} - P \partial $$
 
-which implies that the induced homomorphisms $f_*$ and $g_*$ on homology are equal:
+which implies that for a cycle $c$ (where $\partial c = 0$), $f_{\sharp}(c)$ and $g_{\sharp}(c)$ are homologous because their difference is a boundary: $g_{\sharp}(c) - f_{\sharp}(c) = \partial(P(c))$. Therefore:
 
-$`f_*([c])= [f_{\sharp}(c)] = [g_{\sharp}(c) + \partial P(c) + P(\partial c)] = [g_{\sharp}(c)] = g_*([c])`$
+$$ f_*([c]) = [f_{\sharp}(c)] = [g_{\sharp}(c)] = g_*([c]) $$
 
 # 16
 <ol type="a">
