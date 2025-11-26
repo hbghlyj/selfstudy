@@ -75,13 +75,13 @@ $$ H_n(S^1 \times S^1, A) \cong \begin{cases} \mathbb{Z}^{|A| - 1} & n = 1 \\ 0 
 </li>
 <li>
 
-For the pair $(X, A)$ where $X$ is a closed orientable surface of genus two and $A$ is the circle shown, the quotient space $X / A$ is homotopy equivalent to a wedge sum of two circles. Therefore, the homology groups are:
+For the pair $(X, A)$, where $A$ is a non-separating circle on the genus-2 surface $X$, the quotient space $X/A$ is homotopy equivalent to $(S^1 \times S^1) \vee S^1$. Since $(X,A)$ is a good pair, the relative homology groups are:
 
-$$ H_n(X, A) \cong \begin{cases} \mathbb{Z}^2 & n = 1 \\ 0 & n \neq 1 \end{cases} $$
+$$ H_n(X, A) \cong \tilde{H}_n(X/A) \cong \begin{cases} \mathbb{Z} & n = 2 \\ \mathbb{Z}^3 & n = 1 \\ 0 & \text{otherwise} \end{cases} $$
 
-For the pair $(X, B)$ where $B$ is the other circle shown, the quotient space $X / B$ is homotopy equivalent to a wedge sum of three circles. Thus, the homology groups are:
+For the pair $(X, B)$, where $B$ is a separating circle, the quotient space $X/B$ is homotopy equivalent to $(S^1 \times S^1) \vee (S^1 \times S^1)$. Thus, the homology groups are:
 
-$$ H_n(X, B) \cong \begin{cases} \mathbb{Z}^3 & n = 1 \\ 0 & n \neq 1 \end{cases} $$
+$$ H_n(X, B) \cong \tilde{H}_n(X/B) \cong \begin{cases} \mathbb{Z}^2 & n = 2 \\ \mathbb{Z}^4 & n = 1 \\ 0 & \text{otherwise} \end{cases} $$
 
 </li>
 </ol>
