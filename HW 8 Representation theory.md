@@ -145,7 +145,7 @@ We assume the underlying field is algebraically closed, as suggested in the prob
 
 Let $\dim(V) = n$ and $\dim(W) = m$. Let the eigenvalues of $\phi$ be $\lambda_1, \lambda_2, \ldots, \lambda_n$ and the eigenvalues of $\psi$ be $\mu_1, \mu_2, \ldots, \mu_m$.
 
-The eigenvalues of the tensor product transformation $\phi \otimes \psi$ are given by all possible products of the eigenvalues of $\phi$ and $\psi$. Because the eigenvectors corresponding to these eigenvalues can be constructed as tensor products of the eigenvectors of $\phi$ and $\psi$, the eigenvalues of $\phi \otimes \psi$ are:
+The eigenvalues of the tensor product transformation $\phi \otimes \psi$ are the products of the eigenvalues of $\phi$ and $\psi$, as the eigenvectors of $\phi \otimes \psi$ are the tensor products of the eigenvectors of $\phi$ and $\psi$. Specifically, the eigenvalues are:
 
 $\lambda_i \mu_j$ for $i = 1, 2, \ldots, n$ and $j = 1, 2, \ldots, m$.
 
