@@ -65,7 +65,7 @@ Proof
 <ol type="a">
 <li>
 
-The pair $(S^2, A)$, where $A$ is a finite set of points, is a good pair, so $H_n(S^2, A) \cong \tilde{H}_n(S^2/A)$. The quotient space $S^2/A$ is homotopy equivalent to $S^2 \vee (\bigvee_{|A|-1} S^1)$. Therefore, the homology groups are:
+The pair $(S^2, A)$, where $A$ is a finite set of points, is a good pair, so $`H_n(S^2, A) \cong \tilde{H}_n(S^2/A)`$. The quotient space $S^2/A$ is homotopy equivalent to $S^2 \vee (\bigvee_{|A|-1} S^1)$. Therefore, the homology groups are:
 
 $`H_n(S^2, A) \cong \begin{cases} \mathbb{Z} & n = 2 \\ \mathbb{Z}^{|A| - 1} & n = 1 \\ 0 & \text{otherwise} \end{cases}`$
 
