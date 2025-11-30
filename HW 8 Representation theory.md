@@ -208,6 +208,6 @@ For $(d, n) = (3,2)$, the space is $V_{3,2} = \mathrm{span}(x_1^3, x_1^2 x_2, x_
 The representation $V_{3,2}$ decomposes into a direct sum of four 1-dimensional subrepresentations:
 - $W_1 = \mathrm{span}(x_1^3+x_2^3)$: This is a trivial representation since $\tau(x_1^3+x_2^3) = x_2^3+x_1^3$.
 - $W_2 = \mathrm{span}(x_1^3-x_2^3)$: This is a sign representation since $\tau(x_1^3-x_2^3) = x_2^3-x_1^3 = -(x_1^3-x_2^3)$.
-- $W_3 = \mathrm{span}(x_1^2 x_2+x_2^2 x_1)$: This is a sign representation since $\tau(x_1^2 x_2+x_2^2 x_1) = x_2^2 x_1+x_1^2 x_2 = -(x_1^2 x_2+x_2^2 x_1)$.
+- $W_3 = \mathrm{span}(x_1^2 x_2+x_2^2 x_1)$: This is a trivial representation since $\tau(x_1^2 x_2+x_2^2 x_1) = x_2^2 x_1+x_1^2 x_2 = x_1^2 x_2+x_2^2 x_1$.
 - $W_4 = \mathrm{span}(x_1^2 x_2-x_2^2 x_1)$: This is a sign representation since $\tau(x_1^2 x_2-x_2^2 x_1) = x_2^2 x_1-x_1^2 x_2 = -(x_1^2 x_2-x_2^2 x_1)$.
 
