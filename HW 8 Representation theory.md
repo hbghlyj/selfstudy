@@ -192,4 +192,11 @@ Let $V_{d, n}$ be the vector space of homogeneous polynomials of degree $d$ in t
 
 Proof
 
-For $(d, n) = (2,2)$, the representation $V_{2,2} = \mathrm{span}(x_1^2, x_1 x_2, x_2^2) = \mathrm{span}(x_1 x_2) \oplus \mathrm{span}(x_1^2, x_2^2)$ is the direct sum of the standard representation and the trivial representation.
+For $(d, n) = (2,2)$, the space is $V_{2,2} = \mathrm{span}(x_1^2, x_1 x_2, x_2^2)$. The group is $S_2 = \{e, \tau\}$ where $\tau=(12)$. The irreducible representations of $S_2$ are the 1-dimensional trivial representation ($T$) and sign representation ($S$).
+
+The representation $V_{2,2}$ decomposes into a direct sum of three 1-dimensional subrepresentations:
+- $W_1 = \mathrm{span}(x_1 x_2)$: This is a trivial representation since $\tau(x_1 x_2) = x_1 x_2$.
+- $W_2 = \mathrm{span}(x_1^2 + x_2^2)$: This is also a trivial representation since $\tau(x_1^2 + x_2^2) = x_2^2 + x_1^2$.
+- $W_3 = \mathrm{span}(x_1^2 - x_2^2)$: This is a sign representation since $\tau(x_1^2 - x_2^2) = x_2^2 - x_1^2 = -(x_1^2 - x_2^2)$.
+
+Thus, the decomposition into irreducibles is $V_{2,2} \cong T \oplus T \oplus S \cong 2T \oplus S$.
