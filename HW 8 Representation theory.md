@@ -188,4 +188,15 @@ The one-dimensional subspace $W = \mathrm{span}(v)$ is a subrepresentation of $V
 Since $V$ is irreducible and $W$ is a non-zero subrepresentation, we must have $W=V$. Therefore, $\dim(V) = \dim(W) = 1$.
 
 # 7
-Let $V_{d, n}$ be the vector space of homogeneous polynomials of degree $d$ in the variables $x_1, \ldots, x_n$. The group $S_n$ acts on $V_{d, n}$ by permuting the variables. Write this representation as a direct sum of irreducibles for $(d, n)=(2,2),(3,1),(3,2)$. (For extra challenge, try $(3,3)$ : it can be done by brute force, but it is not fun.)
+Let $V_{d, n}$ be the vector space of homogeneous polynomials of degree $d$ in the variables $x_1, \ldots, x_n$. The group $S_n$ acts on $V_{d, n}$ by permuting the variables. Write this representation as a direct sum of irreducibles for $(d, n)=(2,2),(3,1),(3,2)$. (For extra challenge, try $(3,3)$: it can be done by brute force, but it is not fun.)
+
+Proof
+
+For $(d, n) = (2,2)$, the space is $V_{2,2} = \mathrm{span}(x_1^2, x_1 x_2, x_2^2)$. The group is $S_2 = \{e, \tau\}$ where $\tau=(12)$. The irreducible representations of $S_2$ are the 1-dimensional trivial representation ($T$) and sign representation ($S$).
+
+The representation $V_{2,2}$ decomposes into a direct sum of three 1-dimensional subrepresentations:
+- $W_1 = \mathrm{span}(x_1 x_2)$: This is a trivial representation since $\tau(x_1 x_2) = x_1 x_2$.
+- $W_2 = \mathrm{span}(x_1^2 + x_2^2)$: This is also a trivial representation since $\tau(x_1^2 + x_2^2) = x_2^2 + x_1^2$.
+- $W_3 = \mathrm{span}(x_1^2 - x_2^2)$: This is a sign representation since $\tau(x_1^2 - x_2^2) = x_2^2 - x_1^2 = -(x_1^2 - x_2^2)$.
+
+Thus, the decomposition into irreducibles is $V_{2,2} \cong T \oplus T \oplus S \cong 2T \oplus S$.
