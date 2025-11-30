@@ -210,4 +210,5 @@ The representation $V_{3,2}$ decomposes into a direct sum of four 1-dimensional 
 - $W_2 = \mathrm{span}(x_1^3-x_2^3)$: This is a sign representation since $\tau(x_1^3-x_2^3) = x_2^3-x_1^3 = -(x_1^3-x_2^3)$.
 - $W_3 = \mathrm{span}(x_1^2 x_2+x_2^2 x_1)$: This is a trivial representation since $\tau(x_1^2 x_2+x_2^2 x_1) = x_2^2 x_1+x_1^2 x_2 = x_1^2 x_2+x_2^2 x_1$.
 - $W_4 = \mathrm{span}(x_1^2 x_2-x_2^2 x_1)$: This is a sign representation since $\tau(x_1^2 x_2-x_2^2 x_1) = x_2^2 x_1-x_1^2 x_2 = -(x_1^2 x_2-x_2^2 x_1)$.
+
 Thus, the decomposition into irreducibles is $V_{3,2} \cong T \oplus S \oplus T \oplus S \cong 2T \oplus 2S$.
