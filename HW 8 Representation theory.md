@@ -160,7 +160,7 @@ Proof
 
 Since $\phi$ and $\psi$ commute, we have $\phi \psi = \psi \phi$.
 
-Since $V$ is a finite-dimensional vector space over $\mathbb{C}$ (an algebraically closed field), $\phi$ must have at least one eigenvalue. Let $\lambda$ be an eigenvalue of $\phi$, and let $E_{\lambda} = \{ v \in V : \phi(v) = \lambda v \}$ be the corresponding eigenspace. Since $\phi$ is linear, $E_{\lambda}$ is a subspace of $V$.
+Since $V$ is a finite-dimensional vector space over $\mathbb{C}$ (an algebraically closed field), $\phi$ must have at least one eigenvalue. Let $\lambda$ be an eigenvalue of $\phi$, and let $`E_{\lambda} = \{ v \in V : \phi(v) = \lambda v \}`$ be the corresponding eigenspace. Since $\phi$ is linear, $E_{\lambda}$ is a subspace of $V$.
 
 Now, consider the restriction of $\psi$ to the eigenspace $E_{\lambda}$, denoted by $`\psi|_{E_{\lambda}}`$. Since $\phi$ and $\psi$ commute, we have:
 
