@@ -107,3 +107,5 @@ The universal covering spaces are
 $`U(S^1 \times S^1) = \mathbb{R}^2`$
 
 $`U(S^1 \vee S^1 \vee S^2)` is the universal cover of $S^1 \vee S^1$ (an infinite tree) with an $S^2$ attached at each vertex.
+
+These two universal covering spaces are not homeomorphic. For example, $\mathbb{R}^2$ is contractible, so its homology groups are trivial for $n>0$. The universal cover of $S^1 \vee S^1 \vee S^2$ is an infinite wedge of 2-spheres, so its second homology group is a free abelian group on infinitely many generators. Since their homology groups differ, they are not homotopy equivalent, and therefore not homeomorphic.
