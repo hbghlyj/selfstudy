@@ -93,3 +93,17 @@ Namely, show that the first barycentric subdivision produces a $\Delta$-complex 
 
 # 29
 Show that $S^1 \times S^1$ and $S^1 \vee S^1 \vee S^2$ have isomorphic homology groups in all dimensions, but their universal covering spaces do not.
+
+Proof
+
+Both spaces have the same homology groups:
+
+$`H_n(S^1 \times S^1) \cong \begin{cases} \mathbb{Z} & n = 0 \\ \mathbb{Z}^2 & n = 1 \\ \mathbb{Z} & n = 2 \\ 0 & \text{otherwise} \end{cases}`$
+
+$`H_n(S^1 \vee S^1 \vee S^2) \cong \begin{cases} \mathbb{Z} & n = 0 \\ \mathbb{Z}^2 & n = 1 \\ \mathbb{Z} & n = 2 \\ 0 & \text{otherwise} \end{cases}`$
+
+The universal covering spaces are
+
+$`U(S^1 \times S^1) = \mathbb{R}^2`$
+
+$`U(S^1 \vee S^1 \vee S^2)` is the universal cover of $S^1 \vee S^1$ (an infinite tree) with an $S^2$ attached at each vertex.
