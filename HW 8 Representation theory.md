@@ -188,4 +188,8 @@ The one-dimensional subspace $W = \mathrm{span}(v)$ is a subrepresentation of $V
 Since $V$ is irreducible and $W$ is a non-zero subrepresentation, we must have $W=V$. Therefore, $\dim(V) = \dim(W) = 1$.
 
 # 7
-Let $V_{d, n}$ be the vector space of homogeneous polynomials of degree $d$ in the variables $x_1, \ldots, x_n$. The group $S_n$ acts on $V_{d, n}$ by permuting the variables. Write this representation as a direct sum of irreducibles for $(d, n)=(2,2),(3,1),(3,2)$. (For extra challenge, try $(3,3)$ : it can be done by brute force, but it is not fun.)
+Let $V_{d, n}$ be the vector space of homogeneous polynomials of degree $d$ in the variables $x_1, \ldots, x_n$. The group $S_n$ acts on $V_{d, n}$ by permuting the variables. Write this representation as a direct sum of irreducibles for $(d, n)=(2,2),(3,1),(3,2)$. (For extra challenge, try $(3,3)$: it can be done by brute force, but it is not fun.)
+
+Proof
+
+For $(d, n) = (2,2)$, the representation $V_{2,2} = \mathrm{span}(x_1^2, x_1 x_2, x_2^2) = \mathrm{span}(x_1 x_2) \oplus \mathrm{span}(x_1^2, x_2^2)$ is the direct sum of the standard representation and the trivial representation.
