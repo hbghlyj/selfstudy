@@ -162,11 +162,11 @@ Since $\phi$ and $\psi$ commute, we have $\phi \psi = \psi \phi$.
 
 Since $V$ is a finite-dimensional vector space over $\mathbb{C}$ (an algebraically closed field), $\phi$ must have at least one eigenvalue. Let $\lambda$ be an eigenvalue of $\phi$, and let $E_{\lambda} = \{ v \in V : \phi(v) = \lambda v \}$ be the corresponding eigenspace. Since $\phi$ is linear, $E_{\lambda}$ is a subspace of $V$.
 
-Now, consider the restriction of $\psi$ to the eigenspace $E_{\lambda}$, denoted by $\psi|_{E_{\lambda}}$. Since $\phi$ and $\psi$ commute, we have:
+Now, consider the restriction of $\psi$ to the eigenspace $E_{\lambda}$, denoted by $`\psi|_{E_{\lambda}}`$. Since $\phi$ and $\psi$ commute, we have:
 
 $\phi(\psi(v)) = \psi(\phi(v)) = \psi(\lambda v) = \lambda \psi(v)$
 
-for all $v \in E_{\lambda}$. This shows that $\psi(v) \in E_{\lambda}$ for all $v \in E_{\lambda}$. Since $\psi|_{E_{\lambda}}$ is a linear operator on the finite-dimensional vector space $E_{\lambda}$, it must have at least one eigenvalue, say $\mu$, and a corresponding eigenvector $v \in E_{\lambda}, v \neq 0$ such that:
+for all $v \in E_{\lambda}$. This shows that $\psi(v) \in E_{\lambda}$ for all $v \in E_{\lambda}$. Since $`\psi|_{E_{\lambda}}`$ is a linear operator on the finite-dimensional vector space $E_{\lambda}$, it must have at least one eigenvalue, say $\mu$, and a corresponding eigenvector $v \in E_{\lambda}, v \neq 0$ such that:
 
 $\psi(v) = \mu v$.
 
