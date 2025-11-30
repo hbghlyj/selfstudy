@@ -156,6 +156,26 @@ $\det(\phi \otimes \psi) = \prod_{i=1}^n \prod_{j=1}^m (\lambda_i \mu_j) = \left
 # 5
 Let $V$ be a finite-dimensional vector space over $\mathbb{C}$, and let $\phi, \psi: V \rightarrow V$ be two commuting linear operators. Prove that there exists a vector $v \in V, v \neq 0$, that is an eigenvector for both $\phi$ and $\psi$ simultaneously. (Consider the restriction of $\psi$ to the eigenspaces of $\phi$.)
 
+Proof
+
+Since $\phi$ and $\psi$ commute, we have $\phi \psi = \psi \phi$.
+
+Since $V$ is a finite-dimensional vector space over $\mathbb{C}$ (an algebraically closed field), $\phi$ must have at least one eigenvalue. Let $\lambda$ be an eigenvalue of $\phi$, and let $E_{\lambda} = \{ v \in V : \phi(v) = \lambda v \}$ be the corresponding eigenspace. Since $\phi$ is linear, $E_{\lambda}$ is a subspace of $V$.
+
+Now, consider the restriction of $\psi$ to the eigenspace $E_{\lambda}$, denoted by $\psi|_{E_{\lambda}}$. Since $\phi$ and $\psi$ commute, we have:
+
+$\phi(\psi(v)) = \psi(\phi(v)) = \psi(\lambda v) = \lambda \psi(v)$
+
+for all $v \in E_{\lambda}$. This shows that $\psi(v) \in E_{\lambda}$ for all $v \in E_{\lambda}$. Since $\psi|_{E_{\lambda}}$ is a linear operator on the finite-dimensional vector space $E_{\lambda}$, it must have at least one eigenvalue, say $\mu$, and a corresponding eigenvector $v \in E_{\lambda}, v \neq 0$ such that:
+
+$\psi(v) = \mu v$.
+
+Since $v \in E_{\lambda}$, we also have:
+
+$\phi(v) = \lambda v$.
+
+Thus, we have found a non-zero vector $v \in V$ that is an eigenvector for both $\phi$ and $\psi$ simultaneously, with eigenvalues $\lambda$ and $\mu$, respectively.
+
 # 6
 Let $G$ be an abelian group and $V$ be a finite-dimensional irreducible representation of $G$ over $\mathbb{C}$. Show that $\dim(V)=1$. (This is closely related to the previous problem.)
 
