@@ -200,3 +200,14 @@ The representation $V_{2,2}$ decomposes into a direct sum of three 1-dimensional
 - $W_3 = \mathrm{span}(x_1^2 - x_2^2)$: This is a sign representation since $\tau(x_1^2 - x_2^2) = x_2^2 - x_1^2 = -(x_1^2 - x_2^2)$.
 
 Thus, the decomposition into irreducibles is $V_{2,2} \cong T \oplus T \oplus S \cong 2T \oplus S$.
+
+For $(d, n) = (3,1)$, the space is $V_{3,1} = \mathrm{span}(x_1^3)$. The representation of $S_1$ is the 1-dimensional trivial representation.
+
+For $(d, n) = (3,2)$, the space is $V_{3,2} = \mathrm{span}(x_1^3, x_1^2 x_2, x_1 x_2^2, x_2^3)$. The group is $S_2 = \{e, \tau\}$ where $\tau=(12)$. The irreducible representations of $S_2$ are the 1-dimensional trivial representation ($T$) and sign representation ($S$).
+
+The representation $V_{3,2}$ decomposes into a direct sum of four 1-dimensional subrepresentations:
+- $W_1 = \mathrm{span}(x_1^3+x_2^3)$: This is a trivial representation since $\tau(x_1^3+x_2^3) = x_2^3+x_1^3$.
+- $W_2 = \mathrm{span}(x_1^3-x_2^3)$: This is a sign representation since $\tau(x_1^3-x_2^3) = x_2^3-x_1^3 = -(x_1^3-x_2^3)$.
+- $W_3 = \mathrm{span}(x_1^2 x_2+x_2^2 x_1)$: This is a trivial representation since $\tau(x_1^2 x_2+x_2^2 x_1) = x_2^2 x_1+x_1^2 x_2 = x_1^2 x_2+x_2^2 x_1$.
+- $W_4 = \mathrm{span}(x_1^2 x_2-x_2^2 x_1)$: This is a sign representation since $\tau(x_1^2 x_2-x_2^2 x_1) = x_2^2 x_1-x_1^2 x_2 = -(x_1^2 x_2-x_2^2 x_1)$.
+Thus, the decomposition into irreducibles is $V_{3,2} \cong T \oplus S \oplus T \oplus S \cong 2T \oplus 2S$.
