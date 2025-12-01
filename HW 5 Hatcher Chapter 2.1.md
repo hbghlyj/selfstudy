@@ -115,7 +115,7 @@ Claim. Given a $\Delta$-complex $X$ such that each $k$-simplex has its vertices 
 
 Base Case:
 
-By hypothesis, $X^1$ comprises of 1 -simplices $X_i^1$. Now suppose that $X_i^1, X_j^1$ are 1 -simplices such that $\partial X_i^1=\partial X_j^1=\{a, b\}$ for some $a, b \in X^0$. Then under barycentric subdivision, for each $X_k^1$ (where $k \in \{i, j\}$), we introduce a barycenter $c_k \in X_k^1$. The barycentric subdivision of $X_k^1$ consists of two 1-simplices: $[a, c_k]$ and $[c_k, b]$. Since $c_i \neq c_j \neq a \neq b$ this implies that $B\left(X_i^1\right), \forall i$ has distinct vertices. Since this holds for arbitrary $X_i^1$, this means that $B\left(X^1\right)$ is comprised of simplices with different vertices
+By hypothesis, $X^1$ comprises of 1-simplices $X_i^1$. Now suppose that $X_i^1, X_j^1$ are 1-simplices such that $\partial X_i^1=\partial X_j^1=\{a, b\}$ for some $a, b \in X^0$. Then under barycentric subdivision, for each $X_k^1$ (where $`k \in \{i, j\}`$), we introduce a barycenter $c_k \in X_k^1$. The barycentric subdivision of $X_k^1$ consists of two 1-simplices: $[a, c_k]$ and $[c_k, b]$. Since $c_i \neq c_j \neq a \neq b$ this implies that $B\left(X_i^1\right), \forall i$ has distinct vertices. Since this holds for arbitrary $X_i^1$, this means that $B\left(X^1\right)$ is comprised of simplices with different vertices
 $\therefore B\left(X^1\right)$ is a simplicial complex
 
 Inductive Step:
@@ -134,7 +134,7 @@ $`\begin{aligned}
 {\left[b_j, y_0, \ldots, \hat{y}_k, \ldots, y_n\right] } & =\left[b_j, y_0, \ldots, \hat{y}_{k'}, \ldots, y_n\right] \Longleftrightarrow k=k'
 \end{aligned}`$
 
-This implies that $B\left(X_i^n\right), B\left(X_j^n\right)$ is made up of $n$-simplices with distinct vertices. Since this holds for arbitrary $X_i^n, X_j^n$ this means that $B\left(X^n\right)$ is made up of $n$-simplices with distinct vertices.
+This implies that $B(X_i^n), B(X_j^n)$ is made up of $n$-simplices with distinct vertices. Since this holds for arbitrary $X_i^n, X_j^n$ this means that $B\left(X^n\right)$ is made up of $n$-simplices with distinct vertices.
 
 Therefore $B(X)$ is a simplicial complex by induction
 
