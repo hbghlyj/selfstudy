@@ -95,44 +95,39 @@ Proof
 
 From the definitions in the book, "A simplicial complex is a $\Delta$-complex such that all the vertices for any given simplex are distinct and if two simplices have the same set of vertices, then they are the same simplex." Let us first show that barycentric subdivision leads to a $\Delta$-complex such that each simplex has distinct vertices. Note that $B(X)$ for a $\Delta$-complex $X$ simply means "the barycentric subdivision of $X$."
 
-subsimplices as `[b, x_0, ..., \hat{x}_i, ..., x_n]`. This implies coning from the barycenter `b` over the *original* $(n-1)$-faces of the $n$-simplex. However, the textbook explicitly states that `[w_0, ..., w_{n-1}]` is an $(n-1)$-simplex that comes from the *barycentric subdivision of a face* of the original $n$-simplex, not the face itself. This is a crucial distinction. Coning over the original faces does not produce a valid barycentric subdivision in the standard sense, as it would lead to overlapping simplices.
-
- leads to a total of `(n+1)!` new $n$-simplices in the barycentric subdivision of an $n$-simplex, not `n+1`. The `n+1` in your text likely refers to the number of $(n-1)$-faces of the original $n$-simplex, but the process of barycentric subdivision is more complex than simply coning over these faces.
-
-
-
 Claim. Given a $\Delta$-complex $X$ with $k$-simplices (i.e. $k$-skeleton) $X^k$, then $B\left(X^k\right)$ is comprised of simplices with distinct vertices.
 
 Proof. The vertices of any simplex in $B(X)$ are, by definition, the barycenters of a chain of strictly nested faces of $X$. Since the faces in the chain are all distinct, their barycenters are distinct, and thus the vertices of any simplex in $B(X)$ are distinct.
 
-Claim. Given a $\Delta$-complex $X$ such that each $k$-simplex has its vertices distinct, then $B(X)$ is a simplicial complex Let $X^n$ be the $n$-skeleton of $X$. We again proceed by induction.
+Claim. Given a $\Delta$-complex $X$ such that each $k$-simplex has its vertices distinct, then $B(X)$ is a simplicial complex. Let $X^n$ be the $n$-skeleton of $X$. We proceed by induction.
 
 Base Case:
 
-By hypothesis, $X^1$ comprises of 1-simplices $X_i^1$. Now suppose that $X_i^1, X_j^1$ are 1-simplices such that $\partial X_i^1=\partial X_j^1=\{a, b\}$ for some $a, b \in X^0$. Then under barycentric subdivision, for each $X_k^1$ (where $`k \in \{i, j\}`$), we introduce a barycenter $c_k \in X_k^1$. The barycentric subdivision of $X_k^1$ consists of two 1-simplices: $[a, c_k]$ and $[c_k, b]$. Since $c_i \neq c_j \neq a \neq b$ this implies that $B\left(X_i^1\right), \forall i$ has distinct vertices. Since this holds for arbitrary $X_i^1$, this means that $B\left(X^1\right)$ is comprised of simplices with different vertices
-$\therefore B\left(X^1\right)$ is a simplicial complex
+By hypothesis, $X^1$ comprises 1-simplices $X_i^1$. Suppose that $X_i^1, X_j^1$ are 1-simplices such that $\partial X_i^1=\partial X_j^1=\{a, b\}$ for some $a, b \in X^0$. Under barycentric subdivision, for each $X_k^1$ (where $k \in \{i, j\}$), we introduce a barycenter $c_k \in X_k^1$. The barycentric subdivision of $X_k^1$ consists of two 1-simplices: $[a, c_k]$ and $[c_k, b]$. Since $c_i \neq c_j \neq a \neq b$, this implies that $B\left(X_i^1\right)$ has distinct vertices and simplices are determined by their vertex sets. Thus $B\left(X^1\right)$ is a simplicial complex.
 
 Inductive Step:
 
-Now suppose that $B(X^m)$ is a simplicial complex $\forall m<n$ and suppose that $X_i^n=[x_0, \ldots, x_n], X_j^n=[y_0, \ldots, y_n]$ are two $n$-simplices in $X^n$ that have the same vertices. Again, barycentric subdivision introduces two barycenters $b_i, b_j$ such that,
+Assume that $B(X^{n-1})$ is a simplicial complex. We must show that $B(X^n)$ is a simplicial complex. Since we have already established that vertices in any simplex of $B(X)$ are distinct, we only need to show that any simplex in $B(X^n)$ is uniquely determined by its vertex set.
 
-$`\begin{aligned}
-B\left(X_i^n\right) & =\sum_k\left[b_i, x_0, \ldots, \hat{x}_k, \ldots, x_n\right] \\
-B\left(X_j^n\right) & =\sum_k\left[b_j, y_0, \ldots, \hat{y}_k, \ldots, y_n\right]
-\end{aligned}`$
+Let $\sigma$ be an $n$-simplex in $X^n$ with barycenter $b_\sigma$. The barycentric subdivision $B(\sigma)$ is defined as the cone with apex $b_\sigma$ over the barycentric subdivision of its boundary, $B(\partial \sigma)$. That is, every simplex $\tau$ in $B(\sigma)$ is of the form $[b_\sigma, \rho]$, where $\rho$ is a simplex in $B(\partial \sigma)$.
 
-Using precisely the same argument as in the last claim, using $\partial B\left(X_i^n\right), \partial B\left(X_j^n\right)$ is an alternating sum of $n-1$ faces that are coned over $b_i, b_j$, respectively. From the induction hypothesis, each of these faces has distinct vertices, so that we again have:
+Suppose $\tau_1, \tau_2$ are two simplices in $B(X^n)$ that share the same vertex set $V$.
 
-$`\begin{aligned}
-{\left[b_i, x_0, \ldots, \hat{x}_k, \ldots, x_n\right] } & =\left[b_i, x_0, \ldots, \hat{x}_{k'}, \ldots, x_n\right] \Longleftrightarrow k=k' \\
-{\left[b_j, y_0, \ldots, \hat{y}_k, \ldots, y_n\right] } & =\left[b_j, y_0, \ldots, \hat{y}_{k'}, \ldots, y_n\right] \Longleftrightarrow k=k'
-\end{aligned}`$
+1.  **Case 1:** $V$ contains no barycenters of any $n$-simplices.
+    Then $\tau_1$ and $\tau_2$ must lie entirely within $B(X^{n-1})$. By the inductive hypothesis, $B(X^{n-1})$ is a simplicial complex, so $\tau_1 = \tau_2$.
 
-This implies that $B(X_i^n), B(X_j^n)$ is made up of $n$-simplices with distinct vertices. Since this holds for arbitrary $X_i^n, X_j^n$ this means that $B\left(X^n\right)$ is made up of $n$-simplices with distinct vertices.
+2.  **Case 2:** $V$ contains a barycenter $b_\sigma$ of an $n$-simplex $\sigma$.
+    Because simplices in $B(X)$ correspond to chains of strictly nested faces, a simplex can contain at most one barycenter of an $n$-simplex (since no two $n$-simplices can be properly nested). Thus, both $\tau_1$ and $\tau_2$ must belong to the subdivision of the same $n$-simplex $\sigma$.
+    
+    We can write $\tau_1 = [b_\sigma, \rho_1]$ and $\tau_2 = [b_\sigma, \rho_2]$, where $\rho_1, \rho_2$ are simplices in $B(\partial \sigma)$. The vertex set $V$ is the disjoint union $\{b_\sigma\} \cup V'$, where $V'$ is the vertex set of both $\rho_1$ and $\rho_2$.
+    
+    Since $\partial \sigma \subset X^{n-1}$, we know $\rho_1, \rho_2 \in B(X^{n-1})$. By the inductive hypothesis, simplices in $B(X^{n-1})$ are determined by their vertices. Therefore, $\rho_1 = \rho_2$.
+    
+    This implies $\tau_1 = [b_\sigma, \rho_1] = [b_\sigma, \rho_2] = \tau_2$.
 
-Therefore $B(X)$ is a simplicial complex by induction
+Since simplices are uniquely determined by their vertices, $B(X^n)$ is a simplicial complex.
 
-Therefore any $\Delta$-complex can be transformed to a simplicial complex via two subsequent barycentric subdivisions
+Therefore, $B(X)$ is a simplicial complex by induction. Any $\Delta$-complex can be transformed into a simplicial complex via two subsequent barycentric subdivisions.
 
 # 29
 Show that $S^1 \times S^1$ and $S^1 \vee S^1 \vee S^2$ have isomorphic homology groups in all dimensions, but their universal covering spaces do not.
