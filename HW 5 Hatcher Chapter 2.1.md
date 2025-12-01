@@ -105,7 +105,7 @@ Proof. Let $X^n$ be the $n$-skeleton of $X$. We proceed by induction.
 
 Base Case:
 
-By hypothesis, $X^1$ comprises 1-simplices $X_i^1$. Suppose that $X_i^1, X_j^1$ are 1-simplices such that $\partial X_i^1=\partial X_j^1=\{a, b\}$ for some $a, b \in X^0$. Under barycentric subdivision, for each $X_k^1$ (where $k \in \{i, j\}$), we introduce a barycenter $c_k \in X_k^1$. The barycentric subdivision of $X_k^1$ consists of two 1-simplices: $[a, c_k]$ and $[c_k, b]$. Since $c_i \neq c_j \neq a \neq b$, this implies that $B\left(X_i^1\right)$ has distinct vertices and simplices are determined by their vertex sets. Thus $B\left(X^1\right)$ is a simplicial complex.
+By hypothesis, $X^1$ comprises 1-simplices $X_i^1$. Suppose that $X_i^1, X_j^1$ are 1-simplices such that $`\partial X_i^1=\partial X_j^1=\{a, b\}`$ for some $a, b \in X^0$. Under barycentric subdivision, for each $X_k^1$ (where $k \in \{i, j\}$), we introduce a barycenter $c_k \in X_k^1$. The barycentric subdivision of $X_k^1$ consists of two 1-simplices: $[a, c_k]$ and $[c_k, b]$. Since $c_i \neq c_j \neq a \neq b$, this implies that $B\left(X_i^1\right)$ has distinct vertices and simplices are determined by their vertex sets. Thus $B\left(X^1\right)$ is a simplicial complex.
 
 Inductive Step:
 
