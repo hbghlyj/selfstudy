@@ -93,3 +93,19 @@ Namely, show that the first barycentric subdivision produces a $\Delta$-complex 
 
 # 29
 Show that $S^1 \times S^1$ and $S^1 \vee S^1 \vee S^2$ have isomorphic homology groups in all dimensions, but their universal covering spaces do not.
+
+Proof
+
+Both spaces have the same homology groups. The homology of the torus $S^1 \times S^1$ is found using the Künneth formula, and the homology of the wedge sum $S^1 \vee S^1 \vee S^2$ is found using the property of homology for wedge sums of good pairs:
+
+$`H_n(S^1 \times S^1) \cong \begin{cases} \mathbb{Z} & n = 0 \\ \mathbb{Z}^2 & n = 1 \\ \mathbb{Z} & n = 2 \\ 0 & \text{otherwise} \end{cases}`$
+
+$`H_n(S^1 \vee S^1 \vee S^2) \cong \begin{cases} \mathbb{Z} & n = 0 \\ \mathbb{Z}^2 & n = 1 \\ \mathbb{Z} & n = 2 \\ 0 & \text{otherwise} \end{cases}`$
+
+The universal covering spaces are
+
+$`U(S^1 \times S^1) = \mathbb{R}^2`$
+
+$`U(S^1 \vee S^1 \vee S^2)` is the universal cover of $S^1 \vee S^1$ (an infinite tree) with an $S^2$ attached at each vertex.
+
+These two universal covering spaces are not homeomorphic. For example, $\mathbb{R}^2$ is contractible, so its homology groups are trivial for $n>0$. The universal cover of $S^1 \vee S^1 \vee S^2$ is an infinite wedge of 2-spheres, so its second homology group is a free abelian group on infinitely many generators. Since their homology groups differ, they are not homotopy equivalent, and therefore not homeomorphic.
