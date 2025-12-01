@@ -95,11 +95,13 @@ Proof
 
 From the definitions in the book, "A simplicial complex is a $\Delta$-complex such that all the vertices for any given simplex are distinct and if two simplices have the same set of vertices, then they are the same simplex." Let us first show that barycentric subdivision leads to a $\Delta$-complex such that each simplex has distinct vertices. Note that $B(X)$ for a $\Delta$-complex $X$ simply means "the barycentric subdivision of $X$."
 
-Claim. Given a $\Delta$-complex $X$ with $k$-simplices (i.e. $k$-skeleton) $X^k$, then $B\left(X^k\right)$ is comprised of simplices with distinct vertices.
+> Claim. Given a $\Delta$-complex $X$ with $k$-simplices (i.e. $k$-skeleton) $X^k$, then $B\left(X^k\right)$ is comprised of simplices with distinct vertices.
 
 Proof. The vertices of any simplex in $B(X)$ are, by definition, the barycenters of a chain of strictly nested faces of $X$. Since the faces in the chain are all distinct, their barycenters are distinct, and thus the vertices of any simplex in $B(X)$ are distinct.
 
-Claim. Given a $\Delta$-complex $X$ such that each $k$-simplex has its vertices distinct, then $B(X)$ is a simplicial complex. Let $X^n$ be the $n$-skeleton of $X$. We proceed by induction.
+> Claim. Given a $\Delta$-complex $X$ such that each $k$-simplex has its vertices distinct, then $B(X)$ is a simplicial complex.
+
+Proof. Let $X^n$ be the $n$-skeleton of $X$. We proceed by induction.
 
 Base Case:
 
