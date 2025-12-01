@@ -103,7 +103,7 @@ subsimplices as `[b, x_0, ..., \hat{x}_i, ..., x_n]`. This implies coning from t
 
 Claim. Given a $\Delta$-complex $X$ with $k$-simplices (i.e. $k$-skeleton) $X^k$, then $B\left(X^k\right)$ is comprised of simplices with distinct vertices.
 
-Proof. the vertices of any simplex in $B(X)$ are, by definition, the barycenters of a chain of strictly nested faces of $X$. Since the faces in the chain are all distinct, their barycenters are distinct, and thus the vertices of any simplex in $B(X)$ are distinct.
+Proof. The vertices of any simplex in $B(X)$ are, by definition, the barycenters of a chain of strictly nested faces of $X$. Since the faces in the chain are all distinct, their barycenters are distinct, and thus the vertices of any simplex in $B(X)$ are distinct.
 
 Claim. Given a $\Delta$-complex $X$ such that each $k$-simplex has its vertices distinct, then $B(X)$ is a simplicial complex Let $X^n$ be the $n$-skeleton of $X$. We again proceed by induction.
 
