@@ -96,7 +96,7 @@ Show that $S^1 \times S^1$ and $S^1 \vee S^1 \vee S^2$ have isomorphic homology 
 
 Proof
 
-Both spaces have the same homology groups:
+Both spaces have the same homology groups. The homology of the torus $S^1 \times S^1$ is found using the Künneth formula, and the homology of the wedge sum $S^1 \vee S^1 \vee S^2$ is found using the property of homology for wedge sums of good pairs:
 
 $`H_n(S^1 \times S^1) \cong \begin{cases} \mathbb{Z} & n = 0 \\ \mathbb{Z}^2 & n = 1 \\ \mathbb{Z} & n = 2 \\ 0 & \text{otherwise} \end{cases}`$
 
