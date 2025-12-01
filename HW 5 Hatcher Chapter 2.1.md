@@ -140,7 +140,7 @@ Both spaces have the same homology groups. The homology of the torus $S^1 \times
 
 $`H_n(S^1 \times S^1) \cong \begin{cases} \mathbb{Z} & n = 0 \\ \mathbb{Z}^2 & n = 1 \\ \mathbb{Z} & n = 2 \\ 0 & \text{otherwise} \end{cases}`$
 
-$`H_n(S^1 \vee S^1 \vee S^2) \cong H_n(S^1) \oplus H_n(S^1) \oplus H_n(S^2) \begin{cases} \mathbb{Z} & n = 0 \\ \mathbb{Z}^2 & n = 1 \\ \mathbb{Z} & n = 2 \\ 0 & \text{otherwise} \end{cases}`$
+$`\tilde{H}_n(S^1 \vee S^1 \vee S^2) \cong \tilde{H}_n(S^1) \oplus \tilde{H}_n(S^1) \oplus \tilde{H}_n(S^2) \implies H_n(S^1 \vee S^1 \vee S^2) \cong \begin{cases} \mathbb{Z} & n = 0 \ \mathbb{Z}^2 & n = 1 \ \mathbb{Z} & n = 2 \ 0 & \text{otherwise} \end{cases}`$
 
 The universal covering spaces are
 
