@@ -95,12 +95,6 @@ Proof
 
 From the definitions in the book, "A simplicial complex is a $\Delta$-complex such that all the vertices for any given simplex are distinct and if two simplices have the same set of vertices, then they are the same simplex." Let us first show that barycentric subdivision leads to a $\Delta$-complex such that each simplex has distinct vertices. Note that $B(X)$ for a $\Delta$-complex $X$ simply means "the barycentric subdivision of $X$."
 
-subsimplices as `[b, x_0, ..., \hat{x}_i, ..., x_n]`. This implies coning from the barycenter `b` over the *original* $(n-1)$-faces of the $n$-simplex. However, the textbook explicitly states that `[w_0, ..., w_{n-1}]` is an $(n-1)$-simplex that comes from the *barycentric subdivision of a face* of the original $n$-simplex, not the face itself. This is a crucial distinction. Coning over the original faces does not produce a valid barycentric subdivision in the standard sense, as it would lead to overlapping simplices.
-
- leads to a total of `(n+1)!` new $n$-simplices in the barycentric subdivision of an $n$-simplex, not `n+1`. The `n+1` in your text likely refers to the number of $(n-1)$-faces of the original $n$-simplex, but the process of barycentric subdivision is more complex than simply coning over these faces.
-
-
-
 Claim. Given a $\Delta$-complex $X$ with $k$-simplices (i.e. $k$-skeleton) $X^k$, then $B\left(X^k\right)$ is comprised of simplices with distinct vertices.
 
 Proof. The vertices of any simplex in $B(X)$ are, by definition, the barycenters of a chain of strictly nested faces of $X$. Since the faces in the chain are all distinct, their barycenters are distinct, and thus the vertices of any simplex in $B(X)$ are distinct.
@@ -109,24 +103,28 @@ Claim. Given a $\Delta$-complex $X$ such that each $k$-simplex has its vertices 
 
 Base Case:
 
-By hypothesis, $X^1$ comprises of 1-simplices $X_i^1$. Now suppose that $X_i^1, X_j^1$ are 1-simplices such that $\partial X_i^1=\partial X_j^1=\{a, b\}$ for some $a, b \in X^0$. Then under barycentric subdivision, for each $X_k^1$ (where $`k \in \{i, j\}`$), we introduce a barycenter $c_k \in X_k^1$. The barycentric subdivision of $X_k^1$ consists of two 1-simplices: $[a, c_k]$ and $[c_k, b]$. Since $c_i \neq c_j \neq a \neq b$ this implies that $B\left(X_i^1\right), \forall i$ has distinct vertices. Since this holds for arbitrary $X_i^1$, this means that $B\left(X^1\right)$ is comprised of simplices with different vertices
+By hypothesis, $X^1$ comprises of 1-simplices $X_i^1$. Now suppose that $X_i^1, X_j^1$ are 1-simplices such that $\partial X_i^1=\partial X_j^1=\{a, b\}$ for some $a, b \in X^0$. Then under barycentric subdivision, for each $X_k^1$ (where $k \in \{i, j\}$), we introduce a barycenter $c_k \in X_k^1$. The barycentric subdivision of $X_k^1$ consists of two 1-simplices: $[a, c_k]$ and $[c_k, b]$. Since $c_i \neq c_j \neq a \neq b$ this implies that $B\left(X_i^1\right), \forall i$ has distinct vertices. Since this holds for arbitrary $X_i^1$, this means that $B\left(X^1\right)$ is comprised of simplices with different vertices
 $\therefore B\left(X^1\right)$ is a simplicial complex
 
 Inductive Step:
 
 Now suppose that $B(X^m)$ is a simplicial complex $\forall m<n$ and suppose that $X_i^n=[x_0, \ldots, x_n], X_j^n=[y_0, \ldots, y_n]$ are two $n$-simplices in $X^n$ that have the same vertices. Again, barycentric subdivision introduces two barycenters $b_i, b_j$ such that,
 
-$`\begin{aligned}
+$$
+\begin{aligned}
 B\left(X_i^n\right) & =\sum_k\left[b_i, x_0, \ldots, \hat{x}_k, \ldots, x_n\right] \\
 B\left(X_j^n\right) & =\sum_k\left[b_j, y_0, \ldots, \hat{y}_k, \ldots, y_n\right]
-\end{aligned}`$
+\end{aligned}
+$$
 
 Using precisely the same argument as in the last claim, using $\partial B\left(X_i^n\right), \partial B\left(X_j^n\right)$ is an alternating sum of $n-1$ faces that are coned over $b_i, b_j$, respectively. From the induction hypothesis, each of these faces has distinct vertices, so that we again have:
 
-$`\begin{aligned}
+$$
+\begin{aligned}
 {\left[b_i, x_0, \ldots, \hat{x}_k, \ldots, x_n\right] } & =\left[b_i, x_0, \ldots, \hat{x}_{k'}, \ldots, x_n\right] \Longleftrightarrow k=k' \\
 {\left[b_j, y_0, \ldots, \hat{y}_k, \ldots, y_n\right] } & =\left[b_j, y_0, \ldots, \hat{y}_{k'}, \ldots, y_n\right] \Longleftrightarrow k=k'
-\end{aligned}`$
+\end{aligned}
+$$
 
 This implies that $B(X_i^n), B(X_j^n)$ is made up of $n$-simplices with distinct vertices. Since this holds for arbitrary $X_i^n, X_j^n$ this means that $B\left(X^n\right)$ is made up of $n$-simplices with distinct vertices.
 
