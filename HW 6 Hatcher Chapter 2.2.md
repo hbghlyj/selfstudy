@@ -1,6 +1,12 @@
 # 1
 Prove the Brouwer fixed point theorem for maps $f: D^n \rightarrow D^n$ by applying degree theory to the map $S^n \rightarrow S^n$ that sends both the northern and southern hemispheres of $S^n$ to the southern hemisphere via $f$. [This was Brouwer's original proof.]
 
+Proof
+
+Assume for contradiction that there exists a continuous map $f: D^n \rightarrow D^n$ without a fixed point.
+
+Since $S^n$ can be viewed as the union of two hemispheres $D^n_+$ and $D^n_-$, we can define a map $F: S^n \rightarrow S^n$ as follows:
+
 # 9(a)
 Compute the homology groups of the following 2-complex:
 
