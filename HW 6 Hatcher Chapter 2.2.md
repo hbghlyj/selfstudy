@@ -5,7 +5,7 @@ Proof
 
 Assume for contradiction that there exists a continuous map $f: D^n \rightarrow D^n$ without a fixed point.
 
-Since $S^{n+1}$ can be viewed as the union of two hemispheres $D^{n+1}_+$ and $D^{n+1}_-$, we can define a map $F: S^{n+1} \rightarrow S^{n+1}$ as follows:
+Since $S^n$ can be viewed as the union of two hemispheres $D^n_+$ and $D^n_-$, we can define a map $F: S^n \rightarrow S^n$ as follows:
 
 # 9(a)
 Compute the homology groups of the following 2-complex:
