@@ -1,3 +1,33 @@
+# 1
+Prove the Brouwer fixed point theorem for maps $f: D^n \rightarrow D^n$ by applying degree theory to the map $S^n \rightarrow S^n$ that sends both the northern and southern hemispheres of $S^n$ to the southern hemisphere via $f$. [This was Brouwer's original proof.]
+
+# 9(a)
+Compute the homology groups of the following 2-complex:
+
+The quotient of $S^2$ obtained by identifying north and south poles to a point.
+
+# 9(d)
+Compute the homology groups of the following 2-complex:
+
+The quotient space of $S^1 \times S^1$ obtained by identifying points in the circle $`S^1 \times\{x_0\}`$ that differ by $2 \pi / m$ rotation and identifying points in the circle $`\{x_0\} \times S^1`$ that differ by $2 \pi / n$ rotation.
+
+# 14
+A map $f: S^n \rightarrow S^n$ satisfying $f(x)=f(-x)$ for all $x$ is called an even map. Show that an even map $S^n \rightarrow S^n$ must have even degree, and that the degree must in fact be zero when $n$ is even. When $n$ is odd, show there exist even maps of any given even degree.
+
+[Hints: If $f$ is even, it factors as a composition $S^n \rightarrow \mathbb{R} P^n \rightarrow S^n$. Using the calculation of $H_n\left(\mathbb{R} P^n\right)$ in the text, show that the induced map $H_n\left(S^n\right) \rightarrow H_n\left(\mathbb{R} P^n\right)$ sends a generator to twice a generator when $n$ is odd. It may be helpful to show that the quotient map $\mathbb{R} P^n \rightarrow \mathbb{R} P^n / \mathbb{R} P^{n-1}$ induces an isomorphism on $H_n$ when $n$ is odd.]
+
+# 15
+Show that if $X$ is a CW complex then $H_n\left(X^n\right)$ is free by identifying it with the kernel of the cellular boundary map $H_n\left(X^n, X^{n-1}\right) \rightarrow H_{n-1}\left(X^{n-1}, X^{n-2}\right)$.
+
+# 20
+For finite CW complexes $X$ and $Y$, show that $\chi(X \times Y)=\chi(X) \chi(Y)$.
+
+# 22
+For $X$ a finite CW complex and $p: \tilde{X} \rightarrow X$ an $n$-sheeted covering space, show that $\chi(\tilde{X})=n \chi(X)$.
+
+# 28(a)
+Use the Mayer-Vietoris sequence to compute the homology groups of the space obtained from a torus $S^1 \times S^1$ by attaching a Möbius band via a homeomorphism from the boundary circle of the Möbius band to the circle $S^1 \times\left\{x_0\right\}$ in the torus.
+
 # 13
 Let $X$ be the 2-complex obtained from $S^1$ with its usual cell structure by attaching two 2-cells by maps of degrees 2 and 3, respectively.
 <ol type="a">
