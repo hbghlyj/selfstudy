@@ -17,7 +17,7 @@ A map $f: S^n \rightarrow S^n$ satisfying $f(x)=f(-x)$ for all $x$ is called an 
 [Hints: If $f$ is even, it factors as a composition $S^n \rightarrow \mathbb{R} P^n \rightarrow S^n$. Using the calculation of $H_n\left(\mathbb{R} P^n\right)$ in the text, show that the induced map $H_n\left(S^n\right) \rightarrow H_n\left(\mathbb{R} P^n\right)$ sends a generator to twice a generator when $n$ is odd. It may be helpful to show that the quotient map $\mathbb{R} P^n \rightarrow \mathbb{R} P^n / \mathbb{R} P^{n-1}$ induces an isomorphism on $H_n$ when $n$ is odd.]
 
 # 15
-Show that if $X$ is a CW complex then $H_n\left(X^n\right)$ is free by identifying it with the kernel of the cellular boundary map $H_n\left(X^n, X^{n-1}\right) \rightarrow H_{n-1}\left(X^{n-1}, X^{n-2}\right)$.
+Show that if $X$ is a CW complex then $H_n(X^n)$ is free by identifying it with the kernel of the cellular boundary map $H_n(X^n, X^{n-1}) \rightarrow H_{n-1}(X^{n-1}, X^{n-2})$.
 
 # 20
 For finite CW complexes $X$ and $Y$, show that $\chi(X \times Y)=\chi(X) \chi(Y)$.
