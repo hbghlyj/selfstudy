@@ -47,6 +47,14 @@ A map $f: S^n \rightarrow S^n$ satisfying $f(x)=f(-x)$ for all $x$ is called an 
 
 [Hints: If $f$ is even, it factors as a composition $S^n \rightarrow \mathbb{R} P^n \rightarrow S^n$. Using the calculation of $`H_n(\mathbb{R} P^n)`$ in the text, show that the induced map $`H_n(S^n) \rightarrow H_n(\mathbb{R} P^n)`$ sends a generator to twice a generator when $n$ is odd. It may be helpful to show that the quotient map $\mathbb{R} P^n \rightarrow \mathbb{R} P^n / \mathbb{R} P^{n-1}$ induces an isomorphism on $H_n$ when $n$ is odd.]
 
+Proof
+
+Let $f: S^n \rightarrow S^n$ be an even map, meaning that $f(x) = f(-x)$ for all $x \in S^n$. This implies that $f$ factors through the quotient map $\pi: S^n \rightarrow \mathbb{R}P^n$, where $\mathbb{R}P^n$ is the real projective space obtained by identifying antipodal points on $S^n$. Thus, we can write $f$ as the composition:
+
+$f = g \circ \pi$
+
+where $g: \mathbb{R}P^n \rightarrow S^n$.
+
 # 15
 Show that if $X$ is a CW complex then $H_n(X^n)$ is free by identifying it with the kernel of the cellular boundary map $H_n(X^n, X^{n-1}) \rightarrow H_{n-1}(X^{n-1}, X^{n-2})$.
 
