@@ -73,7 +73,7 @@ $`\begin{align*}
 \chi(X \times Y) &= \sum_{k=0}^{\infty} (-1)^k c_k(X \times Y) \\
 &= \sum_{k=0}^{\infty} (-1)^k \sum_{i+j=k} c_i(X) c_j(Y) \\
 &= \sum_{i=0}^{\infty} \sum_{j=0}^{\infty} (-1)^{i+j} c_i(X) c_j(Y) \\
-&= \sum_{i=0}^{\infty} c_i(X) \sum_{j=0}^{\infty} c_j(Y) \\
+&= \left( \sum_{i=0}^{\infty} (-1)^i c_i(X) \right) \left( \sum_{j=0}^{\infty} (-1)^j c_j(Y) \right) \\
 &= \chi(X) \chi(Y)
 \end{align*}`$
 
