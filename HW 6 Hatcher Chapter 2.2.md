@@ -113,7 +113,7 @@ where $`i_*`$ and $`j_*`$ are induced by the inclusion maps of the boundary circ
 
 *   **Case n > 2:**
     
-    Since both $`H_n(T)`$ and $H_n(M)$ are zero for $n > 2$, it follows from the exactness of the sequence that $H_n(X) = 0$ for $n > 2$.
+    Since both $`H_n(T)\oplus H_n(M)`$ and $`H_{n-1}(S^1)`$ are zero for $n > 2$, it follows from the exactness of the sequence that $H_n(X) = 0$ for $n > 2$.
 *   **Case n = 2:**
     
     The sequence gives $`\dots \to H_2(T)\oplus H_2(M) \to H_2(X) \xrightarrow{\delta} H_1(S^1) \xrightarrow{(i_*,j_*)} \dots`$. The map $`(i_*,j_*)`$ is injective, so its kernel is trivial. By exactness, the image of $\delta$ is trivial, so $\delta$ is the zero map. The preceding term in the sequence, $H_2(S^1)$, is 0. This implies the map $H_2(T)\oplus H_2(M) \to H_2(X)$ is an isomorphism. Therefore, $H_2(X) \cong H_2(T) \oplus H_2(M) \cong \mathbb{Z}$.
