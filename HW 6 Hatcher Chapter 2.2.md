@@ -47,6 +47,21 @@ A map $f: S^n \rightarrow S^n$ satisfying $f(x)=f(-x)$ for all $x$ is called an 
 
 [Hints: If $f$ is even, it factors as a composition $S^n \rightarrow \mathbb{R} P^n \rightarrow S^n$. Using the calculation of $`H_n(\mathbb{R} P^n)`$ in the text, show that the induced map $`H_n(S^n) \rightarrow H_n(\mathbb{R} P^n)`$ sends a generator to twice a generator when $n$ is odd. It may be helpful to show that the quotient map $\mathbb{R} P^n \rightarrow \mathbb{R} P^n / \mathbb{R} P^{n-1}$ induces an isomorphism on $H_n$ when $n$ is odd.]
 
+Proof
+
+Let $f: S^n \rightarrow S^n$ be an even map, meaning that $f(x) = f(-x)$ for all $x \in S^n$. This implies that $f$ factors through the quotient map $\pi: S^n \rightarrow \mathbb{R}P^n$, where $\mathbb{R}P^n$ is the real projective space obtained by identifying antipodal points on $S^n$. Thus, we can write $f$ as the composition:
+
+$f = g \circ \pi$,
+
+where $g: \mathbb{R}P^n \rightarrow S^n$.
+
+To analyze the degree of $f$, we consider the induced maps on homology:
+
+- If $n$ is even, then $H_n(\mathbb{R}P^n) = 0$. Therefore, the induced map $\pi_*: H_n(S^n) \rightarrow H_n(\mathbb{R}P^n)$ is the zero map. Consequently, the composition $f_* = g_* \circ \pi_*$ is also the zero map, which implies that $deg(f) = 0$.
+- If $n$ is odd, then $H_n(\mathbb{R}P^n) \cong \mathbb{Z}$. The map $\pi_*: H_n(S^n) \rightarrow H_n(\mathbb{R}P^n)$ sends a generator to $\pm 2$ times a generator. Let $g_*: H_n(\mathbb{R}P^n) \rightarrow H_n(S^n)$ be multiplication by an integer $k$. Then the composition $f_* = g_* \circ \pi_*$ corresponds to multiplication by $\pm 2k$. Therefore, the degree of $f$ must be even.
+
+To show that any even degree is possible when $n$ is odd, we construct a map $f=g \circ \pi$ of degree $2k$ for any integer $k$. This requires constructing a map $g: \mathbb{R}P^n \rightarrow S^n$ that induces multiplication by $k$ on $H_n$. As suggested in the hint, for odd $n$, the quotient map $q: \mathbb{R}P^n \rightarrow \mathbb{R}P^n / \mathbb{R}P^{n-1} \cong S^n$ induces an isomorphism on $H_n$. Let $h: S^n \rightarrow S^n$ be a map of degree $k$. We can define $g = h \circ q$. The induced map $g_* = h_* \circ q_*$ will then correspond to multiplication by $k$ on the $n$-th homology group. The composition $f = g \circ \pi$ will then have degree $2k$, showing that any even degree is possible.
+
 # 15
 Show that if $X$ is a CW complex then $H_n(X^n)$ is free by identifying it with the kernel of the cellular boundary map $H_n(X^n, X^{n-1}) \rightarrow H_{n-1}(X^{n-1}, X^{n-2})$.
 
