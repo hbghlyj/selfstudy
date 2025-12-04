@@ -114,7 +114,7 @@ where $i_*$ and $j_*$ are induced by the inclusion maps of the boundary circle i
 *   **Case n > 2:**
    Since both $H_n(T)$ and $H_n(M)$ are zero for $n > 2$, it follows from the exactness of the sequence that $H_n(X) = 0$ for $n > 2$.
 *   **Case n = 2:**
-   Since $H_2(T) \cong \mathbb{Z}$ and $H_2(M) = 0$, the map from $H_2(T) \oplus H_2(M)$ to $H_2(X)$ is surjective. The kernel of this map is trivial because the next term in the sequence, $H_1(S^1) \cong \mathbb{Z}$, maps injectively into $H_1(T) \oplus H_1(M)$. Therefore, $H_2(X) \cong \mathbb{Z}$.
+   The sequence gives $\dots \to H_2(T)\oplus H_2(M) \to H_2(X) \xrightarrow{\delta} H_1(S^1) \xrightarrow{(i_*,j_*)} \dots$. The map $(i_*,j_*)$ is injective, so its kernel is trivial. By exactness, the image of $\delta$ is trivial, so $\delta$ is the zero map. The preceding term in the sequence, $H_2(S^1)$, is 0. This implies the map $H_2(T)\oplus H_2(M) \to H_2(X)$ is an isomorphism. Therefore, $H_2(X) \cong H_2(T) \oplus H_2(M) \cong \mathbb{Z}$.
 *   **Case n = 1:**
    The map from $H_1(S^1) \cong \mathbb{Z}$ to $H_1(T) \oplus H_1(M) \cong \mathbb{Z}^2 \oplus \mathbb{Z}$ sends the generator of $H_1(S^1)$ to $(1,0,2)$, reflecting the fact that the boundary circle of the Möbius band wraps around the torus once in one direction and twice in the other. The cokernel of this map is isomorphic to $\mathbb{Z}^2$, so $H_1(X) \cong \mathbb{Z}^2$.
 *   **Case n = 0:**
