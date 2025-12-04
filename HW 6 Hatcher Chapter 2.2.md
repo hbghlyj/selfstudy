@@ -109,7 +109,7 @@ The Mayer-Vietoris sequence for the decomposition of the space $X$ into the toru
 
 $`\cdots \rightarrow H_n(S^1) \xrightarrow{(i_*, j_*)} H_n(T) \oplus H_n(M) \xrightarrow{k_* - l_*} H_n(X) \xrightarrow{\delta} H_{n-1}(S^1) \rightarrow \cdots`$
 
-where $`i_*`$ and $`j_*`$ are induced by the inclusion maps of the boundary circle into the torus and the Möbius band, respectively, and $k_*$ and $l_*$ are induced by the inclusion maps of the torus and the Möbius band into $X$.
+where $`i_*`$ and $`j_*`$ are induced by the inclusion maps of the boundary circle into the torus and the Möbius band, respectively, and $`k_*`$ and $`l_*`$ are induced by the inclusion maps of the torus and the Möbius band into $X$.
 
 *   **Case n > 2:**
     
