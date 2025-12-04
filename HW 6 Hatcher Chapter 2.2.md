@@ -6,7 +6,7 @@ Proof
 Assume for contradiction that there exists a continuous map $f: D^n \rightarrow D^n$ without a fixed point.
 
 Since $S^n$ can be viewed as the union of two hemispheres $D^n_+$ and $D^n_-$, we can define a map $F: S^n \rightarrow S^n$ as follows:
- 
+We identify $D^n$ with the southern hemisphere $D^n_-$, so $f$ is a map $f: D^n_- \to D^n_-$. 
 - For $x \in D^n_+$ (the northern hemisphere), define $F(x) = f(\text{Reflect}_{z=0}(x))$.
 - For $x \in D^n_-$ (the southern hemisphere), define $F(x) = f(x)$.
  
