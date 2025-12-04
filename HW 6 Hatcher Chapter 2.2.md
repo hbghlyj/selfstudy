@@ -7,7 +7,7 @@ Assume for contradiction that there exists a continuous map $f: D^n \rightarrow 
 
 Since $S^n$ can be viewed as the union of two hemispheres $D^n_+$ and $D^n_-$, we can define a map $F: S^n \rightarrow S^n$ as follows:
  
-- For $x \in D^n_+$ (the northern hemisphere), define $F(x) = f(-x)$.
+- For $x \in D^n_+$ (the northern hemisphere), define $F(x) = f(\text{Reflect}_{z=0}(x))$.
 - For $x \in D^n_-$ (the southern hemisphere), define $F(x) = f(x)$.
  
 The image of both hemispheres under $F$ lies in the southern hemisphere of $S^n$. Since the map is not surjective onto $S^n$, the degree of $F$ must be zero.
