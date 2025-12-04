@@ -58,7 +58,7 @@ where $g: \mathbb{R}P^n \rightarrow S^n$.
 To analyze the degree of $f$, we consider the induced maps on homology:
 
 - If $n$ is even, then $H_n(\mathbb{R}P^n) = 0$. Therefore, the induced map $\pi_*: H_n(S^n) \rightarrow H_n(\mathbb{R}P^n)$ is the zero map. Consequently, the composition $f_* = g_* \circ \pi_*$ is also the zero map, which implies that $deg(f) = 0$.
-- If $n$ is odd, then $H_n(\mathbb{R}P^n) \cong \mathbb{Z}$. The map $\pi_*: H_n(S^n) \rightarrow H_n(\mathbb{R}P^n)$ sends a generator of $H_n(S^n)$ to twice a generator of $H_n(\mathbb{R}P^n)$. Therefore, the degree of $f$ must be even, as it is given by the composition of the induced maps.
+- If $n$ is odd, then $H_n(\mathbb{R}P^n) \cong \mathbb{Z}$. The map $\pi_*: H_n(S^n) \rightarrow H_n(\mathbb{R}P^n)$ sends a generator to $\pm 2$ times a generator. Let $g_*: H_n(\mathbb{R}P^n) \rightarrow H_n(S^n)$ be multiplication by an integer $k$. Then the composition $f_* = g_* \circ \pi_*$ corresponds to multiplication by $\pm 2k$. Therefore, the degree of $f$ must be even.
 
 To show that any even degree is possible when $n$ is odd, we construct a map $f=g \circ \pi$ of degree $2k$ for any integer $k$. This requires constructing a map $g: \mathbb{R}P^n \rightarrow S^n$ that induces multiplication by $k$ on $H_n$. As suggested in the hint, for odd $n$, the quotient map $q: \mathbb{R}P^n \rightarrow \mathbb{R}P^n / \mathbb{R}P^{n-1} \cong S^n$ induces an isomorphism on $H_n$. Let $h: S^n \rightarrow S^n$ be a map of degree $k$. We can define $g = h \circ q$. The induced map $g_* = h_* \circ q_*$ will then correspond to multiplication by $k$ on the $n$-th homology group. The composition $f = g \circ \pi$ will then have degree $2k$, showing that any even degree is possible.
 
