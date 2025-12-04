@@ -80,6 +80,26 @@ $`\begin{align*}
 # 22
 For $X$ a finite CW complex and $p: \tilde{X} \rightarrow X$ an $n$-sheeted covering space, show that $\chi(\tilde{X})=n \chi(X)$.
 
+Proof
+
+The Euler characteristic of a CW complex $X$ is given by
+
+$\chi(X) = \sum_{n=0}^{\infty} (-1)^n c_n(X)$,
+
+where $c_n(X)$ is the number of $n$-cells in $X$.
+
+The Euler characteristic of the covering space $\tilde{X}$ can be computed similarly:
+
+$\chi(\tilde{X}) = \sum_{n=0}^{\infty} (-1)^n c_n(\tilde{X})$.
+
+Since $p: \tilde{X} \rightarrow X$ is an $n$-sheeted covering space, each $k$-cell in $X$ lifts to $n$ distinct $k$-cells in $\tilde{X}$. Therefore, we have:
+
+$c_k(\tilde{X}) = n \cdot c_k(X)$ for all $k \ge 0$.
+
+Thus, the Euler characteristic of $\tilde{X}$ can be computed as follows:
+
+$\chi(\tilde{X}) = \sum_{k=0}^{\infty} (-1)^k c_k(\tilde{X}) = \sum_{k=0}^{\infty} (-1)^k (n \cdot c_k(X)) = n \left( \sum_{k=0}^{\infty} (-1)^k c_k(X) \right) = n \chi(X)$.
+
 # 28(a)
 Use the Mayer-Vietoris sequence to compute the homology groups of the space obtained from a torus $S^1 \times S^1$ by attaching a Möbius band via a homeomorphism from the boundary circle of the Möbius band to the circle $`S^1 \times\{x_0\}`$ in the torus.
 
