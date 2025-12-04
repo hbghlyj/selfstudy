@@ -6,11 +6,25 @@ Proof
 Assume for contradiction that there exists a continuous map $f: D^n \rightarrow D^n$ without a fixed point.
 
 Since $S^n$ can be viewed as the union of two hemispheres $D^n_+$ and $D^n_-$, we can define a map $F: S^n \rightarrow S^n$ as follows:
+ 
+- For $x \in D^n_+$ (the northern hemisphere), define $F(x) = f(-x)$.
+- For $x \in D^n_-$ (the southern hemisphere), define $F(x) = f(x)$.
+ 
+The image of both hemispheres under $F$ lies in the southern hemisphere of $S^n$. Since the map is not surjective onto $S^n$, the degree of $F$ must be zero.
+
+To arrive at a contradiction, we exhibit a homotopy between $F$ and the antipodal map $A: S^n \rightarrow S^n$ defined by $A(x) = -x$. The antipodal map has degree $(-1)^{n+1}$, which is non-zero for all $n \geq 1$.
+
+Define a homotopy $H: S^n \times [0,1] \rightarrow S^n$ by
+
+$`H(x,t) = \frac{(1-t)F(x) + tA(x)}{\|(1-t)F(x) + tA(x)\|}.`$
+
+Since $F(x)$ and $A(x)$ are never antipodal ($F(x)\ne x\implies F(x)\ne -A(x)$ due to the assumption that $f$ has no fixed points), the line segment connecting $F(x)$ and $A(x)$ does not pass through the origin, ensuring that $H$ is well-defined.
 
 # 9(a)
 Compute the homology groups of the following 2-complex:
 
 The quotient of $S^2$ obtained by identifying north and south poles to a point.
+
 
 # 9(d)
 Compute the homology groups of the following 2-complex:
