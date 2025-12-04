@@ -27,7 +27,7 @@ The quotient of $S^2$ obtained by identifying north and south poles to a point.
 
 Proof
 
-The given space is homotopy equivalent to $S^2 \vee S^1$.
+The given space is homotopy equivalent to $S^2 \vee S^1$. This is because identifying two points in a path-connected space is homotopy equivalent to attaching a 1-cell between them. The resulting space, $S^2$ with an arc connecting the poles, deformation retracts to $S^2 \vee S^1$.
 
 $\tilde{H}_n(S^2 \vee S^1) \cong \tilde{H}_n(S^2) \oplus \tilde{H}_n(S^1)$.
 
