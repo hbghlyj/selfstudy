@@ -10,7 +10,7 @@ Since $S^n$ can be viewed as the union of two hemispheres $D^n_+$ and $D^n_-$, w
 - For $x \in D^n_+$ (the northern hemisphere), define $F(x) = f(\text{Reflect}_{z=0}(x))$.
 - For $x \in D^n_-$ (the southern hemisphere), define $F(x) = f(x)$.
  
-The image of both hemispheres under $F$ lies in the southern hemisphere of $S^n$. Since the map is not surjective onto $S^n$, the degree of $F$ must be zero.
+The definitions agree on $D^n_+\cap D^n_-$, so $F$ is well-defined. The image of both hemispheres under $F$ lies in the southern hemisphere of $S^n$. Since the map is not surjective onto $S^n$, the degree of $F$ must be zero.
 
 To arrive at a contradiction, we exhibit a homotopy between $F$ and the antipodal map $A: S^n \rightarrow S^n$ defined by $A(x) = -x$. The antipodal map has degree $(-1)^{n+1}$, which is non-zero for all $n \geq 1$.
 
