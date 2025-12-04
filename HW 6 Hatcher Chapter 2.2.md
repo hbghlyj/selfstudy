@@ -115,10 +115,13 @@ where $`i_*`$ and $`j_*`$ are induced by the inclusion maps of the boundary circ
 
     Since both $`H_n(T)`$ and $H_n(M)$ are zero for $n > 2$, it follows from the exactness of the sequence that $H_n(X) = 0$ for $n > 2$.
 *   **Case n = 2:**
+  
    The sequence gives $`\dots \to H_2(T)\oplus H_2(M) \to H_2(X) \xrightarrow{\delta} H_1(S^1) \xrightarrow{(i_*,j_*)} \dots`$. The map $`(i_*,j_*)`$ is injective, so its kernel is trivial. By exactness, the image of $\delta$ is trivial, so $\delta$ is the zero map. The preceding term in the sequence, $H_2(S^1)$, is 0. This implies the map $H_2(T)\oplus H_2(M) \to H_2(X)$ is an isomorphism. Therefore, $H_2(X) \cong H_2(T) \oplus H_2(M) \cong \mathbb{Z}$.
 *   **Case n = 1:**
+  
    The map $`(i_*, j_*): H_1(S^1) \to H_1(T) \oplus H_1(M)`$ sends the generator of $H_1(S^1)$ to an element represented by $((1,0), 2)$ in $\mathbb{Z}^2 \oplus \mathbb{Z}$. The $(1,0)$ component is because the boundary is attached to the circle $`S^1 \times \{x_0\}`$ in the torus. The $2$ component is because the boundary of a Möbius band wraps twice around its core circle, which generates $H_1(M)$. The next part of the sequence is $H_1(X) \to H_0(S^1) \to H_0(T) \oplus H_0(M)$. The last map is injective, so from exactness, $H_1(X)$ is the cokernel of $`(i_*, j_*)`$. Thus, $H_1(X) \cong (\mathbb{Z}^2 \oplus \mathbb{Z}) / \langle(1,0,2)\rangle \cong \mathbb{Z}^2$.
 *   **Case n = 0:**
+  
    Since $X$ is path-connected, $H_0(X) \cong \mathbb{Z}$.
 
 # 13
