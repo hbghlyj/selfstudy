@@ -92,13 +92,13 @@ The Euler characteristic of the covering space $\tilde{X}$ can be computed simil
 
 $\chi(\tilde{X}) = \sum_{n=0}^{\infty} (-1)^n c_n(\tilde{X})$.
 
-Since $p: \tilde{X} \rightarrow X$ is an $n$-sheeted covering space, each $n$-cell in $X$ lifts to $n$ distinct $n$-cells in $\tilde{X}$. Therefore, we have
+Since $p: \tilde{X} \rightarrow X$ is an $n$-sheeted covering space, each $k$-cell in $X$ lifts to $n$ distinct $k$-cells in $\tilde{X}$. Therefore, we have:
 
-$c_n(X) = \sum_{i=0}^{\infty} (-1)^i c_{i+n}(X)$.
+$c_k(\tilde{X}) = n \cdot c_k(X)$ for all $k \ge 0$.
 
 Thus, the Euler characteristic of $\tilde{X}$ can be computed as follows:
 
-$\chi(\tilde{X}) = \sum_{n=0}^{\infty} (-1)^n \sum_{i=0}^{\infty} (-1)^i c_{i+n}(\tilde{X}) = \sum_{i=0}^{\infty} \sum_{n=0}^{\infty} (-1)^{i+n} c_{i+n}(\tilde{X}) = n \chi(X)$.
+$\chi(\tilde{X}) = \sum_{k=0}^{\infty} (-1)^k c_k(\tilde{X}) = \sum_{k=0}^{\infty} (-1)^k (n \cdot c_k(X)) = n \left( \sum_{k=0}^{\infty} (-1)^k c_k(X) \right) = n \chi(X)$.
 
 # 28(a)
 Use the Mayer-Vietoris sequence to compute the homology groups of the space obtained from a torus $S^1 \times S^1$ by attaching a Möbius band via a homeomorphism from the boundary circle of the Möbius band to the circle $`S^1 \times\{x_0\}`$ in the torus.
