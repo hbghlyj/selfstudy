@@ -18,7 +18,7 @@ Define a homotopy $H: S^n \times [0,1] \rightarrow S^n$ by
 
 $`H(x,t) = \frac{(1-t)F(x) + tA(x)}{\|(1-t)F(x) + tA(x)\|}.`$
 
-Since $F(x)$ and $A(x)$ are never antipodal ($F(x)\ne x\implies F(x)\ne -A(x)$ due to the assumption that $f$ has no fixed points), the line segment connecting $F(x)$ and $A(x)$ does not pass through the origin, ensuring that $H$ is well-defined.
+Since $F(x)$ and $A(x)$ are never antipodal ($F(x)\ne x\implies F(x)\ne -A(x)$ due to the assumption that $f$ has no fixed points), the line segment connecting $F(x)$ and $A(x)$ does not pass through the origin, the denominator is nonzero, ensuring that $H$ is well-defined.
 
 # 9(a)
 Compute the homology groups of the following 2-complex:
