@@ -53,6 +53,30 @@ Show that if $X$ is a CW complex then $H_n(X^n)$ is free by identifying it with 
 # 20
 For finite CW complexes $X$ and $Y$, show that $\chi(X \times Y)=\chi(X) \chi(Y)$.
 
+Proof
+
+Let $X$ and $Y$ be finite CW complexes. The Euler characteristic $\chi(X)$ is defined as the alternating sum of the number of $n$-cells in $X$:
+
+$\chi(X) = \sum_{n=0}^{\infty} (-1)^n c_n(X)$,
+
+where $c_n(X)$ is the number of $n$-cells in $X$. Similarly, we have
+
+$\chi(Y) = \sum_{m=0}^{\infty} (-1)^m c_m(Y)$.
+
+The product space $X \times Y$ has a CW structure where the $k$-cells are formed by taking the product of an $i$-cell from $X$ and a $j$-cell from $Y$ such that $i + j = k$. Therefore, the number of $k$-cells in $X \times Y$ is given by
+
+$c_k(X \times Y) = \sum_{i+j=k} c_i(X) c_j(Y)$.
+
+Thus, the Euler characteristic of $X \times Y$ can be computed as follows:
+
+$`\begin{align*}
+\chi(X \times Y) &= \sum_{k=0}^{\infty} (-1)^k c_k(X \times Y) \\
+&= \sum_{k=0}^{\infty} (-1)^k \sum_{i+j=k} c_i(X) c_j(Y) \\
+&= \sum_{i=0}^{\infty} \sum_{j=0}^{\infty} (-1)^{i+j} c_i(X) c_j(Y) \\
+&= \left( \sum_{i=0}^{\infty} (-1)^i c_i(X) \right) \left( \sum_{j=0}^{\infty} (-1)^j c_j(Y) \right) \\
+&= \chi(X) \chi(Y)
+\end{align*}`$
+
 # 22
 For $X$ a finite CW complex and $p: \tilde{X} \rightarrow X$ an $n$-sheeted covering space, show that $\chi(\tilde{X})=n \chi(X)$.
 
