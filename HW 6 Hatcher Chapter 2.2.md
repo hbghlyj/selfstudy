@@ -65,7 +65,7 @@ $\chi(Y) = \sum_{m=0}^{\infty} (-1)^m c_m(Y)$.
 
 The product space $X \times Y$ has a CW structure where the $k$-cells are formed by taking the product of an $i$-cell from $X$ and a $j$-cell from $Y$ such that $i + j = k$. Therefore, the number of $k$-cells in $X \times Y$ is given by
 
-$c_{i,j}(X \times Y) = \sum_{i+j=k} c_i(X) c_j(Y)$.
+$c_k(X \times Y) = \sum_{i+j=k} c_i(X) c_j(Y)$.
 
 Thus, the Euler characteristic of $X \times Y$ can be computed as follows:
 
