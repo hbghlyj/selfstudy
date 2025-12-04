@@ -47,6 +47,21 @@ A map $f: S^n \rightarrow S^n$ satisfying $f(x)=f(-x)$ for all $x$ is called an 
 
 [Hints: If $f$ is even, it factors as a composition $S^n \rightarrow \mathbb{R} P^n \rightarrow S^n$. Using the calculation of $`H_n(\mathbb{R} P^n)`$ in the text, show that the induced map $`H_n(S^n) \rightarrow H_n(\mathbb{R} P^n)`$ sends a generator to twice a generator when $n$ is odd. It may be helpful to show that the quotient map $\mathbb{R} P^n \rightarrow \mathbb{R} P^n / \mathbb{R} P^{n-1}$ induces an isomorphism on $H_n$ when $n$ is odd.]
 
+Proof
+
+Let $f: S^n \rightarrow S^n$ be an even map, meaning that $f(x) = f(-x)$ for all $x \in S^n$. This implies that $f$ factors through the quotient map $\pi: S^n \rightarrow \mathbb{R}P^n$, where $\mathbb{R}P^n$ is the real projective space obtained by identifying antipodal points on $S^n$. Thus, we can write $f$ as the composition:
+
+$f = g \circ \pi$,
+
+where $g: \mathbb{R}P^n \rightarrow S^n$.
+
+To analyze the degree of $f$, we consider the induced maps on homology:
+
+- If $n$ is even, then $H_n(\mathbb{R}P^n) = 0$. Therefore, the induced map $\pi_*: H_n(S^n) \rightarrow H_n(\mathbb{R}P^n)$ is the zero map. Consequently, the composition $f_* = g_* \circ \pi_*$ is also the zero map, which implies that $deg(f) = 0$.
+- If $n$ is odd, then $H_n(\mathbb{R}P^n) \cong \mathbb{Z}$. The map $\pi_*: H_n(S^n) \rightarrow H_n(\mathbb{R}P^n)$ sends a generator of $H_n(S^n)$ to twice a generator of $H_n(\mathbb{R}P^n)$. Therefore, the degree of $f$ must be even, as it is given by the composition of the induced maps.
+
+To show that any even degree is possible when $n$ is odd, we can construct a map $g: \mathbb{R}P^n \rightarrow S^n$ that induces multiplication by $k$ on $H_n(\mathbb{R}P^n)$. Then, the composition $f = g \circ \pi$ will have degree $2k$. This can be achieved by considering the quotient map $\mathbb{R}P^n \rightarrow \mathbb{R}P^n / \mathbb{R}P^{n-1} \cong S^n$ combined with a map $S^n \rightarrow S^n$ of degree $k$.
+
 # 15
 Show that if $X$ is a CW complex then $H_n(X^n)$ is free by identifying it with the kernel of the cellular boundary map $H_n(X^n, X^{n-1}) \rightarrow H_{n-1}(X^{n-1}, X^{n-2})$.
 
