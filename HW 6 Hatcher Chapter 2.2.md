@@ -45,7 +45,7 @@ The quotient space of $S^1 \times S^1$ obtained by identifying points in the cir
 # 14
 A map $f: S^n \rightarrow S^n$ satisfying $f(x)=f(-x)$ for all $x$ is called an even map. Show that an even map $S^n \rightarrow S^n$ must have even degree, and that the degree must in fact be zero when $n$ is even. When $n$ is odd, show there exist even maps of any given even degree.
 
-[Hints: If $f$ is even, it factors as a composition $S^n \rightarrow \mathbb{R} P^n \rightarrow S^n$. Using the calculation of $H_n\left(\mathbb{R} P^n\right)$ in the text, show that the induced map $H_n\left(S^n\right) \rightarrow H_n\left(\mathbb{R} P^n\right)$ sends a generator to twice a generator when $n$ is odd. It may be helpful to show that the quotient map $\mathbb{R} P^n \rightarrow \mathbb{R} P^n / \mathbb{R} P^{n-1}$ induces an isomorphism on $H_n$ when $n$ is odd.]
+[Hints: If $f$ is even, it factors as a composition $S^n \rightarrow \mathbb{R} P^n \rightarrow S^n$. Using the calculation of $`H_n(\mathbb{R} P^n)`$ in the text, show that the induced map $`H_n(S^n) \rightarrow H_n(\mathbb{R} P^n)`$ sends a generator to twice a generator when $n$ is odd. It may be helpful to show that the quotient map $\mathbb{R} P^n \rightarrow \mathbb{R} P^n / \mathbb{R} P^{n-1}$ induces an isomorphism on $H_n$ when $n$ is odd.]
 
 # 15
 Show that if $X$ is a CW complex then $H_n(X^n)$ is free by identifying it with the kernel of the cellular boundary map $H_n(X^n, X^{n-1}) \rightarrow H_{n-1}(X^{n-1}, X^{n-2})$.
@@ -57,7 +57,7 @@ For finite CW complexes $X$ and $Y$, show that $\chi(X \times Y)=\chi(X) \chi(Y)
 For $X$ a finite CW complex and $p: \tilde{X} \rightarrow X$ an $n$-sheeted covering space, show that $\chi(\tilde{X})=n \chi(X)$.
 
 # 28(a)
-Use the Mayer-Vietoris sequence to compute the homology groups of the space obtained from a torus $S^1 \times S^1$ by attaching a Möbius band via a homeomorphism from the boundary circle of the Möbius band to the circle $S^1 \times\left\{x_0\right\}$ in the torus.
+Use the Mayer-Vietoris sequence to compute the homology groups of the space obtained from a torus $S^1 \times S^1$ by attaching a Möbius band via a homeomorphism from the boundary circle of the Möbius band to the circle $`S^1 \times\{x_0\}`$ in the torus.
 
 # 13
 Let $X$ be the 2-complex obtained from $S^1$ with its usual cell structure by attaching two 2-cells by maps of degrees 2 and 3, respectively.
