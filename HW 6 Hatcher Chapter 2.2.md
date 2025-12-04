@@ -62,7 +62,9 @@ To analyze the degree of $f$, we consider the induced maps on homology:
 
 To show that any even degree is possible when $n$ is odd, we construct a map $f=g \circ \pi$ of degree $2k$ for any integer $k$. This requires constructing a map $g: \mathbb{R}P^n \rightarrow S^n$ that induces multiplication by $k$ on $`H_n`$. As suggested in the hint, for odd $n$, the quotient map $q: \mathbb{R}P^n \rightarrow \mathbb{R}P^n / \mathbb{R}P^{n-1} \cong S^n$ induces an isomorphism on $`H_n`$.
 
-The existence of a map $h: S^n \to S^n$ of degree $k$ for any integer $k$ is a foundational fact. It is typically constructed inductively:Base Case ($n=1$): View $S^1$ as the unit circle in the complex plane. The map $h(z) = z^k$ (wrapping the circle $k$ times) has degree $k$.Inductive Step ($n > 1$): If you have a map $f: S^{n-1} \to S^{n-1}$ of degree $k$, you can apply the suspension operation to create a map $\Sigma f: S^n \to S^n$. A key property of suspension is that it preserves degree ($\deg(\Sigma f) = \deg(f)$).
+The existence of a map $h: S^n \to S^n$ of degree $k$ for any integer $k$ is a foundational fact. It is typically constructed inductively:
+*   **Base Case ($n=1$):** View $S^1$ as the unit circle in the complex plane. The map $h(z) = z^k$ (wrapping the circle $k$ times) has degree $k$.
+*   **Inductive Step ($n \u003e 1$):** If you have a map $f: S^{n-1} \to S^{n-1}$ of degree $k$, you can apply the suspension operation to create a map $\Sigma f: S^n \to S^n$. A key property of suspension is that it preserves degree ($\deg(\Sigma f) = \deg(f)$).
 
 Let $h: S^n \rightarrow S^n$ be a map of degree $k$. We can define $g = h \circ q$. The induced map $`g_* = h_* \circ q_*`$ will then correspond to multiplication by $k$ on the $n$-th homology group. The composition $f = g \circ \pi$ will then have degree $2k$, showing that any even degree is possible.
 
