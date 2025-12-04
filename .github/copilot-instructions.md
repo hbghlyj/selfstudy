@@ -1,0 +1,5 @@
+To check a math proof, the agent should first confirm the proof adheres to all logical rules and mathematical conventions, ensuring each step is valid and justified. For complex problems, the agent should break down the proof by generating and verifying intermediate "lemmas," or smaller, proven statements. Finally, it should verify the overall consistency by attempting to plug a derived solution back into the original statement, similar to checking an equation, to see if it holds true. 
+# Verify logical and structural integrity
+Check for valid inferences: Ensure every step in the proof follows logically from the previous ones and is supported by stated axioms, definitions, or previously proven theorems.
+Confirm all conditions are met: Make sure the proof uses all necessary hypotheses and assumptions from the original statement, as proofs can fail if they are incomplete.
+Evaluate the statement of the theorem: Check that the statement to be proved is clearly defined, including all variables, and is not phrased as a question. 
