@@ -1,64 +1,64 @@
 # 1
-Prove the Brouwer fixed point theorem for maps    by applying degree theory to the map   that sends both the northern and southern hemispheres of  to the southern hemisphere via . [This was Brouwer's original proof.]
+Prove the Brouwer fixed point theorem for maps $f: D^n \rightarrow D^n$ by applying degree theory to the map $S^n \rightarrow S^n$ that sends both the northern and southern hemispheres of $S^n$ to the southern hemisphere via $f$. [This was Brouwer's original proof.]
 
 Proof
 
-Assume for contradiction that there exists a continuous map    without a fixed point.
+Assume for contradiction that there exists a continuous map $f: D^n \rightarrow D^n$ without a fixed point.
 
-Since  can be viewed as the union of two hemispheres  and , we can define a map    as follows:
-We identify  with the southern hemisphere , so  is a map   . 
-- For   (the northern hemisphere), define  .
-- For   (the southern hemisphere), define  .
+Since $S^n$ can be viewed as the union of two hemispheres $D^n_+$ and $D^n_-$, we can define a map $F: S^n \rightarrow S^n$ as follows:
+We identify $D^n$ with the southern hemisphere $D^n_-$, so $f$ is a map $f: D^n_- \to D^n_-$. 
+- For $x \in D^n_+$ (the northern hemisphere), define $F(x) = f(\text{Reflect}_{z=0}(x))$.
+- For $x \in D^n_-$ (the southern hemisphere), define $F(x) = f(x)$.
  
-The definitions agree on  , so  is well-defined. The image of both hemispheres under  lies in the southern hemisphere of . Since the map is not surjective onto , the degree of  must be zero.
+The definitions agree on $D^n_+\cap D^n_-$, so $F$ is well-defined. The image of both hemispheres under $F$ lies in the southern hemisphere of $S^n$. Since the map is not surjective onto $S^n$, the degree of $F$ must be zero.
 
-To arrive at a contradiction, we exhibit a homotopy between  and the antipodal map    defined by  . The antipodal map has degree , which is non-zero for all  .
+To arrive at a contradiction, we exhibit a homotopy between $F$ and the antipodal map $A: S^n \rightarrow S^n$ defined by $A(x) = -x$. The antipodal map has degree $(-1)^{n+1}$, which is non-zero for all $n \geq 1$.
 
-Define a homotopy     by
+Define a homotopy $H: S^n \times [0,1] \rightarrow S^n$ by
 
- 
+$`H(x,t) = \frac{(1-t)F(x) + tA(x)}{\|(1-t)F(x) + tA(x)\|}.`$
 
-The homotopy  is well-defined if the denominator is never zero, which requires    for all  . This condition holds by the assumption that  has no fixed points. For  , we have   . For  , we have   while  , so   (the case of  on the equator is covered by the first case). Therefore, the homotopy is well-defined.
+The homotopy $H$ is well-defined if the denominator is never zero, which requires $F(x) \ne -A(x) = x$ for all $x \in S^n$. This condition holds by the assumption that $f$ has no fixed points. For $x \in D^n_-$, we have $F(x) = f(x) \ne x$. For $x \in D^n_+$, we have $F(x) \in D^n_-$ while $x \in D^n_+$, so $F(x) \ne x$ (the case of $x$ on the equator is covered by the first case). Therefore, the homotopy is well-defined.
 
 # 9(a)
 Compute the homology groups of the following 2-complex:
 
-The quotient of  obtained by identifying north and south poles to a point.
+The quotient of $S^2$ obtained by identifying north and south poles to a point.
 
 Proof
 
-The given space is homotopy equivalent to  . This is because identifying two points in a path-connected space is homotopy equivalent to attaching a 1-cell between them. The resulting space,  with an arc connecting the poles, deformation retracts to  .
+The given space is homotopy equivalent to $S^2 \vee S^1$. This is because identifying two points in a path-connected space is homotopy equivalent to attaching a 1-cell between them. The resulting space, $S^2$ with an arc connecting the poles, deformation retracts to $S^2 \vee S^1$.
 
-   .
+$\tilde{H}_n(S^2 \vee S^1) \cong \tilde{H}_n(S^2) \oplus \tilde{H}_n(S^1)$.
 
 Thus, the homology groups are:
--  
--  
--  
--   for  .
+- $H_0 \cong \mathbb{Z}$
+- $H_1 \cong \mathbb{Z}$
+- $H_2 \cong \mathbb{Z}$
+- $H_n = 0$ for $n > 2$.
 
 # 9(d)
 Compute the homology groups of the following 2-complex:
 
-The quotient space of   obtained by identifying points in the circle   that differ by  rotation and identifying points in the circle   that differ by  rotation.
+The quotient space of $S^1 \times S^1$ obtained by identifying points in the circle $`S^1 \times\{x_0\}`$ that differ by $2 \pi / m$ rotation and identifying points in the circle $`\{x_0\} \times S^1`$ that differ by $2 \pi / n$ rotation.
 
 # 14
-A map    satisfying   for all  is called an even map. Show that an even map   must have even degree, and that the degree must in fact be zero when  is even. When  is odd, show there exist even maps of any given even degree.
+A map $f: S^n \rightarrow S^n$ satisfying $f(x)=f(-x)$ for all $x$ is called an even map. Show that an even map $S^n \rightarrow S^n$ must have even degree, and that the degree must in fact be zero when $n$ is even. When $n$ is odd, show there exist even maps of any given even degree.
 
-[Hints: If  is even, it factors as a composition   . Using the calculation of  in the text, show that the induced map   sends a generator to twice a generator when  is odd. It may be helpful to show that the quotient map   induces an isomorphism on  when  is odd.]
+[Hints: If $f$ is even, it factors as a composition $S^n \rightarrow \mathbb{R} P^n \rightarrow S^n$. Using the calculation of $`H_n(\mathbb{R} P^n)`$ in the text, show that the induced map $`H_n(S^n) \rightarrow H_n(\mathbb{R} P^n)`$ sends a generator to twice a generator when $n$ is odd. It may be helpful to show that the quotient map $\mathbb{R} P^n \rightarrow \mathbb{R} P^n / \mathbb{R} P^{n-1}$ induces an isomorphism on $H_n$ when $n$ is odd.]
 
 Proof
 
-Let    be an even map, meaning that   for all  . This implies that  factors through the quotient map   , where  is the real projective space obtained by identifying antipodal points on . Thus, we can write  as the composition:
+Let $f: S^n \rightarrow S^n$ be an even map, meaning that $f(x) = f(-x)$ for all $x \in S^n$. This implies that $f$ factors through the quotient map $\pi: S^n \rightarrow \mathbb{R}P^n$, where $\mathbb{R}P^n$ is the real projective space obtained by identifying antipodal points on $S^n$. Thus, we can write $f$ as the composition:
 
-  ,
+$f = g \circ \pi$,
 
-where   .
+where $g: \mathbb{R}P^n \rightarrow S^n$.
 
-To analyze the degree of , we consider the induced maps on homology:
+To analyze the degree of $f$, we consider the induced maps on homology:
 
-- If  is even, then  . Therefore, the induced map    is the zero map. Consequently, the composition    is also the zero map, which implies that  .
-- If  is odd, then  . The map    sends a generator to  times a generator. Let    be multiplication by an integer . Then the composition    corresponds to multiplication by . Therefore, the degree of  must be even.
+- If $n$ is even, then $H_n(\mathbb{R}P^n) = 0$. Therefore, the induced map $`\pi_*: H_n(S^n) \rightarrow H_n(\mathbb{R}P^n)`$ is the zero map. Consequently, the composition $`f_* = g_* \circ \pi_*`$ is also the zero map, which implies that $\deg(f) = 0$.
+- If $n$ is odd, then $H_n(\mathbb{R}P^n) \cong \mathbb{Z}$. The map $`\pi_*: H_n(S^n) \rightarrow H_n(\mathbb{R}P^n)`$ sends a generator to $2$ times a generator. Let $`g_*: H_n(\mathbb{R}P^n) \rightarrow H_n(S^n)`$ be multiplication by an integer $k$. Then the composition $`f_* = g_* \circ \pi_*`$ corresponds to multiplication by $2k$. Therefore, the degree of $f$ must be even.
 
 To show that any even degree is possible when $n$ is odd, we construct a map $f=g \circ \pi$ of degree $2k$ for any integer $k$. This requires constructing a map $g: \mathbb{R}P^n \rightarrow S^n$ that induces multiplication by $k$ on $`H_n`$. As suggested in the hint, for odd $n$, the quotient map $q: \mathbb{R}P^n \rightarrow \mathbb{R}P^n / \mathbb{R}P^{n-1} \cong S^n$ induces an isomorphism on $`H_n`$.
 
