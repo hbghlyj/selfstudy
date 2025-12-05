@@ -44,13 +44,14 @@ The quotient space of $S^1 \times S^1$ obtained by identifying points in the cir
 
 Proof
 
-We can start with the 1-skeleton for a torus, namely 10-cell $v$ and 21-cells $a, b$ arranged in the form of $S^1 \vee S^1$. The difference here is that we now attach the 2-cell $A$ via the word $a^n b^m a^{-n} b^{-m}$ in order to preserve the quotient. We have the cell complex,
+Let $T = S^1 \times S^1$ be the torus. The space $X$ is the quotient of $T$ under an equivalence relation defined on two sub-circles, $C_a = S^1 \times \{x_0\}$ and $C_b = \{x_0\} \times S^1$.
 
-$`0 \longrightarrow \mathbb{Z} \xrightarrow{d_2} \mathbb{Z}^2 \xrightarrow{d_1} \mathbb{Z} \longrightarrow 0`$
+The identification on $C_a$ is by rotation of $2\pi/m$. The quotient space of a circle by this action is still a circle, i.e., $C_a/\sim \cong S^1$. Similarly, for $C_b$, the quotient $C_b/\sim \cong S^1$.
 
-This space is again clearly path-connected so $H_0(X) \cong \mathbb{Z}$. Now all of the 1-cells end and begin on $v$, so ker $d_1=\mathbb{Z}^2$. From the attaching word, we have $d_2=0$ so $H_1(X) \cong \mathbb{Z}^2, H_2(X)=\mathbb{Z}$. Summary:
+Since the identifications only happen within these circles (which are 1-dimensional subspaces of $T$), and these identifications map the circles to themselves homeomorphically, the topology of the entire space $T$ is unchanged. The quotient space $X$ is homeomorphic to the original torus $S^1 \times S^1$.
 
-$`H_k(X)= \begin{cases}\mathbb{Z} & k=0 \\ \mathbb{Z}^2 & k=1 \\ \mathbb{Z} & k=2 \\ 0 & \text { else }\end{cases}`$
+Therefore, the homology groups of $X$ are the same as the homology groups of a torus:
+$$H_k(X) \cong H_k(S^1 \times S^1) = \begin{cases}\mathbb{Z} & k=0 \\ \mathbb{Z}^2 & k=1 \\ \mathbb{Z} & k=2 \\ 0 & \text { else }\end{cases}$$
 
 # 14
 A map $f: S^n \rightarrow S^n$ satisfying $f(x)=f(-x)$ for all $x$ is called an even map. Show that an even map $S^n \rightarrow S^n$ must have even degree, and that the degree must in fact be zero when $n$ is even. When $n$ is odd, show there exist even maps of any given even degree.
