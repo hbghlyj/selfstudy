@@ -89,7 +89,7 @@ The homology group $H_n(X^n)$ can be computed using the long exact sequence of t
 
 $`\cdots \rightarrow H_n(X^{n-1}) \rightarrow H_n(X^n) \rightarrow H_n(X^n, X^{n-1}) \xrightarrow{\partial_n} H_{n-1}(X^{n-1}) \rightarrow \cdots`$
 
-Since $H_n(X^{n-1}) = 0$ for $n \u003e 0$ (as $X^{n-1}$ has no $n$-cells), the long exact sequence gives an isomorphism:
+Since $H_n(X^{n-1}) = 0$ for $n > 0$ (as $X^{n-1}$ has no $n$-cells), the long exact sequence gives an isomorphism:
 
 $`H_n(X^n) \cong \ker(\partial_n: H_n(X^n, X^{n-1}) \rightarrow H_{n-1}(X^{n-1}))`$
 
