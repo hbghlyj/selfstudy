@@ -51,7 +51,8 @@ The identification on $C_a$ is by rotation of $2\pi/m$. The quotient space of a 
 Since the identifications only happen within these circles (which are 1-dimensional subspaces of $T$), and these identifications map the circles to themselves homeomorphically, the topology of the entire space $T$ is unchanged. The quotient space $X$ is homeomorphic to the original torus $S^1 \times S^1$.
 
 Therefore, the homology groups of $X$ are the same as the homology groups of a torus:
-$$H_k(X) \cong H_k(S^1 \times S^1) = \begin{cases}\mathbb{Z} & k=0 \\ \mathbb{Z}^2 & k=1 \\ \mathbb{Z} & k=2 \\ 0 & \text { else }\end{cases}$$
+
+$`H_k(X) \cong H_k(S^1 \times S^1) = \begin{cases}\mathbb{Z} & k=0 \\ \mathbb{Z}^2 & k=1 \\ \mathbb{Z} & k=2 \\ 0 & \text { else }\end{cases}`$
 
 # 14
 A map $f: S^n \rightarrow S^n$ satisfying $f(x)=f(-x)$ for all $x$ is called an even map. Show that an even map $S^n \rightarrow S^n$ must have even degree, and that the degree must in fact be zero when $n$ is even. When $n$ is odd, show there exist even maps of any given even degree.
