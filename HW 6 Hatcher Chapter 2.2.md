@@ -44,7 +44,7 @@ The quotient space of $S^1 \times S^1$ obtained by identifying points in the cir
 
 Proof
 
-Let $T = S^1 \times S^1$ be the torus. The space $X$ is the quotient of $T$ under an equivalence relation defined on two sub-circles, $C_a = S^1 \times \{x_0\}$ and $C_b = \{x_0\} \times S^1$.
+Let $T = S^1 \times S^1$ be the torus. The space $X$ is the quotient of $T$ under an equivalence relation defined on two sub-circles, $`C_a = S^1 \times \{x_0\}`$ and $`C_b = \{x_0\} \times S^1`$.
 
 The identification on $C_a$ is by rotation of $2\pi/m$. The quotient space of a circle by this action is still a circle, i.e., $C_a/\sim \cong S^1$. Similarly, for $C_b$, the quotient $C_b/\sim \cong S^1$.
 
