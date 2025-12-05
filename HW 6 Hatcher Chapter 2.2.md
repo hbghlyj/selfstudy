@@ -10,7 +10,7 @@ We identify $D^n$ with the southern hemisphere $D^n_-$, so $f$ is a map $f: D^n_
 - For $x \in D^n_+$ (the northern hemisphere), define $F(x) = f(\text{Reflect}_{x_{n+1}=0}(x))$.
 - For $x \in D^n_-$ (the southern hemisphere), define $F(x) = f(x)$.
  
-The definitions agree on $D^n_+\cap D^n_-$, so $F$ is well-defined. The image of both hemispheres under $F$ lies in the southern hemisphere of $S^n$. Since the map is not surjective onto $S^n$, the degree of $F$ must be zero.
+The definitions agree on the equator $D^n_+\cap D^n_-$, since for any $x$ on the equator we have $\text{Reflect}_{x_{n+1}=0}(x) = x$, which means $f(\text{Reflect}_{x_{n+1}=0}(x)) = f(x)$. Thus, $F$ is well-defined. The image of both hemispheres under $F$ lies in the southern hemisphere of $S^n$. Since the map is not surjective onto $S^n$, the degree of $F$ must be zero.
 
 To arrive at a contradiction, we exhibit a homotopy between $F$ and the antipodal map $A: S^n \rightarrow S^n$ defined by $A(x) = -x$. The antipodal map has degree $(-1)^{n+1}$, which is non-zero for all $n \geq 1$.
 
