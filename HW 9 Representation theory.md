@@ -12,7 +12,7 @@ $G_1 \rightarrow G \rightarrow \operatorname{GL}(V) .$
 Show that $\operatorname{res}_{G_1}^G V \simeq\left(V_1\right)^k$ for some irreducible representation $V_1$ of $G_1$ and $k \geq 1$. (In fact, a stronger statement holds: $V \simeq V_1 \otimes V_2$, where $V_1$ is a representation of $G_1$ and $V_2$ is a representation of $G_2$, but you don't need to prove this.)
 
 # 5
-Fix $n$, and denote by $X_k$ the set of all $k$-element subsets of $S_n(k \leq n)$. It carries an action of $S_n$, and we can consider the corresponding representation $V_k$ of $S_n$, where $V_k$ is the space of $\mathbb{C}$-valued functions on $S_n$.
+Fix $n$, and denote by $X_k$ the set of all $k$-element subsets of $`\{1, \dots, n\}`$ ($k \leq n$). It carries an action of $S_n$, and we can consider the corresponding representation $V_k$ of $S_n$, where $V_k$ is the space of $\mathbb{C}$-valued functions on $X_k$.
 
 Show that $V_k \simeq V_{n-k}$.
 
