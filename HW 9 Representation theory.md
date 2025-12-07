@@ -1,5 +1,14 @@
 # 1
 Let $G$ be a finite group. Prove the following 'inverse Schur Lemma': if every $G$-equivariant map $\phi: V \rightarrow V$ is scalar, then $V$ is irreducible. You may need to make additional assumptions on the field for the statement to hold, make sure to clearly state this!
+
+Proof
+
+Let $V$ be a representation of a finite group $G$ over a field $F$. We will assume that the field $F$ is algebraically closed and that the characteristic of $F$ does not divide the order of the group $G$.
+Suppose, for the sake of contradiction, that $V$ is not irreducible. Then there exists a nontrivial proper subrepresentation $W \subset V$. Consider the projection map $\pi: V \rightarrow V/W$. This map is $G$-equivariant since for any $g \in G$ and $v \in V$, we have
+
+$\pi(g \cdot v) = g \cdot \pi(v).$
+
+Since $W$ is a proper subrepresentation, the quotient $V/W$ is nontrivial. Therefore, the projection map $\pi$ is not a scalar multiple of the identity map on $V$. This contradicts our assumption that every $G$-equivariant map from $V$ to itself is scalar.
 # 2
 Suppose $V$ is a completely reducible representation of a group $G$. Show that for every subrepresentation $W \subset V$, the quotient $V / W$ is completely reducible. (Obviously, we are assuming that Maschke's Theorem does not apply, otherwise the question is trivial.)
 # 3
