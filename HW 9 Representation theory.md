@@ -3,7 +3,7 @@ Let $G$ be a finite group. Prove the following 'inverse Schur Lemma': if every $
 # 2
 Suppose $V$ is a completely reducible representation of a group $G$. Show that for every subrepresentation $W \subset V$, the quotient $V / W$ is completely reducible. (Obviously, we are assuming that Maschke's Theorem does not apply, otherwise the question is trivial.)
 # 3
-Let $V$ be an irreducible finite-dimensional representation of a group $G$. Show that its dual $V^{\times}$is irreducible as well.
+Let $V$ be an irreducible finite-dimensional representation of a group $G$. Show that its dual $V^*$ is irreducible as well.
 # 4
 Suppose that a group $G$ is a product $G=G_1 \times G_2$. Let $V$ be an irreducible representation of $G$ over $\mathbb{C}$. Denote buy $\operatorname{res}_{G_1}^G V$ its restriction to $G_1$ : it is given by the composition
 
