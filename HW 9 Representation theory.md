@@ -5,7 +5,7 @@ Suppose $V$ is a completely reducible representation of a group $G$. Show that f
 # 3
 Let $V$ be an irreducible finite-dimensional representation of a group $G$. Show that its dual $V^*$ is irreducible as well.
 # 4
-Suppose that a group $G$ is a product $G=G_1 \times G_2$. Let $V$ be an irreducible representation of $G$ over $\mathbb{C}$. Denote buy $\operatorname{res}_{G_1}^G V$ its restriction to $G_1$ : it is given by the composition
+Suppose that a group $G$ is a product $G=G_1 \times G_2$. Let $V$ be an irreducible representation of $G$ over $\mathbb{C}$. Denote by $\operatorname{res}_{G_1}^G V$ its restriction to $G_1$ : it is given by the composition
 
 $G_1 \rightarrow G \rightarrow \operatorname{GL}(V) .$
 
