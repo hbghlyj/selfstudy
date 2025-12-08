@@ -33,9 +33,9 @@ The dual representation $V^*$ of a representation $V$ of a group $G$ is defined 
 
 $(g \cdot f)(v) = f(g^{-1} \cdot v)$ for all $g \in G$, $f \in V^*$, and $v \in V$.
 
-To show that $V^*$ is irreducible, we need to demonstrate that there are no nontrivial proper subrepresentations of $V^*$.
+To show that $`V^*`$ is irreducible, we need to demonstrate that there are no nontrivial proper subrepresentations of $V^*$.
 
-Let $W$ be a subrepresentation of $V^*$. We will show that $W$ is either $\{0\}$ or $V^*$.
+Let $W$ be a subrepresentation of $V^*$. We will show that $W$ is either $`\{0\}`$ or $`V^*`$.
 
 Consider the annihilator of $W$ in $V$:
 $W^\perp = \{v \in V \mid f(v) = 0 \text{ for all } f \in W\}$.
