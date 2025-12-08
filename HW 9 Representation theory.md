@@ -58,7 +58,7 @@ Since $V$ is irreducible, its only subrepresentations are $`\{0\}`$ and $V$. So 
 1.  $W^\perp = V$: This means that for every $f \in W$, $f(v) = 0$ for all $v \in V$. This implies that every functional in $W$ is the zero functional, so $`W = \{0\}`$.
 2.  $`W^\perp = \{0\}`$: Since $V$ is finite-dimensional, we have $(W^\perp)^\perp = W$. Therefore, $`W = (\{0\})^\perp = V^*`$.
 
-In both cases, $W$ is a trivial subrepresentation. Thus, $V^*$ is irreducible.
+Thus, $V^*$ is irreducible.
 
 # 4
 Suppose that a group $G$ is a product $G=G_1 \times G_2$. Let $V$ be an irreducible representation of $G$ over $\mathbb{C}$. Denote by $\mathrm{res}_{G_1}^G V$ its restriction to $G_1$ : it is given by the composition
