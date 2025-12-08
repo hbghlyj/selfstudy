@@ -38,20 +38,25 @@ To show that $`V^*`$ is irreducible, we need to demonstrate that there are no no
 Let $W$ be a subrepresentation of $V^*$. We will show that $W$ is either $`\{0\}`$ or $`V^*`$.
 
 Consider the annihilator of $W$ in $V$:
-$W^\perp = \{v \in V \mid f(v) = 0 \text{ for all } f \in W\}$.
+
+$`W^\perp = \{v \in V \mid f(v) = 0 \text{ for all } f \in W\}`$.
 
 We first show that $W^\perp$ is a subrepresentation of $V$. Let $v \in W^\perp$ and $g \in G$. We need to show that $g \cdot v \in W^\perp$. This means we must show that $f(g \cdot v) = 0$ for all $f \in W$.
 
 Since $W$ is a subrepresentation of $V^*$, for any $f \in W$, the functional $g^{-1} \cdot f$ is also in $W$.
+
 Because $v \in W^\perp$, we have $(g^{-1} \cdot f)(v) = 0$.
+
 By the definition of the dual action, $(g^{-1} \cdot f)(v) = f(g \cdot v)$.
+
 Therefore, $f(g \cdot v) = 0$ for all $f \in W$, which means $g \cdot v \in W^\perp$.
+
 Thus, $W^\perp$ is a subrepresentation of $V$.
 
-Since $V$ is irreducible, its only subrepresentations are $\{0\}$ and $V$. So we have two cases for $W^\perp$:
+Since $V$ is irreducible, its only subrepresentations are $`\{0\}`$ and $V$. So we have two cases for $W^\perp$:
 
-1.  $W^\perp = V$: This means that for every $f \in W$, $f(v) = 0$ for all $v \in V$. This implies that every functional in $W$ is the zero functional, so $W = \{0\}$.
-2.  $W^\perp = \{0\}$: Since $V$ is finite-dimensional, we have $(W^\perp)^\perp = W$. Therefore, $W = (\{0\})^\perp = V^*$.
+1.  $W^\perp = V$: This means that for every $f \in W$, $f(v) = 0$ for all $v \in V$. This implies that every functional in $W$ is the zero functional, so $`W = \{0\}`$.
+2.  $`W^\perp = \{0\}`$: Since $V$ is finite-dimensional, we have $(W^\perp)^\perp = W$. Therefore, $`W = (\{0\})^\perp = V^*`$.
 
 In both cases, $W$ is a trivial subrepresentation. Thus, $V^*$ is irreducible.
 
