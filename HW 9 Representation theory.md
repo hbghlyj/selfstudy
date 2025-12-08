@@ -4,11 +4,24 @@ Let $G$ be a finite group. Prove the following 'inverse Schur Lemma': if every $
 Proof
 
 Let $V$ be a representation of a finite group $G$ over a field $F$. We will assume that the field $F$ is algebraically closed and that the characteristic of $F$ does not divide the order of the group $G$.
-Suppose, for the sake of contradiction, that $V$ is not irreducible. Then there exists a nontrivial proper subrepresentation $W \subset V$. Consider the projection map $\pi: V \rightarrow V/W$. This map is $G$-equivariant since for any $g \in G$ and $v \in V$, we have
+Suppose, for the sake of contradiction, that $V$ is not irreducible. Then there exists a nontrivial proper subrepresentation $W ⊂ V$.
 
-$\pi(g \cdot v) = g \cdot \pi(v).$
+Since the characteristic of $F$ does not divide $|G|$, by Maschke's Theorem, $V$ is completely reducible. This means that $W$ has a complement $W'$ which is also a subrepresentation, such that $V = W ⊕ W'$.
 
-Since $W$ is a proper subrepresentation, the quotient $V/W$ is nontrivial. Therefore, the projection map $\pi$ is not a scalar multiple of the identity map on $V$. This contradicts our assumption that every $G$-equivariant map from $V$ to itself is scalar.
+Consider the projection map $p: V \rightarrow V$ onto $W$ along $W'$. For any $v = w + w'$ where $w ∈ W$ and $w' ∈ W'$, we define $p(v) = w$.
+
+This map is $G$-equivariant. For any $g ∈ G$, $v = w+w' ∈ V$:
+$p(g ⋅ v) = p(g ⋅ (w+w')) = p(g ⋅ w + g ⋅ w') = g ⋅ w$ (since $W, W'$ are subrepresentations, $g ⋅ w ∈ W$ and $g ⋅ w' ∈ W'$).
+
+And $g ⋅ p(v) = g ⋅ w$.
+
+So $p(g ⋅ v) = g ⋅ p(v)$.
+
+The map $p$ is not a scalar multiple of the identity map.
+- If $p = 0$, then $`W = \ker(p) = \{0\}`$, which contradicts $W$ being a nontrivial subrepresentation.
+- If $p = c ⋅ \text{id}$ for some $c ≠ 0$, then $p$ must be an isomorphism. But the image of $p$ is $W$, which is a proper subspace of $V$, so $p$ is not surjective. This is a contradiction.
+
+Thus, $p$ is a non-scalar $G$-equivariant map from $V$ to itself. This contradicts our assumption that every such map is scalar. Therefore, $V$ must be irreducible.
 # 2
 Suppose $V$ is a completely reducible representation of a group $G$. Show that for every subrepresentation $W \subset V$, the quotient $V / W$ is completely reducible. (Obviously, we are assuming that Maschke's Theorem does not apply, otherwise the question is trivial.)
 # 3
