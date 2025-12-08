@@ -41,11 +41,10 @@ Also, since $U$ is a subrepresentation of a completely reducible representation 
 
 Combining these, we get $V = W \oplus W' \oplus U''$.
 
-From this, we can see that $V / W \cong W' \oplus U''$.
-
-We have $U' = U / W = (W \oplus W') / W \cong W'$.
-
-This shows that $U'$ has a complement in $V / W$ (namely, a subrepresentation isomorphic to $U''$).
+Let $\pi: V \to V/W$ be the quotient map.
+From $V = W \oplus W' \oplus U''$, we see that $V/W = \pi(V) = \pi(W') \oplus \pi(U'')$.
+The subrepresentation $U'$ is $U/W = \pi(U) = \pi(W \oplus W') = \pi(W')$.
+Therefore, $V/W = U' \oplus \pi(U'')$, which shows that $U'$ has a complement in $V/W$ (namely $\pi(U'')$).
 
 Since every subrepresentation $U'$ of $V / W$ has a complement, $V / W$ is completely reducible.
 # 3
