@@ -61,7 +61,7 @@ Since $V$ is irreducible, its only subrepresentations are $`\{0\}`$ and $V$. So 
 Thus, $V^*$ is irreducible.
 
 # 4
-Suppose that a group $G$ is a product $G=G_1 \times G_2$. Let $V$ be an irreducible representation of $G$ over $\mathbb{C}$. Denote by $\mathrm{res}_{G_1}^G V$ its restriction to $G_1$ : it is given by the composition
+Suppose that a group $G$ is a product $G=G_1 \times G_2$. Let $V$ be an irreducible representation of $G$ over $\mathbb{C}$. Denote by $\mathrm{res}_{G_1}^G V$ its restriction to $G_1$: it is given by the composition
 
 $G_1 \rightarrow G \rightarrow \mathrm{GL}(V) .$
 
