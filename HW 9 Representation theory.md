@@ -24,6 +24,29 @@ The map $p$ is not a scalar multiple of the identity map.
 Thus, $p$ is a non-scalar $G$-equivariant map from $V$ to itself. This contradicts our assumption that every such map is scalar. Therefore, $V$ must be irreducible.
 # 2
 Suppose $V$ is a completely reducible representation of a group $G$. Show that for every subrepresentation $W \subset V$, the quotient $V / W$ is completely reducible. (Obviously, we are assuming that Maschke's Theorem does not apply, otherwise the question is trivial.)
+
+Proof
+
+Let $V$ be a completely reducible representation of a group $G$, and let $W \subset V$ be a subrepresentation. We want to show that the quotient representation $V / W$ is also completely reducible.
+
+To prove this, we will use the property that a representation is completely reducible if and only if every subrepresentation has a complement.
+
+Let $U'$ be an arbitrary subrepresentation of $V / W$.
+
+Let $U = \pi^{-1}(U')$ be its preimage in $V$ under the quotient map $\pi: V \rightarrow V / W$. $U$ is a subrepresentation of $V$ containing $W$.
+
+Since $V$ is completely reducible, $U$ has a complement $U''$ in $V$, so $V = U \oplus U''$.
+
+Also, since $U$ is a subrepresentation of a completely reducible representation $V$, $U$ is itself completely reducible. Thus, the subrepresentation $W \subset U$ has a complement $W'$ in $U$, so $U = W \oplus W'$.
+
+Combining these, we get $V = W \oplus W' \oplus U''$.
+
+Let $\pi: V \to V/W$ be the quotient map.
+From $V = W \oplus W' \oplus U''$, we see that $V/W = \pi(V) = \pi(W') \oplus \pi(U'')$.
+The subrepresentation $U'$ is $U/W = \pi(U) = \pi(W \oplus W') = \pi(W')$.
+Therefore, $V/W = U' \oplus \pi(U'')$, which shows that $U'$ has a complement in $V/W$ (namely $\pi(U'')$).
+
+Since every subrepresentation $U'$ of $V / W$ has a complement, $V / W$ is completely reducible.
 # 3
 Let $V$ be an irreducible finite-dimensional representation of a group $G$. Show that its dual $V^*$ is irreducible as well.
 
