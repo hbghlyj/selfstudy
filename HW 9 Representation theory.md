@@ -26,6 +26,35 @@ Thus, $p$ is a non-scalar $G$-equivariant map from $V$ to itself. This contradic
 Suppose $V$ is a completely reducible representation of a group $G$. Show that for every subrepresentation $W \subset V$, the quotient $V / W$ is completely reducible. (Obviously, we are assuming that Maschke's Theorem does not apply, otherwise the question is trivial.)
 # 3
 Let $V$ be an irreducible finite-dimensional representation of a group $G$. Show that its dual $V^*$ is irreducible as well.
+
+Proof
+
+The dual representation $V^*$ of a representation $V$ of a group $G$ is defined by the action:
+
+$(g \cdot f)(v) = f(g^{-1} \cdot v)$ for all $g \in G$, $f \in V^*$, and $v \in V$.
+
+To show that $V^*$ is irreducible, we need to demonstrate that there are no nontrivial proper subrepresentations of $V^*$.
+
+Let $W$ be a subrepresentation of $V^*$. We will show that $W$ is either $\{0\}$ or $V^*$.
+
+Consider the annihilator of $W$ in $V$:
+$W^\perp = \{v \in V \mid f(v) = 0 \text{ for all } f \in W\}$.
+
+We first show that $W^\perp$ is a subrepresentation of $V$. Let $v \in W^\perp$ and $g \in G$. We need to show that $g \cdot v \in W^\perp$. This means we must show that $f(g \cdot v) = 0$ for all $f \in W$.
+
+Since $W$ is a subrepresentation of $V^*$, for any $f \in W$, the functional $g^{-1} \cdot f$ is also in $W$.
+Because $v \in W^\perp$, we have $(g^{-1} \cdot f)(v) = 0$.
+By the definition of the dual action, $(g^{-1} \cdot f)(v) = f(g \cdot v)$.
+Therefore, $f(g \cdot v) = 0$ for all $f \in W$, which means $g \cdot v \in W^\perp$.
+Thus, $W^\perp$ is a subrepresentation of $V$.
+
+Since $V$ is irreducible, its only subrepresentations are $\{0\}$ and $V$. So we have two cases for $W^\perp$:
+
+1.  $W^\perp = V$: This means that for every $f \in W$, $f(v) = 0$ for all $v \in V$. This implies that every functional in $W$ is the zero functional, so $W = \{0\}$.
+2.  $W^\perp = \{0\}$: Since $V$ is finite-dimensional, we have $(W^\perp)^\perp = W$. Therefore, $W = (\{0\})^\perp = V^*$.
+
+In both cases, $W$ is a trivial subrepresentation. Thus, $V^*$ is irreducible.
+
 # 4
 Suppose that a group $G$ is a product $G=G_1 \times G_2$. Let $V$ be an irreducible representation of $G$ over $\mathbb{C}$. Denote by $\mathrm{res}_{G_1}^G V$ its restriction to $G_1$ : it is given by the composition
 
