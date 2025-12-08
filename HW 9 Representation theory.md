@@ -24,6 +24,34 @@ The map $p$ is not a scalar multiple of the identity map.
 Thus, $p$ is a non-scalar $G$-equivariant map from $V$ to itself. This contradicts our assumption that every such map is scalar. Therefore, $V$ must be irreducible.
 # 2
 Suppose $V$ is a completely reducible representation of a group $G$. Show that for every subrepresentation $W \subset V$, the quotient $V / W$ is completely reducible. (Obviously, we are assuming that Maschke's Theorem does not apply, otherwise the question is trivial.)
+
+Proof
+
+Let $V$ be a representation of a finite group $G$ over a field $F$, and suppose that $V$ is completely reducible. This means that $V$ can be expressed as a direct sum of irreducible subrepresentations:
+
+$V = \bigoplus_{i \in I} V_i$
+
+where each $V_i$ is an irreducible representation of $G$.
+
+Let $W$ be a subrepresentation of $V$. For each $i \in I$, if $W_i = W \cap V_i$ is a nontrivial subrepresentation of $V_i$, then since $V_i$ is irreducible, we have $W_i = V_i$. Otherwise, if $W_i$ is trivial, then $`W_i = \{0\}`$. In either case, we can express $W$ as:
+
+$W = \bigoplus_{i \in I} W_i$
+
+where each $W_i$ is either $V_i$ or $`\{0\}`$.
+
+Now, consider the quotient representation $V / W$. We can express this quotient as:
+
+$V / W \simeq \bigoplus_{i \in I} (V_i / W_i)$
+
+where each $V_i / W_i$ is either isomorphic to $V_i$ (if $`W_i = \{0\}`$) or the trivial representation (if $W_i = V_i$).
+
+Since each $V_i$ is irreducible, the quotient $V_i / W_i$ is either irreducible (if $`W_i = \{0\}`$) or trivial (if $W_i = V_i$). Therefore, each component in the direct sum decomposition of $V / W$ is either irreducible or trivial.
+
+Thus, we can express $V / W$ as a direct sum of irreducible representations (and possibly trivial representations):
+
+$V / W \simeq \bigoplus_{i \in I} (V_i / W_i)$
+
+This shows that $V / W$ is completely reducible, as it can be expressed as a direct sum of irreducible representations. Hence, we have shown that for every subrepresentation $W \subset V$, the quotient $V / W$ is completely reducible.
 # 3
 Let $V$ be an irreducible finite-dimensional representation of a group $G$. Show that its dual $V^*$ is irreducible as well.
 # 4
