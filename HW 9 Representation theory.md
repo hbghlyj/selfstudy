@@ -42,8 +42,11 @@ Also, since $U$ is a subrepresentation of a completely reducible representation 
 Combining these, we get $V = W \oplus W' \oplus U''$.
 
 Let $\pi: V \to V/W$ be the quotient map.
+
 From $V = W \oplus W' \oplus U''$, we see that $V/W = \pi(V) = \pi(W') \oplus \pi(U'')$.
+
 The subrepresentation $U'$ is $U/W = \pi(U) = \pi(W \oplus W') = \pi(W')$.
+
 Therefore, $V/W = U' \oplus \pi(U'')$, which shows that $U'$ has a complement in $V/W$ (namely $\pi(U'')$).
 
 Since every subrepresentation $U'$ of $V / W$ has a complement, $V / W$ is completely reducible.
