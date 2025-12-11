@@ -95,9 +95,9 @@ Show that $\mathrm{res}_{G_1}^G V \simeq\left(V_1\right)^k$ for some irreducible
 
 Proof
 
-Let $\mathrm{res}_{G_1}^G V$ be the restriction of the irreducible representation $V$ of $G = G_1 \times G_2$ to $G_1$. We will show that $\mathrm{res}_{G_1}^G V \simeq (V_1)^k$ for some irreducible representation $V_1$ of $G_1$ and $k \geq 1$.
+Let $`\mathrm{res}_{G_1}^G V`$ be the restriction of the irreducible representation $V$ of $G = G_1 \times G_2$ to $G_1$. We will show that $\mathrm{res}_{G_1}^G V \simeq (V_1)^k$ for some irreducible representation $V_1$ of $G_1$ and $k \geq 1$.
 
-Since $\mathrm{res}_{G_1}^G V$ is completely reducible, we can decompose it into its isotypic components: $\mathrm{res}_{G_1}^G V = \bigoplus_{i=1}^m W_i$. For $i \neq j$, the irreducible constituents of $W_i$ and $W_j$ are non-isomorphic.
+Since $`\mathrm{res}_{G_1}^G V`$ is completely reducible, we can decompose it into its isotypic components: $`\mathrm{res}_{G_1}^G V = \bigoplus_{i=1}^m W_i`$. For $i \neq j$, the irreducible constituents of $W_i$ and $W_j$ are non-isomorphic.
 
 The action of any $g_2 \in G_2$ on $V$ commutes with the action of $G_1$. Thus, the map $v \mapsto (e, g_2) \cdot v$ is a $G_1$-module endomorphism of $V$. By Schur's Lemma, this map must preserve each isotypic component $W_i$. This means each $W_i$ is a subrepresentation of $V$ under the action of $G_2$.
 
