@@ -97,9 +97,13 @@ Proof
 
 Let $\mathrm{res}_{G_1}^G V$ be the restriction of the irreducible representation $V$ of $G = G_1 \times G_2$ to $G_1$. We will show that $\mathrm{res}_{G_1}^G V \simeq (V_1)^k$ for some irreducible representation $V_1$ of $G_1$ and $k \geq 1$.
 
-Since $\mathrm{res}_{G_1}^G V$ is completely reducible (as a representation of $G_1$), it can be decomposed into a direct sum of irreducible representations of $G_1$. Let $`\mathrm{res}_{G_1}^G V = \bigoplus_{i=1}^m V_i`$, where each $V_i$ is an irreducible representation of $G_1$.
+Since $\mathrm{res}_{G_1}^G V$ is completely reducible, we can decompose it into its isotypic components: $\mathrm{res}_{G_1}^G V = \bigoplus_{i=1}^m W_i$. For $i \neq j$, the irreducible constituents of $W_i$ and $W_j$ are non-isomorphic.
 
-$\mathrm{Hom}_{G_1}(V_1, V_2) = \mathbb{C}$ if $V_1 \simeq V_2$ and is zero otherwise. Since $V$ is irreducible as a representation of $G = G_1 \times G_2$, the only non-zero homomorphisms from $V$ to itself are scalar multiples of the identity map.
+The action of any $g_2 \in G_2$ on $V$ commutes with the action of $G_1$. Thus, the map $v \mapsto (e, g_2) \cdot v$ is a $G_1$-module endomorphism of $V$. By Schur's Lemma, this map must preserve each isotypic component $W_i$. This means each $W_i$ is a subrepresentation of $V$ under the action of $G_2$.
+
+Since each $W_i$ is also a $G_1$-subrepresentation by definition, it is a subrepresentation of $V$ for the whole group $G = G_1 \times G_2$. But $V$ is irreducible, so it cannot have proper non-trivial subrepresentations. This implies that there can be only one non-zero isotypic component, i.e., $m=1$.
+
+Therefore, $\mathrm{res}_{G_1}^G V$ is isotypic, which means it is a direct sum of $k$ copies of a single irreducible $G_1$-representation $V_1$.
 
 # 5
 Fix $n$, and denote by $X_k$ the set of all $k$-element subsets of $`\{1, \dots, n\}`$ ($k \leq n$). It carries an action of $S_n$, and we can consider the corresponding representation $V_k$ of $S_n$, where $V_k$ is the space of $\mathbb{C}$-valued functions on $X_k$.
