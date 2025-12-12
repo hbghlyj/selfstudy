@@ -138,7 +138,7 @@ To show that $V_k \simeq V_{n-k}$ as representations, we need to prove that $\ph
 
     $`(\phi(\sigma \cdot f))(B) = (\sigma \cdot f)(\{1, \dots, n\} \setminus B) = f(\sigma^{-1}(\{1, \dots, n\} \setminus B))`$.
 
-    Since $\sigma^{-1}$ is a permutation, it commutes with the complement operation: $\sigma^{-1}(\{1, \dots, n\} \setminus B) = \{1, \dots, n\} \setminus \sigma^{-1}(B)$.
+    Since $\sigma^{-1}$ is a permutation, it commutes with the complement operation: $`\sigma^{-1}(\{1, \dots, n\} \setminus B) = \{1, \dots, n\} \setminus \sigma^{-1}(B)`$.
 
     So, $`(\phi(\sigma \cdot f))(B) = f(\{1, \dots, n\} \setminus \sigma^{-1}(B))`$.
 
