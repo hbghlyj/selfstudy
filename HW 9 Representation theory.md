@@ -124,7 +124,7 @@ To show that $V_k \simeq V_{n-k}$ as representations, we need to prove that $\ph
 
     Thus, $\phi(f_1 + c f_2) = \phi(f_1) + c \phi(f_2)$, so $\phi$ is linear.
 
-3.  **Bijectivity:** We can define an inverse map $\psi: V_{n-k} \rightarrow V_k$ by $\psi(h)(A) = h(\{1, \dots, n\} \setminus A)$ for $h \in V_{n-k}$ and $A \in X_k$.
+3.  **Bijectivity:** We can define an inverse map $\psi: V_{n-k} \rightarrow V_k$ by $`\psi(h)(A) = h(\{1, \dots, n\} \setminus A)1$ for $h \in V_{n-k}$ and $A \in X_k$.
 
     For any $f \in V_k$ and $A \in X_k$:
 
