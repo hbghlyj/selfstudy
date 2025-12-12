@@ -112,7 +112,31 @@ Show that $V_k \simeq V_{n-k}$.
 
 Proof
 
-The representation $V_k$ is defined as the space of complex-valued functions $f: X_k \rightarrow \mathbb{C}$, where $X_k$ is the set of all $k$-element subsets of $\{1, \dots, n\}$. The symmetric group $S_n$ acts on $V_k$ by permuting the elements of the subsets: $(\sigma \cdot f)(A) = f(\sigma^{-1}(A))$ for $\sigma \in S_n$ and $A \in X_k$. Let $X_n\setminus A$ denote the complement of the subset $A$ in $\{1, \dots, n\}$. We can define a linear map $\phi: V_k \rightarrow V_{n-k}$ by setting $\phi(f)(B) = f(\{1, \dots, n\} \setminus B)$ for all $B \in X_{n-k}$.
+The representation $V_k$ is defined as the space of complex-valued functions $f: X_k \rightarrow \mathbb{C}$, where $X_k$ is the set of all $k$-element subsets of $\{1, \dots, n\}$. The symmetric group $S_n$ acts on $V_k$ by permuting the elements of the subsets: $(\sigma \cdot f)(A) = f(\sigma^{-1}(A))$ for $\sigma \in S_n$ and $A \in X_k$.
+
+Let's define a map $\phi: V_k \rightarrow V_{n-k}$ by setting $\phi(f)(B) = f(\{1, \dots, n\} \setminus B)$ for any $f \in V_k$ and $B \in X_{n-k}$. Note that if $B$ is an $(n-k)$-element subset, its complement $\{1, \dots, n\} \setminus B$ is a $k$-element subset, so it is in $X_k$, and $f$ is defined on it. Thus, $\phi(f)$ is a well-defined function on $X_{n-k}$.
+
+To show that $V_k \simeq V_{n-k}$ as representations, we need to prove that $\phi$ is an isomorphism of $S_n$-representations. This requires showing that $\phi$ is a linear, bijective, and $S_n$-equivariant map.
+
+1.  **Linearity:** For any $f_1, f_2 \in V_k$ and $c \in \mathbb{C}$, and for any $B \in X_{n-k}$:
+    $`\phi(f_1 + c f_2)(B) = (f_1 + c f_2)(\{1, \dots, n\} \setminus B) = f_1(\{1, \dots, n\} \setminus B) + c f_2(\{1, \dots, n\} \setminus B) = \phi(f_1)(B) + c \phi(f_2)(B) = (\phi(f_1) + c \phi(f_2))(B)`$.
+    Thus, $\phi(f_1 + c f_2) = \phi(f_1) + c \phi(f_2)$, so $\phi$ is linear.
+
+2.  **Bijectivity:** We can define an inverse map $\psi: V_{n-k} \rightarrow V_k$ by $\psi(h)(A) = h(\{1, \dots, n\} \setminus A)$ for $h \in V_{n-k}$ and $A \in X_k$.
+    For any $f \in V_k$ and $A \in X_k$:
+    $`(\psi \circ \phi)(f)(A) = \psi(\phi(f))(A) = \phi(f)(\{1, \dots, n\} \setminus A) = f(\{1, \dots, n\} \setminus (\{1, \dots, n\} \setminus A)) = f(A)`$.
+    So, $\psi \circ \phi = \mathrm{id}_{V_k}$. Similarly, $\phi \circ \psi = \mathrm{id}_{V_{n-k}}$. Thus, $\phi$ is bijective.
+
+3.  **$S_n$-equivariance:** We need to show that $\phi(\sigma \cdot f) = \sigma \cdot \phi(f)$ for any $\sigma \in S_n$ and $f \in V_k$.
+    For any $B \in X_{n-k}$:
+    $`(\phi(\sigma \cdot f))(B) = (\sigma \cdot f)(\{1, \dots, n\} \setminus B) = f(\sigma^{-1}(\{1, \dots, n\} \setminus B))`$.
+    Since $\sigma^{-1}$ is a permutation, it commutes with the complement operation: $\sigma^{-1}(\{1, \dots, n\} \setminus B) = \{1, \dots, n\} \setminus \sigma^{-1}(B)$.
+    So, $`(\phi(\sigma \cdot f))(B) = f(\{1, \dots, n\} \setminus \sigma^{-1}(B))`$.
+    On the other hand:
+    $`(\sigma \cdot \phi(f))(B) = (\phi(f))(\sigma^{-1}(B)) = f(\{1, \dots, n\} \setminus \sigma^{-1}(B))`$.
+    Since both sides are equal, $\phi$ is $S_n$-equivariant.
+
+Since $\phi$ is a linear, bijective, and $S_n$-equivariant map, it is an isomorphism of representations. Therefore, $V_k \simeq V_{n-k}$.
 
 # 6. (Continuation of the previous problem)
 Show that $S_n$ has irreducible representations $W_0, W_1, W_2, \ldots, W_{\left\lfloor\frac{n}{2}\right\rfloor}$ such that
