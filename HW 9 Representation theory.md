@@ -156,3 +156,16 @@ Show that $S_n$ has irreducible representations $W_0, W_1, W_2, \ldots, W_{\left
 $V_k \simeq \bigoplus_{i=0}^k W_i$
 
 for all $k \leq \frac{n}{2}$.
+
+Proof
+
+Compute the dimensions of both sides. The dimension of $V_k$ is $`\dim(V_k) = \binom{n}{k}`$. We need to find irreducible representations $W_i$ such that
+$`\dim\left(\bigoplus_{i=0}^k W_i\right) = \sum_{i=0}^k \dim(W_i) = \binom{n}{k}`$ so that the dimensions match. The dimension of $W_i$ can be chosen as $`\dim(W_i) = \binom{n}{i} - \binom{n}{i-1}`$.
+
+Compute the inner product of characters to verify the decomposition. The character of $V_k$ evaluated at a permutation $\sigma \in S_n$ is given by the number of $k$-element subsets fixed by $\sigma$. The inner product of $V_k$ with itself is given by
+$`\langle \chi_{V_k}, \chi_{V_k} \rangle = \frac{1}{n!} \sum_{\sigma \in S_n} |\text{Fix}(\sigma)|^2`$,
+where $`\text{Fix}(\sigma)`$ is the number of $k$-element subsets fixed by $\sigma$.
+
+To verify the decomposition, we need to show that the inner product of characters satisfies
+$`\langle \chi_{V_k}, \chi_{V_k} \rangle = k + 1`.
+This value corresponds to the number of irreducible components in the direct sum.
