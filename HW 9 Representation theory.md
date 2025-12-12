@@ -110,6 +110,10 @@ Fix $n$, and denote by $X_k$ the set of all $k$-element subsets of $`\{1, \dots,
 
 Show that $V_k \simeq V_{n-k}$.
 
+Proof
+
+The representation $V_k$ is defined as the space of complex-valued functions $f: X_k \rightarrow \mathbb{C}$, where $X_k$ is the set of all $k$-element subsets of $\{1, \dots, n\}$. The symmetric group $S_n$ acts on $V_k$ by permuting the elements of the subsets: $(\sigma \cdot f)(A) = f(\sigma^{-1}(A))$ for $\sigma \in S_n$ and $A \in X_k$. Let $X_n\setminus A$ denote the complement of the subset $A$ in $\{1, \dots, n\}$. We can define a linear map $\phi: V_k \rightarrow V_{n-k}$ by setting $\phi(f)(B) = f(\{1, \dots, n\} \setminus B)$ for all $B \in X_{n-k}$.
+
 # 6. (Continuation of the previous problem)
 Show that $S_n$ has irreducible representations $W_0, W_1, W_2, \ldots, W_{\left\lfloor\frac{n}{2}\right\rfloor}$ such that
 
