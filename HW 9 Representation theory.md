@@ -166,6 +166,6 @@ Compute the inner product of characters to verify the decomposition. The charact
 $`\langle \chi_{V_k}, \chi_{V_k} \rangle = \frac{1}{n!} \sum_{\sigma \in S_n} |\text{Fix}(\sigma)|^2`$,
 where $`\text{Fix}(\sigma)`$ is the number of $k$-element subsets fixed by $\sigma$.
 
-If $V_k \simeq \bigoplus_{i=0}^k W_i$, then the inner product of characters should satisfy
-$`\langle \chi_{V_k}, \chi_{V_k} \rangle = k + 1`$,
-since there are $k + 1$ summands in the decomposition.
+To verify the decomposition, we need to show that the inner product of characters satisfies
+$`\langle \chi_{V_k}, \chi_{V_k} \rangle = k + 1`.
+This value corresponds to the number of irreducible components in the direct sum.
