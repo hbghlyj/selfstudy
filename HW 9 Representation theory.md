@@ -114,7 +114,7 @@ Proof
 
 The representation $V_k$ is defined as the space of complex-valued functions $f: X_k \rightarrow \mathbb{C}$, where $X_k$ is the set of all $k$-element subsets of $`\{1, \dots, n\}`$. The symmetric group $S_n$ acts on $V_k$ by permuting the elements of the subsets: $(\sigma \cdot f)(A) = f(\sigma^{-1}(A))$ for $\sigma \in S_n$ and $A \in X_k$.
 
-Define a map $\phi: V_k \rightarrow V_{n-k}$ by setting $\phi(f)(B) = f(\{1, \dots, n\} \setminus B)$ for any $f \in V_k$ and $B \in X_{n-k}$. Note that if $B$ is an $(n-k)$-element subset, its complement $\{1, \dots, n\} \setminus B$ is a $k$-element subset, so it is in $X_k$, and $f$ is defined on it. Thus, $\phi(f)$ is a well-defined function on $X_{n-k}$.
+Define a map $\phi: V_k \rightarrow V_{n-k}$ by setting $\phi(f)(B) = f(\{1, \dots, n\} \setminus B)$ for any $f \in V_k$ and $B \in X_{n-k}$. Note that if $B$ is an $(n-k)$-element subset, its complement $`\{1, \dots, n\} \setminus B`$ is a $k$-element subset, so it is in $X_k$, and $f$ is defined on it. Thus, $\phi(f)$ is a well-defined function on $X_{n-k}$.
 
 To show that $V_k \simeq V_{n-k}$ as representations, we need to prove that $\phi$ is an isomorphism of $S_n$-representations. This requires showing that $\phi$ is a linear, bijective, and $S_n$-equivariant map.
 
