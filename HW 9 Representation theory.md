@@ -164,8 +164,12 @@ $`\dim\left(\bigoplus_{i=0}^k W_i\right) = \sum_{i=0}^k \dim(W_i) = \binom{n}{k}
 
 Compute the inner product of characters to verify the decomposition. The character of $V_k$ evaluated at a permutation $\sigma \in S_n$ is given by the number of $k$-element subsets fixed by $\sigma$. The inner product of $V_k$ with itself is given by
 $`\langle \chi_{V_k}, \chi_{V_k} \rangle = \frac{1}{n!} \sum_{\sigma \in S_n} |\text{Fix}(\sigma)|^2`$,
-where $`\text{Fix}(\sigma)`$ is the number of $k$-element subsets fixed by $\sigma$.
+First computing $`\langle \chi_{V_j}, \chi_{V_k} \rangle`$ for $j \le k$ and showing it equals $j+1$, as it's the number of orbits of $S_n$ on $X_j \times X_k$.
 
-To verify the decomposition, we need to show that the inner product of characters satisfies
-$`\langle \chi_{V_k}, \chi_{V_k} \rangle = k + 1`.
-This value corresponds to the number of irreducible components in the direct sum.
+Define the characters of the irreducible representations $W_i$ inductively
+
+$`\chi_{W_k} = \chi_{V_k} - \chi_{V_{k-1}}`$ for $k \ge 1$ and $`\chi_{W_0} = \chi_{V_0}`$.
+
+Then need to show that $`\langle \chi_{W_i}, \chi_{W_j} \rangle = \delta_{ij}`$, which proves that the $W_i$ are distinct irreducible representations.
+
+Finally, summing the character definitions telescopically gives $`\chi_{V_k} = \sum_{i=0}^k \chi_{W_i}`$, which proves the desired isomorphism.
