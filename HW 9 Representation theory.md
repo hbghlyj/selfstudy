@@ -166,7 +166,7 @@ Compute the inner product of characters to verify the decomposition. The charact
 $`\langle \chi_{V_k}, \chi_{V_k} \rangle = \frac{1}{n!} \sum_{\sigma \in S_n} |\text{Fix}(\sigma)|^2`$,
 First computing $`\langle \chi_{V_j}, \chi_{V_k} \rangle`$ for $j \le k$ and showing it equals $j+1$, as it's the number of orbits of $S_n$ on $X_j \times X_k$.
 
-Define the characters of the irreducible representations $W_i$ inductively
+Define the characters $\chi_{W_i}$ inductively
 
 $`\chi_{W_k} = \chi_{V_k} - \chi_{V_{k-1}}`$ for $k \ge 1$ and $`\chi_{W_0} = \chi_{V_0}`$.
 
