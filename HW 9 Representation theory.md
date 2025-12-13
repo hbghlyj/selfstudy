@@ -178,7 +178,7 @@ The character of $V_k$ evaluated at a permutation $\sigma \in S_n$ is given by t
 
 $`\langle \chi_{V_j}, \chi_{V_k} \rangle = j+1`$.
 
-Since a complex representation of a finite group is determined up to isomorphism by its character, we can define $W_j$ by its character $\chi_{W_i}$
+Since a complex representation of a finite group is determined up to isomorphism by its character, we can define $W_j$ by its character $\chi_{W_j}$
 
 $`\chi_{W_k} = \chi_{V_k} - \chi_{V_{k-1}}`$ for $k \ge 1$ and $`\chi_{W_0} = \chi_{V_0}`$.
 
