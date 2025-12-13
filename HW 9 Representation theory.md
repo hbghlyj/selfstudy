@@ -159,8 +159,26 @@ for all $k \leq \frac{n}{2}$.
 
 Proof
 
+The space $V_k$ consists of all functions $f: X_k \to \mathbb{C}$. To write this as a matrix, we need to choose a basis.The most natural basis is the set of "indicator functions" (or delta functions). For every subset $A \in X_k$, we define a function $\delta_A$ such that:
+
+$\delta_A(B) = 1$ if $B = A$
+
+$\delta_A(B) = 0$ if $B \neq A$
+
+The set of these functions $`\{\delta_A \mid A \in X_k\}`$ forms a basis for $V_k$. The group action is defined as $(\sigma \cdot f)(B) = f(\sigma^{-1} B)$.Let's see what happens when $\sigma$ acts on a basis vector $\delta_A$:
+
+$`(\sigma \cdot \delta_A)(B) = \delta_A(\sigma^{-1} B)`$
+
+This value is $1$ only when $\sigma^{-1} B = A$, which is equivalent to $B = \sigma A$.
+Therefore, $\sigma \cdot \delta_A = \delta_{\sigma A}$.
+By Burnside's lemma, the inner product of two permutation characters 1$\langle \chi_1, \chi_2 \rangle$ equals the number of orbits of the group acting on the product set 2$X_j \times X_k$.
+
 Compute the inner product of characters to verify the decomposition. The character of $V_k$ evaluated at a permutation $\sigma \in S_n$ is given by the number of $k$-element subsets fixed by $\sigma$. For $j \le k$, the inner product $`\langle \chi_{V_j}, \chi_{V_k} \rangle`$ equals the number of orbits of $S_n$ on $X_j \times X_k$. These orbits are classified by the size of the intersection of the two subsets. Since the problem states $k \le n/2$, we have $j+k \le n$, which ensures that any intersection size from $0$ to $j$ is possible. This gives $j+1$ distinct orbits, so $`\langle \chi_{V_j}, \chi_{V_k} \rangle = j+1`$.
+
 Define the characters $\chi_{W_i}$ inductively:
+
 $`\chi_{W_k} = \chi_{V_k} - \chi_{V_{k-1}}`$ for $k \ge 1$ and $`\chi_{W_0} = \chi_{V_0}`$.
+
 Then need to show that $`\langle \chi_{W_i}, \chi_{W_j} \rangle = \delta_{ij}`$, which proves that the $W_i$ are distinct irreducible representations.
+
 Finally, summing the character definitions telescopically gives $`\chi_{V_k} = \sum_{i=0}^k \chi_{W_i}`$, which proves the desired isomorphism.
