@@ -182,6 +182,6 @@ Since a complex representation of a finite group is determined up to isomorphism
 
 $`\chi_{W_k} = \chi_{V_k} - \chi_{V_{k-1}}`$ for $k \ge 1$ and $`\chi_{W_0} = \chi_{V_0}`$.
 
-By induction, $`\langle \chi_{W_i}, \chi_{W_j} \rangle = \langle \chi_{V_i} - \chi_{V_{i-1}}, \chi_{V_j} - \chi_{V_{j-1}} \rangle = \delta_{ij}`$, which proves that the $W_i$ are distinct irreducible representations.
+A direct calculation using the bilinearity of the inner product shows that $`\langle \chi_{W_i}, \chi_{W_j} \rangle = \langle \chi_{V_i} - \chi_{V_{i-1}}, \chi_{V_j} - \chi_{V_{j-1}} \rangle = \delta_{ij}`$, which proves that the $W_i$ are distinct irreducible representations.
 
 Finally, summing the character definitions telescopically gives $`\chi_{V_k} = \sum_{i=0}^k \chi_{W_i}`$, which proves the desired isomorphism.
