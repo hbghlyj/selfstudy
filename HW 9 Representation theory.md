@@ -63,11 +63,11 @@ To show that $`V^*`$ is irreducible, we need to demonstrate that there are no no
 
 Let $W$ be a subrepresentation of $V^*$. We will show that $W$ is either $`\{0\}`$ or $`V^*`$.
 
-Consider the annihilator of $W$ in $V$:
+Consider the annihilator of  in :
 
-$`W^\perp = \{v \in V \mid f(v) = 0 \text{ for all } f \in W\}`$.
+     `W^\perp = \{v \in V \mid f(v) = 0 \text{ for all } f \in W\}`$.
 
-We first show that $W^\perp$ is a subrepresentation of $V$. Let $v \in W^\perp$ and $g \in G$. We need to show that $g \cdot v \in W^\perp$. This means we must show that $f(g \cdot v) = 0$ for all $f \in W$.
+We first show that  is a subrepresentation of . Let   and  . We need to show that   . This means we must show that    for all  .
 
 Since $W$ is a subrepresentation of $V^*$, for any $f \in W$, the functional $g^{-1} \cdot f$ is also in $W$.
 
@@ -159,17 +159,5 @@ for all $k \leq \frac{n}{2}$.
 
 Proof
 
-Compute the dimensions of both sides. The dimension of $V_k$ is $`\dim(V_k) = \binom{n}{k}`$. We need to find irreducible representations $W_i$ such that
-$`\dim\left(\bigoplus_{i=0}^k W_i\right) = \sum_{i=0}^k \dim(W_i) = \binom{n}{k}`$ so that the dimensions match. The dimension of $W_i$ can be chosen as $`\dim(W_i) = \binom{n}{i} - \binom{n}{i-1}`$.
-
-Compute the inner product of characters to verify the decomposition. The character of $V_k$ evaluated at a permutation $\sigma \in S_n$ is given by the number of $k$-element subsets fixed by $\sigma$. The inner product of $V_k$ with itself is given by
-$`\langle \chi_{V_k}, \chi_{V_k} \rangle = \frac{1}{n!} \sum_{\sigma \in S_n} |\text{Fix}(\sigma)|^2`$,
-First computing $`\langle \chi_{V_j}, \chi_{V_k} \rangle`$ for $j \le k$ and showing it equals $j+1$, as it's the number of orbits of $S_n$ on $X_j \times X_k$.
-
-Define the characters $\chi_{W_i}$ inductively
-
-$`\chi_{W_k} = \chi_{V_k} - \chi_{V_{k-1}}`$ for $k \ge 1$ and $`\chi_{W_0} = \chi_{V_0}`$.
-
-Then need to show that $`\langle \chi_{W_i}, \chi_{W_j} \rangle = \delta_{ij}`$, which proves that the $W_i$ are distinct irreducible representations.
-
-Finally, summing the character definitions telescopically gives $`\chi_{V_k} = \sum_{i=0}^k \chi_{W_i}`$, which proves the desired isomorphism.
+Compute the inner product of characters to verify the decomposition. The character of $V_k$ evaluated at a permutation $\sigma \in S_n$ is given by the number of $k$-element subsets fixed by $\sigma$. The inner product of $V_k$ with itself is given by $`\langle \chi_{V_k}, \chi_{V_k} \rangle = \frac{1}{n!} \sum_{\sigma \in S_n} |\text{Fix}(\sigma)|^2`$, First computing $`\langle \chi_{V_j}, \chi_{V_k} \rangle`$ for $j \le k$ and showing it equals $j+1$, as it's the number of orbits of $S_n$ on $X_j \times X_k$. Number of orbits of $S_n$ on $X_j \times X_k$ is $j+1$ because the size of the intersection of two subsets can range from $0$ to $j$. Thus, we have
+$`\langle \chi_{V_j}, \chi_{V_k} \rangle = j + 1`$. Define the characters $\chi_{W_i}$ inductively $`\chi_{W_k} = \chi_{V_k} - \chi_{V_{k-1}}`$ for $k \ge 1$ and $`\chi_{W_0} = \chi_{V_0}`$. Then need to show that $`\langle \chi_{W_i}, \chi_{W_j} \rangle = \delta_{ij}`$, which proves that the $W_i$ are distinct irreducible representations. Finally, summing the character definitions telescopically gives $`\chi_{V_k} = \sum_{i=0}^k \chi_{W_i}`$, which proves the desired isomorphism.
