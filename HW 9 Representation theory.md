@@ -170,18 +170,41 @@ The set of these functions $`\{\delta_A \mid A \in X_k\}`$ forms a basis for $V_
 $`(\sigma \cdot \delta_A)(B) = \delta_A(\sigma^{-1} B)`$
 
 This value is $1$ only when $\sigma^{-1} B = A$, which is equivalent to $B = \sigma A$.
-Therefore, $\sigma \cdot \delta_A = \delta_{\sigma A}$.
-The matrices in such representations are permutation matrices. Their trace equals the number of fixed points of the action.
-By Burnside's lemma, the inner product of two permutation characters $\langle \chi_1, \chi_2 \rangle$ equals the number of orbits of the group acting on the product set $X_j \times X_k$.
 
-The character of $V_k$ evaluated at a permutation $\sigma \in S_n$ is given by the number of $k$-element subsets fixed by $\sigma$. For $j \le k$, the inner product $`\langle \chi_{V_j}, \chi_{V_k} \rangle`$ equals the number of orbits of $S_n$ on $X_j \times X_k$. These orbits are classified by the size of the intersection of the two subsets. Since the problem states $k \le n/2$, we have $j+k \le n$, which ensures that any intersection size from $0$ to $j$ is possible. This gives $j+1$ distinct orbits, so
+Therefore, $\sigma \cdot \delta_A = \delta_{\sigma A}$.
+
+We calculate the inner product $\langle \chi_{V_j}, \chi_{V_k} \rangle$ using the Projection Formula for characters. Recall that for any two representations $V$ and $W$, the inner product of their characters equals the dimension of the space of $G$-equivariant linear maps (intertwiners) between them:
+
+$\langle \chi_{V_j}, \chi_{V_k} \rangle = \dim \left( \text{Hom}_{S_n}(V_j, V_k) \right)$
+
+A linear map $T: V_j \to V_k$ can be represented by a matrix $M$ with entries $M_{B,A}$ indexed by subsets $A \in X_j$ and $B \in X_k$.
+
+The condition that $T$ is $S_n$-equivariant ($T(\sigma \cdot v) = \sigma \cdot T(v)$) translates to the matrix condition $M_{\sigma B, \sigma A} = M_{B, A}$ for all $\sigma \in S_n$.
+
+This means the matrix entries must be constant on the orbits of $S_n$ acting on the product set $X_k \times X_j$.
+
+Therefore, the dimension of the space of such maps is exactly the number of distinct orbits of $S_n$ on pairs of subsets $(B, A)$.
+
+The orbit of a pair of subsets $(A,B)$ is determined by the size of their intersection $|A \cap B|$, as any two such pairs with the same intersection size (and same sizes for the sets themselves) can be mapped to one another by a permutation in $S_n$.
+
+Since the problem states $k \le n/2$, we have $j+k \le n$, which ensures that any intersection size from $0$ to $j$ is possible. This gives $j+1$ distinct orbits, so
 
 $`\langle \chi_{V_j}, \chi_{V_k} \rangle = j+1`$.
 
-Since a complex representation of a finite group is determined up to isomorphism by its character, we can define $W_j$ by its character $\chi_{W_j}$
+Since a complex representation of a finite group is determined up to isomorphism by its character, we can define the irreducible representations $W_k$ by their characters. We set $\chi_{W_0} = \chi_{V_0}$ and for $k \ge 1$:
 
-$`\chi_{W_k} = \chi_{V_k} - \chi_{V_{k-1}}`$ for $k \ge 1$ and $`\chi_{W_0} = \chi_{V_0}`$.
+$\chi_{W_k} = \chi_{V_k} - \chi_{V_{k-1}}$
 
-A direct calculation using the bilinearity of the inner product shows that $`\langle \chi_{W_i}, \chi_{W_j} \rangle = \langle \chi_{V_i} - \chi_{V_{i-1}}, \chi_{V_j} - \chi_{V_{j-1}} \rangle = \delta_{ij}`$, which proves that the $W_i$ are distinct irreducible representations.
+We now verify these are distinct irreducible representations by checking orthonormality. Using bilinearity and the formula derived above ($\langle \chi_{V_a}, \chi_{V_b} \rangle = \min(a,b) + 1$):
 
-Finally, summing the character definitions telescopically gives $`\chi_{V_k} = \sum_{i=0}^k \chi_{W_i}`$, which proves the desired isomorphism.
+$`\begin{aligned}
+\langle \chi_{W_k}, \chi_{W_k} \rangle &= \langle \chi_{V_k} - \chi_{V_{k-1}}, \chi_{V_k} - \chi_{V_{k-1}} \rangle \\
+&= \langle \chi_{V_k}, \chi_{V_k} \rangle - 2\langle \chi_{V_k}, \chi_{V_{k-1}} \rangle + \langle \chi_{V_{k-1}}, \chi_{V_{k-1}} \rangle \\
+&= (k+1) - 2(k) + k = 1
+\end{aligned}`$
+
+Similarly, for $j \ne k$, one can show $\langle \chi_{W_j}, \chi_{W_k} \rangle = 0$.
+
+Thus, the $W_i$ are irreducible and distinct. Summing the definition telescopically gives $\chi_{V_k} = \sum_{i=0}^k \chi_{W_i}$, proving the isomorphism:
+
+$V_k \simeq \bigoplus_{i=0}^k W_i$
