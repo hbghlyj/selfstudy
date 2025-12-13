@@ -159,7 +159,7 @@ for all $k \leq \frac{n}{2}$.
 
 Proof
 
-Compute the inner product of characters to verify the decomposition. The character of $V_k$ evaluated at a permutation $\sigma \in S_n$ is given by the number of $k$-element subsets fixed by $\sigma$. For $j \le k$, we have $`\langle \chi_{V_j}, \chi_{V_k} \rangle = j+1`$, as it's the number of orbits of $S_n$ on $X_j \times X_k$. This is because the size of the intersection of two subsets can range from $0$ to $j$.
+Compute the inner product of characters to verify the decomposition. The character of $V_k$ evaluated at a permutation $\sigma \in S_n$ is given by the number of $k$-element subsets fixed by $\sigma$. For $j \le k$, the inner product $`\langle \chi_{V_j}, \chi_{V_k} \rangle`$ equals the number of orbits of $S_n$ on $X_j \times X_k$. These orbits are classified by the size of the intersection of the two subsets. Since the problem states $k \le n/2$, we have $j+k \le n$, which ensures that any intersection size from $0$ to $j$ is possible. This gives $j+1$ distinct orbits, so $`\langle \chi_{V_j}, \chi_{V_k} \rangle = j+1`$.
 Define the characters $\chi_{W_i}$ inductively:
 $`\chi_{W_k} = \chi_{V_k} - \chi_{V_{k-1}}`$ for $k \ge 1$ and $`\chi_{W_0} = \chi_{V_0}`$.
 Then need to show that $`\langle \chi_{W_i}, \chi_{W_j} \rangle = \delta_{ij}`$, which proves that the $W_i$ are distinct irreducible representations.
