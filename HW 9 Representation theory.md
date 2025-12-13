@@ -1,73 +1,73 @@
 # 1
-Let $G$ be a finite group. Prove the following 'inverse Schur Lemma': if every $G$-equivariant map $\phi: V \rightarrow V$ is scalar, then $V$ is irreducible. You may need to make additional assumptions on the field for the statement to hold, make sure to clearly state this!
+Let  be a finite group. Prove the following 'inverse Schur Lemma': if every -equivariant map    is scalar, then  is irreducible. You may need to make additional assumptions on the field for the statement to hold, make sure to clearly state this!
 
 Proof
 
-Let $V$ be a representation of a finite group $G$ over a field $F$. We will assume that the field $F$ is algebraically closed and that the characteristic of $F$ does not divide the order of the group $G$.
-Suppose, for the sake of contradiction, that $V$ is not irreducible. Then there exists a nontrivial proper subrepresentation $W ⊂ V$.
+Let  be a representation of a finite group  over a field . We will assume that the field  is algebraically closed and that the characteristic of  does not divide the order of the group .
+Suppose, for the sake of contradiction, that  is not irreducible. Then there exists a nontrivial proper subrepresentation  .
 
-Since the characteristic of $F$ does not divide $|G|$, by Maschke's Theorem, $V$ is completely reducible. This means that $W$ has a complement $W'$ which is also a subrepresentation, such that $V = W ⊕ W'$.
+Since the characteristic of  does not divide , by Maschke's Theorem,  is completely reducible. This means that  has a complement  which is also a subrepresentation, such that   .
 
-Consider the projection map $p: V \rightarrow V$ onto $W$ along $W'$. For any $v = w + w'$ where $w ∈ W$ and $w' ∈ W'$, we define $p(v) = w$.
+Consider the projection map    onto  along . For any    where   and  , we define  .
 
-This map is $G$-equivariant. For any $g ∈ G$, $v = w+w' ∈ V$:
-$p(g ⋅ v) = p(g ⋅ (w+w')) = p(g ⋅ w + g ⋅ w') = g ⋅ w$ (since $W, W'$ are subrepresentations, $g ⋅ w ∈ W$ and $g ⋅ w' ∈ W'$).
+This map is -equivariant. For any  ,    :
+           (since  are subrepresentations,    and   ).
 
-And $g ⋅ p(v) = g ⋅ w$.
+And    .
 
-So $p(g ⋅ v) = g ⋅ p(v)$.
+So    .
 
-The map $p$ is not a scalar multiple of the identity map.
-- If $p = 0$, then $`W = \ker(p) = \{0\}`$, which contradicts $W$ being a nontrivial subrepresentation.
-- If $p = c ⋅ \text{id}$ for some $c ≠ 0$, then $p$ must be an isomorphism. But the image of $p$ is $W$, which is a proper subspace of $V$, so $p$ is not surjective. This is a contradiction.
+The map  is not a scalar multiple of the identity map.
+- If  , then   , which contradicts  being a nontrivial subrepresentation.
+- If    for some  , then  must be an isomorphism. But the image of  is , which is a proper subspace of , so  is not surjective. This is a contradiction.
 
-Thus, $p$ is a non-scalar $G$-equivariant map from $V$ to itself. This contradicts our assumption that every such map is scalar. Therefore, $V$ must be irreducible.
+Thus,  is a non-scalar -equivariant map from  to itself. This contradicts our assumption that every such map is scalar. Therefore,  must be irreducible.
 # 2
-Suppose $V$ is a completely reducible representation of a group $G$. Show that for every subrepresentation $W \subset V$, the quotient $V / W$ is completely reducible. (Obviously, we are assuming that Maschke's Theorem does not apply, otherwise the question is trivial.)
+Suppose  is a completely reducible representation of a group . Show that for every subrepresentation  , the quotient  is completely reducible. (Obviously, we are assuming that Maschke's Theorem does not apply, otherwise the question is trivial.)
 
 Proof
 
-Let $V$ be a completely reducible representation of a group $G$, and let $W \subset V$ be a subrepresentation. We want to show that the quotient representation $V / W$ is also completely reducible.
+Let  be a completely reducible representation of a group , and let   be a subrepresentation. We want to show that the quotient representation  is also completely reducible.
 
 To prove this, we will use the property that a representation is completely reducible if and only if every subrepresentation has a complement.
 
-Let $U'$ be an arbitrary subrepresentation of $V / W$.
+Let  be an arbitrary subrepresentation of .
 
-Let $U = \pi^{-1}(U')$ be its preimage in $V$ under the quotient map $\pi: V \rightarrow V / W$. $U$ is a subrepresentation of $V$ containing $W$.
+Let   be its preimage in  under the quotient map   .  is a subrepresentation of  containing .
 
-Since $V$ is completely reducible, $U$ has a complement $U''$ in $V$, so $V = U \oplus U''$.
+Since  is completely reducible,  has a complement  in , so   .
 
-Also, since $U$ is a subrepresentation of a completely reducible representation $V$, $U$ is itself completely reducible. Thus, the subrepresentation $W \subset U$ has a complement $W'$ in $U$, so $U = W \oplus W'$.
+Also, since  is a subrepresentation of a completely reducible representation ,  is itself completely reducible. Thus, the subrepresentation   has a complement  in , so   .
 
-Combining these, we get $V = W \oplus W' \oplus U''$.
+Combining these, we get    .
 
-Let $\pi: V \to V/W$ be the quotient map.
+Let    be the quotient map.
 
-From $V = W \oplus W' \oplus U''$, we see that $V/W = \pi(V) = \pi(W') \oplus \pi(U'')$.
+From    , we see that    .
 
-The subrepresentation $U'$ is $U/W = \pi(U) = \pi(W \oplus W') = \pi(W')$.
+The subrepresentation  is     .
 
-Therefore, $V/W = U' \oplus \pi(U'')$, which shows that $U'$ has a complement in $V/W$ (namely $\pi(U'')$).
+Therefore,   , which shows that  has a complement in  (namely ).
 
-Since every subrepresentation $U'$ of $V / W$ has a complement, $V / W$ is completely reducible.
+Since every subrepresentation  of  has a complement,  is completely reducible.
 # 3
-Let $V$ be an irreducible finite-dimensional representation of a group $G$. Show that its dual $V^*$ is irreducible as well.
+Let  be an irreducible finite-dimensional representation of a group . Show that its dual  is irreducible as well.
 
 Proof
 
-The dual representation $V^*$ of a representation $V$ of a group $G$ is defined by the action:
+The dual representation  of a representation  of a group  is defined by the action:
 
-$(g \cdot f)(v) = f(g^{-1} \cdot v)$ for all $g \in G$, $f \in V^*$, and $v \in V$.
+    for all  ,  , and  .
 
-To show that $`V^*`$ is irreducible, we need to demonstrate that there are no nontrivial proper subrepresentations of $V^*$.
+To show that  is irreducible, we need to demonstrate that there are no nontrivial proper subrepresentations of .
 
-Let $W$ be a subrepresentation of $V^*$. We will show that $W$ is either $`\{0\}`$ or $`V^*`$.
+Let  be a subrepresentation of . We will show that  is either  or .
 
-Consider the annihilator of $W$ in $V$:
+Consider the annihilator of  in :
 
-$`W^\perp = \{v \in V \mid f(v) = 0 \text{ for all } f \in W\}`$.
+     .
 
-We first show that $W^\perp$ is a subrepresentation of $V$. Let $v \in W^\perp$ and $g \in G$. We need to show that $g \cdot v \in W^\perp$. This means we must show that $f(g \cdot v) = 0$ for all $f \in W$.
+We first show that  is a subrepresentation of . Let   and  . We need to show that   . This means we must show that    for all  .
 
 Since $W$ is a subrepresentation of $V^*$, for any $f \in W$, the functional $g^{-1} \cdot f$ is also in $W$.
 
@@ -176,10 +176,4 @@ By Burnside's lemma, the inner product of two permutation characters $\langle \c
 
 The character of $V_k$ evaluated at a permutation $\sigma \in S_n$ is given by the number of $k$-element subsets fixed by $\sigma$. For $j \le k$, the inner product $`\langle \chi_{V_j}, \chi_{V_k} \rangle`$ equals the number of orbits of $S_n$ on $X_j \times X_k$. These orbits are classified by the size of the intersection of the two subsets. Since the problem states $k \le n/2$, we have $j+k \le n$, which ensures that any intersection size from $0$ to $j$ is possible. This gives $j+1$ distinct orbits, so $`\langle \chi_{V_j}, \chi_{V_k} \rangle = j+1`$.
 
-Define the characters $\chi_{W_i}$ inductively:
-
-$`\chi_{W_k} = \chi_{V_k} - \chi_{V_{k-1}}`$ for $k \ge 1$ and $`\chi_{W_0} = \chi_{V_0}`$.
-
-Then need to show that $`\langle \chi_{W_i}, \chi_{W_j} \rangle = \delta_{ij}`$, which proves that the $W_i$ are distinct irreducible representations.
-
-Finally, summing the character definitions telescopically gives $`\chi_{V_k} = \sum_{i=0}^k \chi_{W_i}`$, which proves the desired isomorphism.
+Since a complex representation of a finite group is determined up to isomorphism by its character, we can define the irreducible representations $W_k$ by their characters. We set $\chi_{W_0} = \chi_{V_0}$ and for $k \ge 1$:$$\chi_{W_k} = \chi_{V_k} - \chi_{V_{k-1}}$$We now verify these are distinct irreducible representations by checking orthonormality. Using bilinearity and the formula derived above ($\langle \chi_{V_a}, \chi_{V_b} \rangle = \min(a,b) + 1$):$$\langle \chi_{W_k}, \chi_{W_k} \rangle = \langle \chi_{V_k} - \chi_{V_{k-1}}, \chi_{V_k} - \chi_{V_{k-1}} \rangle$$$$= \langle \chi_{V_k}, \chi_{V_k} \rangle - 2\langle \chi_{V_k}, \chi_{V_{k-1}} \rangle + \langle \chi_{V_{k-1}}, \chi_{V_{k-1}} \rangle$$$$= (k+1) - 2(k) + k = 1$$Similarly, for $j < k$, one can show $\langle \chi_{W_j}, \chi_{W_k} \rangle = 0$. Thus, the $W_i$ are irreducible and distinct. Summing the definition telescopically gives $\chi_{V_k} = \sum_{i=0}^k \chi_{W_i}$, proving the isomorphism:$$V_k \simeq \bigoplus_{i=0}^k W_i$$
