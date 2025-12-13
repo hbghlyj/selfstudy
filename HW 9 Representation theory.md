@@ -159,7 +159,7 @@ for all $k \leq \frac{n}{2}$.
 
 Proof
 
-The space $V_k$ consists of all functions $f: X_k \to \mathbb{C}$. To write this as a matrix, we need to choose a basis.The most natural basis is the set of "indicator functions" (or delta functions). For every subset $A \in X_k$, we define a function $\delta_A$ such that:
+The space $V_k$ consists of all functions $f: X_k \to \mathbb{C}$. To write this as a matrix, we need to choose a basis. The most natural basis is the set of "indicator functions" (or delta functions). For every subset $A \in X_k$, we define a function $\delta_A$ such that:
 
 $\delta_A(B) = 1$ if $B = A$
 
