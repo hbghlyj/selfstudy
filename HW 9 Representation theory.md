@@ -171,7 +171,7 @@ $`(\sigma \cdot \delta_A)(B) = \delta_A(\sigma^{-1} B)`$
 
 This value is $1$ only when $\sigma^{-1} B = A$, which is equivalent to $B = \sigma A$.
 Therefore, $\sigma \cdot \delta_A = \delta_{\sigma A}$.
-By Burnside's lemma, the inner product of two permutation characters 1$\langle \chi_1, \chi_2 \rangle$ equals the number of orbits of the group acting on the product set 2$X_j \times X_k$.
+By Burnside's lemma, the inner product of two permutation characters $\langle \chi_1, \chi_2 \rangle$ equals the number of orbits of the group acting on the product set $X_j \times X_k$.
 
 Compute the inner product of characters to verify the decomposition. The character of $V_k$ evaluated at a permutation $\sigma \in S_n$ is given by the number of $k$-element subsets fixed by $\sigma$. For $j \le k$, the inner product $`\langle \chi_{V_j}, \chi_{V_k} \rangle`$ equals the number of orbits of $S_n$ on $X_j \times X_k$. These orbits are classified by the size of the intersection of the two subsets. Since the problem states $k \le n/2$, we have $j+k \le n$, which ensures that any intersection size from $0$ to $j$ is possible. This gives $j+1$ distinct orbits, so $`\langle \chi_{V_j}, \chi_{V_k} \rangle = j+1`$.
 
