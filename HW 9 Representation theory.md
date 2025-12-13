@@ -185,7 +185,7 @@ This means the matrix entries must be constant on the orbits of $S_n$ acting on 
 
 Therefore, the dimension of the space of such maps is exactly the number of distinct orbits of $S_n$ on pairs of subsets $(B, A)$.
 
-Since $S_n$ is $n$-transitive, the orbit of a pair of subsets is determined entirely by the size of their intersection $|A \cap B|$.
+The orbit of a pair of subsets $(A,B)$ is determined by the size of their intersection $|A \cap B|$, as any two such pairs with the same intersection size (and same sizes for the sets themselves) can be mapped to one another by a permutation in $S_n$.
 
 Since the problem states $k \le n/2$, we have $j+k \le n$, which ensures that any intersection size from $0$ to $j$ is possible. This gives $j+1$ distinct orbits, so
 
