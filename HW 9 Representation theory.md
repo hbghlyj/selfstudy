@@ -165,7 +165,7 @@ $\delta_A(B) = 1$ if $B = A$
 
 $\delta_A(B) = 0$ if $B \neq A$
 
-The set of these functions $`\{\delta_A \mid A \in X_k\}`$ forms a basis for $V_k$. The group action is defined as $(\sigma \cdot f)(B) = f(\sigma^{-1} B)$.Let's see what happens when $\sigma$ acts on a basis vector $\delta_A$:
+The set of these functions $`\{\delta_A \mid A \in X_k\}`$ forms a basis for $V_k$. The group action is defined as $(\sigma \cdot f)(B) = f(\sigma^{-1} B)$. Let's see what happens when $\sigma$ acts on a basis vector $\delta_A$:
 
 $`(\sigma \cdot \delta_A)(B) = \delta_A(\sigma^{-1} B)`$
 
